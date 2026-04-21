@@ -8,3 +8,9 @@ venv/
 downloads/
 *.png
 !mockup*.png
+
+# Local runner with embedded token — keep off GitHub
+run_bot.bat
+
+# Claude Code workspace
+.claude/

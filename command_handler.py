@@ -147,12 +147,22 @@ def handle_help_command(tg: TelegramClient, chat_id):
     """Send help text."""
     msg = (
         "<b>📊 Stock Profit Bot</b>\n\n"
-        "ใช้คำสั่งต่อไปนี้:\n\n"
-        "<code>/profit SYMBOL</code>  — ดูกำไรหุ้น (เช่น /profit CPALL)\n"
-        "<code>/help</code>  — แสดงคำสั่งที่ใช้ได้\n\n"
+        "วิธีใช้:\n\n"
+        "• พิมพ์ชื่อย่อหุ้นได้เลย เช่น <code>CPALL</code>\n"
+        "• หรือใช้คำสั่ง <code>/profit CPALL</code>\n"
+        "• <code>/help</code> — แสดงคำสั่งที่ใช้ได้\n\n"
         "Bot จะ broadcast งบใหม่ใน channel อัตโนมัติเมื่อมีงบออก"
     )
     tg.send_message(chat_id, msg)
+
+
+def _looks_like_symbol(text: str) -> bool:
+    """Heuristic: a single token, 2-10 chars, letters/digits/&-."""
+    if not text or " " in text or "\n" in text:
+        return False
+    if not (2 <= len(text) <= 10):
+        return False
+    return all(c.isalnum() or c in "&-." for c in text)
 
 
 def process_update(update: dict, tg: TelegramClient):
@@ -164,66 +174,60 @@ def process_update(update: dict, tg: TelegramClient):
     chat_id = msg.get("chat", {}).get("id")
     text = msg.get("text", "").strip()
 
-    if not text or not text.startswith("/"):
+    if not text:
         return
 
-    # Parse command
-    parts = text.split(None, 1)  # split on any whitespace
-    cmd = parts[0].lower()
+    # Slash commands
+    if text.startswith("/"):
+        parts = text.split(None, 1)
+        cmd = parts[0].lower()
+        if "@" in cmd:
+            cmd = cmd.split("@")[0]
 
-    # Remove @botname suffix if present
-    if "@" in cmd:
-        cmd = cmd.split("@")[0]
+        print(f"  → Command: {cmd}  arg: {parts[1] if len(parts) > 1 else ''}")
 
-    print(f"  → Command: {cmd}  arg: {parts[1] if len(parts) > 1 else ''}")
-
-    if cmd in ("/start", "/help"):
-        handle_help_command(tg, chat_id)
-    elif cmd == "/profit":
-        if len(parts) < 2:
-            tg.send_message(
-                chat_id,
-                "กรุณาระบุชื่อย่อหุ้น เช่น <code>/profit CPALL</code>"
-            )
-        else:
-            symbol = parts[1].upper().strip()
-            try:
-                handle_profit_command(tg, chat_id, symbol)
-            except Exception as e:
-                print(f"  ❌ Error handling /profit {symbol}: {e}")
+        if cmd in ("/start", "/help"):
+            handle_help_command(tg, chat_id)
+        elif cmd == "/profit":
+            if len(parts) < 2:
                 tg.send_message(
                     chat_id,
-                    f"⚠️ เกิดข้อผิดพลาดในการประมวลผล {symbol}"
+                    "กรุณาระบุชื่อย่อหุ้น เช่น <code>/profit CPALL</code> หรือพิมพ์แค่ <code>CPALL</code>"
                 )
+            else:
+                symbol = parts[1].upper().strip()
+                try:
+                    handle_profit_command(tg, chat_id, symbol)
+                except Exception as e:
+                    print(f"  ❌ Error handling /profit {symbol}: {e}")
+                    tg.send_message(
+                        chat_id,
+                        f"⚠️ เกิดข้อผิดพลาดในการประมวลผล {symbol}"
+                    )
+        return
+
+    # Bare symbol (e.g. "CPALL" or "cpall")
+    if _looks_like_symbol(text):
+        symbol = text.upper()
+        print(f"  → Symbol lookup: {symbol}")
+        try:
+            handle_profit_command(tg, chat_id, symbol)
+        except Exception as e:
+            print(f"  ❌ Error handling {symbol}: {e}")
+            tg.send_message(
+                chat_id,
+                f"⚠️ เกิดข้อผิดพลาดในการประมวลผล {symbol}"
+            )
 
 
-def main():
-    if not TELEGRAM_BOT_TOKEN:
-        print("❌ TELEGRAM_BOT_TOKEN env var not set")
-        sys.exit(1)
-
-    tg = TelegramClient(TELEGRAM_BOT_TOKEN)
-
-    # Verify token
-    try:
-        me = tg.get_me()
-        print(f"✓ Bot OK: @{me['result']['username']}")
-    except Exception as e:
-        print(f"❌ Bot token invalid: {e}")
-        sys.exit(1)
-
-    state = load_state()
+def poll_once(tg: TelegramClient, state: dict, long_poll_timeout: int = 0):
+    """One poll cycle. Processes any pending updates and saves state."""
     last_update_id = state.get("last_update_id", 0)
-
-    print(f"Polling for updates (offset={last_update_id + 1 if last_update_id else 'none'})...")
-
-    # Get updates with offset=last_update_id+1 to skip already-processed
     offset = last_update_id + 1 if last_update_id else None
-    updates = tg.get_updates(offset=offset, timeout=0)
+    updates = tg.get_updates(offset=offset, timeout=long_poll_timeout)
 
     if not updates:
-        print("No new updates.")
-        return
+        return 0
 
     print(f"Processing {len(updates)} updates...")
     for upd in updates:
@@ -234,12 +238,51 @@ def main():
         except Exception as e:
             print(f"  ❌ Error: {e}")
 
-        # Track the highest update_id we've seen
         if upd_id > state["last_update_id"]:
             state["last_update_id"] = upd_id
 
     save_state(state)
-    print(f"\n✓ Saved state: last_update_id={state['last_update_id']}")
+    return len(updates)
+
+
+def main():
+    if not TELEGRAM_BOT_TOKEN:
+        print("❌ TELEGRAM_BOT_TOKEN env var not set")
+        sys.exit(1)
+
+    loop_mode = "--loop" in sys.argv
+
+    tg = TelegramClient(TELEGRAM_BOT_TOKEN)
+
+    try:
+        me = tg.get_me()
+        print(f"✓ Bot OK: @{me['result']['username']}")
+    except Exception as e:
+        print(f"❌ Bot token invalid: {e}")
+        sys.exit(1)
+
+    state = load_state()
+
+    if not loop_mode:
+        last_update_id = state.get("last_update_id", 0)
+        print(f"Polling for updates (offset={last_update_id + 1 if last_update_id else 'none'})...")
+        n = poll_once(tg, state, long_poll_timeout=0)
+        if n == 0:
+            print("No new updates.")
+        else:
+            print(f"\n✓ Saved state: last_update_id={state['last_update_id']}")
+        return
+
+    print("Loop mode: long-polling continuously. Ctrl+C to stop.")
+    while True:
+        try:
+            poll_once(tg, state, long_poll_timeout=30)
+        except KeyboardInterrupt:
+            print("\nStopping.")
+            break
+        except Exception as e:
+            print(f"⚠️ Poll error: {e}. Retrying in 5s...")
+            time.sleep(5)
 
 
 if __name__ == "__main__":

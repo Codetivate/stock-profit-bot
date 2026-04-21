@@ -270,7 +270,7 @@ def make_chart(
 
             if val is None:
                 ax_tbl.text(x, year_y_center, "—",
-                            fontsize=11, color=TEXT_TINY,
+                            fontsize=11, color=TEXT_MUTED,
                             ha="center", va="center")
                 continue
 
@@ -397,6 +397,6 @@ if __name__ == "__main__":
         period_label="FY 2568  ·  Q4",
     )
 
-    with open("/mnt/user-data/outputs/test_chart_cpall.png", "wb") as f:
+    with open("test_chart_cpall.png", "wb") as f:
         f.write(png)
-    print(f"✓ Chart saved: {len(png):,} bytes")
+    print(f"Chart saved: {len(png):,} bytes -> test_chart_cpall.png")
