@@ -60,8 +60,17 @@ ENV_FILE="${INSTALL_DIR}/.env"
 if [ -f "${ENV_FILE}" ]; then
     echo "  .env already exists — leaving it alone."
 else
-    read -rp "  TELEGRAM_BOT_TOKEN: " BOT_TOKEN
-    read -rp "  TELEGRAM_CHAT_ID (Telegram chat_id for notifications): " CHAT_ID
+    # Accept values from env vars first (so curl | bash works without
+    # interactive prompts). Fall back to /dev/tty which still works when
+    # our own stdin is the curl pipe.
+    BOT_TOKEN="${TELEGRAM_BOT_TOKEN:-}"
+    CHAT_ID="${TELEGRAM_CHAT_ID:-}"
+    if [ -z "${BOT_TOKEN}" ]; then
+        read -rp "  TELEGRAM_BOT_TOKEN: " BOT_TOKEN < /dev/tty
+    fi
+    if [ -z "${CHAT_ID}" ]; then
+        read -rp "  TELEGRAM_CHAT_ID (chat_id for notifications): " CHAT_ID < /dev/tty
+    fi
     cat > "${ENV_FILE}" <<EOF
 TELEGRAM_BOT_TOKEN=${BOT_TOKEN}
 TELEGRAM_CHAT_ID=${CHAT_ID}
