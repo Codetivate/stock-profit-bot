@@ -40,6 +40,7 @@ from src.cli.ingest_financials import ingest_symbol
 from src.cli.ingest_news import ingest_symbol_news
 from src.ingest.browser import SetSession
 from src.ingest.set_api import NewsItem, fetch_news_tape, search_news
+from src.ingest.zip_downloader import parse_headline
 from src.parse.news_classifier import classify, extract_related_symbols
 from src.cli.ingest_news import EXCLUDED_TYPES  # financial_statement et al.
 
@@ -55,6 +56,35 @@ from command_handler import (
 
 STATE_PATH = Path("data/state/news_cursor.json")
 SET50_PATH = Path("reference/set50.json")
+FILING_WINDOW_PATH = Path("reference/current_filing_window.json")
+
+
+def _load_active_filings() -> list[tuple[int, str]]:
+    """Return the list of (thai_year, period) tuples currently accepted
+    for Telegram notification. If the config file is missing or empty,
+    returns an empty list which means "notify for all filings"."""
+    if not FILING_WINDOW_PATH.exists():
+        return []
+    try:
+        data = json.loads(FILING_WINDOW_PATH.read_text(encoding="utf-8"))
+        return [
+            (int(f["thai_year"]), str(f["period"]))
+            for f in data.get("active_filings", [])
+        ]
+    except Exception as e:
+        print(f"  ⚠ failed to read {FILING_WINDOW_PATH}: {e}")
+        return []
+
+
+def _is_in_active_filing_window(headline: str, active: list[tuple[int, str]]) -> bool:
+    """True if headline matches any entry in active_filings, or if the
+    window list is empty (meaning "no filter — notify for anything")."""
+    if not active:
+        return True
+    parsed = parse_headline(headline)
+    if not parsed:
+        return False
+    return parsed in active
 
 
 def _load_watchlist() -> List[str]:
@@ -164,7 +194,10 @@ def _process_new_financials(
     tg: Optional[TelegramClient],
     chat_id: Optional[str],
 ):
-    """Re-run the financials ingester (idempotent), then send new-filing chart."""
+    """Re-run the financials ingester (idempotent), then optionally push a
+    chart to Telegram — but only if the filing matches the configured
+    "active filing window". This prevents out-of-window reports (late
+    amendments of old quarters, for example) from spamming the chat."""
     if not financials:
         return
 
@@ -172,9 +205,17 @@ def _process_new_financials(
     # Reuse the monitor's SetSession — Playwright sync forbids nesting.
     ingest_symbol(symbol, today=date.today(), session=session)
 
+    # Decide which filings deserve a Telegram notification.
+    active = _load_active_filings()
+    notify = [f for f in financials if _is_in_active_filing_window(f.headline, active)]
+    if not notify:
+        print(f"    ℹ none of the filings matched the active window "
+              f"{active or '*'} — ingested but not notifying")
+        return
+
     # Send one chart for the most recent filing (others will be reflected
     # in the same regenerated chart anyway).
-    latest = max(financials, key=lambda n: n.datetime)
+    latest = max(notify, key=lambda n: n.datetime)
     _send_updated_chart(tg, chat_id, symbol, latest)
 
 

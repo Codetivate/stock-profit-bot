@@ -50,7 +50,8 @@ def _is_revenue_row(text: str) -> bool:
 
 
 def _is_netprofit_row(text: str) -> bool:
-    """Match 'กำไรสำหรับปี/ไตรมาส/งวด' (net profit for period)."""
+    """Match 'กำไรสำหรับปี/ไตรมาส/งวด' or the bare 'กำไรสุทธิ' label used
+    by banks and financial institutions."""
     if not text:
         return False
     text = str(text).strip()
@@ -58,6 +59,8 @@ def _is_netprofit_row(text: str) -> bool:
         r"^กำไรสำหรับ(ปี|งวด|ไตรมาส)",
         r"^กำไร \(ขาดทุน\) สำหรับ(ปี|งวด|ไตรมาส)",
         r"^กำไรสุทธิสำหรับ",
+        r"^กำไรสุทธิ$",            # banks: bare "กำไรสุทธิ"
+        r"^กำไร \(ขาดทุน\) สุทธิ$",
     ]
     return any(re.match(p, text) for p in patterns)
 

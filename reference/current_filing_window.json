@@ -1,0 +1,11 @@
+{
+  "_comment": "Which reporting periods are currently 'active' (i.e. companies are still filing for them). Only financial-statement filings matching one of these entries trigger a Telegram notification. data/processed/ is still updated for every filing regardless, so historical accuracy is preserved. Update this file when the SEC filing window rolls over.",
+  "active_filings": [
+    {
+      "thai_year": 2569,
+      "period": "Q1",
+      "note": "Q1/2569 filings open Apr 2026 → deadline mid-May 2026"
+    }
+  ],
+  "updated_at": "2026-04-23"
+}

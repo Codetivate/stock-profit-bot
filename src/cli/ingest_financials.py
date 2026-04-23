@@ -43,14 +43,28 @@ def _load_company_meta(symbol: str) -> dict:
 
 
 def _is_financial_statement(headline: str) -> bool:
-    return "งบการเงิน" in (headline or "")
+    """True only for the actual financial-statement filings — not cover
+    letters, management discussions, or pre-audit drafts that get refiled
+    post-audit."""
+    h = headline or ""
+    if "งบการเงิน" not in h:
+        return False
+    # Cover letters ("delivery letters") accompany the financial zip but
+    # don't carry the XLSX themselves.
+    if "จดหมายนำส่ง" in h or "นำส่งงบ" in h:
+        return False
+    return True
 
 
 def _is_amendment(headline: str) -> bool:
-    """Skip corrections/clarifications — they share period with the original
-    and would race to overwrite metadata. We ingest the canonical filing."""
+    """Skip corrections/clarifications AND pre-audit drafts — both race
+    with the canonical post-audit filing that shares the same period."""
     h = headline or ""
-    return any(k in h for k in ("คำชี้แจง", "แก้ไข", "ชี้แจงเพิ่มเติม"))
+    amendment_markers = (
+        "คำชี้แจง", "แก้ไข", "ชี้แจงเพิ่มเติม",
+        "ก่อนสอบทาน", "ก่อนตรวจสอบ",  # pre-audit drafts
+    )
+    return any(k in h for k in amendment_markers)
 
 
 def compute_standalone_quarters(
