@@ -12,9 +12,10 @@
 set -u
 
 STACK_ID="${1:?Usage: $0 <STACK_OCID> [retry_seconds]}"
-SLEEP="${2:-180}"
-MAX_JOB_WAIT_SECONDS=600   # max seconds to wait for one apply job
-MAX_LOCK_WAIT_SECONDS=600  # max seconds to wait for a prior job to clear
+SLEEP="${2:-300}"           # 5 min default — create-apply-job has a tenant rate-limit
+THROTTLE_SLEEP=900          # 15 min when Oracle returns HTTP 429
+MAX_JOB_WAIT_SECONDS=600    # max seconds to wait for one apply job
+MAX_LOCK_WAIT_SECONDS=600   # max seconds to wait for a prior job to clear
 
 echo "════════════════════════════════════════════════════════════"
 echo "  Oracle auto-retry apply"
@@ -73,8 +74,16 @@ while true; do
     if [ $CREATE_RC -ne 0 ]; then
         echo "  ⚠ enqueue failed (exit=$CREATE_RC):"
         echo "$CREATE_OUT" | head -15 | sed 's/^/      /'
-        echo "  retry in ${SLEEP}s…"
-        sleep "$SLEEP"
+        # If Oracle rate-limited us, wait much longer before retrying.
+        # Resource Manager's create_job API has a tenant-wide throttle
+        # that a 3-minute retry loop easily trips.
+        if echo "$CREATE_OUT" | grep -qE '"status": 429|"code": "TooManyRequests"'; then
+            echo "  ⛔ 429 Too Many Requests — backing off for ${THROTTLE_SLEEP}s…"
+            sleep "$THROTTLE_SLEEP"
+        else
+            echo "  retry in ${SLEEP}s…"
+            sleep "$SLEEP"
+        fi
         continue
     fi
 
