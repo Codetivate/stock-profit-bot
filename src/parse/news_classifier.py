@@ -13,18 +13,44 @@ import re
 from typing import List, Optional, Tuple
 
 
-# Ordered: earlier rules win.
+# Ordered: earlier rules win. Put specific/narrow patterns above broad ones
+# so they claim the match before the broad rule fires. The top-of-list
+# pre-filters (treasury_stock, mgmt_discussion) exist to prevent headlines
+# like "รายงานผลการซื้อหุ้นคืน" from being misclassified as acquisition.
 RULES: List[Tuple[str, re.Pattern]] = [
-    # Financial statements first — they're our primary signal
+    # ── Pre-filters: specific routine filings that would otherwise match
+    #     broader rules below. Check these FIRST.
     ("financial_statement", re.compile(r"งบการเงิน", re.IGNORECASE)),
+    ("mgmt_discussion", re.compile(
+        r"คำอธิบายและวิเคราะห์ของฝ่ายจัดการ|MD&A",
+        re.IGNORECASE,
+    )),
+    ("share_buyback", re.compile(
+        r"ซื้อหุ้นคืน|หุ้นคืน|Treasury Stock",
+        re.IGNORECASE,
+    )),
+    ("regulatory_filing", re.compile(
+        # SEC News + form 59 + routine disclosure filings
+        r"SEC News|แบบ ?59|F45|F45-3|แบบรายงาน.*แบบ",
+        re.IGNORECASE,
+    )),
 
-    # Capital / share actions
-    ("rights_offering", re.compile(r"เสนอขายหุ้น|ใช้สิทธิ.*warrant|จัดสรรหุ้น", re.IGNORECASE)),
-    ("stock_split", re.compile(r"แตกพาร์|ลดพาร์|เปลี่ยนแปลงมูลค่าที่ตราไว้", re.IGNORECASE)),
+    # ── Capital / share actions
+    ("rights_offering", re.compile(
+        r"เสนอขายหุ้น|ใช้สิทธิ.*warrant|จัดสรรหุ้น",
+        re.IGNORECASE,
+    )),
+    ("stock_split", re.compile(
+        r"แตกพาร์|ลดพาร์|เปลี่ยนแปลงมูลค่าที่ตราไว้",
+        re.IGNORECASE,
+    )),
     ("capital_restructuring", re.compile(r"เพิ่มทุน|ลดทุน", re.IGNORECASE)),
-    ("tender_offer", re.compile(r"คำเสนอซื้อหลักทรัพย์|tender offer", re.IGNORECASE)),
+    ("tender_offer", re.compile(
+        r"คำเสนอซื้อหลักทรัพย์|tender offer",
+        re.IGNORECASE,
+    )),
 
-    # Deals
+    # ── Deals (after pre-filters so treasury buybacks don't trigger here)
     ("divestiture", re.compile(
         r"ขายหุ้น|จำหน่ายเงินลงทุน|จำหน่ายหุ้น|จำหน่ายไปซึ่ง|โอนหุ้น",
         re.IGNORECASE,
@@ -34,34 +60,40 @@ RULES: List[Tuple[str, re.Pattern]] = [
         re.IGNORECASE,
     )),
 
-    # Related party / inter-company
+    # ── Related party / inter-company
     ("related_party_transaction", re.compile(
         r"รายการที่เกี่ยวโยง|เกี่ยวโยงกัน|related.party",
         re.IGNORECASE,
     )),
 
-    # Cash returns
+    # ── Cash returns
     ("dividend", re.compile(r"จ่ายปันผล|จ่ายเงินปันผล|ปันผล", re.IGNORECASE)),
 
-    # Ownership changes
+    # ── Ownership changes
     ("change_in_shareholders", re.compile(
         r"การเปลี่ยนแปลงผู้ถือหุ้น|แบบรายงานการได้มาหรือจำหน่ายหลักทรัพย์",
         re.IGNORECASE,
     )),
 
-    # Governance
+    # ── Governance
     ("governance", re.compile(
         r"เปลี่ยนแปลงกรรมการ|แต่งตั้งกรรมการ|ลาออก.*กรรมการ|มติที่ประชุมคณะกรรมการ",
         re.IGNORECASE,
     )),
 
-    # Agreements / intentions
-    ("mou", re.compile(r"บันทึกข้อตกลง|MOU|ลงนามความร่วมมือ", re.IGNORECASE)),
+    # ── Agreements / intentions
+    ("mou", re.compile(
+        r"บันทึกข้อตกลง|MOU|ลงนามความร่วมมือ",
+        re.IGNORECASE,
+    )),
 ]
 
 
 VALID_TYPES = [
     "financial_statement",
+    "mgmt_discussion",
+    "share_buyback",
+    "regulatory_filing",
     "divestiture",
     "acquisition",
     "dividend",

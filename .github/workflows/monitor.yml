@@ -1,0 +1,93 @@
+name: Monitor SET filings
+
+# Polls SET's news API for every symbol in reference/set50.json, detects
+# newly-filed financial statements + material announcements, ingests them,
+# and pushes notifications to Telegram.
+#
+# Weekday coverage only (SET is closed Sat/Sun). Thailand business hours
+# in UTC = 02:00–15:00.
+
+on:
+  schedule:
+    - cron: "*/15 2-15 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      symbol:
+        description: "Override watchlist — scan this symbol only"
+        required: false
+      lookback_days:
+        description: "Days to look back (default 3)"
+        required: false
+        default: "3"
+
+concurrency:
+  group: monitor
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Cache Playwright browsers
+        id: pw-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-chromium-${{ runner.os }}-v1
+
+      - name: Install Playwright Chromium (if cache miss)
+        if: steps.pw-cache.outputs.cache-hit != 'true'
+        run: python -m playwright install chromium --with-deps
+
+      - name: Install Playwright system deps (always)
+        if: steps.pw-cache.outputs.cache-hit == 'true'
+        run: python -m playwright install-deps chromium
+
+      - name: Run monitor
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID }}
+          PYTHONIOENCODING: utf-8
+          MONITOR_LOOKBACK_DAYS: ${{ github.event.inputs.lookback_days || '3' }}
+        run: |
+          if [ -n "${{ github.event.inputs.symbol }}" ]; then
+            python -m src.cli.monitor --symbol "${{ github.event.inputs.symbol }}"
+          else
+            python -m src.cli.monitor
+          fi
+
+      - name: Commit state + data changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add data/state/ data/processed/
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: monitor tick — refresh state and data [skip ci]"
+            git pull --rebase origin main || true
+            git push
+          else
+            echo "No changes to commit"
+          fi

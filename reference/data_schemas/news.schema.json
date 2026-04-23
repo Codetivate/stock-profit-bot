@@ -31,6 +31,10 @@
         },
         "type": {
           "enum": [
+            "financial_statement",
+            "mgmt_discussion",
+            "share_buyback",
+            "regulatory_filing",
             "divestiture",
             "acquisition",
             "dividend",

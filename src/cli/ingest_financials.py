@@ -17,6 +17,7 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+from contextlib import nullcontext
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Dict, List, Optional
@@ -89,7 +90,11 @@ def ingest_symbol(
     *,
     years_back: int = 6,
     today: Optional[date] = None,
+    session: Optional[SetSession] = None,
 ) -> dict:
+    """Ingest financials for one symbol. If `session` is provided, reuse it
+    (needed when called from a caller that already holds a Playwright session,
+    since the sync API forbids nesting)."""
     today = today or date.today()
     from_date = today - timedelta(days=365 * years_back)
 
@@ -98,7 +103,11 @@ def ingest_symbol(
     staged: List[IngestedFiling] = []
     parse_rows: List[dict] = []
 
-    with SetSession(warm_symbol=symbol) as session:
+    session_ctx = (
+        nullcontext(session) if session is not None
+        else SetSession(warm_symbol=symbol)
+    )
+    with session_ctx as session:
         print("[1/4] Fetching news feed…")
         news = search_news(session, symbol, from_date, today, today=today)
         fin_items = [
