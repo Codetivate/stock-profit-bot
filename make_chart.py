@@ -169,7 +169,7 @@ def make_chart(
     fig.text(0.06, 0.690, "Quarterly breakdown",
              fontsize=16, color=NAVY, fontweight="800")
     fig.text(0.06, 0.671,
-             "Profit (million baht)  ·  YoY = vs same quarter last year  ·  qoq = vs previous quarter",
+             "Profit (million baht)  ·  yoy = vs same quarter last year  ·  qoq = vs previous quarter",
              fontsize=9.5, color=TEXT_MUTED, fontweight="500")
 
     ax_tbl = fig.add_axes([0.03, 0.09, 0.94, 0.57])
@@ -291,7 +291,7 @@ def make_chart(
                 yoy_bg = GREEN_BG if yoy >= 0 else RED_BG
                 yoy_ar = "▲" if yoy >= 0 else "▼"
                 ax_tbl.text(x, year_y_center - 0.05,
-                            f"{yoy_ar} {yoy:+.1f}%",
+                            f"yoy {yoy_ar} {yoy:+.1f}%",
                             fontsize=9.5, color=yoy_c,
                             fontweight="800",
                             ha="center", va="center",
@@ -333,7 +333,7 @@ def make_chart(
                 yoy_ar = "▲" if yoy_t >= 0 else "▼"
                 yoy_bg = GREEN_BG if yoy_t >= 0 else RED_BG
                 ax_tbl.text(x, year_y_center - 0.30,
-                            f"{yoy_ar} {yoy_t:+.1f}%",
+                            f"yoy {yoy_ar} {yoy_t:+.1f}%",
                             fontsize=10.5, color=yoy_c,
                             fontweight="800",
                             ha="center", va="center",
