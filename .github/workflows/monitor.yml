@@ -72,10 +72,11 @@ jobs:
           PYTHONIOENCODING: utf-8
           MONITOR_LOOKBACK_DAYS: ${{ github.event.inputs.lookback_days || '3' }}
         run: |
+          # --tape = one API call for the whole market, O(1) in watchlist size
           if [ -n "${{ github.event.inputs.symbol }}" ]; then
-            python -m src.cli.monitor --symbol "${{ github.event.inputs.symbol }}"
+            python -m src.cli.monitor --tape --symbol "${{ github.event.inputs.symbol }}"
           else
-            python -m src.cli.monitor
+            python -m src.cli.monitor --tape
           fi
 
       - name: Commit state + data changes

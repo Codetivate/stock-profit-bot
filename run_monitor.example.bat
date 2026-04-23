@@ -27,11 +27,11 @@ set PY_EXE="%LOCALAPPDATA%\Programs\Python\Python312\python.exe"
 if not exist %PY_EXE% set PY_EXE=python
 
 echo =====================================================
-echo  SET Filings Monitor - starting loop (30s interval)
+echo  SET Filings Monitor - TAPE mode, 15s interval
 echo  Target: watchlist from reference/set50.json
 echo =====================================================
 echo.
 
-%PY_EXE% -u -m src.cli.monitor --loop --interval 30 --lookback 2
+%PY_EXE% -u -m src.cli.monitor --loop --tape --interval 15 --lookback 2
 
 pause

@@ -161,6 +161,54 @@ def _search_news_chunk(
     return [NewsItem.from_api(r) for r in rows]
 
 
+NEWS_TAPE_HEADERS = {
+    "accept": "application/json, text/plain, */*",
+    "x-channel": "WEB_SET",
+    "x-client-uuid": "stock-profit-bot",
+    "referer": "https://www.set.or.th/th/market/news-and-alert/news",
+}
+
+
+def fetch_news_tape(
+    session: SetSession,
+    from_date: date,
+    to_date: date,
+    *,
+    per_page: int = 500,
+    security_type: str = "S",
+) -> List[NewsItem]:
+    """Fetch every company's news across the whole market in one call.
+
+    Uses SET's /api/cms/v1/news/set endpoint — the backend that powers
+    https://www.set.or.th/th/market/news-and-alert/news. Requires the
+    x-channel header ("WEB_SET"); without it the endpoint returns 401.
+
+    With per_page=500 and a 2–3 day lookback we get ~500 items per call
+    which covers normal market-wide news flow comfortably. If the tape
+    ever saturates (unlikely without earnings-season batching), switch
+    to the paginate* cursor returned by the API.
+    """
+    url = (
+        "https://www.set.or.th/api/cms/v1/news/set"
+        f"?sourceId=company&securityTypeIds={security_type}"
+        f"&fromDate={_fmt(from_date)}&toDate={_fmt(to_date)}"
+        f"&perPage={per_page}&orderBy=date&lang=th"
+    )
+    payload = session.request_json(
+        url,
+        referer=NEWS_TAPE_HEADERS["referer"],
+        headers=NEWS_TAPE_HEADERS,
+    )
+    if not isinstance(payload, dict):
+        return []
+
+    pag = payload.get("paginateNews") or {}
+    rows = pag.get("newsInfoList") if isinstance(pag, dict) else None
+    if not rows:
+        return []
+    return [NewsItem.from_api(r) for r in rows]
+
+
 def get_corporate_actions(session: SetSession, symbol: str) -> List[CorporateAction]:
     """Fetch XD/XM/XB rows for a symbol."""
     url = f"https://www.set.or.th/api/set/stock/{symbol}/corporate-action?lang=th"

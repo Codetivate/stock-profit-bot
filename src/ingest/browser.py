@@ -68,12 +68,24 @@ class SetSession:
         finally:
             page.close()
 
-    def request_json(self, url: str, referer: Optional[str] = None) -> Any:
-        """GET a JSON endpoint using the warmed-up browser context."""
-        headers = {"Accept": "application/json"}
+    def request_json(
+        self,
+        url: str,
+        referer: Optional[str] = None,
+        headers: Optional[dict] = None,
+    ) -> Any:
+        """GET a JSON endpoint using the warmed-up browser context.
+
+        `headers` merges on top of the defaults, so callers can add
+        endpoint-specific auth (e.g. x-channel: WEB_SET for the CMS
+        news API) without having to reconstruct the request.
+        """
+        merged = {"Accept": "application/json"}
         if referer:
-            headers["Referer"] = referer
-        resp: APIResponse = self._context.request.get(url, headers=headers)
+            merged["Referer"] = referer
+        if headers:
+            merged.update(headers)
+        resp: APIResponse = self._context.request.get(url, headers=merged)
         if resp.status != 200:
             raise RuntimeError(
                 f"API {url} returned {resp.status}: {resp.text()[:200]}"

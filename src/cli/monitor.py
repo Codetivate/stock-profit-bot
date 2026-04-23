@@ -39,7 +39,7 @@ sys.path.insert(0, str(ROOT))
 from src.cli.ingest_financials import ingest_symbol
 from src.cli.ingest_news import ingest_symbol_news
 from src.ingest.browser import SetSession
-from src.ingest.set_api import NewsItem, search_news
+from src.ingest.set_api import NewsItem, fetch_news_tape, search_news
 from src.parse.news_classifier import classify, extract_related_symbols
 from src.cli.ingest_news import EXCLUDED_TYPES  # financial_statement et al.
 
@@ -203,6 +203,56 @@ def _process_new_announcements(
                 print(f"    ⚠ Telegram send failed for {item.news_id}: {e}")
 
 
+def _gather_per_symbol(
+    session: SetSession,
+    symbols: List[str],
+    from_date: date,
+    today: date,
+    report: dict,
+) -> dict:
+    """One API call per symbol. O(N) calls for N watchlist entries."""
+    out: dict[str, List[NewsItem]] = {}
+    for symbol in symbols:
+        try:
+            out[symbol] = search_news(session, symbol, from_date, today, today=today)
+        except Exception as e:
+            report["errors"].append(f"{symbol}: news fetch — {e}")
+            print(f"  {symbol}: ERROR fetching news: {e}")
+            out[symbol] = []
+    return out
+
+
+def _gather_from_tape(
+    session: SetSession,
+    symbols: List[str],
+    from_date: date,
+    today: date,
+    report: dict,
+) -> dict:
+    """ONE API call for the whole market. O(1) regardless of watchlist size."""
+    try:
+        tape = fetch_news_tape(session, from_date, today)
+    except Exception as e:
+        report["errors"].append(f"tape: news fetch — {e}")
+        print(f"  TAPE ERROR: {e}")
+        return {s: [] for s in symbols}
+
+    watchlist = set(symbols)
+    out: dict[str, List[NewsItem]] = {s: [] for s in symbols}
+    untracked_hits = 0
+    for item in tape:
+        if item.symbol in watchlist:
+            out[item.symbol].append(item)
+        else:
+            untracked_hits += 1
+
+    total_matched = sum(len(v) for v in out.values())
+    print(f"  tape fetched {len(tape)} items  ·  "
+          f"matched watchlist: {total_matched}  ·  "
+          f"untracked: {untracked_hits}")
+    return out
+
+
 def _one_tick(
     session: SetSession,
     symbols: List[str],
@@ -213,23 +263,29 @@ def _one_tick(
     chat_id: Optional[str],
     dry_run: bool,
     report: dict,
+    *,
+    use_tape: bool = False,
 ):
-    """Run a single monitor tick using an existing SetSession."""
+    """Run a single monitor tick. `use_tape=True` takes one market-wide
+    fetch and filters locally; otherwise hits the per-symbol endpoint."""
+    news_by_symbol = (
+        _gather_from_tape(session, symbols, from_date, today, report)
+        if use_tape
+        else _gather_per_symbol(session, symbols, from_date, today, report)
+    )
+
     for symbol in symbols:
+        news = news_by_symbol.get(symbol, [])
         prev = cursor["per_symbol"].get(symbol) or {}
         last_dt = prev.get("last_seen_datetime", "")
-
-        try:
-            news = search_news(session, symbol, from_date, today, today=today)
-        except Exception as e:
-            report["errors"].append(f"{symbol}: news fetch — {e}")
-            print(f"  {symbol}: ERROR fetching news: {e}")
-            continue
 
         new_items = [n for n in news if n.datetime > last_dt] if last_dt else news
 
         if not new_items:
-            print(f"  {symbol}: up to date")
+            # Only log per-symbol when we actually probed per symbol;
+            # in tape mode, "up to date" lines for 50+ symbols are noise.
+            if not use_tape:
+                print(f"  {symbol}: up to date")
             continue
 
         print(f"  {symbol}: {len(new_items)} new item(s) since {last_dt or 'first run'}")
@@ -268,6 +324,7 @@ def monitor(
     dry_run: bool = False,
     loop: bool = False,
     interval_seconds: int = 30,
+    tape: bool = False,
 ) -> dict:
     """Single-tick or continuous-loop monitoring.
 
@@ -296,7 +353,8 @@ def monitor(
     report = {"processed": 0, "new_financials": 0, "new_announcements": 0, "errors": []}
 
     mode = f"LOOP every {interval_seconds}s" if loop else "SINGLE"
-    print(f"Monitor  ·  {mode}  ·  {len(symbols)} symbols  ·  "
+    fetch_mode = "TAPE (market-wide)" if tape else "PER-SYMBOL"
+    print(f"Monitor  ·  {mode}  ·  {fetch_mode}  ·  {len(symbols)} symbols  ·  "
           f"lookback {lookback_days}d"
           f"{'  (DRY RUN)' if dry_run else ''}")
     if chat_id:
@@ -310,7 +368,7 @@ def monitor(
         from_date = today_for_tick - timedelta(days=lookback_days)
         print(f"\n── tick {datetime.now().strftime('%H:%M:%S')} ──")
         _one_tick(session, symbols, from_date, today_for_tick,
-                  cursor, tg, chat_id, dry_run, report)
+                  cursor, tg, chat_id, dry_run, report, use_tape=tape)
         if not dry_run:
             _save_cursor(cursor)
         print(f"  ⏱ tick took {time.monotonic() - tick_start:.1f}s")
@@ -353,6 +411,12 @@ def main():
     ap.add_argument("--interval", type=int, default=30,
                     help="Loop polling interval in seconds (default 30). "
                          "Ignored if --loop is not set.")
+    ap.add_argument("--tape", action="store_true",
+                    help="Use the market-wide news tape (one API call for "
+                         "all symbols) instead of polling each symbol "
+                         "individually. Dramatically faster at SET50+ "
+                         "scale; tick cost stays ~1s regardless of "
+                         "watchlist size.")
     args = ap.parse_args()
 
     today = date.fromisoformat(args.today) if args.today else None
@@ -363,6 +427,7 @@ def main():
         dry_run=args.dry_run,
         loop=args.loop,
         interval_seconds=args.interval,
+        tape=args.tape,
     )
 
 
