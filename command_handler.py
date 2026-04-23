@@ -84,6 +84,89 @@ def find_latest_quarter(history):
     return latest_year, None
 
 
+def build_rich_caption(symbol, history, latest_year, latest_quarter,
+                        report_date="", header_prefix=None):
+    """Build the Telegram HTML caption that shows under the chart photo.
+
+    The caption is the *only* thing a user sees without tapping the
+    image in the chat list, so QoQ / YoY / full-year-YoY all go here
+    explicitly — don't make them squint at the thumbnail.
+    """
+    latest = history[latest_year].get(latest_quarter)
+    if latest is None:
+        return f"● <b>{symbol}</b>  ·  FY{latest_year} {latest_quarter}"
+
+    q_order = ["Q1", "Q2", "Q3", "Q4"]
+    q_idx = q_order.index(latest_quarter)
+
+    # QoQ
+    if q_idx > 0:
+        prev_q = history[latest_year].get(q_order[q_idx - 1])
+        prev_q_label = f"{q_order[q_idx - 1]}/{latest_year}"
+    else:
+        prev_y_data = history.get(latest_year - 1)
+        prev_q = prev_y_data.q4 if prev_y_data else None
+        prev_q_label = f"Q4/{latest_year - 1}"
+    qoq = ((latest - prev_q) / prev_q * 100) if prev_q else None
+
+    # YoY
+    prev_y_data = history.get(latest_year - 1)
+    prev_y = prev_y_data.get(latest_quarter) if prev_y_data else None
+    prev_y_label = f"{latest_quarter}/{latest_year - 1}"
+    yoy = ((latest - prev_y) / prev_y * 100) if prev_y else None
+
+    # Full-year YoY (only if the full year is complete)
+    fy_sum = history[latest_year].sum()
+    prev_fy = history.get(latest_year - 1)
+    prev_fy_sum = prev_fy.sum() if prev_fy else None
+    fy_yoy = (
+        (fy_sum - prev_fy_sum) / prev_fy_sum * 100
+        if fy_sum is not None and prev_fy_sum
+        else None
+    )
+
+    def fmt_delta(pct):
+        if pct is None:
+            return None
+        emoji = "🟢" if pct >= 0 else "🔴"
+        arrow = "▲" if pct >= 0 else "▼"
+        return emoji, arrow, pct
+
+    lines = []
+    if header_prefix:
+        lines.append(header_prefix)
+    lines.append(f"● <b>{symbol}</b>  ·  FY{latest_year} {latest_quarter}")
+    lines.append(f"💰 <b>กำไรสุทธิ: {latest:,.2f}</b> ล้านบาท")
+    lines.append("")
+
+    if qoq is not None and prev_q is not None:
+        e, a, _ = fmt_delta(qoq)
+        lines.append(
+            f"{e} <b>QoQ {a} {qoq:+.1f}%</b>  "
+            f"<i>(vs {prev_q_label}: {prev_q:,.2f})</i>"
+        )
+
+    if yoy is not None and prev_y is not None:
+        e, a, _ = fmt_delta(yoy)
+        lines.append(
+            f"{e} <b>YoY {a} {yoy:+.1f}%</b>  "
+            f"<i>(vs {prev_y_label}: {prev_y:,.2f})</i>"
+        )
+
+    if fy_sum is not None and fy_yoy is not None:
+        e, a, _ = fmt_delta(fy_yoy)
+        lines.append(
+            f"📊 <b>ทั้งปี {latest_year}: {fy_sum:,.2f}</b> ล้านบาท "
+            f"({e} {a} {fy_yoy:+.1f}%)"
+        )
+
+    if report_date:
+        lines.append("")
+        lines.append(f"📅 <i>งบเผยแพร่: {report_date}</i>")
+
+    return "\n".join(lines)
+
+
 def handle_profit_command(tg: TelegramClient, chat_id, symbol: str):
     """Generate and send chart for a symbol."""
     symbol = symbol.upper().strip()
@@ -127,11 +210,12 @@ def handle_profit_command(tg: TelegramClient, chat_id, symbol: str):
         period_label=f"FY {latest_year}  ·  {latest_q}",
     )
 
-    # Build simple caption
-    latest_profit = history[latest_year].get(latest_q)
-    caption = (
-        f"● <b>{symbol}</b>  ·  FY{latest_year} {latest_q}\n"
-        f"💰 กำไรสุทธิ: {latest_profit:,.2f} ล้านบาท"
+    caption = build_rich_caption(
+        symbol=symbol,
+        history=history,
+        latest_year=latest_year,
+        latest_quarter=latest_q,
+        report_date=report_date,
     )
 
     tg.send_photo(

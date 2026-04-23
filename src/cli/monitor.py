@@ -46,6 +46,7 @@ from src.cli.ingest_news import EXCLUDED_TYPES  # financial_statement et al.
 from telegram_client import TelegramClient
 from make_chart import make_chart
 from command_handler import (
+    build_rich_caption,
     find_latest_quarter,
     get_company_name,
     load_symbol_history,
@@ -130,13 +131,13 @@ def _send_updated_chart(
         period_label=f"FY {latest_year}  ·  {latest_q}",
     )
 
-    latest_profit = history[latest_year].get(latest_q)
-    caption = (
-        f"🆕 <b>งบใหม่ของ {symbol}</b>\n"
-        f"● {item.headline}\n"
-        f"📅 {item.date}\n\n"
-        f"💰 กำไรสุทธิ {latest_q}/{latest_year}: "
-        f"<b>{latest_profit:,.2f}</b> ล้านบาท"
+    caption = build_rich_caption(
+        symbol=symbol,
+        history=history,
+        latest_year=latest_year,
+        latest_quarter=latest_q,
+        report_date=item.date,
+        header_prefix=f"🆕 <b>งบใหม่</b>  ·  <i>{item.headline[:80]}</i>",
     )
 
     # Archive under data/derived/
