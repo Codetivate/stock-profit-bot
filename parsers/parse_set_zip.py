@@ -17,6 +17,7 @@ from datetime import datetime
 from dataclasses import dataclass, asdict
 
 import openpyxl
+import xlrd  # type: ignore  # legacy .xls reader
 
 
 @dataclass
@@ -87,6 +88,65 @@ def _find_pl_sheet(workbook) -> Optional[str]:
         if "PL" in upper or "กำไรขาดทุน" in name:
             return name
     return None
+
+
+def _detect_unit_divisor(rows_top: list) -> float:
+    """Infer how to convert XLSX cell values to millions of baht.
+
+    SET financial XLSX files include a unit marker near the top of every
+    sheet (e.g. ``(บาท)`` for annual reports, ``(พันบาท)`` for quarterly,
+    occasionally ``(ล้านบาท)`` for summarised sheets).
+
+    Returns the divisor to apply to raw numeric cells so the result is in
+    millions of baht. Defaults to 1,000,000 (treat as baht) if no marker
+    is found — the original behaviour for XLSX where the unit was implicit.
+    """
+    for row in rows_top:
+        for cell in row:
+            if not cell or not isinstance(cell, str):
+                continue
+            s = cell.strip()
+            # Order matters: check more-specific markers first.
+            if "ล้านบาท" in s:
+                return 1.0
+            if "พันบาท" in s:
+                return 1_000.0
+            if "บาท" in s:
+                return 1_000_000.0
+    return 1_000_000.0
+
+
+class _XlsAdapter:
+    """Minimal subset of openpyxl's API backed by xlrd, so the rest of the
+    parser can treat .xls and .xlsx identically."""
+
+    class Sheet:
+        def __init__(self, sheet):
+            self._s = sheet
+            self.max_row = sheet.nrows
+            self.max_column = sheet.ncols
+
+        def iter_rows(self, min_row=1, max_row=None, values_only=True):
+            end = self._s.nrows if max_row is None else min(max_row, self._s.nrows)
+            for r in range(min_row - 1, end):
+                yield tuple(self._s.row_values(r))
+
+    def __init__(self, xls_path: str):
+        self._book = xlrd.open_workbook(xls_path)
+        self.sheetnames = self._book.sheet_names()
+
+    def __getitem__(self, name: str) -> "Sheet":
+        return self.Sheet(self._book.sheet_by_name(name))
+
+
+def _open_workbook(path: str):
+    """Open .xls or .xlsx and return an object with sheetnames + __getitem__."""
+    lower = path.lower()
+    if lower.endswith(".xlsx"):
+        return openpyxl.load_workbook(path, data_only=True)
+    if lower.endswith(".xls"):
+        return _XlsAdapter(path)
+    raise ValueError(f"Unsupported workbook format: {path}")
 
 
 def _extract_numeric(row: tuple, is_eps: bool = False) -> list:
@@ -161,25 +221,26 @@ def parse_zip(zip_path: str, symbol: str = "UNKNOWN") -> Optional[FinancialData]
         with zipfile.ZipFile(zip_path, "r") as zf:
             zf.extractall(tmp)
 
-        # Find XLSX file
-        xlsx_path = None
+        # Find a financial-statement workbook (.xlsx preferred, fall back to .xls)
+        xlsx_path = xls_path = None
         for root, _, files in os.walk(tmp):
             for f in files:
-                if f.upper().endswith(".XLSX"):
+                upper = f.upper()
+                if upper.endswith(".XLSX") and not xlsx_path:
                     xlsx_path = os.path.join(root, f)
-                    break
-            if xlsx_path:
-                break
+                elif upper.endswith(".XLS") and not xls_path:
+                    xls_path = os.path.join(root, f)
 
-        if not xlsx_path:
-            print(f"[parse_zip] No XLSX found in {filename}")
+        book_path = xlsx_path or xls_path
+        if not book_path:
+            print(f"[parse_zip] No XLS/XLSX found in {filename}")
             return None
 
-        # Open workbook
+        # Open workbook (unified adapter handles both formats)
         try:
-            wb = openpyxl.load_workbook(xlsx_path, data_only=True)
+            wb = _open_workbook(book_path)
         except Exception as e:
-            print(f"[parse_zip] Failed to open XLSX: {e}")
+            print(f"[parse_zip] Failed to open workbook: {e}")
             return None
 
         pl_sheet = _find_pl_sheet(wb)
@@ -188,6 +249,10 @@ def parse_zip(zip_path: str, symbol: str = "UNKNOWN") -> Optional[FinancialData]
             return None
 
         ws = wb[pl_sheet]
+
+        # Detect the unit divisor from the top of the sheet
+        top_rows = list(ws.iter_rows(min_row=1, max_row=15, values_only=True))
+        unit_divisor = _detect_unit_divisor(top_rows)
 
         # Detect period type from first few rows
         period_label = ""
@@ -255,16 +320,16 @@ def parse_zip(zip_path: str, symbol: str = "UNKNOWN") -> Optional[FinancialData]
 
             if len(nums) >= 2:
                 if _is_revenue_row(label) and result.revenue is None:
-                    result.revenue = nums[0] / 1_000_000  # to millions
-                    result.revenue_prior = nums[1] / 1_000_000
+                    result.revenue = nums[0] / unit_divisor
+                    result.revenue_prior = nums[1] / unit_divisor
                 elif _is_netprofit_row(label) and result.net_profit is None:
-                    result.net_profit = nums[0] / 1_000_000
-                    result.net_profit_prior = nums[1] / 1_000_000
+                    result.net_profit = nums[0] / unit_divisor
+                    result.net_profit_prior = nums[1] / unit_divisor
                 elif _is_shareholder_profit_row(label) and result.shareholder_profit is None:
-                    result.shareholder_profit = nums[0] / 1_000_000
-                    result.shareholder_profit_prior = nums[1] / 1_000_000
+                    result.shareholder_profit = nums[0] / unit_divisor
+                    result.shareholder_profit_prior = nums[1] / unit_divisor
                 elif is_eps and result.eps is None:
-                    # EPS is in baht already, not millions
+                    # EPS is always in baht per share regardless of sheet unit
                     result.eps = nums[0]
                     result.eps_prior = nums[1]
 
