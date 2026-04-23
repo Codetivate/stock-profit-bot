@@ -26,7 +26,9 @@ import argparse
 import json
 import os
 import sys
+import time
 import traceback
+from contextlib import nullcontext
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import List, Optional
@@ -201,16 +203,83 @@ def _process_new_announcements(
                 print(f"    ⚠ Telegram send failed for {item.news_id}: {e}")
 
 
+def _one_tick(
+    session: SetSession,
+    symbols: List[str],
+    from_date: date,
+    today: date,
+    cursor: dict,
+    tg: Optional[TelegramClient],
+    chat_id: Optional[str],
+    dry_run: bool,
+    report: dict,
+):
+    """Run a single monitor tick using an existing SetSession."""
+    for symbol in symbols:
+        prev = cursor["per_symbol"].get(symbol) or {}
+        last_dt = prev.get("last_seen_datetime", "")
+
+        try:
+            news = search_news(session, symbol, from_date, today, today=today)
+        except Exception as e:
+            report["errors"].append(f"{symbol}: news fetch — {e}")
+            print(f"  {symbol}: ERROR fetching news: {e}")
+            continue
+
+        new_items = [n for n in news if n.datetime > last_dt] if last_dt else news
+
+        if not new_items:
+            print(f"  {symbol}: up to date")
+            continue
+
+        print(f"  {symbol}: {len(new_items)} new item(s) since {last_dt or 'first run'}")
+
+        financials, other = _classify_and_partition(new_items)
+
+        try:
+            if not dry_run:
+                _process_new_financials(session, symbol, financials, tg, chat_id)
+                _process_new_announcements(symbol, other, tg, chat_id,
+                                            session=session)
+        except Exception as e:
+            traceback.print_exc()
+            report["errors"].append(f"{symbol}: processing — {e}")
+
+        report["new_financials"] += len(financials)
+        report["new_announcements"] += len(other)
+        report["processed"] += 1
+
+        # Advance cursor to newest item seen this tick
+        if news:
+            newest = max(news, key=lambda n: n.datetime)
+            cursor["per_symbol"][symbol] = {
+                "last_seen_datetime": newest.datetime,
+                "last_seen_news_id": newest.news_id,
+                "last_checked_at": datetime.now(timezone.utc)
+                                           .isoformat(timespec="seconds"),
+            }
+
+
 def monitor(
     *,
     symbols: Optional[List[str]] = None,
     lookback_days: Optional[int] = None,
     today: Optional[date] = None,
     dry_run: bool = False,
+    loop: bool = False,
+    interval_seconds: int = 30,
 ) -> dict:
+    """Single-tick or continuous-loop monitoring.
+
+    loop=True runs forever, polling every `interval_seconds`. The browser
+    session is warmed once and reused across ticks so latency per tick is
+    ~1-3s per symbol instead of ~5s for session bootstrap.
+
+    loop=False runs one tick and returns — matches the GitHub Actions
+    cron usage.
+    """
     today = today or date.today()
     lookback_days = lookback_days or int(os.environ.get("MONITOR_LOOKBACK_DAYS", "3"))
-    from_date = today - timedelta(days=lookback_days)
     symbols = symbols or _load_watchlist()
     if not symbols:
         print("No symbols in watchlist (reference/set50.json). Nothing to do.")
@@ -226,57 +295,44 @@ def monitor(
     cursor = _load_cursor()
     report = {"processed": 0, "new_financials": 0, "new_announcements": 0, "errors": []}
 
-    print(f"Monitor tick  ·  {len(symbols)} symbols  ·  lookback {lookback_days}d"
+    mode = f"LOOP every {interval_seconds}s" if loop else "SINGLE"
+    print(f"Monitor  ·  {mode}  ·  {len(symbols)} symbols  ·  "
+          f"lookback {lookback_days}d"
           f"{'  (DRY RUN)' if dry_run else ''}")
+    if chat_id:
+        print(f"  Telegram target: {chat_id}")
+    else:
+        print(f"  Telegram: disabled (no TELEGRAM_CHAT_ID)")
+
+    def run_tick(session: SetSession):
+        tick_start = time.monotonic()
+        today_for_tick = date.today()  # refresh each tick for long-running loops
+        from_date = today_for_tick - timedelta(days=lookback_days)
+        print(f"\n── tick {datetime.now().strftime('%H:%M:%S')} ──")
+        _one_tick(session, symbols, from_date, today_for_tick,
+                  cursor, tg, chat_id, dry_run, report)
+        if not dry_run:
+            _save_cursor(cursor)
+        print(f"  ⏱ tick took {time.monotonic() - tick_start:.1f}s")
 
     with SetSession(warm_symbol=symbols[0]) as session:
-        for symbol in symbols:
-            prev = cursor["per_symbol"].get(symbol) or {}
-            last_dt = prev.get("last_seen_datetime", "")
-
+        if not loop:
+            run_tick(session)
+        else:
             try:
-                news = search_news(session, symbol, from_date, today, today=today)
-            except Exception as e:
-                report["errors"].append(f"{symbol}: news fetch — {e}")
-                print(f"  {symbol}: ERROR fetching news: {e}")
-                continue
-
-            new_items = [n for n in news if n.datetime > last_dt] if last_dt \
-                        else news
-
-            if not new_items:
-                print(f"  {symbol}: up to date")
-                continue
-
-            print(f"  {symbol}: {len(new_items)} new item(s) since {last_dt or 'first run'}")
-
-            financials, other = _classify_and_partition(new_items)
-
-            try:
-                if not dry_run:
-                    _process_new_financials(session, symbol, financials, tg, chat_id)
-                    _process_new_announcements(symbol, other, tg, chat_id,
-                                                session=session)
-            except Exception as e:
-                traceback.print_exc()
-                report["errors"].append(f"{symbol}: processing — {e}")
-
-            report["new_financials"] += len(financials)
-            report["new_announcements"] += len(other)
-            report["processed"] += 1
-
-            # Advance cursor to newest item seen this tick
-            if news:
-                newest = max(news, key=lambda n: n.datetime)
-                cursor["per_symbol"][symbol] = {
-                    "last_seen_datetime": newest.datetime,
-                    "last_seen_news_id": newest.news_id,
-                    "last_checked_at": datetime.now(timezone.utc)
-                                               .isoformat(timespec="seconds"),
-                }
-
-    if not dry_run:
-        _save_cursor(cursor)
+                while True:
+                    try:
+                        run_tick(session)
+                    except KeyboardInterrupt:
+                        raise
+                    except Exception as e:
+                        # Log and keep looping — a transient SET outage
+                        # shouldn't kill the daemon.
+                        print(f"  ⚠ tick failed: {e}")
+                        traceback.print_exc()
+                    time.sleep(interval_seconds)
+            except KeyboardInterrupt:
+                print("\nStopping on Ctrl+C.")
 
     print(f"\nSummary: {report}")
     return report
@@ -291,6 +347,12 @@ def main():
     ap.add_argument("--dry-run", action="store_true",
                     help="Fetch + classify but do not write state, re-ingest, "
                          "or send to Telegram.")
+    ap.add_argument("--loop", action="store_true",
+                    help="Poll continuously (Ctrl+C to stop). Use for low-"
+                         "latency detection when the PC can stay up.")
+    ap.add_argument("--interval", type=int, default=30,
+                    help="Loop polling interval in seconds (default 30). "
+                         "Ignored if --loop is not set.")
     args = ap.parse_args()
 
     today = date.fromisoformat(args.today) if args.today else None
@@ -299,6 +361,8 @@ def main():
         lookback_days=args.lookback,
         today=today,
         dry_run=args.dry_run,
+        loop=args.loop,
+        interval_seconds=args.interval,
     )
 
 

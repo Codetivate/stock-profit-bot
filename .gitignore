@@ -9,8 +9,9 @@ downloads/
 *.png
 !mockup*.png
 
-# Local runner with embedded token — keep off GitHub
+# Local runners with embedded tokens — keep off GitHub
 run_bot.bat
+run_monitor.bat
 
 # Claude Code workspace
 .claude/
