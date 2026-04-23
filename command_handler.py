@@ -22,8 +22,9 @@ from telegram_client import TelegramClient
 
 
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
-STATE_FILE = Path("data/command_state.json")
-DATA_DIR = Path("data")
+STATE_FILE = Path("data/state/telegram_offset.json")
+PROCESSED_DIR = Path("data/processed")
+DATA_DIR = Path("data")  # legacy path fallback
 
 
 def load_state():
@@ -41,9 +42,17 @@ def save_state(state):
     )
 
 
+def _financials_path(symbol: str) -> Path:
+    """Resolve financials file for a symbol, preferring new structure."""
+    new_path = PROCESSED_DIR / symbol / "financials.json"
+    if new_path.exists():
+        return new_path
+    return DATA_DIR / f"{symbol}.json"  # legacy
+
+
 def load_symbol_history(symbol: str):
     """Load quarterly history for a symbol, returns {year: QuarterlyData} or None."""
-    path = DATA_DIR / f"{symbol}.json"
+    path = _financials_path(symbol)
     if not path.exists():
         return None
 
@@ -95,10 +104,10 @@ def handle_profit_command(tg: TelegramClient, chat_id, symbol: str):
         return
 
     # Try to get period_label and company name from saved data
-    path = DATA_DIR / f"{symbol}.json"
+    path = _financials_path(symbol)
     raw = json.loads(path.read_text(encoding="utf-8"))
 
-    company_name = get_company_name(symbol)
+    company_name = raw.get("company_name_en") or get_company_name(symbol)
     report_date = raw.get("updated_at", "")
     if report_date:
         try:

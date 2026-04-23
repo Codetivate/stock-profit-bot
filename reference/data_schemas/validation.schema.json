@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Codetivate/stock-profit-bot/reference/data_schemas/validation.schema.json",
+  "title": "Validation Report",
+  "description": "Integrity-check report for a single filing. Answers: does what we rendered match the source zip?",
+  "type": "object",
+  "required": ["schema_version", "symbol", "year", "period", "checks", "passed"],
+  "properties": {
+    "schema_version": { "type": "integer", "const": 1 },
+    "symbol": { "type": "string" },
+    "year": { "type": "integer" },
+    "period": { "enum": ["Q1", "H1", "9M", "FY"] },
+    "validated_at": { "type": "string", "format": "date-time" },
+    "passed": {
+      "type": "boolean",
+      "description": "True if every check passed. Downstream consumers should refuse to publish if false."
+    },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "passed"],
+        "properties": {
+          "name": {
+            "enum": [
+              "xlsx_parseable",
+              "required_fields_present",
+              "sum_of_quarters_matches_annual",
+              "yoy_prior_year_matches_historical",
+              "chart_hero_number_matches_source",
+              "excel_summary_matches_json"
+            ]
+          },
+          "passed": { "type": "boolean" },
+          "expected": {},
+          "actual": {},
+          "tolerance": { "type": ["number", "null"] },
+          "note": { "type": ["string", "null"] }
+        }
+      }
+    }
+  }
+}

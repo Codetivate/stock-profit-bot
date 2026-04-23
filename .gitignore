@@ -14,3 +14,16 @@ run_bot.bat
 
 # Claude Code workspace
 .claude/
+
+# Raw source zips — too large for git (see docs/decisions/001-storage.md)
+data/raw/*
+!data/raw/README.md
+
+# Derived artifacts — regenerable from data/processed/
+data/derived/*
+!data/derived/README.md
+
+# Tests artifacts
+.pytest_cache/
+htmlcov/
+.coverage

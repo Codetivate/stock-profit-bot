@@ -1,0 +1,33 @@
+{
+  "_comment": "Master company metadata. symbol → names + SET 4-digit filing code. Add rows as we onboard new symbols. company_code is used to construct weblink.set.or.th zip filenames.",
+  "companies": {
+    "CPALL": {
+      "name_en": "CP All Public Company Limited",
+      "name_th": "บริษัท ซีพี ออลล์ จำกัด (มหาชน)",
+      "company_code": "0737",
+      "sector": "Commerce",
+      "industry": "Services"
+    },
+    "PTT": {
+      "name_en": "PTT Public Company Limited",
+      "name_th": "บริษัท ปตท. จำกัด (มหาชน)",
+      "company_code": null,
+      "sector": "Energy & Utilities",
+      "industry": "Resources"
+    },
+    "AOT": {
+      "name_en": "Airports of Thailand Public Company Limited",
+      "name_th": "บริษัท ท่าอากาศยานไทย จำกัด (มหาชน)",
+      "company_code": null,
+      "sector": "Transportation & Logistics",
+      "industry": "Services"
+    },
+    "SCB": {
+      "name_en": "SCB X Public Company Limited",
+      "name_th": "บริษัท เอสซีบี เอกซ์ จำกัด (มหาชน)",
+      "company_code": null,
+      "sector": "Banking",
+      "industry": "Financials"
+    }
+  }
+}

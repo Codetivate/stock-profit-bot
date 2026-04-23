@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Codetivate/stock-profit-bot/reference/data_schemas/financial.schema.json",
+  "title": "Financial History",
+  "description": "Quarterly net profit history for a single Thai-listed company, derived from SET financial-statement zip files.",
+  "type": "object",
+  "required": ["schema_version", "symbol", "quarterly_history"],
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "const": 1
+    },
+    "symbol": {
+      "type": "string",
+      "pattern": "^[A-Z0-9&\\-\\.]{2,10}$",
+      "description": "SET ticker symbol, e.g. CPALL."
+    },
+    "company_code": {
+      "type": ["string", "null"],
+      "pattern": "^[0-9]{4}$",
+      "description": "4-digit SET filing code used in zip filenames (e.g. 0737 for CPALL)."
+    },
+    "company_name_en": { "type": ["string", "null"] },
+    "company_name_th": { "type": ["string", "null"] },
+    "updated_at": {
+      "type": ["string", "null"],
+      "format": "date",
+      "description": "Filing date (Gregorian, ISO-8601) of the most recent report ingested."
+    },
+    "quarterly_history": {
+      "type": "object",
+      "description": "Standalone quarterly net profit in millions of baht, keyed by Thai year (e.g. 2568).",
+      "patternProperties": {
+        "^25[0-9]{2}$": {
+          "type": "object",
+          "properties": {
+            "Q1": { "type": ["number", "null"] },
+            "Q2": { "type": ["number", "null"] },
+            "Q3": { "type": ["number", "null"] },
+            "Q4": { "type": ["number", "null"] }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "sources": {
+      "type": "array",
+      "description": "Provenance manifest. Each raw filing that contributed to quarterly_history.",
+      "items": {
+        "type": "object",
+        "required": ["year", "period", "filing_date", "raw_path"],
+        "properties": {
+          "year": { "type": "integer", "minimum": 2500, "maximum": 2600 },
+          "period": { "enum": ["Q1", "H1", "9M", "FY"] },
+          "filing_date": { "type": "string", "format": "date" },
+          "raw_path": {
+            "type": "string",
+            "description": "Path under data/raw/ to the source zip."
+          },
+          "sha256": {
+            "type": ["string", "null"],
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "ingested_at": { "type": "string", "format": "date-time" }
+        }
+      }
+    }
+  }
+}

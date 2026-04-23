@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Codetivate/stock-profit-bot/reference/data_schemas/news.schema.json",
+  "title": "Corporate Announcements",
+  "description": "Material non-financial-statement announcements for a single company (divestitures, acquisitions, dividends, rights offerings, etc.).",
+  "type": "object",
+  "required": ["schema_version", "symbol", "announcements"],
+  "properties": {
+    "schema_version": { "type": "integer", "const": 1 },
+    "symbol": {
+      "type": "string",
+      "pattern": "^[A-Z0-9&\\-\\.]{2,10}$"
+    },
+    "announcements": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/announcement" }
+    }
+  },
+  "$defs": {
+    "announcement": {
+      "type": "object",
+      "required": ["news_id", "date", "type", "title", "source_url"],
+      "properties": {
+        "news_id": {
+          "type": "string",
+          "description": "SET news detail ID."
+        },
+        "date": {
+          "type": "string",
+          "format": "date"
+        },
+        "type": {
+          "enum": [
+            "divestiture",
+            "acquisition",
+            "dividend",
+            "rights_offering",
+            "stock_split",
+            "tender_offer",
+            "change_in_shareholders",
+            "related_party_transaction",
+            "governance",
+            "capital_restructuring",
+            "mou",
+            "other"
+          ]
+        },
+        "subject_symbols": {
+          "type": "array",
+          "description": "Related tickers, e.g. for CPALL divesting CPAXT this contains ['CPAXT'].",
+          "items": { "type": "string" }
+        },
+        "title": { "type": "string" },
+        "summary": { "type": ["string", "null"] },
+        "source_url": { "type": "string", "format": "uri" },
+        "raw_path": {
+          "type": ["string", "null"],
+          "description": "Path under data/raw/{SYMBOL}/announcements/ to the archived source."
+        },
+        "ingested_at": { "type": "string", "format": "date-time" }
+      }
+    }
+  }
+}
