@@ -28,9 +28,24 @@
 set -u
 
 INSTANCE_NAME="${INSTANCE_NAME:-stock-profit-bot}"
-INNER_SLEEP="${INNER_SLEEP:-10}"
-OUTER_SLEEP="${OUTER_SLEEP:-180}"
+# Tight defaults — compute instance launch has a much higher per-tenant
+# rate limit than the Resource Manager create_job endpoint (first-gen
+# hunter). 3 s between shape attempts and 45 s between cycles still
+# stays well inside any plausible throttle, while tripling the attempts
+# per hour versus the old 10 s / 180 s pacing.
+INNER_SLEEP="${INNER_SLEEP:-3}"
+OUTER_SLEEP="${OUTER_SLEEP:-45}"
+# Per-attempt cooldown specifically for TINY_ONLY mode — just hammer
+# 1-OCPU-1-GB as fast as it's safe to.
+TINY_ONLY_SLEEP="${TINY_ONLY_SLEEP:-15}"
 THROTTLE_SLEEP="${THROTTLE_SLEEP:-900}"
+
+# TINY_ONLY=1 skips the shape ladder and pounds just 1/1 every
+# TINY_ONLY_SLEEP seconds. Use when Singapore reports no-capacity on
+# every shape tried — that usually means ARM capacity is family-wide
+# exhausted, so bigger shapes are hopeless anyway. Meanwhile the
+# smallest slot frees up first when any capacity returns.
+TINY_ONLY="${TINY_ONLY:-0}"
 
 # "Golden window" timing attack: capacity releases from Oracle tend
 # to cluster around UTC 00:00 / 06:00 / 12:00 / 18:00 / 22:00 as
@@ -72,7 +87,9 @@ in_golden_window() {
 # that's usually free anyway. Set SHAPE_ORDER=big-first to restore the
 # original order if you really want to grab 24 GB in the first try.
 SHAPE_ORDER="${SHAPE_ORDER:-tiny-first}"
-if [ "$SHAPE_ORDER" = "big-first" ]; then
+if [ "$TINY_ONLY" = "1" ]; then
+    SHAPE_LADDER=("1 1")
+elif [ "$SHAPE_ORDER" = "big-first" ]; then
     SHAPE_LADDER=("4 24" "2 12" "1 6" "1 2" "1 1")
 else
     SHAPE_LADDER=("1 1" "1 2" "1 6" "2 12" "4 24")
@@ -274,7 +291,10 @@ while true; do
         exit 1
     done
 
-    if in_golden_window; then
+    if [ "$TINY_ONLY" = "1" ]; then
+        # In tiny-only mode, tighter cycle — it's just one shape
+        sleep "$TINY_ONLY_SLEEP"
+    elif in_golden_window; then
         echo "  all sizes tried — GOLDEN WINDOW fast cycle in ${GOLDEN_OUTER_SLEEP}s"
         sleep "$GOLDEN_OUTER_SLEEP"
     else
