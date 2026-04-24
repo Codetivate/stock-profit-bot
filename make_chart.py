@@ -13,30 +13,39 @@ import numpy as np
 from matplotlib.patches import FancyBboxPatch, Rectangle
 
 
-# ═══ Pi Financial palette ═══
-NAVY = "#0A2540"
-MID_BLUE = "#4A85D1"
-LIGHT_BLUE_BG = "#E8F1FC"
-SURFACE = "#F8FAFC"
-GRID = "#E2E8F0"
-LINE_GRID = "#EDF2F7"
-TEXT_DARK = "#1A202C"
-TEXT_MUTED = "#64748B"
-GREEN = "#10B981"          # brighter green for visibility on dark rows
-GREEN_BG = "#ECFDF5"
-RED = "#F87171"            # lighter red (better contrast on dark bg)
-RED_BG = "#FEF2F2"
+# ═══ Full dark-mode palette ═══
+# Everything sits on DARK_BG; containers (cards, table rows, summary
+# panel) layer slightly lighter navys on top for depth.
+DARK_BG       = "#050E1D"     # page background — near-black navy
+NAVY          = "#0A2540"     # accent navy (table header, misc.)
+MID_BLUE      = "#4A85D1"     # links, LATEST badge, icon
+TEXT_DARK     = "#F1F5F9"     # main white-ish text
+TEXT_MUTED    = "#8A9CB0"     # subdued labels / captions
+GREEN         = "#22D081"     # bright emerald for positive
+GREEN_BG      = "#0F2A1E"     # dark green card inner
+GREEN_BORDER  = "#2D7A52"     # green card border
+RED           = "#FF5656"     # bright red for negative
+RED_BG        = "#2A0F11"     # dark red card inner
+RED_BORDER    = "#7A2D34"     # red card border
 
-# Dark-theme table row palette — dark navy/slate backgrounds so the
-# values pop against a calmer surface than white. Light text on dark
-# rows; the coloured YoY / QoQ pills keep their existing bright bg so
-# they stand out even more against the navy.
-ROW_LATEST_DARK = "#1E3A5F"   # highlight for current year
-ROW_DARK        = "#1F2D47"   # even rows
-ROW_DARK_ALT    = "#2A3B55"   # odd rows
-TEXT_ON_DARK    = "#F1F5F9"   # near-white for readability
-TEXT_ON_DARK_MUTED = "#94A3B8"
-DIVIDER_ON_DARK = "#3A4D6B"   # faint column dividers on dark rows
+# Table rows — three shades of navy so rows are distinguishable but
+# still feel part of the same dark panel.
+ROW_LATEST_DARK = "#162A44"
+ROW_DARK        = "#0F1E34"
+ROW_DARK_ALT    = "#132640"
+DIVIDER_ON_DARK = "#2A3B55"
+TEXT_ON_DARK    = "#F8FAFC"
+TEXT_ON_DARK_MUTED = "#8A9CB0"
+
+# Summary panel (narrative at the bottom)
+SUMMARY_BG      = "#0E2038"
+SUMMARY_BORDER  = "#1E3555"
+
+# Legacy aliases kept so pre-existing code using them compiles.
+LIGHT_BLUE_BG = ROW_LATEST_DARK
+SURFACE       = ROW_DARK
+GRID          = DIVIDER_ON_DARK
+LINE_GRID     = DIVIDER_ON_DARK
 
 
 @dataclass
@@ -96,38 +105,33 @@ def make_chart(
     yoy = ((latest_profit - prev_y_profit) / prev_y_profit * 100) if prev_y_profit else None
 
     # ═══════════════════════════════════════════════════
-    # Create figure
+    # Create figure — full dark canvas
     # ═══════════════════════════════════════════════════
-    fig = plt.figure(figsize=(9, 13), facecolor="white")
+    fig = plt.figure(figsize=(9, 13), facecolor=DARK_BG)
 
     # Header
-    fig.text(0.06, 0.980, symbol, fontsize=22, fontweight="800", color=NAVY)
+    fig.text(0.06, 0.980, symbol, fontsize=22, fontweight="800", color=TEXT_DARK)
     fig.text(0.06, 0.963, company_name, fontsize=9, color=TEXT_MUTED, fontweight="400")
-    fig.text(0.94, 0.980, period_label, fontsize=11, color=NAVY,
+    fig.text(0.94, 0.980, period_label, fontsize=11, color=TEXT_DARK,
              fontweight="600", ha="right")
     fig.text(0.94, 0.964, report_date, fontsize=8.5, color=TEXT_MUTED,
              ha="right", fontweight="400")
 
-    ax_div = fig.add_axes([0.06, 0.955, 0.88, 0.001])
-    ax_div.axhline(0, color=GRID, linewidth=0.8)
-    ax_div.axis("off")
+    # (separator removed — the dark canvas already provides visual break)
 
     # ═══ Hero section label ═══
     fig.text(0.5, 0.935, f"THIS QUARTER'S NET PROFIT",
-             fontsize=9, color=TEXT_MUTED, ha="center",
-             fontweight="800", style="italic")
+             fontsize=9.5, color=TEXT_DARK, ha="center",
+             fontweight="800")
 
-    # Hero number colored strictly by profit direction: green if the
-    # company made money this quarter, red if they lost money. This
-    # matches how users read the chart at a glance — don't overload
-    # the color with YoY/QoQ direction, each has its own pill below.
-    hero_color = GREEN if latest_profit >= 0 else RED
-
+    # Hero number stays white — the direction is already shown by the
+    # coloured QoQ / YoY cards below. Overloading the hero number with
+    # a tint muddles the "how much did they earn this quarter" read.
     fig.text(0.5, 0.875, f"{latest_profit:,.2f}",
-             fontsize=60, fontweight="800", color=hero_color, ha="center")
+             fontsize=60, fontweight="800", color=TEXT_DARK, ha="center")
     fig.text(0.5, 0.855, "million baht",
              fontsize=10, color=TEXT_MUTED, ha="center",
-             fontweight="500", style="italic")
+             fontweight="500")
 
     # ═══ Two comparison cards ═══
     card_y = 0.72
@@ -141,15 +145,18 @@ def make_chart(
     ax_c1.set_xlim(0, 1); ax_c1.set_ylim(0, 1); ax_c1.axis("off")
 
     if qoq is not None:
-        c1_color = GREEN if qoq >= 0 else RED
-        c1_bg = GREEN_BG if qoq >= 0 else RED_BG
-        c1_arrow = "▲" if qoq >= 0 else "▼"
+        c1_color  = GREEN if qoq >= 0 else RED
+        c1_bg     = GREEN_BG if qoq >= 0 else RED_BG
+        c1_border = GREEN_BORDER if qoq >= 0 else RED_BORDER
+        c1_arrow  = "▲" if qoq >= 0 else "▼"
 
-        ax_c1.add_patch(FancyBboxPatch((0.0, 0.0), 1.0, 1.0,
+        ax_c1.add_patch(FancyBboxPatch((0.02, 0.02), 0.96, 0.96,
                                         boxstyle="round,pad=0.02",
-                                        linewidth=0, facecolor=c1_bg))
-        ax_c1.text(0.5, 0.85, "vs last quarter",
-                   fontsize=10, color=c1_color, fontweight="700", ha="center")
+                                        linewidth=1.4,
+                                        facecolor=c1_bg,
+                                        edgecolor=c1_border))
+        ax_c1.text(0.5, 0.85, "VS LAST QUARTER",
+                   fontsize=10, color=c1_color, fontweight="800", ha="center")
         ax_c1.text(0.5, 0.46, f"{c1_arrow} {qoq:+.1f}%",
                    fontsize=32, color=c1_color, fontweight="800", ha="center")
         ax_c1.text(0.5, 0.12, f"{prev_q_label}: {prev_q_profit:,.2f} MB",
@@ -160,15 +167,18 @@ def make_chart(
     ax_c2.set_xlim(0, 1); ax_c2.set_ylim(0, 1); ax_c2.axis("off")
 
     if yoy is not None:
-        c2_color = GREEN if yoy >= 0 else RED
-        c2_bg = GREEN_BG if yoy >= 0 else RED_BG
-        c2_arrow = "▲" if yoy >= 0 else "▼"
+        c2_color  = GREEN if yoy >= 0 else RED
+        c2_bg     = GREEN_BG if yoy >= 0 else RED_BG
+        c2_border = GREEN_BORDER if yoy >= 0 else RED_BORDER
+        c2_arrow  = "▲" if yoy >= 0 else "▼"
 
-        ax_c2.add_patch(FancyBboxPatch((0.0, 0.0), 1.0, 1.0,
+        ax_c2.add_patch(FancyBboxPatch((0.02, 0.02), 0.96, 0.96,
                                         boxstyle="round,pad=0.02",
-                                        linewidth=0, facecolor=c2_bg))
-        ax_c2.text(0.5, 0.85, "vs same quarter last year",
-                   fontsize=10, color=c2_color, fontweight="700", ha="center")
+                                        linewidth=1.4,
+                                        facecolor=c2_bg,
+                                        edgecolor=c2_border))
+        ax_c2.text(0.5, 0.85, "VS SAME QUARTER LAST YEAR",
+                   fontsize=10, color=c2_color, fontweight="800", ha="center")
         ax_c2.text(0.5, 0.46, f"{c2_arrow} {yoy:+.1f}%",
                    fontsize=32, color=c2_color, fontweight="800", ha="center")
         ax_c2.text(0.5, 0.12, f"{prev_y_label}: {prev_y_profit:,.2f} MB",
@@ -178,19 +188,17 @@ def make_chart(
     years_sorted = sorted(history.keys())
 
     # ═══ Quarterly breakdown table ═══
-    fig.text(0.06, 0.693, "QUARTERLY NET PROFIT",
-             fontsize=15, color=NAVY, fontweight="800")
-    fig.text(0.38, 0.693, "(million baht)",
+    fig.text(0.06, 0.695, "QUARTERLY NET PROFIT",
+             fontsize=15, color=TEXT_DARK, fontweight="800")
+    fig.text(0.38, 0.695, "(million baht)",
              fontsize=10, color=TEXT_MUTED, fontweight="500",
              style="italic")
-    fig.text(0.06, 0.672,
-             "yoy = vs same quarter last year  ·  qoq = vs previous quarter",
-             fontsize=9, color=TEXT_MUTED, fontweight="500")
 
-    ax_tbl = fig.add_axes([0.03, 0.09, 0.94, 0.57])
+    ax_tbl = fig.add_axes([0.03, 0.225, 0.94, 0.45])
     ax_tbl.set_xlim(0, 10)
     ax_tbl.set_ylim(0, 10)
     ax_tbl.axis("off")
+    ax_tbl.set_facecolor(DARK_BG)
 
     # Get years sorted newest first for table
     table_years = sorted(history.keys(), reverse=True)
@@ -297,31 +305,26 @@ def make_chart(
                         fontweight="800" if is_latest_row else "700",
                         ha="center", va="center")
 
-            # ─── Line 2: YoY (PRIMARY metric - bold green/red with pill) ───
+            # ─── Line 2: YoY — coloured text, no pill (cleaner on dark) ───
             prior_y_data = history.get(y - 1)
             prior_y_val = prior_y_data.get(q) if prior_y_data else None
             if prior_y_val is not None and prior_y_val > 0:
                 yoy = (val - prior_y_val) / prior_y_val * 100
                 yoy_c = GREEN if yoy >= 0 else RED
-                yoy_bg = GREEN_BG if yoy >= 0 else RED_BG
-                yoy_ar = "▲" if yoy >= 0 else "▼"
                 ax_tbl.text(x, year_y_center - 0.05,
-                            f"yoy {yoy_ar} {yoy:+.1f}%",
+                            f"yoy  {yoy:+.1f}%",
                             fontsize=9.5, color=yoy_c,
-                            fontweight="800",
-                            ha="center", va="center",
-                            bbox=dict(boxstyle="round,pad=0.28",
-                                      facecolor=yoy_bg, edgecolor="none"))
+                            fontweight="700",
+                            ha="center", va="center")
 
-            # ─── Line 3: QoQ (SECONDARY — coloured green/red too) ───
+            # ─── Line 3: QoQ — same styling as YoY, slightly smaller ───
             prev_q_val = get_prev_quarter(y, q)
             if prev_q_val is not None and prev_q_val > 0:
                 qoq = (val - prev_q_val) / prev_q_val * 100
-                qoq_ar = "▲" if qoq >= 0 else "▼"
                 qoq_c = GREEN if qoq >= 0 else RED
                 ax_tbl.text(x, year_y_center - 0.55,
-                            f"qoq {qoq_ar} {qoq:+.1f}%",
-                            fontsize=8, color=qoq_c,
+                            f"qoq  {qoq:+.1f}%",
+                            fontsize=8.5, color=qoq_c,
                             fontweight="600",
                             ha="center", va="center")
 
@@ -337,22 +340,17 @@ def make_chart(
                         fontweight="800" if is_latest_row else "700",
                         ha="center", va="center")
 
-            # YoY pill for total
+            # Full-Year YoY — matching text style (no pill)
             prior_total = history.get(y - 1)
             prior_total = prior_total.sum() if prior_total else None
             if prior_total is not None and prior_total > 0:
                 yoy_t = (total - prior_total) / prior_total * 100
                 yoy_c = GREEN if yoy_t >= 0 else RED
-                yoy_ar = "▲" if yoy_t >= 0 else "▼"
-                yoy_bg = GREEN_BG if yoy_t >= 0 else RED_BG
-                ax_tbl.text(x, year_y_center - 0.30,
-                            f"yoy {yoy_ar} {yoy_t:+.1f}%",
+                ax_tbl.text(x, year_y_center - 0.25,
+                            f"yoy  {yoy_t:+.1f}%",
                             fontsize=10.5, color=yoy_c,
-                            fontweight="800",
-                            ha="center", va="center",
-                            bbox=dict(boxstyle="round,pad=0.4",
-                                      facecolor=yoy_bg,
-                                      edgecolor="none"))
+                            fontweight="700",
+                            ha="center", va="center")
 
     # Column divider lines — subtle lighter tint over dark rows
     for x_divider in [1.45, 3.25, 4.95, 6.65, 8.30]:
@@ -360,10 +358,68 @@ def make_chart(
                     [header_y - 0.1, y_start - n_rows * row_h + row_gap],
                     color=DIVIDER_ON_DARK, linewidth=0.4, alpha=0.6, zorder=0)
 
-    # Footer — single source line with the deep-link URL so users can
-    # navigate straight to SET's filings page for this symbol, plus
-    # the AI disclaimer directly below.
-    fig.text(0.5, 0.045,
+    # Legend under the table
+    fig.text(0.5, 0.205,
+             "yoy = vs same quarter last year    ·    qoq = vs previous quarter",
+             fontsize=9, color=TEXT_MUTED, ha="center", fontweight="500")
+
+    # Summary narrative card — CAGR across the years ingested
+    table_years_sorted = sorted(table_years)
+    annual_totals = [history[y].sum() for y in table_years_sorted
+                     if history[y].sum() is not None]
+    if len(annual_totals) >= 2:
+        first_val = annual_totals[0]
+        last_val = annual_totals[-1]
+        years_span = len(annual_totals) - 1
+        if years_span > 0 and first_val > 0:
+            cagr = ((last_val / first_val) ** (1 / years_span) - 1) * 100
+            cagr_color = GREEN if cagr >= 0 else RED
+
+            # Card container
+            ax_sum = fig.add_axes([0.05, 0.075, 0.90, 0.115])
+            ax_sum.set_xlim(0, 1); ax_sum.set_ylim(0, 1); ax_sum.axis("off")
+            ax_sum.add_patch(FancyBboxPatch(
+                (0.0, 0.0), 1.0, 1.0,
+                boxstyle="round,pad=0.02",
+                linewidth=1.2,
+                facecolor=SUMMARY_BG,
+                edgecolor=SUMMARY_BORDER,
+            ))
+            # Blue circle icon on the left — drawn bar-chart mark
+            # (three ascending rectangles) instead of an emoji so it
+            # renders on fonts without glyph support.
+            ax_sum.add_patch(plt.Circle((0.075, 0.5), 0.085,
+                                         facecolor=MID_BLUE,
+                                         edgecolor="none"))
+            for i, h_bar in enumerate([0.04, 0.07, 0.10]):
+                ax_sum.add_patch(Rectangle(
+                    (0.050 + i*0.018, 0.45), 0.013, h_bar,
+                    facecolor="white", edgecolor="none"))
+            # Heading + narrative
+            ax_sum.text(0.20, 0.73, "SUMMARY",
+                        fontsize=12, color=MID_BLUE, fontweight="800",
+                        ha="left", va="center")
+            first_text = (f"Net profit grew from {first_val:,.2f} MB to "
+                          f"{last_val:,.2f} MB over {years_span} years,")
+            second_text_prefix = "an average increase of  "
+            second_text_cagr = f"{cagr:+.1f}%"
+            second_text_suffix = "  per year."
+            ax_sum.text(0.20, 0.48, first_text,
+                        fontsize=10, color=TEXT_DARK, fontweight="500",
+                        ha="left", va="center")
+            ax_sum.text(0.20, 0.25, second_text_prefix,
+                        fontsize=10, color=TEXT_DARK, fontweight="500",
+                        ha="left", va="center")
+            # Place CAGR coloured chunk after the prefix
+            ax_sum.text(0.445, 0.25, second_text_cagr,
+                        fontsize=11, color=cagr_color, fontweight="800",
+                        ha="left", va="center")
+            ax_sum.text(0.525, 0.25, second_text_suffix,
+                        fontsize=10, color=TEXT_DARK, fontweight="500",
+                        ha="left", va="center")
+
+    # Source line + AI disclaimer at the very bottom
+    fig.text(0.5, 0.040,
              f"Source:  https://www.set.or.th/th/market/product/stock/quote/{symbol}/news",
              fontsize=8, color=MID_BLUE, ha="center", style="italic")
     fig.text(0.5, 0.020,
@@ -371,10 +427,10 @@ def make_chart(
              fontsize=8, color=TEXT_MUTED, ha="center", style="italic",
              fontweight="500")
 
-    # Save to bytes
+    # Save to bytes — keep dark canvas across the saved PNG
     buf = io.BytesIO()
     plt.savefig(buf, format="png", dpi=130,
-                facecolor="white", bbox_inches="tight", pad_inches=0.25)
+                facecolor=DARK_BG, bbox_inches="tight", pad_inches=0.25)
     plt.close(fig)
     return buf.getvalue()
 
