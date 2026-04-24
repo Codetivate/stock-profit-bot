@@ -32,6 +32,29 @@ INNER_SLEEP="${INNER_SLEEP:-10}"
 OUTER_SLEEP="${OUTER_SLEEP:-180}"
 THROTTLE_SLEEP="${THROTTLE_SLEEP:-900}"
 
+# "Golden window" timing attack: capacity releases from Oracle tend
+# to cluster around UTC 00:00 / 06:00 / 12:00 / 18:00 / 22:00 as
+# other tenants' reservations expire or US/EU workloads wind down.
+# Outside those windows we retry normally; inside a ±15 minute band
+# we retry every 30 s to race other hunters for the slot.
+GOLDEN_HOURS=(0 6 12 18 22)
+GOLDEN_INNER_SLEEP=3      # between shape attempts in golden window
+GOLDEN_OUTER_SLEEP=30     # between cycles in golden window
+GOLDEN_BAND_MINUTES=15    # ± around the hour
+
+in_golden_window() {
+    local h=$(date -u +%-H)
+    local m=$(date -u +%-M)
+    for gh in "${GOLDEN_HOURS[@]}"; do
+        local diff=$(( h - gh ))
+        # within ± 15 min of a golden hour (handles :45-:59 and :00-:15)
+        if [ "$h" = "$gh" ] && [ "$m" -le "$GOLDEN_BAND_MINUTES" ]; then return 0; fi
+        local prev=$(( (gh - 1 + 24) % 24 ))
+        if [ "$h" = "$prev" ] && [ "$m" -ge $((60 - GOLDEN_BAND_MINUTES)) ]; then return 0; fi
+    done
+    return 1
+}
+
 # Shape ladder: try biggest first (in case capacity opened), fall back to
 # progressively smaller configs. A1.Flex requires ocpus ≥ 1 and
 # memoryInGBs between ocpus*1 and ocpus*64, so 1/1 is the absolute floor.
@@ -215,8 +238,13 @@ while true; do
         fi
 
         if echo "$OUT" | grep -qiE "out of host capacity|InternalError"; then
-            echo "     ⏳ no capacity at this size — next shape"
-            sleep "$INNER_SLEEP"
+            if in_golden_window; then
+                echo "     ⏳ no capacity — GOLDEN WINDOW fast retry in ${GOLDEN_INNER_SLEEP}s"
+                sleep "$GOLDEN_INNER_SLEEP"
+            else
+                echo "     ⏳ no capacity at this size — next shape"
+                sleep "$INNER_SLEEP"
+            fi
             continue
         fi
 
@@ -228,6 +256,11 @@ while true; do
         exit 1
     done
 
-    echo "  all sizes tried — waiting ${OUTER_SLEEP}s for next cycle"
-    sleep "$OUTER_SLEEP"
+    if in_golden_window; then
+        echo "  all sizes tried — GOLDEN WINDOW fast cycle in ${GOLDEN_OUTER_SLEEP}s"
+        sleep "$GOLDEN_OUTER_SLEEP"
+    else
+        echo "  all sizes tried — waiting ${OUTER_SLEEP}s for next cycle"
+        sleep "$OUTER_SLEEP"
+    fi
 done
