@@ -194,17 +194,18 @@ def make_chart(
              fontsize=10, color=TEXT_MUTED, fontweight="500",
              style="italic")
 
-    ax_tbl = fig.add_axes([0.03, 0.225, 0.94, 0.45])
+    ax_tbl = fig.add_axes([0.03, 0.080, 0.94, 0.61])
     ax_tbl.set_xlim(0, 10)
     ax_tbl.set_ylim(0, 10)
     ax_tbl.axis("off")
     ax_tbl.set_facecolor(DARK_BG)
 
-    # Get years sorted newest first for table
+    # Get years sorted newest first for table. Show up to 6 years —
+    # the practical cap dictated by SET's 5-year news-search window
+    # plus the current partial year.
     table_years = sorted(history.keys(), reverse=True)
-    # Show max 4 years
-    if len(table_years) > 4:
-        table_years = table_years[:4]
+    if len(table_years) > 6:
+        table_years = table_years[:6]
 
     # Table layout
     # Columns: Year | Q1 | Q2 | Q3 | Q4 | Sum
@@ -226,9 +227,12 @@ def make_chart(
     # ─── Data rows ───
     # Each cell shows:
     #   Value (big)
-    #   YoY% (green/red, vs same Q last year)
-    #   QoQ% (gray/subtle, vs prev Q same year)
-    row_h = 2.0
+    #   YoY% (green/red)
+    #   QoQ% (green/red)
+    # row_h shrinks when there are 5+ years so everything fits under the
+    # header; text offsets scale with y_scale so spacing stays balanced.
+    row_h = 2.0 if n_rows <= 4 else (8.2 / n_rows)
+    y_scale = row_h / 2.0
     row_gap = 0.1
     y_start = header_y - 0.4
 
@@ -269,11 +273,11 @@ def make_chart(
         # Year column — always light text on dark rows
         year_y_center = row_top - row_h/2 + row_gap/2
         if is_latest_row:
-            ax_tbl.text(col_positions[0], year_y_center + 0.35,
+            ax_tbl.text(col_positions[0], year_y_center + 0.35 * y_scale,
                         f"FY{y}",
                         fontsize=14, color=TEXT_ON_DARK, fontweight="800",
                         ha="center", va="center")
-            ax_tbl.text(col_positions[0], year_y_center - 0.30,
+            ax_tbl.text(col_positions[0], year_y_center - 0.30 * y_scale,
                         "LATEST",
                         fontsize=7.5, color=NAVY,
                         fontweight="800", ha="center", va="center",
@@ -298,7 +302,7 @@ def make_chart(
                 continue
 
             # ─── Line 1: Profit value (MAIN — light text on dark row) ───
-            ax_tbl.text(x, year_y_center + 0.45,
+            ax_tbl.text(x, year_y_center + 0.45 * y_scale,
                         f"{val:,.2f}",
                         fontsize=14 if is_latest_row else 12.5,
                         color=TEXT_ON_DARK,
@@ -311,7 +315,7 @@ def make_chart(
             if prior_y_val is not None and prior_y_val > 0:
                 yoy = (val - prior_y_val) / prior_y_val * 100
                 yoy_c = GREEN if yoy >= 0 else RED
-                ax_tbl.text(x, year_y_center - 0.05,
+                ax_tbl.text(x, year_y_center - 0.05 * y_scale,
                             f"yoy  {yoy:+.1f}%",
                             fontsize=9.5, color=yoy_c,
                             fontweight="700",
@@ -322,7 +326,7 @@ def make_chart(
             if prev_q_val is not None and prev_q_val > 0:
                 qoq = (val - prev_q_val) / prev_q_val * 100
                 qoq_c = GREEN if qoq >= 0 else RED
-                ax_tbl.text(x, year_y_center - 0.55,
+                ax_tbl.text(x, year_y_center - 0.55 * y_scale,
                             f"qoq  {qoq:+.1f}%",
                             fontsize=8.5, color=qoq_c,
                             fontweight="600",
@@ -333,7 +337,7 @@ def make_chart(
         x = col_positions[5]
         if total is not None:
             # Value (larger to emphasize yearly total)
-            ax_tbl.text(x, year_y_center + 0.35,
+            ax_tbl.text(x, year_y_center + 0.35 * y_scale,
                         f"{total:,.2f}",
                         fontsize=15 if is_latest_row else 13,
                         color=TEXT_ON_DARK,
@@ -346,7 +350,7 @@ def make_chart(
             if prior_total is not None and prior_total > 0:
                 yoy_t = (total - prior_total) / prior_total * 100
                 yoy_c = GREEN if yoy_t >= 0 else RED
-                ax_tbl.text(x, year_y_center - 0.25,
+                ax_tbl.text(x, year_y_center - 0.25 * y_scale,
                             f"yoy  {yoy_t:+.1f}%",
                             fontsize=10.5, color=yoy_c,
                             fontweight="700",
@@ -357,66 +361,6 @@ def make_chart(
         ax_tbl.plot([x_divider, x_divider],
                     [header_y - 0.1, y_start - n_rows * row_h + row_gap],
                     color=DIVIDER_ON_DARK, linewidth=0.4, alpha=0.6, zorder=0)
-
-    # Legend under the table
-    fig.text(0.5, 0.205,
-             "yoy = vs same quarter last year    ·    qoq = vs previous quarter",
-             fontsize=9, color=TEXT_MUTED, ha="center", fontweight="500")
-
-    # Summary narrative card — CAGR across the years ingested
-    table_years_sorted = sorted(table_years)
-    annual_totals = [history[y].sum() for y in table_years_sorted
-                     if history[y].sum() is not None]
-    if len(annual_totals) >= 2:
-        first_val = annual_totals[0]
-        last_val = annual_totals[-1]
-        years_span = len(annual_totals) - 1
-        if years_span > 0 and first_val > 0:
-            cagr = ((last_val / first_val) ** (1 / years_span) - 1) * 100
-            cagr_color = GREEN if cagr >= 0 else RED
-
-            # Card container
-            ax_sum = fig.add_axes([0.05, 0.075, 0.90, 0.115])
-            ax_sum.set_xlim(0, 1); ax_sum.set_ylim(0, 1); ax_sum.axis("off")
-            ax_sum.add_patch(FancyBboxPatch(
-                (0.0, 0.0), 1.0, 1.0,
-                boxstyle="round,pad=0.02",
-                linewidth=1.2,
-                facecolor=SUMMARY_BG,
-                edgecolor=SUMMARY_BORDER,
-            ))
-            # Blue circle icon on the left — drawn bar-chart mark
-            # (three ascending rectangles) instead of an emoji so it
-            # renders on fonts without glyph support.
-            ax_sum.add_patch(plt.Circle((0.075, 0.5), 0.085,
-                                         facecolor=MID_BLUE,
-                                         edgecolor="none"))
-            for i, h_bar in enumerate([0.04, 0.07, 0.10]):
-                ax_sum.add_patch(Rectangle(
-                    (0.050 + i*0.018, 0.45), 0.013, h_bar,
-                    facecolor="white", edgecolor="none"))
-            # Heading + narrative
-            ax_sum.text(0.20, 0.73, "SUMMARY",
-                        fontsize=12, color=MID_BLUE, fontweight="800",
-                        ha="left", va="center")
-            first_text = (f"Net profit grew from {first_val:,.2f} MB to "
-                          f"{last_val:,.2f} MB over {years_span} years,")
-            second_text_prefix = "an average increase of  "
-            second_text_cagr = f"{cagr:+.1f}%"
-            second_text_suffix = "  per year."
-            ax_sum.text(0.20, 0.48, first_text,
-                        fontsize=10, color=TEXT_DARK, fontweight="500",
-                        ha="left", va="center")
-            ax_sum.text(0.20, 0.25, second_text_prefix,
-                        fontsize=10, color=TEXT_DARK, fontweight="500",
-                        ha="left", va="center")
-            # Place CAGR coloured chunk after the prefix
-            ax_sum.text(0.445, 0.25, second_text_cagr,
-                        fontsize=11, color=cagr_color, fontweight="800",
-                        ha="left", va="center")
-            ax_sum.text(0.525, 0.25, second_text_suffix,
-                        fontsize=10, color=TEXT_DARK, fontweight="500",
-                        ha="left", va="center")
 
     # Source line + AI disclaimer at the very bottom
     fig.text(0.5, 0.040,
