@@ -349,15 +349,21 @@ def make_chart(
                     [header_y - 0.1, y_start - n_rows * row_h + row_gap],
                     color=GRID, linewidth=0.3, alpha=0.5, zorder=0)
 
-    # Footer — source + AI disclaimer
-    fig.text(0.5, 0.055,
+    # Footer — source attribution + direct SET URL + AI disclaimer.
+    # URL points to the per-symbol news page so the reader can open the
+    # source filings directly (non-clickable in the PNG, but printable).
+    fig.text(0.5, 0.060,
              "Source: SET  ·  Net profit attributable to shareholders",
              fontsize=8, color=TEXT_MUTED, ha="center", style="italic")
+    fig.text(0.5, 0.038,
+             f"https://www.set.or.th/th/market/product/stock/quote/{symbol}/news",
+             fontsize=7.5, color=MID_BLUE, ha="center", style="italic")
 
-    # AI-generated content disclaimer (Claude-style wording)
-    fig.text(0.5, 0.025,
-             "AI-generated content may contain errors. "
-             "Please double-check important information.",
+    # AI-generated content disclaimer — Claude-style wording ("mistakes",
+    # not "errors") so it reads like the notice users already see under
+    # AI-assistant outputs.
+    fig.text(0.5, 0.015,
+             "AI can make mistakes. Please double-check responses.",
              fontsize=8, color=TEXT_MUTED, ha="center", style="italic",
              fontweight="500")
 
