@@ -1,0 +1,232 @@
+{
+  "schema_version": 1,
+  "symbol": "NYT",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-19",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 85.734,
+      "Q2": 57.737,
+      "Q3": 38.102,
+      "Q4": 61.069702000000014
+    },
+    "2565": {
+      "Q1": 53.547,
+      "Q2": 41.936,
+      "Q3": 63.886,
+      "Q4": 91.75359499999999
+    },
+    "2566": {
+      "Q1": 105.102,
+      "Q2": 111.92,
+      "Q3": 123.329,
+      "Q4": 160.56653999999992
+    },
+    "2567": {
+      "Q1": 158.666,
+      "Q2": 101.047,
+      "Q3": null,
+      "Q4": null
+    },
+    "2568": {
+      "Q1": 93.587,
+      "Q2": 97.287,
+      "Q3": 99.578,
+      "Q4": 327.36493399999995
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-11",
+      "news_id": "2021122075",
+      "raw_path": "NYT/financials/2564/9M/source.zip",
+      "sha256": "cac7bb74f29eeb51d0447e391143778b374c84e0c3140c984a2208af702517b9",
+      "ingested_at": "2026-04-23T23:13:48+00:00",
+      "shareholder_profit": 38.102
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-21",
+      "news_id": "2022018391",
+      "raw_path": "NYT/financials/2564/FY/source.zip",
+      "sha256": "607161ae5ea77dac7a1bea66ee469ac9f5a79c2c8ac540ea2abafdaf11ead7ef",
+      "ingested_at": "2026-04-23T23:13:43+00:00",
+      "shareholder_profit": 242.642702
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-10",
+      "news_id": "2021086426",
+      "raw_path": "NYT/financials/2564/H1/source.zip",
+      "sha256": "7f5418638b53baadac1d9a36992d7654ec4d4c74762b3a69786f8a49c53c2d34",
+      "ingested_at": "2026-04-23T23:13:52+00:00",
+      "shareholder_profit": 57.737
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-12",
+      "news_id": "2021054979",
+      "raw_path": "NYT/financials/2564/Q1/source.zip",
+      "sha256": "2703d90165528338c181d89ddc311e769f708ece918c0b3c58d63a4a3f0ed55e",
+      "ingested_at": "2026-04-23T23:13:57+00:00",
+      "shareholder_profit": 85.734
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-10",
+      "news_id": "2022132529",
+      "raw_path": "NYT/financials/2565/9M/source.zip",
+      "sha256": "66bf406406cc68b482c3d76dcb6733241a3800ae1600ab58697c8b4ba191f620",
+      "ingested_at": "2026-04-23T23:13:29+00:00",
+      "shareholder_profit": 63.886
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-23",
+      "news_id": "2023021184",
+      "raw_path": "NYT/financials/2565/FY/source.zip",
+      "sha256": "5c4ae6bd1bb85067452c67f9523e023b1ed5f6dc403963aecd096511b1d29a5d",
+      "ingested_at": "2026-04-23T23:13:25+00:00",
+      "shareholder_profit": 251.122595
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-08",
+      "news_id": "2022091180",
+      "raw_path": "NYT/financials/2565/H1/source.zip",
+      "sha256": "20c899c2a839ed6b68b7c882fd60567b2aa083e59602c27aab9da8cfed170f3f",
+      "ingested_at": "2026-04-23T23:13:34+00:00",
+      "shareholder_profit": 41.936
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-12",
+      "news_id": "2022060422",
+      "raw_path": "NYT/financials/2565/Q1/source.zip",
+      "sha256": "228365275456d8fd950ee63773ddcbc86080c85ff25ebb40d8ba82a0568d8773",
+      "ingested_at": "2026-04-23T23:13:38+00:00",
+      "shareholder_profit": 53.547
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-09",
+      "news_id": "16994859290611",
+      "raw_path": "NYT/financials/2566/9M/source.zip",
+      "sha256": "f02e250b9f6a3795160c6ed5b183c632334534f163ab3f378bd9d35cc5934239",
+      "ingested_at": "2026-04-23T23:13:11+00:00",
+      "shareholder_profit": 123.329
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-22",
+      "news_id": "17085582122991",
+      "raw_path": "NYT/financials/2566/FY/source.zip",
+      "sha256": "cfa62b28391f336dd57adc81810dee94c1d7800639229e7c2b66723a6f46d2c6",
+      "ingested_at": "2026-04-23T23:13:06+00:00",
+      "shareholder_profit": 500.91754
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-10",
+      "news_id": "16916230325371",
+      "raw_path": "NYT/financials/2566/H1/source.zip",
+      "sha256": "cbb6aea6c8736f3f04f3efeecdbdcb3f70212a0fba83cef5910441d0751a5cdc",
+      "ingested_at": "2026-04-23T23:13:16+00:00",
+      "shareholder_profit": 111.92
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-10",
+      "news_id": "16836750115791",
+      "raw_path": "NYT/financials/2566/Q1/source.zip",
+      "sha256": "b85c59bc3180b09bd726e48e3b7a4799c9cabb1f1cb6ff6c1d173d4b7b268104",
+      "ingested_at": "2026-04-23T23:13:20+00:00",
+      "shareholder_profit": 105.102
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-20",
+      "news_id": "17400015611771",
+      "raw_path": "NYT/financials/2567/FY/source.zip",
+      "sha256": "136224e23f3385a17be3b1b33f6bff7c39ffeaf79624e82a8011ca926063740c",
+      "ingested_at": "2026-04-23T23:12:48+00:00",
+      "shareholder_profit": 498.201691
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-08",
+      "news_id": "17230734210941",
+      "raw_path": "NYT/financials/2567/H1/source.zip",
+      "sha256": "df0ea1ca6da1fc63f2b2ab4e9490f7e4e4a115a6ceda11c18e2a3ae7cdb84c83",
+      "ingested_at": "2026-04-23T23:12:57+00:00",
+      "shareholder_profit": 101.047
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-07",
+      "news_id": "17150382075991",
+      "raw_path": "NYT/financials/2567/Q1/source.zip",
+      "sha256": "1bf866ba288762905a442e711691c92d214403ae8ac2814568f9fd76150f66e7",
+      "ingested_at": "2026-04-23T23:13:02+00:00",
+      "shareholder_profit": 158.666
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-06",
+      "news_id": "17623828457021",
+      "raw_path": "NYT/financials/2568/9M/source.zip",
+      "sha256": "0b03210dcac0f29e014c33842d9e255ca1ced7e5f5462263df22c6b3b88224bd",
+      "ingested_at": "2026-04-23T23:12:35+00:00",
+      "shareholder_profit": 99.578
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-19",
+      "news_id": "17714553172601",
+      "raw_path": "NYT/financials/2568/FY/source.zip",
+      "sha256": "39e5f49c334106e18872947eff8a84147c0725d71253acbc9e1f6abb7e6fc991",
+      "ingested_at": "2026-04-23T23:12:30+00:00",
+      "shareholder_profit": 617.816934
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-07",
+      "news_id": "17545237058051",
+      "raw_path": "NYT/financials/2568/H1/source.zip",
+      "sha256": "d4a74226a6c4876796aa902a58ea69997fc389a1fc99341614045f8c3618e045",
+      "ingested_at": "2026-04-23T23:12:39+00:00",
+      "shareholder_profit": 97.287
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-08",
+      "news_id": "17466601069411",
+      "raw_path": "NYT/financials/2568/Q1/source.zip",
+      "sha256": "841454a96c14da9e58f650ddf25b00452127d54992a68e8b979548e434e9eaa5",
+      "ingested_at": "2026-04-23T23:12:44+00:00",
+      "shareholder_profit": 93.587
+    }
+  ]
+}

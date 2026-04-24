@@ -1,0 +1,242 @@
+{
+  "schema_version": 1,
+  "symbol": "SAMCO",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-24",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 9.471,
+      "Q2": 20.521,
+      "Q3": 4.646,
+      "Q4": 7.507548999999998
+    },
+    "2565": {
+      "Q1": 0.655,
+      "Q2": 23.857,
+      "Q3": -1.522,
+      "Q4": 89.611855
+    },
+    "2566": {
+      "Q1": 0.592,
+      "Q2": 17.515,
+      "Q3": -2.836,
+      "Q4": 19.429536
+    },
+    "2567": {
+      "Q1": 12.526,
+      "Q2": -29.031,
+      "Q3": -15.586,
+      "Q4": -18.678078000000006
+    },
+    "2568": {
+      "Q1": -7.267,
+      "Q2": -3.918,
+      "Q3": -20.24,
+      "Q4": 11.960779999999996
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-09",
+      "news_id": "2021119503",
+      "raw_path": "SAMCO/financials/2564/9M/source.zip",
+      "sha256": "721ceb58e2c5a4d2714bc80b32bddf53a602aab3798a52bb973ec735a7031359",
+      "ingested_at": "2026-04-24T01:41:34+00:00",
+      "shareholder_profit": 4.646
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-18",
+      "news_id": "2022017507",
+      "raw_path": "SAMCO/financials/2564/FY/source.zip",
+      "sha256": "01f5f54b17c5309d84833eab6781b56d2b91ce5ecd93245a09cbe223a79959ed",
+      "ingested_at": "2026-04-24T01:41:30+00:00",
+      "shareholder_profit": 42.145549
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-10",
+      "news_id": "2021086742",
+      "raw_path": "SAMCO/financials/2564/H1/source.zip",
+      "sha256": "bf4abdba3fc03c555bc2573283cc68f619bb3b655dd8921f96e8740ea5cd217b",
+      "ingested_at": "2026-04-24T01:41:39+00:00",
+      "shareholder_profit": 20.521
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-11",
+      "news_id": "2021053537",
+      "raw_path": "SAMCO/financials/2564/Q1/source.zip",
+      "sha256": "14290ab14a24623362a023fe3aaa7ef9466811258992d8fdf54f008bfe980cff",
+      "ingested_at": "2026-04-24T01:41:43+00:00",
+      "shareholder_profit": 9.471
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-08",
+      "news_id": "2022129453",
+      "raw_path": "SAMCO/financials/2565/9M/source.zip",
+      "sha256": "933ef28ddb418e7fc6e2f7e4ac302e131b736da128c551712bca15d4b932b477",
+      "ingested_at": "2026-04-24T01:41:16+00:00",
+      "shareholder_profit": -1.522
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-21",
+      "news_id": "2023018531",
+      "raw_path": "SAMCO/financials/2565/FY/source.zip",
+      "sha256": "7df64d179238c17e85d5ac21ed36ce073a3762c8d94b4b585db50095eb0412b0",
+      "ingested_at": "2026-04-24T01:41:12+00:00",
+      "shareholder_profit": 112.601855
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-09",
+      "news_id": "2022091835",
+      "raw_path": "SAMCO/financials/2565/H1/source.zip",
+      "sha256": "0783c083c281cbe02de78b19acf3971264a448ff37101268eb4382ea057062bf",
+      "ingested_at": "2026-04-24T01:41:21+00:00",
+      "shareholder_profit": 23.857
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-10",
+      "news_id": "2022056672",
+      "raw_path": "SAMCO/financials/2565/Q1/source.zip",
+      "sha256": "c1776db5faee081df66c94db695c858d251317d0bdfa1013c611529f61f8f31c",
+      "ingested_at": "2026-04-24T01:41:25+00:00",
+      "shareholder_profit": 0.655
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-07",
+      "news_id": "16993142002401",
+      "raw_path": "SAMCO/financials/2566/9M/source.zip",
+      "sha256": "abf8eef83ea0d66e74d6ee892ad9bb400c6a9485056c7f6234018a967ca2bee7",
+      "ingested_at": "2026-04-24T01:40:58+00:00",
+      "shareholder_profit": -2.836
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-20",
+      "news_id": "17083827476701",
+      "raw_path": "SAMCO/financials/2566/FY/source.zip",
+      "sha256": "ed00b6307e6b68e801ac40a51f8434ba270f2b36e08721dac6557292d705e261",
+      "ingested_at": "2026-04-24T01:40:53+00:00",
+      "shareholder_profit": 34.700536
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-08",
+      "news_id": "16914518665091",
+      "raw_path": "SAMCO/financials/2566/H1/source.zip",
+      "sha256": "82a3977a99fca3c056ce4d2a89405698ee4e02c72269694cbf5b739abbfeb987",
+      "ingested_at": "2026-04-24T01:41:02+00:00",
+      "shareholder_profit": 17.515
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-09",
+      "news_id": "16835884701231",
+      "raw_path": "SAMCO/financials/2566/Q1/source.zip",
+      "sha256": "ec711172402892de378325f921efbc9e29f5f4d81ef0bca0c0c1dfa276218b1e",
+      "ingested_at": "2026-04-24T01:41:07+00:00",
+      "shareholder_profit": 0.592
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-11",
+      "news_id": "17312815644801",
+      "raw_path": "SAMCO/financials/2567/9M/source.zip",
+      "sha256": "0e29b02c4c029454e28f738a917735c05eada87322dd1fc73118545e253f28c8",
+      "ingested_at": "2026-04-24T01:40:40+00:00",
+      "shareholder_profit": -15.586
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-20",
+      "news_id": "17400015620311",
+      "raw_path": "SAMCO/financials/2567/FY/source.zip",
+      "sha256": "61c46db4c3d832ff341243bfd0dab195496a243aee81486e8b457afc827dce75",
+      "ingested_at": "2026-04-24T01:40:36+00:00",
+      "shareholder_profit": -50.769078
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-06",
+      "news_id": "17229013585701",
+      "raw_path": "SAMCO/financials/2567/H1/source.zip",
+      "sha256": "30d1ac071f8d7d2ec1e34999044b5a1afd4901e458a93ad15f0c426dd6f3ce73",
+      "ingested_at": "2026-04-24T01:40:44+00:00",
+      "shareholder_profit": -29.031
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-07",
+      "news_id": "17150382059121",
+      "raw_path": "SAMCO/financials/2567/Q1/source.zip",
+      "sha256": "e14efea5ae398542bc533c334c5fdb29d16c1764e50b86e134f6e8884fb59fca",
+      "ingested_at": "2026-04-24T01:40:49+00:00",
+      "shareholder_profit": 12.526
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-04",
+      "news_id": "17622134082181",
+      "raw_path": "SAMCO/financials/2568/9M/source.zip",
+      "sha256": "993310b5ba36922ca7e58534044b2515c2b365dbb504fc62da7c53b11fb31a35",
+      "ingested_at": "2026-04-24T01:40:21+00:00",
+      "shareholder_profit": -20.24
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-24",
+      "news_id": "17718892136651",
+      "raw_path": "SAMCO/financials/2568/FY/source.zip",
+      "sha256": "023991025733a685a5e0b2ab7f35be7cd6a1cab546744247604d515764a95ac0",
+      "ingested_at": "2026-04-24T01:40:16+00:00",
+      "shareholder_profit": -19.46422
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-05",
+      "news_id": "17543520106691",
+      "raw_path": "SAMCO/financials/2568/H1/source.zip",
+      "sha256": "b8406a84292d81b177f4ec0bbda5654e078c679de42bfd5c5f1dd441a4b6afb2",
+      "ingested_at": "2026-04-24T01:40:27+00:00",
+      "shareholder_profit": -3.918
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-06",
+      "news_id": "17464817065191",
+      "raw_path": "SAMCO/financials/2568/Q1/source.zip",
+      "sha256": "711b9ec89fc67e0b9be03fe0109b83f5f079984856d8de7dcdceddcef281c309",
+      "ingested_at": "2026-04-24T01:40:31+00:00",
+      "shareholder_profit": -7.267
+    }
+  ]
+}

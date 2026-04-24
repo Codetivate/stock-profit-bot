@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "symbol": "BLISS",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-25",
+  "quarterly_history": {
+    "2567": {
+      "Q1": 0.351,
+      "Q2": -32.142,
+      "Q3": -17.254,
+      "Q4": -43.562405999999996
+    },
+    "2568": {
+      "Q1": -5.597,
+      "Q2": -9.215,
+      "Q3": -42.906,
+      "Q4": -6.528601000000002
+    }
+  },
+  "sources": [
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-07",
+      "news_id": "17309360558071",
+      "raw_path": "BLISS/financials/2567/9M/source.zip",
+      "sha256": "913a3179820571ccbb8924b70af3ddfd09ca40aae969671231e7d70cadabc882",
+      "ingested_at": "2026-04-23T16:04:04+00:00",
+      "shareholder_profit": -17.254
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-28",
+      "news_id": "17406928464341",
+      "raw_path": "BLISS/financials/2567/FY/source.zip",
+      "sha256": "fd452629b6d9444f1dd76a3fbf3e00533f5008d943b77d2b3b929d398403bf6d",
+      "ingested_at": "2026-04-23T16:04:00+00:00",
+      "shareholder_profit": -92.607406
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-08",
+      "news_id": "17230734210781",
+      "raw_path": "BLISS/financials/2567/H1/source.zip",
+      "sha256": "a8e7467dabe47a34463312b6bb2ff9096085d10149dc56650657e0f5a513a07c",
+      "ingested_at": "2026-04-23T16:04:10+00:00",
+      "shareholder_profit": -32.142
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-15",
+      "news_id": "17157257458891",
+      "raw_path": "BLISS/financials/2567/Q1/source.zip",
+      "sha256": "d73de8092e62537815796f76e74c58846a96565a37c6adbe7db3a0b495ba6e35",
+      "ingested_at": "2026-04-23T16:04:14+00:00",
+      "shareholder_profit": 0.351
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-07",
+      "news_id": "17624721993961",
+      "raw_path": "BLISS/financials/2568/9M/source.zip",
+      "sha256": "858209bab59a7b5fa5767abc5196369cf0d0d1752370aabe502fb5eafd22e089",
+      "ingested_at": "2026-04-23T16:03:45+00:00",
+      "shareholder_profit": -42.906
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-25",
+      "news_id": "17719707181781",
+      "raw_path": "BLISS/financials/2568/FY/source.zip",
+      "sha256": "c7da624abc5c3b3587d76a9949bca2f4e5e3de27036d09ecaa8609c8ae1da6ca",
+      "ingested_at": "2026-04-23T16:03:40+00:00",
+      "shareholder_profit": -64.246601
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-07",
+      "news_id": "17545237058701",
+      "raw_path": "BLISS/financials/2568/H1/source.zip",
+      "sha256": "2686d63dc658be42af65ef8cd7632815f72d343ae66f3d51a3a92097a54cffea",
+      "ingested_at": "2026-04-23T16:03:49+00:00",
+      "shareholder_profit": -9.215
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-08",
+      "news_id": "17466601066371",
+      "raw_path": "BLISS/financials/2568/Q1/source.zip",
+      "sha256": "a4f29b3293247dcf9c93b5978bf36c6dbcf199b1d97730dfab8c69f4450191f6",
+      "ingested_at": "2026-04-23T16:03:55+00:00",
+      "shareholder_profit": -5.597
+    }
+  ]
+}

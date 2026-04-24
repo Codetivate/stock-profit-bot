@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "symbol": "PRAKIT",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2025-11-12",
+  "quarterly_history": {
+    "2564": {
+      "Q1": -5.929467,
+      "Q2": 7.72652,
+      "Q3": null,
+      "Q4": null
+    },
+    "2565": {
+      "Q1": -13.223422,
+      "Q2": -7.563844,
+      "Q3": -23.298692,
+      "Q4": null
+    },
+    "2566": {
+      "Q1": 318.10401,
+      "Q2": -27.613179,
+      "Q3": 261.965742,
+      "Q4": null
+    },
+    "2567": {
+      "Q1": -35.994376,
+      "Q2": -16.580892,
+      "Q3": -13.610995999999986,
+      "Q4": null
+    },
+    "2568": {
+      "Q1": -13.288629,
+      "Q2": -9.539376,
+      "Q3": -6.026188,
+      "Q4": null
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-13",
+      "news_id": "2021089215",
+      "raw_path": "PRAKIT/financials/2564/H1/source.zip",
+      "sha256": "55ee00ab60de2406194ac8efdd6ec11c63aa2316f96e9b12102e2c6b0f5ce79a",
+      "ingested_at": "2026-04-24T00:15:10+00:00",
+      "shareholder_profit": 7.72652
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-14",
+      "news_id": "2021057629",
+      "raw_path": "PRAKIT/financials/2564/Q1/source.zip",
+      "sha256": "841d957e1d376ddb34d86b1fc97083e85950332e572ca77b23ae952ec87143d3",
+      "ingested_at": "2026-04-24T00:15:15+00:00",
+      "shareholder_profit": -5.929467
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-11",
+      "news_id": "2022133523",
+      "raw_path": "PRAKIT/financials/2565/9M/source.zip",
+      "sha256": "907de53e9a90f1e867557ba51a017a1e983fb166de71452ed42a44c7f9a7bfcd",
+      "ingested_at": "2026-04-24T00:14:46+00:00",
+      "shareholder_profit": -23.298692
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-15",
+      "news_id": "2022097258",
+      "raw_path": "PRAKIT/financials/2565/H1/source.zip",
+      "sha256": "2a20e3f5f9fdcd04b3b146918fd6a5cc6d6b9fd5fd120138431531c729a3a95e",
+      "ingested_at": "2026-04-24T00:14:51+00:00",
+      "shareholder_profit": -7.563844
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-13",
+      "news_id": "2022061136",
+      "raw_path": "PRAKIT/financials/2565/Q1/source.zip",
+      "sha256": "54f75a9dc6dc624c0f12cbdfc1a8473ae8d0f2e3aab1590c149964ff44581590",
+      "ingested_at": "2026-04-24T00:14:55+00:00",
+      "shareholder_profit": -13.223422
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-13",
+      "news_id": "16998304521791",
+      "raw_path": "PRAKIT/financials/2566/9M/source.zip",
+      "sha256": "8b52aca0b53dcb885a974365c7c839f8dece59899f8f0a1526eddc412372b1bb",
+      "ingested_at": "2026-04-24T00:14:28+00:00",
+      "shareholder_profit": 261.965742
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-09",
+      "news_id": "16915381916061",
+      "raw_path": "PRAKIT/financials/2566/H1/source.zip",
+      "sha256": "363b2e1e33b2b5a75b895dba9be183bbe71372938acc68da5cc400ed6c4f6bed",
+      "ingested_at": "2026-04-24T00:14:32+00:00",
+      "shareholder_profit": -27.613179
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-12",
+      "news_id": "16838458826551",
+      "raw_path": "PRAKIT/financials/2566/Q1/source.zip",
+      "sha256": "57687e2753bb75a9d989674abf40d8b0dc52f839b3a5a658be5e483966fccf02",
+      "ingested_at": "2026-04-24T00:14:37+00:00",
+      "shareholder_profit": 318.10401
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-13",
+      "news_id": "17314477430571",
+      "raw_path": "PRAKIT/financials/2567/9M/source.zip",
+      "sha256": "63dab5dad3532641271dbe005b62c3eff6b4a9752cc4ebc9cc4b07010e5e7b9d",
+      "ingested_at": "2026-04-24T00:14:09+00:00",
+      "shareholder_profit": -13.610995999999986
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990124481",
+      "raw_path": "PRAKIT/financials/2567/H1/source.zip",
+      "sha256": "b0b1f30808258bbefa706916170daae30f05a76272c8aebd226668aa7c4007cb",
+      "ingested_at": "2026-04-24T00:14:13+00:00",
+      "shareholder_profit": -16.580892
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-10",
+      "news_id": "17152924568311",
+      "raw_path": "PRAKIT/financials/2567/Q1/source.zip",
+      "sha256": "781e0605298ffc7a93daf66331a63eff93b074520fe3ea530cba64f4d6334434",
+      "ingested_at": "2026-04-24T00:14:18+00:00",
+      "shareholder_profit": -35.994376
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-12",
+      "news_id": "17629001437731",
+      "raw_path": "PRAKIT/financials/2568/9M/source.zip",
+      "sha256": "db68aab1b4525d5ac7e981a5cf941fa10b2c4fb92f33acf9be526e85d276d000",
+      "ingested_at": "2026-04-24T00:13:51+00:00",
+      "shareholder_profit": -6.026188
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229795661",
+      "raw_path": "PRAKIT/financials/2568/H1/source.zip",
+      "sha256": "4c45ee218cf81e4e6203b76c5915b5255c5dd7c141ad67547ed7a92c2c8f6845",
+      "ingested_at": "2026-04-24T00:13:55+00:00",
+      "shareholder_profit": -9.539376
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-14",
+      "news_id": "17471784480351",
+      "raw_path": "PRAKIT/financials/2568/Q1/source.zip",
+      "sha256": "156669ebf9fa42dc3c45707bcb016f952006382a7c123c6610a054f52dbb8e84",
+      "ingested_at": "2026-04-24T00:14:00+00:00",
+      "shareholder_profit": -13.288629
+    }
+  ]
+}

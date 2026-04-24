@@ -1,0 +1,242 @@
+{
+  "schema_version": 1,
+  "symbol": "RSP",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-26",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 15.744,
+      "Q2": -1.286,
+      "Q3": -17.786,
+      "Q4": 32.897569000000004
+    },
+    "2565": {
+      "Q1": 36.244,
+      "Q2": 13.032,
+      "Q3": 9.214,
+      "Q4": 53.49069
+    },
+    "2566": {
+      "Q1": 57.101,
+      "Q2": 8.592,
+      "Q3": 39.378,
+      "Q4": -1.3843109999999967
+    },
+    "2567": {
+      "Q1": 46.546,
+      "Q2": 15.435,
+      "Q3": 42.778,
+      "Q4": 28.929775999999997
+    },
+    "2568": {
+      "Q1": 1.234,
+      "Q2": -15.725,
+      "Q3": 14.018,
+      "Q4": -15.330630999999999
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-11",
+      "news_id": "2021121602",
+      "raw_path": "RSP/financials/2564/9M/source.zip",
+      "sha256": "11cdaf27bc2dc5dcb012584e4b0c731b07fd691b96cc336d0b372e4db6eb3474",
+      "ingested_at": "2026-04-24T01:22:08+00:00",
+      "shareholder_profit": -17.786
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-24",
+      "news_id": "2022021596",
+      "raw_path": "RSP/financials/2564/FY/source.zip",
+      "sha256": "fe0c22c0445e8ce31615cdacee7781a1ba40109bce7d748ac00b2d59e5d5d099",
+      "ingested_at": "2026-04-24T01:22:03+00:00",
+      "shareholder_profit": 29.569569
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-11",
+      "news_id": "2021088020",
+      "raw_path": "RSP/financials/2564/H1/source.zip",
+      "sha256": "e80e94e54b327d9273bd40a0fe2fff304c278a2c6738b387d7b4f7c887249e42",
+      "ingested_at": "2026-04-24T01:22:13+00:00",
+      "shareholder_profit": -1.286
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-13",
+      "news_id": "2021056462",
+      "raw_path": "RSP/financials/2564/Q1/source.zip",
+      "sha256": "61d8e5641f1b721af81ee4d33e6a2a8b886281e1c1522bea20aca77f7555a85a",
+      "ingested_at": "2026-04-24T01:22:18+00:00",
+      "shareholder_profit": 15.744
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-11",
+      "news_id": "2022133697",
+      "raw_path": "RSP/financials/2565/9M/source.zip",
+      "sha256": "3dfd74425fc5d9c6f13c245e724e4ef78238309abf83e9fd55ee6c440f23ad8c",
+      "ingested_at": "2026-04-24T01:21:49+00:00",
+      "shareholder_profit": 9.214
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-23",
+      "news_id": "2023020419",
+      "raw_path": "RSP/financials/2565/FY/source.zip",
+      "sha256": "ab47eb29f6b03d2c00c0e27746f57c8fe8041097519422d28cc4a6f1e504a207",
+      "ingested_at": "2026-04-24T01:21:44+00:00",
+      "shareholder_profit": 111.98069
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-11",
+      "news_id": "2022094777",
+      "raw_path": "RSP/financials/2565/H1/source.zip",
+      "sha256": "e6a33ddd3b9d289507e1e040900c2fdfba04707753d76b12b51c29539f3ad7e5",
+      "ingested_at": "2026-04-24T01:21:54+00:00",
+      "shareholder_profit": 13.032
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-12",
+      "news_id": "2022059584",
+      "raw_path": "RSP/financials/2565/Q1/source.zip",
+      "sha256": "08415ca7c376c4d4f157705afead342be464b1c3dea4b769d9846397050c1ff1",
+      "ingested_at": "2026-04-24T01:21:58+00:00",
+      "shareholder_profit": 36.244
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-14",
+      "news_id": "16999132682881",
+      "raw_path": "RSP/financials/2566/9M/source.zip",
+      "sha256": "71ecd99c96fb552ecf99fe098c0286afd4be4b2ed673de3e28486e29c6a8ba20",
+      "ingested_at": "2026-04-24T01:21:29+00:00",
+      "shareholder_profit": 39.378
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-27",
+      "news_id": "17089869211801",
+      "raw_path": "RSP/financials/2566/FY/source.zip",
+      "sha256": "013152049555e817b40a6572d81cfa7506a7a52a983cdbdd9bd87f5a72048955",
+      "ingested_at": "2026-04-24T01:21:24+00:00",
+      "shareholder_profit": 103.686689
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-09",
+      "news_id": "16915381950771",
+      "raw_path": "RSP/financials/2566/H1/source.zip",
+      "sha256": "aabdddfb1b2e3b54ae27878de674857d44d77623f2e66efccf4b7858427c9897",
+      "ingested_at": "2026-04-24T01:21:34+00:00",
+      "shareholder_profit": 8.592
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-10",
+      "news_id": "16836750087721",
+      "raw_path": "RSP/financials/2566/Q1/source.zip",
+      "sha256": "31ed495ccfac2b298e38214404a686fe003a3ddcc9fafb9990ab2f129fe05624",
+      "ingested_at": "2026-04-24T01:21:39+00:00",
+      "shareholder_profit": 57.101
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361274221",
+      "raw_path": "RSP/financials/2567/9M/source.zip",
+      "sha256": "b16f09f0f27a24c33cce0e8913ba3f8b7b46b686d64a32768b0f6dbb2b60cd30",
+      "ingested_at": "2026-04-24T01:21:10+00:00",
+      "shareholder_profit": 42.778
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-26",
+      "news_id": "17405220977871",
+      "raw_path": "RSP/financials/2567/FY/source.zip",
+      "sha256": "d6e7ca9ee1e923bbd46fea7fe129c583f667525a7c053234de9bff9533ad6449",
+      "ingested_at": "2026-04-24T01:21:05+00:00",
+      "shareholder_profit": 133.688776
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990179851",
+      "raw_path": "RSP/financials/2567/H1/source.zip",
+      "sha256": "bb48707bd1156c497446d23e594e5d2a48198700675761935ce4abbd9b1c3618",
+      "ingested_at": "2026-04-24T01:21:15+00:00",
+      "shareholder_profit": 15.435
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-13",
+      "news_id": "17155537992741",
+      "raw_path": "RSP/financials/2567/Q1/source.zip",
+      "sha256": "00e7318aa0a098d2df3db65ef8c591162dac380715a0a8c41ae5c39e70140010",
+      "ingested_at": "2026-04-24T01:21:20+00:00",
+      "shareholder_profit": 46.546
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-14",
+      "news_id": "17630699584581",
+      "raw_path": "RSP/financials/2568/9M/source.zip",
+      "sha256": "2c8c50ae4c463c2719d9f23a6b084784bc36c58a949f14a3a6f3a34261e73de6",
+      "ingested_at": "2026-04-24T01:20:52+00:00",
+      "shareholder_profit": 14.018
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-26",
+      "news_id": "17720575351701",
+      "raw_path": "RSP/financials/2568/FY/source.zip",
+      "sha256": "93a68a99ed4e2092647aaab2fd10380cf46157654d419f1e9f5669abc099a12d",
+      "ingested_at": "2026-04-24T01:20:47+00:00",
+      "shareholder_profit": -15.803631
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229885071",
+      "raw_path": "RSP/financials/2568/H1/source.zip",
+      "sha256": "f7c25e47d55a662ddf96ffc8360a61c1ecf047e495b83f132a8fbfda72055117",
+      "ingested_at": "2026-04-24T01:20:56+00:00",
+      "shareholder_profit": -15.725
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903584631",
+      "raw_path": "RSP/financials/2568/Q1/source.zip",
+      "sha256": "47a45f9086cbd8a1af06a8b55acce8da55482ddc931c90bfcdbd1924a41ad42f",
+      "ingested_at": "2026-04-24T01:21:01+00:00",
+      "shareholder_profit": 1.234
+    }
+  ]
+}

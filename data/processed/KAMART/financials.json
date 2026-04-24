@@ -1,0 +1,242 @@
+{
+  "schema_version": 1,
+  "symbol": "KAMART",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-26",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 42.957,
+      "Q2": 15.537,
+      "Q3": 173.317,
+      "Q4": 61.06162800000001
+    },
+    "2565": {
+      "Q1": 69.001,
+      "Q2": 49.622,
+      "Q3": 87.585,
+      "Q4": 120.79212199999994
+    },
+    "2566": {
+      "Q1": 157.673,
+      "Q2": 128.944,
+      "Q3": 143.514,
+      "Q4": 230.837222
+    },
+    "2567": {
+      "Q1": 298.156,
+      "Q2": 52.271,
+      "Q3": 174.44,
+      "Q4": 153.09499999999997
+    },
+    "2568": {
+      "Q1": 198.64,
+      "Q2": 146.825,
+      "Q3": 181.425,
+      "Q4": 179.801469
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-11",
+      "news_id": "2021121586",
+      "raw_path": "KAMART/financials/2564/9M/source.zip",
+      "sha256": "b8e757e78fa6cc77b7a994620a448972f007a31a3fe61794fa6b7b7b89fdf082",
+      "ingested_at": "2026-04-23T20:34:32+00:00",
+      "shareholder_profit": 173.317
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-24",
+      "news_id": "2022021433",
+      "raw_path": "KAMART/financials/2564/FY/source.zip",
+      "sha256": "bd8e5200d3fb4934c81fff792023cf6cfe92afb03e7c4749944405d91afd5c54",
+      "ingested_at": "2026-04-23T20:34:27+00:00",
+      "shareholder_profit": 292.872628
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-11",
+      "news_id": "2021087274",
+      "raw_path": "KAMART/financials/2564/H1/source.zip",
+      "sha256": "2d38ada6e08c3ad04c1bc2c012112a76ae98ab234b1a21fe6576b51b1b0cf512",
+      "ingested_at": "2026-04-23T20:34:36+00:00",
+      "shareholder_profit": 15.537
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-13",
+      "news_id": "2021055953",
+      "raw_path": "KAMART/financials/2564/Q1/source.zip",
+      "sha256": "349941c0c5cffef352de52ffbbbf2c32ac5def730079bb26630dedc7081cfe95",
+      "ingested_at": "2026-04-23T20:34:41+00:00",
+      "shareholder_profit": 42.957
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-14",
+      "news_id": "2022135791",
+      "raw_path": "KAMART/financials/2565/9M/source.zip",
+      "sha256": "b450576e4f254d4caedeb12a23affcd654816c2d945e1fbb93d1743830e78874",
+      "ingested_at": "2026-04-23T20:34:13+00:00",
+      "shareholder_profit": 87.585
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-24",
+      "news_id": "2023022389",
+      "raw_path": "KAMART/financials/2565/FY/source.zip",
+      "sha256": "454a22fc14d0db90def5b7f45dae0dd9d69cd7f7804fa8c61e75e3e0fa2cdfa9",
+      "ingested_at": "2026-04-23T20:34:09+00:00",
+      "shareholder_profit": 327.000122
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-11",
+      "news_id": "2022094798",
+      "raw_path": "KAMART/financials/2565/H1/source.zip",
+      "sha256": "e89feb2eac55d0476d37f5ad0b8577bee8c7f6d1e0676e6a6e42ff8605063bd9",
+      "ingested_at": "2026-04-23T20:34:18+00:00",
+      "shareholder_profit": 49.622
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-13",
+      "news_id": "2022061609",
+      "raw_path": "KAMART/financials/2565/Q1/source.zip",
+      "sha256": "c3ad9cf236811b3155333c937f6c06ff9de34abd3f8226a08a964f7aeb564e52",
+      "ingested_at": "2026-04-23T20:34:22+00:00",
+      "shareholder_profit": 69.001
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-13",
+      "news_id": "16998304560791",
+      "raw_path": "KAMART/financials/2566/9M/source.zip",
+      "sha256": "363c9f7915b759b72a21c49e86dbb0b20b6e86a3e9e23a8c619710984e5275a4",
+      "ingested_at": "2026-04-23T20:33:55+00:00",
+      "shareholder_profit": 143.514
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-28",
+      "news_id": "17090750785331",
+      "raw_path": "KAMART/financials/2566/FY/source.zip",
+      "sha256": "321e1afe77d7e40cf9a8e6e37237436dbef21e50404520e9ad3ce7eb52977b28",
+      "ingested_at": "2026-04-23T20:33:51+00:00",
+      "shareholder_profit": 660.968222
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-10",
+      "news_id": "16916230273381",
+      "raw_path": "KAMART/financials/2566/H1/source.zip",
+      "sha256": "58ed39d2cd33b2b301164f4aafe35c1b23ad88d4705bdeac58a45c7b09dd4cd7",
+      "ingested_at": "2026-04-23T20:33:59+00:00",
+      "shareholder_profit": 128.944
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-11",
+      "news_id": "16837584047941",
+      "raw_path": "KAMART/financials/2566/Q1/source.zip",
+      "sha256": "c1b2af82018ff0f2693cc5360f96e6734ae782068f708f1e6111d0db9f50bcaa",
+      "ingested_at": "2026-04-23T20:34:04+00:00",
+      "shareholder_profit": 157.673
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-13",
+      "news_id": "17314477482971",
+      "raw_path": "KAMART/financials/2567/9M/source.zip",
+      "sha256": "2d7848f4b1e28d7aac778a706943135782a77804bdc2eef42392454f7ddeaba6",
+      "ingested_at": "2026-04-23T20:33:36+00:00",
+      "shareholder_profit": 174.44
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-24",
+      "news_id": "17403534183031",
+      "raw_path": "KAMART/financials/2567/FY/source.zip",
+      "sha256": "f3af1281fc98c98bf030380b5ca70d62caf6593899de1e6118a65d3aabba293c",
+      "ingested_at": "2026-04-23T20:33:32+00:00",
+      "shareholder_profit": 677.962
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-14",
+      "news_id": "17235858029671",
+      "raw_path": "KAMART/financials/2567/H1/source.zip",
+      "sha256": "7b979398d0036d0cabc33e437526a14334660eeb1cea88370b5cf52dc1052327",
+      "ingested_at": "2026-04-23T20:33:41+00:00",
+      "shareholder_profit": 52.271
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-13",
+      "news_id": "17155538016381",
+      "raw_path": "KAMART/financials/2567/Q1/source.zip",
+      "sha256": "c7ec707caf89dc8b5dba1a15e8e33671dab430cfe42a1e45b76922a243cc2380",
+      "ingested_at": "2026-04-23T20:33:46+00:00",
+      "shareholder_profit": 298.156
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-12",
+      "news_id": "17629001488461",
+      "raw_path": "KAMART/financials/2568/9M/source.zip",
+      "sha256": "9391d7ccb292a96752047c8f296fd1620a7620ac8dd5a3b950a3376b8d47a35a",
+      "ingested_at": "2026-04-23T20:33:19+00:00",
+      "shareholder_profit": 181.425
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-26",
+      "news_id": "17720575333961",
+      "raw_path": "KAMART/financials/2568/FY/source.zip",
+      "sha256": "4aa0b0ecf62e386eaebe39b7ca1cf7de319f06f937825d94b50228c364ee6e5b",
+      "ingested_at": "2026-04-23T20:33:14+00:00",
+      "shareholder_profit": 706.691469
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361137831",
+      "raw_path": "KAMART/financials/2568/H1/source.zip",
+      "sha256": "b281a956fa038658c54a3e263559b8b9aeb0f4a4ccc9138d83ea3b12c3ef1f6e",
+      "ingested_at": "2026-04-23T20:33:23+00:00",
+      "shareholder_profit": 146.825
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903536271",
+      "raw_path": "KAMART/financials/2568/Q1/source.zip",
+      "sha256": "5402794775d74d33e2bf52e4d4f0509f648e0507c503ceef8704aebde227f56b",
+      "ingested_at": "2026-04-23T20:33:27+00:00",
+      "shareholder_profit": 198.64
+    }
+  ]
+}

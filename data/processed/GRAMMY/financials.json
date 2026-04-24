@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "symbol": "GRAMMY",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-27",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 398.188,
+      "Q2": -15.028,
+      "Q3": 13.463,
+      "Q4": 100.50049500000002
+    },
+    "2565": {
+      "Q1": -153.664,
+      "Q2": 23.64,
+      "Q3": 48.26,
+      "Q4": 248.17454399999997
+    },
+    "2566": {
+      "Q1": 1.653,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null
+    },
+    "2568": {
+      "Q1": 103.964,
+      "Q2": -2.366,
+      "Q3": -116.083,
+      "Q4": -51.044692999999995
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-12",
+      "news_id": "2021124231",
+      "raw_path": "GRAMMY/financials/2564/9M/source.zip",
+      "sha256": "83e16100e44a434ee00f58b8e9e4a098fcecd30154271f1e6ba2b3ae117ee77c",
+      "ingested_at": "2026-04-23T19:12:51+00:00",
+      "shareholder_profit": 13.463
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-25",
+      "news_id": "2022023988",
+      "raw_path": "GRAMMY/financials/2564/FY/source.zip",
+      "sha256": "efd2d32144331bd09b655509cd631a6a1af733f3944acb8e983ffb90adc16331",
+      "ingested_at": "2026-04-23T19:12:46+00:00",
+      "shareholder_profit": 497.123495
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-13",
+      "news_id": "2021090659",
+      "raw_path": "GRAMMY/financials/2564/H1/source.zip",
+      "sha256": "183a5a7ac2ad03900cde6a4ad401963bf84a8ac5b4c8e08d65618ecd6ad2224d",
+      "ingested_at": "2026-04-23T19:12:56+00:00",
+      "shareholder_profit": -15.028
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-14",
+      "news_id": "2021059111",
+      "raw_path": "GRAMMY/financials/2564/Q1/source.zip",
+      "sha256": "302384354a4779ba087af8fe173f738964edc974c9796533c29566f58599e101",
+      "ingested_at": "2026-04-23T19:13:00+00:00",
+      "shareholder_profit": 398.188
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-14",
+      "news_id": "2022136179",
+      "raw_path": "GRAMMY/financials/2565/9M/source.zip",
+      "sha256": "3ddc02a33c13d9463c19afc2fe148ac6e8e143ace86601e150ffd5b2fdb1bc7c",
+      "ingested_at": "2026-04-23T19:12:32+00:00",
+      "shareholder_profit": 48.26
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-27",
+      "news_id": "2023024656",
+      "raw_path": "GRAMMY/financials/2565/FY/source.zip",
+      "sha256": "77f03b7bb8ea63cf7f586a676f1450e0d1db0bd4d8af8b52114a48e5e39ec0eb",
+      "ingested_at": "2026-04-23T19:12:28+00:00",
+      "shareholder_profit": 166.410544
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-15",
+      "news_id": "2022098311",
+      "raw_path": "GRAMMY/financials/2565/H1/source.zip",
+      "sha256": "0a65f6c5465fb9b8542f60102ecd41f2458c29144fc77b225cc0395de1815b1a",
+      "ingested_at": "2026-04-23T19:12:37+00:00",
+      "shareholder_profit": 23.64
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-13",
+      "news_id": "2022062259",
+      "raw_path": "GRAMMY/financials/2565/Q1/source.zip",
+      "sha256": "64ef091ec2723f0cd8a14700148dd7b85cddbf13e6010e3f0c820aa3ee9fc09b",
+      "ingested_at": "2026-04-23T19:12:41+00:00",
+      "shareholder_profit": -153.664
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-12",
+      "news_id": "16838458867251",
+      "raw_path": "GRAMMY/financials/2566/Q1/source.zip",
+      "sha256": "c9d740fb1dd398619919e5d29e99eb34354fc9fe4d6766b3c3f27accb89e37a5",
+      "ingested_at": "2026-04-23T19:12:24+00:00",
+      "shareholder_profit": 1.653
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-12",
+      "news_id": "17629001535771",
+      "raw_path": "GRAMMY/financials/2568/9M/source.zip",
+      "sha256": "407a434731f92bff493cdba3bbdf822537a69996d71d7c5de892134e2527dc3e",
+      "ingested_at": "2026-04-23T19:11:37+00:00",
+      "shareholder_profit": -116.083
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-27",
+      "news_id": "17721443220631",
+      "raw_path": "GRAMMY/financials/2568/FY/source.zip",
+      "sha256": "a992bc22fd0e432076676036d98a860fcb7172c487be72c7b766f708273f1a7b",
+      "ingested_at": "2026-04-23T19:11:33+00:00",
+      "shareholder_profit": -65.529693
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361219631",
+      "raw_path": "GRAMMY/financials/2568/H1/source.zip",
+      "sha256": "8127ec922b5a400daa3e5c92666c432c627b281de791a1a204ca35ea13e651e0",
+      "ingested_at": "2026-04-23T19:11:42+00:00",
+      "shareholder_profit": -2.366
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-14",
+      "news_id": "17471784595521",
+      "raw_path": "GRAMMY/financials/2568/Q1/source.zip",
+      "sha256": "fcac9e1647b303c3c3adb90022c2b5b98f4e785a7926a3fa592296695266d5e6",
+      "ingested_at": "2026-04-23T19:11:46+00:00",
+      "shareholder_profit": 103.964
+    }
+  ]
+}

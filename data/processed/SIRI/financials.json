@@ -1,0 +1,176 @@
+{
+  "schema_version": 1,
+  "symbol": "SIRI",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2024-08-14",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 384.059,
+      "Q2": 661.833,
+      "Q3": 628.388,
+      "Q4": 342.998689
+    },
+    "2565": {
+      "Q1": 302.551,
+      "Q2": 917.619,
+      "Q3": 1268.25,
+      "Q4": 1791.464787
+    },
+    "2566": {
+      "Q1": 1581.775,
+      "Q2": 1621.153,
+      "Q3": 1557.339,
+      "Q4": 1300.1207300000005
+    },
+    "2567": {
+      "Q1": 1314.975,
+      "Q2": 1387.05,
+      "Q3": null,
+      "Q4": null
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-15",
+      "news_id": "2021124859",
+      "raw_path": "SIRI/financials/2564/9M/source.zip",
+      "sha256": "749f143fad5d85225bfd8dfe272defa146e33d4232f96dc5811ac79aabe250e4",
+      "ingested_at": "2026-04-24T02:43:39+00:00",
+      "shareholder_profit": 628.388
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-03-01",
+      "news_id": "2022027057",
+      "raw_path": "SIRI/financials/2564/FY/source.zip",
+      "sha256": "c4cdfd1b06457228e0ff7bce3aafb0ff499511b4d564577347826c6fb2ac08ac",
+      "ingested_at": "2026-04-24T02:43:34+00:00",
+      "shareholder_profit": 2017.278689
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-16",
+      "news_id": "2021091130",
+      "raw_path": "SIRI/financials/2564/H1/source.zip",
+      "sha256": "58fb3e954474a97a7c0ceff7256eae8cf276f8e473daa947f0139198a70d52fb",
+      "ingested_at": "2026-04-24T02:43:44+00:00",
+      "shareholder_profit": 661.833
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-14",
+      "news_id": "2021058273",
+      "raw_path": "SIRI/financials/2564/Q1/source.zip",
+      "sha256": "39af8dbfaac95dcb129909441303d2c6a1f386799a26290b022f4eea8f3e05d1",
+      "ingested_at": "2026-04-24T02:43:49+00:00",
+      "shareholder_profit": 384.059
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-14",
+      "news_id": "2022136840",
+      "raw_path": "SIRI/financials/2565/9M/source.zip",
+      "sha256": "c6b4d8a03138442589865cb35789241bc6f0fa03a5e9a6ced8bd4798b64035fa",
+      "ingested_at": "2026-04-24T02:43:20+00:00",
+      "shareholder_profit": 1268.25
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-28",
+      "news_id": "2023025210",
+      "raw_path": "SIRI/financials/2565/FY/source.zip",
+      "sha256": "46633475207ca670331a94abc530e0d3e2c8053b8d91d1525cc4143c73cfde98",
+      "ingested_at": "2026-04-24T02:43:15+00:00",
+      "shareholder_profit": 4279.884787
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-15",
+      "news_id": "2022098345",
+      "raw_path": "SIRI/financials/2565/H1/source.zip",
+      "sha256": "cc0741f4ade251e5d91452cedadcfc219f337bb6117f11396361686337d3b0e3",
+      "ingested_at": "2026-04-24T02:43:25+00:00",
+      "shareholder_profit": 917.619
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-17",
+      "news_id": "2022064538",
+      "raw_path": "SIRI/financials/2565/Q1/source.zip",
+      "sha256": "fe81b09f07503d57f8a31cc53c4c458c77ca4dfde1fc6dd4b27c4c8c243f0719",
+      "ingested_at": "2026-04-24T02:43:30+00:00",
+      "shareholder_profit": 302.551
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-13",
+      "news_id": "16998304496451",
+      "raw_path": "SIRI/financials/2566/9M/source.zip",
+      "sha256": "41bdca7de028fd08bd3003260cca19a3b31c4354efea2f9026860170e43ddc34",
+      "ingested_at": "2026-04-24T02:43:01+00:00",
+      "shareholder_profit": 1557.339
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-28",
+      "news_id": "17090750673691",
+      "raw_path": "SIRI/financials/2566/FY/source.zip",
+      "sha256": "6b910f91a6e37f86da830c1a12610f48fd647286f8579e7a992bc471347036bf",
+      "ingested_at": "2026-04-24T02:42:56+00:00",
+      "shareholder_profit": 6060.38773
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-11",
+      "news_id": "16917102164681",
+      "raw_path": "SIRI/financials/2566/H1/source.zip",
+      "sha256": "c531bbc1ea7551e2ad8ea90b9f678fd9874a67e03cec51bef4ea09c016a4c900",
+      "ingested_at": "2026-04-24T02:43:05+00:00",
+      "shareholder_profit": 1621.153
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-15",
+      "news_id": "16841054058731",
+      "raw_path": "SIRI/financials/2566/Q1/source.zip",
+      "sha256": "5883d54884e30bfce8b8d03f63ff68ababa6ba27a8ddcb67f5c93410892af917",
+      "ingested_at": "2026-04-24T02:43:11+00:00",
+      "shareholder_profit": 1581.775
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-14",
+      "news_id": "17235857924421",
+      "raw_path": "SIRI/financials/2567/H1/source.zip",
+      "sha256": "3fa3090883c795ab8774f98b7b32f6d3bf8a2113a078fc6c751366613c5eaa35",
+      "ingested_at": "2026-04-24T02:42:47+00:00",
+      "shareholder_profit": 1387.05
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-15",
+      "news_id": "17157257375361",
+      "raw_path": "SIRI/financials/2567/Q1/source.zip",
+      "sha256": "faedd7980cb4495b2e91ebcb5da588133a28c2bc3a376e7cebe0cbadb572bbd5",
+      "ingested_at": "2026-04-24T02:42:51+00:00",
+      "shareholder_profit": 1314.975
+    }
+  ]
+}

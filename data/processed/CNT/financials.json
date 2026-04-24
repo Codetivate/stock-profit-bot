@@ -1,0 +1,242 @@
+{
+  "schema_version": 1,
+  "symbol": "CNT",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-27",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 6.589,
+      "Q2": 13.618,
+      "Q3": -43.678,
+      "Q4": -105.44922
+    },
+    "2565": {
+      "Q1": -11.991,
+      "Q2": -5.195,
+      "Q3": 5.939,
+      "Q4": -202.14195199999997
+    },
+    "2566": {
+      "Q1": -0.49,
+      "Q2": -1.428,
+      "Q3": -11.567,
+      "Q4": 42.525684999999996
+    },
+    "2567": {
+      "Q1": 3.245,
+      "Q2": 20.012,
+      "Q3": 17.323,
+      "Q4": 9.289380999999999
+    },
+    "2568": {
+      "Q1": 32.652,
+      "Q2": 7.787,
+      "Q3": 23.088,
+      "Q4": 14.461360999999997
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-12",
+      "news_id": "2021123203",
+      "raw_path": "CNT/financials/2564/9M/source.zip",
+      "sha256": "4c92cbe5c0cd9623d87dbf2902114d93bf553999c05cf7829cbe4be64b620400",
+      "ingested_at": "2026-04-23T17:07:02+00:00",
+      "shareholder_profit": -43.678
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-28",
+      "news_id": "2022026639",
+      "raw_path": "CNT/financials/2564/FY/source.zip",
+      "sha256": "695caa4d2fda2d9aaa7e4f8487f03bb7a9dbe68f71397fd306e65406267331c8",
+      "ingested_at": "2026-04-23T17:06:57+00:00",
+      "shareholder_profit": -128.92022
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-13",
+      "news_id": "2021089827",
+      "raw_path": "CNT/financials/2564/H1/source.zip",
+      "sha256": "07ebefc69cfc8c867744c488e896905fae3fdf55d222eaa95427e094cfa2a167",
+      "ingested_at": "2026-04-23T17:07:06+00:00",
+      "shareholder_profit": 13.618
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-14",
+      "news_id": "2021058792",
+      "raw_path": "CNT/financials/2564/Q1/source.zip",
+      "sha256": "340b4ff1d207ef681f917c2b9c12f5b5b558bd08547cc8d58ed97c828d48b793",
+      "ingested_at": "2026-04-23T17:07:11+00:00",
+      "shareholder_profit": 6.589
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-14",
+      "news_id": "2022136489",
+      "raw_path": "CNT/financials/2565/9M/source.zip",
+      "sha256": "631e28dac7118926011896b1cbfc10164a83524ad16ad2550070dd01b022029f",
+      "ingested_at": "2026-04-23T17:06:43+00:00",
+      "shareholder_profit": 5.939
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-27",
+      "news_id": "2023024796",
+      "raw_path": "CNT/financials/2565/FY/source.zip",
+      "sha256": "18fec053e45bf132541269f86cfcc58fcd87677ac84505052fd138eef5937dfa",
+      "ingested_at": "2026-04-23T17:06:39+00:00",
+      "shareholder_profit": -213.388952
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-15",
+      "news_id": "2022098055",
+      "raw_path": "CNT/financials/2565/H1/source.zip",
+      "sha256": "80b6fd89a2769fc920882aeffe8b16ae1fe95dbff65260f9fc66253e324542e4",
+      "ingested_at": "2026-04-23T17:06:48+00:00",
+      "shareholder_profit": -5.195
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-13",
+      "news_id": "2022062277",
+      "raw_path": "CNT/financials/2565/Q1/source.zip",
+      "sha256": "4d137486bec1c4bbc7529ee1512937183b28a2fa2f17a2acadfa20d39bbac22e",
+      "ingested_at": "2026-04-23T17:06:53+00:00",
+      "shareholder_profit": -11.991
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-15",
+      "news_id": "16999994877301",
+      "raw_path": "CNT/financials/2566/9M/source.zip",
+      "sha256": "36ca5f5f493764ec517ca93bf48e3c4eb7709e1e213cd305c6a3d818b81cf94b",
+      "ingested_at": "2026-04-23T17:06:25+00:00",
+      "shareholder_profit": -11.567
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-28",
+      "news_id": "17090750788201",
+      "raw_path": "CNT/financials/2566/FY/source.zip",
+      "sha256": "58a2834b7d9038381eb06aaefb4c33c20a323d56252e0e04abfe28e1528a6653",
+      "ingested_at": "2026-04-23T17:06:21+00:00",
+      "shareholder_profit": 29.040685
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-15",
+      "news_id": "16920539383781",
+      "raw_path": "CNT/financials/2566/H1/source.zip",
+      "sha256": "68662db6e3960d672049123541ddde42a37acec2195581f712c5d614f6f1f3e3",
+      "ingested_at": "2026-04-23T17:06:30+00:00",
+      "shareholder_profit": -1.428
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-15",
+      "news_id": "16841054027391",
+      "raw_path": "CNT/financials/2566/Q1/source.zip",
+      "sha256": "e101fc78099d8c9d3e2085dbf3dff9a2e63d6deedeec85640a079e98cc06d94b",
+      "ingested_at": "2026-04-23T17:06:34+00:00",
+      "shareholder_profit": -0.49
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361273241",
+      "raw_path": "CNT/financials/2567/9M/source.zip",
+      "sha256": "3933b71bec51b23e3779ca6cee72d9db66e6e73275e4f9917ca47828b7b53ee8",
+      "ingested_at": "2026-04-23T17:06:07+00:00",
+      "shareholder_profit": 17.323
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-28",
+      "news_id": "17406928507161",
+      "raw_path": "CNT/financials/2567/FY/source.zip",
+      "sha256": "0ec7b78a9ed27e0facd9680e28c773be163deabc18f87c9de0cf14230eac5f7d",
+      "ingested_at": "2026-04-23T17:06:02+00:00",
+      "shareholder_profit": 49.869381
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-14",
+      "news_id": "17235858034931",
+      "raw_path": "CNT/financials/2567/H1/source.zip",
+      "sha256": "ac669da7348f1b24fad461ec1030a5ed29884e0eab5a6adba03713ff0723a973",
+      "ingested_at": "2026-04-23T17:06:12+00:00",
+      "shareholder_profit": 20.012
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-15",
+      "news_id": "17157257456221",
+      "raw_path": "CNT/financials/2567/Q1/source.zip",
+      "sha256": "b1df13b1ba5526a8b17ed9513161244365b81c524b343fed017e01d3067ec8bc",
+      "ingested_at": "2026-04-23T17:06:16+00:00",
+      "shareholder_profit": 3.245
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-13",
+      "news_id": "17629880464441",
+      "raw_path": "CNT/financials/2568/9M/source.zip",
+      "sha256": "b4e86df60c920c0b96df1f07190028b83715e2f1dc78282d9df47b1c957910a2",
+      "ingested_at": "2026-04-23T17:05:49+00:00",
+      "shareholder_profit": 23.088
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-27",
+      "news_id": "17721443155191",
+      "raw_path": "CNT/financials/2568/FY/source.zip",
+      "sha256": "a2a347633fd81d7a7ffa808ce596a425afed35d93f8af695e7914f5d6905333d",
+      "ingested_at": "2026-04-23T17:05:44+00:00",
+      "shareholder_profit": 77.988361
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229866591",
+      "raw_path": "CNT/financials/2568/H1/source.zip",
+      "sha256": "331b3295188531693d5b42cc9119bb4975444b28a166b56dedf4276484f5fb44",
+      "ingested_at": "2026-04-23T17:05:53+00:00",
+      "shareholder_profit": 7.787
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-15",
+      "news_id": "17472613154721",
+      "raw_path": "CNT/financials/2568/Q1/source.zip",
+      "sha256": "1bd588d0974d2b72ad961e1b04ac7b8a946c9f5ca4c04395052fdc3463ec7c36",
+      "ingested_at": "2026-04-23T17:05:58+00:00",
+      "shareholder_profit": 32.652
+    }
+  ]
+}

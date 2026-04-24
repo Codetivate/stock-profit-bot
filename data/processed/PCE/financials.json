@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "symbol": "PCE",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-17",
+  "quarterly_history": {
+    "2568": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": 94.466,
+      "Q4": null
+    }
+  },
+  "sources": [
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-14",
+      "news_id": "17630699516421",
+      "raw_path": "PCE/financials/2568/9M/source.zip",
+      "sha256": "bcb9cce397514617f716e40ddffc1d78aab7e4611ca93501fa7f6f6a370843ad",
+      "ingested_at": "2026-04-23T23:34:01+00:00",
+      "shareholder_profit": 94.466
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-17",
+      "news_id": "17712782922321",
+      "raw_path": "PCE/financials/2568/FY/source.zip",
+      "sha256": "678c6616621a58111407c2a6718fc0025ab3cfcde75824409098065c02fb961f",
+      "ingested_at": "2026-04-23T23:33:56+00:00",
+      "shareholder_profit": 308.316831
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "schema_version": 1,
+  "symbol": "LRH",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-25",
+  "quarterly_history": {
+    "2564": {
+      "Q1": -200.185,
+      "Q2": -287.788,
+      "Q3": -279.229,
+      "Q4": -264.55543800000015
+    },
+    "2565": {
+      "Q1": 40.129,
+      "Q2": -140.622,
+      "Q3": -63.248,
+      "Q4": 170.84727
+    },
+    "2566": {
+      "Q1": 63.811,
+      "Q2": 2.536,
+      "Q3": 18.302,
+      "Q4": 282.98985
+    },
+    "2567": {
+      "Q1": 275.486,
+      "Q2": 15.248,
+      "Q3": 342.333,
+      "Q4": 629.8055420000001
+    },
+    "2568": {
+      "Q1": 679.731,
+      "Q2": -124.341,
+      "Q3": -326.151,
+      "Q4": 1798.522608
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-12",
+      "news_id": "2021123111",
+      "raw_path": "LRH/financials/2564/9M/source.zip",
+      "sha256": "e40b3d78d87bcf2dd057eb6bb90087fbfd4490b67f6be6f2906eae5f5c6d47c5",
+      "ingested_at": "2026-04-23T21:26:27+00:00",
+      "shareholder_profit": -279.229
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-22",
+      "news_id": "2022019056",
+      "raw_path": "LRH/financials/2564/FY/source.zip",
+      "sha256": "c94e8f8f2531811e86d50b5a15f60b3debd424c3ae76257bd8b080b04a843e91",
+      "ingested_at": "2026-04-23T21:26:22+00:00",
+      "shareholder_profit": -1031.757438
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-11",
+      "news_id": "2021087728",
+      "raw_path": "LRH/financials/2564/H1/source.zip",
+      "sha256": "454ad2f6ab43413d3a460adf45e00bfbc599ea8da8ed971becfc5151a5b2396a",
+      "ingested_at": "2026-04-23T21:26:40+00:00",
+      "shareholder_profit": -287.788
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-14",
+      "news_id": "2021058220",
+      "raw_path": "LRH/financials/2564/Q1/source.zip",
+      "sha256": "69d21329529e41bea80b6830998bb6a38775f456ec65092456a472bb2dbcdcf0",
+      "ingested_at": "2026-04-23T21:26:48+00:00",
+      "shareholder_profit": -200.185
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-08",
+      "news_id": "2022129388",
+      "raw_path": "LRH/financials/2565/9M/source.zip",
+      "sha256": "9a5de939d36327d561994dc8524dcdc6823b111bc91b836daf5b40b95dcfa73e",
+      "ingested_at": "2026-04-23T21:25:57+00:00",
+      "shareholder_profit": -63.248
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-21",
+      "news_id": "2023018665",
+      "raw_path": "LRH/financials/2565/FY/source.zip",
+      "sha256": "d9dc89c884fb28b0c985ffc2341a04b19feceef9c575106000d9c71216a7556b",
+      "ingested_at": "2026-04-23T21:25:52+00:00",
+      "shareholder_profit": 7.10627
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-08",
+      "news_id": "2022090797",
+      "raw_path": "LRH/financials/2565/H1/source.zip",
+      "sha256": "38d98cfdc611de507715ae5a66d4630e6f544b041b7dc410ce82ffdeb8fd8ad4",
+      "ingested_at": "2026-04-23T21:26:05+00:00",
+      "shareholder_profit": -140.622
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-10",
+      "news_id": "2022056555",
+      "raw_path": "LRH/financials/2565/Q1/source.zip",
+      "sha256": "c82cb2938d32e7d19bb52791410c55d2a6514d2175f9687916ca78ea6b9ea2c8",
+      "ingested_at": "2026-04-23T21:26:14+00:00",
+      "shareholder_profit": 40.129
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-14",
+      "news_id": "16999132675841",
+      "raw_path": "LRH/financials/2566/9M/source.zip",
+      "sha256": "d42e94d1a44c58d0d7d8ca9f1fc0e782d7569fa2a6a920f6ca63c0c7dd7603d0",
+      "ingested_at": "2026-04-23T21:25:31+00:00",
+      "shareholder_profit": 18.302
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-21",
+      "news_id": "17084713437301",
+      "raw_path": "LRH/financials/2566/FY/source.zip",
+      "sha256": "94fea4772319aeb63a167a422e80d67e3bbd14d50d07bb16edbdf313d35455eb",
+      "ingested_at": "2026-04-23T21:25:22+00:00",
+      "shareholder_profit": 367.63885
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-08",
+      "news_id": "16914518650521",
+      "raw_path": "LRH/financials/2566/H1/source.zip",
+      "sha256": "d9e5ddd1b68eaa5164d42f2ab84ee747e6d9a8d5005e0a929540a88cd83b8f31",
+      "ingested_at": "2026-04-23T21:25:39+00:00",
+      "shareholder_profit": 2.536
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-09",
+      "news_id": "16835884708431",
+      "raw_path": "LRH/financials/2566/Q1/source.zip",
+      "sha256": "7574621962bf84b881739a5c3522a7fcb6ca2b20e8d56308e02cad6f1089f771",
+      "ingested_at": "2026-04-23T21:25:48+00:00",
+      "shareholder_profit": 63.811
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-13",
+      "news_id": "17314477472931",
+      "raw_path": "LRH/financials/2567/9M/source.zip",
+      "sha256": "f7ae322703089b6e75174574f282f24c45e8ed203e58a245e019bee91b292e45",
+      "ingested_at": "2026-04-23T21:24:57+00:00",
+      "shareholder_profit": 342.333
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-18",
+      "news_id": "17398358009291",
+      "raw_path": "LRH/financials/2567/FY/source.zip",
+      "sha256": "1a906dcd11259a47ce60b5b13d9f66cd9a2963132bb58350ec8ea521b7f4e37e",
+      "ingested_at": "2026-04-23T21:24:53+00:00",
+      "shareholder_profit": 1262.872542
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990102031",
+      "raw_path": "LRH/financials/2567/H1/source.zip",
+      "sha256": "1e77a6811f4b468b8e0b17b87b4081d5e254e78d01882e35e7f3cafad1fbc510",
+      "ingested_at": "2026-04-23T21:25:06+00:00",
+      "shareholder_profit": 15.248
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-10",
+      "news_id": "17152924569381",
+      "raw_path": "LRH/financials/2567/Q1/source.zip",
+      "sha256": "f5b44b5730ad571d584ba1c2c4f499c36d1838fc4a21a55f7aaeeb8f3cf64457",
+      "ingested_at": "2026-04-23T21:25:18+00:00",
+      "shareholder_profit": 275.486
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-12",
+      "news_id": "17629001499521",
+      "raw_path": "LRH/financials/2568/9M/source.zip",
+      "sha256": "5712bb97afd15eb415ce2d16979792c59b23ccfce7ed9c8cfd166e88490a8933",
+      "ingested_at": "2026-04-23T21:24:31+00:00",
+      "shareholder_profit": -326.151
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-25",
+      "news_id": "17719707075801",
+      "raw_path": "LRH/financials/2568/FY/source.zip",
+      "sha256": "32078e00c0887fdc9701284fe368194d30b7cb063ff5f5731d793fd6bf38d814",
+      "ingested_at": "2026-04-23T21:24:22+00:00",
+      "shareholder_profit": 2027.761608
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-07",
+      "news_id": "17545237041611",
+      "raw_path": "LRH/financials/2568/H1/source.zip",
+      "sha256": "9a6638cd0ca1fbaeedece5c109bfa3d3218bd34a309875f77510394db252710c",
+      "ingested_at": "2026-04-23T21:24:36+00:00",
+      "shareholder_profit": -124.341
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903443631",
+      "raw_path": "LRH/financials/2568/Q1/source.zip",
+      "sha256": "0ef1c64c744e319b1ea97980dd27e7bca7288de2e97b1249da1caba6fd862ee0",
+      "ingested_at": "2026-04-23T21:24:44+00:00",
+      "shareholder_profit": 679.731
+    }
+  ]
+}

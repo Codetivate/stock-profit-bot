@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "symbol": "BRR",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2022-08-11",
+  "quarterly_history": {
+    "2565": {
+      "Q1": 423.522658,
+      "Q2": 297.921954,
+      "Q3": null,
+      "Q4": null
+    }
+  },
+  "sources": [
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-11",
+      "news_id": "2022095061",
+      "raw_path": "BRR/financials/2565/H1/source.zip",
+      "sha256": "975ab13b5acac6b16afdc3ec3c5e9b7a7d6a61ad459d51f5f4ae43be59817576",
+      "ingested_at": "2026-04-23T16:14:34+00:00",
+      "shareholder_profit": 297.921954
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-12",
+      "news_id": "2022059452",
+      "raw_path": "BRR/financials/2565/Q1/source.zip",
+      "sha256": "a666acbd60374fc669f14efb46161e1bb84940a2f5a13fa1aa8d1e23eab8a572",
+      "ingested_at": "2026-04-23T16:14:39+00:00",
+      "shareholder_profit": 423.522658
+    }
+  ]
+}

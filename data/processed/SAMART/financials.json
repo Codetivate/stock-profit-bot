@@ -1,0 +1,232 @@
+{
+  "schema_version": 1,
+  "symbol": "SAMART",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-26",
+  "quarterly_history": {
+    "2564": {
+      "Q1": null,
+      "Q2": -112.73,
+      "Q3": -109.958,
+      "Q4": null
+    },
+    "2565": {
+      "Q1": -93.149,
+      "Q2": -18.734,
+      "Q3": -476.906,
+      "Q4": -366.3651489999999
+    },
+    "2566": {
+      "Q1": -26.239,
+      "Q2": 25.522,
+      "Q3": -205.965,
+      "Q4": -183.235065
+    },
+    "2567": {
+      "Q1": 54.773,
+      "Q2": -183.395,
+      "Q3": 90.826,
+      "Q4": 170.71964600000004
+    },
+    "2568": {
+      "Q1": 55.674,
+      "Q2": 159.656,
+      "Q3": 87.053,
+      "Q4": 176.92497600000002
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-09",
+      "news_id": "2021119561",
+      "raw_path": "SAMART/financials/2564/9M/source.zip",
+      "sha256": "677e9bdc0ed0042d75db0b06a7f4ecfd63ae159bbe9d81278d96d63a7a075da8",
+      "ingested_at": "2026-04-24T01:39:58+00:00",
+      "shareholder_profit": -109.958
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-25",
+      "news_id": "2022024067",
+      "raw_path": "SAMART/financials/2564/FY/source.zip",
+      "sha256": "5187e0daf8583bc7c0653306da92826bffe5df9618ec715b53310d50e58b3aca",
+      "ingested_at": "2026-04-24T01:39:53+00:00",
+      "shareholder_profit": -389.083827
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-10",
+      "news_id": "2021086093",
+      "raw_path": "SAMART/financials/2564/H1/source.zip",
+      "sha256": "76c081445c7c3b4e7a6ec92566dda13aee124a11ddc2c793ff1d6abfc3d3e79f",
+      "ingested_at": "2026-04-24T01:40:02+00:00",
+      "shareholder_profit": -112.73
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-10",
+      "news_id": "2022131938",
+      "raw_path": "SAMART/financials/2565/9M/source.zip",
+      "sha256": "fc7ebd829c67d8b805269ca36fe91f47ff9c13b32b317e4b7f128fd4ebc93101",
+      "ingested_at": "2026-04-24T01:39:39+00:00",
+      "shareholder_profit": -476.906
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-23",
+      "news_id": "2023021286",
+      "raw_path": "SAMART/financials/2565/FY/source.zip",
+      "sha256": "b07a8da42af16e3c1ffdcc3e5e1d3e2403d889841d8985418148e13f3ec144ea",
+      "ingested_at": "2026-04-24T01:39:35+00:00",
+      "shareholder_profit": -955.154149
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-11",
+      "news_id": "2022094915",
+      "raw_path": "SAMART/financials/2565/H1/source.zip",
+      "sha256": "3ad7bc14dc2c85d58fc3bb18d42b7c5b3ea95309a286c527ef5a0b14d4b5ddcf",
+      "ingested_at": "2026-04-24T01:39:44+00:00",
+      "shareholder_profit": -18.734
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-12",
+      "news_id": "2022059856",
+      "raw_path": "SAMART/financials/2565/Q1/source.zip",
+      "sha256": "1627feb750275399db67c005d3526e3feef7ff26f3a42ea1bfcf2fcedd229bb0",
+      "ingested_at": "2026-04-24T01:39:49+00:00",
+      "shareholder_profit": -93.149
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-09",
+      "news_id": "16994859263311",
+      "raw_path": "SAMART/financials/2566/9M/source.zip",
+      "sha256": "4585a6aef2c9a7ced7e1e562471e7f285fd88f3fd3c2ae890efd0c7221605679",
+      "ingested_at": "2026-04-24T01:39:21+00:00",
+      "shareholder_profit": -205.965
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-22",
+      "news_id": "17085582117231",
+      "raw_path": "SAMART/financials/2566/FY/source.zip",
+      "sha256": "54dc6ff159c569abb8649f5ec43cfcc6741bc0d15161bddb1718daa6843b0702",
+      "ingested_at": "2026-04-24T01:39:16+00:00",
+      "shareholder_profit": -389.917065
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-10",
+      "news_id": "16916230289181",
+      "raw_path": "SAMART/financials/2566/H1/source.zip",
+      "sha256": "cbd505d52f6bc94c1bb8b1e1bee57db5372003a5ac39409b389d8fa1802226bf",
+      "ingested_at": "2026-04-24T01:39:26+00:00",
+      "shareholder_profit": 25.522
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-11",
+      "news_id": "16837584055581",
+      "raw_path": "SAMART/financials/2566/Q1/source.zip",
+      "sha256": "1581fec49963f14a27299b4ca7727e7a282c785ca56c6ceb8060f828b41cf91c",
+      "ingested_at": "2026-04-24T01:39:30+00:00",
+      "shareholder_profit": -26.239
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-12",
+      "news_id": "17313658204371",
+      "raw_path": "SAMART/financials/2567/9M/source.zip",
+      "sha256": "b137219a61983b6d1fd3ea550cad25b22c7ac93155a6b52aece65e0d12909bd2",
+      "ingested_at": "2026-04-24T01:39:02+00:00",
+      "shareholder_profit": 90.826
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-20",
+      "news_id": "17400015598081",
+      "raw_path": "SAMART/financials/2567/FY/source.zip",
+      "sha256": "edd29c54d28c8b7ebf0800943a31cccb5def7e48ef6bdb3457ddc89f4d58a6d5",
+      "ingested_at": "2026-04-24T01:38:57+00:00",
+      "shareholder_profit": 132.923646
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990193471",
+      "raw_path": "SAMART/financials/2567/H1/source.zip",
+      "sha256": "5ebc51c9f3c2fe89285aecb0ebcbcf6a085413b1d0b4c19d29c76c609567c598",
+      "ingested_at": "2026-04-24T01:39:06+00:00",
+      "shareholder_profit": -183.395
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434537531",
+      "raw_path": "SAMART/financials/2567/Q1/source.zip",
+      "sha256": "eeea1f3b94aab31946168b11df7476105bcf0e2ff6d8dc6eb9e08cc1fde64b85",
+      "ingested_at": "2026-04-24T01:39:11+00:00",
+      "shareholder_profit": 54.773
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-13",
+      "news_id": "17629880477431",
+      "raw_path": "SAMART/financials/2568/9M/source.zip",
+      "sha256": "30c2ee5571c4dbe0cef5bd1655fc0c54bbd4d0a9bb1f3cc9efbc790b7a4efa06",
+      "ingested_at": "2026-04-24T01:38:44+00:00",
+      "shareholder_profit": 87.053
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-26",
+      "news_id": "17720575301721",
+      "raw_path": "SAMART/financials/2568/FY/source.zip",
+      "sha256": "9a4f7c6fe9a5c4c4c7c3da9efb5927a234a26bd91f3a37527fc3fb13c5693d36",
+      "ingested_at": "2026-04-24T01:38:39+00:00",
+      "shareholder_profit": 479.307976
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229860271",
+      "raw_path": "SAMART/financials/2568/H1/source.zip",
+      "sha256": "6775e48e3eea5e73fbee75fc4c0e5ff345a11cc8e3b7d50c093b19570647652b",
+      "ingested_at": "2026-04-24T01:38:49+00:00",
+      "shareholder_profit": 159.656
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903534971",
+      "raw_path": "SAMART/financials/2568/Q1/source.zip",
+      "sha256": "6d840a4b92f5a8c3759715c6d7a1d4843c95e189832820c2626aa1df4297330f",
+      "ingested_at": "2026-04-24T01:38:53+00:00",
+      "shareholder_profit": 55.674
+    }
+  ]
+}

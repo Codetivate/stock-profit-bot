@@ -106,10 +106,11 @@ def make_chart(
              fontsize=9, color=TEXT_MUTED, ha="center",
              fontweight="800", style="italic")
 
-    # Big number colored by performance
-    both_up = qoq is not None and yoy is not None and qoq >= 0 and yoy >= 0
-    both_down = qoq is not None and yoy is not None and qoq < 0 and yoy < 0
-    hero_color = GREEN if both_up else (RED if both_down else NAVY)
+    # Hero number colored strictly by profit direction: green if the
+    # company made money this quarter, red if they lost money. This
+    # matches how users read the chart at a glance — don't overload
+    # the color with YoY/QoQ direction, each has its own pill below.
+    hero_color = GREEN if latest_profit >= 0 else RED
 
     fig.text(0.5, 0.875, f"{latest_profit:,.2f}",
              fontsize=60, fontweight="800", color=hero_color, ha="center")
@@ -165,12 +166,15 @@ def make_chart(
     # Years sorted for later use
     years_sorted = sorted(history.keys())
 
-    # ═══ Quarterly breakdown table (replaces the chart) ═══
-    fig.text(0.06, 0.690, "Quarterly breakdown",
-             fontsize=16, color=NAVY, fontweight="800")
-    fig.text(0.06, 0.671,
-             "Profit (million baht)  ·  yoy = vs same quarter last year  ·  qoq = vs previous quarter",
-             fontsize=9.5, color=TEXT_MUTED, fontweight="500")
+    # ═══ Quarterly breakdown table ═══
+    fig.text(0.06, 0.693, "QUARTERLY NET PROFIT",
+             fontsize=15, color=NAVY, fontweight="800")
+    fig.text(0.38, 0.693, "(million baht)",
+             fontsize=10, color=TEXT_MUTED, fontweight="500",
+             style="italic")
+    fig.text(0.06, 0.672,
+             "yoy = vs same quarter last year  ·  qoq = vs previous quarter",
+             fontsize=9, color=TEXT_MUTED, fontweight="500")
 
     ax_tbl = fig.add_axes([0.03, 0.09, 0.94, 0.57])
     ax_tbl.set_xlim(0, 10)
@@ -298,18 +302,16 @@ def make_chart(
                             bbox=dict(boxstyle="round,pad=0.28",
                                       facecolor=yoy_bg, edgecolor="none"))
 
-            # ─── Line 3: QoQ (SECONDARY - small, muted gray) ───
+            # ─── Line 3: QoQ (SECONDARY — coloured green/red too) ───
             prev_q_val = get_prev_quarter(y, q)
             if prev_q_val is not None and prev_q_val > 0:
                 qoq = (val - prev_q_val) / prev_q_val * 100
-                # Small arrow colored by direction, rest in muted gray
                 qoq_ar = "▲" if qoq >= 0 else "▼"
-                qoq_arrow_c = GREEN if qoq >= 0 else RED
-                # Format: "▲ +5.7% QoQ" with arrow small colored, rest gray
+                qoq_c = GREEN if qoq >= 0 else RED
                 ax_tbl.text(x, year_y_center - 0.55,
                             f"qoq {qoq_ar} {qoq:+.1f}%",
-                            fontsize=7.5, color=TEXT_MUTED,
-                            fontweight="500",
+                            fontsize=8, color=qoq_c,
+                            fontweight="600",
                             ha="center", va="center")
 
         # Full Year total (right column) — bigger value + YoY pill
@@ -347,28 +349,17 @@ def make_chart(
                     [header_y - 0.1, y_start - n_rows * row_h + row_gap],
                     color=GRID, linewidth=0.3, alpha=0.5, zorder=0)
 
-    # Footer
-    fig.text(0.5, 0.075,
+    # Footer — source + AI disclaimer
+    fig.text(0.5, 0.055,
              "Source: SET  ·  Net profit attributable to shareholders",
              fontsize=8, color=TEXT_MUTED, ha="center", style="italic")
 
-    # Narrative if enough data - use table_years (sorted newest first)
-    years_oldest_to_newest = sorted(table_years)
-    annual_totals = [history[y].sum() for y in years_oldest_to_newest
-                     if history[y].sum() is not None]
-    if len(annual_totals) >= 2:
-        first_val = annual_totals[0]
-        last_val = annual_totals[-1]
-        years_span = len(annual_totals) - 1
-        if years_span > 0 and first_val > 0:
-            cagr = ((last_val / first_val) ** (1 / years_span) - 1) * 100
-            narrative = (f"Profit grew from {first_val:,.2f} → {last_val:,.2f} MB "
-                         f"over {years_span} years  ·  Average {cagr:+.1f}%/year")
-            ax_n = fig.add_axes([0.06, 0.015, 0.88, 0.05])
-            ax_n.set_xlim(0, 1); ax_n.set_ylim(0, 1); ax_n.axis("off")
-            ax_n.text(0.5, 0.5, narrative,
-                      fontsize=9.5, color=TEXT_DARK, ha="center", va="center",
-                      fontweight="500", style="italic")
+    # AI-generated content disclaimer (Claude-style wording)
+    fig.text(0.5, 0.025,
+             "AI-generated content may contain errors. "
+             "Please double-check important information.",
+             fontsize=8, color=TEXT_MUTED, ha="center", style="italic",
+             fontweight="500")
 
     # Save to bytes
     buf = io.BytesIO()

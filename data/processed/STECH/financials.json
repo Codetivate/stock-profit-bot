@@ -1,0 +1,222 @@
+{
+  "schema_version": 1,
+  "symbol": "STECH",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-26",
+  "quarterly_history": {
+    "2564": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": 40.711450697,
+      "Q4": null
+    },
+    "2565": {
+      "Q1": 22.95539,
+      "Q2": 47.34078962,
+      "Q3": 9.08785675999999,
+      "Q4": 21.183521620000004
+    },
+    "2566": {
+      "Q1": 24.189207,
+      "Q2": 39.543263,
+      "Q3": 30.477547,
+      "Q4": 33.150552
+    },
+    "2567": {
+      "Q1": 30.477547,
+      "Q2": 31.23787728772304,
+      "Q3": 33.121109,
+      "Q4": 22.47528771227696
+    },
+    "2568": {
+      "Q1": 73.054154,
+      "Q2": 27.588722,
+      "Q3": 19.67077,
+      "Q4": 21.868608
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-12",
+      "news_id": "2021123589",
+      "raw_path": "STECH/financials/2564/9M/source.zip",
+      "sha256": "2dd8fa3bc668ce03dd69eecd9085d6e851b55bd8f0b1f6f2aae3a2994dcd97bc",
+      "ingested_at": "2026-04-24T03:59:16+00:00",
+      "shareholder_profit": 40.711450697
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-24",
+      "news_id": "2022020972",
+      "raw_path": "STECH/financials/2564/FY/source.zip",
+      "sha256": "d1539bd7e18c80d2f1de58618cb2ab3a3ffa5779d32430452e671dfb3011f3e2",
+      "ingested_at": "2026-04-24T03:59:11+00:00",
+      "shareholder_profit": 94.569771
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-10",
+      "news_id": "2022131410",
+      "raw_path": "STECH/financials/2565/9M/source.zip",
+      "sha256": "05694be0670722237e6d51f1268d96f6751407b14bf4baec23cebab9577f8ea8",
+      "ingested_at": "2026-04-24T03:58:57+00:00",
+      "shareholder_profit": 9.08785675999999
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-28",
+      "news_id": "2023026223",
+      "raw_path": "STECH/financials/2565/FY/source.zip",
+      "sha256": "a0c9400df5f78f4dd7299ea0c6a08ff7067cbb58ac070f1b03ad91c8044ebdf9",
+      "ingested_at": "2026-04-24T03:58:52+00:00",
+      "shareholder_profit": 100.567558
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-11",
+      "news_id": "2022094346",
+      "raw_path": "STECH/financials/2565/H1/source.zip",
+      "sha256": "f7e531aede5045fdbc3c12d79c893a4130ab3d383c140023f7173b181d6dc145",
+      "ingested_at": "2026-04-24T03:59:01+00:00",
+      "shareholder_profit": 47.34078962
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-11",
+      "news_id": "2022057503",
+      "raw_path": "STECH/financials/2565/Q1/source.zip",
+      "sha256": "22daea5f1d22edbb320a8c88eff72faa3737658c13890736f1b03fcf64ab7345",
+      "ingested_at": "2026-04-24T03:59:06+00:00",
+      "shareholder_profit": 22.95539
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-13",
+      "news_id": "16998304501831",
+      "raw_path": "STECH/financials/2566/9M/source.zip",
+      "sha256": "1fb2fecfde5026a4bc2597e08a2027e57627faf11534637ad4bf88a54224c5dc",
+      "ingested_at": "2026-04-24T03:58:38+00:00",
+      "shareholder_profit": 30.477547
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-27",
+      "news_id": "17089869222171",
+      "raw_path": "STECH/financials/2566/FY/source.zip",
+      "sha256": "ddedaa057604f97496a2cdcbfa93d4ad82a1ce3cecc69b8f250691d46895bfa8",
+      "ingested_at": "2026-04-24T03:58:34+00:00",
+      "shareholder_profit": 127.360569
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-15",
+      "news_id": "16920539312701",
+      "raw_path": "STECH/financials/2566/H1/source.zip",
+      "sha256": "7dbc698c137a79474bb6477f604a84a39fa27781354e7a7167cc77e4605bd969",
+      "ingested_at": "2026-04-24T03:58:43+00:00",
+      "shareholder_profit": 39.543263
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-12",
+      "news_id": "16838458832061",
+      "raw_path": "STECH/financials/2566/Q1/source.zip",
+      "sha256": "7851837b8eb67727c566ef711172d11539fefee7f84fa40a139a12f5f4da2225",
+      "ingested_at": "2026-04-24T03:58:47+00:00",
+      "shareholder_profit": 24.189207
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361268021",
+      "raw_path": "STECH/financials/2567/9M/source.zip",
+      "sha256": "90c4528eb0cc5164e9da568b103a902186712a7ce70191fa08de3f1ed3ba416a",
+      "ingested_at": "2026-04-24T03:58:18+00:00",
+      "shareholder_profit": 33.121109
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-27",
+      "news_id": "17406066132961",
+      "raw_path": "STECH/financials/2567/FY/source.zip",
+      "sha256": "f00a84b47486728891f778c60059a339910a02bae5ab36d0f88f987cb60b2cf1",
+      "ingested_at": "2026-04-24T03:58:14+00:00",
+      "shareholder_profit": 117.311821
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990200641",
+      "raw_path": "STECH/financials/2567/H1/source.zip",
+      "sha256": "2cb257fada8fed4c757313849209452d818f2e758281e61f1d7d3065aa2edd67",
+      "ingested_at": "2026-04-24T03:58:24+00:00",
+      "shareholder_profit": 31.23787728772304
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-15",
+      "news_id": "17157257384411",
+      "raw_path": "STECH/financials/2567/Q1/source.zip",
+      "sha256": "07ff823f2a9cdb131096682ef4ad7cac963e00ad05fbd118a0541a6aeb1e02c5",
+      "ingested_at": "2026-04-24T03:58:29+00:00",
+      "shareholder_profit": 30.477547
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-14",
+      "news_id": "17630699605111",
+      "raw_path": "STECH/financials/2568/9M/source.zip",
+      "sha256": "81660d25c3955d3d275be8a9615e49a25bdc93910539b348e088cebd40bdc45d",
+      "ingested_at": "2026-04-24T03:58:00+00:00",
+      "shareholder_profit": 19.67077
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-26",
+      "news_id": "17720575039581",
+      "raw_path": "STECH/financials/2568/FY/source.zip",
+      "sha256": "77e10e8e673d56b0c547c25064136fcaa226b0e622a9d3c7e2c4f6abf1293d31",
+      "ingested_at": "2026-04-24T03:57:55+00:00",
+      "shareholder_profit": 142.182254
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229874741",
+      "raw_path": "STECH/financials/2568/H1/source.zip",
+      "sha256": "95d4e040963fdd80791d34eb3a6a017ca2407bf850ab01bdf7fc83d46ccf67b6",
+      "ingested_at": "2026-04-24T03:58:04+00:00",
+      "shareholder_profit": 27.588722
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-15",
+      "news_id": "17472613199311",
+      "raw_path": "STECH/financials/2568/Q1/source.zip",
+      "sha256": "21c3c65cc3ac311b848a45420e1d210f8a375ed81c7c24a0918acfd2a5d67d3c",
+      "ingested_at": "2026-04-24T03:58:09+00:00",
+      "shareholder_profit": 73.054154
+    }
+  ]
+}

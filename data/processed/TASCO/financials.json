@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "symbol": "TASCO",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2022-08-10",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 422.215,
+      "Q2": 867.465,
+      "Q3": null,
+      "Q4": null
+    },
+    "2565": {
+      "Q1": 216.124,
+      "Q2": 587.026,
+      "Q3": null,
+      "Q4": null
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-17",
+      "news_id": "2022016430",
+      "raw_path": "TASCO/financials/2564/FY/source.zip",
+      "sha256": "38e62752197c61bf14823ecefcc095a1329ce4370d5c1778507158abd156663d",
+      "ingested_at": "2026-04-24T04:33:25+00:00",
+      "shareholder_profit": 2219.712251
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-11",
+      "news_id": "2021087257",
+      "raw_path": "TASCO/financials/2564/H1/source.zip",
+      "sha256": "810f230e062c2a9fa07777019cef196c2b426799c8c44873a2b2e511574fd6d9",
+      "ingested_at": "2026-04-24T04:33:35+00:00",
+      "shareholder_profit": 867.465
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-12",
+      "news_id": "2021054335",
+      "raw_path": "TASCO/financials/2564/Q1/source.zip",
+      "sha256": "1e83281f0347f8078c240e9d6ef12ac41296f11a211afd55b2f2c34064958bbe",
+      "ingested_at": "2026-04-24T04:33:39+00:00",
+      "shareholder_profit": 422.215
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-10",
+      "news_id": "2022092769",
+      "raw_path": "TASCO/financials/2565/H1/source.zip",
+      "sha256": "fdf5970c13b13ed4dadae2c657ca97184bc7d46502be48a2a28c7c6531cb99b6",
+      "ingested_at": "2026-04-24T04:33:16+00:00",
+      "shareholder_profit": 587.026
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-12",
+      "news_id": "2022059270",
+      "raw_path": "TASCO/financials/2565/Q1/source.zip",
+      "sha256": "95a7dea0cb035f2290c2346665159840f8d24dd3f682323f4ead61805e65b241",
+      "ingested_at": "2026-04-24T04:33:21+00:00",
+      "shareholder_profit": 216.124
+    }
+  ]
+}

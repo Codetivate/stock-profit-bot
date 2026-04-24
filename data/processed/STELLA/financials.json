@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "symbol": "STELLA",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-27",
+  "quarterly_history": {
+    "2567": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null
+    },
+    "2568": {
+      "Q1": -220.109,
+      "Q2": -99.883,
+      "Q3": -197.164,
+      "Q4": -2417.912727
+    }
+  },
+  "sources": [
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-27",
+      "news_id": "17406066203941",
+      "raw_path": "STELLA/financials/2567/FY/source.zip",
+      "sha256": "f88d168ae29949bc874c77e3ed0d2d4ef3ba936dd46cc6c4cca85f5578b6cb1a",
+      "ingested_at": "2026-04-24T04:00:37+00:00",
+      "shareholder_profit": -2011.756326
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-14",
+      "news_id": "17630699524911",
+      "raw_path": "STELLA/financials/2568/9M/source.zip",
+      "sha256": "f5700ed50b6dad58c1a7449c70c2d696b1593cdd51946bcd07c14f62ea7b7d7a",
+      "ingested_at": "2026-04-24T04:00:22+00:00",
+      "shareholder_profit": -197.164
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-27",
+      "news_id": "17721442968071",
+      "raw_path": "STELLA/financials/2568/FY/source.zip",
+      "sha256": "a7c2853b5dbe289085c1434e35bba0546a055c017ee46d8551327c285ac21303",
+      "ingested_at": "2026-04-24T04:00:17+00:00",
+      "shareholder_profit": -2935.068727
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361042651",
+      "raw_path": "STELLA/financials/2568/H1/source.zip",
+      "sha256": "f4df62ddd6daf47cbb0c3e8557cdade6976f67e5cab1bec87e97dd7aec4d671b",
+      "ingested_at": "2026-04-24T04:00:27+00:00",
+      "shareholder_profit": -99.883
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-14",
+      "news_id": "17471784459641",
+      "raw_path": "STELLA/financials/2568/Q1/source.zip",
+      "sha256": "6449921aea2fef6b47b73f8d27fa13a4361bb6733d71264d9a6006e2fac5588d",
+      "ingested_at": "2026-04-24T04:00:32+00:00",
+      "shareholder_profit": -220.109
+    }
+  ]
+}

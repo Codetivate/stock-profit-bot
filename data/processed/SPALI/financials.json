@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "symbol": "SPALI",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2025-11-11",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 741.079,
+      "Q2": 38393.097,
+      "Q3": 39153.944,
+      "Q4": -71217.798787
+    },
+    "2565": {
+      "Q1": 1177.815,
+      "Q2": 43275.726,
+      "Q3": 44495.486,
+      "Q4": null
+    },
+    "2568": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": 1167.821,
+      "Q4": null
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-09",
+      "news_id": "2021119614",
+      "raw_path": "SPALI/financials/2564/9M/source.zip",
+      "sha256": "2e3e03082babb49c5451bfa2cef1471506fa07efca31bd5396d27ae83d24b50c",
+      "ingested_at": "2026-04-24T03:26:42+00:00",
+      "shareholder_profit": 39153.944
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-22",
+      "news_id": "2022019324",
+      "raw_path": "SPALI/financials/2564/FY/source.zip",
+      "sha256": "5cc8815d3990e1ad16cf6b1247dc47e3298bac36b8c8e930f9afcbaef064cfe5",
+      "ingested_at": "2026-04-24T03:26:37+00:00",
+      "shareholder_profit": 7070.321213
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-10",
+      "news_id": "2021086214",
+      "raw_path": "SPALI/financials/2564/H1/source.zip",
+      "sha256": "225c5a429ad9e6e5940647ea255ef05b85bd8d095fb63f1d4eb33b95862043a4",
+      "ingested_at": "2026-04-24T03:26:47+00:00",
+      "shareholder_profit": 38393.097
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-11",
+      "news_id": "2021053600",
+      "raw_path": "SPALI/financials/2564/Q1/source.zip",
+      "sha256": "80b49401d46856ff8126051299bda04ce50b082e7fd8c344a2f3c0850650619b",
+      "ingested_at": "2026-04-24T03:26:52+00:00",
+      "shareholder_profit": 741.079
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-08",
+      "news_id": "2022129703",
+      "raw_path": "SPALI/financials/2565/9M/source.zip",
+      "sha256": "cc62db499756806ae3e420b4952b49bbf2ad1cb282d53af8477a986b6f1277f1",
+      "ingested_at": "2026-04-24T03:26:23+00:00",
+      "shareholder_profit": 44495.486
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-09",
+      "news_id": "2022092104",
+      "raw_path": "SPALI/financials/2565/H1/source.zip",
+      "sha256": "e31c82981238b2d49e0ed1f1f69a1149d6edcfcf53d3e37eaa2da8d946599a97",
+      "ingested_at": "2026-04-24T03:26:28+00:00",
+      "shareholder_profit": 43275.726
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-10",
+      "news_id": "2022056800",
+      "raw_path": "SPALI/financials/2565/Q1/source.zip",
+      "sha256": "da9cc7ca3ec705848e054768a5513807bdd14ce4d0acc5ccb75f71fb54fa9519",
+      "ingested_at": "2026-04-24T03:26:32+00:00",
+      "shareholder_profit": 1177.815
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-11",
+      "news_id": "17628159920351",
+      "raw_path": "SPALI/financials/2568/9M/source.zip",
+      "sha256": "461b79ac5c6475f6ec858b37ae2067412a2a8fafc8c6017cabcbe925a448f175",
+      "ingested_at": "2026-04-24T03:25:25+00:00",
+      "shareholder_profit": 1167.821
+    }
+  ]
+}

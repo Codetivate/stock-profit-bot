@@ -1,0 +1,242 @@
+{
+  "schema_version": 1,
+  "symbol": "LANNA",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-16",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 242.626,
+      "Q2": 322.609,
+      "Q3": 679.909,
+      "Q4": 330.1005590000001
+    },
+    "2565": {
+      "Q1": 615.142,
+      "Q2": 1196.201,
+      "Q3": 710.897,
+      "Q4": 438.3885570000001
+    },
+    "2566": {
+      "Q1": 780.673,
+      "Q2": 641.432,
+      "Q3": 278.286,
+      "Q4": 387.7156099999998
+    },
+    "2567": {
+      "Q1": 583.996,
+      "Q2": 481.947,
+      "Q3": 293.148,
+      "Q4": 305.0863270000002
+    },
+    "2568": {
+      "Q1": 240.357,
+      "Q2": 176.558,
+      "Q3": 102.326,
+      "Q4": 178.34541100000004
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-12",
+      "news_id": "2021122840",
+      "raw_path": "LANNA/financials/2564/9M/source.zip",
+      "sha256": "5a927c5ef4d9a717ced7e94a6c33eac74168b78b9d9e8c82e295f83090605fef",
+      "ingested_at": "2026-04-23T21:11:59+00:00",
+      "shareholder_profit": 679.909
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-24",
+      "news_id": "2022021665",
+      "raw_path": "LANNA/financials/2564/FY/source.zip",
+      "sha256": "34aa05e1bce4937e60e424efd459283e1ae7db566b993696b0cb46ad2d5c605f",
+      "ingested_at": "2026-04-23T21:11:54+00:00",
+      "shareholder_profit": 1575.244559
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-13",
+      "news_id": "2021089623",
+      "raw_path": "LANNA/financials/2564/H1/source.zip",
+      "sha256": "527cf1b38ffd3bd925fe9bf735b1467cfc3b195389681d4edb68a3c1d70315a9",
+      "ingested_at": "2026-04-23T21:12:04+00:00",
+      "shareholder_profit": 322.609
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-14",
+      "news_id": "2021057921",
+      "raw_path": "LANNA/financials/2564/Q1/source.zip",
+      "sha256": "001a231baf40f8a0f207dcc17360dd2e13471fa479f527f716b5a6dbaf2d2dfa",
+      "ingested_at": "2026-04-23T21:12:09+00:00",
+      "shareholder_profit": 242.626
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-11",
+      "news_id": "2022133573",
+      "raw_path": "LANNA/financials/2565/9M/source.zip",
+      "sha256": "ef2268c14b6c017a044adf3f80b569a7dc2ab7ebe6a660483361c2fce8374652",
+      "ingested_at": "2026-04-23T21:11:40+00:00",
+      "shareholder_profit": 710.897
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-28",
+      "news_id": "2023025514",
+      "raw_path": "LANNA/financials/2565/FY/source.zip",
+      "sha256": "c793d48a382570ecedca8dc5bfd3b26213bd3208cb09dcc0dd68ffea9c165a51",
+      "ingested_at": "2026-04-23T21:11:36+00:00",
+      "shareholder_profit": 2960.628557
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-11",
+      "news_id": "2022094287",
+      "raw_path": "LANNA/financials/2565/H1/source.zip",
+      "sha256": "7158a8236126b43c9cc8069041f41f7f30898e93fe8885fbf830b7f41d7185fd",
+      "ingested_at": "2026-04-23T21:11:45+00:00",
+      "shareholder_profit": 1196.201
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-13",
+      "news_id": "2022062352",
+      "raw_path": "LANNA/financials/2565/Q1/source.zip",
+      "sha256": "91e8c74dcbeb22eb327440aa3480f46da0f2ab1df51de0217cd35e771397c81e",
+      "ingested_at": "2026-04-23T21:11:49+00:00",
+      "shareholder_profit": 615.142
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-13",
+      "news_id": "16998304570351",
+      "raw_path": "LANNA/financials/2566/9M/source.zip",
+      "sha256": "889af6b3bf902d313a85b2d766a5970737da1ff857ef5cf7bfe3f2211d8da60f",
+      "ingested_at": "2026-04-23T21:11:22+00:00",
+      "shareholder_profit": 278.286
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-28",
+      "news_id": "17090750771201",
+      "raw_path": "LANNA/financials/2566/FY/source.zip",
+      "sha256": "242948ce723ae41a29212557b6e39bb637dc6c9bd2b649f2a71b76f66f957c83",
+      "ingested_at": "2026-04-23T21:11:17+00:00",
+      "shareholder_profit": 2088.10661
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-11",
+      "news_id": "16917102058451",
+      "raw_path": "LANNA/financials/2566/H1/source.zip",
+      "sha256": "ea01a991ef92bf61498e0cd2b1ac0657ad0a312e671ce681fb9c92f3b1f5fe3f",
+      "ingested_at": "2026-04-23T21:11:26+00:00",
+      "shareholder_profit": 641.432
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-12",
+      "news_id": "16838458865961",
+      "raw_path": "LANNA/financials/2566/Q1/source.zip",
+      "sha256": "4621c3b40d3793a7cbd54881bcc1eeb6444f832feb46565ef8c852e2d99c934a",
+      "ingested_at": "2026-04-23T21:11:31+00:00",
+      "shareholder_profit": 780.673
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-11",
+      "news_id": "17312815626811",
+      "raw_path": "LANNA/financials/2567/9M/source.zip",
+      "sha256": "3640781a949533a841573c1a8ed849d8da7fa0d28eab580547f8cb8dee3000a9",
+      "ingested_at": "2026-04-23T21:11:04+00:00",
+      "shareholder_profit": 293.148
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-21",
+      "news_id": "17400886449971",
+      "raw_path": "LANNA/financials/2567/FY/source.zip",
+      "sha256": "f738db1ce2cd6ec6aa80188df764d8979638309d14f2835356af7ee69338ed12",
+      "ingested_at": "2026-04-23T21:11:00+00:00",
+      "shareholder_profit": 1664.177327
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990171481",
+      "raw_path": "LANNA/financials/2567/H1/source.zip",
+      "sha256": "acc946c145dd4f1160f0d49d94a3342060888235a23dad439e3b56a884aae5da",
+      "ingested_at": "2026-04-23T21:11:08+00:00",
+      "shareholder_profit": 481.947
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-13",
+      "news_id": "17155537994741",
+      "raw_path": "LANNA/financials/2567/Q1/source.zip",
+      "sha256": "74e20cc691bbd80e1e1a78773fc1b8738f23aba4d0869566d30e6e7d3a055293",
+      "ingested_at": "2026-04-23T21:11:13+00:00",
+      "shareholder_profit": 583.996
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-05",
+      "news_id": "17622990247751",
+      "raw_path": "LANNA/financials/2568/9M/source.zip",
+      "sha256": "20eef68ebd50d8d918fdfc49afa265e77b66412395c2cd859981de49f8eb83c3",
+      "ingested_at": "2026-04-23T21:10:46+00:00",
+      "shareholder_profit": 102.326
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-16",
+      "news_id": "17711983794681",
+      "raw_path": "LANNA/financials/2568/FY/source.zip",
+      "sha256": "b5a9a8a3a560663969a4b67a4c80aa4b3a722315532cff60e601727f081eb3e7",
+      "ingested_at": "2026-04-23T21:10:42+00:00",
+      "shareholder_profit": 697.586411
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-04",
+      "news_id": "17542643994391",
+      "raw_path": "LANNA/financials/2568/H1/source.zip",
+      "sha256": "29a511290c3ec9995e0f25b2c350bb73282bb516ff26c2436aa385fbc8d6912b",
+      "ingested_at": "2026-04-23T21:10:51+00:00",
+      "shareholder_profit": 176.558
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-08",
+      "news_id": "17466601058471",
+      "raw_path": "LANNA/financials/2568/Q1/source.zip",
+      "sha256": "5704ad9f6ace5dfd0c6b68132274d29a73b9df6ce469c728362392dd2c293d7d",
+      "ingested_at": "2026-04-23T21:10:55+00:00",
+      "shareholder_profit": 240.357
+    }
+  ]
+}

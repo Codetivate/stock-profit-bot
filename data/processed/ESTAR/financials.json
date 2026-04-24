@@ -1,0 +1,242 @@
+{
+  "schema_version": 1,
+  "symbol": "ESTAR",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-27",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 20.518,
+      "Q2": -1.543,
+      "Q3": -23.799,
+      "Q4": 26.46305
+    },
+    "2565": {
+      "Q1": -3.031,
+      "Q2": 22.817,
+      "Q3": 30.233,
+      "Q4": 1.1282359999999976
+    },
+    "2566": {
+      "Q1": -1.186,
+      "Q2": 0.257,
+      "Q3": -2.408,
+      "Q4": 33.262921999999996
+    },
+    "2567": {
+      "Q1": 5.61,
+      "Q2": -37.811,
+      "Q3": -8.684,
+      "Q4": 74.989168
+    },
+    "2568": {
+      "Q1": -9.131,
+      "Q2": 9.572,
+      "Q3": -19.753,
+      "Q4": 145.71371299999998
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-11",
+      "news_id": "2021121693",
+      "raw_path": "ESTAR/financials/2564/9M/source.zip",
+      "sha256": "e930a87e421bc3512c8323f8359314791638512216d4839ac16dfa3262da5628",
+      "ingested_at": "2026-04-23T18:27:12+00:00",
+      "shareholder_profit": -23.799
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-24",
+      "news_id": "2022021604",
+      "raw_path": "ESTAR/financials/2564/FY/source.zip",
+      "sha256": "5810e8218f8df518b53ef882f6aa35e042a6812eeb3964a753df46845456d6a7",
+      "ingested_at": "2026-04-23T18:27:07+00:00",
+      "shareholder_profit": 21.63905
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-11",
+      "news_id": "2021087450",
+      "raw_path": "ESTAR/financials/2564/H1/source.zip",
+      "sha256": "1e7e502b091355871547f1423df0f408788b290b5410ed5bf6f339dba18bec27",
+      "ingested_at": "2026-04-23T18:27:16+00:00",
+      "shareholder_profit": -1.543
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-13",
+      "news_id": "2021057105",
+      "raw_path": "ESTAR/financials/2564/Q1/source.zip",
+      "sha256": "310baf27a6c2287383547aa5d2fa9d8ef9587d350d848cc2210d3d81b2333d5a",
+      "ingested_at": "2026-04-23T18:27:22+00:00",
+      "shareholder_profit": 20.518
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-14",
+      "news_id": "2022135692",
+      "raw_path": "ESTAR/financials/2565/9M/source.zip",
+      "sha256": "873ace6c164926dd00ada9c53c0403bc9bb8e882a59a0824777cd60e7fb7909c",
+      "ingested_at": "2026-04-23T18:26:53+00:00",
+      "shareholder_profit": 30.233
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-24",
+      "news_id": "2023022606",
+      "raw_path": "ESTAR/financials/2565/FY/source.zip",
+      "sha256": "dfaf4543357e681ce04967d84e02934f75282f9018b9138ac2e36042517d6eb4",
+      "ingested_at": "2026-04-23T18:26:48+00:00",
+      "shareholder_profit": 51.147236
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-10",
+      "news_id": "2022092822",
+      "raw_path": "ESTAR/financials/2565/H1/source.zip",
+      "sha256": "e9f9e2d1d2589edc79aabd1cc8a234c0ff899e62f517303c3c5eddc66296b6df",
+      "ingested_at": "2026-04-23T18:26:58+00:00",
+      "shareholder_profit": 22.817
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-10",
+      "news_id": "2022056562",
+      "raw_path": "ESTAR/financials/2565/Q1/source.zip",
+      "sha256": "a16f8ef64bc6c1e468bcd469f1bef764536197fc223552167a8676342393c6d6",
+      "ingested_at": "2026-04-23T18:27:03+00:00",
+      "shareholder_profit": -3.031
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-14",
+      "news_id": "16999132700901",
+      "raw_path": "ESTAR/financials/2566/9M/source.zip",
+      "sha256": "642b238843497e439ba3a05696a3ccc7193d0621a778a265382d6e681e7a5609",
+      "ingested_at": "2026-04-23T18:26:35+00:00",
+      "shareholder_profit": -2.408
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-29",
+      "news_id": "17091569073261",
+      "raw_path": "ESTAR/financials/2566/FY/source.zip",
+      "sha256": "44abb8925e5f3ab1db4a94ae10ee0275ead1aca313ba2bf5d013a1bc06899707",
+      "ingested_at": "2026-04-23T18:26:29+00:00",
+      "shareholder_profit": 29.925922
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-15",
+      "news_id": "16920539386621",
+      "raw_path": "ESTAR/financials/2566/H1/source.zip",
+      "sha256": "53a39f8f983b49d412a6a354d3535272b5d28999ad780958cda5571adb5211f3",
+      "ingested_at": "2026-04-23T18:26:39+00:00",
+      "shareholder_profit": 0.257
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-11",
+      "news_id": "16837584061541",
+      "raw_path": "ESTAR/financials/2566/Q1/source.zip",
+      "sha256": "91168afa3bc61a11d3719991086af05b35a12b23fa0393d5571ac7f723faa0b5",
+      "ingested_at": "2026-04-23T18:26:44+00:00",
+      "shareholder_profit": -1.186
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-13",
+      "news_id": "17314477489871",
+      "raw_path": "ESTAR/financials/2567/9M/source.zip",
+      "sha256": "ec002754752c74d5c3debb3358448ad1f99917e7a7e92ee212b5a07584bc1af3",
+      "ingested_at": "2026-04-23T18:26:14+00:00",
+      "shareholder_profit": -8.684
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-28",
+      "news_id": "17406928463851",
+      "raw_path": "ESTAR/financials/2567/FY/source.zip",
+      "sha256": "67e7947ffcc2bcef2da748ad1392686c6c19f7fc716cc66b264940b3676274b2",
+      "ingested_at": "2026-04-23T18:26:10+00:00",
+      "shareholder_profit": 34.104168
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-14",
+      "news_id": "17235858010651",
+      "raw_path": "ESTAR/financials/2567/H1/source.zip",
+      "sha256": "97cf6fd704b8b32a94049ca7135ed7cd493748676101e6478f1b82f2937870b3",
+      "ingested_at": "2026-04-23T18:26:19+00:00",
+      "shareholder_profit": -37.811
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-13",
+      "news_id": "17155538016671",
+      "raw_path": "ESTAR/financials/2567/Q1/source.zip",
+      "sha256": "ec5a12a594763ce2efdd9559f33021e79e471d42824d1d5b311425ba1cf5a618",
+      "ingested_at": "2026-04-23T18:26:24+00:00",
+      "shareholder_profit": 5.61
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-14",
+      "news_id": "17630699605951",
+      "raw_path": "ESTAR/financials/2568/9M/source.zip",
+      "sha256": "e3283d8d6b525bf2cb8d3f04e936fa8f59a5102c967ed6217468a51554e9e0d8",
+      "ingested_at": "2026-04-23T18:25:56+00:00",
+      "shareholder_profit": -19.753
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-27",
+      "news_id": "17721443191801",
+      "raw_path": "ESTAR/financials/2568/FY/source.zip",
+      "sha256": "0de18cae29aa2270e13468774175eea657723b284ad27fb14eb9ccd024b8f2be",
+      "ingested_at": "2026-04-23T18:25:51+00:00",
+      "shareholder_profit": 126.401713
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361173381",
+      "raw_path": "ESTAR/financials/2568/H1/source.zip",
+      "sha256": "32841fe9500b3844f0202f2cd5be49f5e0c5ef96c5a0248644dc62551f701906",
+      "ingested_at": "2026-04-23T18:26:01+00:00",
+      "shareholder_profit": 9.572
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-14",
+      "news_id": "17471784591861",
+      "raw_path": "ESTAR/financials/2568/Q1/source.zip",
+      "sha256": "95b3bc34ff11f907d8ba86408c135d49e8e31b3573d070b38740667497339607",
+      "ingested_at": "2026-04-23T18:26:05+00:00",
+      "shareholder_profit": -9.131
+    }
+  ]
+}

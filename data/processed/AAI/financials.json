@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "symbol": "AAI",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-19",
+  "quarterly_history": {
+    "2565": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": 195.159,
+      "Q4": null
+    },
+    "2566": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null
+    },
+    "2567": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null
+    },
+    "2568": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null
+    }
+  },
+  "sources": [
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-10",
+      "news_id": "2022131864",
+      "raw_path": "AAI/financials/2565/9M/source.zip",
+      "sha256": "f1a373d189e92cf13b373bab0bcbfb87fa7e645926a1dd1f5dd29bea7c390a9f",
+      "ingested_at": "2026-04-23T13:43:49+00:00",
+      "shareholder_profit": 195.159
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-20",
+      "news_id": "17083827459801",
+      "raw_path": "AAI/financials/2566/FY/source.zip",
+      "sha256": "124eef627c7796428840c26fc2c4c1b1a50e50a7743b62b92969e1c0b3f994e9",
+      "ingested_at": "2026-04-23T13:43:25+00:00",
+      "shareholder_profit": 1.801982494117647e-07
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-25",
+      "news_id": "17404367177631",
+      "raw_path": "AAI/financials/2567/FY/source.zip",
+      "sha256": "cd13596e66ee2a03b6c64b82093be6e4ecd724511a6c8f5bdb5b54b2bfd02ac0",
+      "ingested_at": "2026-04-23T13:43:06+00:00",
+      "shareholder_profit": 4.7218933505882354e-07
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-19",
+      "news_id": "17714553138111",
+      "raw_path": "AAI/financials/2568/FY/source.zip",
+      "sha256": "4fc8c89eaf646d048bcdfd2a046a43a0a604f29a6b0a40f93b84ea420e224d94",
+      "ingested_at": "2026-04-23T13:42:48+00:00",
+      "shareholder_profit": 3.490271900585237e-07
+    }
+  ]
+}

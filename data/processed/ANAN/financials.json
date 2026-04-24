@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "symbol": "ANAN",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-23",
+  "quarterly_history": {
+    "2567": {
+      "Q1": 195.448,
+      "Q2": 104.907,
+      "Q3": 20.567,
+      "Q4": 13.262205000000016
+    },
+    "2568": {
+      "Q1": -256.895,
+      "Q2": 253.631,
+      "Q3": 129.55,
+      "Q4": -70.62091700000005
+    }
+  },
+  "sources": [
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361293341",
+      "raw_path": "ANAN/financials/2567/9M/source.zip",
+      "sha256": "a89cb577df1270d4be15e3a6a6a6d8a7ff6630ef1cb1c89f425132505cb636a5",
+      "ingested_at": "2026-04-23T14:41:53+00:00",
+      "shareholder_profit": 20.567
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-27",
+      "news_id": "17406066488351",
+      "raw_path": "ANAN/financials/2567/FY/source.zip",
+      "sha256": "9b08c68f7565ca6fa365dd6811731eaa945fe4db7e3ce898092eef490b8b72d3",
+      "ingested_at": "2026-04-23T14:41:48+00:00",
+      "shareholder_profit": 334.184205
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-14",
+      "news_id": "17235858023751",
+      "raw_path": "ANAN/financials/2567/H1/source.zip",
+      "sha256": "aae391781e69a61f7004cd7be4d5bd4acc1234fec855a9013d399441968df22f",
+      "ingested_at": "2026-04-23T14:41:57+00:00",
+      "shareholder_profit": 104.907
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-13",
+      "news_id": "17155538008421",
+      "raw_path": "ANAN/financials/2567/Q1/source.zip",
+      "sha256": "782440e2dfabfec1a2ac1dc01738645956be15d2d0c4fc1b4514ce7d2ee851ab",
+      "ingested_at": "2026-04-23T14:42:02+00:00",
+      "shareholder_profit": 195.448
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-13",
+      "news_id": "17629880493091",
+      "raw_path": "ANAN/financials/2568/9M/source.zip",
+      "sha256": "7ad2ac64ed331de80aa8ba900be81debc5728141db36a3a80f861ce5fdf0bf35",
+      "ingested_at": "2026-04-23T14:41:34+00:00",
+      "shareholder_profit": 129.55
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-23",
+      "news_id": "17718030210131",
+      "raw_path": "ANAN/financials/2568/FY/source.zip",
+      "sha256": "d1db2f75bf977353b1e328f72e267f0cbe426a55e182d640ee7b1b0090edf11e",
+      "ingested_at": "2026-04-23T14:41:29+00:00",
+      "shareholder_profit": 55.665083
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229842411",
+      "raw_path": "ANAN/financials/2568/H1/source.zip",
+      "sha256": "254ee90e5eb1893c1ebf31730615599eebcbcec3738172d4725ee5c5b9770722",
+      "ingested_at": "2026-04-23T14:41:39+00:00",
+      "shareholder_profit": 253.631
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-09",
+      "news_id": "17467412684171",
+      "raw_path": "ANAN/financials/2568/Q1/source.zip",
+      "sha256": "d6c6d3acbdc011006be246adc0587030ec3590c5320b3b6b2c5a3cfd493004e1",
+      "ingested_at": "2026-04-23T14:41:43+00:00",
+      "shareholder_profit": -256.895
+    }
+  ]
+}

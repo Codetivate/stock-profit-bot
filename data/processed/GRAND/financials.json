@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "symbol": "GRAND",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-04-07",
+  "quarterly_history": {
+    "2568": {
+      "Q1": -104.929,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null
+    }
+  },
+  "sources": [
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-04-07",
+      "news_id": "17755182027531",
+      "raw_path": "GRAND/financials/2568/FY/source.zip",
+      "sha256": "640e5c8e957e4f5c234235fb2e6aadbdce8414d855e04cf6cbcc643279ac24e1",
+      "ingested_at": "2026-04-23T19:13:12+00:00",
+      "shareholder_profit": -1543.47284
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903570551",
+      "raw_path": "GRAND/financials/2568/Q1/source.zip",
+      "sha256": "1cbf907fee38ec92995a217f1d304a31320164e082f3816934b9f0b829656c1d",
+      "ingested_at": "2026-04-23T19:13:25+00:00",
+      "shareholder_profit": -104.929
+    }
+  ]
+}

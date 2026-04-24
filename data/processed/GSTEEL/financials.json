@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "symbol": "GSTEEL",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-27",
+  "quarterly_history": {
+    "2565": {
+      "Q1": 1.0827078169427557e-05,
+      "Q2": -1.2698433548753292e-06,
+      "Q3": -2.8962798792136475e-05,
+      "Q4": 1.9336309201478805e-05
+    },
+    "2566": {
+      "Q1": -2.2225974734835725e-06,
+      "Q2": -1.7886072910475093e-05,
+      "Q3": -6.902126654905593e-06,
+      "Q4": 2.6975750441857444e-05
+    },
+    "2567": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null
+    },
+    "2568": {
+      "Q1": -1.580088192496292e-05,
+      "Q2": -1.3986286659662106e-05,
+      "Q3": -1.6035077888738077e-05,
+      "Q4": 4.5768270935185704e-05
+    }
+  },
+  "sources": [
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-10",
+      "news_id": "2022131834",
+      "raw_path": "GSTEEL/financials/2565/9M/source.zip",
+      "sha256": "fbda9cb98fd525520876efa784afe35ba08f4f74821eb33a825020cd2b988bdd",
+      "ingested_at": "2026-04-23T19:18:33+00:00",
+      "shareholder_profit": -2.8962798792136475e-05
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-24",
+      "news_id": "2023022304",
+      "raw_path": "GSTEEL/financials/2565/FY/source.zip",
+      "sha256": "f9b90fca0e01320b10b338f0a32f6421f4b840544ca599b1e3bb07e5445bd742",
+      "ingested_at": "2026-04-23T19:18:29+00:00",
+      "shareholder_profit": -6.925477610544164e-08
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-10",
+      "news_id": "2022093328",
+      "raw_path": "GSTEEL/financials/2565/H1/source.zip",
+      "sha256": "44003346f3069d9329b45d2e3c28ce8c9d403eef08e215ab4e897144a643d93e",
+      "ingested_at": "2026-04-23T19:18:38+00:00",
+      "shareholder_profit": -1.2698433548753292e-06
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-12",
+      "news_id": "2022060000",
+      "raw_path": "GSTEEL/financials/2565/Q1/source.zip",
+      "sha256": "b012139e4038a5a4a8b90ec39def069aa7081b601fedc28b6b9c9914f233d571",
+      "ingested_at": "2026-04-23T19:18:43+00:00",
+      "shareholder_profit": 1.0827078169427557e-05
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-09",
+      "news_id": "16994859255321",
+      "raw_path": "GSTEEL/financials/2566/9M/source.zip",
+      "sha256": "5ec44ec91340b7c754e6c44286c4f91f83a43ab69a414ad2541666ab81dfb80f",
+      "ingested_at": "2026-04-23T19:18:15+00:00",
+      "shareholder_profit": -6.902126654905593e-06
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-22",
+      "news_id": "17085582096671",
+      "raw_path": "GSTEEL/financials/2566/FY/source.zip",
+      "sha256": "8667f8b662893e9b65e0e7a3906be36dca888742811868aaae2cd4e01d19976f",
+      "ingested_at": "2026-04-23T19:18:11+00:00",
+      "shareholder_profit": -3.504659700681554e-08
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-10",
+      "news_id": "16916230300661",
+      "raw_path": "GSTEEL/financials/2566/H1/source.zip",
+      "sha256": "6f7b37d5c79ff9c54bcc00c7e35c578cc17d94b34c4d8900d0c1769e7055cb4f",
+      "ingested_at": "2026-04-23T19:18:20+00:00",
+      "shareholder_profit": -1.7886072910475093e-05
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-11",
+      "news_id": "16837584048791",
+      "raw_path": "GSTEEL/financials/2566/Q1/source.zip",
+      "sha256": "9f53b14877c054ea1f8e8ad0bd7be5996bb3ea63d245591fe5514e153821d5dd",
+      "ingested_at": "2026-04-23T19:18:24+00:00",
+      "shareholder_profit": -2.2225974734835725e-06
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-27",
+      "news_id": "17406066348451",
+      "raw_path": "GSTEEL/financials/2567/FY/source.zip",
+      "sha256": "c2980b43ea6e77ada0b05cd2f039b94ac0713ccb62832aae9dab43cc9c12849c",
+      "ingested_at": "2026-04-23T19:17:53+00:00",
+      "shareholder_profit": -6.068262049158019e-08
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-07",
+      "news_id": "17624721980231",
+      "raw_path": "GSTEEL/financials/2568/9M/source.zip",
+      "sha256": "45d30d81e26e022c5c17f97c505eed46e7158216b17cac97d01d87a1b696f7de",
+      "ingested_at": "2026-04-23T19:17:39+00:00",
+      "shareholder_profit": -1.6035077888738077e-05
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-27",
+      "news_id": "17721442947621",
+      "raw_path": "GSTEEL/financials/2568/FY/source.zip",
+      "sha256": "fbbffdcf0c43f880c426fea397c7c50aad0ce5e8a8fa3adde47ab5fa6b806a02",
+      "ingested_at": "2026-04-23T19:17:35+00:00",
+      "shareholder_profit": -5.3975538177401195e-08
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-07",
+      "news_id": "17545237036051",
+      "raw_path": "GSTEEL/financials/2568/H1/source.zip",
+      "sha256": "04c8fa0117bbf102e56063599f48e7c8a9fe48bec0afc76487cd417dc6e4397b",
+      "ingested_at": "2026-04-23T19:17:44+00:00",
+      "shareholder_profit": -1.3986286659662106e-05
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-09",
+      "news_id": "17467412673311",
+      "raw_path": "GSTEEL/financials/2568/Q1/source.zip",
+      "sha256": "3cecf022f8b1b4dbd18913fd9c209b0d8233d624e9e99a25cc8002fe9eeca468",
+      "ingested_at": "2026-04-23T19:17:48+00:00",
+      "shareholder_profit": -1.580088192496292e-05
+    }
+  ]
+}

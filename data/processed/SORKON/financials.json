@@ -1,0 +1,242 @@
+{
+  "schema_version": 1,
+  "symbol": "SORKON",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-24",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 34.42,
+      "Q2": 49.24,
+      "Q3": 8.813,
+      "Q4": 49.942297
+    },
+    "2565": {
+      "Q1": 24.655,
+      "Q2": 40.408,
+      "Q3": 17.776,
+      "Q4": 18.644446999999996
+    },
+    "2566": {
+      "Q1": 0.84,
+      "Q2": 24.508,
+      "Q3": 16.844,
+      "Q4": 12.474625
+    },
+    "2567": {
+      "Q1": 15.468,
+      "Q2": 52.495,
+      "Q3": 34.155,
+      "Q4": 31.332578000000012
+    },
+    "2568": {
+      "Q1": 57.532,
+      "Q2": 36.903,
+      "Q3": -14.763,
+      "Q4": 55.56837100000001
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-12",
+      "news_id": "2021122683",
+      "raw_path": "SORKON/financials/2564/9M/source.zip",
+      "sha256": "baf0c9503c169c5f7851c897326578c7c9df452858186e55b7bff03b68afbe90",
+      "ingested_at": "2026-04-24T03:20:27+00:00",
+      "shareholder_profit": 8.813
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-24",
+      "news_id": "2022022398",
+      "raw_path": "SORKON/financials/2564/FY/source.zip",
+      "sha256": "3225ad468c930915c391efcef40e71e063111207481e1d453a86bd6f44d68504",
+      "ingested_at": "2026-04-24T03:20:22+00:00",
+      "shareholder_profit": 142.415297
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-10",
+      "news_id": "2021086673",
+      "raw_path": "SORKON/financials/2564/H1/source.zip",
+      "sha256": "14f7379e9dc2f623114c1fad58aae48c00ede90028372babc5a72f9f08f4ccfe",
+      "ingested_at": "2026-04-24T03:20:31+00:00",
+      "shareholder_profit": 49.24
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-13",
+      "news_id": "2021056063",
+      "raw_path": "SORKON/financials/2564/Q1/source.zip",
+      "sha256": "58b26c3c2366c0bcc0d4b316dc200e1f316401341e42bdc25452b5827418687d",
+      "ingested_at": "2026-04-24T03:20:36+00:00",
+      "shareholder_profit": 34.42
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-10",
+      "news_id": "2022132644",
+      "raw_path": "SORKON/financials/2565/9M/source.zip",
+      "sha256": "d50c8b2757943c5433cbe638530b1b4051de06b6bf1c6fc9183e7355b9623960",
+      "ingested_at": "2026-04-24T03:20:07+00:00",
+      "shareholder_profit": 17.776
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-22",
+      "news_id": "2023019020",
+      "raw_path": "SORKON/financials/2565/FY/source.zip",
+      "sha256": "5f6f8f44eab002045bbc074f0795c2a7624d22470ad8a3f3dd2f9a1b11a5f317",
+      "ingested_at": "2026-04-24T03:20:02+00:00",
+      "shareholder_profit": 101.483447
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-15",
+      "news_id": "2022096966",
+      "raw_path": "SORKON/financials/2565/H1/source.zip",
+      "sha256": "6801872d51a04de3b059689c1dc3b908be46d19d26884cde9f033840092464a0",
+      "ingested_at": "2026-04-24T03:20:12+00:00",
+      "shareholder_profit": 40.408
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-13",
+      "news_id": "2022061074",
+      "raw_path": "SORKON/financials/2565/Q1/source.zip",
+      "sha256": "ea689369f40ff5549f9d937bb67838d800d46b6353f544d95679ec2ada6b5bae",
+      "ingested_at": "2026-04-24T03:20:17+00:00",
+      "shareholder_profit": 24.655
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-08",
+      "news_id": "16993998023341",
+      "raw_path": "SORKON/financials/2566/9M/source.zip",
+      "sha256": "e1ede54c7111572587fae53bdf164c35b929acc56d1598bbd62f725a256ee9f9",
+      "ingested_at": "2026-04-24T03:19:47+00:00",
+      "shareholder_profit": 16.844
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-27",
+      "news_id": "17089869251671",
+      "raw_path": "SORKON/financials/2566/FY/source.zip",
+      "sha256": "49d9a74ce6240b315d0110255ee661d1154dd34b86d39ea719db37e0422845d9",
+      "ingested_at": "2026-04-24T03:19:42+00:00",
+      "shareholder_profit": 54.666625
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-09",
+      "news_id": "16915381900051",
+      "raw_path": "SORKON/financials/2566/H1/source.zip",
+      "sha256": "bc01361705fc57033d83df8eabac801401a4581894a0ed5714a97ce9e4ae8702",
+      "ingested_at": "2026-04-24T03:19:52+00:00",
+      "shareholder_profit": 24.508
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-12",
+      "news_id": "16838458752011",
+      "raw_path": "SORKON/financials/2566/Q1/source.zip",
+      "sha256": "43d917a7ac6e9c87bc97e12d2a325410c84a15f4cd7646e754bd46eb1e6c1423",
+      "ingested_at": "2026-04-24T03:19:57+00:00",
+      "shareholder_profit": 0.84
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-12",
+      "news_id": "17313658194171",
+      "raw_path": "SORKON/financials/2567/9M/source.zip",
+      "sha256": "3e7908629e70fdfd6b48e142704056282e871da9476087f6e394a6cdba4a341c",
+      "ingested_at": "2026-04-24T03:19:28+00:00",
+      "shareholder_profit": 34.155
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-26",
+      "news_id": "17405221042321",
+      "raw_path": "SORKON/financials/2567/FY/source.zip",
+      "sha256": "ed86bbfc7eec0dc966a9d1d034eb115e0a196ff1abda78dcb41652cf93fc16f8",
+      "ingested_at": "2026-04-24T03:19:23+00:00",
+      "shareholder_profit": 133.450578
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-08",
+      "news_id": "17230734197631",
+      "raw_path": "SORKON/financials/2567/H1/source.zip",
+      "sha256": "d35f1904da9dba929f627eb3bc03d8905a4c97e4280e3c9ad414a0e53aad745a",
+      "ingested_at": "2026-04-24T03:19:33+00:00",
+      "shareholder_profit": 52.495
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-13",
+      "news_id": "17155538038321",
+      "raw_path": "SORKON/financials/2567/Q1/source.zip",
+      "sha256": "b25a846ba898875b0b283d1e8f28297455824fd2c7fe56f52da9d727488a0e3f",
+      "ingested_at": "2026-04-24T03:19:37+00:00",
+      "shareholder_profit": 15.468
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-12",
+      "news_id": "17629001504481",
+      "raw_path": "SORKON/financials/2568/9M/source.zip",
+      "sha256": "e8b8d0f87720b9ee3119c853a58082f80d470b41323fbf9570bbf9e7ad31a679",
+      "ingested_at": "2026-04-24T03:19:09+00:00",
+      "shareholder_profit": -14.763
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-24",
+      "news_id": "17718892133301",
+      "raw_path": "SORKON/financials/2568/FY/source.zip",
+      "sha256": "b2ed943cb7cb808c1d04776c12a87b655f5aa0f7e5b4b6938c861a8fd0173c8f",
+      "ingested_at": "2026-04-24T03:19:04+00:00",
+      "shareholder_profit": 135.240371
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361028841",
+      "raw_path": "SORKON/financials/2568/H1/source.zip",
+      "sha256": "b6ea45ce962c97ea401268997d3806c02822457bc0b0ea275727f1bf1a7c253e",
+      "ingested_at": "2026-04-24T03:19:14+00:00",
+      "shareholder_profit": 36.903
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-14",
+      "news_id": "17471784585721",
+      "raw_path": "SORKON/financials/2568/Q1/source.zip",
+      "sha256": "f518114d2ebcbba91965652c4a6ac391a7a55f421506b1ab368235c8beee0269",
+      "ingested_at": "2026-04-24T03:19:19+00:00",
+      "shareholder_profit": 57.532
+    }
+  ]
+}

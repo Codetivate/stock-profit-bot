@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "symbol": "PF",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2025-11-13",
+  "quarterly_history": {
+    "2568": {
+      "Q1": -282.897,
+      "Q2": -655.071,
+      "Q3": -543.027,
+      "Q4": null
+    }
+  },
+  "sources": [
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-13",
+      "news_id": "17629880472911",
+      "raw_path": "PF/financials/2568/9M/source.zip",
+      "sha256": "ce24e0fac5e2fa37fd4934f74bed276bc54b2a7c6b5383a869a60b060589d0a4",
+      "ingested_at": "2026-04-23T23:40:51+00:00",
+      "shareholder_profit": -543.027
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229885321",
+      "raw_path": "PF/financials/2568/H1/source.zip",
+      "sha256": "10530605ca30c8fc1fd3a92a2af678322a1cd72c5da4ec10211c95bc53abdbd7",
+      "ingested_at": "2026-04-23T23:40:55+00:00",
+      "shareholder_profit": -655.071
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-15",
+      "news_id": "17472613171871",
+      "raw_path": "PF/financials/2568/Q1/source.zip",
+      "sha256": "f6e0b044e1c84d39e0ba89a37c63fac75ce51b78be71f86015de366193e45cf9",
+      "ingested_at": "2026-04-23T23:41:00+00:00",
+      "shareholder_profit": -282.897
+    }
+  ]
+}

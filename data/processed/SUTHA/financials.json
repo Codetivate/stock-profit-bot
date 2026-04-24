@@ -1,0 +1,242 @@
+{
+  "schema_version": 1,
+  "symbol": "SUTHA",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-27",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 29.726,
+      "Q2": 7.868,
+      "Q3": 13.895,
+      "Q4": -0.32481000000000115
+    },
+    "2565": {
+      "Q1": 32.189,
+      "Q2": 25.938,
+      "Q3": 30.327,
+      "Q4": 0.7511759999999938
+    },
+    "2566": {
+      "Q1": 22.379,
+      "Q2": -4.031,
+      "Q3": 13.412,
+      "Q4": 14.357521
+    },
+    "2567": {
+      "Q1": 42.226,
+      "Q2": 16.694,
+      "Q3": 9.502,
+      "Q4": -6.405733999999997
+    },
+    "2568": {
+      "Q1": 29.85,
+      "Q2": 19.828,
+      "Q3": -8.763,
+      "Q4": -50.012795000000004
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-15",
+      "news_id": "2021124665",
+      "raw_path": "SUTHA/financials/2564/9M/source.zip",
+      "sha256": "f2542be6fc112e28164c641dc3553a9a24fb101dde205dccd5f52ee78237bcd2",
+      "ingested_at": "2026-04-24T04:17:24+00:00",
+      "shareholder_profit": 13.895
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-28",
+      "news_id": "2022025052",
+      "raw_path": "SUTHA/financials/2564/FY/source.zip",
+      "sha256": "53f5d96413ec86db294361460a90754c6c1b64cbe90ac56b6761e81f6393db64",
+      "ingested_at": "2026-04-24T04:17:19+00:00",
+      "shareholder_profit": 51.16419
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-13",
+      "news_id": "2021088683",
+      "raw_path": "SUTHA/financials/2564/H1/source.zip",
+      "sha256": "65989e170fd3fba5f13cbc46e9188b19adfc0e09a84a20388a297d4476d33025",
+      "ingested_at": "2026-04-24T04:17:29+00:00",
+      "shareholder_profit": 7.868
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-17",
+      "news_id": "2021059445",
+      "raw_path": "SUTHA/financials/2564/Q1/source.zip",
+      "sha256": "3b215dd694b3b0f78eb66861ca860ed1b74ef6f3a7451502667d3ed192be98b9",
+      "ingested_at": "2026-04-24T04:17:34+00:00",
+      "shareholder_profit": 29.726
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-11",
+      "news_id": "2022132792",
+      "raw_path": "SUTHA/financials/2565/9M/source.zip",
+      "sha256": "2ae9c3d94e18cb07b6094d93d2850cc5d42e3b310fe037fe844d102f1f8b0932",
+      "ingested_at": "2026-04-24T04:17:05+00:00",
+      "shareholder_profit": 30.327
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-27",
+      "news_id": "2023023123",
+      "raw_path": "SUTHA/financials/2565/FY/source.zip",
+      "sha256": "d113757fbed219e09bed03b51bda554e8e330b075ed08c57e7a1e0f8a7be813f",
+      "ingested_at": "2026-04-24T04:17:00+00:00",
+      "shareholder_profit": 89.205176
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-15",
+      "news_id": "2022096635",
+      "raw_path": "SUTHA/financials/2565/H1/source.zip",
+      "sha256": "8681a0a14ca418ee799fa28ceb262f72648388515e7825264804131d3ea68c29",
+      "ingested_at": "2026-04-24T04:17:10+00:00",
+      "shareholder_profit": 25.938
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-17",
+      "news_id": "2022063226",
+      "raw_path": "SUTHA/financials/2565/Q1/source.zip",
+      "sha256": "4fd1146c86e9673b18dd01fbe4388f74835c6058720b5ad6de6cdd13a0c9de4b",
+      "ingested_at": "2026-04-24T04:17:15+00:00",
+      "shareholder_profit": 32.189
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-13",
+      "news_id": "16998304496691",
+      "raw_path": "SUTHA/financials/2566/9M/source.zip",
+      "sha256": "e1f06a63a9c33c75e1d1f2a2463440851368321487c0e2a0eaa0d16cfec0173c",
+      "ingested_at": "2026-04-24T04:16:45+00:00",
+      "shareholder_profit": 13.412
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-27",
+      "news_id": "17089869122791",
+      "raw_path": "SUTHA/financials/2566/FY/source.zip",
+      "sha256": "60095f3d4ace6803dd3d8f63ce27a101695d3660c00daeed1f8e07d72507465c",
+      "ingested_at": "2026-04-24T04:16:40+00:00",
+      "shareholder_profit": 46.117521
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-15",
+      "news_id": "16920539302481",
+      "raw_path": "SUTHA/financials/2566/H1/source.zip",
+      "sha256": "e4359a01c67300393dcc27baae9ea8a9e6dc61ce3accaba41b5bb9ba8feb7850",
+      "ingested_at": "2026-04-24T04:16:50+00:00",
+      "shareholder_profit": -4.031
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-15",
+      "news_id": "16841053947851",
+      "raw_path": "SUTHA/financials/2566/Q1/source.zip",
+      "sha256": "bb80a25febe60f457bf21a6b1bbbe0e739c656daa4d4db83032b7433ab44b577",
+      "ingested_at": "2026-04-24T04:16:55+00:00",
+      "shareholder_profit": 22.379
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-11",
+      "news_id": "17312815575101",
+      "raw_path": "SUTHA/financials/2567/9M/source.zip",
+      "sha256": "3e0717299b2c5a497724c46a5e4c2fa8c61ef9d0511182115296acd5b6c0e238",
+      "ingested_at": "2026-04-24T04:16:24+00:00",
+      "shareholder_profit": 9.502
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-24",
+      "news_id": "17403534032581",
+      "raw_path": "SUTHA/financials/2567/FY/source.zip",
+      "sha256": "c21d210beffb57f669798800355e4216551751201212d8c25a896ac29383ba2b",
+      "ingested_at": "2026-04-24T04:16:19+00:00",
+      "shareholder_profit": 62.016266
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990097761",
+      "raw_path": "SUTHA/financials/2567/H1/source.zip",
+      "sha256": "aa8a7479eedbc004bf289fbc8bd83f640fc22f554553764dd077f41a520a0cbf",
+      "ingested_at": "2026-04-24T04:16:29+00:00",
+      "shareholder_profit": 16.694
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-10",
+      "news_id": "17152924514261",
+      "raw_path": "SUTHA/financials/2567/Q1/source.zip",
+      "sha256": "316eab6f7a71c3fade71635dae4a0518f4738d367e1335e00adc1a0a12b28358",
+      "ingested_at": "2026-04-24T04:16:35+00:00",
+      "shareholder_profit": 42.226
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-14",
+      "news_id": "17630699517541",
+      "raw_path": "SUTHA/financials/2568/9M/source.zip",
+      "sha256": "c1862b6a256f96734e80a779418a6cbeedfa3e422c63801fe9720c7cc5179e16",
+      "ingested_at": "2026-04-24T04:16:04+00:00",
+      "shareholder_profit": -8.763
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-27",
+      "news_id": "17721442949951",
+      "raw_path": "SUTHA/financials/2568/FY/source.zip",
+      "sha256": "24379031906602b3ba63c22f28aaff5fe975e1f4633d0c90f47bfc4f8bf195f2",
+      "ingested_at": "2026-04-24T04:15:59+00:00",
+      "shareholder_profit": -9.097795
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361033631",
+      "raw_path": "SUTHA/financials/2568/H1/source.zip",
+      "sha256": "5b5750c875b35d79f83091aa90c3fa1a26ebe27a5010a6a63d29b80e0974245e",
+      "ingested_at": "2026-04-24T04:16:09+00:00",
+      "shareholder_profit": 19.828
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-09",
+      "news_id": "17467412604441",
+      "raw_path": "SUTHA/financials/2568/Q1/source.zip",
+      "sha256": "710e7dad34dab66558b5ea95627d056c6d3f15bfcb085b8aa6b9e74818c31596",
+      "ingested_at": "2026-04-24T04:16:14+00:00",
+      "shareholder_profit": 29.85
+    }
+  ]
+}

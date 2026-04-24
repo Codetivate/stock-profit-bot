@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "symbol": "BKIH",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-25",
+  "quarterly_history": {
+    "2567": {
+      "Q1": null,
+      "Q2": 837.963196,
+      "Q3": 736.370072,
+      "Q4": null
+    },
+    "2568": {
+      "Q1": 558.499392,
+      "Q2": 955.826099,
+      "Q3": 1121.712316,
+      "Q4": 427.91418200000044
+    }
+  },
+  "sources": [
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-08",
+      "news_id": "17310157151231",
+      "raw_path": "BKIH/financials/2567/9M/source.zip",
+      "sha256": "24e478aaf5b0851a62980a1c2161c454a8f907c61bc5af51d78ce7c48a367d35",
+      "ingested_at": "2026-04-23T15:59:00+00:00",
+      "shareholder_profit": 736.370072
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-21",
+      "news_id": "17400886544401",
+      "raw_path": "BKIH/financials/2567/FY/source.zip",
+      "sha256": "2e44b322e97e8bbb44ba5be9b329daeb6433ac79b229bae604ef22e878023af4",
+      "ingested_at": "2026-04-23T15:58:55+00:00",
+      "shareholder_profit": 3007.540537
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-09",
+      "news_id": "17231594062551",
+      "raw_path": "BKIH/financials/2567/H1/source.zip",
+      "sha256": "ae7b172749a07331a4da583555b72bd373b19aa8ca3c13097a07bd2d3e7273fa",
+      "ingested_at": "2026-04-23T15:59:04+00:00",
+      "shareholder_profit": 837.963196
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-07",
+      "news_id": "17624721979111",
+      "raw_path": "BKIH/financials/2568/9M/source.zip",
+      "sha256": "a5d2c5c2b26ed274912bf868f6183d66e46e48cb1dbafd3e3ed453c929533c1e",
+      "ingested_at": "2026-04-23T15:58:41+00:00",
+      "shareholder_profit": 1121.712316
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-25",
+      "news_id": "17719707060921",
+      "raw_path": "BKIH/financials/2568/FY/source.zip",
+      "sha256": "fb514b3685f107b30e5efb406a31b39c364ac022ecdea7104724dc261d97be16",
+      "ingested_at": "2026-04-23T15:58:36+00:00",
+      "shareholder_profit": 3063.951989
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-08",
+      "news_id": "17546095861891",
+      "raw_path": "BKIH/financials/2568/H1/source.zip",
+      "sha256": "e33335393e12598c783138713a7d9356eb7cd5ff590518c3824125c079762b60",
+      "ingested_at": "2026-04-23T15:58:45+00:00",
+      "shareholder_profit": 955.826099
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-09",
+      "news_id": "17467412666141",
+      "raw_path": "BKIH/financials/2568/Q1/source.zip",
+      "sha256": "7af8c4d0669a3ba479d69e930b5bef415afd9a7d7cbe38020099bce17cee8741",
+      "ingested_at": "2026-04-23T15:58:50+00:00",
+      "shareholder_profit": 558.499392
+    }
+  ]
+}

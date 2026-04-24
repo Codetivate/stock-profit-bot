@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "symbol": "SSP",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2025-05-13",
+  "quarterly_history": {
+    "2567": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": 113.66,
+      "Q4": null
+    },
+    "2568": {
+      "Q1": 238.247,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null
+    }
+  },
+  "sources": [
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361309051",
+      "raw_path": "SSP/financials/2567/9M/source.zip",
+      "sha256": "092e91106d3a577f2b4c30e55e8dfc01ec57820a903f398dab795375e5f429ba",
+      "ingested_at": "2026-04-24T03:45:56+00:00",
+      "shareholder_profit": 113.66
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903535021",
+      "raw_path": "SSP/financials/2568/Q1/source.zip",
+      "sha256": "a3207f31b4312a710bf02e1553b0e91d642259b6250f3b40082995e07841a100",
+      "ingested_at": "2026-04-24T03:45:47+00:00",
+      "shareholder_profit": 238.247
+    }
+  ]
+}

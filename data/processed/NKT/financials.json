@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "symbol": "NKT",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2024-12-19",
+  "quarterly_history": {
+    "2566": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null
+    },
+    "2567": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": 0.0002176475,
+      "Q4": null
+    }
+  },
+  "sources": [
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-12-19",
+      "news_id": "17345637907131",
+      "raw_path": "NKT/financials/2566/FY/source.zip",
+      "sha256": "0c4aaabc1d3edba0ed008b157922bd305589939fcf4b141a0e0a1ae5ddc358c7",
+      "ingested_at": "2026-04-23T22:56:21+00:00",
+      "shareholder_profit": 282.29019
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-12-19",
+      "news_id": "17345637907231",
+      "raw_path": "NKT/financials/2567/9M/source.zip",
+      "sha256": "cbf0431537fe199fcc14958550a4f86ebce9cb00f809af3d7dc7c5e8ed5598f5",
+      "ingested_at": "2026-04-23T22:56:17+00:00",
+      "shareholder_profit": 0.0002176475
+    }
+  ]
+}

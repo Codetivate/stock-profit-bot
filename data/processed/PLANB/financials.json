@@ -1,0 +1,242 @@
+{
+  "schema_version": 1,
+  "symbol": "PLANB",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-12",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 37.098,
+      "Q2": -70.771,
+      "Q3": -53.515,
+      "Q4": 151.226642
+    },
+    "2565": {
+      "Q1": 104.32,
+      "Q2": 173.613,
+      "Q3": 184.169,
+      "Q4": 241.07203300000006
+    },
+    "2566": {
+      "Q1": 132.188,
+      "Q2": 227.242,
+      "Q3": 260.991,
+      "Q4": 290.8256650000001
+    },
+    "2567": {
+      "Q1": 181.23,
+      "Q2": 263.829,
+      "Q3": 282.433,
+      "Q4": 322.88848600000006
+    },
+    "2568": {
+      "Q1": 192.513,
+      "Q2": 270.08,
+      "Q3": 290.384,
+      "Q4": 352.35857599999986
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-11",
+      "news_id": "2021122003",
+      "raw_path": "PLANB/financials/2564/9M/source.zip",
+      "sha256": "930701bdd25003983153c9e6a245fe7d3a4789b87284ff0f24ca434710121dd3",
+      "ingested_at": "2026-04-23T23:53:38+00:00",
+      "shareholder_profit": -53.515
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-25",
+      "news_id": "2022022781",
+      "raw_path": "PLANB/financials/2564/FY/source.zip",
+      "sha256": "1301f95de279cfcdc26e7dc24cd3a2d95f056cc2913bbc96f7b17e9f0e6035bf",
+      "ingested_at": "2026-04-23T23:53:33+00:00",
+      "shareholder_profit": 64.038642
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-10",
+      "news_id": "2021086322",
+      "raw_path": "PLANB/financials/2564/H1/source.zip",
+      "sha256": "7b6b906d5d45a3630420efddef9c7c6fd5dbf44b546726e064f24e24f8c003c8",
+      "ingested_at": "2026-04-23T23:53:42+00:00",
+      "shareholder_profit": -70.771
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-13",
+      "news_id": "2021056579",
+      "raw_path": "PLANB/financials/2564/Q1/source.zip",
+      "sha256": "b153fae62cdbb0b530466546c269d91baf8c1d37e650db2d270ead786a63f392",
+      "ingested_at": "2026-04-23T23:53:47+00:00",
+      "shareholder_profit": 37.098
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-14",
+      "news_id": "2022135236",
+      "raw_path": "PLANB/financials/2565/9M/source.zip",
+      "sha256": "a7c64775729d563339f5b8a5e8fe51fb8e1335729711c924e816d720bd48f980",
+      "ingested_at": "2026-04-23T23:53:20+00:00",
+      "shareholder_profit": 184.169
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-28",
+      "news_id": "2023026527",
+      "raw_path": "PLANB/financials/2565/FY/source.zip",
+      "sha256": "b00ce6737c2cfa425b80a74ce779adf1cc1949a2bef5fc9d596b182dc8e02d08",
+      "ingested_at": "2026-04-23T23:53:15+00:00",
+      "shareholder_profit": 703.174033
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-15",
+      "news_id": "2022097970",
+      "raw_path": "PLANB/financials/2565/H1/source.zip",
+      "sha256": "c41f91cb2627fbf8efc1d776e923b7da5e4efef73b7ec14622aed6ef918eebf1",
+      "ingested_at": "2026-04-23T23:53:24+00:00",
+      "shareholder_profit": 173.613
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-12",
+      "news_id": "2022058857",
+      "raw_path": "PLANB/financials/2565/Q1/source.zip",
+      "sha256": "da41280484f9ad92af96441feaa2bfb8d0a6c7e0e18f16f6561caa933c1b74ec",
+      "ingested_at": "2026-04-23T23:53:29+00:00",
+      "shareholder_profit": 104.32
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-13",
+      "news_id": "16998304587751",
+      "raw_path": "PLANB/financials/2566/9M/source.zip",
+      "sha256": "13fda99c16106cc10f20dc2d117fc8005243d43754a655c7c48079c7235ce638",
+      "ingested_at": "2026-04-23T23:53:02+00:00",
+      "shareholder_profit": 260.991
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-27",
+      "news_id": "17089869237701",
+      "raw_path": "PLANB/financials/2566/FY/source.zip",
+      "sha256": "7ad07761601eb08cb86990c3a8cdc4259626306dc984be39ffd0e9f86a2b3ff2",
+      "ingested_at": "2026-04-23T23:52:57+00:00",
+      "shareholder_profit": 911.246665
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-10",
+      "news_id": "16916230310711",
+      "raw_path": "PLANB/financials/2566/H1/source.zip",
+      "sha256": "9f03d2e153f2597bd3b22b62e6dcaa27c96e90f58e7efccb462fb002929e75d8",
+      "ingested_at": "2026-04-23T23:53:06+00:00",
+      "shareholder_profit": 227.242
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-12",
+      "news_id": "16838458854661",
+      "raw_path": "PLANB/financials/2566/Q1/source.zip",
+      "sha256": "bb0cf7ac35240725cbadbea9bae4c59433472bc007e95521502260a596730cf6",
+      "ingested_at": "2026-04-23T23:53:11+00:00",
+      "shareholder_profit": 132.188
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-12",
+      "news_id": "17313658218661",
+      "raw_path": "PLANB/financials/2567/9M/source.zip",
+      "sha256": "cb025e8817c124d82ba5ca86be8331b03f7313ef7165a4c3ba761c54c95f8b7b",
+      "ingested_at": "2026-04-23T23:52:43+00:00",
+      "shareholder_profit": 282.433
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-27",
+      "news_id": "17406066449111",
+      "raw_path": "PLANB/financials/2567/FY/source.zip",
+      "sha256": "582fd2772f29f56d859701e698e3a9866605a8077ec8adf5d5df898c70b664b2",
+      "ingested_at": "2026-04-23T23:52:39+00:00",
+      "shareholder_profit": 1050.380486
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990209801",
+      "raw_path": "PLANB/financials/2567/H1/source.zip",
+      "sha256": "c828fc2166eec96db7a66e43482e74acf2db08f78bceb79637c9d8660c8005bc",
+      "ingested_at": "2026-04-23T23:52:48+00:00",
+      "shareholder_profit": 263.829
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434567471",
+      "raw_path": "PLANB/financials/2567/Q1/source.zip",
+      "sha256": "664e1b5a3eb23de11ee73c6c586d1b72087a21518012b7a442416f8352c0e491",
+      "ingested_at": "2026-04-23T23:52:52+00:00",
+      "shareholder_profit": 181.23
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-11",
+      "news_id": "17628159913681",
+      "raw_path": "PLANB/financials/2568/9M/source.zip",
+      "sha256": "04960b08f454fe6723957dc6fb26775cee4eaa493b720399282ac6a93380de8d",
+      "ingested_at": "2026-04-23T23:52:26+00:00",
+      "shareholder_profit": 290.384
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-12",
+      "news_id": "17708534420721",
+      "raw_path": "PLANB/financials/2568/FY/source.zip",
+      "sha256": "0eb52604959bca543750184802dc2961e9feb230e0c73cc6bab3f5acda5a311c",
+      "ingested_at": "2026-04-23T23:52:20+00:00",
+      "shareholder_profit": 1105.335576
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229846401",
+      "raw_path": "PLANB/financials/2568/H1/source.zip",
+      "sha256": "680c76278b8f9787597bc07600eae1648046c3aedff58572a7f101a074fc453d",
+      "ingested_at": "2026-04-23T23:52:30+00:00",
+      "shareholder_profit": 270.08
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-15",
+      "news_id": "17472613185001",
+      "raw_path": "PLANB/financials/2568/Q1/source.zip",
+      "sha256": "0a97e965b5ee048f9bb8807bb0a61092b00963db75e8433c93fb8daa90013652",
+      "ingested_at": "2026-04-23T23:52:34+00:00",
+      "shareholder_profit": 192.513
+    }
+  ]
+}

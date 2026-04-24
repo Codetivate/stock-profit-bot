@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "symbol": "INGRS",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2025-12-15",
+  "quarterly_history": {
+    "2569": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": -253.162,
+      "Q4": null
+    }
+  },
+  "sources": [
+    {
+      "year": 2569,
+      "period": "9M",
+      "filing_date": "2025-12-15",
+      "news_id": "17657558758951",
+      "raw_path": "INGRS/financials/2569/9M/source.zip",
+      "sha256": "409bea77f6f57683d91913a1fa9e65ee2e268f7f9df5c6fe931f57a68de2dab4",
+      "ingested_at": "2026-04-23T19:54:39+00:00",
+      "shareholder_profit": -253.162
+    }
+  ]
+}

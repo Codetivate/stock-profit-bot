@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "symbol": "HUMAN",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2022-08-16",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 35.633,
+      "Q2": 54.998,
+      "Q3": null,
+      "Q4": null
+    },
+    "2565": {
+      "Q1": null,
+      "Q2": 39.426,
+      "Q3": null,
+      "Q4": null
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-10",
+      "news_id": "2021085511",
+      "raw_path": "HUMAN/financials/2564/H1/source.zip",
+      "sha256": "d3995d3b26bb87737c12ed3c5e9a963ee8a458062e278746591a93c13a4365e9",
+      "ingested_at": "2026-04-23T19:34:38+00:00",
+      "shareholder_profit": 54.998
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-12",
+      "news_id": "2021053927",
+      "raw_path": "HUMAN/financials/2564/Q1/source.zip",
+      "sha256": "844a67d5feda3b515a16fcebfa31c79fd888d6c0e9c146ec5f58dc8776ac131a",
+      "ingested_at": "2026-04-23T19:34:42+00:00",
+      "shareholder_profit": 35.633
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-16",
+      "news_id": "2022098566",
+      "raw_path": "HUMAN/financials/2565/H1/source.zip",
+      "sha256": "0a5f90ba8ca93fcd62d3d3ea01efc30c843a2a69eb08e36a8c0f87995173646a",
+      "ingested_at": "2026-04-23T19:34:20+00:00",
+      "shareholder_profit": 39.426
+    }
+  ]
+}

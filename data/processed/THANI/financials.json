@@ -1,0 +1,242 @@
+{
+  "schema_version": 1,
+  "symbol": "THANI",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-18",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 426.875,
+      "Q2": 427.606,
+      "Q3": 400.95,
+      "Q4": 453.75368499999996
+    },
+    "2565": {
+      "Q1": 455.051,
+      "Q2": 492.335,
+      "Q3": 452.542,
+      "Q4": 352.78207600000013
+    },
+    "2566": {
+      "Q1": 450.242,
+      "Q2": 425.055,
+      "Q3": 250.41,
+      "Q4": 161.21305399999997
+    },
+    "2567": {
+      "Q1": 343.191,
+      "Q2": 254.533,
+      "Q3": 79.785,
+      "Q4": 122.70167200000009
+    },
+    "2568": {
+      "Q1": 253.604,
+      "Q2": 278.679,
+      "Q3": 300.62,
+      "Q4": 314.9344269999999
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-12",
+      "news_id": "2021122542",
+      "raw_path": "THANI/financials/2564/9M/source.zip",
+      "sha256": "57fa42237a969f96474f5bec6c7e18a6f678b5ea76b8eddf9883c643f05f9cd6",
+      "ingested_at": "2026-04-24T05:13:32+00:00",
+      "shareholder_profit": 400.95
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-17",
+      "news_id": "2022016011",
+      "raw_path": "THANI/financials/2564/FY/source.zip",
+      "sha256": "39a271e8f66792fa7ce30cb0f1695a38b769d426c91261710a8f72f61a3546b1",
+      "ingested_at": "2026-04-24T05:13:27+00:00",
+      "shareholder_profit": 1709.184685
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-10",
+      "news_id": "2021085572",
+      "raw_path": "THANI/financials/2564/H1/source.zip",
+      "sha256": "9f63dc835b5f68edda770bc437eef44a1792456e69d5ad64af5fa6efc3e5a8ef",
+      "ingested_at": "2026-04-24T05:13:37+00:00",
+      "shareholder_profit": 427.606
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-13",
+      "news_id": "2021056031",
+      "raw_path": "THANI/financials/2564/Q1/source.zip",
+      "sha256": "e62dc75ca9b930381ea45c8431d4932939b140f69b35e1ab4a1a2a213e2f55c9",
+      "ingested_at": "2026-04-24T05:13:42+00:00",
+      "shareholder_profit": 426.875
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-10",
+      "news_id": "2022131186",
+      "raw_path": "THANI/financials/2565/9M/source.zip",
+      "sha256": "dd7a9595d26a120f8c63f370a2ada50238a3e60091ebd6a833f93d646bffa71d",
+      "ingested_at": "2026-04-24T05:13:12+00:00",
+      "shareholder_profit": 452.542
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-16",
+      "news_id": "2023015752",
+      "raw_path": "THANI/financials/2565/FY/source.zip",
+      "sha256": "4a8dc0afcf0857a8d89fb52b37c8cc447565006630f6c1b4682b339abae1deec",
+      "ingested_at": "2026-04-24T05:13:08+00:00",
+      "shareholder_profit": 1752.710076
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-11",
+      "news_id": "2022094000",
+      "raw_path": "THANI/financials/2565/H1/source.zip",
+      "sha256": "4e3d5b912f13a5fc70544886fbe1176efcbc42fc2e658fe66f93051aeec5adc1",
+      "ingested_at": "2026-04-24T05:13:17+00:00",
+      "shareholder_profit": 492.335
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-11",
+      "news_id": "2022057272",
+      "raw_path": "THANI/financials/2565/Q1/source.zip",
+      "sha256": "c0f3cb1bb638179ff14b4df91fbf44fa5ad36e81a6e950c05de2d931221618f2",
+      "ingested_at": "2026-04-24T05:13:23+00:00",
+      "shareholder_profit": 455.051
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-09",
+      "news_id": "16994859210621",
+      "raw_path": "THANI/financials/2566/9M/source.zip",
+      "sha256": "c9a9fc2562054e20bba73d23a323b0ce8b325f2bc53ba169023f6c8136ef4a65",
+      "ingested_at": "2026-04-24T05:12:52+00:00",
+      "shareholder_profit": 250.41
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-16",
+      "news_id": "17080405739121",
+      "raw_path": "THANI/financials/2566/FY/source.zip",
+      "sha256": "52f3d5b2db5b89e42ac1e0c0b5b0d12a1626e77b5b464de46aea3a271e5dc041",
+      "ingested_at": "2026-04-24T05:12:48+00:00",
+      "shareholder_profit": 1286.920054
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-11",
+      "news_id": "16917102032101",
+      "raw_path": "THANI/financials/2566/H1/source.zip",
+      "sha256": "f627e99cc872b0fab22e632e4c0268f7d7e04fd22f05f109e820a41057986dea",
+      "ingested_at": "2026-04-24T05:12:58+00:00",
+      "shareholder_profit": 425.055
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-11",
+      "news_id": "16837583977651",
+      "raw_path": "THANI/financials/2566/Q1/source.zip",
+      "sha256": "eb98bd38ab807654092c7394cebeafb5585ccb687dbac112d6e2f82b8924510b",
+      "ingested_at": "2026-04-24T05:13:03+00:00",
+      "shareholder_profit": 450.242
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-05",
+      "news_id": "17307630208641",
+      "raw_path": "THANI/financials/2567/9M/source.zip",
+      "sha256": "eaf035cce25adcf8feeb51a886133f9bd4b712ba593642a17c9d058947881b0d",
+      "ingested_at": "2026-04-24T05:12:34+00:00",
+      "shareholder_profit": 79.785
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-18",
+      "news_id": "17398358015521",
+      "raw_path": "THANI/financials/2567/FY/source.zip",
+      "sha256": "2f4410b869dd284ebd2a248a16c979538db297b791d009bccaea076efc443e9e",
+      "ingested_at": "2026-04-24T05:12:29+00:00",
+      "shareholder_profit": 800.210672
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-02",
+      "news_id": "17225507718731",
+      "raw_path": "THANI/financials/2567/H1/source.zip",
+      "sha256": "02e2b6e6dbcad1c770bddb0964719dcbbbf0197f0d2c9cf0ae88587e110e1d65",
+      "ingested_at": "2026-04-24T05:12:39+00:00",
+      "shareholder_profit": 254.533
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-10",
+      "news_id": "17152924568331",
+      "raw_path": "THANI/financials/2567/Q1/source.zip",
+      "sha256": "5e6f2ff53c0a3ccc54ba543e485af985357223eb338c0f2a77133cb0116daffe",
+      "ingested_at": "2026-04-24T05:12:43+00:00",
+      "shareholder_profit": 343.191
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-05",
+      "news_id": "17622990246821",
+      "raw_path": "THANI/financials/2568/9M/source.zip",
+      "sha256": "8af4b78bc79a1e96b1f91955245af8dc47749e5c2d4eda4037e463ee9316f459",
+      "ingested_at": "2026-04-24T05:12:15+00:00",
+      "shareholder_profit": 300.62
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-18",
+      "news_id": "17713646987231",
+      "raw_path": "THANI/financials/2568/FY/source.zip",
+      "sha256": "4ba66f86f8c477dbd678f4c21556cae1a7dda57e0510d2590e23c93e43819fc0",
+      "ingested_at": "2026-04-24T05:12:10+00:00",
+      "shareholder_profit": 1147.837427
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-06",
+      "news_id": "17544375709761",
+      "raw_path": "THANI/financials/2568/H1/source.zip",
+      "sha256": "10b584aa873ed8ad386b811f90813eb3459b2707fcb204ef40e117dc0296b8da",
+      "ingested_at": "2026-04-24T05:12:20+00:00",
+      "shareholder_profit": 278.679
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-07",
+      "news_id": "17465747689481",
+      "raw_path": "THANI/financials/2568/Q1/source.zip",
+      "sha256": "250b9ec5fad885168d1ab3cafd4ac1c39b3217dd08474d577bdb02b7e27542bb",
+      "ingested_at": "2026-04-24T05:12:25+00:00",
+      "shareholder_profit": 253.604
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "symbol": "PTECH",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2025-11-14",
+  "quarterly_history": {
+    "2564": {
+      "Q1": null,
+      "Q2": 32.489,
+      "Q3": -610.146,
+      "Q4": null
+    },
+    "2565": {
+      "Q1": null,
+      "Q2": 79.112,
+      "Q3": 2.526,
+      "Q4": null
+    },
+    "2566": {
+      "Q1": null,
+      "Q2": 1.146,
+      "Q3": 2.526,
+      "Q4": null
+    },
+    "2567": {
+      "Q1": -54.235,
+      "Q2": -101.586,
+      "Q3": -132.024,
+      "Q4": null
+    },
+    "2568": {
+      "Q1": -174.01,
+      "Q2": -307.728,
+      "Q3": -1076.921,
+      "Q4": null
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-08",
+      "news_id": "2021118599",
+      "raw_path": "PTECH/financials/2564/9M/source.zip",
+      "sha256": "dd42cd38ff136096da02244d599f719b8a9bb7386f3b3632912ec1ff099a8f45",
+      "ingested_at": "2026-04-24T00:38:43+00:00",
+      "shareholder_profit": -610.146
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-11",
+      "news_id": "2021088112",
+      "raw_path": "PTECH/financials/2564/H1/source.zip",
+      "sha256": "29707b8f8fcf31a6bc66873b16af191efcf9bb55d991f81098032ddda040d10d",
+      "ingested_at": "2026-04-24T00:38:48+00:00",
+      "shareholder_profit": 32.489
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-07",
+      "news_id": "2022128789",
+      "raw_path": "PTECH/financials/2565/9M/source.zip",
+      "sha256": "35f47e8c4b93afd39961a97ab9e4f2007e9f9b4c6b1a9a27177d3a0c5d8bc586",
+      "ingested_at": "2026-04-24T00:38:20+00:00",
+      "shareholder_profit": 2.526
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-08",
+      "news_id": "2022090615",
+      "raw_path": "PTECH/financials/2565/H1/source.zip",
+      "sha256": "d84632f1ab46461c4b226d53b13d889bdfd886d98ed4a0b534c119b96cafedc9",
+      "ingested_at": "2026-04-24T00:38:29+00:00",
+      "shareholder_profit": 79.112
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-08",
+      "news_id": "2022090455",
+      "raw_path": "PTECH/financials/2565/H1/source.zip",
+      "sha256": "d84632f1ab46461c4b226d53b13d889bdfd886d98ed4a0b534c119b96cafedc9",
+      "ingested_at": "2026-04-24T00:38:29+00:00",
+      "shareholder_profit": 79.112
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-08",
+      "news_id": "16993998018321",
+      "raw_path": "PTECH/financials/2566/9M/source.zip",
+      "sha256": "55a3c647b8ef8ca049b27a9c709d371f92ea16f155e034e12689a84d25675dd8",
+      "ingested_at": "2026-04-24T00:38:01+00:00",
+      "shareholder_profit": 2.526
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-15",
+      "news_id": "16920539296681",
+      "raw_path": "PTECH/financials/2566/H1/source.zip",
+      "sha256": "e49cedb5949175d7f6911bde534c2a20ea84050a77b89e6f414550049952e1ed",
+      "ingested_at": "2026-04-24T00:38:06+00:00",
+      "shareholder_profit": 1.146
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-15",
+      "news_id": "17316227683201",
+      "raw_path": "PTECH/financials/2567/9M/source.zip",
+      "sha256": "7e3d8f458b85ea44fb93c96b6ef47f003d4782db5c02ee304a792628c85f6e75",
+      "ingested_at": "2026-04-24T00:37:43+00:00",
+      "shareholder_profit": -132.024
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-14",
+      "news_id": "17235857928781",
+      "raw_path": "PTECH/financials/2567/H1/source.zip",
+      "sha256": "8380adba679f526daa033591aa7f5981715250a80efdb36f0fa6014992d6cf5e",
+      "ingested_at": "2026-04-24T00:37:48+00:00",
+      "shareholder_profit": -101.586
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434464761",
+      "raw_path": "PTECH/financials/2567/Q1/source.zip",
+      "sha256": "4f9427a96423d3cb9705e92912baaa4dd78f6f50e3e8e50c4352baaffea3a9ba",
+      "ingested_at": "2026-04-24T00:37:52+00:00",
+      "shareholder_profit": -54.235
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-14",
+      "news_id": "17630699515761",
+      "raw_path": "PTECH/financials/2568/9M/source.zip",
+      "sha256": "67695deb47caf77673bc552721065d428d2c8f9856b198aae718acb33e13eeb2",
+      "ingested_at": "2026-04-24T00:37:25+00:00",
+      "shareholder_profit": -1076.921
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-15",
+      "news_id": "17552099746761",
+      "raw_path": "PTECH/financials/2568/H1/source.zip",
+      "sha256": "4bfb345483432ae2cf4080e0ed562e31f613fe50552872db170dfb598a4bad58",
+      "ingested_at": "2026-04-24T00:37:29+00:00",
+      "shareholder_profit": -307.728
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-16",
+      "news_id": "17473473837451",
+      "raw_path": "PTECH/financials/2568/Q1/source.zip",
+      "sha256": "28dcbca797093bc0c2d10713fa95ce9dfdacfbbdda680baa4cd21d3c525ac47a",
+      "ingested_at": "2026-04-24T00:37:34+00:00",
+      "shareholder_profit": -174.01
+    }
+  ]
+}

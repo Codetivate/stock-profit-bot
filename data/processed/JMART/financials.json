@@ -1,0 +1,242 @@
+{
+  "schema_version": 1,
+  "symbol": "JMART",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-11",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 333.464,
+      "Q2": 232.247,
+      "Q3": 269.927,
+      "Q4": 1631.9569070000002
+    },
+    "2565": {
+      "Q1": 325.116,
+      "Q2": 389.411,
+      "Q3": 563.49,
+      "Q4": 516.944092
+    },
+    "2566": {
+      "Q1": -294.732,
+      "Q2": -611.222,
+      "Q3": 292.946,
+      "Q4": 165.99742299999997
+    },
+    "2567": {
+      "Q1": 235.826,
+      "Q2": 339.706,
+      "Q3": 255.265,
+      "Q4": 310.0519300000001
+    },
+    "2568": {
+      "Q1": 140.334,
+      "Q2": 110.956,
+      "Q3": 82.548,
+      "Q4": -495.676873
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-12",
+      "news_id": "2021124060",
+      "raw_path": "JMART/financials/2564/9M/source.zip",
+      "sha256": "578a167e48130d52841d58987a781009f00f81a6ad0eef4a66de5c3e3bf17692",
+      "ingested_at": "2026-04-23T20:27:11+00:00",
+      "shareholder_profit": 269.927
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-24",
+      "news_id": "2022022250",
+      "raw_path": "JMART/financials/2564/FY/source.zip",
+      "sha256": "73f0f19d7d9d8322889b0ab308a020efe7491579fccbc8d509f2350ee7e0e184",
+      "ingested_at": "2026-04-23T20:27:06+00:00",
+      "shareholder_profit": 2467.594907
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-10",
+      "news_id": "2021086589",
+      "raw_path": "JMART/financials/2564/H1/source.zip",
+      "sha256": "96dd6aaa50c55635fea04e3827026f1e24d52359540ef48d19c3a507144e81f5",
+      "ingested_at": "2026-04-23T20:27:16+00:00",
+      "shareholder_profit": 232.247
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-13",
+      "news_id": "2021057123",
+      "raw_path": "JMART/financials/2564/Q1/source.zip",
+      "sha256": "ed5f6c5db8b17ee8147f9adeb74aab0d2d626e7786878d1f1b61ff3b38b4ea78",
+      "ingested_at": "2026-04-23T20:27:20+00:00",
+      "shareholder_profit": 333.464
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-10",
+      "news_id": "2022132262",
+      "raw_path": "JMART/financials/2565/9M/source.zip",
+      "sha256": "77dd6fcec56987f91c0bb63faf5545367f9061cab73c353a57e0cf99d2c6b6c3",
+      "ingested_at": "2026-04-23T20:26:53+00:00",
+      "shareholder_profit": 563.49
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-14",
+      "news_id": "2023014636",
+      "raw_path": "JMART/financials/2565/FY/source.zip",
+      "sha256": "084fd8ac2629c52d96614f026a10ca01800cc194ca28aa6c81d175849d2054ef",
+      "ingested_at": "2026-04-23T20:26:48+00:00",
+      "shareholder_profit": 1794.961092
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-11",
+      "news_id": "2022095330",
+      "raw_path": "JMART/financials/2565/H1/source.zip",
+      "sha256": "a35a9f31aee40f3aa074d4c44d09effb9e70df55c07fb72bea85ebadf73739b5",
+      "ingested_at": "2026-04-23T20:26:57+00:00",
+      "shareholder_profit": 389.411
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-13",
+      "news_id": "2022062779",
+      "raw_path": "JMART/financials/2565/Q1/source.zip",
+      "sha256": "2b89ed47cffab47175d3befac756f4c15f0782e742e01ecb43c66952c3a3893e",
+      "ingested_at": "2026-04-23T20:27:02+00:00",
+      "shareholder_profit": 325.116
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-09",
+      "news_id": "16994859292651",
+      "raw_path": "JMART/financials/2566/9M/source.zip",
+      "sha256": "b9e364d187245845263900c6e84f12aca629dbad5ad744400a9e892966006e21",
+      "ingested_at": "2026-04-23T20:26:34+00:00",
+      "shareholder_profit": 292.946
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-12",
+      "news_id": "17076943422371",
+      "raw_path": "JMART/financials/2566/FY/source.zip",
+      "sha256": "ec41c49bb837a8547a495dc11a5580cced670d4d82435e10e1516e6b1ccfe60d",
+      "ingested_at": "2026-04-23T20:26:30+00:00",
+      "shareholder_profit": -447.010577
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-10",
+      "news_id": "16916230333961",
+      "raw_path": "JMART/financials/2566/H1/source.zip",
+      "sha256": "55643a9fd91e7baa2c003c8bcc868bb7390067e1b368da4e35217829ecd05ac0",
+      "ingested_at": "2026-04-23T20:26:39+00:00",
+      "shareholder_profit": -611.222
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-12",
+      "news_id": "16838458876271",
+      "raw_path": "JMART/financials/2566/Q1/source.zip",
+      "sha256": "41bde00bd31a5fdcad8434ccd132084caf973ce485228fcfecafd6c7902e1748",
+      "ingested_at": "2026-04-23T20:26:43+00:00",
+      "shareholder_profit": -294.732
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-08",
+      "news_id": "17310157167281",
+      "raw_path": "JMART/financials/2567/9M/source.zip",
+      "sha256": "02ff5c811cd34a677880b597035c30bbf4f9a2853955c355d7a8b03ddc29540d",
+      "ingested_at": "2026-04-23T20:26:16+00:00",
+      "shareholder_profit": 255.265
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-11",
+      "news_id": "17392279305491",
+      "raw_path": "JMART/financials/2567/FY/source.zip",
+      "sha256": "4391e1def7d388a803d97cb9a85cc064f24441692f66af85703685d6f72dea67",
+      "ingested_at": "2026-04-23T20:26:11+00:00",
+      "shareholder_profit": 1140.84893
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-09",
+      "news_id": "17231594106801",
+      "raw_path": "JMART/financials/2567/H1/source.zip",
+      "sha256": "453abb3c3b520750cfb9d1da1f4eadc3ee3a936902ab4029b8e8b3bd3d69a8f5",
+      "ingested_at": "2026-04-23T20:26:20+00:00",
+      "shareholder_profit": 339.706
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-15",
+      "news_id": "17157257454451",
+      "raw_path": "JMART/financials/2567/Q1/source.zip",
+      "sha256": "27eeeb60bc9e6f9dd1558fe30a3118c851966d47f6f8abfdb490f4a7cc5101de",
+      "ingested_at": "2026-04-23T20:26:25+00:00",
+      "shareholder_profit": 235.826
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-11",
+      "news_id": "17628159947961",
+      "raw_path": "JMART/financials/2568/9M/source.zip",
+      "sha256": "77902d1824587c7fcd167602f1687f79dd845326719e56b868a20ae0d233daca",
+      "ingested_at": "2026-04-23T20:25:58+00:00",
+      "shareholder_profit": 82.548
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-11",
+      "news_id": "17707662969871",
+      "raw_path": "JMART/financials/2568/FY/source.zip",
+      "sha256": "91e1605225b92b607875b0f4673b26582a57cb29580a1810c5930bd611158281",
+      "ingested_at": "2026-04-23T20:25:53+00:00",
+      "shareholder_profit": -161.838873
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361224501",
+      "raw_path": "JMART/financials/2568/H1/source.zip",
+      "sha256": "634f6c9dfd2b1ea03797f7ace757f0469743245a3344b08244c331c7cb24fb9c",
+      "ingested_at": "2026-04-23T20:26:02+00:00",
+      "shareholder_profit": 110.956
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-14",
+      "news_id": "17471784613721",
+      "raw_path": "JMART/financials/2568/Q1/source.zip",
+      "sha256": "c34b15c5588c63e51206087430c060fa8972cd6a28a03477985ee1b67d130435",
+      "ingested_at": "2026-04-23T20:26:07+00:00",
+      "shareholder_profit": 140.334
+    }
+  ]
+}
