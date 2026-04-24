@@ -22,10 +22,21 @@ GRID = "#E2E8F0"
 LINE_GRID = "#EDF2F7"
 TEXT_DARK = "#1A202C"
 TEXT_MUTED = "#64748B"
-GREEN = "#059669"
+GREEN = "#10B981"          # brighter green for visibility on dark rows
 GREEN_BG = "#ECFDF5"
-RED = "#DC2626"
+RED = "#F87171"            # lighter red (better contrast on dark bg)
 RED_BG = "#FEF2F2"
+
+# Dark-theme table row palette — dark navy/slate backgrounds so the
+# values pop against a calmer surface than white. Light text on dark
+# rows; the coloured YoY / QoQ pills keep their existing bright bg so
+# they stand out even more against the navy.
+ROW_LATEST_DARK = "#1E3A5F"   # highlight for current year
+ROW_DARK        = "#1F2D47"   # even rows
+ROW_DARK_ALT    = "#2A3B55"   # odd rows
+TEXT_ON_DARK    = "#F1F5F9"   # near-white for readability
+TEXT_ON_DARK_MUTED = "#94A3B8"
+DIVIDER_ON_DARK = "#3A4D6B"   # faint column dividers on dark rows
 
 
 @dataclass
@@ -229,41 +240,41 @@ def make_chart(
         row_top = y_start - row_idx * row_h
         is_latest_row = (y == latest_year)
 
-        # Row background
+        # Dark-tone row background for better visual separation
         if is_latest_row:
-            row_bg = LIGHT_BLUE_BG
+            row_bg = ROW_LATEST_DARK
         elif row_idx % 2 == 0:
-            row_bg = SURFACE
+            row_bg = ROW_DARK
         else:
-            row_bg = "white"
+            row_bg = ROW_DARK_ALT
 
         ax_tbl.add_patch(Rectangle((0.1, row_top - row_h + row_gap),
                                      9.8, row_h - row_gap,
                                      facecolor=row_bg, edgecolor="none"))
 
-        # Left accent stripe for latest year
+        # Left accent stripe for latest year (bright for emphasis)
         if is_latest_row:
             ax_tbl.add_patch(Rectangle((0.1, row_top - row_h + row_gap),
                                          0.04, row_h - row_gap,
-                                         facecolor=NAVY, edgecolor="none"))
+                                         facecolor=MID_BLUE, edgecolor="none"))
 
-        # Year column
+        # Year column — always light text on dark rows
         year_y_center = row_top - row_h/2 + row_gap/2
         if is_latest_row:
             ax_tbl.text(col_positions[0], year_y_center + 0.35,
                         f"FY{y}",
-                        fontsize=14, color=NAVY, fontweight="800",
+                        fontsize=14, color=TEXT_ON_DARK, fontweight="800",
                         ha="center", va="center")
             ax_tbl.text(col_positions[0], year_y_center - 0.30,
                         "LATEST",
-                        fontsize=7.5, color="white",
+                        fontsize=7.5, color=NAVY,
                         fontweight="800", ha="center", va="center",
                         bbox=dict(boxstyle="round,pad=0.3",
-                                  facecolor=NAVY, edgecolor="none"))
+                                  facecolor=MID_BLUE, edgecolor="none"))
         else:
             ax_tbl.text(col_positions[0], year_y_center,
                         f"FY{y}",
-                        fontsize=12, color=NAVY, fontweight="700",
+                        fontsize=12, color=TEXT_ON_DARK, fontweight="700",
                         ha="center", va="center")
 
         # Q1-Q4 cells: each has 3 lines (value / YoY / QoQ)
@@ -274,15 +285,15 @@ def make_chart(
 
             if val is None:
                 ax_tbl.text(x, year_y_center, "—",
-                            fontsize=11, color=TEXT_MUTED,
+                            fontsize=11, color=TEXT_ON_DARK_MUTED,
                             ha="center", va="center")
                 continue
 
-            # ─── Line 1: Profit value (MAIN - largest, navy, bold) ───
+            # ─── Line 1: Profit value (MAIN — light text on dark row) ───
             ax_tbl.text(x, year_y_center + 0.45,
                         f"{val:,.2f}",
                         fontsize=14 if is_latest_row else 12.5,
-                        color=NAVY,
+                        color=TEXT_ON_DARK,
                         fontweight="800" if is_latest_row else "700",
                         ha="center", va="center")
 
@@ -322,7 +333,7 @@ def make_chart(
             ax_tbl.text(x, year_y_center + 0.35,
                         f"{total:,.2f}",
                         fontsize=15 if is_latest_row else 13,
-                        color=NAVY,
+                        color=TEXT_ON_DARK,
                         fontweight="800" if is_latest_row else "700",
                         ha="center", va="center")
 
@@ -343,26 +354,19 @@ def make_chart(
                                       facecolor=yoy_bg,
                                       edgecolor="none"))
 
-    # Column divider lines (very subtle)
+    # Column divider lines — subtle lighter tint over dark rows
     for x_divider in [1.45, 3.25, 4.95, 6.65, 8.30]:
         ax_tbl.plot([x_divider, x_divider],
                     [header_y - 0.1, y_start - n_rows * row_h + row_gap],
-                    color=GRID, linewidth=0.3, alpha=0.5, zorder=0)
+                    color=DIVIDER_ON_DARK, linewidth=0.4, alpha=0.6, zorder=0)
 
-    # Footer — source attribution + direct SET URL + AI disclaimer.
-    # URL points to the per-symbol news page so the reader can open the
-    # source filings directly (non-clickable in the PNG, but printable).
-    fig.text(0.5, 0.060,
-             "Source: SET  ·  Net profit attributable to shareholders",
-             fontsize=8, color=TEXT_MUTED, ha="center", style="italic")
-    fig.text(0.5, 0.038,
-             f"https://www.set.or.th/th/market/product/stock/quote/{symbol}/news",
-             fontsize=7.5, color=MID_BLUE, ha="center", style="italic")
-
-    # AI-generated content disclaimer — Claude-style wording ("mistakes",
-    # not "errors") so it reads like the notice users already see under
-    # AI-assistant outputs.
-    fig.text(0.5, 0.015,
+    # Footer — single source line with the deep-link URL so users can
+    # navigate straight to SET's filings page for this symbol, plus
+    # the AI disclaimer directly below.
+    fig.text(0.5, 0.045,
+             f"Source:  https://www.set.or.th/th/market/product/stock/quote/{symbol}/news",
+             fontsize=8, color=MID_BLUE, ha="center", style="italic")
+    fig.text(0.5, 0.020,
              "AI can make mistakes. Please double-check responses.",
              fontsize=8, color=TEXT_MUTED, ha="center", style="italic",
              fontweight="500")
