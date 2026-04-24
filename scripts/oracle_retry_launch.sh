@@ -49,10 +49,24 @@ echo "════════════════════════�
 echo "  start : $(date)"
 
 # ── Auto-detection ─────────────────────────────────────────────
-# Compartment: use tenancy root unless overridden.
+# Tenancy OCID — try env, config file, then a CLI call that works
+# without a compartment arg.
+TENANCY_OCID="${TENANCY_OCID:-${OCI_TENANCY:-${OCI_CLI_TENANCY:-}}}"
+if [ -z "$TENANCY_OCID" ] && [ -f "$HOME/.oci/config" ]; then
+    TENANCY_OCID=$(grep -E "^tenancy" "$HOME/.oci/config" 2>/dev/null \
+        | head -1 | awk -F= '{print $2}' | tr -d '[:space:]')
+fi
+
+# Compartment: default to tenancy root (free-tier users usually have
+# nothing under root).
 if [ -z "${COMPARTMENT_OCID:-}" ]; then
-    COMPARTMENT_OCID=$(oci iam compartment list \
-        --compartment-id-in-subtree false \
+    COMPARTMENT_OCID="${TENANCY_OCID:-}"
+fi
+
+# Last resort: query any compartment we can see and use its parent
+# (which is tenancy).
+if [ -z "$COMPARTMENT_OCID" ]; then
+    COMPARTMENT_OCID=$(oci iam compartment list --all \
         --query 'data[0]."compartment-id"' --raw-output 2>/dev/null)
 fi
 echo "  compartment : ${COMPARTMENT_OCID:0:40}…"
@@ -62,10 +76,15 @@ if [ -z "${AVAILABILITY_DOMAIN:-}" ]; then
     AVAILABILITY_DOMAIN=$(oci iam availability-domain list \
         --compartment-id "$COMPARTMENT_OCID" \
         --query 'data[0].name' --raw-output 2>/dev/null)
+    # Fallback: try without compartment (some Cloud Shell setups)
+    if [ -z "$AVAILABILITY_DOMAIN" ] || [ "$AVAILABILITY_DOMAIN" = "null" ]; then
+        AVAILABILITY_DOMAIN=$(oci iam availability-domain list \
+            --query 'data[0].name' --raw-output 2>/dev/null)
+    fi
 fi
 echo "  AD          : ${AVAILABILITY_DOMAIN}"
 
-# Subnet: first "public" subnet in compartment
+# Subnet: first "public" subnet we can see
 if [ -z "${SUBNET_OCID:-}" ]; then
     SUBNET_OCID=$(oci network subnet list \
         --compartment-id "$COMPARTMENT_OCID" \
@@ -98,9 +117,38 @@ if [ -z "${SSH_PUB_KEY:-}" ]; then
 fi
 echo "  ssh key     : ${SSH_PUB_KEY:0:50}…"
 
-if [ -z "$COMPARTMENT_OCID" ] || [ -z "$AVAILABILITY_DOMAIN" ] \
-   || [ -z "$SUBNET_OCID" ] || [ -z "$IMAGE_OCID" ]; then
-    echo "❌ missing required OCID(s). Set them via env vars and retry."
+missing=()
+[ -z "$COMPARTMENT_OCID" ] || [ "$COMPARTMENT_OCID" = "null" ] && missing+=("COMPARTMENT_OCID")
+[ -z "$AVAILABILITY_DOMAIN" ] || [ "$AVAILABILITY_DOMAIN" = "null" ] && missing+=("AVAILABILITY_DOMAIN")
+[ -z "$SUBNET_OCID" ] || [ "$SUBNET_OCID" = "null" ] && missing+=("SUBNET_OCID")
+[ -z "$IMAGE_OCID" ] || [ "$IMAGE_OCID" = "null" ] && missing+=("IMAGE_OCID")
+
+if [ ${#missing[@]} -ne 0 ]; then
+    echo ""
+    echo "❌ Missing required values: ${missing[*]}"
+    echo ""
+    echo "Fix one of these ways:"
+    echo ""
+    echo "  A) Export them explicitly before re-running:"
+    echo "       export COMPARTMENT_OCID='ocid1.tenancy.oc1..aaaaaa...'"
+    echo "       export AVAILABILITY_DOMAIN='doCA:AP-SINGAPORE-1-AD-1'"
+    echo "       export SUBNET_OCID='ocid1.subnet.oc1.ap-singapore-1...'"
+    echo "       export IMAGE_OCID='ocid1.image.oc1.ap-singapore-1...'"
+    echo ""
+    echo "  B) Find them in Oracle Console:"
+    echo "     · Tenancy OCID  → Profile menu → Tenancy"
+    echo "     · Subnet OCID   → Networking → VCN → stock-profit-bot-vcn"
+    echo "                       → public subnet → click 'Show' on OCID"
+    echo "     · Image OCID    → click command below in Cloud Shell:"
+    echo "         oci compute image list --compartment-id \$COMPARTMENT_OCID \\"
+    echo "           --operating-system 'Canonical Ubuntu' \\"
+    echo "           --operating-system-version 24.04 \\"
+    echo "           --shape VM.Standard.A1.Flex --limit 1 \\"
+    echo "           --query 'data[0].id' --raw-output"
+    echo "     · AD           →  oci iam availability-domain list \\"
+    echo "                         --compartment-id \$COMPARTMENT_OCID \\"
+    echo "                         --query 'data[0].name' --raw-output"
+    echo ""
     exit 1
 fi
 
