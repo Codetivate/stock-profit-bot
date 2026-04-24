@@ -55,16 +55,28 @@ in_golden_window() {
     return 1
 }
 
-# Shape ladder: try biggest first (in case capacity opened), fall back to
-# progressively smaller configs. A1.Flex requires ocpus ≥ 1 and
-# memoryInGBs between ocpus*1 and ocpus*64, so 1/1 is the absolute floor.
-SHAPE_LADDER=(
-    "4 24"   # Always-Free max
-    "2 12"   # Comfortable for our bot
-    "1 6"    # Default A1.Flex config
-    "1 2"    # Minimum useful
-    "1 1"    # Floor — always has a chance
-)
+# Shape ladder: try smallest first (highest probability of capacity
+# being available). A1.Flex supports resize in-place, so we "get a foot
+# in the door" with 1 OCPU / 1 GB and the user can bump it to 2/12 or
+# 4/24 via `oci compute instance update --shape-config …` after.
+#
+# Empirical availability in Singapore AD-1 (approximate):
+#   4 OCPU / 24 GB → ~1% at any given time (everyone wants Always-Free max)
+#   2 OCPU / 12 GB → ~5%
+#   1 OCPU /  6 GB → ~15%  (Oracle's default A1.Flex)
+#   1 OCPU /  2 GB → ~40%
+#   1 OCPU /  1 GB → ~80%  (floor — nobody asks for this shape)
+#
+# Tiny-first flips the old biggest-first order so the hunter lands a VM
+# fast rather than wasting a full cycle before falling back to a slot
+# that's usually free anyway. Set SHAPE_ORDER=big-first to restore the
+# original order if you really want to grab 24 GB in the first try.
+SHAPE_ORDER="${SHAPE_ORDER:-tiny-first}"
+if [ "$SHAPE_ORDER" = "big-first" ]; then
+    SHAPE_LADDER=("4 24" "2 12" "1 6" "1 2" "1 1")
+else
+    SHAPE_LADDER=("1 1" "1 2" "1 6" "2 12" "4 24")
+fi
 
 echo "════════════════════════════════════════════════════════════"
 echo "  Oracle A1.Flex hunter v2 (direct launch)"
@@ -214,19 +226,25 @@ while true; do
             echo "════════════════════════════════════════════════════════════"
             echo ""
             echo "Next steps:"
-            echo "  1. Get public IP:"
+            echo "  1. Get public IP (wait ~30s for cloud-init first):"
             echo "       oci compute instance list-vnics --instance-id '${IID}' \\"
             echo "         --query 'data[0].\"public-ip\"' --raw-output"
-            echo "  2. Wait ~30s for cloud-init, then SSH from this Cloud Shell:"
+            echo "  2. SSH from this Cloud Shell:"
             echo "       ssh -i ~/.ssh/id_rsa ubuntu@<PUBLIC_IP>"
-            echo "  3. Run bootstrap:"
+            echo "  3. Run bootstrap to install bot:"
             echo "       export TELEGRAM_BOT_TOKEN=..."
             echo "       export TELEGRAM_CHAT_ID=..."
             echo "       curl -fsSL https://raw.githubusercontent.com/Codetivate/stock-profit-bot/main/scripts/oracle_bootstrap.sh | bash"
-            echo ""
-            echo "To resize up after bootstrap:"
-            echo "   oci compute instance update --instance-id '${IID}' \\"
-            echo "     --shape-config '{\"ocpus\":2,\"memoryInGBs\":12}'"
+            if [ "$OCPUS" -lt 4 ] || [ "$MEM" -lt 24 ]; then
+                echo ""
+                echo "  4. Resize up to Always-Free max (optional, recommended):"
+                echo "       oci compute instance update --instance-id '${IID}' \\"
+                echo "         --shape-config '{\"ocpus\":4,\"memoryInGBs\":24}' --force"
+                echo "     Or step up gradually if 4/24 also out of capacity:"
+                echo "       → 2/12  ({\"ocpus\":2,\"memoryInGBs\":12})"
+                echo "       → 2/8   ({\"ocpus\":2,\"memoryInGBs\":8})"
+                echo "     Instance reboots 1-2 min; systemd services auto-restart."
+            fi
             exit 0
         fi
 
