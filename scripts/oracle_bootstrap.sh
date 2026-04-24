@@ -108,7 +108,7 @@ EOF
 
 sudo tee /etc/systemd/system/stock-bot-commands.service >/dev/null <<EOF
 [Unit]
-Description=Stock Profit Bot — Telegram command responder
+Description=Stock Profit Bot — Telegram command responder (queue server)
 After=network-online.target
 Wants=network-online.target
 
@@ -118,7 +118,10 @@ User=${USER_NAME}
 WorkingDirectory=${INSTALL_DIR}
 EnvironmentFile=${INSTALL_DIR}/.env
 Environment=PYTHONIOENCODING=utf-8
-ExecStart=${VENV_PY} -u command_handler.py --loop
+# High-concurrency queue server: 4 workers, 10 min cache, 25 msg/sec out.
+# Absorbs burst load (tens of thousands of concurrent users) by queuing
+# and serving popular symbols from an in-process TTL cache.
+ExecStart=${VENV_PY} -u -m src.bot.server --workers 4 --queue-size 50000 --cache-ttl 600 --rate 25
 Restart=always
 RestartSec=10
 
