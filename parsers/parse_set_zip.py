@@ -35,8 +35,23 @@ class FinancialData:
     revenue_prior: Optional[float] = None    # previous period
     net_profit: Optional[float] = None       # กำไรสำหรับปี/ไตรมาส
     net_profit_prior: Optional[float] = None
-    shareholder_profit: Optional[float] = None  # ส่วนที่เป็นของผู้ถือหุ้น
+    shareholder_profit: Optional[float] = None  # ส่วนที่เป็นของผู้ถือหุ้น (3-month standalone)
     shareholder_profit_prior: Optional[float] = None
+    # Cumulative-period profit from the "longer" PL sheet when present
+    # (e.g. 9-month cumulative in a 9M filing, 6-month in an H1 filing,
+    # full year in the FY filing). Q2 and Q4 for issuers that don't file
+    # H1 are back-computed from these in compute_standalone_quarters.
+    shareholder_profit_cum: Optional[float] = None
+    shareholder_profit_cum_prior: Optional[float] = None
+    cum_months: Optional[int] = None   # 3 / 6 / 9 / 12
+    # Period length (in months) of the primary PL sheet — i.e. the
+    # sheet that ``shareholder_profit`` was extracted from. 3 means we
+    # have a real 3-month standalone; 6/9 means the filing only ships
+    # the cumulative sheet, and ``shareholder_profit`` actually
+    # equals ``shareholder_profit_cum`` rather than the standalone
+    # quarter. compute_standalone_quarters uses this to avoid treating
+    # a cum-only number as Q2/Q3 standalone.
+    primary_months: Optional[int] = None
     eps: Optional[float] = None              # กำไรต่อหุ้น
     eps_prior: Optional[float] = None
 
@@ -50,28 +65,87 @@ def _is_revenue_row(text: str) -> bool:
 
 
 def _is_netprofit_row(text: str) -> bool:
-    """Match 'กำไรสำหรับปี/ไตรมาส/งวด' or the bare 'กำไรสุทธิ' label used
-    by banks and financial institutions."""
+    """Match the income-statement bottom line in any of the variants
+    SET filers actually use:
+
+      - กำไรสำหรับ(ปี|งวด|ไตรมาส|รอบระยะเวลา)             ← profit case
+      - กำไร (ขาดทุน) สำหรับ(...)                          ← spaced variant
+      - กำไร(ขาดทุน)สำหรับ(...)                            ← no-space (AJ)
+      - (ขาดทุน) กำไรสำหรับ(...)                           ← loss-leading (TMT loss qtrs)
+      - (ขาดทุน)กำไรสำหรับ(...)                            ← loss-leading no-space
+      - กำไรสุทธิสำหรับ... / กำไรสุทธิ / กำไร (ขาดทุน) สุทธิ ← banks
+
+    Excludes the comprehensive-income row 'กำไรเบ็ดเสร็จรวม...' and
+    its loss-leading variants — those would include OCI items, not
+    just net profit. The minority-interest row is filtered separately
+    by `_is_shareholder_profit_row`.
+    """
     if not text:
         return False
     text = str(text).strip()
+    # The label group accepts both Thai phrasings for the period unit
+    # ("ปี/ไตรมาส/งวด" and the longer "รอบระยะเวลา").
+    period_grp = r"(ปี|งวด|ไตรมาส|รอบระยะเวลา)"
+    # Optional "(ขาดทุน)" with optional surrounding whitespace, in
+    # either prefix or infix position. \s* lets us tolerate the same
+    # phrase with or without spaces around the parens — both layouts
+    # exist in real SET filings.
+    loss_prefix = r"\(ขาดทุน\)\s*"          # "(ขาดทุน) " (TMT loss qtr)
+    loss_infix = r"\s*\(ขาดทุน\)\s*"        # " (ขาดทุน) " (CPALL et al.)
     patterns = [
-        r"^กำไรสำหรับ(ปี|งวด|ไตรมาส)",
-        r"^กำไร \(ขาดทุน\) สำหรับ(ปี|งวด|ไตรมาส)",
+        rf"^กำไรสำหรับ{period_grp}",
+        rf"^กำไร{loss_infix}สำหรับ{period_grp}",
+        rf"^{loss_prefix}กำไรสำหรับ{period_grp}",
+        # Bare "ขาดทุนสำหรับ..." with no preceding กำไร — used by issuers
+        # who book a full-year loss (AJ 2567, 2568) rather than the
+        # parenthesised "(ขาดทุน) กำไร..." form. Specifically targets the
+        # period unit afterwards so it doesn't catch operating-loss rows
+        # like "ขาดทุนจากกิจกรรมดำเนินงาน".
+        rf"^ขาดทุนสำหรับ{period_grp}",
         r"^กำไรสุทธิสำหรับ",
-        r"^กำไรสุทธิ$",            # banks: bare "กำไรสุทธิ"
-        r"^กำไร \(ขาดทุน\) สุทธิ$",
+        r"^ขาดทุนสุทธิสำหรับ",
+        r"^กำไรสุทธิ$",
+        r"^ขาดทุนสุทธิ$",
+        r"^กำไร\s*\(ขาดทุน\)\s*สุทธิ$",
+        rf"^{loss_prefix}กำไรสุทธิ$",
     ]
     return any(re.match(p, text) for p in patterns)
 
 
 def _is_shareholder_profit_row(text: str) -> bool:
-    """Match 'ส่วนที่เป็นของผู้ถือหุ้นของบริษัท'."""
+    """Match the row that splits net profit into the parent-company
+    share vs minority interest.
+
+    Covers all variations seen in SET XLSX filings:
+      - ส่วนที่เป็นของผู้ถือหุ้นของบริษัท          (CPALL, most non-financial)
+      - ส่วนที่เป็นของบริษัทใหญ่                    (SCB, KKP)
+      - ส่วนที่เป็นของธนาคาร                         (KBANK, BBL, KTB, TTB, BAY)
+      - ส่วนที่เป็นของผู้ถือหุ้นของธนาคาร          (CIMBT)
+      - ส่วนของผู้เป็นเจ้าของของบริษัทใหญ่         (TMT, used in many newer filings)
+      - ส่วนของบริษัทใหญ่                           (THE, some others)
+
+    Explicitly rejects the sibling row for minority interest
+    (ส่วนที่เป็นของส่วนได้เสียที่ไม่มีอำนาจควบคุม or
+    ส่วนของส่วนได้เสียที่ไม่มีอำนาจควบคุม) so we never
+    accidentally capture the wrong number. The minority row is
+    distinguished by ``ส่วนได้เสีย`` or ``ไม่มีอำนาจ`` markers.
+
+    SET's company-highlights API reports this parent-share figure
+    (e.g. TMT 2566: 333.88 MB) — not the consolidated total
+    (332.74 MB). Matching this row precisely is what keeps our
+    quarterly history aligned with what users see on SET's site.
+    """
     if not text:
         return False
     text = str(text).strip()
-    # Must contain both keywords
-    return "ผู้ถือหุ้น" in text and "บริษัท" in text and "ส่วน" in text
+    # Both "ส่วนที่เป็น..." and "ส่วนของ..." are used in the wild.
+    if not (text.startswith("ส่วนที่เป็น") or text.startswith("ส่วนของ")):
+        return False
+    # Minority-interest row has a distinct signature.
+    if "ส่วนได้เสีย" in text or "ไม่มีอำนาจ" in text:
+        return False
+    # Must reference the parent entity (company or bank).
+    return "บริษัท" in text or "ธนาคาร" in text
 
 
 def _is_eps_row(text: str) -> bool:
@@ -82,15 +156,204 @@ def _is_eps_row(text: str) -> bool:
     return text.startswith("กำไรต่อหุ้น") or "กำไรต่อหุ้นขั้นพื้นฐาน" in text
 
 
-def _find_pl_sheet(workbook) -> Optional[str]:
-    """Find the Profit & Loss sheet in the workbook.
-    SET uses 'PL' prefix (e.g. 'PL 10-11').
+def _detect_period_months(ws) -> int:
+    """Infer the reporting-period length (in months) from the sheet's
+    top header band.
+
+    Returns one of ``3`` | ``6`` | ``9`` | ``12``, or ``0`` if none of
+    the standard SET period phrases appear. Used to pick the
+    "cumulative" PL sheet out of the pair that Q1/H1/9M filings ship
+    (3-month standalone + longer-period cumulative).
     """
+    # Order: longest phrase first. "เก้า" is checked before "สาม"
+    # because some sheets state both phrases (prior-period comparative)
+    # and we want the longer (cumulative) period to win.
+    # SET filers use "สำหรับงวด..." and "สำหรับรอบระยะเวลา..."
+    # interchangeably; both are listed as keys.
+    patterns = [
+        (12, ("สำหรับปี", "สำหรับรอบปี", "สำหรับงวดสิบสองเดือน",
+              "สำหรับรอบระยะเวลาหนึ่งปี", "สิบสองเดือน", "(12M)")),
+        (9,  ("เก้าเดือน", "9 เดือน",
+              "สำหรับงวดเก้าเดือน", "สำหรับรอบระยะเวลาเก้าเดือน",
+              "(9M)")),
+        (6,  ("หกเดือน", "6 เดือน",
+              "สำหรับงวดหกเดือน", "สำหรับรอบระยะเวลาหกเดือน",
+              "(6M)")),
+        (3,  ("สามเดือน", "3 เดือน",
+              "สำหรับงวดสามเดือน", "สำหรับรอบระยะเวลาสามเดือน",
+              "(3M)")),
+    ]
+    max_row = min(14, ws.max_row)
+    for months, keys in patterns:
+        for row in ws.iter_rows(min_row=1, max_row=max_row, values_only=True):
+            for cell in row:
+                if cell and isinstance(cell, str):
+                    s = str(cell)
+                    if any(k in s for k in keys):
+                        return months
+    return 0
+
+
+def _find_period_transition(ws) -> Optional[int]:
+    """Some filers (KTB, LHFG, BAY-style) pack BOTH the 3-month
+    standalone and the N-month cumulative sections into a single PL
+    sheet, stacked vertically. Return the row index where the period
+    header first changes from a short period to a longer one — that's
+    the start of the cumulative section.
+
+    Returns ``None`` when the sheet sticks to a single period throughout.
+    """
+    transitions: list[tuple[int, int]] = []   # (row, months)
+    patterns = [
+        (12, ("สำหรับปี", "สำหรับรอบปี",
+              "สำหรับรอบระยะเวลาหนึ่งปี", "สำหรับงวดสิบสองเดือน",
+              "สิบสองเดือน")),
+        (9,  ("เก้าเดือน", "9 เดือน",
+              "สำหรับงวดเก้าเดือน", "สำหรับรอบระยะเวลาเก้าเดือน")),
+        (6,  ("หกเดือน", "6 เดือน",
+              "สำหรับงวดหกเดือน", "สำหรับรอบระยะเวลาหกเดือน")),
+        (3,  ("สามเดือน", "3 เดือน",
+              "สำหรับงวดสามเดือน", "สำหรับรอบระยะเวลาสามเดือน")),
+    ]
+    for i, row in enumerate(ws.iter_rows(min_row=1, max_row=ws.max_row, values_only=True), 1):
+        for cell in row:
+            if cell and isinstance(cell, str):
+                s = str(cell)
+                for months, keys in patterns:
+                    if any(k in s for k in keys):
+                        if not transitions or transitions[-1][1] != months:
+                            transitions.append((i, months))
+                        break
+                break
+    # First transition row where the period jumps to a longer duration.
+    for idx in range(1, len(transitions)):
+        prev_months = transitions[idx - 1][1]
+        cur_months = transitions[idx][1]
+        if cur_months > prev_months:
+            return transitions[idx][0]
+    return None
+
+
+def _extract_shareholder_from_rows(ws, start_row: int, end_row: int,
+                                    unit_divisor: float) -> tuple[Optional[float], Optional[float]]:
+    """Walk rows ``[start_row, end_row]`` and return the first
+    (shareholder_profit, prior) pair found. Falls back to the top-line
+    net-profit row if the shareholder split isn't broken out in that
+    section. Values come back divided by ``unit_divisor`` (MB)."""
+    for row in ws.iter_rows(min_row=start_row, max_row=end_row, values_only=True):
+        if not row:
+            continue
+        label, label_col = _find_label(row)
+        if not label:
+            continue
+        if _is_shareholder_profit_row(label):
+            nums = _extract_numeric(row, is_eps=False, start=label_col + 1)
+            if len(nums) >= 2:
+                return nums[0] / unit_divisor, nums[1] / unit_divisor
+    for row in ws.iter_rows(min_row=start_row, max_row=end_row, values_only=True):
+        if not row:
+            continue
+        label, label_col = _find_label(row)
+        if not label:
+            continue
+        if _is_netprofit_row(label):
+            nums = _extract_numeric(row, is_eps=False, start=label_col + 1)
+            if len(nums) >= 2:
+                return nums[0] / unit_divisor, nums[1] / unit_divisor
+    return None, None
+
+
+def _find_pl_sheets(workbook) -> list[str]:
+    """Return every Profit & Loss sheet in the workbook, ordered from
+    shortest reporting period (standalone) to longest (cumulative).
+
+    Q1/H1/9M filings ship two PL sheets — a 3-month standalone plus a
+    6/9-month cumulative — and we need both so we can derive Q2 and Q4
+    for issuers that skip the H1 filing (most commercial banks).
+
+    Selection is name-based first (``PL``, ``กำไรขาดทุน``, or numeric
+    names like ``'8-9'`` / ``'PL3M-6-7'``), with a content-based
+    fallback scanning for ``กำไรสุทธิ`` on sheets that don't carry an
+    obvious label (e.g. KKP's ``'8-9'``).
+    """
+    candidates: list[str] = []
     for name in workbook.sheetnames:
         upper = name.upper()
         if "PL" in upper or "กำไรขาดทุน" in name:
-            return name
-    return None
+            candidates.append(name)
+
+    if not candidates:
+        # Content fallback — any sheet whose body contains an
+        # income-statement marker. Many filers use cryptic sheet names
+        # like '5-6' (WHA) or 'ThaiPL' (varied), and ADVANC names PL
+        # sheets ``SI (3ด) (P.6)`` / ``SCI (3ด) P.7``. Also catch the
+        # standard PL title 'งบกำไรขาดทุน' even when followed by
+        # additional text like 'เบ็ดเสร็จ'.
+        markers = (
+            "งบกำไรขาดทุน",          # PL header — most reliable single marker
+            "กำไรสุทธิ",
+            "กำไรสำหรับงวด",
+            "กำไรสำหรับปี",
+            "กำไรสำหรับไตรมาส",
+            "กำไรสำหรับรอบระยะเวลา",
+            "ส่วนที่เป็นของผู้ถือหุ้น",
+            "ส่วนที่เป็นของบริษัท",
+            "ส่วนที่เป็นของธนาคาร",
+        )
+        for name in workbook.sheetnames:
+            ws = workbook[name]
+            max_row = min(160, ws.max_row)
+            found = False
+            for row in ws.iter_rows(min_row=1, max_row=max_row, values_only=True):
+                for cell in row:
+                    if cell and isinstance(cell, str):
+                        s = str(cell)
+                        if any(m in s for m in markers):
+                            found = True
+                            break
+                if found:
+                    break
+            if found:
+                candidates.append(name)
+
+    # Drop empty templates: filers occasionally ship a placeholder sheet
+    # ("Sheet1") with the PL skeleton but no numbers — CHOTI 2567 FY is
+    # one example. A real PL sheet has at least one numeric value paired
+    # with a net-profit-style label. Walking in iter_rows is cheap.
+    def _has_pl_data(name: str) -> bool:
+        ws = workbook[name]
+        max_row = min(ws.max_row, 200)
+        for row in ws.iter_rows(min_row=1, max_row=max_row, values_only=True):
+            if not row:
+                continue
+            label, label_col = _find_label(row)
+            if not label:
+                continue
+            if not (_is_netprofit_row(label) or _is_shareholder_profit_row(label)):
+                continue
+            # Scan range matches _extract_numeric so a sheet whose only
+            # "numbers" sit in stale far-right buckets (DITTO 2566/Q1)
+            # is correctly flagged as empty.
+            end = min(len(row), 20)
+            for cell in row[label_col + 1:end]:
+                if isinstance(cell, (int, float)) and cell not in (0, None):
+                    return True
+        return False
+
+    candidates = [c for c in candidates if _has_pl_data(c)]
+
+    # Order by period length so [0] is the 3-month standalone sheet and
+    # [-1] is the longest cumulative. Sheets with an unknown period sit
+    # at the end — they're rare and won't affect 3m/cum pairing.
+    candidates.sort(key=lambda n: _detect_period_months(workbook[n]) or 99)
+    return candidates
+
+
+def _find_pl_sheet(workbook) -> Optional[str]:
+    """Back-compat wrapper — returns the primary (shortest-period) PL
+    sheet, matching the original single-return contract."""
+    sheets = _find_pl_sheets(workbook)
+    return sheets[0] if sheets else None
 
 
 def _detect_unit_divisor(rows_top: list) -> float:
@@ -143,24 +406,76 @@ class _XlsAdapter:
 
 
 def _open_workbook(path: str):
-    """Open .xls or .xlsx and return an object with sheetnames + __getitem__."""
+    """Open .xls or .xlsx and return an object with sheetnames + __getitem__.
+
+    Detect the actual format by magic bytes rather than extension —
+    some filers (DELTA, notably) ship xlsx files renamed to ``.xls``.
+    We pass the bytes through ``BytesIO`` so openpyxl never sees the
+    misleading filename and falls back to its extension check."""
+    from io import BytesIO
+
+    with open(path, "rb") as f:
+        data = f.read()
+    head = data[:8]
+
+    # xlsx / xlsm / etc. — Office Open XML is a ZIP archive.
+    if head[:4] == b"PK\x03\x04":
+        return openpyxl.load_workbook(BytesIO(data), data_only=True)
+
+    # Legacy BIFF binary .xls
+    if head[:8] == b"\xd0\xcf\x11\xe0\xa1\xb1\x1a\xe1":
+        return _XlsAdapter(path)
+
+    # Last-resort: trust the extension when magic bytes don't match
+    # (rarely-used XML SpreadsheetML 2003, etc.).
     lower = path.lower()
     if lower.endswith(".xlsx"):
-        return openpyxl.load_workbook(path, data_only=True)
+        return openpyxl.load_workbook(BytesIO(data), data_only=True)
     if lower.endswith(".xls"):
         return _XlsAdapter(path)
     raise ValueError(f"Unsupported workbook format: {path}")
 
 
-def _extract_numeric(row: tuple, is_eps: bool = False) -> list:
+def _find_label(row: tuple) -> tuple[str, int]:
+    """Find the first non-empty string cell in ``row`` and return
+    ``(label, column_index)``.
+
+    Bank XLSX filings indent the parent-vs-minority split into column B
+    or C (e.g. KBANK uses col 1, BBL uses col 2), leaving col A empty.
+    We therefore can't hard-code ``row[0]`` as the label.
+    """
+    for i, cell in enumerate(row):
+        if cell is None:
+            continue
+        if not isinstance(cell, str):
+            continue
+        s = str(cell).strip()
+        if s:
+            return s, i
+    return "", -1
+
+
+def _extract_numeric(row: tuple, is_eps: bool = False, start: int = 1) -> list:
     """Extract first 2 non-zero numeric values from row (current, prior).
     Skips small integers (1-99) which are footnote references in SET XBRL.
 
     For non-EPS: skips whole-number values < 100 (likely notes)
     For EPS: skips whole integers (which are notes), accepts decimals
+
+    ``start`` is the first column index to scan — callers set this to one
+    past the label column so the label itself is never misread as a value.
+
+    Hard cap the scan at column 20 (relative to row start). Real SET PL
+    sheets keep their current/prior data within the first ~15 columns;
+    anything beyond that is helper buckets, internal cross-checks, or
+    stale cached values from broken formulas. DITTO 2566/Q1, for
+    example, has #REF! in cols 7–13 (the real data columns) and stale
+    FY 2565 totals at col 31 — without the cap we'd silently pick up
+    the stale FY value as Q1 net profit, blowing up Q-sums by 1000×.
     """
+    end = min(len(row), 20)
     nums = []
-    for cell in row[1:]:
+    for cell in row[start:end]:
         if not isinstance(cell, (int, float)) or cell == 0:
             continue
         val = float(cell)
@@ -174,10 +489,15 @@ def _extract_numeric(row: tuple, is_eps: bool = False) -> list:
             if val == int(val):
                 continue
         else:
-            # Skip footnote references (small whole integers)
-            if isinstance(cell, int) and 1 <= abs(val) < 100:
-                continue
-            if val == int(val) and abs(val) < 100:
+            # Skip footnote/note-section references. These appear as the
+            # first numeric cell of many rows and come in two shapes:
+            #   • small whole integers ("12", "3") — note numbers
+            #   • short decimals ("3.32", "2.14") — "note 3, item 32"
+            # Both are always < 100. Since income-statement totals we
+            # care about (revenue, net profit) are always in the
+            # thousands+ even in the raw baht/thousand-baht unit, it's
+            # safe to skip any value with abs < 100 for non-EPS rows.
+            if abs(val) < 100:
                 continue
 
         nums.append(val)
@@ -246,11 +566,12 @@ def parse_zip(zip_path: str, symbol: str = "UNKNOWN") -> Optional[FinancialData]
             print(f"[parse_zip] Failed to open workbook: {e}")
             return None
 
-        pl_sheet = _find_pl_sheet(wb)
-        if not pl_sheet:
+        pl_sheets = _find_pl_sheets(wb)
+        if not pl_sheets:
             print(f"[parse_zip] No PL sheet in {filename}")
             return None
 
+        pl_sheet = pl_sheets[0]
         ws = wb[pl_sheet]
 
         # Detect the unit divisor from the top of the sheet
@@ -268,11 +589,16 @@ def parse_zip(zip_path: str, symbol: str = "UNKNOWN") -> Optional[FinancialData]
                 if cell and isinstance(cell, str):
                     text = str(cell).strip()
                     # Period type detection
-                    if "สำหรับปี" in text or "สำหรับรอบปี" in text:
+                    if ("สำหรับปี" in text or "สำหรับรอบปี" in text
+                            or "สำหรับรอบระยะเวลาหนึ่งปี" in text):
                         period_type = "annual"
-                    elif "สำหรับงวดหกเดือน" in text or "6 เดือน" in text or "หกเดือน" in text:
+                    elif ("สำหรับงวดหกเดือน" in text or "6 เดือน" in text
+                          or "หกเดือน" in text
+                          or "สำหรับรอบระยะเวลาหกเดือน" in text):
                         period_type = "half"
-                    elif "สำหรับไตรมาส" in text or "3 เดือน" in text or "สำหรับงวดสามเดือน" in text:
+                    elif ("สำหรับไตรมาส" in text or "3 เดือน" in text
+                          or "สำหรับงวดสามเดือน" in text
+                          or "สำหรับรอบระยะเวลาสามเดือน" in text):
                         period_type = "quarterly"
 
                     # Year from Thai date text
@@ -314,12 +640,12 @@ def parse_zip(zip_path: str, symbol: str = "UNKNOWN") -> Optional[FinancialData]
         for row in ws.iter_rows(min_row=1, max_row=ws.max_row, values_only=True):
             if not row:
                 continue
-            label = str(row[0]).strip() if row[0] else ""
+            label, label_col = _find_label(row)
             if not label:
                 continue
 
             is_eps = _is_eps_row(label)
-            nums = _extract_numeric(row, is_eps=is_eps)
+            nums = _extract_numeric(row, is_eps=is_eps, start=label_col + 1)
 
             if len(nums) >= 2:
                 if _is_revenue_row(label) and result.revenue is None:
@@ -335,6 +661,98 @@ def parse_zip(zip_path: str, symbol: str = "UNKNOWN") -> Optional[FinancialData]
                     # EPS is always in baht per share regardless of sheet unit
                     result.eps = nums[0]
                     result.eps_prior = nums[1]
+
+        # Bank filings report a single consolidated "กำไรสุทธิ" but never
+        # break it into shareholder/minority on some pages — fall back to
+        # the top-line net profit so the symbol isn't silently dropped.
+        if result.shareholder_profit is None and result.net_profit is not None:
+            result.shareholder_profit = result.net_profit
+            result.shareholder_profit_prior = result.net_profit_prior
+
+        # Record the months covered by the primary sheet so single-sheet
+        # Q1 / FY filings still report a sensible "cumulative" (same as
+        # the standalone — cumulative == current period for those).
+        primary_months = _detect_period_months(ws)
+        result.primary_months = primary_months
+
+        # Extract the cumulative-period shareholder profit. Three
+        # possible layouts:
+        #   1. Separate second PL sheet (CPALL, KBANK, SCB, BBL, …) —
+        #      take shareholder profit from that sheet's first match.
+        #   2. Single sheet that stacks 3-month and cumulative sections
+        #      vertically (KTB, LHFG) — detect the period-header
+        #      transition row and pull shareholder profit from the rows
+        #      beyond it.
+        #   3. Single sheet covering one period only (Q1, FY) — the
+        #      cumulative equals the standalone figure we just parsed.
+        # Walk the candidate cumulative sheets in order. We want the
+        # FIRST one that's longer than the primary AND actually yields
+        # a shareholder/net-profit number — non-PL "อื่น ๆ" (changes
+        # in equity, etc.) sometimes mention "กำไรสุทธิ" inline and
+        # get picked up by the content-based fallback in find_pl_sheets,
+        # so just taking the last sheet is unsafe.
+        cum_sheet = None
+        cum_sp = None
+        cum_sp_prior = None
+        cum_unit_used = None
+        for cand in pl_sheets:
+            if cand == pl_sheet:
+                continue
+            ws_c = wb[cand]
+            months_c = _detect_period_months(ws_c)
+            if months_c <= primary_months:
+                continue
+            cu = _detect_unit_divisor(
+                list(ws_c.iter_rows(min_row=1, max_row=15, values_only=True))
+            )
+            sp_try, sp_prior_try = _extract_shareholder_from_rows(
+                ws_c, 1, ws_c.max_row, cu
+            )
+            if sp_try is not None:
+                cum_sheet = cand
+                cum_sp = sp_try
+                cum_sp_prior = sp_prior_try
+                cum_unit_used = cu
+                break
+
+        if cum_sheet is not None:
+            # Layout 1 — dedicated cumulative sheet.
+            result.shareholder_profit_cum = cum_sp
+            result.shareholder_profit_cum_prior = cum_sp_prior
+            result.cum_months = _detect_period_months(wb[cum_sheet])
+        else:
+            transition = _find_period_transition(ws)
+            if transition is not None:
+                # Layout 2 — same sheet, section break at ``transition``.
+                # The primary shareholder_profit we already parsed is
+                # the earliest match, which is before the transition —
+                # i.e. the 3-month standalone. We just need the
+                # cumulative from rows after the break.
+                sp, sp_prior = _extract_shareholder_from_rows(
+                    ws, transition, ws.max_row, unit_divisor
+                )
+                result.shareholder_profit_cum = sp
+                result.shareholder_profit_cum_prior = sp_prior
+                # Detect cum period by scanning rows past the transition.
+                cum_months = 0
+                for row in ws.iter_rows(min_row=transition, max_row=min(transition + 10, ws.max_row), values_only=True):
+                    for cell in row:
+                        if cell and isinstance(cell, str):
+                            s = str(cell)
+                            if "เก้าเดือน" in s or "9 เดือน" in s:
+                                cum_months = 9; break
+                            if "หกเดือน" in s or "6 เดือน" in s:
+                                cum_months = 6; break
+                            if "สำหรับปี" in s:
+                                cum_months = 12; break
+                    if cum_months:
+                        break
+                result.cum_months = cum_months
+            else:
+                # Layout 3 — truly single-period filing (Q1, FY).
+                result.shareholder_profit_cum = result.shareholder_profit
+                result.shareholder_profit_cum_prior = result.shareholder_profit_prior
+                result.cum_months = primary_months
 
         # Build period label
         if not result.period_label:

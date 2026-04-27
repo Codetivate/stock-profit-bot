@@ -57,12 +57,15 @@ def _is_financial_statement(headline: str) -> bool:
 
 
 def _is_amendment(headline: str) -> bool:
-    """Skip corrections/clarifications AND pre-audit drafts — both race
-    with the canonical post-audit filing that shares the same period."""
+    """Skip formal amendments/clarifications (corrections to previously
+    filed statements) — but keep pre-audit drafts ("ก่อนสอบทาน" /
+    "ก่อนตรวจสอบ"), which are legitimate management numbers filed
+    before the external reviewer finalises them. The post-audit filing
+    for the same period arrives weeks later and overwrites the draft
+    via the dedupe-by-filing-date logic downstream."""
     h = headline or ""
     amendment_markers = (
         "คำชี้แจง", "แก้ไข", "ชี้แจงเพิ่มเติม",
-        "ก่อนสอบทาน", "ก่อนตรวจสอบ",  # pre-audit drafts
     )
     return any(k in h for k in amendment_markers)
 
@@ -70,32 +73,117 @@ def _is_amendment(headline: str) -> bool:
 def compute_standalone_quarters(
     sources: List[dict],
 ) -> Dict[int, Dict[str, Optional[float]]]:
-    """Turn a list of {year, period, shareholder_profit} into year→Q1..Q4.
+    """Turn filing rows into year → Q1..Q4 + FullYear.
 
-    SET XLSX filings report *current quarter* as the first numeric column
-    for Q1/H1/9M reports — so the value the parser hands us for H1 is
-    already standalone Q2, not the cumulative H1 sum. Only the annual
-    (FY) filing reports the full-year total; Q4 is back-computed from it.
+    Each filing row carries two profit figures we can use:
+      • ``shareholder_profit``      — the 3-month standalone number
+        (first numeric column of the PL sheet). For a Q1 report this
+        is Q1, for a 9M report it's Q3, for an FY report it's the
+        full year since the annual sheet has only one column.
+      • ``shareholder_profit_cum``  — the cumulative number from the
+        longer PL sheet when the filing ships two sheets (H1 / 9M
+        filings), or the same as standalone when it's a single-sheet
+        Q1 / FY.
+
+    Derivation strategy — prefer direct values, fall back to
+    differences:
+      Q1  ← Q1 filing standalone (= Q1 cumulative for Q1)
+      Q2  ← H1 standalone, or (H1 cum − Q1), or (9M cum − Q1 − Q3)
+      Q3  ← 9M standalone
+      Q4  ← (FY − 9M cum) or (FY − Q1 − Q2 − Q3)
+      FY  ← annual filing's standalone number
+
+    That last Q2 path is what lets Thai commercial banks (KBANK, BBL,
+    KTB, TTB, BAY, KKP, CIMBT, LHFG) show Q2 and Q4 even though they
+    skip the H1 filing at SET entirely.
     """
-    by_year: Dict[int, Dict[str, float]] = {}
+    by_year: Dict[int, Dict[str, Optional[float]]] = {}
+    cum_by_year: Dict[int, Dict[str, Optional[float]]] = {}
+    fy_total_by_year: Dict[int, Optional[float]] = {}
+    # Index by both standalone and cumulative — keep the row even when
+    # only one is present so we can fall back to derivations like
+    # Q3 = 9M_cum − Q1 − Q2 when the 3-month standalone failed to parse.
+    #
+    # For interim filings (Q1/H1/9M), only treat ``shareholder_profit``
+    # as a real "standalone" when it actually came from a 3-month sheet.
+    # Some filers ship 9M filings with only the cumulative sheet — in
+    # that case the parser ends up with sp == sp_cum and primary_months
+    # equal to 6 or 9, so the value is the cum, not Q2/Q3 standalone.
+    # Treating it as standalone would double-count and inflate Q4 by
+    # the prior cumulative quarters.
     for r in sources:
         sp = r.get("shareholder_profit")
-        if sp is None:
+        sp_cum = r.get("shareholder_profit_cum")
+        if sp is None and sp_cum is None:
             continue
+        period = r["period"]
+        primary = r.get("primary_months")
         y = r["thai_year"]
-        p = r["period"]
-        by_year.setdefault(y, {})[p] = sp
+        if (period in ("Q1", "H1", "9M") and primary is not None
+                and primary > 3):
+            sp = None
+        # For FY filings, prefer the 12-month cumulative number as the
+        # full-year total. Some filers (BCP) ship FY zips whose
+        # 3-month "Q4 standalone" sheet contains stale data from an
+        # earlier filing — using sp as FY would put a stale or
+        # quarterly number into the FY slot and break the entire
+        # year. The 12-month sheet (sp_cum) is the authoritative
+        # full-year figure; Q4 is derived downstream from FY − 9M cum.
+        if period == "FY":
+            if primary is not None and primary == 3 and sp_cum is not None:
+                fy_total_by_year[y] = sp_cum
+            else:
+                fy_total_by_year[y] = sp if sp is not None else sp_cum
+        by_year.setdefault(y, {})[period] = sp
+        cum_by_year.setdefault(y, {})[period] = sp_cum
 
     out: Dict[int, Dict[str, Optional[float]]] = {}
     for y, periods in by_year.items():
+        cums = cum_by_year.get(y, {})
+
         q1 = periods.get("Q1")
-        q2 = periods.get("H1")     # the 3-month figure in the H1 report
-        q3 = periods.get("9M")     # the 3-month figure in the 9M report
-        fy = periods.get("FY")     # full-year total from the annual filing
+        q3 = periods.get("9M")     # 3-month figure (= Q3 standalone)
+        # FY total comes from fy_total_by_year, which already handles
+        # both the single-sheet (sp == FY) and the BCP-style
+        # 3+12 layout (sp_cum == FY). Falling back to periods.get("FY")
+        # would put Q4 standalone in the FY slot for BCP-style filings.
+        fy = fy_total_by_year.get(y)
+
+        h1_cum = cums.get("H1")    # 6-month cumulative from H1 filing
+        nine_cum = cums.get("9M")  # 9-month cumulative from 9M filing
+
+        # Q2 — try three paths in order of reliability.
+        q2 = periods.get("H1")     # H1 standalone = Q2 (when we fetched H1)
+        if q2 is None and h1_cum is not None and q1 is not None:
+            q2 = h1_cum - q1
+        if q2 is None and nine_cum is not None and q1 is not None and q3 is not None:
+            q2 = nine_cum - q1 - q3
+
+        # Q3 — fall back to 9M cumulative minus (Q1 + Q2) when the 3-month
+        # standalone is missing (e.g. parser couldn't read the 3-month sheet
+        # but found the cumulative). This is the same logic Q2 uses, just
+        # solved for Q3 instead.
+        if q3 is None and nine_cum is not None and q1 is not None and q2 is not None:
+            q3 = nine_cum - q1 - q2
+
+        # Q4 — prefer the four-quarter subtraction (FY − Q1 − Q2 − Q3)
+        # when all three standalones are available. The 9M cumulative
+        # path is technically equivalent but has been seen to fail when
+        # filers ship 9M zips containing stale prior-year cumulative
+        # values (CPALL 2567's 9M cum reads as 2566's 9M total),
+        # which silently inflates Q4 by the YoY delta. Standalone
+        # quarters come from three independent quarterly filings, so
+        # one stale filing can't corrupt the others. Fall back to the
+        # 9M cum subtraction only when at least one standalone is
+        # missing — that's typically the case for newer issuers whose
+        # quarterly history hasn't been fully ingested yet.
         q4 = None
         if all(v is not None for v in (fy, q1, q2, q3)):
             q4 = fy - q1 - q2 - q3
-        out[y] = {"Q1": q1, "Q2": q2, "Q3": q3, "Q4": q4}
+        elif fy is not None and nine_cum is not None:
+            q4 = fy - nine_cum
+
+        out[y] = {"Q1": q1, "Q2": q2, "Q3": q3, "Q4": q4, "FullYear": fy}
     return out
 
 
@@ -129,6 +217,19 @@ def ingest_symbol(
             if _is_financial_statement(n.headline) and not _is_amendment(n.headline)
             and parse_headline(n.headline) is not None
         ]
+        # Dedupe by (thai_year, period), keeping the latest news_datetime.
+        # Pre-audit drafts and post-audit finals share the same period;
+        # the post-audit version is filed later and is the canonical
+        # numbers — let it win. The pre-audit's small "summary" XLSX
+        # also has a different layout that mis-reads through the parser.
+        latest_by_period: Dict[tuple, NewsItem] = {}
+        for n in fin_items:
+            key = parse_headline(n.headline)
+            cur = latest_by_period.get(key)
+            if cur is None or n.datetime > cur.datetime:
+                latest_by_period[key] = n
+        fin_items = sorted(latest_by_period.values(),
+                           key=lambda n: n.datetime, reverse=True)
         print(f"      {len(news)} total news, {len(fin_items)} financial statements")
 
         print("\n[2/4] Downloading zips + extracting XLSX…")
@@ -157,13 +258,21 @@ def ingest_symbol(
     for f in staged:
         try:
             fd = parse_zip(str(f.zip_path), symbol=symbol)
-            if not fd or fd.shareholder_profit is None:
+            # Keep the row when either the 3-month standalone OR the
+            # cumulative number is populated. Cumulative-only rows are
+            # still useful: a 9M filing whose 3-month sheet was malformed
+            # can still let us derive Q4 from (FY − 9M cum), and Q3 from
+            # (9M cum − Q1 − Q2).
+            if not fd or (fd.shareholder_profit is None and fd.shareholder_profit_cum is None):
                 print(f"      ✗ parse miss: {f.key.thai_year} {f.key.period}")
                 continue
             parse_rows.append({
                 "thai_year": f.key.thai_year,
                 "period": f.key.period,
                 "shareholder_profit": fd.shareholder_profit,
+                "shareholder_profit_cum": fd.shareholder_profit_cum,
+                "cum_months": fd.cum_months,
+                "primary_months": fd.primary_months,
                 "revenue": fd.revenue,
                 "net_profit": fd.net_profit,
                 "eps": fd.eps,
@@ -173,10 +282,25 @@ def ingest_symbol(
                 "sha256": f.sha256,
                 "ingested_at": json.loads(f.metadata_path.read_text(encoding="utf-8"))["ingested_at"],
             })
-            print(f"      ✓ {f.key.thai_year} {f.key.period}  "
-                  f"shareholder_profit={fd.shareholder_profit:,.2f} MB")
+            sp_str = (
+                f"{fd.shareholder_profit:,.2f} MB"
+                if fd.shareholder_profit is not None
+                else f"cum={fd.shareholder_profit_cum:,.2f} MB"
+            )
+            print(f"      ✓ {f.key.thai_year} {f.key.period}  {sp_str}")
         except Exception as e:
             print(f"      ✗ parse error {f.key.thai_year} {f.key.period}: {e}")
+
+    # Dedupe by (thai_year, period), keeping the row with the latest
+    # filing_date. This ensures a post-audit filing supersedes the
+    # pre-audit draft once both have been fetched for the same period.
+    latest_per_period: Dict[tuple, dict] = {}
+    for row in parse_rows:
+        key = (row["thai_year"], row["period"])
+        cur = latest_per_period.get(key)
+        if cur is None or (row.get("filing_date") or "") > (cur.get("filing_date") or ""):
+            latest_per_period[key] = row
+    parse_rows = list(latest_per_period.values())
 
     print(f"\n[4/4] Computing standalone quarterly + emitting financials.json…")
     quarterly = compute_standalone_quarters(parse_rows)

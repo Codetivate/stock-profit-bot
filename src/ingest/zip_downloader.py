@@ -120,7 +120,11 @@ def download_filing(
     raw_root: Path = RAW_ROOT,
 ) -> IngestedFiling:
     """Download a zip and stage it with metadata. Idempotent — re-runs skip
-    the HTTP fetch if the zip is already present with the same sha256."""
+    the HTTP fetch if the same filing (by ``news_id``) is already staged.
+
+    When the news_id differs from what's stored (e.g. the post-audit
+    replaces a pre-audit draft for the same period), force a re-download
+    so the newer filing's numbers land in data/raw/."""
     parsed = parse_headline(headline)
     if not parsed:
         raise ValueError(f"Unrecognised financial headline: {headline!r}")
@@ -129,8 +133,21 @@ def download_filing(
     out_dir = raw_root / symbol / "financials" / str(year) / period
     out_dir.mkdir(parents=True, exist_ok=True)
     zip_path = out_dir / "source.zip"
+    metadata_path = out_dir / "metadata.json"
 
-    if not zip_path.exists() or zip_path.stat().st_size == 0:
+    # Decide whether we need to (re-)fetch: missing/empty file, OR the
+    # stored metadata points to a different news_id than what we're
+    # about to stage (drafts vs final filings share the same period).
+    needs_fetch = not zip_path.exists() or zip_path.stat().st_size == 0
+    if not needs_fetch and metadata_path.exists():
+        try:
+            existing_meta = json.loads(metadata_path.read_text(encoding="utf-8"))
+            if existing_meta.get("news_id") != news_id:
+                needs_fetch = True
+        except Exception:
+            needs_fetch = True
+
+    if needs_fetch:
         r = requests.get(zip_url, headers=HEADERS, timeout=60)
         r.raise_for_status()
         zip_path.write_bytes(r.content)

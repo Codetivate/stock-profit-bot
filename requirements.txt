@@ -3,6 +3,9 @@ beautifulsoup4>=4.12.0
 openpyxl>=3.1.0
 matplotlib>=3.8.0
 
+# Streamlit dashboard (dashboard.py)
+streamlit>=1.30.0
+
 # Ingest pipeline (Playwright for Incapsula bypass, xlrd for legacy .xls)
 playwright>=1.50.0
 xlrd==2.0.1

@@ -45,7 +45,7 @@ from src.parse.news_classifier import classify, extract_related_symbols
 from src.cli.ingest_news import EXCLUDED_TYPES  # financial_statement et al.
 
 from telegram_client import TelegramClient
-from make_chart import make_chart
+from make_chart_html import make_chart
 from command_handler import (
     build_rich_caption,
     find_latest_quarter,

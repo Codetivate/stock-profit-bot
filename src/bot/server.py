@@ -58,7 +58,7 @@ from command_handler import (  # noqa: E402
     load_symbol_history,
     save_state,
 )
-from make_chart import make_chart  # noqa: E402
+from make_chart_html import make_chart  # noqa: E402
 from telegram_client import TelegramClient  # noqa: E402
 
 

@@ -17,7 +17,7 @@ import time
 from pathlib import Path
 from datetime import datetime
 
-from make_chart import make_chart, QuarterlyData
+from make_chart_html import make_chart, QuarterlyData
 from telegram_client import TelegramClient
 
 
@@ -68,6 +68,7 @@ def load_symbol_history(symbol: str):
             q2=qs.get("Q2"),
             q3=qs.get("Q3"),
             q4=qs.get("Q4"),
+            full_year=qs.get("FullYear"),
         )
     return history
 
@@ -162,7 +163,7 @@ def build_rich_caption(symbol, history, latest_year, latest_quarter,
 
     if report_date:
         lines.append("")
-        lines.append(f"📅 <i>งบเผยแพร่: {report_date}</i>")
+        lines.append(f"<i>งบเผยแพร่: {report_date}</i>")
 
     return "\n".join(lines)
 

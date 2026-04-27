@@ -29,7 +29,7 @@ import requests
 
 from parsers.parse_set_zip import parse_zip, FinancialData
 from parse_all import compute_quarterly, detect_period_from_filename
-from make_chart import make_chart, QuarterlyData
+from make_chart_html import make_chart, QuarterlyData
 from telegram_client import TelegramClient, format_caption
 
 
