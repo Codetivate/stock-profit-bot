@@ -4,7 +4,234 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-19",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 78.38840896000013,
+      "Q2": 62.66813243999978,
+      "Q3": 55.167837889999994,
+      "Q4": 97.97023996999985,
+      "FullYear": 294.19461925999974
+    },
+    "2565": {
+      "Q1": null,
+      "Q2": 109.29501024000022,
+      "Q3": 100.238655287,
+      "Q4": 106.09704712299987,
+      "FullYear": 417.2248580400002
+    },
+    "2566": {
+      "Q1": 117.26796981708635,
+      "Q2": 115.10587411999992,
+      "Q3": 118.87206528000013,
+      "Q4": 111.30060066291284,
+      "FullYear": 462.54650987999923
+    },
+    "2567": {
+      "Q1": 122.74858536000009,
+      "Q2": 117.93297915000001,
+      "Q3": 110.19497948000034,
+      "Q4": 113.49210841999965,
+      "FullYear": 464.3686524100001
+    },
+    "2568": {
+      "Q1": 102.6861734699998,
+      "Q2": 100.44725713000001,
+      "Q3": 96.94702890000008,
+      "Q4": 110.67948140000101,
+      "FullYear": 410.7599409000009
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-15",
+      "news_id": "2021125526",
+      "raw_path": "SABINA/financials/2564/9M/source.zip",
+      "sha256": "9c8295f18c7402688a37d999bad1e680a176d3ad445724530b0dfdeb0c36af0d",
+      "ingested_at": "2026-04-24T01:33:48+00:00",
+      "shareholder_profit": 55.167837889999994
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-21",
+      "news_id": "2022018202",
+      "raw_path": "SABINA/financials/2564/FY/source.zip",
+      "sha256": "9cc89c4f979a90e46f444ede4629b85ae0b2e256a763230958239243d955777a",
+      "ingested_at": "2026-04-24T01:33:43+00:00",
+      "shareholder_profit": 294.19461925999974
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-13",
+      "news_id": "2021089599",
+      "raw_path": "SABINA/financials/2564/H1/source.zip",
+      "sha256": "3b256285e988aa339a8931a4862849f654ba33b2756256b36b1866f0a4f5ce1a",
+      "ingested_at": "2026-04-24T01:33:53+00:00",
+      "shareholder_profit": 62.66813243999978
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-13",
+      "news_id": "2021056146",
+      "raw_path": "SABINA/financials/2564/Q1/source.zip",
+      "sha256": "89e68273e6af5f9eed2f0b118c6201fb51820104f673eec22941cbf2cdf2817d",
+      "ingested_at": "2026-04-24T01:33:57+00:00",
+      "shareholder_profit": 78.38840896000013
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-14",
+      "news_id": "2022135777",
+      "raw_path": "SABINA/financials/2565/9M/source.zip",
+      "sha256": "07170c0c5ee7419de9ad85cd2d120b9bf19c0b07143094ea1fdf7ab7f63dd88b",
+      "ingested_at": "2026-04-24T01:33:28+00:00",
+      "shareholder_profit": 100.238655287
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-20",
+      "news_id": "2023017615",
+      "raw_path": "SABINA/financials/2565/FY/source.zip",
+      "sha256": "cf350f5916f052bb890b62012391731bcc6afde88ff6188c2caef5b9105daf73",
+      "ingested_at": "2026-04-24T01:33:23+00:00",
+      "shareholder_profit": 417.2248580400002
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-11",
+      "news_id": "2022094952",
+      "raw_path": "SABINA/financials/2565/H1/source.zip",
+      "sha256": "e1da8f827a18c8f9cbca8816b250126264bc27d1756a6cca53bedb2aa628aeef",
+      "ingested_at": "2026-04-24T01:33:33+00:00",
+      "shareholder_profit": 109.29501024000022
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-13",
+      "news_id": "16998304572521",
+      "raw_path": "SABINA/financials/2566/9M/source.zip",
+      "sha256": "9f58c57db324292a457d8955111694ad1bf3b353726812d00cd5790ccef359d6",
+      "ingested_at": "2026-04-24T01:33:09+00:00",
+      "shareholder_profit": 118.87206528000013
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-22",
+      "news_id": "17085582118031",
+      "raw_path": "SABINA/financials/2566/FY/source.zip",
+      "sha256": "da7bc7a4594718c517d46351d6d87261b196aa80f5ff5983cc3778874fef8a8e",
+      "ingested_at": "2026-04-24T01:33:05+00:00",
+      "shareholder_profit": 462.54650987999923
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-15",
+      "news_id": "16920539371921",
+      "raw_path": "SABINA/financials/2566/H1/source.zip",
+      "sha256": "c1a8723ba14cd18ee235319f9ecf5a8686fd0fb781f81b89d083d648c7a78bb0",
+      "ingested_at": "2026-04-24T01:33:14+00:00",
+      "shareholder_profit": 115.10587411999992
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-11",
+      "news_id": "16837584073351",
+      "raw_path": "SABINA/financials/2566/Q1/source.zip",
+      "sha256": "07a21697f3007f262e5f5cb77d3907c4ccdefc4ccd3c409c7b5ef223119e317a",
+      "ingested_at": "2026-04-24T01:33:19+00:00",
+      "shareholder_profit": 117.26796981708635
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361273921",
+      "raw_path": "SABINA/financials/2567/9M/source.zip",
+      "sha256": "02a5912be9b2429e1ba1a8cd1cfaa68e7623a80292ff3682c0dbefb5b941b1fb",
+      "ingested_at": "2026-04-24T01:32:50+00:00",
+      "shareholder_profit": 110.19497948000034
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-25",
+      "news_id": "17404367166671",
+      "raw_path": "SABINA/financials/2567/FY/source.zip",
+      "sha256": "8b0a25e5c5db2134e197fe36ea7e1fadd6cb3d06fdb40164355f637d7f7f3d45",
+      "ingested_at": "2026-04-24T01:32:46+00:00",
+      "shareholder_profit": 464.3686524100001
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990176811",
+      "raw_path": "SABINA/financials/2567/H1/source.zip",
+      "sha256": "638d4614fa82b758f803a3dab060a1a531c02bf302d271e28e96a2c1bc04a6c2",
+      "ingested_at": "2026-04-24T01:32:55+00:00",
+      "shareholder_profit": 117.93297915000001
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-13",
+      "news_id": "17155537995161",
+      "raw_path": "SABINA/financials/2567/Q1/source.zip",
+      "sha256": "a50084c34aa98ef560429d697ace04f6594533236b9cf56da0427b5421bf0667",
+      "ingested_at": "2026-04-24T01:33:00+00:00",
+      "shareholder_profit": 122.74858536000009
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-13",
+      "news_id": "17629880478481",
+      "raw_path": "SABINA/financials/2568/9M/source.zip",
+      "sha256": "e5067910c1da41f986a12ca0cf86f4c0ed7af942fc4e9ba2ac07205f1cf9eea3",
+      "ingested_at": "2026-04-24T01:32:30+00:00",
+      "shareholder_profit": 96.94702890000008
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-19",
+      "news_id": "17714553141141",
+      "raw_path": "SABINA/financials/2568/FY/source.zip",
+      "sha256": "ad51e44c495061ef0d57442031defe45132911f876a9e66600cd532f4b58479c",
+      "ingested_at": "2026-04-24T01:32:25+00:00",
+      "shareholder_profit": 410.7599409000009
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229858851",
+      "raw_path": "SABINA/financials/2568/H1/source.zip",
+      "sha256": "6d9dac49da12205f4cea9efb90b281006376a110ed123e9c8f65fb30ef9f7722",
+      "ingested_at": "2026-04-24T01:32:35+00:00",
+      "shareholder_profit": 100.44725713000001
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-15",
+      "news_id": "17472613180261",
+      "raw_path": "SABINA/financials/2568/Q1/source.zip",
+      "sha256": "802bb576f9b1b13be89eb395e6123eb9d7b346d122e63ecb4b204cf80634597c",
+      "ingested_at": "2026-04-24T01:32:41+00:00",
+      "shareholder_profit": 102.6861734699998
+    }
+  ]
 }

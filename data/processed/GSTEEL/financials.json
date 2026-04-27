@@ -6,32 +6,83 @@
   "company_name_th": null,
   "updated_at": "2026-02-27",
   "quarterly_history": {
+    "2564": {
+      "Q1": 196.744,
+      "Q2": 298.356,
+      "Q3": 515.613,
+      "Q4": 314.4030560000001,
+      "FullYear": 1325.116056
+    },
     "2565": {
-      "Q1": 1.0827078169427557e-05,
-      "Q2": -1.2698433548753292e-06,
-      "Q3": -2.8962798792136475e-05,
-      "Q4": 1.9336309201478805e-05
+      "Q1": 313.214,
+      "Q2": -36.735,
+      "Q3": -837.858,
+      "Q4": -1442.0761730000002,
+      "FullYear": -2003.455173
     },
     "2566": {
-      "Q1": -2.2225974734835725e-06,
-      "Q2": -1.7886072910475093e-05,
-      "Q3": -6.902126654905593e-06,
-      "Q4": 2.6975750441857444e-05
+      "Q1": -64.297,
+      "Q2": -517.422,
+      "Q3": -199.67,
+      "Q4": -232.46578399999996,
+      "FullYear": -1013.854784
     },
     "2567": {
-      "Q1": null,
-      "Q2": null,
-      "Q3": null,
-      "Q4": null
+      "Q1": -203.85,
+      "Q2": -535.52,
+      "Q3": -261.909,
+      "Q4": -754.194294,
+      "FullYear": -1755.473294
     },
     "2568": {
-      "Q1": -1.580088192496292e-05,
-      "Q2": -1.3986286659662106e-05,
-      "Q3": -1.6035077888738077e-05,
-      "Q4": 4.5768270935185704e-05
+      "Q1": -457.1,
+      "Q2": -404.606,
+      "Q3": -463.875,
+      "Q4": -235.864683,
+      "FullYear": -1561.445683
     }
   },
   "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-11",
+      "news_id": "2021121431",
+      "raw_path": "GSTEEL/financials/2564/9M/source.zip",
+      "sha256": "25dc6c7ddab8c73d53b9bfd3ecdfc9d9f215ecf725824f0c0e798ab23c39c608",
+      "ingested_at": "2026-04-23T19:18:52+00:00",
+      "shareholder_profit": 515.613
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-25",
+      "news_id": "2022024467",
+      "raw_path": "GSTEEL/financials/2564/FY/source.zip",
+      "sha256": "55e40a4e40aae4530477014e0a7450866b7aa523657646199350cc5541743e3d",
+      "ingested_at": "2026-04-23T19:18:47+00:00",
+      "shareholder_profit": 1325.116056
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-11",
+      "news_id": "2021087522",
+      "raw_path": "GSTEEL/financials/2564/H1/source.zip",
+      "sha256": "bd0333bb3fff0871c4150cd7af804654dbdcd792476709e307b8ec096c3ea418",
+      "ingested_at": "2026-04-23T19:18:57+00:00",
+      "shareholder_profit": 298.356
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-13",
+      "news_id": "2021056047",
+      "raw_path": "GSTEEL/financials/2564/Q1/source.zip",
+      "sha256": "c38812f97c647329dc0043ada8ff31b62d2dc56d2aaa4ba67eb5c0819a91339d",
+      "ingested_at": "2026-04-23T19:19:01+00:00",
+      "shareholder_profit": 196.744
+    },
     {
       "year": 2565,
       "period": "9M",
@@ -40,7 +91,7 @@
       "raw_path": "GSTEEL/financials/2565/9M/source.zip",
       "sha256": "fbda9cb98fd525520876efa784afe35ba08f4f74821eb33a825020cd2b988bdd",
       "ingested_at": "2026-04-23T19:18:33+00:00",
-      "shareholder_profit": -2.8962798792136475e-05
+      "shareholder_profit": -837.858
     },
     {
       "year": 2565,
@@ -50,7 +101,7 @@
       "raw_path": "GSTEEL/financials/2565/FY/source.zip",
       "sha256": "f9b90fca0e01320b10b338f0a32f6421f4b840544ca599b1e3bb07e5445bd742",
       "ingested_at": "2026-04-23T19:18:29+00:00",
-      "shareholder_profit": -6.925477610544164e-08
+      "shareholder_profit": -2003.455173
     },
     {
       "year": 2565,
@@ -60,7 +111,7 @@
       "raw_path": "GSTEEL/financials/2565/H1/source.zip",
       "sha256": "44003346f3069d9329b45d2e3c28ce8c9d403eef08e215ab4e897144a643d93e",
       "ingested_at": "2026-04-23T19:18:38+00:00",
-      "shareholder_profit": -1.2698433548753292e-06
+      "shareholder_profit": -36.735
     },
     {
       "year": 2565,
@@ -70,7 +121,7 @@
       "raw_path": "GSTEEL/financials/2565/Q1/source.zip",
       "sha256": "b012139e4038a5a4a8b90ec39def069aa7081b601fedc28b6b9c9914f233d571",
       "ingested_at": "2026-04-23T19:18:43+00:00",
-      "shareholder_profit": 1.0827078169427557e-05
+      "shareholder_profit": 313.214
     },
     {
       "year": 2566,
@@ -80,7 +131,7 @@
       "raw_path": "GSTEEL/financials/2566/9M/source.zip",
       "sha256": "5ec44ec91340b7c754e6c44286c4f91f83a43ab69a414ad2541666ab81dfb80f",
       "ingested_at": "2026-04-23T19:18:15+00:00",
-      "shareholder_profit": -6.902126654905593e-06
+      "shareholder_profit": -199.67
     },
     {
       "year": 2566,
@@ -90,7 +141,7 @@
       "raw_path": "GSTEEL/financials/2566/FY/source.zip",
       "sha256": "8667f8b662893e9b65e0e7a3906be36dca888742811868aaae2cd4e01d19976f",
       "ingested_at": "2026-04-23T19:18:11+00:00",
-      "shareholder_profit": -3.504659700681554e-08
+      "shareholder_profit": -1013.854784
     },
     {
       "year": 2566,
@@ -100,7 +151,7 @@
       "raw_path": "GSTEEL/financials/2566/H1/source.zip",
       "sha256": "6f7b37d5c79ff9c54bcc00c7e35c578cc17d94b34c4d8900d0c1769e7055cb4f",
       "ingested_at": "2026-04-23T19:18:20+00:00",
-      "shareholder_profit": -1.7886072910475093e-05
+      "shareholder_profit": -517.422
     },
     {
       "year": 2566,
@@ -110,7 +161,17 @@
       "raw_path": "GSTEEL/financials/2566/Q1/source.zip",
       "sha256": "9f53b14877c054ea1f8e8ad0bd7be5996bb3ea63d245591fe5514e153821d5dd",
       "ingested_at": "2026-04-23T19:18:24+00:00",
-      "shareholder_profit": -2.2225974734835725e-06
+      "shareholder_profit": -64.297
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-08",
+      "news_id": "17310157152331",
+      "raw_path": "GSTEEL/financials/2567/9M/source.zip",
+      "sha256": "87a14d83fb8add91c3c1ac2831f92bdc38d79ec476b1703161b711637f94e488",
+      "ingested_at": "2026-04-23T19:17:57+00:00",
+      "shareholder_profit": -261.909
     },
     {
       "year": 2567,
@@ -120,7 +181,27 @@
       "raw_path": "GSTEEL/financials/2567/FY/source.zip",
       "sha256": "c2980b43ea6e77ada0b05cd2f039b94ac0713ccb62832aae9dab43cc9c12849c",
       "ingested_at": "2026-04-23T19:17:53+00:00",
-      "shareholder_profit": -6.068262049158019e-08
+      "shareholder_profit": -1755.473294
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-09",
+      "news_id": "17231594060551",
+      "raw_path": "GSTEEL/financials/2567/H1/source.zip",
+      "sha256": "6bc72f0c887fbc8094a184a84ac6fd83059b0299668cae9c6db0d4061c704240",
+      "ingested_at": "2026-04-23T19:18:02+00:00",
+      "shareholder_profit": -535.52
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-10",
+      "news_id": "17152924573421",
+      "raw_path": "GSTEEL/financials/2567/Q1/source.zip",
+      "sha256": "110cea55920b3da65328db4f26eccf22edc8b72633c477722dde2f38e8b3810c",
+      "ingested_at": "2026-04-23T19:18:06+00:00",
+      "shareholder_profit": -203.85
     },
     {
       "year": 2568,
@@ -130,7 +211,7 @@
       "raw_path": "GSTEEL/financials/2568/9M/source.zip",
       "sha256": "45d30d81e26e022c5c17f97c505eed46e7158216b17cac97d01d87a1b696f7de",
       "ingested_at": "2026-04-23T19:17:39+00:00",
-      "shareholder_profit": -1.6035077888738077e-05
+      "shareholder_profit": -463.875
     },
     {
       "year": 2568,
@@ -140,7 +221,7 @@
       "raw_path": "GSTEEL/financials/2568/FY/source.zip",
       "sha256": "fbbffdcf0c43f880c426fea397c7c50aad0ce5e8a8fa3adde47ab5fa6b806a02",
       "ingested_at": "2026-04-23T19:17:35+00:00",
-      "shareholder_profit": -5.3975538177401195e-08
+      "shareholder_profit": -1561.445683
     },
     {
       "year": 2568,
@@ -150,7 +231,7 @@
       "raw_path": "GSTEEL/financials/2568/H1/source.zip",
       "sha256": "04c8fa0117bbf102e56063599f48e7c8a9fe48bec0afc76487cd417dc6e4397b",
       "ingested_at": "2026-04-23T19:17:44+00:00",
-      "shareholder_profit": -1.3986286659662106e-05
+      "shareholder_profit": -404.606
     },
     {
       "year": 2568,
@@ -160,7 +241,7 @@
       "raw_path": "GSTEEL/financials/2568/Q1/source.zip",
       "sha256": "3cecf022f8b1b4dbd18913fd9c209b0d8233d624e9e99a25cc8002fe9eeca468",
       "ingested_at": "2026-04-23T19:17:48+00:00",
-      "shareholder_profit": -1.580088192496292e-05
+      "shareholder_profit": -457.1
     }
   ]
 }

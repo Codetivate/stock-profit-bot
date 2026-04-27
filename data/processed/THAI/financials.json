@@ -4,7 +4,204 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-26",
+  "quarterly_history": {
+    "2564": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": 55118.210406
+    },
+    "2565": {
+      "Q1": null,
+      "Q2": -3220.56567,
+      "Q3": -4785.17059,
+      "Q4": 10980.293252,
+      "FullYear": -272.248251
+    },
+    "2566": {
+      "Q1": 12513.968817,
+      "Q2": 2261.89894,
+      "Q3": 1537.6863681900024,
+      "Q4": 11782.834267809998,
+      "FullYear": 28096.388393
+    },
+    "2567": {
+      "Q1": 2409.546277,
+      "Q2": 306.138093,
+      "Q3": 12479.523205,
+      "Q4": -42128.871812000005,
+      "FullYear": -26933.664237
+    },
+    "2568": {
+      "Q1": 9831.747305,
+      "Q2": 12124.231057,
+      "Q3": 4413.391061,
+      "Q4": 4540.894469999997,
+      "FullYear": 30910.263893
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-28",
+      "news_id": "2022025266",
+      "raw_path": "THAI/financials/2564/FY/source.zip",
+      "sha256": "2d383568a6c4be7068df115c368b7b4e96b4de1c91025c4851f17c6b633eaf17",
+      "ingested_at": "2026-04-24T05:12:00+00:00",
+      "shareholder_profit": 55118.210406
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-11",
+      "news_id": "2022132666",
+      "raw_path": "THAI/financials/2565/9M/source.zip",
+      "sha256": "698042c9c0a3040ceef226e0d1a5966e3f75b7228d3fa96c8cf43c23b8e05ee6",
+      "ingested_at": "2026-04-24T05:11:50+00:00",
+      "shareholder_profit": -4785.17059
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-24",
+      "news_id": "2023021343",
+      "raw_path": "THAI/financials/2565/FY/source.zip",
+      "sha256": "978647096c89610dc28958a4ab5091eaa982473cd28f6853f8385583024143b4",
+      "ingested_at": "2026-04-24T05:11:45+00:00",
+      "shareholder_profit": -272.248251
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-15",
+      "news_id": "2022096710",
+      "raw_path": "THAI/financials/2565/H1/source.zip",
+      "sha256": "30879d625f8f62fab7dccca0909b2f5f07ef0e64af4a739303bc6b9ee1d53dcc",
+      "ingested_at": "2026-04-24T05:11:55+00:00",
+      "shareholder_profit": -3220.56567
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-10",
+      "news_id": "16995730703911",
+      "raw_path": "THAI/financials/2566/9M/source.zip",
+      "sha256": "e1d59ff7497cde6395da9e69cdd3e4a6f261d65fd863c54b6f277542b15da3b5",
+      "ingested_at": "2026-04-24T05:11:30+00:00",
+      "shareholder_profit": 1537.6863681900024
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-23",
+      "news_id": "17086428936981",
+      "raw_path": "THAI/financials/2566/FY/source.zip",
+      "sha256": "52634c32d4d2b025fa442d09941025c96f2c57f7053a1e0989a0d32061e16e34",
+      "ingested_at": "2026-04-24T05:11:25+00:00",
+      "shareholder_profit": 28096.388393
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-11",
+      "news_id": "16917102030371",
+      "raw_path": "THAI/financials/2566/H1/source.zip",
+      "sha256": "1a2c740b0a06f83b14fc0877d4e0b10482b3fb354d58996bae78e95841d9077e",
+      "ingested_at": "2026-04-24T05:11:35+00:00",
+      "shareholder_profit": 2261.89894
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-12",
+      "news_id": "16838458744781",
+      "raw_path": "THAI/financials/2566/Q1/source.zip",
+      "sha256": "3adadbdb1bd7482354d436c9d7724ec93b84951f8862cb7a562745418a4107c3",
+      "ingested_at": "2026-04-24T05:11:40+00:00",
+      "shareholder_profit": 12513.968817
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-08",
+      "news_id": "17310157111521",
+      "raw_path": "THAI/financials/2567/9M/source.zip",
+      "sha256": "4c703f71f95cac0cd95e4dccad180a7a291e206667132c8cb2ca9bc0b65de966",
+      "ingested_at": "2026-04-24T05:11:11+00:00",
+      "shareholder_profit": 12479.523205
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-26",
+      "news_id": "17405220809701",
+      "raw_path": "THAI/financials/2567/FY/source.zip",
+      "sha256": "1b2229880c6cbaf9b473557cab8cc68a54622d4dc45dd56bcb30fb0d321ca426",
+      "ingested_at": "2026-04-24T05:11:06+00:00",
+      "shareholder_profit": -26933.664237
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-09",
+      "news_id": "17231594003041",
+      "raw_path": "THAI/financials/2567/H1/source.zip",
+      "sha256": "ed88b6c0c6dd7f6e2928ff414cb649e6c36543dc1284e996fa4c5c8202ca0a6f",
+      "ingested_at": "2026-04-24T05:11:15+00:00",
+      "shareholder_profit": 306.138093
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-10",
+      "news_id": "17152924513971",
+      "raw_path": "THAI/financials/2567/Q1/source.zip",
+      "sha256": "d60a28a95b1647f3d753b351773fd0153844ba4415fb33787d066e0a593dc3c4",
+      "ingested_at": "2026-04-24T05:11:20+00:00",
+      "shareholder_profit": 2409.546277
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-14",
+      "news_id": "17630699514981",
+      "raw_path": "THAI/financials/2568/9M/source.zip",
+      "sha256": "f947cac560a38dca2266c4e72fd95f1edf2b6b60f31bce3429ddd1c969edf69e",
+      "ingested_at": "2026-04-24T05:10:51+00:00",
+      "shareholder_profit": 4413.391061
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-26",
+      "news_id": "17720575021531",
+      "raw_path": "THAI/financials/2568/FY/source.zip",
+      "sha256": "346fc77ba7a654726a630a2a6b331731a32941d8ef55daa9b64fc07d30c10c95",
+      "ingested_at": "2026-04-24T05:10:47+00:00",
+      "shareholder_profit": 30910.263893
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-08",
+      "news_id": "17546095803361",
+      "raw_path": "THAI/financials/2568/H1/source.zip",
+      "sha256": "5f98b675efcbd324e95b947ff514a26dd0e6c816caf652a4fbf9019f005eb879",
+      "ingested_at": "2026-04-24T05:10:56+00:00",
+      "shareholder_profit": 12124.231057
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-09",
+      "news_id": "17467412602791",
+      "raw_path": "THAI/financials/2568/Q1/source.zip",
+      "sha256": "2eaa14b5a2b2c1d535f8cf5c3a385bc12e60ff1fb8a1b91286d8444b247d618d",
+      "ingested_at": "2026-04-24T05:11:01+00:00",
+      "shareholder_profit": 9831.747305
+    }
+  ]
 }

@@ -4,7 +4,244 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-13",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 165.473,
+      "Q2": 143.889,
+      "Q3": 145.073,
+      "Q4": 119.38289899999998,
+      "FullYear": 573.817899
+    },
+    "2565": {
+      "Q1": 89.454,
+      "Q2": 208.546,
+      "Q3": 124.205,
+      "Q4": 291.50600800000007,
+      "FullYear": 713.711008
+    },
+    "2566": {
+      "Q1": 83.859,
+      "Q2": 73.997,
+      "Q3": 106.083,
+      "Q4": 154.02716,
+      "FullYear": 417.96616
+    },
+    "2567": {
+      "Q1": 87.23,
+      "Q2": 84.586,
+      "Q3": 133.124,
+      "Q4": 116.05471399999996,
+      "FullYear": 420.994714
+    },
+    "2568": {
+      "Q1": 105.733,
+      "Q2": 105.733,
+      "Q3": 125.262,
+      "Q4": 97.42163799999997,
+      "FullYear": 434.149638
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-11",
+      "news_id": "2021121042",
+      "raw_path": "GLAND/financials/2564/9M/source.zip",
+      "sha256": "9c69b609abcb75f725a5405e4fdbf27dfba9647c11c6b73328247c590b4f84b5",
+      "ingested_at": "2026-04-23T19:06:53+00:00",
+      "shareholder_profit": 145.073
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-10",
+      "news_id": "2022013468",
+      "raw_path": "GLAND/financials/2564/FY/source.zip",
+      "sha256": "9f550d4839e0d677d54c47ed260ba3ca192fa700dd8d2f8bda101baa455155f7",
+      "ingested_at": "2026-04-23T19:06:49+00:00",
+      "shareholder_profit": 573.817899
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-06",
+      "news_id": "2021084355",
+      "raw_path": "GLAND/financials/2564/H1/source.zip",
+      "sha256": "979aa074fdc04a0f032e28d2098b37cc7a4b51f25d247cdff8a73a40e046cc45",
+      "ingested_at": "2026-04-23T19:06:58+00:00",
+      "shareholder_profit": 143.889
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-10",
+      "news_id": "2021052360",
+      "raw_path": "GLAND/financials/2564/Q1/source.zip",
+      "sha256": "4539a39c8632a1749d8919d8d4afe4d9885d3c42f6053036def0841ac0710e08",
+      "ingested_at": "2026-04-23T19:07:02+00:00",
+      "shareholder_profit": 165.473
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-04",
+      "news_id": "2022128663",
+      "raw_path": "GLAND/financials/2565/9M/source.zip",
+      "sha256": "59ee0ece90b4a6476167c5c264731854b8a3170d7d330dbc113d66b39f5c71fa",
+      "ingested_at": "2026-04-23T19:06:35+00:00",
+      "shareholder_profit": 124.205
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-20",
+      "news_id": "2023017721",
+      "raw_path": "GLAND/financials/2565/FY/source.zip",
+      "sha256": "0da37679fbcaea442d0519d697b4c04ca86744eb2e83895b421f0e22fae7c5cb",
+      "ingested_at": "2026-04-23T19:06:30+00:00",
+      "shareholder_profit": 713.711008
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-08",
+      "news_id": "2022090788",
+      "raw_path": "GLAND/financials/2565/H1/source.zip",
+      "sha256": "fde59b1718caeb3c97b2a7e948e0df762c00526a22f2afc2d59d2a0b06d13e7c",
+      "ingested_at": "2026-04-23T19:06:40+00:00",
+      "shareholder_profit": 208.546
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-10",
+      "news_id": "2022056305",
+      "raw_path": "GLAND/financials/2565/Q1/source.zip",
+      "sha256": "255960badffc20c042bdc989f0d35d7ceb899a94336d15217e6ea8a16ab2fdaa",
+      "ingested_at": "2026-04-23T19:06:44+00:00",
+      "shareholder_profit": 89.454
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-09",
+      "news_id": "16994859222651",
+      "raw_path": "GLAND/financials/2566/9M/source.zip",
+      "sha256": "3422a34ec8eb16d40ff1103b5dcaa48902c3b162460b00fb10fd5057b8181841",
+      "ingested_at": "2026-04-23T19:06:17+00:00",
+      "shareholder_profit": 106.083
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-15",
+      "news_id": "17079509645891",
+      "raw_path": "GLAND/financials/2566/FY/source.zip",
+      "sha256": "ab4f56f0f8004756170e5ad834c02a9409b8dd1cb3102b1377c33893bd7a3c39",
+      "ingested_at": "2026-04-23T19:06:12+00:00",
+      "shareholder_profit": 417.96616
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-08",
+      "news_id": "16914518630091",
+      "raw_path": "GLAND/financials/2566/H1/source.zip",
+      "sha256": "1f9c94c02ac8c47baa23c3e8580251bac32f0d09173ec95a5541e326da503a01",
+      "ingested_at": "2026-04-23T19:06:21+00:00",
+      "shareholder_profit": 73.997
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-12",
+      "news_id": "16838458773401",
+      "raw_path": "GLAND/financials/2566/Q1/source.zip",
+      "sha256": "f05570700c6043345157a42fabed2d2c00e757546b71f91736e943608cdaf322",
+      "ingested_at": "2026-04-23T19:06:26+00:00",
+      "shareholder_profit": 83.859
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-07",
+      "news_id": "17309360569171",
+      "raw_path": "GLAND/financials/2567/9M/source.zip",
+      "sha256": "c3c6389cfda8d1b4a4713de6412b1273a4f762392e4d8ddfa970921a64b308f0",
+      "ingested_at": "2026-04-23T19:05:58+00:00",
+      "shareholder_profit": 133.124
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-27",
+      "news_id": "17406066387001",
+      "raw_path": "GLAND/financials/2567/FY/source.zip",
+      "sha256": "d4505fd7a6db9a0adb94c74e97b2e70f061843a06fba35040c34cda8f53f936b",
+      "ingested_at": "2026-04-23T19:05:52+00:00",
+      "shareholder_profit": 420.994714
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990180621",
+      "raw_path": "GLAND/financials/2567/H1/source.zip",
+      "sha256": "ff448463348d66f8b6f69296e9be00912e6550c7f2233ed8324fbb95fa41419a",
+      "ingested_at": "2026-04-23T19:06:02+00:00",
+      "shareholder_profit": 84.586
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-10",
+      "news_id": "17152924573631",
+      "raw_path": "GLAND/financials/2567/Q1/source.zip",
+      "sha256": "2857657b2f1052151656b2ad8a965612b2ca84c2bdda35f58dfa779b95305f95",
+      "ingested_at": "2026-04-23T19:06:07+00:00",
+      "shareholder_profit": 87.23
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-06",
+      "news_id": "17623828454791",
+      "raw_path": "GLAND/financials/2568/9M/source.zip",
+      "sha256": "7581b83ee6dcbb75d711c4a4c096d8aa5ba55d3f9d51411715e4fb1950d4ae08",
+      "ingested_at": "2026-04-23T19:05:38+00:00",
+      "shareholder_profit": 125.262
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-13",
+      "news_id": "17709346217471",
+      "raw_path": "GLAND/financials/2568/FY/source.zip",
+      "sha256": "900953820149aa511bdb2d854e2e7e8f5aebd10d9300a90f6d0079c4ac8ec972",
+      "ingested_at": "2026-04-23T19:05:34+00:00",
+      "shareholder_profit": 434.149638
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229879201",
+      "raw_path": "GLAND/financials/2568/H1/source.zip",
+      "sha256": "09fec464f940dc3433b1a65c8377d354d3a7c4d6a992cfe804cd05102d72ff9d",
+      "ingested_at": "2026-04-23T19:05:43+00:00",
+      "shareholder_profit": 105.733
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-09",
+      "news_id": "17467412624621",
+      "raw_path": "GLAND/financials/2568/Q1/source.zip",
+      "sha256": "e66c4d09bf7627301299cd2504cd20db0928e0f39fbcd7c1ad727d3c226b1c25",
+      "ingested_at": "2026-04-23T19:05:48+00:00",
+      "shareholder_profit": 105.733
+    }
+  ]
 }

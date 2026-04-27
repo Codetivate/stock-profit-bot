@@ -4,7 +4,214 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-18",
+  "quarterly_history": {
+    "2564": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": 126.01756261268292
+    },
+    "2565": {
+      "Q1": 53.606,
+      "Q2": 26.75,
+      "Q3": -5.817,
+      "Q4": 45.39942200000001,
+      "FullYear": 119.938422
+    },
+    "2566": {
+      "Q1": 16.231,
+      "Q2": 20.486,
+      "Q3": 26.265,
+      "Q4": 13.580787999999998,
+      "FullYear": 76.562788
+    },
+    "2567": {
+      "Q1": 42.122,
+      "Q2": 46.581,
+      "Q3": 18.481,
+      "Q4": 5.423926000000002,
+      "FullYear": 112.607926
+    },
+    "2568": {
+      "Q1": 3.976,
+      "Q2": 20.278,
+      "Q3": 29.295,
+      "Q4": 30.273811000000002,
+      "FullYear": 83.822811
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-06-14",
+      "news_id": "2022073075",
+      "raw_path": "TEKA/financials/2564/FY/source.zip",
+      "sha256": "04dbd7bfa5340897e33657d403337190136edf062d7f53ba7f43ca8b50f731e9",
+      "ingested_at": "2026-04-24T04:52:25+00:00",
+      "shareholder_profit": 126.01756261268292
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-11",
+      "news_id": "2022134681",
+      "raw_path": "TEKA/financials/2565/9M/source.zip",
+      "sha256": "a117552ee5213b38a6a81195118a0bc1af760fb75dbc925d425d4304d66612a3",
+      "ingested_at": "2026-04-24T04:52:11+00:00",
+      "shareholder_profit": -5.817
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-22",
+      "news_id": "2023019588",
+      "raw_path": "TEKA/financials/2565/FY/source.zip",
+      "sha256": "dda7df058249a7aef6d78a57a26857944cd59dec0b639bf9da90fd561294f074",
+      "ingested_at": "2026-04-24T04:52:06+00:00",
+      "shareholder_profit": 119.938422
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-15",
+      "news_id": "2022097873",
+      "raw_path": "TEKA/financials/2565/H1/source.zip",
+      "sha256": "415a6c83a870a271e191b44a82d24487ea2f59cdfda4ebd68fce3d98949476de",
+      "ingested_at": "2026-04-24T04:52:16+00:00",
+      "shareholder_profit": 26.75
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-06-14",
+      "news_id": "2022073083",
+      "raw_path": "TEKA/financials/2565/Q1/source.zip",
+      "sha256": "f6770b89515fd77dde67b67da289de1d24968aba64d1019253de8c1e5116db1c",
+      "ingested_at": "2026-04-24T04:52:20+00:00",
+      "shareholder_profit": 53.606
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-10",
+      "news_id": "16995730778861",
+      "raw_path": "TEKA/financials/2566/9M/source.zip",
+      "sha256": "53f18f0fd6ea4b57ce08a28ed775272145a1c2fcc576076c769923b66c4e0d5b",
+      "ingested_at": "2026-04-24T04:51:52+00:00",
+      "shareholder_profit": 26.265
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-21",
+      "news_id": "17084713443091",
+      "raw_path": "TEKA/financials/2566/FY/source.zip",
+      "sha256": "a95c4934a99efc78a5898630d6eb747d9febc6c4cae7468d6be9fa01aa8e761b",
+      "ingested_at": "2026-04-24T04:51:47+00:00",
+      "shareholder_profit": 76.562788
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-09",
+      "news_id": "16915381976741",
+      "raw_path": "TEKA/financials/2566/H1/source.zip",
+      "sha256": "60312f9f9fae607beae39891fabb6bffc3c7fb3ff5ef61ec2c989fd8cc220c99",
+      "ingested_at": "2026-04-24T04:51:56+00:00",
+      "shareholder_profit": 20.486
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-10",
+      "news_id": "16836750095431",
+      "raw_path": "TEKA/financials/2566/Q1/source.zip",
+      "sha256": "eb74d63c95426220bac0167ac03ae6d67c692403a8e597d3d558e4243dc803bf",
+      "ingested_at": "2026-04-24T04:52:01+00:00",
+      "shareholder_profit": 16.231
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-06",
+      "news_id": "17308502648031",
+      "raw_path": "TEKA/financials/2567/9M/source.zip",
+      "sha256": "3974b2ba02cc1fd66e6721ae23258a634a6a066345cd33c29a4a395b23a175cd",
+      "ingested_at": "2026-04-24T04:51:33+00:00",
+      "shareholder_profit": 18.481
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-19",
+      "news_id": "17399221626451",
+      "raw_path": "TEKA/financials/2567/FY/source.zip",
+      "sha256": "2de353bc966a10d897beb6c9db592c843749fd1c2ef5b90a2dd7225f2cef14e5",
+      "ingested_at": "2026-04-24T04:51:29+00:00",
+      "shareholder_profit": 112.607926
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-07",
+      "news_id": "17229877665321",
+      "raw_path": "TEKA/financials/2567/H1/source.zip",
+      "sha256": "22c823a0661f347a90ad7810f274ee9fd4c82adb947a04bedf95dbb4487d5732",
+      "ingested_at": "2026-04-24T04:51:38+00:00",
+      "shareholder_profit": 46.581
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-07",
+      "news_id": "17150382077241",
+      "raw_path": "TEKA/financials/2567/Q1/source.zip",
+      "sha256": "25102be333d665aa522fe4fb67d5d2c608dcd4baf2cce87e689417e475617527",
+      "ingested_at": "2026-04-24T04:51:42+00:00",
+      "shareholder_profit": 42.122
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-11",
+      "news_id": "17628159921971",
+      "raw_path": "TEKA/financials/2568/9M/source.zip",
+      "sha256": "6c51ca985fc1bdfc5791bd8993b068eb35655bb18c8b9eb1b0c821adf343fe0c",
+      "ingested_at": "2026-04-24T04:51:15+00:00",
+      "shareholder_profit": 29.295
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-18",
+      "news_id": "17713646968941",
+      "raw_path": "TEKA/financials/2568/FY/source.zip",
+      "sha256": "3bdb313bd845a27d5084be2577f2f958806ca1f61ece698106bcab28a4cb68f6",
+      "ingested_at": "2026-04-24T04:51:10+00:00",
+      "shareholder_profit": 83.822811
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-06",
+      "news_id": "17544375717101",
+      "raw_path": "TEKA/financials/2568/H1/source.zip",
+      "sha256": "40c56bc69a0874fc8c6a05d53b3c3388aeab1f0f447612f65dc84ae1391f0bd2",
+      "ingested_at": "2026-04-24T04:51:19+00:00",
+      "shareholder_profit": 20.278
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-06",
+      "news_id": "17464817068581",
+      "raw_path": "TEKA/financials/2568/Q1/source.zip",
+      "sha256": "a19d2d22583b86620905ca51e635df45e34731739b4dbaab952030fde9ed91ff",
+      "ingested_at": "2026-04-24T04:51:24+00:00",
+      "shareholder_profit": 3.976
+    }
+  ]
 }

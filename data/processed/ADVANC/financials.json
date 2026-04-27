@@ -4,7 +4,234 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-03",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 6643.889,
+      "Q2": 7040.817,
+      "Q3": 6374.062,
+      "Q4": 6863.377655000002,
+      "FullYear": 26922.145655
+    },
+    "2565": {
+      "Q1": 6310.839,
+      "Q2": 6305.15,
+      "Q3": 6032.001,
+      "Q4": 7363.294406999999,
+      "FullYear": 26011.284407
+    },
+    "2566": {
+      "Q1": 6756.93,
+      "Q2": 7180.22,
+      "Q3": 8146.424,
+      "Q4": 7002.531499,
+      "FullYear": 29086.105499
+    },
+    "2567": {
+      "Q1": 8451.054,
+      "Q2": 8577.263,
+      "Q3": 8788.129,
+      "Q4": 9258.910787999994,
+      "FullYear": 35075.356788
+    },
+    "2568": {
+      "Q1": 10583.526,
+      "Q2": 10981.885,
+      "Q3": 12038.861,
+      "Q4": 14281.629716,
+      "FullYear": 47885.901716
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-01",
+      "news_id": "2021116417",
+      "raw_path": "ADVANC/financials/2564/9M/source.zip",
+      "sha256": "09b431a7a1cd7725eb2537d54e142c2e07f948a27d40964374de2343a588f005",
+      "ingested_at": "2026-04-24T06:19:05+00:00",
+      "shareholder_profit": 6374.062
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-07",
+      "news_id": "2022012323",
+      "raw_path": "ADVANC/financials/2564/FY/source.zip",
+      "sha256": "d8326e44560f110bf894cfc9a860b639016bbd5e6536e59e477da3b6ed10f948",
+      "ingested_at": "2026-04-24T06:19:01+00:00",
+      "shareholder_profit": 26922.145655
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-03",
+      "news_id": "2021083112",
+      "raw_path": "ADVANC/financials/2564/H1/source.zip",
+      "sha256": "d16fa0a14e89e6be6a22e51f7c657d4f6f31579e580679affdba8be7c5545549",
+      "ingested_at": "2026-04-24T06:19:10+00:00",
+      "shareholder_profit": 7040.817
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-04-30",
+      "news_id": "2021048688",
+      "raw_path": "ADVANC/financials/2564/Q1/source.zip",
+      "sha256": "33fc5ff8ee2cda9c679e37a1de27b5bc973e8c93afc4a1befa93e8faa4bd920e",
+      "ingested_at": "2026-04-24T06:19:14+00:00",
+      "shareholder_profit": 6643.889
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-03",
+      "news_id": "2022127672",
+      "raw_path": "ADVANC/financials/2565/9M/source.zip",
+      "sha256": "43a525d1aae6e17ee40c02ee1a7b9f10afbf6b79930e838cb2ff62f1e2ae15eb",
+      "ingested_at": "2026-04-24T06:18:48+00:00",
+      "shareholder_profit": 6032.001
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-09",
+      "news_id": "2023013235",
+      "raw_path": "ADVANC/financials/2565/FY/source.zip",
+      "sha256": "70c9e2a3207d035573b995972b11cb632a66bcfaade7f235ac4e0b0f12beb52d",
+      "ingested_at": "2026-04-24T06:18:43+00:00",
+      "shareholder_profit": 26011.284407
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-08",
+      "news_id": "2022090970",
+      "raw_path": "ADVANC/financials/2565/H1/source.zip",
+      "sha256": "63706f3b334dc0c0034db1f0827e9295a9cd917c662212cc81fb9e3b0784135c",
+      "ingested_at": "2026-04-24T06:18:52+00:00",
+      "shareholder_profit": 6305.15
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-10",
+      "news_id": "2022056833",
+      "raw_path": "ADVANC/financials/2565/Q1/source.zip",
+      "sha256": "4ee516947676f29e3c85b866fb9d95fde84063e667248e1cbaba21d16538dc96",
+      "ingested_at": "2026-04-24T06:18:56+00:00",
+      "shareholder_profit": 6310.839
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-10-30",
+      "news_id": "16986232731941",
+      "raw_path": "ADVANC/financials/2566/9M/source.zip",
+      "sha256": "af1bd5ccbad4ae0fd1f776d1fe9317a0243a128c5618044425ffed2fdef98cf6",
+      "ingested_at": "2026-04-24T06:18:31+00:00",
+      "shareholder_profit": 8146.424
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-06",
+      "news_id": "17071762120001",
+      "raw_path": "ADVANC/financials/2566/FY/source.zip",
+      "sha256": "ae7de2bdc30d2a4af2d932cc641ea06d9a8eadd01811681dcaec4eb68e2a8eeb",
+      "ingested_at": "2026-04-24T06:18:27+00:00",
+      "shareholder_profit": 29086.105499
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-08",
+      "news_id": "16835022074951",
+      "raw_path": "ADVANC/financials/2566/Q1/source.zip",
+      "sha256": "e518e8ea01523db24814a8b640e52c203ffd454f8a28cdd99d089b17a9115779",
+      "ingested_at": "2026-04-24T06:18:39+00:00",
+      "shareholder_profit": 6756.93
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-01",
+      "news_id": "17304182278641",
+      "raw_path": "ADVANC/financials/2567/9M/source.zip",
+      "sha256": "3f8660b8296c3ce5bc7c24d75570aa556bd4b3ddf803c64bb5830ea57db085ed",
+      "ingested_at": "2026-04-24T06:18:14+00:00",
+      "shareholder_profit": 8788.129
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-07",
+      "news_id": "17388830628351",
+      "raw_path": "ADVANC/financials/2567/FY/source.zip",
+      "sha256": "8c465de4a1fc516fa04cc741d14d6aab821e75a92777eb718f119a1d20aa963d",
+      "ingested_at": "2026-04-24T06:18:10+00:00",
+      "shareholder_profit": 35075.356788
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-06",
+      "news_id": "17229013581441",
+      "raw_path": "ADVANC/financials/2567/H1/source.zip",
+      "sha256": "64039e6c708f35960ccf6bd1cc6e8464f75e495b02be79cbdaf34dc277b9f47b",
+      "ingested_at": "2026-04-24T06:18:18+00:00",
+      "shareholder_profit": 8577.263
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-04-30",
+      "news_id": "17144315684271",
+      "raw_path": "ADVANC/financials/2567/Q1/source.zip",
+      "sha256": "a45fe69ffa466072b1334dbd7a937585427b7a0169e3eddf982a61864b88a122",
+      "ingested_at": "2026-04-24T06:18:22+00:00",
+      "shareholder_profit": 8451.054
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-04",
+      "news_id": "17622134064051",
+      "raw_path": "ADVANC/financials/2568/9M/source.zip",
+      "sha256": "b8c4fc8a19bc855258cfcd6caf4255428588bea0eaab057491ec00f5fa8ffe4b",
+      "ingested_at": "2026-04-24T06:17:56+00:00",
+      "shareholder_profit": 12038.861
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-03",
+      "news_id": "17700758275161",
+      "raw_path": "ADVANC/financials/2568/FY/source.zip",
+      "sha256": "9e18490e6004327739c86cf47d14207d24cf926b7cf429b4d98626cd096245df",
+      "ingested_at": "2026-04-24T06:17:52+00:00",
+      "shareholder_profit": 47885.901716
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-06",
+      "news_id": "17544375716591",
+      "raw_path": "ADVANC/financials/2568/H1/source.zip",
+      "sha256": "50fb560a3526ad6e9a0f3840e68b1bc7c0d316a00f30c5793a2496568615011b",
+      "ingested_at": "2026-04-24T06:18:01+00:00",
+      "shareholder_profit": 10981.885
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-06",
+      "news_id": "17464817060561",
+      "raw_path": "ADVANC/financials/2568/Q1/source.zip",
+      "sha256": "431a17e305e0be9bd35c767ba11458dda1117c6fd65c3159c449f5c4311f3cec",
+      "ingested_at": "2026-04-24T06:18:05+00:00",
+      "shareholder_profit": 10583.526
+    }
+  ]
 }

@@ -4,7 +4,261 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-26",
+  "quarterly_history": {
+    "2563": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": 114.203934
+    },
+    "2564": {
+      "Q1": 41.403,
+      "Q2": 38.389,
+      "Q3": 49.03,
+      "Q4": 71.86075399999999,
+      "FullYear": 200.682754
+    },
+    "2565": {
+      "Q1": 58.611,
+      "Q2": 63.022,
+      "Q3": 70.539,
+      "Q4": 42.576308000000026,
+      "FullYear": 234.748308
+    },
+    "2566": {
+      "Q1": 80.829,
+      "Q2": 92.56,
+      "Q3": 96.579,
+      "Q4": 65.12567500000002,
+      "FullYear": 335.093675
+    },
+    "2567": {
+      "Q1": 104.586,
+      "Q2": 125.377,
+      "Q3": 138.173,
+      "Q4": 90.15703199999996,
+      "FullYear": 458.293032
+    },
+    "2568": {
+      "Q1": 146.409,
+      "Q2": 168.217,
+      "Q3": 176.783,
+      "Q4": 107.83906200000004,
+      "FullYear": 599.248062
+    }
+  },
+  "sources": [
+    {
+      "year": 2563,
+      "period": "FY",
+      "filing_date": "2021-05-05",
+      "news_id": "2021049645",
+      "raw_path": "DITTO/financials/2563/FY/source.zip",
+      "sha256": "1d24672024c8a83fb3b27283bf3528d2abffd61e7dd5bac718d6d487726ad62d",
+      "ingested_at": "2026-04-23T17:53:23+00:00",
+      "shareholder_profit": 114.203934
+    },
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-15",
+      "news_id": "2021125740",
+      "raw_path": "DITTO/financials/2564/9M/source.zip",
+      "sha256": "4aebac9646a7b9a380065403621875e98adcc667ea418f13ca4371197882e255",
+      "ingested_at": "2026-04-23T17:53:09+00:00",
+      "shareholder_profit": 49.03
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-28",
+      "news_id": "2022026200",
+      "raw_path": "DITTO/financials/2564/FY/source.zip",
+      "sha256": "62678d6ed4976b0badb8a2e3567a457c5374a29120772468b372421e469cb52b",
+      "ingested_at": "2026-04-23T17:53:04+00:00",
+      "shareholder_profit": 200.682754
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-13",
+      "news_id": "2021089736",
+      "raw_path": "DITTO/financials/2564/H1/source.zip",
+      "sha256": "76be8dddd0899ea13f57286843373517be42f51b08c7766b2890d1f1abf83eaa",
+      "ingested_at": "2026-04-23T17:53:13+00:00",
+      "shareholder_profit": 38.389
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-14",
+      "news_id": "2021058713",
+      "raw_path": "DITTO/financials/2564/Q1/source.zip",
+      "sha256": "1b9325bcc1a0fe2facbc79a67d4094a85d2e6747ab618f2617d0ecd594454e26",
+      "ingested_at": "2026-04-23T17:53:18+00:00",
+      "shareholder_profit": 41.403
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-14",
+      "news_id": "2022135866",
+      "raw_path": "DITTO/financials/2565/9M/source.zip",
+      "sha256": "82508dbdfb22b078210e844303f22052e288be7d0423e326baec50611d343666",
+      "ingested_at": "2026-04-23T17:52:50+00:00",
+      "shareholder_profit": 70.539
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-27",
+      "news_id": "2023023091",
+      "raw_path": "DITTO/financials/2565/FY/source.zip",
+      "sha256": "a8a68366c3e5e880995339f868d35c60404d250133288424753c7e54169ff5de",
+      "ingested_at": "2026-04-23T17:52:45+00:00",
+      "shareholder_profit": 234.748308
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-15",
+      "news_id": "2022097351",
+      "raw_path": "DITTO/financials/2565/H1/source.zip",
+      "sha256": "d264133cae28f01363437f0fab0e50433e967add2e2da09e843321a5485e1c14",
+      "ingested_at": "2026-04-23T17:52:54+00:00",
+      "shareholder_profit": 63.022
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-13",
+      "news_id": "2022062418",
+      "raw_path": "DITTO/financials/2565/Q1/source.zip",
+      "sha256": "273568d866abda65e2992b2e83a8adaec66263400dacd027a85a3672cac84453",
+      "ingested_at": "2026-04-23T17:52:59+00:00",
+      "shareholder_profit": 58.611
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-13",
+      "news_id": "16998304586331",
+      "raw_path": "DITTO/financials/2566/9M/source.zip",
+      "sha256": "5b2f841ed6e1a69d0a48d9004402874d68edab5ce1ff789deceaa0b37f87f27f",
+      "ingested_at": "2026-04-23T17:52:27+00:00",
+      "shareholder_profit": 96.579
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-27",
+      "news_id": "17089869126861",
+      "raw_path": "DITTO/financials/2566/FY/source.zip",
+      "sha256": "3bf64e94b127424e56404e73196658d9bb5515b7063a758c90c52e0affbfef40",
+      "ingested_at": "2026-04-23T17:52:23+00:00",
+      "shareholder_profit": 335.093675
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-11",
+      "news_id": "16917102121441",
+      "raw_path": "DITTO/financials/2566/H1/source.zip",
+      "sha256": "91f146d6cd9a55d1341b5801710c29742d39e11e8a41ba480766719ce754416b",
+      "ingested_at": "2026-04-23T17:52:32+00:00",
+      "shareholder_profit": 92.56
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-15",
+      "news_id": "16841053942151",
+      "raw_path": "DITTO/financials/2566/Q1/source.zip",
+      "sha256": "bbad5ce1f20d439d672ebfc0332a040c585e568e8f636898499a2de743fcca5f",
+      "ingested_at": "2026-04-23T17:52:36+00:00",
+      "shareholder_profit": 80.829
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361314591",
+      "raw_path": "DITTO/financials/2567/9M/source.zip",
+      "sha256": "f09297dc7c044554d84f204ad86aec28f1baa86f01626e6c1715a1f4808c2d09",
+      "ingested_at": "2026-04-23T17:52:09+00:00",
+      "shareholder_profit": 138.173
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-26",
+      "news_id": "17405221106091",
+      "raw_path": "DITTO/financials/2567/FY/source.zip",
+      "sha256": "0594578bfa75d9d58406d0e468f88c517c2a2ee2fd66cd070a3072d6f574e4d2",
+      "ingested_at": "2026-04-23T17:52:04+00:00",
+      "shareholder_profit": 458.293032
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990201351",
+      "raw_path": "DITTO/financials/2567/H1/source.zip",
+      "sha256": "13658c394e8b97e069c36d912252a71f991cca436b4d957c9a428a99ae26d0f1",
+      "ingested_at": "2026-04-23T17:52:13+00:00",
+      "shareholder_profit": 125.377
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434560341",
+      "raw_path": "DITTO/financials/2567/Q1/source.zip",
+      "sha256": "6e1c4c9b90b6bf4dbdc304ada661ed67f4fcba16488c7fd2c61ea490fed669ab",
+      "ingested_at": "2026-04-23T17:52:18+00:00",
+      "shareholder_profit": 104.586
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-14",
+      "news_id": "17630699612001",
+      "raw_path": "DITTO/financials/2568/9M/source.zip",
+      "sha256": "a8529c14cfd5ee3c12b5b80a3581f5207fd83d0fb8fa9d2fbad0284f173eefed",
+      "ingested_at": "2026-04-23T17:51:50+00:00",
+      "shareholder_profit": 176.783
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-26",
+      "news_id": "17720575327061",
+      "raw_path": "DITTO/financials/2568/FY/source.zip",
+      "sha256": "5864175eec4694ecb439a78658941194a91528fe1446edb7f50a617b6e3b4330",
+      "ingested_at": "2026-04-23T17:51:45+00:00",
+      "shareholder_profit": 599.248062
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229849801",
+      "raw_path": "DITTO/financials/2568/H1/source.zip",
+      "sha256": "c5d79ba630ada30215470cfe9aaaa7d610c5beacc2447b9d30df21c70229392d",
+      "ingested_at": "2026-04-23T17:51:54+00:00",
+      "shareholder_profit": 168.217
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-15",
+      "news_id": "17472613184591",
+      "raw_path": "DITTO/financials/2568/Q1/source.zip",
+      "sha256": "87f56cf2c8bd0b4142e06ac32faf63868239936a31d90a59ea9e0e7fab755b0d",
+      "ingested_at": "2026-04-23T17:51:59+00:00",
+      "shareholder_profit": 146.409
+    }
+  ]
 }

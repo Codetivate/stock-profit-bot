@@ -4,7 +4,244 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-25",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 38.39,
+      "Q2": 38.812,
+      "Q3": 43.382,
+      "Q4": 28.83117500000001,
+      "FullYear": 149.415175
+    },
+    "2565": {
+      "Q1": 13.358,
+      "Q2": 3.495,
+      "Q3": 4.96,
+      "Q4": 33.25595800000001,
+      "FullYear": 55.068958
+    },
+    "2566": {
+      "Q1": 40.701,
+      "Q2": 50.412,
+      "Q3": 48.879,
+      "Q4": 44.25826700000001,
+      "FullYear": 184.250267
+    },
+    "2567": {
+      "Q1": 63.517,
+      "Q2": 65.245,
+      "Q3": 75.412,
+      "Q4": 76.585027,
+      "FullYear": 280.759027
+    },
+    "2568": {
+      "Q1": 65.171,
+      "Q2": 53.15,
+      "Q3": 62.52,
+      "Q4": 62.390357,
+      "FullYear": 243.231357
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-11",
+      "news_id": "2021121210",
+      "raw_path": "SFLEX/financials/2564/9M/source.zip",
+      "sha256": "b366c721b07c598d2b7f69e03d1a89d3fc9cb80d53d08894ecc7dd156284fe12",
+      "ingested_at": "2026-04-24T02:31:09+00:00",
+      "shareholder_profit": 43.382
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-25",
+      "news_id": "2022023783",
+      "raw_path": "SFLEX/financials/2564/FY/source.zip",
+      "sha256": "c683306619124858b023a23ea88501668e0d73dfe48b4832f1a7cdc83c7367c5",
+      "ingested_at": "2026-04-24T02:31:04+00:00",
+      "shareholder_profit": 149.415175
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-10",
+      "news_id": "2021086378",
+      "raw_path": "SFLEX/financials/2564/H1/source.zip",
+      "sha256": "179afbaa7c7cd38f24bd849e9b1219cdef2efbcefd8aff491e3097ff9569493d",
+      "ingested_at": "2026-04-24T02:31:14+00:00",
+      "shareholder_profit": 38.812
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-11",
+      "news_id": "2021053029",
+      "raw_path": "SFLEX/financials/2564/Q1/source.zip",
+      "sha256": "ec1db4550db2eedc7754512388d843e16ee50d81dd7612b376459bb066483037",
+      "ingested_at": "2026-04-24T02:31:19+00:00",
+      "shareholder_profit": 38.39
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-09",
+      "news_id": "2022130310",
+      "raw_path": "SFLEX/financials/2565/9M/source.zip",
+      "sha256": "f007cfaacc4f088c1e09a61f7b8438b8eb904f248bd004558aa2c0cfc37b8c67",
+      "ingested_at": "2026-04-24T02:30:50+00:00",
+      "shareholder_profit": 4.96
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-22",
+      "news_id": "2023019270",
+      "raw_path": "SFLEX/financials/2565/FY/source.zip",
+      "sha256": "fd79d52ccca3cea8743bba9d7851eb98a6acfb982849bcc265bc5b2a073e2697",
+      "ingested_at": "2026-04-24T02:30:45+00:00",
+      "shareholder_profit": 55.068958
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-10",
+      "news_id": "2022092973",
+      "raw_path": "SFLEX/financials/2565/H1/source.zip",
+      "sha256": "34a1ac6927fae3a91151d8f88740ebe1b7307ca7e787bb3b33480868eb2598eb",
+      "ingested_at": "2026-04-24T02:30:55+00:00",
+      "shareholder_profit": 3.495
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-11",
+      "news_id": "2022058453",
+      "raw_path": "SFLEX/financials/2565/Q1/source.zip",
+      "sha256": "8a6430436c9f50bf98eefbb4d7abf6e4333ab83e3205555c0f49e079e01122b0",
+      "ingested_at": "2026-04-24T02:30:59+00:00",
+      "shareholder_profit": 13.358
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-08",
+      "news_id": "16993998068471",
+      "raw_path": "SFLEX/financials/2566/9M/source.zip",
+      "sha256": "f9440b8445899f8db9ab647c2b52592f212ba22341fe57cf341f63f9ac1d210d",
+      "ingested_at": "2026-04-24T02:30:31+00:00",
+      "shareholder_profit": 48.879
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-27",
+      "news_id": "17089869135621",
+      "raw_path": "SFLEX/financials/2566/FY/source.zip",
+      "sha256": "889bf30a3a1d215d7258fe95a3b6996dadb143fb955f2df0b5e3620a5d9b1804",
+      "ingested_at": "2026-04-24T02:30:26+00:00",
+      "shareholder_profit": 184.250267
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-15",
+      "news_id": "16920539404751",
+      "raw_path": "SFLEX/financials/2566/H1/source.zip",
+      "sha256": "5995533e178fce7773f53e30b420c87de531802a7c07ae935bc09bf6c5a25b23",
+      "ingested_at": "2026-04-24T02:30:36+00:00",
+      "shareholder_profit": 50.412
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-11",
+      "news_id": "16837584067881",
+      "raw_path": "SFLEX/financials/2566/Q1/source.zip",
+      "sha256": "6d7ddf7212418619e95a1d30676d2a4de963bc6ed87e7cfe709eb51da8b1e6c4",
+      "ingested_at": "2026-04-24T02:30:41+00:00",
+      "shareholder_profit": 40.701
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-13",
+      "news_id": "17314477509601",
+      "raw_path": "SFLEX/financials/2567/9M/source.zip",
+      "sha256": "68df1f55840d251fd94a78dbbc27d15b1906c55f0bfcd4926b6650c6b3d64da4",
+      "ingested_at": "2026-04-24T02:30:10+00:00",
+      "shareholder_profit": 75.412
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-26",
+      "news_id": "17405221087511",
+      "raw_path": "SFLEX/financials/2567/FY/source.zip",
+      "sha256": "6d9af225c0f9a735f23abe1a81c1d10b381d7e95dddf50031db5313f961ff5f0",
+      "ingested_at": "2026-04-24T02:30:06+00:00",
+      "shareholder_profit": 280.759027
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990170311",
+      "raw_path": "SFLEX/financials/2567/H1/source.zip",
+      "sha256": "f168682406957c67e11f4292311bb4b59645d9082631a0b7d8dfab134951183b",
+      "ingested_at": "2026-04-24T02:30:15+00:00",
+      "shareholder_profit": 65.245
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-15",
+      "news_id": "17157257457461",
+      "raw_path": "SFLEX/financials/2567/Q1/source.zip",
+      "sha256": "e08397bdeae52f55612a6688179699af9006a946d4827973da8e37c4f564159b",
+      "ingested_at": "2026-04-24T02:30:20+00:00",
+      "shareholder_profit": 63.517
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-12",
+      "news_id": "17629001519551",
+      "raw_path": "SFLEX/financials/2568/9M/source.zip",
+      "sha256": "23383f19833384d229ca40252d96329b9d5196e809571d62f4133a36c2890d3e",
+      "ingested_at": "2026-04-24T02:29:52+00:00",
+      "shareholder_profit": 62.52
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-25",
+      "news_id": "17719707181971",
+      "raw_path": "SFLEX/financials/2568/FY/source.zip",
+      "sha256": "9719ce1999dacd7e637d1dc41b37a1c5f303c31ba9eaaaa9e7cf489850d0e252",
+      "ingested_at": "2026-04-24T02:29:47+00:00",
+      "shareholder_profit": 243.231357
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361200571",
+      "raw_path": "SFLEX/financials/2568/H1/source.zip",
+      "sha256": "2390df0c7694058b5d0ca02330949d2cf578517b8fdb8816d01a0228ca38bb39",
+      "ingested_at": "2026-04-24T02:29:56+00:00",
+      "shareholder_profit": 53.15
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-14",
+      "news_id": "17471784576861",
+      "raw_path": "SFLEX/financials/2568/Q1/source.zip",
+      "sha256": "41bbc330ccdb48ef107e1d74208821f69ca3ac4b9368b2fbe394268fa0993583",
+      "ingested_at": "2026-04-24T02:30:01+00:00",
+      "shareholder_profit": 65.171
+    }
+  ]
 }

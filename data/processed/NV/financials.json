@@ -4,7 +4,241 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-26",
+  "quarterly_history": {
+    "2563": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": 780808.57
+    },
+    "2564": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": 13.007,
+      "Q4": 6.128633000000008,
+      "FullYear": 80.347633
+    },
+    "2565": {
+      "Q1": -2.217,
+      "Q2": -30.372,
+      "Q3": -25.02,
+      "Q4": -26.57054400000001,
+      "FullYear": -84.179544
+    },
+    "2566": {
+      "Q1": 2.846,
+      "Q2": -15.305,
+      "Q3": -21.74,
+      "Q4": -33.605430999999996,
+      "FullYear": -67.804431
+    },
+    "2567": {
+      "Q1": -17.942,
+      "Q2": -28.5,
+      "Q3": -50.24,
+      "Q4": -5.7676620000000085,
+      "FullYear": -102.449662
+    },
+    "2568": {
+      "Q1": -8.922,
+      "Q2": -13.637,
+      "Q3": -24.502,
+      "Q4": 2.3678669999999933,
+      "FullYear": -44.693133
+    }
+  },
+  "sources": [
+    {
+      "year": 2563,
+      "period": "FY",
+      "filing_date": "2021-12-23",
+      "news_id": "2021138582",
+      "raw_path": "NV/financials/2563/FY/source.zip",
+      "sha256": "fda05ffdfc01ef6222675e2bc71fed6838c5f087139ea8f1dcc6b63b5551765d",
+      "ingested_at": "2026-04-23T23:08:54+00:00",
+      "shareholder_profit": 256.985
+    },
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-12-23",
+      "news_id": "2021138586",
+      "raw_path": "NV/financials/2564/9M/source.zip",
+      "sha256": "2f8352f20bad90bcec47e92e9a9ac52314824a50b453cc70d5464c7c0663dee5",
+      "ingested_at": "2026-04-23T23:08:50+00:00",
+      "shareholder_profit": 13.007
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-22",
+      "news_id": "2022019240",
+      "raw_path": "NV/financials/2564/FY/source.zip",
+      "sha256": "b1bf8b2b1e71833e98f5bbba3195b8c03477a9a0c1faa5b959eb461b72b473ce",
+      "ingested_at": "2026-04-23T23:08:45+00:00",
+      "shareholder_profit": 80.347633
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-14",
+      "news_id": "2022135510",
+      "raw_path": "NV/financials/2565/9M/source.zip",
+      "sha256": "c88f24132083daf91d32e45632c4064ebf45563e46c8cd72aab3f4856d30ecdf",
+      "ingested_at": "2026-04-23T23:08:32+00:00",
+      "shareholder_profit": -25.02
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-28",
+      "news_id": "2023025042",
+      "raw_path": "NV/financials/2565/FY/source.zip",
+      "sha256": "383a71d1a6baef0710edd84384eac6369a6066e87840ae947fb768afd43e7708",
+      "ingested_at": "2026-04-23T23:08:27+00:00",
+      "shareholder_profit": -84.179544
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-15",
+      "news_id": "2022098146",
+      "raw_path": "NV/financials/2565/H1/source.zip",
+      "sha256": "54b523990b081fac2419ad4cbd7fd42de326c7fe123fc4a0045789b7f572d448",
+      "ingested_at": "2026-04-23T23:08:36+00:00",
+      "shareholder_profit": -30.372
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-10",
+      "news_id": "2022056919",
+      "raw_path": "NV/financials/2565/Q1/source.zip",
+      "sha256": "8d8680818456c900d4b828300bfb33f78a0d83c4a86b2434c60359210a5776cb",
+      "ingested_at": "2026-04-23T23:08:41+00:00",
+      "shareholder_profit": -2.217
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-13",
+      "news_id": "16998304564781",
+      "raw_path": "NV/financials/2566/9M/source.zip",
+      "sha256": "b4e441d132be0595e940bb6964f55f9088f5c55f6de6432433700a8991a35db4",
+      "ingested_at": "2026-04-23T23:08:13+00:00",
+      "shareholder_profit": -21.74
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-27",
+      "news_id": "17089869194491",
+      "raw_path": "NV/financials/2566/FY/source.zip",
+      "sha256": "6eb8f262b0a8540c62449385f4d164ef49cafeea9d8ab9a50cd3b9240dbe396a",
+      "ingested_at": "2026-04-23T23:08:08+00:00",
+      "shareholder_profit": -67.804431
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-10",
+      "news_id": "16916230271391",
+      "raw_path": "NV/financials/2566/H1/source.zip",
+      "sha256": "68f5ac3c2d392b6e40c3328f7034f31a09079ff14605fd1908b1d95e9eeaf3c5",
+      "ingested_at": "2026-04-23T23:08:17+00:00",
+      "shareholder_profit": -15.305
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-12",
+      "news_id": "16838458825781",
+      "raw_path": "NV/financials/2566/Q1/source.zip",
+      "sha256": "17aec46cea324d381b87bfa409c9ed16a8b4746cf8dd1d1db8789a7a0e90c69d",
+      "ingested_at": "2026-04-23T23:08:22+00:00",
+      "shareholder_profit": 2.846
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361271061",
+      "raw_path": "NV/financials/2567/9M/source.zip",
+      "sha256": "455fe50225e84c80791007f113efc2968a49dc0b536c61645dbdab89f71c502a",
+      "ingested_at": "2026-04-23T23:07:55+00:00",
+      "shareholder_profit": -50.24
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-27",
+      "news_id": "17406066377131",
+      "raw_path": "NV/financials/2567/FY/source.zip",
+      "sha256": "4550ec45903573ed1ef7e921587c90f705e67768278276c69971582f66008324",
+      "ingested_at": "2026-04-23T23:07:50+00:00",
+      "shareholder_profit": -102.449662
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-14",
+      "news_id": "17235857995441",
+      "raw_path": "NV/financials/2567/H1/source.zip",
+      "sha256": "a6e9081763a60e91e33ae0a69a38eea9bfccdc5920e8cc15e1f642c375d38dab",
+      "ingested_at": "2026-04-23T23:07:59+00:00",
+      "shareholder_profit": -28.5
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-15",
+      "news_id": "17157257434141",
+      "raw_path": "NV/financials/2567/Q1/source.zip",
+      "sha256": "912f7d14ff06a92d5d0d0059f39bc9035b3ea9e3cae5f66adcdc5e41b5fd4809",
+      "ingested_at": "2026-04-23T23:08:04+00:00",
+      "shareholder_profit": -17.942
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-14",
+      "news_id": "17630699583951",
+      "raw_path": "NV/financials/2568/9M/source.zip",
+      "sha256": "73099fce0873f5eba021c8d7e20934f73905604a08f8115f8e7f08525c1223b7",
+      "ingested_at": "2026-04-23T23:07:36+00:00",
+      "shareholder_profit": -24.502
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-26",
+      "news_id": "17720575314171",
+      "raw_path": "NV/financials/2568/FY/source.zip",
+      "sha256": "0fd09608380345324e5c9ef73886ae3a8e4535017e52741bbbb06666f4de9275",
+      "ingested_at": "2026-04-23T23:07:31+00:00",
+      "shareholder_profit": -44.693133
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229843461",
+      "raw_path": "NV/financials/2568/H1/source.zip",
+      "sha256": "816877c475c65aafc42052bd5254202080ada4827e6bd4ea60b9701df5328048",
+      "ingested_at": "2026-04-23T23:07:40+00:00",
+      "shareholder_profit": -13.637
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-15",
+      "news_id": "17472613151101",
+      "raw_path": "NV/financials/2568/Q1/source.zip",
+      "sha256": "12e4849cee454b7b957f288f47766565cb96f7e4d1c02d828f1e7a8cf1103647",
+      "ingested_at": "2026-04-23T23:07:45+00:00",
+      "shareholder_profit": -8.922
+    }
+  ]
 }

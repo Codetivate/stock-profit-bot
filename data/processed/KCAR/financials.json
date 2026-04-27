@@ -4,7 +4,244 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-25",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 46.835679628000015,
+      "Q2": -3.7468718380000183,
+      "Q3": 8.062558270000004,
+      "Q4": 174.96197012,
+      "FullYear": 226.11333618
+    },
+    "2565": {
+      "Q1": 53.99079919,
+      "Q2": -8.394286809999997,
+      "Q3": -8.608299779999996,
+      "Q4": 146.23827044,
+      "FullYear": 183.22648304
+    },
+    "2566": {
+      "Q1": 74.20466773999999,
+      "Q2": -16.351499829999995,
+      "Q3": -25.910155959999997,
+      "Q4": 160.74688402,
+      "FullYear": 192.68989597
+    },
+    "2567": {
+      "Q1": 15.22072434,
+      "Q2": 10.07919185,
+      "Q3": 3.452252699999999,
+      "Q4": 67.32903498999998,
+      "FullYear": 96.08120387999999
+    },
+    "2568": {
+      "Q1": 50.701054930000005,
+      "Q2": -5.365182190000027,
+      "Q3": 3.6000415719997463,
+      "Q4": 120.08388706800028,
+      "FullYear": 169.01980138
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-11",
+      "news_id": "2021122243",
+      "raw_path": "KCAR/financials/2564/9M/source.zip",
+      "sha256": "393f4bcb7d617dfa9fd6e4592c9ae522f7f74cbdce4ceba6bb74815de3f6d9ff",
+      "ingested_at": "2026-04-23T20:41:40+00:00",
+      "shareholder_profit": 51.15136606
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-24",
+      "news_id": "2022022337",
+      "raw_path": "KCAR/financials/2564/FY/source.zip",
+      "sha256": "ef4af91cf55dd02d4d62cca19f8ea687273e6b1279cf70750dc58cadad659e6b",
+      "ingested_at": "2026-04-23T20:41:36+00:00",
+      "shareholder_profit": 226.11333618
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-13",
+      "news_id": "2021090453",
+      "raw_path": "KCAR/financials/2564/H1/source.zip",
+      "sha256": "7f5ed180df8fba3344b4e94878c2a1797045e5cd086da37b0e749a9952ffdbe6",
+      "ingested_at": "2026-04-23T20:41:45+00:00",
+      "shareholder_profit": 43.08880779
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-14",
+      "news_id": "2021058848",
+      "raw_path": "KCAR/financials/2564/Q1/source.zip",
+      "sha256": "562c734f335283edb2a5f00817654f4f169e8c1caaa6523b4e23fc7e5d491c9e",
+      "ingested_at": "2026-04-23T20:41:50+00:00",
+      "shareholder_profit": 46.835679628000015
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-14",
+      "news_id": "2022136094",
+      "raw_path": "KCAR/financials/2565/9M/source.zip",
+      "sha256": "7702704055904e1fce6fe38d880a38cddddfe2fd113ae550debdca6605c95f6e",
+      "ingested_at": "2026-04-23T20:41:22+00:00",
+      "shareholder_profit": 36.988212600000004
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-27",
+      "news_id": "2023024797",
+      "raw_path": "KCAR/financials/2565/FY/source.zip",
+      "sha256": "46edfe994751d2af692452678e39c393110cd1ca1686ee31e5506824dfabdcf8",
+      "ingested_at": "2026-04-23T20:41:18+00:00",
+      "shareholder_profit": 183.22648304
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-15",
+      "news_id": "2022097849",
+      "raw_path": "KCAR/financials/2565/H1/source.zip",
+      "sha256": "ecc97108a013b973395fa0fe23ca619672b95266de4f1bdfb946314a7c5c3cd7",
+      "ingested_at": "2026-04-23T20:41:27+00:00",
+      "shareholder_profit": 45.59651238
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-12",
+      "news_id": "2022059867",
+      "raw_path": "KCAR/financials/2565/Q1/source.zip",
+      "sha256": "47167aca16f03c68da40eed586c6af75d9ee13e9c125859434222d303e4bdf06",
+      "ingested_at": "2026-04-23T20:41:32+00:00",
+      "shareholder_profit": 53.99079919
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-10",
+      "news_id": "16995730706001",
+      "raw_path": "KCAR/financials/2566/9M/source.zip",
+      "sha256": "177baf6474e1cefcc7965a5faa5e346a6b162547c99e50b5c9690164a541bd6d",
+      "ingested_at": "2026-04-23T20:41:05+00:00",
+      "shareholder_profit": 31.94301195
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-28",
+      "news_id": "17090750808921",
+      "raw_path": "KCAR/financials/2566/FY/source.zip",
+      "sha256": "ebdececb0398c50d87852929097b35ac16a6bce96783f607928bc2bba8b38eb8",
+      "ingested_at": "2026-04-23T20:41:00+00:00",
+      "shareholder_profit": 192.68989597
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-15",
+      "news_id": "16920539417401",
+      "raw_path": "KCAR/financials/2566/H1/source.zip",
+      "sha256": "fbca266df01fc794e7e658fc1473c93632bd48a1aec8794a0b12356575e30320",
+      "ingested_at": "2026-04-23T20:41:09+00:00",
+      "shareholder_profit": 57.853167909999996
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-11",
+      "news_id": "16837583982131",
+      "raw_path": "KCAR/financials/2566/Q1/source.zip",
+      "sha256": "f3223e84a3e16993561dc55637e5a8f7f3de1a88c324f5923df7cd0eac69e464",
+      "ingested_at": "2026-04-23T20:41:13+00:00",
+      "shareholder_profit": 74.20466773999999
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361288551",
+      "raw_path": "KCAR/financials/2567/9M/source.zip",
+      "sha256": "fd6d3309ab61129248dca434e8428c926795add9895e5cf56916daaa50168ad2",
+      "ingested_at": "2026-04-23T20:40:47+00:00",
+      "shareholder_profit": 28.75216889
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-27",
+      "news_id": "17406066116301",
+      "raw_path": "KCAR/financials/2567/FY/source.zip",
+      "sha256": "fd82aae764a25c49f317c6b94720b0d0576c8a11c39ee776272a82e127ee5041",
+      "ingested_at": "2026-04-23T20:40:42+00:00",
+      "shareholder_profit": 96.08120387999999
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990105141",
+      "raw_path": "KCAR/financials/2567/H1/source.zip",
+      "sha256": "76ab8d0a047278628d636f64d43a0c26a4acf79902c337c87b00b9f6c70bf20d",
+      "ingested_at": "2026-04-23T20:40:51+00:00",
+      "shareholder_profit": 25.29991619
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-10",
+      "news_id": "17152924611581",
+      "raw_path": "KCAR/financials/2567/Q1/source.zip",
+      "sha256": "255353ad337d3b0a003019812c4f0896942fa7a0724e65eab99eab5721897b40",
+      "ingested_at": "2026-04-23T20:40:56+00:00",
+      "shareholder_profit": 15.22072434
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-11",
+      "news_id": "17628159942651",
+      "raw_path": "KCAR/financials/2568/9M/source.zip",
+      "sha256": "704c9a608a6575326d061aa4537a6c26011dda72b5f5cdff264108d9c49df3d3",
+      "ingested_at": "2026-04-23T20:40:29+00:00",
+      "shareholder_profit": 48.935914311999724
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-25",
+      "news_id": "17719706862231",
+      "raw_path": "KCAR/financials/2568/FY/source.zip",
+      "sha256": "69d9e233e4d64a98e2b06c8f5cd54181cc0e81ec47b0e42003828c63a880b0b2",
+      "ingested_at": "2026-04-23T20:40:24+00:00",
+      "shareholder_profit": 169.01980138
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229893931",
+      "raw_path": "KCAR/financials/2568/H1/source.zip",
+      "sha256": "22f5be8eb6996126dc0f93a523492674c81effaf114b9f3111fc762fed5c8c04",
+      "ingested_at": "2026-04-23T20:40:33+00:00",
+      "shareholder_profit": 45.33587273999998
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-09",
+      "news_id": "17467412699541",
+      "raw_path": "KCAR/financials/2568/Q1/source.zip",
+      "sha256": "cd0203fa75a73d71309118f84961b254710b6264caf54fb77712bef1fab325ee",
+      "ingested_at": "2026-04-23T20:40:38+00:00",
+      "shareholder_profit": 50.701054930000005
+    }
+  ]
 }

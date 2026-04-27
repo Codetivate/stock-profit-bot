@@ -4,7 +4,241 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-26",
+  "quarterly_history": {
+    "2563": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": 133.714351
+    },
+    "2564": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": 49.162,
+      "Q4": 64.33720300000002,
+      "FullYear": 215.085203
+    },
+    "2565": {
+      "Q1": 91.937,
+      "Q2": 116.343,
+      "Q3": 108.874,
+      "Q4": 66.84267499999996,
+      "FullYear": 383.996675
+    },
+    "2566": {
+      "Q1": 71.436,
+      "Q2": 57.192,
+      "Q3": 5.508,
+      "Q4": 31.932143999999983,
+      "FullYear": 166.068144
+    },
+    "2567": {
+      "Q1": 17.702,
+      "Q2": 21.543,
+      "Q3": 10.995,
+      "Q4": 17.330707000000004,
+      "FullYear": 67.570707
+    },
+    "2568": {
+      "Q1": 2.75,
+      "Q2": -1.295,
+      "Q3": -14.496,
+      "Q4": 30.238074,
+      "FullYear": 17.197074
+    }
+  },
+  "sources": [
+    {
+      "year": 2563,
+      "period": "FY",
+      "filing_date": "2022-02-09",
+      "news_id": "2022012907",
+      "raw_path": "PEACE/financials/2563/FY/source.zip",
+      "sha256": "b86f4a9c98c1bda22895afa0aecf819c898d5cdc211437722c1fc48f99a15711",
+      "ingested_at": "2026-04-23T23:39:06+00:00",
+      "shareholder_profit": 133.714351
+    },
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2022-02-09",
+      "news_id": "2022012913",
+      "raw_path": "PEACE/financials/2564/9M/source.zip",
+      "sha256": "889b9c7e26539cfe18571135f911fc0ab20c8124e6332f86b268a0d8cbed9981",
+      "ingested_at": "2026-04-23T23:39:02+00:00",
+      "shareholder_profit": 49.162
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-24",
+      "news_id": "2022022269",
+      "raw_path": "PEACE/financials/2564/FY/source.zip",
+      "sha256": "2db8bd095b614e020a50210f549a69dcfdfbbe50dd1cd68e2f4f89edf881d7df",
+      "ingested_at": "2026-04-23T23:38:57+00:00",
+      "shareholder_profit": 215.085203
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-10",
+      "news_id": "2022132521",
+      "raw_path": "PEACE/financials/2565/9M/source.zip",
+      "sha256": "6110c2ceb14b1914452428c0908bf4e281259f32ab630ffd08fecf01e2080ac6",
+      "ingested_at": "2026-04-23T23:38:44+00:00",
+      "shareholder_profit": 108.874
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-23",
+      "news_id": "2023021216",
+      "raw_path": "PEACE/financials/2565/FY/source.zip",
+      "sha256": "259fdab976778c237712cb1bb8655ac54048126ac6626dba26e6f5ab81b1bed2",
+      "ingested_at": "2026-04-23T23:38:39+00:00",
+      "shareholder_profit": 383.996675
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-11",
+      "news_id": "2022095816",
+      "raw_path": "PEACE/financials/2565/H1/source.zip",
+      "sha256": "4715e5bcb3e710a3a71a75f3c3919f3ba60116bf09d02eb8d282b7b9494b4825",
+      "ingested_at": "2026-04-23T23:38:48+00:00",
+      "shareholder_profit": 116.343
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-12",
+      "news_id": "2022059880",
+      "raw_path": "PEACE/financials/2565/Q1/source.zip",
+      "sha256": "6d5ee1f64200cdef0e3bbead86b5aa9d50f1f60306e959c9c6bb7ca5bbdda21b",
+      "ingested_at": "2026-04-23T23:38:53+00:00",
+      "shareholder_profit": 91.937
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-09",
+      "news_id": "16994859290761",
+      "raw_path": "PEACE/financials/2566/9M/source.zip",
+      "sha256": "9c825bff99f51eb8f2555f2e1edcabc328105f5f68af860a0ff7b3bc81df9766",
+      "ingested_at": "2026-04-23T23:38:26+00:00",
+      "shareholder_profit": 5.508
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-20",
+      "news_id": "17083827464061",
+      "raw_path": "PEACE/financials/2566/FY/source.zip",
+      "sha256": "0382a9eb53d474573c3a562394e5dc5f614be69334b315d28f97dd46c72f06f4",
+      "ingested_at": "2026-04-23T23:38:21+00:00",
+      "shareholder_profit": 166.068144
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-10",
+      "news_id": "16916230297981",
+      "raw_path": "PEACE/financials/2566/H1/source.zip",
+      "sha256": "a6c65902e1c5afb9522ab89011c8ddea0862e4150b88cde463ee109f6dc9d099",
+      "ingested_at": "2026-04-23T23:38:30+00:00",
+      "shareholder_profit": 57.192
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-11",
+      "news_id": "16837584102351",
+      "raw_path": "PEACE/financials/2566/Q1/source.zip",
+      "sha256": "09ede39bec2a07f2fbe85712ba79356a064e74338df5a0bc9d176d08480d9201",
+      "ingested_at": "2026-04-23T23:38:35+00:00",
+      "shareholder_profit": 71.436
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361225061",
+      "raw_path": "PEACE/financials/2567/9M/source.zip",
+      "sha256": "f1d49df48fe6781f0c43842163c17194739ced56b05f58bd721a40fa64aac37b",
+      "ingested_at": "2026-04-23T23:38:07+00:00",
+      "shareholder_profit": 10.995
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-27",
+      "news_id": "17406066449931",
+      "raw_path": "PEACE/financials/2567/FY/source.zip",
+      "sha256": "d2f47db87d1ac3a1f76fee08db46e88ee6129416b31e659225c80b5bbd51ceae",
+      "ingested_at": "2026-04-23T23:38:03+00:00",
+      "shareholder_profit": 67.570707
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-08",
+      "news_id": "17230734187971",
+      "raw_path": "PEACE/financials/2567/H1/source.zip",
+      "sha256": "14726b3de0fce80c181b3867141668b79a98403585fa4940a868dc598833eebb",
+      "ingested_at": "2026-04-23T23:38:12+00:00",
+      "shareholder_profit": 21.543
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-09",
+      "news_id": "17152110368911",
+      "raw_path": "PEACE/financials/2567/Q1/source.zip",
+      "sha256": "7e6c219338c1705debe3d75474ad98a9f1bbc92ede98d667423a92a1f8f2f618",
+      "ingested_at": "2026-04-23T23:38:17+00:00",
+      "shareholder_profit": 17.702
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-13",
+      "news_id": "17629880499651",
+      "raw_path": "PEACE/financials/2568/9M/source.zip",
+      "sha256": "825d37db2bcde4d7400118383d69db53750fa95a588957dad430685bcd2e14a1",
+      "ingested_at": "2026-04-23T23:37:50+00:00",
+      "shareholder_profit": -14.496
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-26",
+      "news_id": "17720575255281",
+      "raw_path": "PEACE/financials/2568/FY/source.zip",
+      "sha256": "7a3e264ebc54b8095c772e3f5ccd8089ffee65861dedd96f9a5483d57ca34164",
+      "ingested_at": "2026-04-23T23:37:45+00:00",
+      "shareholder_profit": 17.197074
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229795211",
+      "raw_path": "PEACE/financials/2568/H1/source.zip",
+      "sha256": "4534358dcd255eb7aa7646a8a031af763fe17bd07b8c2bf468b853b09c4fe6ed",
+      "ingested_at": "2026-04-23T23:37:54+00:00",
+      "shareholder_profit": -1.295
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-15",
+      "news_id": "17472613177701",
+      "raw_path": "PEACE/financials/2568/Q1/source.zip",
+      "sha256": "1cba8adb13efa5f17fdc6655c90a5e95e581a855555e1f01d49da7f4b04a7a91",
+      "ingested_at": "2026-04-23T23:37:58+00:00",
+      "shareholder_profit": 2.75
+    }
+  ]
 }

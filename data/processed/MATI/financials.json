@@ -4,7 +4,244 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-27",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 9.204,
+      "Q2": 159.971,
+      "Q3": 34.672,
+      "Q4": 15.101283927999845,
+      "FullYear": 218.94828392799985
+    },
+    "2565": {
+      "Q1": 19.066,
+      "Q2": 26.097,
+      "Q3": 15.876,
+      "Q4": 8.709135350000052,
+      "FullYear": 69.74813535000006
+    },
+    "2566": {
+      "Q1": 12.232,
+      "Q2": 10.762,
+      "Q3": 15.095,
+      "Q4": -22.207,
+      "FullYear": 15.882
+    },
+    "2567": {
+      "Q1": 7.835,
+      "Q2": 14.724,
+      "Q3": -14.258,
+      "Q4": -41.71799765000007,
+      "FullYear": -33.41699765000006
+    },
+    "2568": {
+      "Q1": -32.511,
+      "Q2": -16.484,
+      "Q3": -16.69728,
+      "Q4": -44.10892593999999,
+      "FullYear": -109.80120594
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-15",
+      "news_id": "2021125833",
+      "raw_path": "MATI/financials/2564/9M/source.zip",
+      "sha256": "a10c090c3bcccbcfcd9cb63d8aee72586e69d13617616eb661e051c055a59f9d",
+      "ingested_at": "2026-04-23T21:47:49+00:00",
+      "shareholder_profit": 34.672
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-25",
+      "news_id": "2022023527",
+      "raw_path": "MATI/financials/2564/FY/source.zip",
+      "sha256": "9c2bf65d280c36f7f2a5525f1f0b8b5217e588592802d0409285d77e0a940fa4",
+      "ingested_at": "2026-04-23T21:47:45+00:00",
+      "shareholder_profit": 218.94828392799985
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-13",
+      "news_id": "2021090415",
+      "raw_path": "MATI/financials/2564/H1/source.zip",
+      "sha256": "5f4302a671fdddefb35b6ce7af870a2be6426205b9896460ab3647898c883a84",
+      "ingested_at": "2026-04-23T21:47:54+00:00",
+      "shareholder_profit": 159.971
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-14",
+      "news_id": "2021058837",
+      "raw_path": "MATI/financials/2564/Q1/source.zip",
+      "sha256": "140cf16115ec83d234d303e16eacf12b355b676d081326c8595f739c97467806",
+      "ingested_at": "2026-04-23T21:47:58+00:00",
+      "shareholder_profit": 9.204
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-11",
+      "news_id": "2022133711",
+      "raw_path": "MATI/financials/2565/9M/source.zip",
+      "sha256": "aafcd8e5a2f00425e471d9c73017b26df94c81ad3c28fdaeac04ea2ca7c90e46",
+      "ingested_at": "2026-04-23T21:47:31+00:00",
+      "shareholder_profit": 15.876
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-28",
+      "news_id": "2023026134",
+      "raw_path": "MATI/financials/2565/FY/source.zip",
+      "sha256": "cc2a042d48a232d7b36d51b41589ec25737e2acf33ede6c2d93bb8458a1fe647",
+      "ingested_at": "2026-04-23T21:47:27+00:00",
+      "shareholder_profit": 69.74813535000006
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-15",
+      "news_id": "2022097307",
+      "raw_path": "MATI/financials/2565/H1/source.zip",
+      "sha256": "a457b11dd89cd329d2c9c06f2eb558727da87f4067cc9465bf1172fe82fa8528",
+      "ingested_at": "2026-04-23T21:47:36+00:00",
+      "shareholder_profit": 26.097
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-17",
+      "news_id": "2022063951",
+      "raw_path": "MATI/financials/2565/Q1/source.zip",
+      "sha256": "b05cf9cafbbf526d43651c0f397dd9ce2dca37d00532300257b5e09a30e5da84",
+      "ingested_at": "2026-04-23T21:47:41+00:00",
+      "shareholder_profit": 19.066
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-14",
+      "news_id": "16999132675951",
+      "raw_path": "MATI/financials/2566/9M/source.zip",
+      "sha256": "bd1bbca9ba2a163256f89e5ddd79ac967aa66902be81ca2f202bb1c24ca31029",
+      "ingested_at": "2026-04-23T21:47:13+00:00",
+      "shareholder_profit": 15.095
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-29",
+      "news_id": "17091569077611",
+      "raw_path": "MATI/financials/2566/FY/source.zip",
+      "sha256": "85a753e4eb0c4be8714e36efd2da331fa9573a9adead627549653ac033c66305",
+      "ingested_at": "2026-04-23T21:47:09+00:00",
+      "shareholder_profit": 15.882
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-15",
+      "news_id": "16920539408051",
+      "raw_path": "MATI/financials/2566/H1/source.zip",
+      "sha256": "f13482a257488012d43a5a6134ddeb682054ec561ed1b877bc8846645ea194ef",
+      "ingested_at": "2026-04-23T21:47:18+00:00",
+      "shareholder_profit": 10.762
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-15",
+      "news_id": "16841054008511",
+      "raw_path": "MATI/financials/2566/Q1/source.zip",
+      "sha256": "696af63fa71c0d35b5c623331311d02113d38a6384b483d7f39b841ddbf9425d",
+      "ingested_at": "2026-04-23T21:47:22+00:00",
+      "shareholder_profit": 12.232
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-13",
+      "news_id": "17314477509291",
+      "raw_path": "MATI/financials/2567/9M/source.zip",
+      "sha256": "01d173efce32c6fa07b1459cd077bb0cdae9f288a6da8f687b78881c39351e5f",
+      "ingested_at": "2026-04-23T21:46:55+00:00",
+      "shareholder_profit": -14.258
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-28",
+      "news_id": "17406928447341",
+      "raw_path": "MATI/financials/2567/FY/source.zip",
+      "sha256": "296249a668bd5bc0235e1f78fe8d0c2ec31c49ca4ebcbb662b79ae4c166d97d2",
+      "ingested_at": "2026-04-23T21:46:51+00:00",
+      "shareholder_profit": -33.41699765000006
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-14",
+      "news_id": "17235858019011",
+      "raw_path": "MATI/financials/2567/H1/source.zip",
+      "sha256": "fc0d4440583f64cde84729090b0b0d3fda5ee7e1bdcc74f1f41228bbefc939bf",
+      "ingested_at": "2026-04-23T21:47:00+00:00",
+      "shareholder_profit": 14.724
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434546431",
+      "raw_path": "MATI/financials/2567/Q1/source.zip",
+      "sha256": "f5a03b3d97c34fa87e28ef2c9ac0544baee8b6c73aac3b62936603a87c1c902f",
+      "ingested_at": "2026-04-23T21:47:04+00:00",
+      "shareholder_profit": 7.835
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-14",
+      "news_id": "17630699615741",
+      "raw_path": "MATI/financials/2568/9M/source.zip",
+      "sha256": "55bd67e5341b67155ee1139c826fc39c74e1b9d5e8de49be8e5f5ebf0c878f13",
+      "ingested_at": "2026-04-23T21:46:37+00:00",
+      "shareholder_profit": -16.69728
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-27",
+      "news_id": "17721443100711",
+      "raw_path": "MATI/financials/2568/FY/source.zip",
+      "sha256": "8a8f718a352af691499b2c20f05dade9059cd8f27cf0a182762328a71e20a099",
+      "ingested_at": "2026-04-23T21:46:32+00:00",
+      "shareholder_profit": -109.80120594
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361160361",
+      "raw_path": "MATI/financials/2568/H1/source.zip",
+      "sha256": "8eb35831b278af3c8a2117d951d396e8a9329974e52216f2e08602d8c03dec93",
+      "ingested_at": "2026-04-23T21:46:41+00:00",
+      "shareholder_profit": -16.484
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-14",
+      "news_id": "17471784555291",
+      "raw_path": "MATI/financials/2568/Q1/source.zip",
+      "sha256": "2040cb8e4d894dcf5c3e9f920efde097b343806b3f53025e29de614c47654096",
+      "ingested_at": "2026-04-23T21:46:47+00:00",
+      "shareholder_profit": -32.511
+    }
+  ]
 }

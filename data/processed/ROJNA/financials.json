@@ -4,7 +4,244 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-27",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 293.107,
+      "Q2": 273.571,
+      "Q3": 273.571,
+      "Q4": 1097.570799,
+      "FullYear": 1937.819799
+    },
+    "2565": {
+      "Q1": 825.096,
+      "Q2": -592.299,
+      "Q3": 47.952,
+      "Q4": 858.961779,
+      "FullYear": 1139.710779
+    },
+    "2566": {
+      "Q1": 194.899,
+      "Q2": -146.91,
+      "Q3": 267.68,
+      "Q4": 694.0109077299999,
+      "FullYear": 1009.67990773
+    },
+    "2567": {
+      "Q1": 93.76432000000001,
+      "Q2": 628.511,
+      "Q3": 2262.762,
+      "Q4": 870.2886986999993,
+      "FullYear": 3855.3260186999996
+    },
+    "2568": {
+      "Q1": -426.994,
+      "Q2": -384.709,
+      "Q3": 680.824,
+      "Q4": 5.804503000000068,
+      "FullYear": -125.074497
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-15",
+      "news_id": "2021125203",
+      "raw_path": "ROJNA/financials/2564/9M/source.zip",
+      "sha256": "dd146212dfae57735f1dc762eb9ab2048435eefc7e003a25fe57a46053c34d2e",
+      "ingested_at": "2026-04-24T01:15:15+00:00",
+      "shareholder_profit": 273.571
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-25",
+      "news_id": "2022023233",
+      "raw_path": "ROJNA/financials/2564/FY/source.zip",
+      "sha256": "2c6b4bf968070d712ddcbbd994bc429d35bee9ccbca578c717dd12cb2c729317",
+      "ingested_at": "2026-04-24T01:15:10+00:00",
+      "shareholder_profit": 1937.819799
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-16",
+      "news_id": "2021091391",
+      "raw_path": "ROJNA/financials/2564/H1/source.zip",
+      "sha256": "26c6779fe5c640cbf9be7fe8d572047e43b1e3806d328d0a6801e9065f5cf21f",
+      "ingested_at": "2026-04-24T01:15:20+00:00",
+      "shareholder_profit": 273.571
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-17",
+      "news_id": "2021059751",
+      "raw_path": "ROJNA/financials/2564/Q1/source.zip",
+      "sha256": "f099d32c6e5e8d668a3f5a255c25cfd56fba1678406d468e326cbe111fa7af7c",
+      "ingested_at": "2026-04-24T01:15:24+00:00",
+      "shareholder_profit": 293.107
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-14",
+      "news_id": "2022135608",
+      "raw_path": "ROJNA/financials/2565/9M/source.zip",
+      "sha256": "c225511a81d3ff8848a960f83642120c5598fcd96b325f83109d1b1cd1e0668f",
+      "ingested_at": "2026-04-24T01:14:56+00:00",
+      "shareholder_profit": 47.952
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-28",
+      "news_id": "2023025669",
+      "raw_path": "ROJNA/financials/2565/FY/source.zip",
+      "sha256": "05992458d7d1354161b913a897a2582e74296159dca9a5acd1684e0f62e19ba5",
+      "ingested_at": "2026-04-24T01:14:52+00:00",
+      "shareholder_profit": 1139.710779
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-11",
+      "news_id": "2022094554",
+      "raw_path": "ROJNA/financials/2565/H1/source.zip",
+      "sha256": "95059428054059a59b7302c2b60e2b16f5917f3ddb75b9e82870de13db03aa1e",
+      "ingested_at": "2026-04-24T01:15:01+00:00",
+      "shareholder_profit": -592.299
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-17",
+      "news_id": "2022063824",
+      "raw_path": "ROJNA/financials/2565/Q1/source.zip",
+      "sha256": "9251bd319af543e142e33e9f00201f29a7b397720517380b293fe40abbe6c448",
+      "ingested_at": "2026-04-24T01:15:05+00:00",
+      "shareholder_profit": 825.096
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-14",
+      "news_id": "16999132635661",
+      "raw_path": "ROJNA/financials/2566/9M/source.zip",
+      "sha256": "4dbd3c5f61aed27080740f8ff00bc8efd6bb15af80663aa5ad820d2ba7b8cd71",
+      "ingested_at": "2026-04-24T01:14:38+00:00",
+      "shareholder_profit": 267.68
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-22",
+      "news_id": "17085582080071",
+      "raw_path": "ROJNA/financials/2566/FY/source.zip",
+      "sha256": "de44a252ca9571774501ccbb9f1bab2c62435d9d1150d52b65fa5f07a285a7bb",
+      "ingested_at": "2026-04-24T01:14:33+00:00",
+      "shareholder_profit": 1009.67990773
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-15",
+      "news_id": "16920539333711",
+      "raw_path": "ROJNA/financials/2566/H1/source.zip",
+      "sha256": "44a2244576303343c72fe7dad5fee07ff0822d60d7bbd36fd9cff91609cbfc8d",
+      "ingested_at": "2026-04-24T01:14:42+00:00",
+      "shareholder_profit": -146.91
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-15",
+      "news_id": "16841053971351",
+      "raw_path": "ROJNA/financials/2566/Q1/source.zip",
+      "sha256": "d2b0a688842ab227045d2c41f13363936d6ba3d77b852d1f5caf98534a43b7de",
+      "ingested_at": "2026-04-24T01:14:47+00:00",
+      "shareholder_profit": 194.899
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361291321",
+      "raw_path": "ROJNA/financials/2567/9M/source.zip",
+      "sha256": "974e0c86fe99f4107f6d7e3864d346027fa798c710eb0f749b9e65048b5cf771",
+      "ingested_at": "2026-04-24T01:14:19+00:00",
+      "shareholder_profit": 2262.762
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-21",
+      "news_id": "17400886539851",
+      "raw_path": "ROJNA/financials/2567/FY/source.zip",
+      "sha256": "8deddfaf2ecdcc9523db47af1499fc45dda790904c3da171e0fa7c10c14dae1b",
+      "ingested_at": "2026-04-24T01:14:15+00:00",
+      "shareholder_profit": 3855.3260186999996
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-14",
+      "news_id": "17235857997041",
+      "raw_path": "ROJNA/financials/2567/H1/source.zip",
+      "sha256": "7a068d2ebee3f9d0ee941f07816105114e80e9467b24c83f350bd8aa6dbc0131",
+      "ingested_at": "2026-04-24T01:14:24+00:00",
+      "shareholder_profit": 628.511
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-15",
+      "news_id": "17157257444071",
+      "raw_path": "ROJNA/financials/2567/Q1/source.zip",
+      "sha256": "f51bdc779a598df999fb1d5862e24ef4ff31b7803e29cdc13df0c24b4b85a3c7",
+      "ingested_at": "2026-04-24T01:14:29+00:00",
+      "shareholder_profit": 93.76432000000001
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-14",
+      "news_id": "17630699548991",
+      "raw_path": "ROJNA/financials/2568/9M/source.zip",
+      "sha256": "27b793d4dc9caa1e21c20545774ccbaa0bb6acf6b0f375d7954e293a3b8e25e2",
+      "ingested_at": "2026-04-24T01:14:01+00:00",
+      "shareholder_profit": 680.824
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-27",
+      "news_id": "17721443087491",
+      "raw_path": "ROJNA/financials/2568/FY/source.zip",
+      "sha256": "01a46ee62b805cbaef2c5b0f0b82c603923af6456eb67d8d278296ff225abcbc",
+      "ingested_at": "2026-04-24T01:13:57+00:00",
+      "shareholder_profit": -125.074497
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229858541",
+      "raw_path": "ROJNA/financials/2568/H1/source.zip",
+      "sha256": "d985d6b21fee663ea829f520f70f13de7483798a1f0ccd6b26ee85dccc65ad00",
+      "ingested_at": "2026-04-24T01:14:06+00:00",
+      "shareholder_profit": -384.709
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-15",
+      "news_id": "17472613152601",
+      "raw_path": "ROJNA/financials/2568/Q1/source.zip",
+      "sha256": "8aa13ee5debd1e9e898e9f4c97ae24532a703a3ad16525b767536560b4eb10f0",
+      "ingested_at": "2026-04-24T01:14:11+00:00",
+      "shareholder_profit": -426.994
+    }
+  ]
 }

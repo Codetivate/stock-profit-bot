@@ -10,31 +10,36 @@
       "Q1": 111.81,
       "Q2": 61.422,
       "Q3": 446.207,
-      "Q4": 145.30959100000007
+      "Q4": 145.30959100000007,
+      "FullYear": 764.748591
     },
     "2565": {
       "Q1": 37.399,
       "Q2": -57.478,
       "Q3": -9.117,
-      "Q4": -91.787805
+      "Q4": -91.787805,
+      "FullYear": -120.983805
     },
     "2566": {
       "Q1": 10.922,
       "Q2": -58.11131482375648,
       "Q3": -58.11131482375648,
-      "Q4": -87.78796974730884
+      "Q4": -87.78796974730884,
+      "FullYear": -193.0885993948218
     },
     "2567": {
       "Q1": 87.233,
       "Q2": 7.174,
       "Q3": 117.517,
-      "Q4": 41.338505
+      "Q4": 41.338505,
+      "FullYear": 253.262505
     },
     "2568": {
-      "Q1": null,
-      "Q2": null,
-      "Q3": -7.6e-06,
-      "Q4": null
+      "Q1": 7.73,
+      "Q2": -137.746,
+      "Q3": -31.373,
+      "Q4": -32.341644999999986,
+      "FullYear": -193.730645
     }
   },
   "sources": [
@@ -206,7 +211,7 @@
       "raw_path": "CGH/financials/2568/9M/source.zip",
       "sha256": "0472a8e11b9be6371271a1d60b5ad6fcc66253fab9dee4b479402bd6957ac4ed",
       "ingested_at": "2026-04-23T16:37:10+00:00",
-      "shareholder_profit": -7.6e-06
+      "shareholder_profit": -31.373
     },
     {
       "year": 2568,
@@ -216,7 +221,27 @@
       "raw_path": "CGH/financials/2568/FY/source.zip",
       "sha256": "e62111ac0f47fcc8b6d344a4291ed58379ba0d8c68fdd14a3cc11a7bf7b14fed",
       "ingested_at": "2026-04-23T16:37:05+00:00",
-      "shareholder_profit": -4.665474917271512e-08
+      "shareholder_profit": -193.730645
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229877891",
+      "raw_path": "CGH/financials/2568/H1/source.zip",
+      "sha256": "2715d4f24fe557249502662d24781f3483e709417233b64015b2f223fbf126a2",
+      "ingested_at": "2026-04-23T16:37:15+00:00",
+      "shareholder_profit": -137.746
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-14",
+      "news_id": "17471784453241",
+      "raw_path": "CGH/financials/2568/Q1/source.zip",
+      "sha256": "e61f82f945e371df670c9c37b86d1ac42cdd26abfed782e54ab97170a4c10af4",
+      "ingested_at": "2026-04-23T16:37:19+00:00",
+      "shareholder_profit": 7.73
     }
   ]
 }

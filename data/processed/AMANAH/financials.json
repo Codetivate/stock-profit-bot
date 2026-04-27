@@ -4,7 +4,244 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-25",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 79.31,
+      "Q2": 80.585,
+      "Q3": 70.706,
+      "Q4": 76.56269300000004,
+      "FullYear": 307.163693
+    },
+    "2565": {
+      "Q1": 74.76,
+      "Q2": 80.801,
+      "Q3": 61.426,
+      "Q4": 92.769269,
+      "FullYear": 309.756269
+    },
+    "2566": {
+      "Q1": 43.302,
+      "Q2": 33.93,
+      "Q3": 53.476,
+      "Q4": 58.29692299999999,
+      "FullYear": 189.004923
+    },
+    "2567": {
+      "Q1": 11.937998,
+      "Q2": -56.461394,
+      "Q3": 13.20395,
+      "Q4": 14.903460999999998,
+      "FullYear": -16.415985
+    },
+    "2568": {
+      "Q1": 2.714381,
+      "Q2": -46.031755,
+      "Q3": -48.05124,
+      "Q4": -20.889176,
+      "FullYear": -112.25779
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-10",
+      "news_id": "2021120582",
+      "raw_path": "AMANAH/financials/2564/9M/source.zip",
+      "sha256": "78ecae4422b6b3e98c52e98a6787a4a2c810e5806e060914df6b6bc7d95cd564",
+      "ingested_at": "2026-04-24T06:45:59+00:00",
+      "shareholder_profit": 70.706
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-15",
+      "news_id": "2022015880",
+      "raw_path": "AMANAH/financials/2564/FY/source.zip",
+      "sha256": "beb1a19a98df77253eaeb6308cb2056a660913e6646a9079793cf7ddf0efa9b8",
+      "ingested_at": "2026-04-24T06:45:54+00:00",
+      "shareholder_profit": 307.163693
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-11",
+      "news_id": "2021087853",
+      "raw_path": "AMANAH/financials/2564/H1/source.zip",
+      "sha256": "29248cc2eb4244659dfd8cbb9c514b8874d55b4e326580707b01fd15975f0efa",
+      "ingested_at": "2026-04-24T06:46:03+00:00",
+      "shareholder_profit": 80.585
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-11",
+      "news_id": "2021053494",
+      "raw_path": "AMANAH/financials/2564/Q1/source.zip",
+      "sha256": "b34525cc93b553ad9c29cba808d6b1630f7915cf84fe24cd7cd952c3d9242e12",
+      "ingested_at": "2026-04-24T06:46:07+00:00",
+      "shareholder_profit": 79.31
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-09",
+      "news_id": "2022130753",
+      "raw_path": "AMANAH/financials/2565/9M/source.zip",
+      "sha256": "a862c267c8f4b45ab88e49d0cf490a606ace2d762d5e1787881ca644da0975cf",
+      "ingested_at": "2026-04-24T06:45:41+00:00",
+      "shareholder_profit": 61.426
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-22",
+      "news_id": "2023019327",
+      "raw_path": "AMANAH/financials/2565/FY/source.zip",
+      "sha256": "bd9d700d0b22b8a871c005538ad52d95c39a6e8b317daaf922bf4632037d8d07",
+      "ingested_at": "2026-04-24T06:45:36+00:00",
+      "shareholder_profit": 309.756269
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-10",
+      "news_id": "2022092855",
+      "raw_path": "AMANAH/financials/2565/H1/source.zip",
+      "sha256": "4dbd05aa5cf90406bdef21284e66f2526f21c6b3a3f5ff84e37c52fc81f077b7",
+      "ingested_at": "2026-04-24T06:45:45+00:00",
+      "shareholder_profit": 80.801
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-10",
+      "news_id": "2022056600",
+      "raw_path": "AMANAH/financials/2565/Q1/source.zip",
+      "sha256": "423dfba2505353be55d17cc8406a0a9035af69f161d37e7e0a621ac3ae7d92b0",
+      "ingested_at": "2026-04-24T06:45:50+00:00",
+      "shareholder_profit": 74.76
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-08",
+      "news_id": "16993998062021",
+      "raw_path": "AMANAH/financials/2566/9M/source.zip",
+      "sha256": "fdff15b1e7d7d2d0c23ff56120a048def59f015fbbcaa7a1f8c455ab222f8dfe",
+      "ingested_at": "2026-04-24T06:45:23+00:00",
+      "shareholder_profit": 53.476
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-19",
+      "news_id": "17082990070551",
+      "raw_path": "AMANAH/financials/2566/FY/source.zip",
+      "sha256": "ca643b9259752908796ab0fda516c8f3c3a98e828412b1c5065dc19e65308346",
+      "ingested_at": "2026-04-24T06:45:19+00:00",
+      "shareholder_profit": 189.004923
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-09",
+      "news_id": "16915381961721",
+      "raw_path": "AMANAH/financials/2566/H1/source.zip",
+      "sha256": "890cb2f39adf517756569b5eac218ce38e6233643f5f62e6267897c8e090f9b8",
+      "ingested_at": "2026-04-24T06:45:27+00:00",
+      "shareholder_profit": 33.93
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-10",
+      "news_id": "16836750083621",
+      "raw_path": "AMANAH/financials/2566/Q1/source.zip",
+      "sha256": "1ffcb60089cdf3572c3eaedbaef1d30752184c8ad5e61a4c90c3144bb012c61f",
+      "ingested_at": "2026-04-24T06:45:32+00:00",
+      "shareholder_profit": 43.302
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-13",
+      "news_id": "17314477473671",
+      "raw_path": "AMANAH/financials/2567/9M/source.zip",
+      "sha256": "2bb35bf140d6b03a82d3260423f6248c4880546101484f549bfe057d7bd93ba8",
+      "ingested_at": "2026-04-24T06:45:06+00:00",
+      "shareholder_profit": 13.20395
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-26",
+      "news_id": "17405221018841",
+      "raw_path": "AMANAH/financials/2567/FY/source.zip",
+      "sha256": "16a1e10a2888fceed55ec98a2f692d2c5a75ffc5e8459e888d318bcd4806cd4d",
+      "ingested_at": "2026-04-24T06:45:02+00:00",
+      "shareholder_profit": -16.415985
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990174311",
+      "raw_path": "AMANAH/financials/2567/H1/source.zip",
+      "sha256": "5a8af07d03e0e9d00cdd05cd8825d7b0393bc39ac3105cb3290e4a7c79d3fa24",
+      "ingested_at": "2026-04-24T06:45:10+00:00",
+      "shareholder_profit": -56.461394
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-08",
+      "news_id": "17151254529341",
+      "raw_path": "AMANAH/financials/2567/Q1/source.zip",
+      "sha256": "4286f197e79074eb24c5b1fcf66bdbfdcb3d9b302b22ee6ba13d234cdfff287a",
+      "ingested_at": "2026-04-24T06:45:15+00:00",
+      "shareholder_profit": 11.937998
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-12",
+      "news_id": "17629001482721",
+      "raw_path": "AMANAH/financials/2568/9M/source.zip",
+      "sha256": "8733faa8dc28ba9ce819340da8f4fb45921788bead5e0de241f022b3c42f5229",
+      "ingested_at": "2026-04-24T06:44:49+00:00",
+      "shareholder_profit": -48.05124
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-25",
+      "news_id": "17719707036191",
+      "raw_path": "AMANAH/financials/2568/FY/source.zip",
+      "sha256": "f202fc16008f436ffe1986f18f5507da4cb310a984e1d6722d947b3ee87c6ebd",
+      "ingested_at": "2026-04-24T06:44:45+00:00",
+      "shareholder_profit": -112.25779
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361135471",
+      "raw_path": "AMANAH/financials/2568/H1/source.zip",
+      "sha256": "acef09df5d41f1d9a9063f81f3b9d48cceb903b408a7315f2a01d32f15134d6f",
+      "ingested_at": "2026-04-24T06:44:53+00:00",
+      "shareholder_profit": -46.031755
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-14",
+      "news_id": "17471784546001",
+      "raw_path": "AMANAH/financials/2568/Q1/source.zip",
+      "sha256": "64c3edede19c522b8eecd0592152ca2d2a10966f8af5ccf99bf3cb4f4a2fe038",
+      "ingested_at": "2026-04-24T06:44:57+00:00",
+      "shareholder_profit": 2.714381
+    }
+  ]
 }

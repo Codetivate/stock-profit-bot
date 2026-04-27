@@ -4,7 +4,251 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-04-16",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 1763.627,
+      "Q2": 1666.0570000000002,
+      "Q3": 1560.326,
+      "Q4": 1794.583,
+      "FullYear": 6784.593
+    },
+    "2565": {
+      "Q1": 1795.491,
+      "Q2": 1848.432,
+      "Q3": 1773.425,
+      "Q4": 1806.7300000000007,
+      "FullYear": 7224.078
+    },
+    "2566": {
+      "Q1": 1792.58,
+      "Q2": 1853.888,
+      "Q3": 1874.485,
+      "Q4": 1780.1600000000005,
+      "FullYear": 7301.113
+    },
+    "2567": {
+      "Q1": 1733.021,
+      "Q2": 1753.016,
+      "Q3": 1713.434,
+      "Q4": 1701.8039999999999,
+      "FullYear": 6901.275
+    },
+    "2568": {
+      "Q1": 1643.378,
+      "Q2": 1643.518,
+      "Q3": 1730.223,
+      "Q4": 1641.7790000000005,
+      "FullYear": 6658.898
+    },
+    "2569": {
+      "Q1": 1733.624017,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": null
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-12",
+      "news_id": "2021122816",
+      "raw_path": "TISCO/financials/2564/9M/source.zip",
+      "sha256": "430d4ce083caae1263bd34a87c3947850ca75103c119333adb5291b017fe361b",
+      "ingested_at": "2026-04-25T05:02:24+00:00",
+      "shareholder_profit": 1560.326
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-21",
+      "news_id": "2022017895",
+      "raw_path": "TISCO/financials/2564/FY/source.zip",
+      "sha256": "d0edd1eede96b6953b667f6fd8b21c12ae39c16c929ba91964e731111d5b47dd",
+      "ingested_at": "2026-04-25T05:02:20+00:00",
+      "shareholder_profit": 6784.593
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-14",
+      "news_id": "2021058020",
+      "raw_path": "TISCO/financials/2564/Q1/source.zip",
+      "sha256": "4f047dbe8aec0914382a647897502a61631cf3813a475865301756b8145bb06d",
+      "ingested_at": "2026-04-25T05:02:28+00:00",
+      "shareholder_profit": 1763.627
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-14",
+      "news_id": "2022135289",
+      "raw_path": "TISCO/financials/2565/9M/source.zip",
+      "sha256": "8f8e34217b3cfd33def44e2aaa35e243cb277a85c1f3a9303ca2ca59e2991f30",
+      "ingested_at": "2026-04-25T05:02:07+00:00",
+      "shareholder_profit": 1773.425
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-23",
+      "news_id": "2023020171",
+      "raw_path": "TISCO/financials/2565/FY/source.zip",
+      "sha256": "5e26c6c435729e5258611475331198ff49ab14ed2ff61565f1ed61783218bf4d",
+      "ingested_at": "2026-04-25T05:02:03+00:00",
+      "shareholder_profit": 7224.078
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-11",
+      "news_id": "2022094569",
+      "raw_path": "TISCO/financials/2565/H1/source.zip",
+      "sha256": "801fc8429119b7f6963581818ed8e05073bf5b406802db57f7dfe886788d1852",
+      "ingested_at": "2026-04-25T05:02:11+00:00",
+      "shareholder_profit": 1848.432
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-13",
+      "news_id": "2022061495",
+      "raw_path": "TISCO/financials/2565/Q1/source.zip",
+      "sha256": "99cecfcdc06f92bd863d4c5b31a8e82af70386ac87c4ff9a09b396878e0d3363",
+      "ingested_at": "2026-04-25T05:02:16+00:00",
+      "shareholder_profit": 1795.491
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-13",
+      "news_id": "16998304561131",
+      "raw_path": "TISCO/financials/2566/9M/source.zip",
+      "sha256": "19131b270594d2838da3f7b93d657846d343be08d2fade5f3ee4e01d42f4bd7d",
+      "ingested_at": "2026-04-25T05:01:50+00:00",
+      "shareholder_profit": 1874.485
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-28",
+      "news_id": "17090750733491",
+      "raw_path": "TISCO/financials/2566/FY/source.zip",
+      "sha256": "9e2434df4ca8e4f944b9491e8f8a84c72fe8684503c528d48c939930f74f2106",
+      "ingested_at": "2026-04-25T05:01:46+00:00",
+      "shareholder_profit": 7301.113
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-15",
+      "news_id": "16920539364331",
+      "raw_path": "TISCO/financials/2566/H1/source.zip",
+      "sha256": "a3b552685376409740f1557c3d7e272809c6da8706f897940df0fc9aba4fc8d0",
+      "ingested_at": "2026-04-25T05:01:54+00:00",
+      "shareholder_profit": 1853.888
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-12",
+      "news_id": "16838458831811",
+      "raw_path": "TISCO/financials/2566/Q1/source.zip",
+      "sha256": "558d8f047ef708eea2fa20895abf282cb34d6b016e5c03cfcacca641fe5d94e5",
+      "ingested_at": "2026-04-25T05:01:58+00:00",
+      "shareholder_profit": 1792.58
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361205141",
+      "raw_path": "TISCO/financials/2567/9M/source.zip",
+      "sha256": "249ecfedcde4ec670c4d15492e8b6bd955f00816e73878a62e4be7fb4e50f868",
+      "ingested_at": "2026-04-25T05:01:33+00:00",
+      "shareholder_profit": 1713.434
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-27",
+      "news_id": "17406066116061",
+      "raw_path": "TISCO/financials/2567/FY/source.zip",
+      "sha256": "647604d6c0c7b977b668f06d268a1cfbad06c9ebf5d1c3db31c5aebfef2472b5",
+      "ingested_at": "2026-04-25T05:01:29+00:00",
+      "shareholder_profit": 6901.275
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990171871",
+      "raw_path": "TISCO/financials/2567/H1/source.zip",
+      "sha256": "e8d56a7ce26eb420b77259661317e0b1e7df29e36b9cc66f99759044e9f8dd12",
+      "ingested_at": "2026-04-25T05:01:37+00:00",
+      "shareholder_profit": 1753.016
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434534181",
+      "raw_path": "TISCO/financials/2567/Q1/source.zip",
+      "sha256": "081b44bd8ac5d4029050f038ea66967e1a62d0d82469e36d5a38c410da293a5b",
+      "ingested_at": "2026-04-25T05:01:42+00:00",
+      "shareholder_profit": 1733.021
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-13",
+      "news_id": "17629880408601",
+      "raw_path": "TISCO/financials/2568/9M/source.zip",
+      "sha256": "fe332363d9f0b99ec8648583a9d3dfc7c984d9fc3e5a1ff7f14615d2d07bb352",
+      "ingested_at": "2026-04-25T05:01:17+00:00",
+      "shareholder_profit": 1730.223
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-27",
+      "news_id": "17721443013951",
+      "raw_path": "TISCO/financials/2568/FY/source.zip",
+      "sha256": "884f72a87a1597750be946d2778e5a64637113db75fccfd4764d4ed987631497",
+      "ingested_at": "2026-04-25T05:01:12+00:00",
+      "shareholder_profit": 6658.898
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229768831",
+      "raw_path": "TISCO/financials/2568/H1/source.zip",
+      "sha256": "2eac779f4d6c5df4c47cc47602e7f5b8d8127b19ca3148320d9d269fc82180da",
+      "ingested_at": "2026-04-25T05:01:21+00:00",
+      "shareholder_profit": 1643.518
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-14",
+      "news_id": "17471784479661",
+      "raw_path": "TISCO/financials/2568/Q1/source.zip",
+      "sha256": "1e7d1554edb06593ba8e263ba48c9f74bcc8a4faa411f059eef20a40eef840e7",
+      "ingested_at": "2026-04-25T05:01:25+00:00",
+      "shareholder_profit": 1643.378
+    },
+    {
+      "year": 2569,
+      "period": "Q1",
+      "filing_date": "2026-04-16",
+      "news_id": "17762958028551",
+      "raw_path": "TISCO/financials/2569/Q1/source.zip",
+      "sha256": "4822d697a16c2d0dc94b186e49bc1f1ac08471eca0d995944f97151f8e8b199a",
+      "ingested_at": "2026-04-25T05:01:08+00:00",
+      "shareholder_profit": 1733.624017
+    }
+  ]
 }

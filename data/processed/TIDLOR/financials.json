@@ -4,7 +4,46 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-18",
+  "quarterly_history": {
+    "2568": {
+      "Q1": null,
+      "Q2": 1296.471,
+      "Q3": 1406.371,
+      "Q4": 2737.372,
+      "FullYear": 4932.838
+    }
+  },
+  "sources": [
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-11",
+      "news_id": "17628159936751",
+      "raw_path": "TIDLOR/financials/2568/9M/source.zip",
+      "sha256": "ae33e881dfcbf0bc6e3be279323bb2be8124efbaed2fb28d04a2b7e33302a7e4",
+      "ingested_at": "2026-04-24T05:24:01+00:00",
+      "shareholder_profit": 1406.371
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-18",
+      "news_id": "17713646986181",
+      "raw_path": "TIDLOR/financials/2568/FY/source.zip",
+      "sha256": "8aa579fbd8d77edadde2ab116fad67f56023fd8eb1fe7603f51253b249d86fc8",
+      "ingested_at": "2026-04-24T05:23:56+00:00",
+      "shareholder_profit": 4932.838
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-07",
+      "news_id": "17545237006111",
+      "raw_path": "TIDLOR/financials/2568/H1/source.zip",
+      "sha256": "509b4a49a9822d7c4e16fb8ff4ba54ae6ba83cde03b913f73ed1bd8fda3876e9",
+      "ingested_at": "2026-04-24T05:24:06+00:00",
+      "shareholder_profit": 1296.471
+    }
+  ]
 }

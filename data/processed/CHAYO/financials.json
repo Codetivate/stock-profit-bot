@@ -4,7 +4,244 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-26",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 64.468097,
+      "Q2": 35.064299,
+      "Q3": 70.883079,
+      "Q4": 48.583513999999994,
+      "FullYear": 218.998989
+    },
+    "2565": {
+      "Q1": 72.50238,
+      "Q2": 56.5462859992,
+      "Q3": 35.9341830008,
+      "Q4": 86.21665299999998,
+      "FullYear": 251.199502
+    },
+    "2566": {
+      "Q1": 103.841281,
+      "Q2": 91.785348,
+      "Q3": 75.591991,
+      "Q4": 119.92405500000002,
+      "FullYear": 391.142675
+    },
+    "2567": {
+      "Q1": 3.192609,
+      "Q2": 76.750773,
+      "Q3": 100.473607,
+      "Q4": 60.73639900000002,
+      "FullYear": 241.153388
+    },
+    "2568": {
+      "Q1": 108.111488,
+      "Q2": 129.33165,
+      "Q3": 61.905546,
+      "Q4": -737.3064689999999,
+      "FullYear": -437.957785
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-11",
+      "news_id": "2021121542",
+      "raw_path": "CHAYO/financials/2564/9M/source.zip",
+      "sha256": "a62dad2d9507f9521cf09315b5224dab5f11408f1716a63e95520356f4b9a667",
+      "ingested_at": "2026-04-23T16:45:22+00:00",
+      "shareholder_profit": 70.883079
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-24",
+      "news_id": "2022021871",
+      "raw_path": "CHAYO/financials/2564/FY/source.zip",
+      "sha256": "9c0ce0594512363743ba479d83eb5565d8cccdc8185aca30dcf6a0ab4eda3edc",
+      "ingested_at": "2026-04-23T16:45:16+00:00",
+      "shareholder_profit": 218.998989
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-11",
+      "news_id": "2021087852",
+      "raw_path": "CHAYO/financials/2564/H1/source.zip",
+      "sha256": "48d4267b91ad5c20126ba0397dbc2ab36ae36a95e6493aac54a5ceed961ca1d8",
+      "ingested_at": "2026-04-23T16:45:26+00:00",
+      "shareholder_profit": 35.064299
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-12",
+      "news_id": "2021054748",
+      "raw_path": "CHAYO/financials/2564/Q1/source.zip",
+      "sha256": "435a325f815e9d716538ead459c4a93f595046e87d5f30eb124fa91101c80ecd",
+      "ingested_at": "2026-04-23T16:45:31+00:00",
+      "shareholder_profit": 64.468097
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-10",
+      "news_id": "2022132249",
+      "raw_path": "CHAYO/financials/2565/9M/source.zip",
+      "sha256": "c09e4c7949adf38cbd76e5b86172364f412a897e1dbe81d89a7d4e7dc52d7b82",
+      "ingested_at": "2026-04-23T16:45:02+00:00",
+      "shareholder_profit": 35.9341830008
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-24",
+      "news_id": "2023022486",
+      "raw_path": "CHAYO/financials/2565/FY/source.zip",
+      "sha256": "8c881fb1a73a36fb45686b17ecd14a611e3cc4b057c0f9901998cfa5749b0dd3",
+      "ingested_at": "2026-04-23T16:44:57+00:00",
+      "shareholder_profit": 251.199502
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-11",
+      "news_id": "2022095473",
+      "raw_path": "CHAYO/financials/2565/H1/source.zip",
+      "sha256": "3762d61e55e9d7db9f204fbba0bd74bbddad2a324fa8ea4c48c6774e6754b363",
+      "ingested_at": "2026-04-23T16:45:07+00:00",
+      "shareholder_profit": 56.5462859992
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-12",
+      "news_id": "2022059530",
+      "raw_path": "CHAYO/financials/2565/Q1/source.zip",
+      "sha256": "2a2cf242a42b4d48c627e7372f7b17215220641800d9579f35f59201b1494742",
+      "ingested_at": "2026-04-23T16:45:12+00:00",
+      "shareholder_profit": 72.50238
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-10",
+      "news_id": "16995730786251",
+      "raw_path": "CHAYO/financials/2566/9M/source.zip",
+      "sha256": "2512b0a45f807063e7143f459b3ae9cc38e8b219617586c8366df8b4efd3fe84",
+      "ingested_at": "2026-04-23T16:44:44+00:00",
+      "shareholder_profit": 75.591991
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-23",
+      "news_id": "17086429025621",
+      "raw_path": "CHAYO/financials/2566/FY/source.zip",
+      "sha256": "a505b40b21d915da3d40e9798bf8968c8c974792826596eb5a21e2bfbc4c561f",
+      "ingested_at": "2026-04-23T16:44:39+00:00",
+      "shareholder_profit": 391.142675
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-10",
+      "news_id": "16916230314611",
+      "raw_path": "CHAYO/financials/2566/H1/source.zip",
+      "sha256": "e37f71c082508e7247af24f2a6cd95380edd5e00d211c15f9968f514a440ce64",
+      "ingested_at": "2026-04-23T16:44:48+00:00",
+      "shareholder_profit": 91.785348
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-11",
+      "news_id": "16837584073501",
+      "raw_path": "CHAYO/financials/2566/Q1/source.zip",
+      "sha256": "fa58ab4086a1264e487e439ba7a717c8a206df6c6e8c5aa98cd8482e09cdde94",
+      "ingested_at": "2026-04-23T16:44:53+00:00",
+      "shareholder_profit": 103.841281
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-12",
+      "news_id": "17313658215141",
+      "raw_path": "CHAYO/financials/2567/9M/source.zip",
+      "sha256": "22fe4d6747aba6cb15865650e72e3acd484a7c3dee060ad3ef0e1f918bfaf50d",
+      "ingested_at": "2026-04-23T16:44:26+00:00",
+      "shareholder_profit": 100.473607
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-26",
+      "news_id": "17405221050721",
+      "raw_path": "CHAYO/financials/2567/FY/source.zip",
+      "sha256": "28290b396184ef34560ae02319e7cbe5b2cf926be398307a2160bda9b714ad26",
+      "ingested_at": "2026-04-23T16:44:21+00:00",
+      "shareholder_profit": 241.153388
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-14",
+      "news_id": "17235858053881",
+      "raw_path": "CHAYO/financials/2567/H1/source.zip",
+      "sha256": "bf148a250e3d104ac86f6f11b38678c2d4623550a87ef4b9ef9e69ae9baee3b5",
+      "ingested_at": "2026-04-23T16:44:30+00:00",
+      "shareholder_profit": 76.750773
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-10",
+      "news_id": "17152924599511",
+      "raw_path": "CHAYO/financials/2567/Q1/source.zip",
+      "sha256": "b2bf72ce13629c7ff82ae65f8848b1506ed1daff7b322922f219f4f75efa5040",
+      "ingested_at": "2026-04-23T16:44:35+00:00",
+      "shareholder_profit": 3.192609
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-14",
+      "news_id": "17630699605621",
+      "raw_path": "CHAYO/financials/2568/9M/source.zip",
+      "sha256": "1247aba043b43644af74f6a151dac5ff5ffbb36453fbbf4e77970211a11dbe1a",
+      "ingested_at": "2026-04-23T16:44:08+00:00",
+      "shareholder_profit": 61.905546
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-26",
+      "news_id": "17720575314371",
+      "raw_path": "CHAYO/financials/2568/FY/source.zip",
+      "sha256": "285ff1d041f9bee08401c4228cb95f95bf26c5c19e5ecbb74dc4325a6592fcb7",
+      "ingested_at": "2026-04-23T16:44:03+00:00",
+      "shareholder_profit": -437.957785
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229897821",
+      "raw_path": "CHAYO/financials/2568/H1/source.zip",
+      "sha256": "98b20595062cb41332d74e5ce0b4d72cb48d0b68ffc7cd7053cdfe3cfa563c79",
+      "ingested_at": "2026-04-23T16:44:12+00:00",
+      "shareholder_profit": 129.33165
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-14",
+      "news_id": "17471784564631",
+      "raw_path": "CHAYO/financials/2568/Q1/source.zip",
+      "sha256": "ba473d1aa838ee772fecfdc35972f4845ee7760566b1cdb88623a2ad178f4590",
+      "ingested_at": "2026-04-23T16:44:17+00:00",
+      "shareholder_profit": 108.111488
+    }
+  ]
 }

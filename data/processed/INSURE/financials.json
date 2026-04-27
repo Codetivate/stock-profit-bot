@@ -4,7 +4,244 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-24",
+  "quarterly_history": {
+    "2564": {
+      "Q1": -5.244687,
+      "Q2": 0.005352,
+      "Q3": 6.147128,
+      "Q4": 13.166654,
+      "FullYear": 14.074447
+    },
+    "2565": {
+      "Q1": 598.067465,
+      "Q2": 107.905424,
+      "Q3": 36.333776,
+      "Q4": -37.86405700000002,
+      "FullYear": 704.442608
+    },
+    "2566": {
+      "Q1": 69.475863,
+      "Q2": 23.262117,
+      "Q3": 52.087332,
+      "Q4": 50.401000999999994,
+      "FullYear": 195.226313
+    },
+    "2567": {
+      "Q1": 120.884144,
+      "Q2": -59.413085,
+      "Q3": 9.773134,
+      "Q4": 120.313527,
+      "FullYear": 191.55772
+    },
+    "2568": {
+      "Q1": -127.051,
+      "Q2": 35.524,
+      "Q3": 98.939,
+      "Q4": 14.849000000000018,
+      "FullYear": 22.261
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-11",
+      "news_id": "2021121536",
+      "raw_path": "INSURE/financials/2564/9M/source.zip",
+      "sha256": "1caf7f756f688e7de49d3ba0f0d17b90274e960b6929c8b55ceb52ae8dacd158",
+      "ingested_at": "2026-04-23T20:01:00+00:00",
+      "shareholder_profit": 6.147128
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-18",
+      "news_id": "2022017607",
+      "raw_path": "INSURE/financials/2564/FY/source.zip",
+      "sha256": "e46b0d9cc3d10c5e3a12ea50813116427ababeb07ad5927c6c61ebb89d406624",
+      "ingested_at": "2026-04-23T20:00:55+00:00",
+      "shareholder_profit": 14.074447
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-11",
+      "news_id": "2021087767",
+      "raw_path": "INSURE/financials/2564/H1/source.zip",
+      "sha256": "7a7d1f49b8514691bc7b4c4334ea75a9b3fe1e10ef8117699bf9746683901e74",
+      "ingested_at": "2026-04-23T20:01:04+00:00",
+      "shareholder_profit": 0.005352
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-13",
+      "news_id": "2021057184",
+      "raw_path": "INSURE/financials/2564/Q1/source.zip",
+      "sha256": "63c474de27b1f6d583fc690851992a01dd909e72b3ff47dfcd166a71156aba28",
+      "ingested_at": "2026-04-23T20:01:09+00:00",
+      "shareholder_profit": -5.244687
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-09",
+      "news_id": "2022130875",
+      "raw_path": "INSURE/financials/2565/9M/source.zip",
+      "sha256": "12a1b81ee00b2537951aa259bca769f423be1f6c7e5b0aa247f05790848a53c6",
+      "ingested_at": "2026-04-23T20:00:42+00:00",
+      "shareholder_profit": 36.333776
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-27",
+      "news_id": "2023024936",
+      "raw_path": "INSURE/financials/2565/FY/source.zip",
+      "sha256": "0b9c0239d742e6631784c8ac731c951498dbf89a4cf3d81d2599875f598be49d",
+      "ingested_at": "2026-04-23T20:00:37+00:00",
+      "shareholder_profit": 704.442608
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-08",
+      "news_id": "2022091074",
+      "raw_path": "INSURE/financials/2565/H1/source.zip",
+      "sha256": "d17dc159b72db38ef93807e39c5a3471d92034022fdebf852ce42cb6f75631ff",
+      "ingested_at": "2026-04-23T20:00:46+00:00",
+      "shareholder_profit": 107.905424
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-12",
+      "news_id": "2022060686",
+      "raw_path": "INSURE/financials/2565/Q1/source.zip",
+      "sha256": "c7023a0b5cb822c5162b12c2d240427a2ebbec083e6af7f9ed42d86e6032d6ae",
+      "ingested_at": "2026-04-23T20:00:51+00:00",
+      "shareholder_profit": 598.067465
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-09",
+      "news_id": "16994859291791",
+      "raw_path": "INSURE/financials/2566/9M/source.zip",
+      "sha256": "3485303294f2ebca788c44670782a9169243050f996a664fdea14db756b50ebf",
+      "ingested_at": "2026-04-23T20:00:24+00:00",
+      "shareholder_profit": 52.087332
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-20",
+      "news_id": "17083827482461",
+      "raw_path": "INSURE/financials/2566/FY/source.zip",
+      "sha256": "09e46780a237f38a338ffe95794aa7fc8af452fc048bc13a30ee71d269b3be44",
+      "ingested_at": "2026-04-23T20:00:19+00:00",
+      "shareholder_profit": 195.226313
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-10",
+      "news_id": "16916230206401",
+      "raw_path": "INSURE/financials/2566/H1/source.zip",
+      "sha256": "1e446abbaf0831ea35e5c5140742776ac808b898db1fecfa538ae500e2eb024c",
+      "ingested_at": "2026-04-23T20:00:28+00:00",
+      "shareholder_profit": 23.262117
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-10",
+      "news_id": "16836750118441",
+      "raw_path": "INSURE/financials/2566/Q1/source.zip",
+      "sha256": "2fa95e68de76f801b07163f1b26275fb08c1889fa1bfce9d53bfe0ec30a0993c",
+      "ingested_at": "2026-04-23T20:00:33+00:00",
+      "shareholder_profit": 69.475863
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-08",
+      "news_id": "17310157170811",
+      "raw_path": "INSURE/financials/2567/9M/source.zip",
+      "sha256": "b6bec71543f06ce141f9a3d95e44e90910f1d3f51d34af8790b1a32c858d5c9d",
+      "ingested_at": "2026-04-23T20:00:06+00:00",
+      "shareholder_profit": 9.773134
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-20",
+      "news_id": "17400015582611",
+      "raw_path": "INSURE/financials/2567/FY/source.zip",
+      "sha256": "53f7e0ba61e65475f40d1aa449d1f61fc0e4ecbbfd571d2f1377db2b0b7bc48f",
+      "ingested_at": "2026-04-23T20:00:01+00:00",
+      "shareholder_profit": 191.55772
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-08",
+      "news_id": "17230734215091",
+      "raw_path": "INSURE/financials/2567/H1/source.zip",
+      "sha256": "090983c8d747c4d9afa7fbab2571f8f3af3995018e9d25ac4b8244c1cb0acf27",
+      "ingested_at": "2026-04-23T20:00:10+00:00",
+      "shareholder_profit": -59.413085
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434557221",
+      "raw_path": "INSURE/financials/2567/Q1/source.zip",
+      "sha256": "45176c4231d690175f067fc0252d7763868a82d0b94185ddf617195bc155234a",
+      "ingested_at": "2026-04-23T20:00:15+00:00",
+      "shareholder_profit": 120.884144
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-11",
+      "news_id": "17628159945451",
+      "raw_path": "INSURE/financials/2568/9M/source.zip",
+      "sha256": "9e7b75d76d2a15699ec01e24d5dba50c6450ee93efdc06df0c265d7d5fc90ac9",
+      "ingested_at": "2026-04-23T19:59:48+00:00",
+      "shareholder_profit": 98.939
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-24",
+      "news_id": "17718892153791",
+      "raw_path": "INSURE/financials/2568/FY/source.zip",
+      "sha256": "c8a7fd60bde6d04f648b56016212bb19d03b1704f6a404a52c0c49b261b2e0af",
+      "ingested_at": "2026-04-23T19:59:43+00:00",
+      "shareholder_profit": 22.261
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361030731",
+      "raw_path": "INSURE/financials/2568/H1/source.zip",
+      "sha256": "ae7f6d3e7be414f20d21ea18ee034dd250d75a31f5c1d92ff34f3eb2b437447e",
+      "ingested_at": "2026-04-23T19:59:52+00:00",
+      "shareholder_profit": 35.524
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903578841",
+      "raw_path": "INSURE/financials/2568/Q1/source.zip",
+      "sha256": "eea759ed4d6a81c85b6df1a3ecc3c5aaaf0bd7e3dd9733616312f506daded85f",
+      "ingested_at": "2026-04-23T19:59:57+00:00",
+      "shareholder_profit": -127.051
+    }
+  ]
 }

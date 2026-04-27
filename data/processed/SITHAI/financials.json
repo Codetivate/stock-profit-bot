@@ -4,22 +4,55 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": "2022-11-07",
+  "updated_at": "2026-02-26",
   "quarterly_history": {
     "2564": {
       "Q1": null,
-      "Q2": null,
-      "Q3": null,
-      "Q4": null
+      "Q2": 32.176,
+      "Q3": 25.464,
+      "Q4": 60.80485100000001,
+      "FullYear": 181.185851
     },
     "2565": {
       "Q1": 70.347,
       "Q2": 102.949,
       "Q3": 119.77,
-      "Q4": null
+      "Q4": 56.96017700000003,
+      "FullYear": 350.026177
+    },
+    "2566": {
+      "Q1": 82.029,
+      "Q2": 90.151,
+      "Q3": 94.65,
+      "Q4": 105.59388499999997,
+      "FullYear": 372.423885
+    },
+    "2567": {
+      "Q1": 119.438,
+      "Q2": 96.958,
+      "Q3": 52.727,
+      "Q4": 15.851566999999996,
+      "FullYear": 284.974567
+    },
+    "2568": {
+      "Q1": 60.709,
+      "Q2": 37.679,
+      "Q3": 48.439,
+      "Q4": 66.05845300000001,
+      "FullYear": 212.885453
     }
   },
   "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-11",
+      "news_id": "2021121683",
+      "raw_path": "SITHAI/financials/2564/9M/source.zip",
+      "sha256": "733299ca3ab45851bb29db261637ea0e8607d4ac5832669a8ffd801637f09ddd",
+      "ingested_at": "2026-04-24T02:49:29+00:00",
+      "shareholder_profit": 25.464
+    },
     {
       "year": 2564,
       "period": "FY",
@@ -31,6 +64,26 @@
       "shareholder_profit": 181.185851
     },
     {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-11",
+      "news_id": "2021087528",
+      "raw_path": "SITHAI/financials/2564/H1/source.zip",
+      "sha256": "908f6a3d62d01d7a97a3c596c057681a7b0927be100990c107123da88d0277af",
+      "ingested_at": "2026-04-24T02:49:34+00:00",
+      "shareholder_profit": 32.176
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-13",
+      "news_id": "2021056471",
+      "raw_path": "SITHAI/financials/2564/Q1/source.zip",
+      "sha256": "50740ad806b0259b41d7df411f65647be960ae2145f71ece26623185d1d82590",
+      "ingested_at": "2026-04-24T02:49:39+00:00",
+      "shareholder_profit": -91.830255
+    },
+    {
       "year": 2565,
       "period": "9M",
       "filing_date": "2022-11-07",
@@ -39,6 +92,16 @@
       "sha256": "e51c10fa56a9f3ef25d8435d57fc58af1a36f8fa3d8b0ad17624ed56dc35bbb2",
       "ingested_at": "2026-04-24T02:49:10+00:00",
       "shareholder_profit": 119.77
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-27",
+      "news_id": "2023023873",
+      "raw_path": "SITHAI/financials/2565/FY/source.zip",
+      "sha256": "bb5c06c6d7d0cac12c133db602cbedea1ebaac2b9a898893c8f87229d5988a1e",
+      "ingested_at": "2026-04-24T02:49:05+00:00",
+      "shareholder_profit": 350.026177
     },
     {
       "year": 2565,
@@ -59,6 +122,126 @@
       "sha256": "48e43a5e5146ca609f450395d2a2a895e11599781996a487b3accf5035f3869f",
       "ingested_at": "2026-04-24T02:49:19+00:00",
       "shareholder_profit": 70.347
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-08",
+      "news_id": "16993998065241",
+      "raw_path": "SITHAI/financials/2566/9M/source.zip",
+      "sha256": "1bb7c96b4ae7ecbba52c314749969ed7900cc3edd67b9c1237ed378d05fff654",
+      "ingested_at": "2026-04-24T02:48:50+00:00",
+      "shareholder_profit": 94.65
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-22",
+      "news_id": "17085582100021",
+      "raw_path": "SITHAI/financials/2566/FY/source.zip",
+      "sha256": "7209e64facea4f861a8f66ce926559ce03340161c98877ba7753bf713d4df646",
+      "ingested_at": "2026-04-24T02:48:46+00:00",
+      "shareholder_profit": 372.423885
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-10",
+      "news_id": "16916230301711",
+      "raw_path": "SITHAI/financials/2566/H1/source.zip",
+      "sha256": "587266b317e4c1252141d0934283c74983a1e3c3980c6ee1296d63664599c435",
+      "ingested_at": "2026-04-24T02:48:55+00:00",
+      "shareholder_profit": 90.151
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-12",
+      "news_id": "16838458839841",
+      "raw_path": "SITHAI/financials/2566/Q1/source.zip",
+      "sha256": "6fe5e8c51e9f8374bb34e1f9e76b8a694ce96b8a3cb3c0beda692eb23f05acb9",
+      "ingested_at": "2026-04-24T02:49:00+00:00",
+      "shareholder_profit": 82.029
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-07",
+      "news_id": "17309360553821",
+      "raw_path": "SITHAI/financials/2567/9M/source.zip",
+      "sha256": "f5edbad13ce5726c447cf9d6c86e245d84452850067e61fc79a0dd4a438a6f3b",
+      "ingested_at": "2026-04-24T02:48:31+00:00",
+      "shareholder_profit": 52.727
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-24",
+      "news_id": "17403534223511",
+      "raw_path": "SITHAI/financials/2567/FY/source.zip",
+      "sha256": "09a7763f0737472523412de15a1ec52107887d35872c86c269aaf74d8ee0bff2",
+      "ingested_at": "2026-04-24T02:48:26+00:00",
+      "shareholder_profit": 284.974567
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-08",
+      "news_id": "17230734202811",
+      "raw_path": "SITHAI/financials/2567/H1/source.zip",
+      "sha256": "0b3f1705855783e68a12e8af9cde1806ee1f4f8622a4cf82ac9cf4913d43ce36",
+      "ingested_at": "2026-04-24T02:48:35+00:00",
+      "shareholder_profit": 96.958
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-09",
+      "news_id": "17152110340131",
+      "raw_path": "SITHAI/financials/2567/Q1/source.zip",
+      "sha256": "c2daeeff3ddfa52757b69c56109df8e4686e42b964fe5bdf109c14b4230588da",
+      "ingested_at": "2026-04-24T02:48:41+00:00",
+      "shareholder_profit": 119.438
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-11",
+      "news_id": "17628159909501",
+      "raw_path": "SITHAI/financials/2568/9M/source.zip",
+      "sha256": "73caca4ddb01b204d7413716d5744ea9d9f0ef14059c038650e63388b12c236e",
+      "ingested_at": "2026-04-24T02:48:12+00:00",
+      "shareholder_profit": 48.439
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-26",
+      "news_id": "17720575316201",
+      "raw_path": "SITHAI/financials/2568/FY/source.zip",
+      "sha256": "5ab9e8f80603ee9bbcea7608fba836df0417ddcea829a7e20be74f56699b339c",
+      "ingested_at": "2026-04-24T02:48:07+00:00",
+      "shareholder_profit": 212.885453
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361034331",
+      "raw_path": "SITHAI/financials/2568/H1/source.zip",
+      "sha256": "fd94553498d7d94b2fedb9b4ea259a1ef10f1161f767d07b38ec0169c54ba5f3",
+      "ingested_at": "2026-04-24T02:48:16+00:00",
+      "shareholder_profit": 37.679
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-08",
+      "news_id": "17466601043481",
+      "raw_path": "SITHAI/financials/2568/Q1/source.zip",
+      "sha256": "0cebe34574434ba944810f3639a3eac985f5205be98961eb2067af5cd54b1326",
+      "ingested_at": "2026-04-24T02:48:21+00:00",
+      "shareholder_profit": 60.709
     }
   ]
 }

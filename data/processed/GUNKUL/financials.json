@@ -4,7 +4,244 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-03-02",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 608.59,
+      "Q2": 523.725,
+      "Q3": 589.171,
+      "Q4": 507.78427399999987,
+      "FullYear": 2229.270274
+    },
+    "2565": {
+      "Q1": 503.347,
+      "Q2": 778.332,
+      "Q3": 1539.45,
+      "Q4": 189.3902300000002,
+      "FullYear": 3010.51923
+    },
+    "2566": {
+      "Q1": 455.801,
+      "Q2": 451.714,
+      "Q3": 461.913,
+      "Q4": 105.040974,
+      "FullYear": 1474.468974
+    },
+    "2567": {
+      "Q1": 299.562,
+      "Q2": 461.869,
+      "Q3": 379.408,
+      "Q4": 519.9919409999998,
+      "FullYear": 1660.830941
+    },
+    "2568": {
+      "Q1": 366.965,
+      "Q2": 484.524,
+      "Q3": 457.121,
+      "Q4": 460.0991630000001,
+      "FullYear": 1768.709163
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-10",
+      "news_id": "2021120443",
+      "raw_path": "GUNKUL/financials/2564/9M/source.zip",
+      "sha256": "a448d857f347537c1eaf518a48b80a0a30194f42dd73b26d925d7b9ab1006137",
+      "ingested_at": "2026-04-23T19:21:34+00:00",
+      "shareholder_profit": 589.171
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-23",
+      "news_id": "2022020264",
+      "raw_path": "GUNKUL/financials/2564/FY/source.zip",
+      "sha256": "4bbf0a5acddde95d885a9dc2f06b7cef237a6d499ca06f09a030048fa9f9ac49",
+      "ingested_at": "2026-04-23T19:21:29+00:00",
+      "shareholder_profit": 2229.270274
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-11",
+      "news_id": "2021087223",
+      "raw_path": "GUNKUL/financials/2564/H1/source.zip",
+      "sha256": "dfa628f80db721d9c212c44cb516c12c9d15f456f2f6289172d66e7e44cf5044",
+      "ingested_at": "2026-04-23T19:21:38+00:00",
+      "shareholder_profit": 523.725
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-13",
+      "news_id": "2021056495",
+      "raw_path": "GUNKUL/financials/2564/Q1/source.zip",
+      "sha256": "a43657ecb803ef891b096d3cd0be537b8ddf58b09c3af9ab8de8e1b9e65f0983",
+      "ingested_at": "2026-04-23T19:21:43+00:00",
+      "shareholder_profit": 608.59
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-10",
+      "news_id": "2022131598",
+      "raw_path": "GUNKUL/financials/2565/9M/source.zip",
+      "sha256": "2573b6415855d57d95211528003e3407987a094e9c279823f9b948f8bf9d6c72",
+      "ingested_at": "2026-04-23T19:21:15+00:00",
+      "shareholder_profit": 1539.45
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-27",
+      "news_id": "2023024248",
+      "raw_path": "GUNKUL/financials/2565/FY/source.zip",
+      "sha256": "25fb4e71f5e13c70f130ebc03f5be9e9c1e0d196389bc13f7602afe3585a2146",
+      "ingested_at": "2026-04-23T19:21:11+00:00",
+      "shareholder_profit": 3010.51923
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-10",
+      "news_id": "2022092854",
+      "raw_path": "GUNKUL/financials/2565/H1/source.zip",
+      "sha256": "28b021a89242c7ac6495ce8d49d5dda277c24e3b02ac5b96c177c9ef9f1b06da",
+      "ingested_at": "2026-04-23T19:21:20+00:00",
+      "shareholder_profit": 778.332
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-11",
+      "news_id": "2022058137",
+      "raw_path": "GUNKUL/financials/2565/Q1/source.zip",
+      "sha256": "1fb915718a028da150b32fde0c23e52b1fee8b00ea2c10f51f18c121a0a40ded",
+      "ingested_at": "2026-04-23T19:21:25+00:00",
+      "shareholder_profit": 503.347
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-08",
+      "news_id": "16993998065251",
+      "raw_path": "GUNKUL/financials/2566/9M/source.zip",
+      "sha256": "8cb96e82eb82f6dd5d901f5693e7d0ac7c30db5c0ce9449fd35730545604ce31",
+      "ingested_at": "2026-04-23T19:20:57+00:00",
+      "shareholder_profit": 461.913
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-28",
+      "news_id": "17090750751511",
+      "raw_path": "GUNKUL/financials/2566/FY/source.zip",
+      "sha256": "55f1fc66e5ca06464543b43b2852de9816ac29c5eb585878684ddf5048042d8d",
+      "ingested_at": "2026-04-23T19:20:52+00:00",
+      "shareholder_profit": 1474.468974
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-11",
+      "news_id": "16917102147401",
+      "raw_path": "GUNKUL/financials/2566/H1/source.zip",
+      "sha256": "342e7660fde5d7017243b5d63811f50edff341dd727d8408a3dec55471e16d85",
+      "ingested_at": "2026-04-23T19:21:02+00:00",
+      "shareholder_profit": 451.714
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-10",
+      "news_id": "16836750091871",
+      "raw_path": "GUNKUL/financials/2566/Q1/source.zip",
+      "sha256": "4808d63f49754bb2a00f5500df24bbad22e9cdba987b4ebf7d7420a981f4684f",
+      "ingested_at": "2026-04-23T19:21:06+00:00",
+      "shareholder_profit": 455.801
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-13",
+      "news_id": "17314477471431",
+      "raw_path": "GUNKUL/financials/2567/9M/source.zip",
+      "sha256": "23bbcaf41cb1a18dc8fa2d6cfa87f7f682a13db5ad68727ef30e84f5a196573d",
+      "ingested_at": "2026-04-23T19:20:39+00:00",
+      "shareholder_profit": 379.408
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-27",
+      "news_id": "17406066367071",
+      "raw_path": "GUNKUL/financials/2567/FY/source.zip",
+      "sha256": "4d2316ad69bd54f49b0013e85b371fe509a6c6b2d19345a7330198b75dd8e82d",
+      "ingested_at": "2026-04-23T19:20:35+00:00",
+      "shareholder_profit": 1660.830941
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-06",
+      "news_id": "17229013560941",
+      "raw_path": "GUNKUL/financials/2567/H1/source.zip",
+      "sha256": "6ccf5354da37d06f745e32dcdf769e51dec3781723a1e708881429df37194eeb",
+      "ingested_at": "2026-04-23T19:20:43+00:00",
+      "shareholder_profit": 461.869
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434537221",
+      "raw_path": "GUNKUL/financials/2567/Q1/source.zip",
+      "sha256": "962264d026f0b365f06da6d923c28e653b0bf3e0aad580c5d126c879466cfb76",
+      "ingested_at": "2026-04-23T19:20:48+00:00",
+      "shareholder_profit": 299.562
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-13",
+      "news_id": "17629880457481",
+      "raw_path": "GUNKUL/financials/2568/9M/source.zip",
+      "sha256": "156ab915df30a4d5c4470e1a5d2e6847883d9b18a6a70c423474d3675774cd3b",
+      "ingested_at": "2026-04-23T19:20:21+00:00",
+      "shareholder_profit": 457.121
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-03-02",
+      "news_id": "17724016868371",
+      "raw_path": "GUNKUL/financials/2568/FY/source.zip",
+      "sha256": "df0376e5acb178efba850c54153342c21b8004f44b09986a6a66667482656ef0",
+      "ingested_at": "2026-04-23T19:20:16+00:00",
+      "shareholder_profit": 1768.709163
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361196951",
+      "raw_path": "GUNKUL/financials/2568/H1/source.zip",
+      "sha256": "b41b428feca1f580c80d92057a58ca1c1f642dc054ad9d0eab5eb6f558e5d277",
+      "ingested_at": "2026-04-23T19:20:26+00:00",
+      "shareholder_profit": 484.524
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-14",
+      "news_id": "17471784613341",
+      "raw_path": "GUNKUL/financials/2568/Q1/source.zip",
+      "sha256": "24f10f14403d4761e17c533ef2d4dead97bfad3b9f79597c45f69cdce3222efd",
+      "ingested_at": "2026-04-23T19:20:30+00:00",
+      "shareholder_profit": 366.965
+    }
+  ]
 }

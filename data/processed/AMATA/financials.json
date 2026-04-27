@@ -4,7 +4,244 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-03-02",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 185.729,
+      "Q2": 247.074,
+      "Q3": 228.699,
+      "Q4": 740.7863389999998,
+      "FullYear": 1402.288339
+    },
+    "2565": {
+      "Q1": 553.466,
+      "Q2": 648.817,
+      "Q3": 353.445,
+      "Q4": 785.6269490000002,
+      "FullYear": 2341.354949
+    },
+    "2566": {
+      "Q1": 491.984,
+      "Q2": 313.305,
+      "Q3": 396.398,
+      "Q4": 683.074252,
+      "FullYear": 1884.761252
+    },
+    "2567": {
+      "Q1": 463.581,
+      "Q2": 231.166,
+      "Q3": 765.13,
+      "Q4": 1023.0217449999999,
+      "FullYear": 2482.898745
+    },
+    "2568": {
+      "Q1": 829.181,
+      "Q2": 139.867,
+      "Q3": 1138.536,
+      "Q4": 1041.0749009999995,
+      "FullYear": 3148.658901
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-12",
+      "news_id": "2021123855",
+      "raw_path": "AMATA/financials/2564/9M/source.zip",
+      "sha256": "820234baf3919d49f30b8cd416901da582faa1fc135d659f7fe3022a984d9a57",
+      "ingested_at": "2026-04-24T06:49:02+00:00",
+      "shareholder_profit": 228.699
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-28",
+      "news_id": "2022026446",
+      "raw_path": "AMATA/financials/2564/FY/source.zip",
+      "sha256": "be5916bd7dcd1e85ad6d46f8b1947a40a13a7de66984a365e864da3977721365",
+      "ingested_at": "2026-04-24T06:48:58+00:00",
+      "shareholder_profit": 1402.288339
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-13",
+      "news_id": "2021089758",
+      "raw_path": "AMATA/financials/2564/H1/source.zip",
+      "sha256": "1eacc683c55572ef3c557c21d5944afafdfcde772daa9e4b02b99ebea6a9b405",
+      "ingested_at": "2026-04-24T06:49:07+00:00",
+      "shareholder_profit": 247.074
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-14",
+      "news_id": "2021058394",
+      "raw_path": "AMATA/financials/2564/Q1/source.zip",
+      "sha256": "ddae5a1247947a567743b92ba4149b7d209a453117bbf6ab2d7c6ea3235d435b",
+      "ingested_at": "2026-04-24T06:49:11+00:00",
+      "shareholder_profit": 185.729
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-14",
+      "news_id": "2022136700",
+      "raw_path": "AMATA/financials/2565/9M/source.zip",
+      "sha256": "e4e308a1f907438e69ba2ea0c99262327b90b7639447fe4567d470bdc409d075",
+      "ingested_at": "2026-04-24T06:48:46+00:00",
+      "shareholder_profit": 353.445
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-28",
+      "news_id": "2023026602",
+      "raw_path": "AMATA/financials/2565/FY/source.zip",
+      "sha256": "603f508825dfe7324bdd5d6e67e0a08e3782444cfd27a0a08c6c32579bdbd573",
+      "ingested_at": "2026-04-24T06:48:42+00:00",
+      "shareholder_profit": 2341.354949
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-11",
+      "news_id": "2022095614",
+      "raw_path": "AMATA/financials/2565/H1/source.zip",
+      "sha256": "074325b9469d71953c36826f62a7a9acf15a38d864dae1d6dd1abc0866fc7b1f",
+      "ingested_at": "2026-04-24T06:48:50+00:00",
+      "shareholder_profit": 648.817
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-13",
+      "news_id": "2022062379",
+      "raw_path": "AMATA/financials/2565/Q1/source.zip",
+      "sha256": "1c3902da082225d151fb853abe9354f87db0534f26ad7f23846a053e689c2a17",
+      "ingested_at": "2026-04-24T06:48:54+00:00",
+      "shareholder_profit": 553.466
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-14",
+      "news_id": "16999132708811",
+      "raw_path": "AMATA/financials/2566/9M/source.zip",
+      "sha256": "bdfdddb37775fd0e47cc9005710e9de46106cc254ac3d565ddfec6fb9604042c",
+      "ingested_at": "2026-04-24T06:48:29+00:00",
+      "shareholder_profit": 396.398
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-29",
+      "news_id": "17091568986171",
+      "raw_path": "AMATA/financials/2566/FY/source.zip",
+      "sha256": "c3231a87f75e96e482e49d4a62d333a7bc7309c900c378574f06b3c9abd059e7",
+      "ingested_at": "2026-04-24T06:48:24+00:00",
+      "shareholder_profit": 1884.761252
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-11",
+      "news_id": "16917102161451",
+      "raw_path": "AMATA/financials/2566/H1/source.zip",
+      "sha256": "9514ed3dddafe966f31df24a002a3ca8d9946cafdcc327c2decfb36c6dd986d0",
+      "ingested_at": "2026-04-24T06:48:33+00:00",
+      "shareholder_profit": 313.305
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-15",
+      "news_id": "16841054012341",
+      "raw_path": "AMATA/financials/2566/Q1/source.zip",
+      "sha256": "e1b1e5756ba7d2cc7583c7aacafc4b97a2b26b8fe07da40ddfc210cf77fd5dda",
+      "ingested_at": "2026-04-24T06:48:37+00:00",
+      "shareholder_profit": 491.984
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361309641",
+      "raw_path": "AMATA/financials/2567/9M/source.zip",
+      "sha256": "1a414d5d9ad55e5bef37a437e0d9550ca59edca3935cbd74f641d647bbef9a27",
+      "ingested_at": "2026-04-24T06:48:11+00:00",
+      "shareholder_profit": 765.13
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-27",
+      "news_id": "17406066482151",
+      "raw_path": "AMATA/financials/2567/FY/source.zip",
+      "sha256": "8eed831b5faafbb7f3f6cfdb8d44e8587b8ec32c059ec94483a6b9d53920fd30",
+      "ingested_at": "2026-04-24T06:48:07+00:00",
+      "shareholder_profit": 2482.898745
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990221581",
+      "raw_path": "AMATA/financials/2567/H1/source.zip",
+      "sha256": "2c7e30b2153e1e846f4461ebe2689ce142c376247ea54fe7c1584518f2844fc2",
+      "ingested_at": "2026-04-24T06:48:16+00:00",
+      "shareholder_profit": 231.166
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434583751",
+      "raw_path": "AMATA/financials/2567/Q1/source.zip",
+      "sha256": "99066a83718b7f7d4241c61e04691e47935a08a12e9dc3ba46e5bb620f9f0387",
+      "ingested_at": "2026-04-24T06:48:20+00:00",
+      "shareholder_profit": 463.581
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-11",
+      "news_id": "17628159934061",
+      "raw_path": "AMATA/financials/2568/9M/source.zip",
+      "sha256": "23aeb7cfcb7f05734fee106274bdeb65c0dc1100292d04bd569a55b592899de7",
+      "ingested_at": "2026-04-24T06:47:55+00:00",
+      "shareholder_profit": 1138.536
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-03-02",
+      "news_id": "17724016992601",
+      "raw_path": "AMATA/financials/2568/FY/source.zip",
+      "sha256": "e3113f26013f9218d5444f07a722804ddb32b891206c6a8e59b7cfe05e0d9d06",
+      "ingested_at": "2026-04-24T06:47:51+00:00",
+      "shareholder_profit": 3148.658901
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361029501",
+      "raw_path": "AMATA/financials/2568/H1/source.zip",
+      "sha256": "637376f31cb0dff5febd10eca8190f4abfc48b7541458e2eb1ef76ac010eb316",
+      "ingested_at": "2026-04-24T06:47:59+00:00",
+      "shareholder_profit": 139.867
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903585351",
+      "raw_path": "AMATA/financials/2568/Q1/source.zip",
+      "sha256": "a8afc5e41ddec1e72f7287862e9e19ae4bce6e285e99cb8dd6abe13aedf3ec15",
+      "ingested_at": "2026-04-24T06:48:03+00:00",
+      "shareholder_profit": 829.181
+    }
+  ]
 }

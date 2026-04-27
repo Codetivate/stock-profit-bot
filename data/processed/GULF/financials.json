@@ -4,7 +4,46 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-17",
+  "quarterly_history": {
+    "2568": {
+      "Q1": null,
+      "Q2": 63871.479,
+      "Q3": 7274.297,
+      "Q4": 72723.47099999999,
+      "FullYear": 79997.768
+    }
+  },
+  "sources": [
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-06",
+      "news_id": "17623828448121",
+      "raw_path": "GULF/financials/2568/9M/source.zip",
+      "sha256": "4284bdaaef1b2e25af43b53de75b3073bf5c9598ce5d214ea4f300bbeec28dda",
+      "ingested_at": "2026-04-23T19:19:57+00:00",
+      "shareholder_profit": 7274.297
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-17",
+      "news_id": "17712782979621",
+      "raw_path": "GULF/financials/2568/FY/source.zip",
+      "sha256": "2cec638ec8bbf9dc4039a6af2105b2eb03bb24dbfd2101f3c0e8f6011b576774",
+      "ingested_at": "2026-04-23T19:19:53+00:00",
+      "shareholder_profit": 79997.768
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-08",
+      "news_id": "17546095875481",
+      "raw_path": "GULF/financials/2568/H1/source.zip",
+      "sha256": "c41425f2cae88805f5cefee81d0e66e47d1d6c0cf4ae1dee20eba033daf7d506",
+      "ingested_at": "2026-04-23T19:20:01+00:00",
+      "shareholder_profit": 63871.479
+    }
+  ]
 }

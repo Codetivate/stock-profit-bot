@@ -4,16 +4,85 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": "2022-11-11",
+  "updated_at": "2026-02-20",
   "quarterly_history": {
+    "2564": {
+      "Q1": 41.328,
+      "Q2": 165.852,
+      "Q3": 100.937,
+      "Q4": 120.48523499999997,
+      "FullYear": 428.602235
+    },
     "2565": {
       "Q1": 4.396,
-      "Q2": null,
+      "Q2": 85.423,
       "Q3": 52.103,
-      "Q4": null
+      "Q4": 137.89630799999998,
+      "FullYear": 279.818308
+    },
+    "2566": {
+      "Q1": 231.498,
+      "Q2": 67.867,
+      "Q3": -29.063,
+      "Q4": -24.55665500000001,
+      "FullYear": 245.745345
+    },
+    "2567": {
+      "Q1": -67.146,
+      "Q2": -34.266,
+      "Q3": 97.795,
+      "Q4": 201.67483900000002,
+      "FullYear": 198.057839
+    },
+    "2568": {
+      "Q1": 116.0,
+      "Q2": 92.629,
+      "Q3": 29.172,
+      "Q4": 26.07700700000002,
+      "FullYear": 263.878007
     }
   },
   "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-11",
+      "news_id": "2021122122",
+      "raw_path": "TIPCO/financials/2564/9M/source.zip",
+      "sha256": "ad3288bd5f7b6016c9affb47d94129e1d291be508df01e2aaa3c67d0d272146e",
+      "ingested_at": "2026-04-24T05:27:18+00:00",
+      "shareholder_profit": 100.937
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-18",
+      "news_id": "2022017602",
+      "raw_path": "TIPCO/financials/2564/FY/source.zip",
+      "sha256": "bec9f773771f9f989978f6e5d70a8aae7e1f93e89c1f7545b290cb431a0d97ca",
+      "ingested_at": "2026-04-24T05:27:13+00:00",
+      "shareholder_profit": 428.602235
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-13",
+      "news_id": "2021090587",
+      "raw_path": "TIPCO/financials/2564/H1/source.zip",
+      "sha256": "9e3ac2f38d4aba80ed49993dc20d5fdaa2168f97be8a8f92d82462620fa343ee",
+      "ingested_at": "2026-04-24T05:27:23+00:00",
+      "shareholder_profit": 165.852
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-13",
+      "news_id": "2021056882",
+      "raw_path": "TIPCO/financials/2564/Q1/source.zip",
+      "sha256": "67c480a10053edafdbf5d8905356cc3ecdbb5aaa22fc37089080ca6da2c7cb15",
+      "ingested_at": "2026-04-24T05:27:29+00:00",
+      "shareholder_profit": 41.328
+    },
     {
       "year": 2565,
       "period": "9M",
@@ -26,6 +95,26 @@
     },
     {
       "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-20",
+      "news_id": "2023017904",
+      "raw_path": "TIPCO/financials/2565/FY/source.zip",
+      "sha256": "a7b9639e7291236f99197622a79c6e5ccd921f03ec4cc1838708f81c44d29f37",
+      "ingested_at": "2026-04-24T05:26:54+00:00",
+      "shareholder_profit": 279.818308
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-11",
+      "news_id": "2022096055",
+      "raw_path": "TIPCO/financials/2565/H1/source.zip",
+      "sha256": "5ada20849efd6e27574e8918aca7cd52ff3adf737b4e85dac55e4a97620226f1",
+      "ingested_at": "2026-04-24T05:27:04+00:00",
+      "shareholder_profit": 85.423
+    },
+    {
+      "year": 2565,
       "period": "Q1",
       "filing_date": "2022-05-13",
       "news_id": "2022062714",
@@ -33,6 +122,126 @@
       "sha256": "a5472f491c52e07b82de60b1a6256c05f26461248e141fe4a3ba77f249f7bda9",
       "ingested_at": "2026-04-24T05:27:09+00:00",
       "shareholder_profit": 4.396
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-14",
+      "news_id": "16999132728541",
+      "raw_path": "TIPCO/financials/2566/9M/source.zip",
+      "sha256": "30da10e16122c855103a28e80a4d98d48958065411f66f650ac2c9fdaf92af76",
+      "ingested_at": "2026-04-24T05:26:40+00:00",
+      "shareholder_profit": -29.063
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-19",
+      "news_id": "17082990092991",
+      "raw_path": "TIPCO/financials/2566/FY/source.zip",
+      "sha256": "d498f84557d2be08eaaee78ba22f53528b126168d439691778b2dc4cd887382d",
+      "ingested_at": "2026-04-24T05:26:35+00:00",
+      "shareholder_profit": 245.745345
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-11",
+      "news_id": "16917102145621",
+      "raw_path": "TIPCO/financials/2566/H1/source.zip",
+      "sha256": "4b7ad430d9ffb4a867ec52572ee883e36864dbb6c3569ed4db3c00211378fea8",
+      "ingested_at": "2026-04-24T05:26:44+00:00",
+      "shareholder_profit": 67.867
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-12",
+      "news_id": "16838458851191",
+      "raw_path": "TIPCO/financials/2566/Q1/source.zip",
+      "sha256": "ea60a0e0d74e2bef94d72a502f4a51d99c4ee5d51c091a022b78f7600721ae42",
+      "ingested_at": "2026-04-24T05:26:49+00:00",
+      "shareholder_profit": 231.498
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-13",
+      "news_id": "17314477510491",
+      "raw_path": "TIPCO/financials/2567/9M/source.zip",
+      "sha256": "d1d54f899dd41569d1f7b3022c151302adfff97f69b8afe00222a361cfea301f",
+      "ingested_at": "2026-04-24T05:26:20+00:00",
+      "shareholder_profit": 97.795
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-18",
+      "news_id": "17398358024481",
+      "raw_path": "TIPCO/financials/2567/FY/source.zip",
+      "sha256": "114947612fcecff560325c500fbffe1973031cf798a3e25cfb4d14a6b886945d",
+      "ingested_at": "2026-04-24T05:26:15+00:00",
+      "shareholder_profit": 198.057839
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-14",
+      "news_id": "17235858035721",
+      "raw_path": "TIPCO/financials/2567/H1/source.zip",
+      "sha256": "5f9390d1ef34f5f1ee3d5b2f9477e9f6f4b647d823e751c17b88198a45bbe1e9",
+      "ingested_at": "2026-04-24T05:26:25+00:00",
+      "shareholder_profit": -34.266
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434571131",
+      "raw_path": "TIPCO/financials/2567/Q1/source.zip",
+      "sha256": "ef0ea0b9f9f5750ba819d6743508611bd3727d4c4abae9fcc35f475d32ddc9c9",
+      "ingested_at": "2026-04-24T05:26:30+00:00",
+      "shareholder_profit": -67.146
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-11",
+      "news_id": "17628159907871",
+      "raw_path": "TIPCO/financials/2568/9M/source.zip",
+      "sha256": "56a15836cb846c47dc83d790aa3f12c44cf6ec103dfbe9b8b20a9495836e2b69",
+      "ingested_at": "2026-04-24T05:26:00+00:00",
+      "shareholder_profit": 29.172
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-20",
+      "news_id": "17715446427591",
+      "raw_path": "TIPCO/financials/2568/FY/source.zip",
+      "sha256": "01a452d8447aac92467f0b85f39614e02f00e5044b486fb3a7f1d8a7834ba35a",
+      "ingested_at": "2026-04-24T05:25:55+00:00",
+      "shareholder_profit": 263.878007
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229897671",
+      "raw_path": "TIPCO/financials/2568/H1/source.zip",
+      "sha256": "389f28e79e2fbe48a49b6fcc44524cb8ebe6dd1134597fcb65d0b08daf34233c",
+      "ingested_at": "2026-04-24T05:26:05+00:00",
+      "shareholder_profit": 92.629
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-14",
+      "news_id": "17471784604231",
+      "raw_path": "TIPCO/financials/2568/Q1/source.zip",
+      "sha256": "f2c34d6a4bef070e8c83412b22de3aeac5db8ca8979512b9121e990a64fd9718",
+      "ingested_at": "2026-04-24T05:26:10+00:00",
+      "shareholder_profit": 116.0
     }
   ]
 }

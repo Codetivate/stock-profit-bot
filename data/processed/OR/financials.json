@@ -6,32 +6,83 @@
   "company_name_th": null,
   "updated_at": "2026-02-10",
   "quarterly_history": {
+    "2564": {
+      "Q1": 4003.198309,
+      "Q2": 3224.942114,
+      "Q3": 1892.47826,
+      "Q4": 2353.4117540000007,
+      "FullYear": 11474.030437
+    },
     "2565": {
       "Q1": 3845.107427,
       "Q2": 6567.8116,
       "Q3": 700.98908,
-      "Q4": -743.504415
+      "Q4": -743.504415,
+      "FullYear": 10370.403692
     },
     "2566": {
       "Q1": 2975.007551,
       "Q2": 2756.465444,
       "Q3": 5169.660626,
-      "Q4": 192.93310400000064
+      "Q4": 192.93310400000064,
+      "FullYear": 11094.066725
     },
     "2567": {
       "Q1": 3723.203286,
       "Q2": 2536.484024,
       "Q3": -1608.745631,
-      "Q4": 2999.3704270000007
+      "Q4": 2999.3704270000007,
+      "FullYear": 7650.312106
     },
     "2568": {
       "Q1": 4379.483632,
       "Q2": 2231.799516,
       "Q3": 2614.259189,
-      "Q4": 2078.0262150000003
+      "Q4": 2078.0262150000003,
+      "FullYear": 11303.568552
     }
   },
   "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-09",
+      "news_id": "2021119664",
+      "raw_path": "OR/financials/2564/9M/source.zip",
+      "sha256": "b5893bf318f76102dc2f4931726c4608ba5002c16335d13112406b1b1cd6acc2",
+      "ingested_at": "2026-04-23T13:07:51+00:00",
+      "shareholder_profit": 1892.47826
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-15",
+      "news_id": "2022015768",
+      "raw_path": "OR/financials/2564/FY/source.zip",
+      "sha256": "c1d00559d6f4d69f44f4008cd33d89cd343a48cdbad6ca120029f4ba3ee5857b",
+      "ingested_at": "2026-04-23T13:07:46+00:00",
+      "shareholder_profit": 11474.030437
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-10",
+      "news_id": "2021086475",
+      "raw_path": "OR/financials/2564/H1/source.zip",
+      "sha256": "8850b4ece01ad19390dc4adba7162dd1c67aef04408585ef77674e67c65cd34f",
+      "ingested_at": "2026-04-23T13:07:56+00:00",
+      "shareholder_profit": 3224.942114
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-11",
+      "news_id": "2021053630",
+      "raw_path": "OR/financials/2564/Q1/source.zip",
+      "sha256": "eb53ae8debbc866623b761ce3f9655799684a89da12bd8b5a616ded7df372174",
+      "ingested_at": "2026-04-23T13:08:01+00:00",
+      "shareholder_profit": 4003.198309
+    },
     {
       "year": 2565,
       "period": "9M",

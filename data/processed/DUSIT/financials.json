@@ -4,7 +4,244 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-25",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 73.786,
+      "Q2": -375.562,
+      "Q3": -301.809,
+      "Q4": -341.41199999999986,
+      "FullYear": -944.997
+    },
+    "2565": {
+      "Q1": -128.665,
+      "Q2": -257.749,
+      "Q3": -161.23,
+      "Q4": 46.18199999999999,
+      "FullYear": -501.462
+    },
+    "2566": {
+      "Q1": 8.628,
+      "Q2": -185.949,
+      "Q3": -246.966,
+      "Q4": -145.53300000000007,
+      "FullYear": -569.82
+    },
+    "2567": {
+      "Q1": 122.117,
+      "Q2": -130.848,
+      "Q3": -538.078,
+      "Q4": 310.044,
+      "FullYear": -236.765
+    },
+    "2568": {
+      "Q1": 47.856,
+      "Q2": -290.72,
+      "Q3": -383.733,
+      "Q4": 173.28400000000005,
+      "FullYear": -453.313
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-15",
+      "news_id": "2021126238",
+      "raw_path": "DUSIT/financials/2564/9M/source.zip",
+      "sha256": "ee8d2af205d66afcc0a80fc65ee5dc08d203fa9fd5fd03cc22819c1d3ae5e34a",
+      "ingested_at": "2026-04-23T18:04:53+00:00",
+      "shareholder_profit": -301.809
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-25",
+      "news_id": "2022024673",
+      "raw_path": "DUSIT/financials/2564/FY/source.zip",
+      "sha256": "40a57c95009dc639dc9c33717572384210f3d548256bd40fb89ad80a692985d1",
+      "ingested_at": "2026-04-23T18:04:49+00:00",
+      "shareholder_profit": -944.997
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-09",
+      "news_id": "2021085443",
+      "raw_path": "DUSIT/financials/2564/H1/source.zip",
+      "sha256": "3b8a327c4c0f1901fbd09663e789312617fab79b7361f11f63d3f237774e0317",
+      "ingested_at": "2026-04-23T18:04:58+00:00",
+      "shareholder_profit": -375.562
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-17",
+      "news_id": "2021060318",
+      "raw_path": "DUSIT/financials/2564/Q1/source.zip",
+      "sha256": "5290712280861edd28d92cb06b3daed81ecff2784b2a08466944099dcc777003",
+      "ingested_at": "2026-04-23T18:05:03+00:00",
+      "shareholder_profit": 73.786
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-10",
+      "news_id": "2022132411",
+      "raw_path": "DUSIT/financials/2565/9M/source.zip",
+      "sha256": "e96d9cc558f82f98e7185fbeaba82fa74882938378797c899dca1aca155dd7e8",
+      "ingested_at": "2026-04-23T18:04:35+00:00",
+      "shareholder_profit": -161.23
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-27",
+      "news_id": "2023024856",
+      "raw_path": "DUSIT/financials/2565/FY/source.zip",
+      "sha256": "11d34320bc82537d53ed594cb79be677870f5e20178492af2165800e21ccf9f0",
+      "ingested_at": "2026-04-23T18:04:30+00:00",
+      "shareholder_profit": -501.462
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-15",
+      "news_id": "2022098307",
+      "raw_path": "DUSIT/financials/2565/H1/source.zip",
+      "sha256": "9b6658273afb497d76f13ad80df8985884076645d854d0163a9c4b1f530139a5",
+      "ingested_at": "2026-04-23T18:04:40+00:00",
+      "shareholder_profit": -257.749
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-13",
+      "news_id": "2022062519",
+      "raw_path": "DUSIT/financials/2565/Q1/source.zip",
+      "sha256": "20ceb211ed5e70fd906f26f3147c2229f749089b7bd0807460ba6c814b83cd23",
+      "ingested_at": "2026-04-23T18:04:44+00:00",
+      "shareholder_profit": -128.665
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-13",
+      "news_id": "16998304616631",
+      "raw_path": "DUSIT/financials/2566/9M/source.zip",
+      "sha256": "6966430b78ceffcc9c93aa1998becc033d1afd2029a8cd2147fcbc4a58a002e3",
+      "ingested_at": "2026-04-23T18:04:17+00:00",
+      "shareholder_profit": -246.966
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-28",
+      "news_id": "17090750790531",
+      "raw_path": "DUSIT/financials/2566/FY/source.zip",
+      "sha256": "6a8d5a265a8de2a1c00afd8d5daaf1ca862798923f91a241f333ab9962afb0c9",
+      "ingested_at": "2026-04-23T18:04:12+00:00",
+      "shareholder_profit": -569.82
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-15",
+      "news_id": "16920539403311",
+      "raw_path": "DUSIT/financials/2566/H1/source.zip",
+      "sha256": "6ba260cc95132ddcee9d29a90be92cf1f024c7f31dd9d92db916c383b7bc287f",
+      "ingested_at": "2026-04-23T18:04:21+00:00",
+      "shareholder_profit": -185.949
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-15",
+      "news_id": "16841054039031",
+      "raw_path": "DUSIT/financials/2566/Q1/source.zip",
+      "sha256": "ab83199fd5684b1fa35e420838340801b2aaec2dc0ad0ca97e66d10e23fc6fdd",
+      "ingested_at": "2026-04-23T18:04:26+00:00",
+      "shareholder_profit": 8.628
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-11",
+      "news_id": "17312815633201",
+      "raw_path": "DUSIT/financials/2567/9M/source.zip",
+      "sha256": "855cd66548c9bcf0d343c7816114aeb89314cac64ae9f39b370d8cd0a6e460d7",
+      "ingested_at": "2026-04-23T18:03:58+00:00",
+      "shareholder_profit": -538.078
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-25",
+      "news_id": "17404367251621",
+      "raw_path": "DUSIT/financials/2567/FY/source.zip",
+      "sha256": "2efb1e86069f14d60e2e29a5a9e06b1625f928dd01a95b80335fb6c5be1b1294",
+      "ingested_at": "2026-04-23T18:03:54+00:00",
+      "shareholder_profit": -236.765
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990226141",
+      "raw_path": "DUSIT/financials/2567/H1/source.zip",
+      "sha256": "ad1207152224ab544583e5db50f03d0b80091a1f8d000bc422b1a2c994778dbd",
+      "ingested_at": "2026-04-23T18:04:03+00:00",
+      "shareholder_profit": -130.848
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-13",
+      "news_id": "17155537995291",
+      "raw_path": "DUSIT/financials/2567/Q1/source.zip",
+      "sha256": "f6a692ab536bdb40657512c2add3ebbe7d87e729d4bcb26250abfbabc451a74b",
+      "ingested_at": "2026-04-23T18:04:07+00:00",
+      "shareholder_profit": 122.117
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-11",
+      "news_id": "17628159942491",
+      "raw_path": "DUSIT/financials/2568/9M/source.zip",
+      "sha256": "3b1f165d24e20ed42a48cb474c2eeb882373fd95993e846a8ff1a60953c75eab",
+      "ingested_at": "2026-04-23T18:03:36+00:00",
+      "shareholder_profit": -383.733
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-25",
+      "news_id": "17719707176921",
+      "raw_path": "DUSIT/financials/2568/FY/source.zip",
+      "sha256": "b7c993ffe4f6c3a2bd29121f3750d8800ee297acd701999781ef3997061605a1",
+      "ingested_at": "2026-04-23T18:03:32+00:00",
+      "shareholder_profit": -453.313
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229912581",
+      "raw_path": "DUSIT/financials/2568/H1/source.zip",
+      "sha256": "c6032ab0b182e6b91c630a523e3fb78bbd427c0972288b6fdc138b4304e1dee5",
+      "ingested_at": "2026-04-23T18:03:41+00:00",
+      "shareholder_profit": -290.72
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-15",
+      "news_id": "17472613200661",
+      "raw_path": "DUSIT/financials/2568/Q1/source.zip",
+      "sha256": "7fa094886011bd431cb5a53e99477ea34abf5697848707e26b2884590102dc5f",
+      "ingested_at": "2026-04-23T18:03:49+00:00",
+      "shareholder_profit": 47.856
+    }
+  ]
 }

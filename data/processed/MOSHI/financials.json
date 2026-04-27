@@ -4,7 +4,137 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2025-11-13",
+  "quarterly_history": {
+    "2565": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": null
+    },
+    "2566": {
+      "Q1": 85.806321,
+      "Q2": 82.817325,
+      "Q3": 81.432456,
+      "Q4": null,
+      "FullYear": null
+    },
+    "2567": {
+      "Q1": 125.383614,
+      "Q2": 81.211302,
+      "Q3": 108.144716,
+      "Q4": null,
+      "FullYear": null
+    },
+    "2568": {
+      "Q1": 156.015271,
+      "Q2": 134.403646,
+      "Q3": 137.228221,
+      "Q4": null,
+      "FullYear": null
+    }
+  },
+  "sources": [
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-12-21",
+      "news_id": "2022148281",
+      "raw_path": "MOSHI/financials/2565/9M/source.zip",
+      "sha256": "cba7c13018a2cd68579c85aa77ccd4e750182fef3c0da2b696ae1f61486ebc06",
+      "ingested_at": "2026-04-23T22:31:13+00:00",
+      "shareholder_profit": 134.629836
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-10",
+      "news_id": "16995730755491",
+      "raw_path": "MOSHI/financials/2566/9M/source.zip",
+      "sha256": "af125d99619739e0b183f6c0c3c2acc90a7b337da516e4973f01e4c37be0f500",
+      "ingested_at": "2026-04-23T22:30:51+00:00",
+      "shareholder_profit": 81.432456
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-11",
+      "news_id": "16917102060531",
+      "raw_path": "MOSHI/financials/2566/H1/source.zip",
+      "sha256": "6ec1774d62b407c3d19c60127028bce97acb136f4af8cc0786507b91d2fda240",
+      "ingested_at": "2026-04-23T22:30:55+00:00",
+      "shareholder_profit": 82.817325
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-12",
+      "news_id": "16838458774301",
+      "raw_path": "MOSHI/financials/2566/Q1/source.zip",
+      "sha256": "fd7d98f8f6d703928f080a7ec56e887426b68d5edea2a5f3ca013150d2fe01ca",
+      "ingested_at": "2026-04-23T22:31:00+00:00",
+      "shareholder_profit": 85.806321
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-11",
+      "news_id": "17312815634351",
+      "raw_path": "MOSHI/financials/2567/9M/source.zip",
+      "sha256": "70249de8f549aa7cef92d6ed8535bf2aa4d7d9aa7bc5eb5db55339d094d7a94a",
+      "ingested_at": "2026-04-23T22:30:32+00:00",
+      "shareholder_profit": 108.144716
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-09",
+      "news_id": "17231594058781",
+      "raw_path": "MOSHI/financials/2567/H1/source.zip",
+      "sha256": "10c25345d46b2796cd22ebdadf87755e78789c792064d7be762d89d795fb26a0",
+      "ingested_at": "2026-04-23T22:30:37+00:00",
+      "shareholder_profit": 81.211302
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-13",
+      "news_id": "17155537949601",
+      "raw_path": "MOSHI/financials/2567/Q1/source.zip",
+      "sha256": "778a1c162e691418abeef804a2e2cfe811028c13387aa0e10e8eb19fba89f552",
+      "ingested_at": "2026-04-23T22:30:41+00:00",
+      "shareholder_profit": 125.383614
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-13",
+      "news_id": "17629880486111",
+      "raw_path": "MOSHI/financials/2568/9M/source.zip",
+      "sha256": "79568d65887b6136abb1d232ec9636ee71996f9e56a4cac937b2ce0c5d0d80d7",
+      "ingested_at": "2026-04-23T22:30:14+00:00",
+      "shareholder_profit": 137.228221
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361032541",
+      "raw_path": "MOSHI/financials/2568/H1/source.zip",
+      "sha256": "f883c75dfea9a604976290459a76d7f7ac2b068b58e01b2c1dedfcb70623a13a",
+      "ingested_at": "2026-04-23T22:30:19+00:00",
+      "shareholder_profit": 134.403646
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-09",
+      "news_id": "17467412668621",
+      "raw_path": "MOSHI/financials/2568/Q1/source.zip",
+      "sha256": "074a0642828036b347e42465c018b51362eab859fb9a8428a8dea0fe479b797b",
+      "ingested_at": "2026-04-23T22:30:23+00:00",
+      "shareholder_profit": 156.015271
+    }
+  ]
 }

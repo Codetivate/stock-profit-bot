@@ -4,7 +4,244 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-27",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 585.461,
+      "Q2": 1510.407,
+      "Q3": 1073.796,
+      "Q4": 934.1759999999999,
+      "FullYear": 4103.84
+    },
+    "2565": {
+      "Q1": 4115.806,
+      "Q2": -776.884,
+      "Q3": -392.47,
+      "Q4": -263.3539999999996,
+      "FullYear": 2683.098
+    },
+    "2566": {
+      "Q1": 2022.195,
+      "Q2": 1459.868,
+      "Q3": 2372.59,
+      "Q4": -14238.727,
+      "FullYear": -8384.074
+    },
+    "2567": {
+      "Q1": 1662.402,
+      "Q2": 1393.139,
+      "Q3": 2462.081,
+      "Q4": -106.14800000000014,
+      "FullYear": 5411.474
+    },
+    "2568": {
+      "Q1": 3576.716,
+      "Q2": 2157.287,
+      "Q3": -655.611,
+      "Q4": -351.0059999999993,
+      "FullYear": 4727.386
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-11",
+      "news_id": "2021121919",
+      "raw_path": "EGCO/financials/2564/9M/source.zip",
+      "sha256": "709489d9f2810be7177b0b3a3053b40b4e63aa20c27839e189fee78a6d4d849e",
+      "ingested_at": "2026-04-23T18:14:23+00:00",
+      "shareholder_profit": 1073.796
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-28",
+      "news_id": "2022026407",
+      "raw_path": "EGCO/financials/2564/FY/source.zip",
+      "sha256": "e9b50c9e2580ac222a75aa0aa3126e76ef4b85e3ee300e68d597e5366e85b738",
+      "ingested_at": "2026-04-23T18:14:19+00:00",
+      "shareholder_profit": 4103.84
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-11",
+      "news_id": "2021088160",
+      "raw_path": "EGCO/financials/2564/H1/source.zip",
+      "sha256": "e1f8ae420dd8d8f131add292d696a698315a1874f49a1f67c4b5e6b196b55ae4",
+      "ingested_at": "2026-04-23T18:14:27+00:00",
+      "shareholder_profit": 1510.407
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-11",
+      "news_id": "2021053742",
+      "raw_path": "EGCO/financials/2564/Q1/source.zip",
+      "sha256": "74e4ae58ecfcca04db0dcd08090346c88055366ec643eef1067ebc9ec7334961",
+      "ingested_at": "2026-04-23T18:14:31+00:00",
+      "shareholder_profit": 585.461
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-14",
+      "news_id": "2022135199",
+      "raw_path": "EGCO/financials/2565/9M/source.zip",
+      "sha256": "21073b9cfa06ff561004a3e58f04b032a0454e64f9cbf5d1382d9daa2e7795c7",
+      "ingested_at": "2026-04-23T18:14:07+00:00",
+      "shareholder_profit": -392.47
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-28",
+      "news_id": "2023026765",
+      "raw_path": "EGCO/financials/2565/FY/source.zip",
+      "sha256": "72ca3e9b7443918bd407e6c4d56e028f887262d15478538e607200c40eab261b",
+      "ingested_at": "2026-04-23T18:14:02+00:00",
+      "shareholder_profit": 2683.098
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-11",
+      "news_id": "2022096207",
+      "raw_path": "EGCO/financials/2565/H1/source.zip",
+      "sha256": "3d99c2ef1330fa48106a386a2df5a87e762df5c30efadb3edf7ee1264960656a",
+      "ingested_at": "2026-04-23T18:14:11+00:00",
+      "shareholder_profit": -776.884
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-11",
+      "news_id": "2022058366",
+      "raw_path": "EGCO/financials/2565/Q1/source.zip",
+      "sha256": "0871bc43baa6ef4ec2b5ce8a388bf04e8ff73c88aa852774e2940382a0645628",
+      "ingested_at": "2026-04-23T18:14:15+00:00",
+      "shareholder_profit": 4115.806
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-14",
+      "news_id": "16999132702541",
+      "raw_path": "EGCO/financials/2566/9M/source.zip",
+      "sha256": "2df8490c1c95c6983558ecb4644ec7d67f291f181976b3a54715058fbfd7421b",
+      "ingested_at": "2026-04-23T18:13:50+00:00",
+      "shareholder_profit": 2372.59
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-28",
+      "news_id": "17090750813361",
+      "raw_path": "EGCO/financials/2566/FY/source.zip",
+      "sha256": "40bb0979c6a6759696f7480253535aedf5b6379c7d14493267bd80172b2542e6",
+      "ingested_at": "2026-04-23T18:13:47+00:00",
+      "shareholder_profit": -8384.074
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-15",
+      "news_id": "16920539415701",
+      "raw_path": "EGCO/financials/2566/H1/source.zip",
+      "sha256": "cb00ba6207578a39a3cb67dd811faa38871f2def7dee01f0892df373a78fd441",
+      "ingested_at": "2026-04-23T18:13:55+00:00",
+      "shareholder_profit": 1459.868
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-15",
+      "news_id": "16841054054551",
+      "raw_path": "EGCO/financials/2566/Q1/source.zip",
+      "sha256": "307bf9e1e825d29bc0878e8eeb29157b549094f3dd114c7431f061e374ed5e7f",
+      "ingested_at": "2026-04-23T18:13:59+00:00",
+      "shareholder_profit": 2022.195
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-13",
+      "news_id": "17314477523241",
+      "raw_path": "EGCO/financials/2567/9M/source.zip",
+      "sha256": "f5c490937c5b716fd19582d5141ea8d9a271c1ed595a43c9ee5587c569c23743",
+      "ingested_at": "2026-04-23T18:13:35+00:00",
+      "shareholder_profit": 2462.081
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-28",
+      "news_id": "17406928520931",
+      "raw_path": "EGCO/financials/2567/FY/source.zip",
+      "sha256": "e88044bbb27310cb07dbbabc04928562716b2be8c25f129bc05b60a51b71ef6f",
+      "ingested_at": "2026-04-23T18:13:31+00:00",
+      "shareholder_profit": 5411.474
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-14",
+      "news_id": "17235858070411",
+      "raw_path": "EGCO/financials/2567/H1/source.zip",
+      "sha256": "c6250f945aae3c48ae35898c42228314eb20679732f8cb71e9d5546535b1321a",
+      "ingested_at": "2026-04-23T18:13:39+00:00",
+      "shareholder_profit": 1393.139
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434594881",
+      "raw_path": "EGCO/financials/2567/Q1/source.zip",
+      "sha256": "2e8b5724ad5fc9456c32859fccf9ec9be379a602434ef21837cdec0ef4930ead",
+      "ingested_at": "2026-04-23T18:13:43+00:00",
+      "shareholder_profit": 1662.402
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-14",
+      "news_id": "17630699631531",
+      "raw_path": "EGCO/financials/2568/9M/source.zip",
+      "sha256": "d904980ee88036034a5c44534b8f5906440743877f268245d0f355e40c11d3b6",
+      "ingested_at": "2026-04-23T18:13:19+00:00",
+      "shareholder_profit": -655.611
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-27",
+      "news_id": "17721443217071",
+      "raw_path": "EGCO/financials/2568/FY/source.zip",
+      "sha256": "46af9a1d8982cfadc69c8eee7abad2a4eaa19c453ecb43b77b4ce0629fc4f78c",
+      "ingested_at": "2026-04-23T18:13:15+00:00",
+      "shareholder_profit": 4727.386
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229922891",
+      "raw_path": "EGCO/financials/2568/H1/source.zip",
+      "sha256": "18807ea81c4bb819079bcc9d1dc859e4a21b5b661124226bb98394a53ec2e1cb",
+      "ingested_at": "2026-04-23T18:13:23+00:00",
+      "shareholder_profit": 2157.287
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-14",
+      "news_id": "17471784610611",
+      "raw_path": "EGCO/financials/2568/Q1/source.zip",
+      "sha256": "2fedebb2e69ec8c086e028b1d8195ad0b04011c3a6f4010b86af0e81e69823fe",
+      "ingested_at": "2026-04-23T18:13:27+00:00",
+      "shareholder_profit": 3576.716
+    }
+  ]
 }

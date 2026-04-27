@@ -4,7 +4,244 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-03-02",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 14.842,
+      "Q2": 11.912,
+      "Q3": -10.3,
+      "Q4": 5.103489,
+      "FullYear": 21.557489
+    },
+    "2565": {
+      "Q1": -10.268,
+      "Q2": 10.526,
+      "Q3": 4.748,
+      "Q4": 4.536822999999999,
+      "FullYear": 9.542823
+    },
+    "2566": {
+      "Q1": 4.258,
+      "Q2": -10.872,
+      "Q3": 9.822,
+      "Q4": 14.368442000000002,
+      "FullYear": 17.576442
+    },
+    "2567": {
+      "Q1": 6.411,
+      "Q2": 11.729,
+      "Q3": 13.971,
+      "Q4": 18.770332,
+      "FullYear": 50.881332
+    },
+    "2568": {
+      "Q1": 6.324,
+      "Q2": 12.125,
+      "Q3": 21.131,
+      "Q4": 3.514191000000004,
+      "FullYear": 43.094191
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-15",
+      "news_id": "2021125733",
+      "raw_path": "ASIMAR/financials/2564/9M/source.zip",
+      "sha256": "27f346ca031eb203c66afe87077897a363c549dfcb20a96eb9390ce75ae97882",
+      "ingested_at": "2026-04-24T07:08:47+00:00",
+      "shareholder_profit": -10.3
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-25",
+      "news_id": "2022023482",
+      "raw_path": "ASIMAR/financials/2564/FY/source.zip",
+      "sha256": "a03e1e73146f158b05e5efdf19d94c357a5914362c336da4197540ff1475b46e",
+      "ingested_at": "2026-04-24T07:08:42+00:00",
+      "shareholder_profit": 21.557489
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-16",
+      "news_id": "2021091357",
+      "raw_path": "ASIMAR/financials/2564/H1/source.zip",
+      "sha256": "fa60d8ff41f3f337b067fd9c09bd9b64371d049066c97ca9e829f51e53aac894",
+      "ingested_at": "2026-04-24T07:08:51+00:00",
+      "shareholder_profit": 11.912
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-17",
+      "news_id": "2021060249",
+      "raw_path": "ASIMAR/financials/2564/Q1/source.zip",
+      "sha256": "a9f4e002ae0cc8b0c628693fd458069b6b2e837e19ac54a24fff25700f0b9812",
+      "ingested_at": "2026-04-24T07:08:56+00:00",
+      "shareholder_profit": 14.842
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-14",
+      "news_id": "2022136030",
+      "raw_path": "ASIMAR/financials/2565/9M/source.zip",
+      "sha256": "026a6253e4727718bc0219380462e115d465fc499afa6a1ccd871847f2fc4d9c",
+      "ingested_at": "2026-04-24T07:08:29+00:00",
+      "shareholder_profit": 4.748
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-28",
+      "news_id": "2023025706",
+      "raw_path": "ASIMAR/financials/2565/FY/source.zip",
+      "sha256": "a5d300cb759c9ad82212345d694112f94ae40eee04d80ebbf913de56233cbf20",
+      "ingested_at": "2026-04-24T07:08:25+00:00",
+      "shareholder_profit": 9.542823
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-15",
+      "news_id": "2022097132",
+      "raw_path": "ASIMAR/financials/2565/H1/source.zip",
+      "sha256": "c887c9dab27222e8fe50bb8839e44cf4cb5584b65010bfc2825569a36c68ce75",
+      "ingested_at": "2026-04-24T07:08:33+00:00",
+      "shareholder_profit": 10.526
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-17",
+      "news_id": "2022063808",
+      "raw_path": "ASIMAR/financials/2565/Q1/source.zip",
+      "sha256": "10f81d71e80711d4a6f1d5871bdcd2d8d33747576a13586ff87d946497d4dad5",
+      "ingested_at": "2026-04-24T07:08:38+00:00",
+      "shareholder_profit": -10.268
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-14",
+      "news_id": "16999132638721",
+      "raw_path": "ASIMAR/financials/2566/9M/source.zip",
+      "sha256": "839479c2a8ff1a939a8f4a61917da3f479010c75387ca62552cbf2d6c4b9a616",
+      "ingested_at": "2026-04-24T07:08:11+00:00",
+      "shareholder_profit": 9.822
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-28",
+      "news_id": "17090750697661",
+      "raw_path": "ASIMAR/financials/2566/FY/source.zip",
+      "sha256": "12cdac77e70888dde8f84f98835dcb9349c4a9096bc59dd248d4c544128710d4",
+      "ingested_at": "2026-04-24T07:08:07+00:00",
+      "shareholder_profit": 17.576442
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-15",
+      "news_id": "16920539366711",
+      "raw_path": "ASIMAR/financials/2566/H1/source.zip",
+      "sha256": "5be7282475fe943175b54ab229f6f12c7ba73b4471b809961086d7f213499dcd",
+      "ingested_at": "2026-04-24T07:08:16+00:00",
+      "shareholder_profit": -10.872
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-15",
+      "news_id": "16841053972871",
+      "raw_path": "ASIMAR/financials/2566/Q1/source.zip",
+      "sha256": "2f9187d16e899cfeddd1e40bb07e071e948b25fcbc42277a69904cfaba4787d1",
+      "ingested_at": "2026-04-24T07:08:20+00:00",
+      "shareholder_profit": 4.258
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361227101",
+      "raw_path": "ASIMAR/financials/2567/9M/source.zip",
+      "sha256": "c36593e260044390db337e975b9b140cd996653d2f02998fe7c4ea6813bf6abd",
+      "ingested_at": "2026-04-24T07:07:53+00:00",
+      "shareholder_profit": 13.971
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-27",
+      "news_id": "17406066212371",
+      "raw_path": "ASIMAR/financials/2567/FY/source.zip",
+      "sha256": "1e785eaaabb2557d6e0f8cda2641d377d4d73af7679f57584c9028081874817b",
+      "ingested_at": "2026-04-24T07:07:49+00:00",
+      "shareholder_profit": 50.881332
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-14",
+      "news_id": "17235858003551",
+      "raw_path": "ASIMAR/financials/2567/H1/source.zip",
+      "sha256": "bca92558a2c1acc54711a6cbc54c4c4b291b5de94ac9ed5de7a3f001b1b612f0",
+      "ingested_at": "2026-04-24T07:07:58+00:00",
+      "shareholder_profit": 11.729
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-15",
+      "news_id": "17157257400931",
+      "raw_path": "ASIMAR/financials/2567/Q1/source.zip",
+      "sha256": "987f1c72fc8b58261707c54af1d8870b50acaee9bbb52b9226f9b962e2967d13",
+      "ingested_at": "2026-04-24T07:08:02+00:00",
+      "shareholder_profit": 6.411
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-13",
+      "news_id": "17629880488161",
+      "raw_path": "ASIMAR/financials/2568/9M/source.zip",
+      "sha256": "1fc6f5651a34af2cc362427fe3061d2af2c9f120c99430e602ad0981a9935c94",
+      "ingested_at": "2026-04-24T07:07:36+00:00",
+      "shareholder_profit": 21.131
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-03-02",
+      "news_id": "17724016881121",
+      "raw_path": "ASIMAR/financials/2568/FY/source.zip",
+      "sha256": "ca930029723003b1a75bec1cf071643ff40ed064b760db641ea3ca96e83c4bad",
+      "ingested_at": "2026-04-24T07:07:32+00:00",
+      "shareholder_profit": 43.094191
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361072771",
+      "raw_path": "ASIMAR/financials/2568/H1/source.zip",
+      "sha256": "840c8373e7b3faf990cabea3183bf20782960739f45267501dc1d72823947431",
+      "ingested_at": "2026-04-24T07:07:40+00:00",
+      "shareholder_profit": 12.125
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-15",
+      "news_id": "17472613164721",
+      "raw_path": "ASIMAR/financials/2568/Q1/source.zip",
+      "sha256": "dad0ae9b7a42bcd57fe0c627034985d90ef99ac2686e533b16181f4e8836b9ea",
+      "ingested_at": "2026-04-24T07:07:45+00:00",
+      "shareholder_profit": 6.324
+    }
+  ]
 }

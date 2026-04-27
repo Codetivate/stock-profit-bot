@@ -4,7 +4,244 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-26",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 50.736,
+      "Q2": 42.272,
+      "Q3": 106.478,
+      "Q4": 104.44500000000001,
+      "FullYear": 303.931
+    },
+    "2565": {
+      "Q1": 310.539,
+      "Q2": 371.807,
+      "Q3": 487.275,
+      "Q4": -7.255999999999972,
+      "FullYear": 1162.365
+    },
+    "2566": {
+      "Q1": 147.086,
+      "Q2": -12.915,
+      "Q3": 59.248,
+      "Q4": -33.44300000000001,
+      "FullYear": 159.976
+    },
+    "2567": {
+      "Q1": 43.509,
+      "Q2": 25.53,
+      "Q3": -23.839,
+      "Q4": -68.866,
+      "FullYear": -23.666
+    },
+    "2568": {
+      "Q1": -14.213,
+      "Q2": -28.55,
+      "Q3": 32.647,
+      "Q4": -51.336,
+      "FullYear": -61.452
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-10",
+      "news_id": "2021120828",
+      "raw_path": "BANPU/financials/2564/9M/source.zip",
+      "sha256": "465fba25b88470e6b4630efee9e35730501e19e574c1bd60419ae4cf60659095",
+      "ingested_at": "2026-04-24T07:24:02+00:00",
+      "shareholder_profit": 106.478
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-23",
+      "news_id": "2022020664",
+      "raw_path": "BANPU/financials/2564/FY/source.zip",
+      "sha256": "b4af7da15b39a3259a4990e9778024594fc2495e97d517d3ba68327b650efe9e",
+      "ingested_at": "2026-04-24T07:23:58+00:00",
+      "shareholder_profit": 303.931
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-09",
+      "news_id": "2021084839",
+      "raw_path": "BANPU/financials/2564/H1/source.zip",
+      "sha256": "aef715c649e98ee7f243b4382565d832f4a973a0b8853218ff47f73974180aa5",
+      "ingested_at": "2026-04-24T07:24:07+00:00",
+      "shareholder_profit": 42.272
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-10",
+      "news_id": "2021052618",
+      "raw_path": "BANPU/financials/2564/Q1/source.zip",
+      "sha256": "fc50c602cd249de0f6d024451fb867b14d03c50880eda53c8ba42f753a35aa36",
+      "ingested_at": "2026-04-24T07:24:11+00:00",
+      "shareholder_profit": 50.736
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-10",
+      "news_id": "2022132537",
+      "raw_path": "BANPU/financials/2565/9M/source.zip",
+      "sha256": "d6c0528b2cb364921491af18a1d8d366ec62da65cd7f453822c4fc231836f397",
+      "ingested_at": "2026-04-24T07:23:45+00:00",
+      "shareholder_profit": 487.275
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-22",
+      "news_id": "2023019838",
+      "raw_path": "BANPU/financials/2565/FY/source.zip",
+      "sha256": "0c6ce90939173ec2c432d2c1fe7979e4b8afcc28aa08d94af55bc41b66a80ea0",
+      "ingested_at": "2026-04-24T07:23:41+00:00",
+      "shareholder_profit": 1162.365
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-10",
+      "news_id": "2022093716",
+      "raw_path": "BANPU/financials/2565/H1/source.zip",
+      "sha256": "a02b21a03c28f73f8c20411f8ed1c628b08b5fe8dab524e41fc97a9059d7c3a4",
+      "ingested_at": "2026-04-24T07:23:50+00:00",
+      "shareholder_profit": 371.807
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-10",
+      "news_id": "2022057115",
+      "raw_path": "BANPU/financials/2565/Q1/source.zip",
+      "sha256": "cefce1feb9732172ec02176f1834da07d6688301d76bbf03e3ae62c510305bed",
+      "ingested_at": "2026-04-24T07:23:54+00:00",
+      "shareholder_profit": 310.539
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-10",
+      "news_id": "16995730788591",
+      "raw_path": "BANPU/financials/2566/9M/source.zip",
+      "sha256": "1f0e6c2d0a9c4f8ca4411c4d4bfc668669eea7fcae49db6aba18d0d55c5df703",
+      "ingested_at": "2026-04-24T07:23:28+00:00",
+      "shareholder_profit": 59.248
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-22",
+      "news_id": "17085582018601",
+      "raw_path": "BANPU/financials/2566/FY/source.zip",
+      "sha256": "c61e343f875d44289d5679be4512543b434ddeeafdcb17d25be39f9aad692b24",
+      "ingested_at": "2026-04-24T07:23:23+00:00",
+      "shareholder_profit": 159.976
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-10",
+      "news_id": "16916230333251",
+      "raw_path": "BANPU/financials/2566/H1/source.zip",
+      "sha256": "d559a83adece9dffd14658ce08fa8d3ba9e96228c10145df40b63721e5e07717",
+      "ingested_at": "2026-04-24T07:23:32+00:00",
+      "shareholder_profit": -12.915
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-10",
+      "news_id": "16836750120391",
+      "raw_path": "BANPU/financials/2566/Q1/source.zip",
+      "sha256": "d8da4f41b6c505ce1059c2e78e2d846cd5789e46f68d687a76e75cd313303d3c",
+      "ingested_at": "2026-04-24T07:23:37+00:00",
+      "shareholder_profit": 147.086
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-12",
+      "news_id": "17313658219431",
+      "raw_path": "BANPU/financials/2567/9M/source.zip",
+      "sha256": "78fcaef52da6cf944448d02425be2d9a7b337e170fbb610b6a95661b326bfa3a",
+      "ingested_at": "2026-04-24T07:23:10+00:00",
+      "shareholder_profit": -23.839
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-27",
+      "news_id": "17406066105851",
+      "raw_path": "BANPU/financials/2567/FY/source.zip",
+      "sha256": "8942b7f546ab058da000486a6d3854ee2c8a7fb7f255fd5752d4f14559c65fc3",
+      "ingested_at": "2026-04-24T07:23:06+00:00",
+      "shareholder_profit": -23.666
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990231821",
+      "raw_path": "BANPU/financials/2567/H1/source.zip",
+      "sha256": "139909ffbfcde1b8949b9e4e4fddf7dab126aa653b937f7edf1c72fa228101c1",
+      "ingested_at": "2026-04-24T07:23:14+00:00",
+      "shareholder_profit": 25.53
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-10",
+      "news_id": "17152924609451",
+      "raw_path": "BANPU/financials/2567/Q1/source.zip",
+      "sha256": "fe9790bc70079629f894a7ad4a6d5776ea16bf261ae52644a449fc4c69a91ae4",
+      "ingested_at": "2026-04-24T07:23:19+00:00",
+      "shareholder_profit": 43.509
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-10",
+      "news_id": "17627310454141",
+      "raw_path": "BANPU/financials/2568/9M/source.zip",
+      "sha256": "b9d009adb197635039ad7017cc038df7054e7664fecbff40e3463a24ff1e75a3",
+      "ingested_at": "2026-04-24T07:22:53+00:00",
+      "shareholder_profit": 32.647
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-26",
+      "news_id": "17720575033811",
+      "raw_path": "BANPU/financials/2568/FY/source.zip",
+      "sha256": "742fcc8991a4f8774cbf1d4e8f269d84330f269d3f00212f8427c1712b765a36",
+      "ingested_at": "2026-04-24T07:22:48+00:00",
+      "shareholder_profit": -61.452
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361029461",
+      "raw_path": "BANPU/financials/2568/H1/source.zip",
+      "sha256": "77727e6266938ac746ee93ff1389cb62cf053e58846dc762085d55a86f6a7cb7",
+      "ingested_at": "2026-04-24T07:22:57+00:00",
+      "shareholder_profit": -28.55
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-09",
+      "news_id": "17467412696741",
+      "raw_path": "BANPU/financials/2568/Q1/source.zip",
+      "sha256": "5a81ceb6f4e614f60f5aec68f5be389b8a5db81825a58c51ef07369fe80ac844",
+      "ingested_at": "2026-04-24T07:23:02+00:00",
+      "shareholder_profit": -14.213
+    }
+  ]
 }

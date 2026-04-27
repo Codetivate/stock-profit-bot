@@ -4,31 +4,42 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": "2024-08-14",
+  "updated_at": "2026-02-27",
   "quarterly_history": {
     "2564": {
       "Q1": 301.195,
       "Q2": 736.776,
       "Q3": 563.779,
-      "Q4": -56.4366389999999
+      "Q4": -56.4366389999999,
+      "FullYear": 1545.313361
     },
     "2565": {
       "Q1": 364.995,
       "Q2": 244.959,
       "Q3": 416.636,
-      "Q4": 1075.4814050000002
+      "Q4": 1075.4814050000002,
+      "FullYear": 2102.071405
     },
     "2566": {
       "Q1": 266.49,
       "Q2": 635.381,
       "Q3": 733.896,
-      "Q4": 124.80032100000005
+      "Q4": 124.80032100000005,
+      "FullYear": 1760.567321
     },
     "2567": {
       "Q1": 313.201,
       "Q2": 376.384,
-      "Q3": null,
-      "Q4": null
+      "Q3": 405.85,
+      "Q4": -1729.1071069999998,
+      "FullYear": -633.672107
+    },
+    "2568": {
+      "Q1": 478.113,
+      "Q2": 34.775,
+      "Q3": 14.781,
+      "Q4": 142.72993099999994,
+      "FullYear": 670.398931
     }
   },
   "sources": [
@@ -154,6 +165,26 @@
     },
     {
       "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-13",
+      "news_id": "17314477476311",
+      "raw_path": "HANA/financials/2567/9M/source.zip",
+      "sha256": "4172173fcc5cd8350d9665dc27e521f82427e245990e8f57ebb36eb4f256e677",
+      "ingested_at": "2026-04-23T12:49:28+00:00",
+      "shareholder_profit": 405.85
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-27",
+      "news_id": "17406066399711",
+      "raw_path": "HANA/financials/2567/FY/source.zip",
+      "sha256": "f96ad428c30561e771df39de75c5032d005d80d8c226a18e6dbcec307e901734",
+      "ingested_at": "2026-04-23T12:49:23+00:00",
+      "shareholder_profit": -633.672107
+    },
+    {
+      "year": 2567,
       "period": "H1",
       "filing_date": "2024-08-14",
       "news_id": "17235858010541",
@@ -171,6 +202,46 @@
       "sha256": "8527b23dfcf145c78ab5fd29ce903c29865bb266fdb25131b44a1a72d3fc0c78",
       "ingested_at": "2026-04-23T12:49:37+00:00",
       "shareholder_profit": 313.201
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-12",
+      "news_id": "17629001489961",
+      "raw_path": "HANA/financials/2568/9M/source.zip",
+      "sha256": "cfa3261f473a66ff968d2ff775f3b1082d53a3c4dfcce2fb1df5dc6f1e46c42d",
+      "ingested_at": "2026-04-23T12:49:10+00:00",
+      "shareholder_profit": 14.781
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-27",
+      "news_id": "17721443091571",
+      "raw_path": "HANA/financials/2568/FY/source.zip",
+      "sha256": "ec7ce44035eda9ddf71889daf1267218f2124666ed0094f03e4c6e5cdcb452c1",
+      "ingested_at": "2026-04-23T12:49:05+00:00",
+      "shareholder_profit": 670.398931
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229849001",
+      "raw_path": "HANA/financials/2568/H1/source.zip",
+      "sha256": "27801a44db61c47cf4b3975513ffa9998469a78c6c1d3cc93c294e063e0f94b5",
+      "ingested_at": "2026-04-23T12:49:14+00:00",
+      "shareholder_profit": 34.775
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903544761",
+      "raw_path": "HANA/financials/2568/Q1/source.zip",
+      "sha256": "d72ca50ef29a45fe4143a5255e5c4e95c07311a2b3eb94131b734e18b7d1bfd0",
+      "ingested_at": "2026-04-23T12:49:19+00:00",
+      "shareholder_profit": 478.113
     }
   ]
 }

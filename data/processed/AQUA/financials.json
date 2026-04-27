@@ -4,7 +4,244 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-03-02",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 14.471239774082198,
+      "Q2": 11.332781930000072,
+      "Q3": 26.554505429999974,
+      "Q4": 105.43930623591788,
+      "FullYear": 157.79783337000012
+    },
+    "2565": {
+      "Q1": -85.0159605,
+      "Q2": 690.12237875,
+      "Q3": 41.71659144999998,
+      "Q4": -255.67056409025102,
+      "FullYear": 391.152445609749
+    },
+    "2566": {
+      "Q1": -7.865979499999998,
+      "Q2": 39.372111350000026,
+      "Q3": -12.160066350000136,
+      "Q4": 12.667716630000086,
+      "FullYear": 32.01378212999998
+    },
+    "2567": {
+      "Q1": 83.838,
+      "Q2": -85.574,
+      "Q3": -349.528,
+      "Q4": -636.889491,
+      "FullYear": -988.153491
+    },
+    "2568": {
+      "Q1": -92.405,
+      "Q2": -334.092,
+      "Q3": -147.105,
+      "Q4": -508.1189370000001,
+      "FullYear": -1081.720937
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-12",
+      "news_id": "2021124471",
+      "raw_path": "AQUA/financials/2564/9M/source.zip",
+      "sha256": "67941d7e083a2b0248516c5895d9cbc30d6681436645e00ed688df799f09f081",
+      "ingested_at": "2026-04-24T07:00:32+00:00",
+      "shareholder_profit": 26.554505429999974
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-28",
+      "news_id": "2022025223",
+      "raw_path": "AQUA/financials/2564/FY/source.zip",
+      "sha256": "3ba5d0e33fcb61f74bf75044f074bbf5cad6686d64e77bd0aac4fb6ce62f3df4",
+      "ingested_at": "2026-04-24T07:00:28+00:00",
+      "shareholder_profit": 157.79783337000012
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-16",
+      "news_id": "2021090973",
+      "raw_path": "AQUA/financials/2564/H1/source.zip",
+      "sha256": "3b9cc6d05a0e7dc48a8186b29f8705952e8809c7b431c701a880ba1063cae0b1",
+      "ingested_at": "2026-04-24T07:00:37+00:00",
+      "shareholder_profit": 11.332781930000072
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-17",
+      "news_id": "2021059465",
+      "raw_path": "AQUA/financials/2564/Q1/source.zip",
+      "sha256": "e5935b1e88af66790353a7f37215c23ab4883d5dfc2547cfaea227f77f00f42d",
+      "ingested_at": "2026-04-24T07:00:41+00:00",
+      "shareholder_profit": 14.471239774082198
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-14",
+      "news_id": "2022136888",
+      "raw_path": "AQUA/financials/2565/9M/source.zip",
+      "sha256": "44bca0f6876b3eb201669820be6cb71dab571e83d170883eb11d5739b88dab84",
+      "ingested_at": "2026-04-24T07:00:15+00:00",
+      "shareholder_profit": 41.71659144999998
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-03-01",
+      "news_id": "2023027154",
+      "raw_path": "AQUA/financials/2565/FY/source.zip",
+      "sha256": "4deb008921bf0f0c9d7f93502f908d982759a4c9a03b5451f2c70a45e78a4091",
+      "ingested_at": "2026-04-24T07:00:10+00:00",
+      "shareholder_profit": 391.152445609749
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-15",
+      "news_id": "2022098293",
+      "raw_path": "AQUA/financials/2565/H1/source.zip",
+      "sha256": "2025b315a785506ff8315a0ba03485498dd598f69d894f90a565a63dfab8e367",
+      "ingested_at": "2026-04-24T07:00:19+00:00",
+      "shareholder_profit": 690.12237875
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-17",
+      "news_id": "2022064548",
+      "raw_path": "AQUA/financials/2565/Q1/source.zip",
+      "sha256": "26af88e3fc830db9f9039632a7a9b4e7c8f7b0e3a2c1d2801e4bc8699bc023a9",
+      "ingested_at": "2026-04-24T07:00:23+00:00",
+      "shareholder_profit": -85.0159605
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-13",
+      "news_id": "16998304620271",
+      "raw_path": "AQUA/financials/2566/9M/source.zip",
+      "sha256": "44fb01bb2989cb9be33bfde9b4bc8bab963efa0c0914b2a2cd44071daf15bd42",
+      "ingested_at": "2026-04-24T06:59:57+00:00",
+      "shareholder_profit": -12.160066350000136
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-03-01",
+      "news_id": "17092430849341",
+      "raw_path": "AQUA/financials/2566/FY/source.zip",
+      "sha256": "0c07bc076b7ba66ab66d5b91718c651b9cdf521a12d8c0e1537ee4aee7f6da8d",
+      "ingested_at": "2026-04-24T06:59:53+00:00",
+      "shareholder_profit": -12.160066350000136
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-15",
+      "news_id": "16920539312341",
+      "raw_path": "AQUA/financials/2566/H1/source.zip",
+      "sha256": "d16261b993eb05d43e224fff6b52a6b9eeeb6ebd1ecef6ab172fc6b19b55afca",
+      "ingested_at": "2026-04-24T07:00:01+00:00",
+      "shareholder_profit": 39.372111350000026
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-15",
+      "news_id": "16841053954621",
+      "raw_path": "AQUA/financials/2566/Q1/source.zip",
+      "sha256": "258ca8186cfa948177f7f68df18e8f8b1057f586b2958cd3a1b06180ec72d9ca",
+      "ingested_at": "2026-04-24T07:00:06+00:00",
+      "shareholder_profit": -7.865979499999998
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-15",
+      "news_id": "17316227683611",
+      "raw_path": "AQUA/financials/2567/9M/source.zip",
+      "sha256": "d075cac81908c5d51a58f6b7be34d9a560a0dd43010033ac76005a9c05805073",
+      "ingested_at": "2026-04-24T06:59:40+00:00",
+      "shareholder_profit": -349.528
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-03-03",
+      "news_id": "17409536806901",
+      "raw_path": "AQUA/financials/2567/FY/source.zip",
+      "sha256": "7a41623ddd5828ea2afe7b4f7031547e87d9f48341990b8e5562886c69988cef",
+      "ingested_at": "2026-04-24T06:59:36+00:00",
+      "shareholder_profit": -988.153491
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-15",
+      "news_id": "17236759893281",
+      "raw_path": "AQUA/financials/2567/H1/source.zip",
+      "sha256": "caa0d14e1d60529c5890755df2a63d47f0aae11fb4ab7e85cc1f730a2a24e5da",
+      "ingested_at": "2026-04-24T06:59:44+00:00",
+      "shareholder_profit": -85.574
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-15",
+      "news_id": "17157257382001",
+      "raw_path": "AQUA/financials/2567/Q1/source.zip",
+      "sha256": "af6f90b4b6ef66189e5bad2f44e5767bca8b67e42ed3b9fa1ec8871eb15d08e1",
+      "ingested_at": "2026-04-24T06:59:48+00:00",
+      "shareholder_profit": 83.838
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-14",
+      "news_id": "17630699628531",
+      "raw_path": "AQUA/financials/2568/9M/source.zip",
+      "sha256": "48d3ccdd2a9314d6a9eba06f2a219b13f57e5c4e4ab478d93bf01d99bba2ba92",
+      "ingested_at": "2026-04-24T06:59:18+00:00",
+      "shareholder_profit": -147.105
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-03-02",
+      "news_id": "17724016872331",
+      "raw_path": "AQUA/financials/2568/FY/source.zip",
+      "sha256": "aaa03bb60f17181f189e054592eade04df225e05592a2eb55d3f271308a7e02a",
+      "ingested_at": "2026-04-24T06:59:14+00:00",
+      "shareholder_profit": -1081.720937
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229920121",
+      "raw_path": "AQUA/financials/2568/H1/source.zip",
+      "sha256": "c751e290d2f754471a729198320530a6371f3146671854ab4dd129e94f0ade2b",
+      "ingested_at": "2026-04-24T06:59:22+00:00",
+      "shareholder_profit": -334.092
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-15",
+      "news_id": "17472613191911",
+      "raw_path": "AQUA/financials/2568/Q1/source.zip",
+      "sha256": "b72c195734b43ed36128e9c7f7c6542d4ad11c134a41d13a5eff75812b26c3b3",
+      "ingested_at": "2026-04-24T06:59:27+00:00",
+      "shareholder_profit": -92.405
+    }
+  ]
 }

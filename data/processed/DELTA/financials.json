@@ -8,24 +8,51 @@
   "quarterly_history": {
     "2564": {
       "Q1": null,
-      "Q2": null,
-      "Q3": null,
-      "Q4": null
+      "Q2": 1655.385,
+      "Q3": 1191.265,
+      "Q4": 2095.587329,
+      "FullYear": 6699.008329
     },
     "2565": {
       "Q1": 2780.128,
       "Q2": 4263.457,
-      "Q3": null,
-      "Q4": null
+      "Q3": 4110.009,
+      "Q4": 4190.952582,
+      "FullYear": 15344.546582
+    },
+    "2566": {
+      "Q1": 3614.457,
+      "Q2": 4668.029,
+      "Q3": 5428.661,
+      "Q4": 4711.392989,
+      "FullYear": 18422.539989
+    },
+    "2567": {
+      "Q1": 4307.509,
+      "Q2": 6565.024,
+      "Q3": 5910.895,
+      "Q4": 2155.1519249999974,
+      "FullYear": 18938.579925
     },
     "2568": {
-      "Q1": null,
-      "Q2": null,
+      "Q1": 5488.126,
+      "Q2": 4629.056,
       "Q3": 7441.375,
-      "Q4": null
+      "Q4": 7255.766593,
+      "FullYear": 24814.323593
     }
   },
   "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-10-26",
+      "news_id": "2021114054",
+      "raw_path": "DELTA/financials/2564/9M/source.zip",
+      "sha256": "32e50e77689f80b0c51be884dec515e1e47e1591459e8119475a16e68ed98423",
+      "ingested_at": "2026-04-23T12:41:10+00:00",
+      "shareholder_profit": 1191.265
+    },
     {
       "year": 2564,
       "period": "FY",
@@ -35,6 +62,36 @@
       "sha256": "a3222c1977f3b15926dc32ddd4f23813944dd69a7710216ba007d404cba3f772",
       "ingested_at": "2026-04-23T12:41:05+00:00",
       "shareholder_profit": 6699.008329
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-07-23",
+      "news_id": "2021080470",
+      "raw_path": "DELTA/financials/2564/H1/source.zip",
+      "sha256": "0edd88c067e0d7b7c8d2f1f35a2781c36109fe6bf53afae1bf781612a116b568",
+      "ingested_at": "2026-04-23T12:41:14+00:00",
+      "shareholder_profit": 1655.385
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-10-25",
+      "news_id": "2022124058",
+      "raw_path": "DELTA/financials/2565/9M/source.zip",
+      "sha256": "5b8448e699627e314043b7c365af44796a835654dba21fc0fd46ed6138d181ad",
+      "ingested_at": "2026-04-23T12:40:51+00:00",
+      "shareholder_profit": 4110.009
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-15",
+      "news_id": "2023015541",
+      "raw_path": "DELTA/financials/2565/FY/source.zip",
+      "sha256": "f71275c05aa6a73307941f7f4549b24680947f6ec429128fcb23898376989a2b",
+      "ingested_at": "2026-04-23T12:40:46+00:00",
+      "shareholder_profit": 15344.546582
     },
     {
       "year": 2565,
@@ -57,6 +114,86 @@
       "shareholder_profit": 2780.128
     },
     {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-10-27",
+      "news_id": "16983630023871",
+      "raw_path": "DELTA/financials/2566/9M/source.zip",
+      "sha256": "08a848f2c6176a163ebde2cd11ac27c488ba2a5733f48ee71f41425b31fc35aa",
+      "ingested_at": "2026-04-23T12:40:32+00:00",
+      "shareholder_profit": 5428.661
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-15",
+      "news_id": "17079509678011",
+      "raw_path": "DELTA/financials/2566/FY/source.zip",
+      "sha256": "7e7e648e1ae7429eb4cfe83749fa7c5a460bece6174e23916aaaf9d6c9ecd19d",
+      "ingested_at": "2026-04-23T12:40:27+00:00",
+      "shareholder_profit": 18422.539989
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-07-27",
+      "news_id": "16904128685111",
+      "raw_path": "DELTA/financials/2566/H1/source.zip",
+      "sha256": "d3e661efe41fc1b93df6a1d02caf3bd600f89ae7b1bf6571363e49645faa23c7",
+      "ingested_at": "2026-04-23T12:40:36+00:00",
+      "shareholder_profit": 4668.029
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-04-26",
+      "news_id": "2023047295",
+      "raw_path": "DELTA/financials/2566/Q1/source.zip",
+      "sha256": "59bab1db22aad646ff45f3b42ffe6bf202037fbf6d0681fbe7590c13d544c410",
+      "ingested_at": "2026-04-23T12:40:41+00:00",
+      "shareholder_profit": 3614.457
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-10-25",
+      "news_id": "17298133876891",
+      "raw_path": "DELTA/financials/2567/9M/source.zip",
+      "sha256": "9cdf25a0f70ff15609fcb858b25227fe495952ec4376f91c8507b5bccc34a683",
+      "ingested_at": "2026-04-23T12:40:13+00:00",
+      "shareholder_profit": 5910.895
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-14",
+      "news_id": "17394901654501",
+      "raw_path": "DELTA/financials/2567/FY/source.zip",
+      "sha256": "c82c185c624d69f1a9ce3f8cd2df2ee1eb895f335cc196e02aec6694d42505fe",
+      "ingested_at": "2026-04-23T12:40:08+00:00",
+      "shareholder_profit": 18938.579925
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-07-26",
+      "news_id": "17219473479881",
+      "raw_path": "DELTA/financials/2567/H1/source.zip",
+      "sha256": "bfeb98bf6851562a3dbc8f2d98bd37eb52ab0c042e6d24319ac4aa1ad13ffe53",
+      "ingested_at": "2026-04-23T12:40:17+00:00",
+      "shareholder_profit": 6565.024
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-04-26",
+      "news_id": "17140885574541",
+      "raw_path": "DELTA/financials/2567/Q1/source.zip",
+      "sha256": "bda78b9dfdba4334c32a28b8b0f70f0ef09119b7dcd69827e474642ca4d05d9b",
+      "ingested_at": "2026-04-23T12:40:22+00:00",
+      "shareholder_profit": 4307.509
+    },
+    {
       "year": 2568,
       "period": "9M",
       "filing_date": "2025-10-24",
@@ -75,6 +212,26 @@
       "sha256": "b73f3e5b06c6f89b5f7b71e96228039b8b67e8f87ff88034c1e2e890aca513eb",
       "ingested_at": "2026-04-23T12:39:47+00:00",
       "shareholder_profit": 24814.323593
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-07-25",
+      "news_id": "17534004421901",
+      "raw_path": "DELTA/financials/2568/H1/source.zip",
+      "sha256": "96c6e0b5462b20b5ada4517e7fdf72b33d652ed30a960b5542c1360862b6f0f7",
+      "ingested_at": "2026-04-23T12:39:57+00:00",
+      "shareholder_profit": 4629.056
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-04-25",
+      "news_id": "17455313318141",
+      "raw_path": "DELTA/financials/2568/Q1/source.zip",
+      "sha256": "3cedfeaae17f72ea720958626e8038172a3c559f3c22c9089549a3703a673ded",
+      "ingested_at": "2026-04-23T12:40:02+00:00",
+      "shareholder_profit": 5488.126
     }
   ]
 }

@@ -4,7 +4,244 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-12",
+  "quarterly_history": {
+    "2564": {
+      "Q1": -10.421,
+      "Q2": -5.878,
+      "Q3": -0.158,
+      "Q4": -8.631014000000002,
+      "FullYear": -25.088014
+    },
+    "2565": {
+      "Q1": -9.593,
+      "Q2": 5.846,
+      "Q3": 11.066,
+      "Q4": 13.634905999999999,
+      "FullYear": 20.953906
+    },
+    "2566": {
+      "Q1": 17.89,
+      "Q2": 2.669,
+      "Q3": 13.735,
+      "Q4": -6.747468999999999,
+      "FullYear": 27.546531
+    },
+    "2567": {
+      "Q1": 3.795,
+      "Q2": 19.009,
+      "Q3": -8.863000000000007,
+      "Q4": -5.646366999999994,
+      "FullYear": 8.294633
+    },
+    "2568": {
+      "Q1": 4.302,
+      "Q2": -3.054,
+      "Q3": -1.204,
+      "Q4": 35.281722,
+      "FullYear": 35.325722
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-12",
+      "news_id": "2021124053",
+      "raw_path": "BTNC/financials/2564/9M/source.zip",
+      "sha256": "50e83f381617c29a5c88ad03601e83390e042845115dc726b9d8a091e459b851",
+      "ingested_at": "2026-04-24T08:06:33+00:00",
+      "shareholder_profit": -0.158
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-25",
+      "news_id": "2022023807",
+      "raw_path": "BTNC/financials/2564/FY/source.zip",
+      "sha256": "c839694eb14b7e1a9a5334dfe736b6c1fcea2cdcfa9a9aa5c67a34ea81c52804",
+      "ingested_at": "2026-04-24T08:06:28+00:00",
+      "shareholder_profit": -25.088014
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-13",
+      "news_id": "2021090549",
+      "raw_path": "BTNC/financials/2564/H1/source.zip",
+      "sha256": "f4901fb200115571431c77ac592daa28234557384c4a087ebd18da8f36b02d3d",
+      "ingested_at": "2026-04-24T08:06:37+00:00",
+      "shareholder_profit": -5.878
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-14",
+      "news_id": "2021058179",
+      "raw_path": "BTNC/financials/2564/Q1/source.zip",
+      "sha256": "28333ed7cc980fd44572350bbc5ca92c9514f3c5afa0cf7e678690441a0acb61",
+      "ingested_at": "2026-04-24T08:06:42+00:00",
+      "shareholder_profit": -10.421
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-14",
+      "news_id": "2022135004",
+      "raw_path": "BTNC/financials/2565/9M/source.zip",
+      "sha256": "46f1ebfa542256eaa5a4fdea610609d1d2dbde5d582fe07402de29b012de380a",
+      "ingested_at": "2026-04-24T08:06:15+00:00",
+      "shareholder_profit": 11.066
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-23",
+      "news_id": "2023020708",
+      "raw_path": "BTNC/financials/2565/FY/source.zip",
+      "sha256": "742f96873a1c9a167961c313f456d92d18943b77b6c74a4470a39b8d0658e312",
+      "ingested_at": "2026-04-24T08:06:10+00:00",
+      "shareholder_profit": 20.953906
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-10",
+      "news_id": "2022093507",
+      "raw_path": "BTNC/financials/2565/H1/source.zip",
+      "sha256": "9698ffccfb0694fab3c4951fc7b86b286be777b7173cba1bd4ce676ff6f956cd",
+      "ingested_at": "2026-04-24T08:06:20+00:00",
+      "shareholder_profit": 5.846
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-17",
+      "news_id": "2022063244",
+      "raw_path": "BTNC/financials/2565/Q1/source.zip",
+      "sha256": "8fa16ebc35edf30526fbb8051090eeecbecfae9550a973fa918d7bf61c79ad9d",
+      "ingested_at": "2026-04-24T08:06:24+00:00",
+      "shareholder_profit": -9.593
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-13",
+      "news_id": "16998304500831",
+      "raw_path": "BTNC/financials/2566/9M/source.zip",
+      "sha256": "1aa87466df2082909049f88e0d87d9e8609bcdf6bf9c2188e96bd5ac2c484185",
+      "ingested_at": "2026-04-24T08:05:57+00:00",
+      "shareholder_profit": 13.735
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-27",
+      "news_id": "17089869123661",
+      "raw_path": "BTNC/financials/2566/FY/source.zip",
+      "sha256": "2c16f5e4fe0c4a0395f6c92105b19c2ed7581f7e68b636f0922cf5fe5d7c42a7",
+      "ingested_at": "2026-04-24T08:05:52+00:00",
+      "shareholder_profit": 27.546531
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-10",
+      "news_id": "16916230327451",
+      "raw_path": "BTNC/financials/2566/H1/source.zip",
+      "sha256": "a2f908d614b5252fe6747f27467b0f3dacfb299cca682f3e5dc9b14de9a7268f",
+      "ingested_at": "2026-04-24T08:06:01+00:00",
+      "shareholder_profit": 2.669
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-15",
+      "news_id": "16841053945661",
+      "raw_path": "BTNC/financials/2566/Q1/source.zip",
+      "sha256": "583ccfdf0cf73745633de06977605d1d95fb7d107ea4d0555e1c2b40629b4d5f",
+      "ingested_at": "2026-04-24T08:06:05+00:00",
+      "shareholder_profit": 17.89
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-11",
+      "news_id": "17312815573981",
+      "raw_path": "BTNC/financials/2567/9M/source.zip",
+      "sha256": "efb5ac3b1c01c62a6571cb09ee7a633d8ee21976e5451b9641c8dc1b5b3d988e",
+      "ingested_at": "2026-04-24T08:05:39+00:00",
+      "shareholder_profit": -8.863000000000007
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-25",
+      "news_id": "17404367008111",
+      "raw_path": "BTNC/financials/2567/FY/source.zip",
+      "sha256": "7264dd960cb88f6b94ef92b94d9320f4d37c257e9a616892b21b80e89495d4f8",
+      "ingested_at": "2026-04-24T08:05:35+00:00",
+      "shareholder_profit": 8.294633
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-08",
+      "news_id": "17230734188681",
+      "raw_path": "BTNC/financials/2567/H1/source.zip",
+      "sha256": "5a46cdd53c4d6fd1d7144b2c2cf0c112d2c55877dc234968c3d3f1e4ba5c9093",
+      "ingested_at": "2026-04-24T08:05:43+00:00",
+      "shareholder_profit": 19.009
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-03",
+      "news_id": "17146934187041",
+      "raw_path": "BTNC/financials/2567/Q1/source.zip",
+      "sha256": "fc31f746a6536f54982f4925421a1a3b7d97344b8096684e94e43af823358938",
+      "ingested_at": "2026-04-24T08:05:48+00:00",
+      "shareholder_profit": 3.795
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-14",
+      "news_id": "17630699618441",
+      "raw_path": "BTNC/financials/2568/9M/source.zip",
+      "sha256": "3d1187a3b15b4355db6574e8429369cf0d9dd35852d11319317003d271b51daf",
+      "ingested_at": "2026-04-24T08:05:22+00:00",
+      "shareholder_profit": -1.204
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-12",
+      "news_id": "17708534366361",
+      "raw_path": "BTNC/financials/2568/FY/source.zip",
+      "sha256": "f68ee273340e5018a5a0e544b2a68f7594a3728ef11993797a1bf3168e250add",
+      "ingested_at": "2026-04-24T08:05:17+00:00",
+      "shareholder_profit": 35.325722
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229880491",
+      "raw_path": "BTNC/financials/2568/H1/source.zip",
+      "sha256": "87a5026c5ebc9de255bfe8ece40dcd3949ba0eba3d233303e25a79431b2ebee6",
+      "ingested_at": "2026-04-24T08:05:26+00:00",
+      "shareholder_profit": -3.054
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-14",
+      "news_id": "17471784613121",
+      "raw_path": "BTNC/financials/2568/Q1/source.zip",
+      "sha256": "2bb316eb48442e2d48862b0a0d1a05d9e7a6703c8a43698e49c0e992885597c3",
+      "ingested_at": "2026-04-24T08:05:30+00:00",
+      "shareholder_profit": 4.302
+    }
+  ]
 }

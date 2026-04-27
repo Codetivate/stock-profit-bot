@@ -4,7 +4,244 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-26",
+  "quarterly_history": {
+    "2564": {
+      "Q1": -16.48850399,
+      "Q2": -22.583455250000004,
+      "Q3": 12.55799927,
+      "Q4": -22.328479689999995,
+      "FullYear": -48.84243966
+    },
+    "2565": {
+      "Q1": -30.293494640000006,
+      "Q2": -12.050303899999996,
+      "Q3": -4.502624470000001,
+      "Q4": 6.961396380000004,
+      "FullYear": -39.88502663
+    },
+    "2566": {
+      "Q1": 6.843975129999991,
+      "Q2": 1.195295390000008,
+      "Q3": 15.371370739999993,
+      "Q4": 11.273342660000004,
+      "FullYear": 34.683983919999996
+    },
+    "2567": {
+      "Q1": 13.794359810000001,
+      "Q2": 6.8822542199999726,
+      "Q3": 18.19409175999998,
+      "Q4": 11.95033817000002,
+      "FullYear": 50.821043959999976
+    },
+    "2568": {
+      "Q1": 14.114028840000001,
+      "Q2": 3.66505065,
+      "Q3": 11.840033249999992,
+      "Q4": 10.19861186000003,
+      "FullYear": 39.81772460000003
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-11",
+      "news_id": "2021121839",
+      "raw_path": "MANRIN/financials/2564/9M/source.zip",
+      "sha256": "13ebb0e33bc9441b8401f6c6e8a38170cc81ebbecac842d359fe22abe8fc69df",
+      "ingested_at": "2026-04-23T21:42:56+00:00",
+      "shareholder_profit": -26.513959970000005
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-24",
+      "news_id": "2022022146",
+      "raw_path": "MANRIN/financials/2564/FY/source.zip",
+      "sha256": "f173f7cc6fbe62ada9a05897e8b9d83f57ceb28b9b8c4d1e7e0c255bdf7ab562",
+      "ingested_at": "2026-04-23T21:42:51+00:00",
+      "shareholder_profit": -48.84243966
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-13",
+      "news_id": "2021090154",
+      "raw_path": "MANRIN/financials/2564/H1/source.zip",
+      "sha256": "cb3e10c29ea36b620cf81a4115186a1185527a02a687a6476827b51f1c4dc836",
+      "ingested_at": "2026-04-23T21:43:00+00:00",
+      "shareholder_profit": -39.071959240000005
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-14",
+      "news_id": "2021058386",
+      "raw_path": "MANRIN/financials/2564/Q1/source.zip",
+      "sha256": "83f547fa90d54d8cbe4a856569fecd6036ee176733107db8226a2ca44410f222",
+      "ingested_at": "2026-04-23T21:43:05+00:00",
+      "shareholder_profit": -16.48850399
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-10",
+      "news_id": "2022132154",
+      "raw_path": "MANRIN/financials/2565/9M/source.zip",
+      "sha256": "23f1b713d1be3ca1137115e4f09ca5c71801c5b3153fa0bb9d61f9fc0c56c7bf",
+      "ingested_at": "2026-04-23T21:42:38+00:00",
+      "shareholder_profit": -46.84642301
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-24",
+      "news_id": "2023022633",
+      "raw_path": "MANRIN/financials/2565/FY/source.zip",
+      "sha256": "543faf0b376c5237c39b8443c3628716205dca2c17c6a65c6ae20d240076169c",
+      "ingested_at": "2026-04-23T21:42:33+00:00",
+      "shareholder_profit": -39.88502663
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-11",
+      "news_id": "2022094411",
+      "raw_path": "MANRIN/financials/2565/H1/source.zip",
+      "sha256": "720a5fa83afbfc31a5a63a36a89e8e7248d1e3ec53b5c88f68b19679cbdf3fe6",
+      "ingested_at": "2026-04-23T21:42:42+00:00",
+      "shareholder_profit": -42.34379854
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-12",
+      "news_id": "2022060066",
+      "raw_path": "MANRIN/financials/2565/Q1/source.zip",
+      "sha256": "40535ae581201215cbdad1e7514a78786145bf24ae30387abbd6fc6b8cbac650",
+      "ingested_at": "2026-04-23T21:42:47+00:00",
+      "shareholder_profit": -30.293494640000006
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-10",
+      "news_id": "16995730723691",
+      "raw_path": "MANRIN/financials/2566/9M/source.zip",
+      "sha256": "9339e89e73131af85865b5a960798b54ffc2bf40d82cd8043ccc4681c8fdad7b",
+      "ingested_at": "2026-04-23T21:42:20+00:00",
+      "shareholder_profit": 23.41064125999999
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-22",
+      "news_id": "17085582099521",
+      "raw_path": "MANRIN/financials/2566/FY/source.zip",
+      "sha256": "e17d72f1e845d19892a9bdd8287ce45d794e84b4a8ff2292809813a4d7dbe4e3",
+      "ingested_at": "2026-04-23T21:42:15+00:00",
+      "shareholder_profit": 34.683983919999996
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-11",
+      "news_id": "16917102136231",
+      "raw_path": "MANRIN/financials/2566/H1/source.zip",
+      "sha256": "af46f3a6d3cfcc4dcd0983d63d5d715a2b283e3be607d561f7671f3a3644b13c",
+      "ingested_at": "2026-04-23T21:42:24+00:00",
+      "shareholder_profit": 8.039270519999999
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-11",
+      "news_id": "16837584066691",
+      "raw_path": "MANRIN/financials/2566/Q1/source.zip",
+      "sha256": "25a9fc331a69a7fee3478430643010e029da4039e023239c4231624283c5a31c",
+      "ingested_at": "2026-04-23T21:42:29+00:00",
+      "shareholder_profit": 6.843975129999991
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-11",
+      "news_id": "17312815633451",
+      "raw_path": "MANRIN/financials/2567/9M/source.zip",
+      "sha256": "15a9f94acd8289952af70eba5bbf73f7a66e4484e0434e4e0bed4f7bb12819b6",
+      "ingested_at": "2026-04-23T21:42:02+00:00",
+      "shareholder_profit": 18.19409175999998
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-27",
+      "news_id": "17406066419691",
+      "raw_path": "MANRIN/financials/2567/FY/source.zip",
+      "sha256": "1b4a506b88bfe72ea04f7bf1cd3d7883fadb5f6e36449f8249ff82025efeeb27",
+      "ingested_at": "2026-04-23T21:41:57+00:00",
+      "shareholder_profit": 50.821043959999976
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990199121",
+      "raw_path": "MANRIN/financials/2567/H1/source.zip",
+      "sha256": "34a333af8594a44f62a9aab10501285d61f6c48732aa376bb7d0d37bc6cc6023",
+      "ingested_at": "2026-04-23T21:42:06+00:00",
+      "shareholder_profit": 6.8822542199999726
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-10",
+      "news_id": "17152924572171",
+      "raw_path": "MANRIN/financials/2567/Q1/source.zip",
+      "sha256": "827a40c30232a0e2f290cf3232bcfab87292ce97b4e30381b17243f859c315ed",
+      "ingested_at": "2026-04-23T21:42:11+00:00",
+      "shareholder_profit": 13.794359810000001
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-12",
+      "news_id": "17629001530821",
+      "raw_path": "MANRIN/financials/2568/9M/source.zip",
+      "sha256": "a74ded29dc784effac8839b89968c9da43c5c6c432947746e58c3a9e01821197",
+      "ingested_at": "2026-04-23T21:41:44+00:00",
+      "shareholder_profit": 11.840033249999992
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-26",
+      "news_id": "17720575350531",
+      "raw_path": "MANRIN/financials/2568/FY/source.zip",
+      "sha256": "5200d329e00875d3882352c9135b053820acbe6be0b5077db910373a91dbf77a",
+      "ingested_at": "2026-04-23T21:41:40+00:00",
+      "shareholder_profit": 39.81772460000003
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361161551",
+      "raw_path": "MANRIN/financials/2568/H1/source.zip",
+      "sha256": "67db76afaedad72b3b8d5f579682a8610a0bd8ffaf74a11985258500eef4a081",
+      "ingested_at": "2026-04-23T21:41:49+00:00",
+      "shareholder_profit": 3.66505065
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903557661",
+      "raw_path": "MANRIN/financials/2568/Q1/source.zip",
+      "sha256": "f5977593e7c2d30f52c70c205eeba6a8e16f3b274398cefcbe5bacd4b932ecfe",
+      "ingested_at": "2026-04-23T21:41:53+00:00",
+      "shareholder_profit": 14.114028840000001
+    }
+  ]
 }

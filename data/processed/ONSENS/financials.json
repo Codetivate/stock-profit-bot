@@ -4,7 +4,46 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-26",
+  "quarterly_history": {
+    "2568": {
+      "Q1": null,
+      "Q2": 0.919,
+      "Q3": 3.388,
+      "Q4": 4.0091730000000005,
+      "FullYear": 13.586173
+    }
+  },
+  "sources": [
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-14",
+      "news_id": "17630699636841",
+      "raw_path": "ONSENS/financials/2568/9M/source.zip",
+      "sha256": "9ed2f966d3f316dfaa6e906029a75eee84e3a1ec3a011b60d8be7798aab1b5f5",
+      "ingested_at": "2026-04-23T23:21:51+00:00",
+      "shareholder_profit": 3.388
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-26",
+      "news_id": "17720575370551",
+      "raw_path": "ONSENS/financials/2568/FY/source.zip",
+      "sha256": "e982b959b0a0049e5d7f18ada8610b0f51af98e4d355912ff7bbebd196f0add3",
+      "ingested_at": "2026-04-23T23:21:46+00:00",
+      "shareholder_profit": 13.586173
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-10-06",
+      "news_id": "17597065247201",
+      "raw_path": "ONSENS/financials/2568/H1/source.zip",
+      "sha256": "29c085d09d178a3a31e5695f99a80520e32d53379f9373f53bde60bf417bcf29",
+      "ingested_at": "2026-04-23T23:21:55+00:00",
+      "shareholder_profit": 0.919
+    }
+  ]
 }

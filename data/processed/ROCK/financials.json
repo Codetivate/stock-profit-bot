@@ -4,7 +4,244 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-23",
+  "quarterly_history": {
+    "2564": {
+      "Q1": -26.971,
+      "Q2": -13.598,
+      "Q3": -20.646,
+      "Q4": -3.6474989999999963,
+      "FullYear": -64.862499
+    },
+    "2565": {
+      "Q1": -5.309,
+      "Q2": -10.612,
+      "Q3": 3.521,
+      "Q4": 0.3654340000000005,
+      "FullYear": -12.034566
+    },
+    "2566": {
+      "Q1": 0.319,
+      "Q2": 3.371,
+      "Q3": -1.016,
+      "Q4": 17.928715000000004,
+      "FullYear": 20.602715
+    },
+    "2567": {
+      "Q1": 2.229,
+      "Q2": 1.433,
+      "Q3": 8.207,
+      "Q4": 33.867219,
+      "FullYear": 45.736219
+    },
+    "2568": {
+      "Q1": -7.657,
+      "Q2": 13.01,
+      "Q3": 8.498,
+      "Q4": 46.36782000000001,
+      "FullYear": 60.21882
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-08",
+      "news_id": "2021118955",
+      "raw_path": "ROCK/financials/2564/9M/source.zip",
+      "sha256": "1e1dcfff179f0bb713d3e439496f6c029670fcfa9d65a74ecbd5763337a9a9d6",
+      "ingested_at": "2026-04-24T01:10:27+00:00",
+      "shareholder_profit": -20.646
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-23",
+      "news_id": "2022020152",
+      "raw_path": "ROCK/financials/2564/FY/source.zip",
+      "sha256": "515b26c435306a2775fb22cc28642fc1626de7ed97a00789a60397e5ee999c71",
+      "ingested_at": "2026-04-24T01:10:23+00:00",
+      "shareholder_profit": -64.862499
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-09",
+      "news_id": "2021085290",
+      "raw_path": "ROCK/financials/2564/H1/source.zip",
+      "sha256": "bfc58324ca2ab31c177348bc9a138eef1c2a5fabd74ea75eb531f5fa843cacd2",
+      "ingested_at": "2026-04-24T01:10:32+00:00",
+      "shareholder_profit": -13.598
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-10",
+      "news_id": "2021052490",
+      "raw_path": "ROCK/financials/2564/Q1/source.zip",
+      "sha256": "23b8e95c4821720afa6eb5a1bd5de6ec645386d0e1066635d55ac3a4686a2b97",
+      "ingested_at": "2026-04-24T01:10:36+00:00",
+      "shareholder_profit": -26.971
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-07",
+      "news_id": "2022129034",
+      "raw_path": "ROCK/financials/2565/9M/source.zip",
+      "sha256": "46e64c0f43fdad56daa2ef0b9175f3c59f3c3483d6cc5c8b1b0c1a67c233bc19",
+      "ingested_at": "2026-04-24T01:10:07+00:00",
+      "shareholder_profit": 3.521
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-27",
+      "news_id": "2023024115",
+      "raw_path": "ROCK/financials/2565/FY/source.zip",
+      "sha256": "85fba94679d2889919819936c91044860469bd340e034c8b2b2438abad039e1f",
+      "ingested_at": "2026-04-24T01:10:03+00:00",
+      "shareholder_profit": -12.034566
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-08",
+      "news_id": "2022091026",
+      "raw_path": "ROCK/financials/2565/H1/source.zip",
+      "sha256": "25994c56aceb20cbea361d59dded28d72ce79739effbde9aba39c27dea9ce138",
+      "ingested_at": "2026-04-24T01:10:12+00:00",
+      "shareholder_profit": -10.612
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-09",
+      "news_id": "2022055720",
+      "raw_path": "ROCK/financials/2565/Q1/source.zip",
+      "sha256": "836f22ebe77d33e0a0d419164c4a6ee48c85a234624e430bd62c9e1c80e298b7",
+      "ingested_at": "2026-04-24T01:10:17+00:00",
+      "shareholder_profit": -5.309
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-13",
+      "news_id": "16998304593621",
+      "raw_path": "ROCK/financials/2566/9M/source.zip",
+      "sha256": "cfeb1e0cc1c24a52b89d4893277ddea9755f0af7daa8afccb3594dd0e6344bcc",
+      "ingested_at": "2026-04-24T01:09:49+00:00",
+      "shareholder_profit": -1.016
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-27",
+      "news_id": "17089869209841",
+      "raw_path": "ROCK/financials/2566/FY/source.zip",
+      "sha256": "4ebcbcf24085c3cfcf245988e72e8bf004cc17f78109df2d0bc37688b849106f",
+      "ingested_at": "2026-04-24T01:09:44+00:00",
+      "shareholder_profit": 20.602715
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-10",
+      "news_id": "16916230284751",
+      "raw_path": "ROCK/financials/2566/H1/source.zip",
+      "sha256": "85ec358a4b331804e3ffc7467a2215fba1620382a0671d5ddfbdb38952cd3f21",
+      "ingested_at": "2026-04-24T01:09:53+00:00",
+      "shareholder_profit": 3.371
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-12",
+      "news_id": "16838458842861",
+      "raw_path": "ROCK/financials/2566/Q1/source.zip",
+      "sha256": "9d7f283ba81aef34dc0b7ab3425071ae171d77a138311690d5b568756dfc2a84",
+      "ingested_at": "2026-04-24T01:09:58+00:00",
+      "shareholder_profit": 0.319
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-11",
+      "news_id": "17312815635251",
+      "raw_path": "ROCK/financials/2567/9M/source.zip",
+      "sha256": "e6eeb14e0d43b21c9031164a4cf2e416463b72b4bb2fd32497e7b9dc4a5dd5da",
+      "ingested_at": "2026-04-24T01:09:31+00:00",
+      "shareholder_profit": 8.207
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-24",
+      "news_id": "17403534216361",
+      "raw_path": "ROCK/financials/2567/FY/source.zip",
+      "sha256": "438cbd8392b44d661bafa1ef907622f0ae8f7b5545accdec74ecfee9ed4983c6",
+      "ingested_at": "2026-04-24T01:09:26+00:00",
+      "shareholder_profit": 45.736219
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990184261",
+      "raw_path": "ROCK/financials/2567/H1/source.zip",
+      "sha256": "a81b53681d2a31f23886c865c3f78a7b026661971634427c38e3c4602b958c42",
+      "ingested_at": "2026-04-24T01:09:35+00:00",
+      "shareholder_profit": 1.433
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-13",
+      "news_id": "17155538016231",
+      "raw_path": "ROCK/financials/2567/Q1/source.zip",
+      "sha256": "cb69f8a15db6e75128d5c1fe282897a98950c026be288ce7342912842ffa106d",
+      "ingested_at": "2026-04-24T01:09:40+00:00",
+      "shareholder_profit": 2.229
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-10",
+      "news_id": "17627310446501",
+      "raw_path": "ROCK/financials/2568/9M/source.zip",
+      "sha256": "708e9598ca5ef5ba9f261bfbec0ee6c152cff5556f6cabeac1d7a3c298e65876",
+      "ingested_at": "2026-04-24T01:09:12+00:00",
+      "shareholder_profit": 8.498
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-23",
+      "news_id": "17718030203671",
+      "raw_path": "ROCK/financials/2568/FY/source.zip",
+      "sha256": "438d66479e8c2b6c5029bea493a9711e0ab0d8b2f2eb33d250c7b3b7464baf61",
+      "ingested_at": "2026-04-24T01:09:07+00:00",
+      "shareholder_profit": 60.21882
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361033061",
+      "raw_path": "ROCK/financials/2568/H1/source.zip",
+      "sha256": "3a70d5da3ca1259548d748aac6e11c3798e97462a1e613aa1d64dbe40407f46a",
+      "ingested_at": "2026-04-24T01:09:17+00:00",
+      "shareholder_profit": 13.01
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903543511",
+      "raw_path": "ROCK/financials/2568/Q1/source.zip",
+      "sha256": "d445363062ea94c1a7629c18daf6823e40da7f901ca3a15501865e9a385c24dc",
+      "ingested_at": "2026-04-24T01:09:21+00:00",
+      "shareholder_profit": -7.657
+    }
+  ]
 }

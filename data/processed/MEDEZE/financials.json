@@ -4,7 +4,110 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-24",
+  "quarterly_history": {
+    "2566": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": 239.565813
+    },
+    "2567": {
+      "Q1": null,
+      "Q2": 86.872,
+      "Q3": 94.685,
+      "Q4": 98.26795199999998,
+      "FullYear": 338.738952
+    },
+    "2568": {
+      "Q1": 74.628,
+      "Q2": 54.785,
+      "Q3": 30.536,
+      "Q4": 36.431736000000015,
+      "FullYear": 196.380736
+    }
+  },
+  "sources": [
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-10-11",
+      "news_id": "17286025716741",
+      "raw_path": "MEDEZE/financials/2566/FY/source.zip",
+      "sha256": "a3f8e23449476da3576a9d0bc2e33eb99a7b1cbc1097393968db53959678fcb0",
+      "ingested_at": "2026-04-23T21:57:33+00:00",
+      "shareholder_profit": 239.565813
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-12",
+      "news_id": "17313658213731",
+      "raw_path": "MEDEZE/financials/2567/9M/source.zip",
+      "sha256": "8381cdde818389c470b91de025bd2577cc427cedaa34f5f94649f1a59315916c",
+      "ingested_at": "2026-04-23T21:57:24+00:00",
+      "shareholder_profit": 94.685
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-03-03",
+      "news_id": "17409536794731",
+      "raw_path": "MEDEZE/financials/2567/FY/source.zip",
+      "sha256": "5ab06a531b9dc8c972fec3a39295087bb958ed65415c60b82ecc31beb55f6193",
+      "ingested_at": "2026-04-23T21:57:20+00:00",
+      "shareholder_profit": 338.738952
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-10-11",
+      "news_id": "17286025716811",
+      "raw_path": "MEDEZE/financials/2567/H1/source.zip",
+      "sha256": "c8caa9b4a7344fdef36250a2e2b597e062298cfb513ae69dcfa023a45615544d",
+      "ingested_at": "2026-04-23T21:57:29+00:00",
+      "shareholder_profit": 86.872
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-10",
+      "news_id": "17627310461861",
+      "raw_path": "MEDEZE/financials/2568/9M/source.zip",
+      "sha256": "c57257500a246a9ab4df876f10d3b477e3a8b06e8081d73e2afd3b9e3f36fe4d",
+      "ingested_at": "2026-04-23T21:57:06+00:00",
+      "shareholder_profit": 30.536
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-24",
+      "news_id": "17718892137281",
+      "raw_path": "MEDEZE/financials/2568/FY/source.zip",
+      "sha256": "ad7d57e648dba8e88585ae242f63a64475f34f759e2fbac10d82730f1cf62569",
+      "ingested_at": "2026-04-23T21:57:01+00:00",
+      "shareholder_profit": 196.380736
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361042381",
+      "raw_path": "MEDEZE/financials/2568/H1/source.zip",
+      "sha256": "6a16f89bbe53038f219006a6a7a033ca1f0a2b021ad944e76b6d3bcad1e9a55f",
+      "ingested_at": "2026-04-23T21:57:11+00:00",
+      "shareholder_profit": 54.785
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903443291",
+      "raw_path": "MEDEZE/financials/2568/Q1/source.zip",
+      "sha256": "dbdf6deb1d578d4d0121281a8db93f4fc924e81bf217cc15de0b6670cf05e0c0",
+      "ingested_at": "2026-04-23T21:57:15+00:00",
+      "shareholder_profit": 74.628
+    }
+  ]
 }

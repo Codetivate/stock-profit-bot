@@ -4,7 +4,83 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-23",
+  "quarterly_history": {
+    "2567": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": -7.383,
+      "Q4": -2348.8212040000003,
+      "FullYear": -2357.394204
+    },
+    "2568": {
+      "Q1": 341.518,
+      "Q2": 512.081,
+      "Q3": 163.27,
+      "Q4": 931.2556979999999,
+      "FullYear": 1948.124698
+    }
+  },
+  "sources": [
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361303091",
+      "raw_path": "STECON/financials/2567/9M/source.zip",
+      "sha256": "949248b1091b9e2271629e0451e1a384a094bb3c0c760ac95975722463552e62",
+      "ingested_at": "2026-04-24T04:00:09+00:00",
+      "shareholder_profit": -7.383
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-28",
+      "news_id": "17406928539171",
+      "raw_path": "STECON/financials/2567/FY/source.zip",
+      "sha256": "91f04f654060dcdeb48fc87466441bc0281eedcbbd57e07d52240694e93c5393",
+      "ingested_at": "2026-04-24T04:00:01+00:00",
+      "shareholder_profit": -2357.394204
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-12",
+      "news_id": "17629001503081",
+      "raw_path": "STECON/financials/2568/9M/source.zip",
+      "sha256": "250568ffcabb72b80bd238f78c7240d2081aa5dc5100f5da2390eb4bbf3ae56a",
+      "ingested_at": "2026-04-24T03:59:47+00:00",
+      "shareholder_profit": 163.27
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-23",
+      "news_id": "17718030197821",
+      "raw_path": "STECON/financials/2568/FY/source.zip",
+      "sha256": "659ca2fb5e410fb35e070434cdd94caf633625836a98ca4f07714c2eacf9f77a",
+      "ingested_at": "2026-04-24T03:59:42+00:00",
+      "shareholder_profit": 1948.124698
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361177521",
+      "raw_path": "STECON/financials/2568/H1/source.zip",
+      "sha256": "c31b48072efebc29690491a130e03142571da2d2dd7155077849d66b5d91cf0c",
+      "ingested_at": "2026-04-24T03:59:51+00:00",
+      "shareholder_profit": 512.081
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-15",
+      "news_id": "17472613086891",
+      "raw_path": "STECON/financials/2568/Q1/source.zip",
+      "sha256": "1c7ecb6e5309f677eb2d46595a0dbeadf48f7205d36a45e507e4ceb1f2e154b8",
+      "ingested_at": "2026-04-24T03:59:56+00:00",
+      "shareholder_profit": 341.518
+    }
+  ]
 }

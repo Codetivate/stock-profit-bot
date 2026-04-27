@@ -6,14 +6,173 @@
   "company_name_th": null,
   "updated_at": "2026-02-27",
   "quarterly_history": {
-    "2568": {
+    "2564": {
       "Q1": null,
       "Q2": null,
       "Q3": null,
-      "Q4": null
+      "Q4": null,
+      "FullYear": 562.505812
+    },
+    "2565": {
+      "Q1": null,
+      "Q2": 211.237,
+      "Q3": 153.953,
+      "Q4": 162.806021,
+      "FullYear": 683.960021
+    },
+    "2566": {
+      "Q1": 102.56,
+      "Q2": 3.558,
+      "Q3": 40.277,
+      "Q4": 68.504834,
+      "FullYear": 214.899834
+    },
+    "2567": {
+      "Q1": 63.388,
+      "Q2": 100.81,
+      "Q3": 219.311,
+      "Q4": 172.81987400000006,
+      "FullYear": 556.328874
+    },
+    "2568": {
+      "Q1": 175.905,
+      "Q2": 211.492,
+      "Q3": 50.582,
+      "Q4": 95.37716800000007,
+      "FullYear": 533.356168
     }
   },
   "sources": [
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-09-29",
+      "news_id": "2022115170",
+      "raw_path": "TEGH/financials/2564/FY/source.zip",
+      "sha256": "f40d9d8e2da9aaec31a0b066584a78611f7470481cf0e946b10442d31ba805b4",
+      "ingested_at": "2026-04-24T04:51:02+00:00",
+      "shareholder_profit": 562.505812
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-14",
+      "news_id": "2022135926",
+      "raw_path": "TEGH/financials/2565/9M/source.zip",
+      "sha256": "23af00572cd01343a7e5001b35229fd44a91cdc78367b35f50838dd427c48f09",
+      "ingested_at": "2026-04-24T04:50:52+00:00",
+      "shareholder_profit": 153.953
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-27",
+      "news_id": "2023024520",
+      "raw_path": "TEGH/financials/2565/FY/source.zip",
+      "sha256": "144972f191bcc7618fa2829651c929be717c84465a99a03600459efae019a8cc",
+      "ingested_at": "2026-04-24T04:50:48+00:00",
+      "shareholder_profit": 683.960021
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-09-29",
+      "news_id": "2022115178",
+      "raw_path": "TEGH/financials/2565/H1/source.zip",
+      "sha256": "a3c7973b30d107957c647bf2255b5b32c0c4308ef636f32c0c7675b6b7afb2b3",
+      "ingested_at": "2026-04-24T04:50:57+00:00",
+      "shareholder_profit": 211.237
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-10",
+      "news_id": "16995730753561",
+      "raw_path": "TEGH/financials/2566/9M/source.zip",
+      "sha256": "0145d28464eeb596b381bce48bde11244787a27613647a149f9eb55c4f26f317",
+      "ingested_at": "2026-04-24T04:50:33+00:00",
+      "shareholder_profit": 40.277
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-28",
+      "news_id": "17090750790311",
+      "raw_path": "TEGH/financials/2566/FY/source.zip",
+      "sha256": "c4605eeed8ab505cfa078fd2580bd97922ca0554e2e9d9bf9628e7ef53b3c8ac",
+      "ingested_at": "2026-04-24T04:50:28+00:00",
+      "shareholder_profit": 214.899834
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-10",
+      "news_id": "16916230294801",
+      "raw_path": "TEGH/financials/2566/H1/source.zip",
+      "sha256": "2e98f4330f7c040167c6893a6cd4cab170c209b0b3c95f1a08916d4840746abd",
+      "ingested_at": "2026-04-24T04:50:38+00:00",
+      "shareholder_profit": 3.558
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-10",
+      "news_id": "16836750077961",
+      "raw_path": "TEGH/financials/2566/Q1/source.zip",
+      "sha256": "849b844ce7e48ddd0c19fb48d2fdc3d9696a8a5ff8a3981961c49aed00d0cff0",
+      "ingested_at": "2026-04-24T04:50:43+00:00",
+      "shareholder_profit": 102.56
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361204671",
+      "raw_path": "TEGH/financials/2567/9M/source.zip",
+      "sha256": "1f1777af9f66dac6c4263d75d2f2ed871e078d79ff9e4cb6908ce78435fae345",
+      "ingested_at": "2026-04-24T04:50:14+00:00",
+      "shareholder_profit": 219.311
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-28",
+      "news_id": "17406928272131",
+      "raw_path": "TEGH/financials/2567/FY/source.zip",
+      "sha256": "1d301ea29db7caee3702000b91928312e593605f55abef47efc86100c3bebe67",
+      "ingested_at": "2026-04-24T04:50:09+00:00",
+      "shareholder_profit": 556.328874
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990101471",
+      "raw_path": "TEGH/financials/2567/H1/source.zip",
+      "sha256": "2a640bba5de4b1eb24e04f1230db78d7e0d8b676002376edc751ae517956d9f8",
+      "ingested_at": "2026-04-24T04:50:19+00:00",
+      "shareholder_profit": 100.81
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-13",
+      "news_id": "17155538032631",
+      "raw_path": "TEGH/financials/2567/Q1/source.zip",
+      "sha256": "54d1ce2ae6215e6b8e0debc496fc7704294b17c610f4d5956a3f74a50a323edd",
+      "ingested_at": "2026-04-24T04:50:24+00:00",
+      "shareholder_profit": 63.388
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-13",
+      "news_id": "17629880505631",
+      "raw_path": "TEGH/financials/2568/9M/source.zip",
+      "sha256": "6ac75a1da442752ff565b23372b2a1f86d3c7e4b20fa99e763b53fd20ea16977",
+      "ingested_at": "2026-04-24T04:49:54+00:00",
+      "shareholder_profit": 50.582
+    },
     {
       "year": 2568,
       "period": "FY",
@@ -23,6 +182,26 @@
       "sha256": "d457df002a3e1e4c49f17e1ae4a8d575b22ae9e2c02e8fe709abcb0089a16f42",
       "ingested_at": "2026-04-24T04:49:50+00:00",
       "shareholder_profit": 533.356168
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361046591",
+      "raw_path": "TEGH/financials/2568/H1/source.zip",
+      "sha256": "b368be03eddaa1fc726170955673bf36c0d8276ae7e63793a0730280b52df076",
+      "ingested_at": "2026-04-24T04:49:59+00:00",
+      "shareholder_profit": 211.492
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903452741",
+      "raw_path": "TEGH/financials/2568/Q1/source.zip",
+      "sha256": "fe76f7efc8956a60a39c28fb6540d5e1f6b1835bc5d62e08fc675c95ef8bae4c",
+      "ingested_at": "2026-04-24T04:50:04+00:00",
+      "shareholder_profit": 175.905
     }
   ]
 }

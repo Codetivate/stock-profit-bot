@@ -4,37 +4,42 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": "2025-11-14",
+  "updated_at": "2026-03-02",
   "quarterly_history": {
     "2564": {
-      "Q1": null,
+      "Q1": -27.884,
       "Q2": -128.915,
       "Q3": -81.346,
-      "Q4": null
+      "Q4": -114.92862499999998,
+      "FullYear": -353.073625
     },
     "2565": {
       "Q1": -49.659,
       "Q2": -131.491,
       "Q3": -136.439,
-      "Q4": -52.324719000000016
+      "Q4": -52.324719000000016,
+      "FullYear": -369.913719
     },
     "2566": {
       "Q1": -77.482,
       "Q2": -75.287,
       "Q3": -112.162,
-      "Q4": -64.38517999999996
+      "Q4": -64.38517999999996,
+      "FullYear": -329.31618
     },
     "2567": {
       "Q1": -66.371,
       "Q2": -115.163,
       "Q3": -155.445,
-      "Q4": 38.070324999999954
+      "Q4": 38.070324999999954,
+      "FullYear": -298.908675
     },
     "2568": {
       "Q1": -103.102,
       "Q2": -258.887,
       "Q3": -369.963,
-      "Q4": null
+      "Q4": -1377.979643,
+      "FullYear": -2109.931643
     }
   },
   "sources": [
@@ -67,6 +72,16 @@
       "sha256": "e112869a72f99fe19c371c73805872af3449e8fd606e1c3d0e5cad23532bbfe1",
       "ingested_at": "2026-04-23T22:16:51+00:00",
       "shareholder_profit": -128.915
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-12",
+      "news_id": "2021054820",
+      "raw_path": "MJD/financials/2564/Q1/source.zip",
+      "sha256": "9aeeac557dc3a16a0cd2839eda653db2b26f19de358bc5f78fcb3d81edbab8a4",
+      "ingested_at": "2026-04-23T22:16:56+00:00",
+      "shareholder_profit": -27.884
     },
     {
       "year": 2565,
@@ -197,6 +212,16 @@
       "sha256": "9bd4871eb74519a2be5d90db883a0e06b49a216853857d97aa296abb7a729bd6",
       "ingested_at": "2026-04-23T22:15:33+00:00",
       "shareholder_profit": -369.963
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-03-02",
+      "news_id": "17724016859741",
+      "raw_path": "MJD/financials/2568/FY/source.zip",
+      "sha256": "47062b9f9e1aedfc42097e3b1a2faba1bd2545813d282ab77304442182493678",
+      "ingested_at": "2026-04-23T22:15:29+00:00",
+      "shareholder_profit": -2109.931643
     },
     {
       "year": 2568,

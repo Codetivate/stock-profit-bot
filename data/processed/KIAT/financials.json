@@ -4,7 +4,224 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-19",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 25.80376587,
+      "Q2": 19.185060900000003,
+      "Q3": 11.34811104,
+      "Q4": 22.344925940000003,
+      "FullYear": 78.68186375
+    },
+    "2565": {
+      "Q1": 20.43804422,
+      "Q2": 28.19836954999994,
+      "Q3": 32.35699644000003,
+      "Q4": 9.802851669999981,
+      "FullYear": 90.79626187999995
+    },
+    "2566": {
+      "Q1": 19.902687919999988,
+      "Q2": 18.86658193000008,
+      "Q3": 19.57081646999991,
+      "Q4": 27.942273570000026,
+      "FullYear": 86.28235989000001
+    },
+    "2567": {
+      "Q1": null,
+      "Q2": 6.248698619999984,
+      "Q3": 8.076862930000008,
+      "Q4": 1.5411860500001069,
+      "FullYear": 57.13070893000008
+    },
+    "2568": {
+      "Q1": 18.82067886000001,
+      "Q2": 17.017125610000026,
+      "Q3": 4.975100720000002,
+      "Q4": -6.72817254000004,
+      "FullYear": 34.08473265
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-12",
+      "news_id": "2021122790",
+      "raw_path": "KIAT/financials/2564/9M/source.zip",
+      "sha256": "cb8f1e21ae403805e34e4e63ee07aa07956f1066f6424402b0b9797142423115",
+      "ingested_at": "2026-04-23T20:48:54+00:00",
+      "shareholder_profit": 11.34811104
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-23",
+      "news_id": "2022019650",
+      "raw_path": "KIAT/financials/2564/FY/source.zip",
+      "sha256": "00c62ade9b1b052e112c762801f3661d2c4963a54e66dbad0c7fbbde4f37029f",
+      "ingested_at": "2026-04-23T20:48:48+00:00",
+      "shareholder_profit": 78.68186375
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-10",
+      "news_id": "2021085632",
+      "raw_path": "KIAT/financials/2564/H1/source.zip",
+      "sha256": "190fb41fa82504756a37129514bc687b955e8f140f46d590dc1ffcf0b681aa8d",
+      "ingested_at": "2026-04-23T20:48:59+00:00",
+      "shareholder_profit": 19.185060900000003
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-12",
+      "news_id": "2021054699",
+      "raw_path": "KIAT/financials/2564/Q1/source.zip",
+      "sha256": "e372ad4aa745bedbf69d6e15970bf5753f1a60a39f20886f3bb33b5c2df8c67d",
+      "ingested_at": "2026-04-23T20:49:03+00:00",
+      "shareholder_profit": 25.80376587
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-08",
+      "news_id": "2022129575",
+      "raw_path": "KIAT/financials/2565/9M/source.zip",
+      "sha256": "5e9b477ca7a927f1ae2e3f973813b775c114d7e28771f66502bedd179ea314a2",
+      "ingested_at": "2026-04-23T20:48:34+00:00",
+      "shareholder_profit": 32.35699644000003
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-23",
+      "news_id": "2023020074",
+      "raw_path": "KIAT/financials/2565/FY/source.zip",
+      "sha256": "e6890031ad9a03b25cd57c2ebfadb6def006b82f8baefddda28733f2ab5bcdb8",
+      "ingested_at": "2026-04-23T20:48:30+00:00",
+      "shareholder_profit": 42.15984811000008
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-08",
+      "news_id": "2022090580",
+      "raw_path": "KIAT/financials/2565/H1/source.zip",
+      "sha256": "3caafe80c5f0dc9f4a7467e7efc63c2d3586615cd9151a4e054ae4501e040e65",
+      "ingested_at": "2026-04-23T20:48:39+00:00",
+      "shareholder_profit": 28.19836954999994
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-11",
+      "news_id": "2022057290",
+      "raw_path": "KIAT/financials/2565/Q1/source.zip",
+      "sha256": "04f97c68c27d321dc7b1977d9369f994321c7694d84e4cfc853f2b24c5998800",
+      "ingested_at": "2026-04-23T20:48:44+00:00",
+      "shareholder_profit": 20.43804422
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-08",
+      "news_id": "16993998069411",
+      "raw_path": "KIAT/financials/2566/9M/source.zip",
+      "sha256": "bcaaac6642f87c69ca64afd70cc7794fde250aadd54100bdd663b5f1f7fbf01e",
+      "ingested_at": "2026-04-23T20:48:15+00:00",
+      "shareholder_profit": 19.57081646999991
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-28",
+      "news_id": "17090750674701",
+      "raw_path": "KIAT/financials/2566/FY/source.zip",
+      "sha256": "e8d5aaef72b148f1ffb6aa452a318b4cba8bd93d0e5b8352907fe3f9ba043a7b",
+      "ingested_at": "2026-04-23T20:48:10+00:00",
+      "shareholder_profit": 86.28235989000001
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-10",
+      "news_id": "16836750023891",
+      "raw_path": "KIAT/financials/2566/Q1/source.zip",
+      "sha256": "72f9ccf50c01dd8d27f6a6e3578d18ba7f09e33ee8efdde97a656aaf7d90e4e2",
+      "ingested_at": "2026-04-23T20:48:25+00:00",
+      "shareholder_profit": 19.902687919999988
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-05",
+      "news_id": "17307630212211",
+      "raw_path": "KIAT/financials/2567/9M/source.zip",
+      "sha256": "f5cbfcb5e0590783d40988e9eb1758b6b1b4039a5435a94ec7b76a49067a53b8",
+      "ingested_at": "2026-04-23T20:47:56+00:00",
+      "shareholder_profit": 8.076862930000008
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-20",
+      "news_id": "17400015437141",
+      "raw_path": "KIAT/financials/2567/FY/source.zip",
+      "sha256": "25782dca5469b1874c11daea91b4dabaa35bb60144e80075b8be689ceea7de64",
+      "ingested_at": "2026-04-23T20:47:51+00:00",
+      "shareholder_profit": 57.13070893000008
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-07",
+      "news_id": "17229877619221",
+      "raw_path": "KIAT/financials/2567/H1/source.zip",
+      "sha256": "558a82a47cf8b5834b5f71b5c074f6ded928d250167db3f00f469e130a372a30",
+      "ingested_at": "2026-04-23T20:48:01+00:00",
+      "shareholder_profit": 6.248698619999984
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-04",
+      "news_id": "17622134085101",
+      "raw_path": "KIAT/financials/2568/9M/source.zip",
+      "sha256": "abbe3f199a86a4a02c67136e03fbaa7b58ce717bc5cce37fdca2b6fae16609ba",
+      "ingested_at": "2026-04-23T20:47:37+00:00",
+      "shareholder_profit": 4.975100720000002
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-19",
+      "news_id": "17714553030951",
+      "raw_path": "KIAT/financials/2568/FY/source.zip",
+      "sha256": "d0df6259b07871c8f8ae1951d3703131434825673353004ad64a08cb39c94e47",
+      "ingested_at": "2026-04-23T20:47:32+00:00",
+      "shareholder_profit": 34.08473265
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-06",
+      "news_id": "17544375719611",
+      "raw_path": "KIAT/financials/2568/H1/source.zip",
+      "sha256": "88dee71abe3db86660fdfc0f7afbb6722ca046142e59d4faa419d194efff2228",
+      "ingested_at": "2026-04-23T20:47:42+00:00",
+      "shareholder_profit": 17.017125610000026
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-07",
+      "news_id": "17465747629561",
+      "raw_path": "KIAT/financials/2568/Q1/source.zip",
+      "sha256": "a28e76f9c667bd0288a6d9fca8e1212653d83dd0aaaa2e22b219437e22d4517a",
+      "ingested_at": "2026-04-23T20:47:46+00:00",
+      "shareholder_profit": 18.82067886000001
+    }
+  ]
 }

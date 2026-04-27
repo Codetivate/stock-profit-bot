@@ -10,31 +10,36 @@
       "Q1": -2.929,
       "Q2": 752.574,
       "Q3": -15.838,
-      "Q4": -37.85344099999994
+      "Q4": -37.85344099999994,
+      "FullYear": 695.953559
     },
     "2565": {
-      "Q1": -1.7016641832686423e-05,
-      "Q2": 1.8803308744626967e-05,
-      "Q3": 5.919531772165094e-06,
-      "Q4": null
+      "Q1": -22.201,
+      "Q2": 24.532,
+      "Q3": 7.723,
+      "Q4": 53.938514999999995,
+      "FullYear": 63.992515
     },
     "2566": {
       "Q1": 12.216,
       "Q2": 28.293,
       "Q3": -5.082,
-      "Q4": -7.631899999999997
+      "Q4": -7.631899999999997,
+      "FullYear": 27.7951
     },
     "2567": {
       "Q1": 14.497,
       "Q2": -26.949,
       "Q3": -19.119,
-      "Q4": -40.35143000000001
+      "Q4": -40.35143000000001,
+      "FullYear": -71.92243
     },
     "2568": {
       "Q1": -20.234,
       "Q2": 0.739,
       "Q3": 1.426,
-      "Q4": -34.681165
+      "Q4": -34.681165,
+      "FullYear": -52.750165
     }
   },
   "sources": [
@@ -86,7 +91,17 @@
       "raw_path": "RPC/financials/2565/9M/source.zip",
       "sha256": "ccbef22833736f1982b091e16e5b3dfc471b285ce2f059ba5b6dd569aa8f5dfb",
       "ingested_at": "2026-04-24T01:16:33+00:00",
-      "shareholder_profit": 5.919531772165094e-06
+      "shareholder_profit": 7.723
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-24",
+      "news_id": "2023022894",
+      "raw_path": "RPC/financials/2565/FY/source.zip",
+      "sha256": "a6c2a29d8de7ca1f7da6a764cd1c50b32e572b243d4ed755240f8d14596139e6",
+      "ingested_at": "2026-04-24T01:16:28+00:00",
+      "shareholder_profit": 63.992515
     },
     {
       "year": 2565,
@@ -96,7 +111,7 @@
       "raw_path": "RPC/financials/2565/H1/source.zip",
       "sha256": "09d25ce75c043f703acc568f6c77fadebdfeb9429619748fc836f01a7857826c",
       "ingested_at": "2026-04-24T01:16:37+00:00",
-      "shareholder_profit": 1.8803308744626967e-05
+      "shareholder_profit": 24.532
     },
     {
       "year": 2565,
@@ -106,7 +121,7 @@
       "raw_path": "RPC/financials/2565/Q1/source.zip",
       "sha256": "aa4db253de7551f92d05e4e2d08d3bd5a550aaca348a1baa3f2292db59fde96b",
       "ingested_at": "2026-04-24T01:16:42+00:00",
-      "shareholder_profit": -1.7016641832686423e-05
+      "shareholder_profit": -22.201
     },
     {
       "year": 2566,

@@ -4,22 +4,55 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": "2022-08-10",
+  "updated_at": "2026-02-19",
   "quarterly_history": {
     "2564": {
       "Q1": 422.215,
       "Q2": 867.465,
-      "Q3": null,
-      "Q4": null
+      "Q3": 378.435,
+      "Q4": 551.5972509999999,
+      "FullYear": 2219.712251
     },
     "2565": {
       "Q1": 216.124,
       "Q2": 587.026,
-      "Q3": null,
-      "Q4": null
+      "Q3": 509.474,
+      "Q4": 1053.8871420000003,
+      "FullYear": 2366.511142
+    },
+    "2566": {
+      "Q1": 1128.167,
+      "Q2": 744.03,
+      "Q3": 201.69,
+      "Q4": 231.6312470000001,
+      "FullYear": 2305.518247
+    },
+    "2567": {
+      "Q1": 7.877,
+      "Q2": 99.009,
+      "Q3": 734.544,
+      "Q4": 575.718281,
+      "FullYear": 1417.148281
+    },
+    "2568": {
+      "Q1": 444.386,
+      "Q2": 400.455,
+      "Q3": 179.854,
+      "Q4": 111.87709300000003,
+      "FullYear": 1136.572093
     }
   },
   "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-10",
+      "news_id": "2021120218",
+      "raw_path": "TASCO/financials/2564/9M/source.zip",
+      "sha256": "259387f0d8ba95169d7194119e4ebd4d4a607d249d684569386bd959aaede8ef",
+      "ingested_at": "2026-04-24T04:33:30+00:00",
+      "shareholder_profit": 378.435
+    },
     {
       "year": 2564,
       "period": "FY",
@@ -52,6 +85,26 @@
     },
     {
       "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-09",
+      "news_id": "2022130443",
+      "raw_path": "TASCO/financials/2565/9M/source.zip",
+      "sha256": "ddbb64b59acaf2016338e10595e9d5d31a19639aa844c5d0188ecc1bb1342460",
+      "ingested_at": "2026-04-24T04:33:11+00:00",
+      "shareholder_profit": 509.474
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-17",
+      "news_id": "2023016682",
+      "raw_path": "TASCO/financials/2565/FY/source.zip",
+      "sha256": "36f8aa478a066fdd1c67865c760edb9c84f120b15d8fb0b009134e7f9a893c2a",
+      "ingested_at": "2026-04-24T04:33:06+00:00",
+      "shareholder_profit": 2366.511142
+    },
+    {
+      "year": 2565,
       "period": "H1",
       "filing_date": "2022-08-10",
       "news_id": "2022092769",
@@ -69,6 +122,126 @@
       "sha256": "95a7dea0cb035f2290c2346665159840f8d24dd3f682323f4ead61805e65b241",
       "ingested_at": "2026-04-24T04:33:21+00:00",
       "shareholder_profit": 216.124
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-13",
+      "news_id": "16998304561681",
+      "raw_path": "TASCO/financials/2566/9M/source.zip",
+      "sha256": "df7b75e08ff4363293cf45952f908dc8cd5671219b80a530917fbe16bd1379ee",
+      "ingested_at": "2026-04-24T04:32:52+00:00",
+      "shareholder_profit": 201.69
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-16",
+      "news_id": "17080405757321",
+      "raw_path": "TASCO/financials/2566/FY/source.zip",
+      "sha256": "18139713a7e4b04dc9fc2c7608bd74bf83c4ef7b4e22928ca56adb6f1373edb5",
+      "ingested_at": "2026-04-24T04:32:48+00:00",
+      "shareholder_profit": 2305.518247
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-10",
+      "news_id": "16916230295491",
+      "raw_path": "TASCO/financials/2566/H1/source.zip",
+      "sha256": "060839c1f211666932604b3328d9e3a685198f1fa77133ab547b6eff12b036c2",
+      "ingested_at": "2026-04-24T04:32:57+00:00",
+      "shareholder_profit": 744.03
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-11",
+      "news_id": "16837584046511",
+      "raw_path": "TASCO/financials/2566/Q1/source.zip",
+      "sha256": "9b54bc3544012a947f7022dfb756bb72f00ff6236f552fc79c2c27a003682d6a",
+      "ingested_at": "2026-04-24T04:33:02+00:00",
+      "shareholder_profit": 1128.167
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-12",
+      "news_id": "17313658188771",
+      "raw_path": "TASCO/financials/2567/9M/source.zip",
+      "sha256": "aa4114454c57952d53eed79f35782204b05525c00972cbf43ea06e957b4c9281",
+      "ingested_at": "2026-04-24T04:32:33+00:00",
+      "shareholder_profit": 734.544
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-17",
+      "news_id": "17397492630121",
+      "raw_path": "TASCO/financials/2567/FY/source.zip",
+      "sha256": "66001b4c110c09e40709f99a3c5674ed3327a5d69445f4c8c93bb76a55d1277d",
+      "ingested_at": "2026-04-24T04:32:28+00:00",
+      "shareholder_profit": 1417.148281
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990170541",
+      "raw_path": "TASCO/financials/2567/H1/source.zip",
+      "sha256": "10a6fb9695b37ee9570db1d9ad57a76e600a0bf83c4bfdff6454cbcd92df5225",
+      "ingested_at": "2026-04-24T04:32:38+00:00",
+      "shareholder_profit": 99.009
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-13",
+      "news_id": "17155537991071",
+      "raw_path": "TASCO/financials/2567/Q1/source.zip",
+      "sha256": "cb73a5cd70ff5762b4fc2b367e155ed1429ac9e4bb4e5d0494694295969a7572",
+      "ingested_at": "2026-04-24T04:32:43+00:00",
+      "shareholder_profit": 7.877
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-10",
+      "news_id": "17627310438781",
+      "raw_path": "TASCO/financials/2568/9M/source.zip",
+      "sha256": "25cc5a6ea6b6f43041abbbe83c5b2f88329a47bd4de73644f896f5f025293fc1",
+      "ingested_at": "2026-04-24T04:32:13+00:00",
+      "shareholder_profit": 179.854
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-19",
+      "news_id": "17714553160411",
+      "raw_path": "TASCO/financials/2568/FY/source.zip",
+      "sha256": "5b2294c2bd59e33d4cb6218976a453d904ae5a4518202f1f2f34b336a2ea1ba8",
+      "ingested_at": "2026-04-24T04:32:08+00:00",
+      "shareholder_profit": 1136.572093
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361169971",
+      "raw_path": "TASCO/financials/2568/H1/source.zip",
+      "sha256": "e44ab4fe9f167e5a68c3d62a82d10a9dff1edbd8eb2e0de10bf210b3499262df",
+      "ingested_at": "2026-04-24T04:32:18+00:00",
+      "shareholder_profit": 400.455
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903528821",
+      "raw_path": "TASCO/financials/2568/Q1/source.zip",
+      "sha256": "b62671d2c061ea1296178a5778c63cde2d8cefa5c3bad53cf3e5b1eae8f5b17e",
+      "ingested_at": "2026-04-24T04:32:23+00:00",
+      "shareholder_profit": 444.386
     }
   ]
 }

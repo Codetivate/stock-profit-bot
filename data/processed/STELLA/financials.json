@@ -6,20 +6,173 @@
   "company_name_th": null,
   "updated_at": "2026-02-27",
   "quarterly_history": {
+    "2564": {
+      "Q1": -215.223,
+      "Q2": -266.496,
+      "Q3": -222.95680000000004,
+      "Q4": -184.45683899999995,
+      "FullYear": -889.132639
+    },
+    "2565": {
+      "Q1": -4.579,
+      "Q2": -138.61728999999997,
+      "Q3": -231.937,
+      "Q4": -42.082340999999985,
+      "FullYear": -417.215631
+    },
+    "2566": {
+      "Q1": -114.807,
+      "Q2": -46.999,
+      "Q3": -104.058,
+      "Q4": -443.01739799999996,
+      "FullYear": -708.881398
+    },
     "2567": {
-      "Q1": null,
-      "Q2": null,
-      "Q3": null,
-      "Q4": null
+      "Q1": -126.503,
+      "Q2": -256.993,
+      "Q3": -91.553,
+      "Q4": -1536.7073260000002,
+      "FullYear": -2011.756326
     },
     "2568": {
       "Q1": -220.109,
       "Q2": -99.883,
       "Q3": -197.164,
-      "Q4": -2417.912727
+      "Q4": -2417.912727,
+      "FullYear": -2935.068727
     }
   },
   "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-15",
+      "news_id": "2021126253",
+      "raw_path": "STELLA/financials/2564/9M/source.zip",
+      "sha256": "2ea89bf76a32e0b5289db802938e8735ccaa3777b2405c1aa2dba3930ca21597",
+      "ingested_at": "2026-04-24T04:02:05+00:00",
+      "shareholder_profit": -222.95680000000004
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-03-01",
+      "news_id": "2022027016",
+      "raw_path": "STELLA/financials/2564/FY/source.zip",
+      "sha256": "f34de5785c5ba673175ca15ffaad1730f5a7ecf82169e27a1c10eb4850dc4976",
+      "ingested_at": "2026-04-24T04:02:00+00:00",
+      "shareholder_profit": -889.132639
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-16",
+      "news_id": "2021091248",
+      "raw_path": "STELLA/financials/2564/H1/source.zip",
+      "sha256": "828a2fd6e0c5592b4b9cb05bd63828419ff997ec008aa3b6f2091b60c0a888ca",
+      "ingested_at": "2026-04-24T04:02:12+00:00",
+      "shareholder_profit": -266.496
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-14",
+      "news_id": "2021059250",
+      "raw_path": "STELLA/financials/2564/Q1/source.zip",
+      "sha256": "0187c689964774cbbff0bf765b1b007bb28c3dd8d1b25aef75da9aa3aa654a03",
+      "ingested_at": "2026-04-24T04:02:17+00:00",
+      "shareholder_profit": -215.223
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-14",
+      "news_id": "2022136860",
+      "raw_path": "STELLA/financials/2565/9M/source.zip",
+      "sha256": "e63de4bed6759ca24481e94676a1378dd2f77ed5f5ff3d02f7ac9d6286809996",
+      "ingested_at": "2026-04-24T04:01:31+00:00",
+      "shareholder_profit": -231.937
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-03-01",
+      "news_id": "2023026915",
+      "raw_path": "STELLA/financials/2565/FY/source.zip",
+      "sha256": "47340814043727cd77e7bffc8ac408bdac7edcb1aec906c46c46154af832dfea",
+      "ingested_at": "2026-04-24T04:01:26+00:00",
+      "shareholder_profit": -417.215631
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-16",
+      "news_id": "2022098530",
+      "raw_path": "STELLA/financials/2565/H1/source.zip",
+      "sha256": "0d863197c7701655570dfe97f3d37d24b70b02bfdbfa204b4ffb18a0ae02388d",
+      "ingested_at": "2026-04-24T04:01:36+00:00",
+      "shareholder_profit": -138.61728999999997
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-17",
+      "news_id": "2022062974",
+      "raw_path": "STELLA/financials/2565/Q1/source.zip",
+      "sha256": "de1693bc9e71aec1a67f49a90e8a5c2e7287452c3dbc44a777be21b8172ca661",
+      "ingested_at": "2026-04-24T04:01:41+00:00",
+      "shareholder_profit": -4.579
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-15",
+      "news_id": "16999994865561",
+      "raw_path": "STELLA/financials/2566/9M/source.zip",
+      "sha256": "f88126d3d77c11afe20efaef084d9d2b6b10ac6b3f6bebb6cd70426dcef805cf",
+      "ingested_at": "2026-04-24T04:01:05+00:00",
+      "shareholder_profit": -104.058
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-03-01",
+      "news_id": "17092430835931",
+      "raw_path": "STELLA/financials/2566/FY/source.zip",
+      "sha256": "2f5bf0806378cf933c215888eb2b02c69ac3558282666ae3a66b4d5ef493e474",
+      "ingested_at": "2026-04-24T04:01:01+00:00",
+      "shareholder_profit": -708.881398
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-16",
+      "news_id": "16921414647451",
+      "raw_path": "STELLA/financials/2566/H1/source.zip",
+      "sha256": "3df8b3fac2e329bf3dad94a1f65aaf6d74deda125c7a3afabfb2cd4e7a07fe25",
+      "ingested_at": "2026-04-24T04:01:10+00:00",
+      "shareholder_profit": -46.999
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-16",
+      "news_id": "16841888485621",
+      "raw_path": "STELLA/financials/2566/Q1/source.zip",
+      "sha256": "a4d481dcb70c8095a90b3a7d420074dc36c904097eb194636b1a42af9c63014a",
+      "ingested_at": "2026-04-24T04:01:15+00:00",
+      "shareholder_profit": -114.807
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361205071",
+      "raw_path": "STELLA/financials/2567/9M/source.zip",
+      "sha256": "c6455236ea122720dd35e98d1f61da0654c0554cc72609ca333bb077be25ee6f",
+      "ingested_at": "2026-04-24T04:00:42+00:00",
+      "shareholder_profit": -91.553
+    },
     {
       "year": 2567,
       "period": "FY",
@@ -29,6 +182,26 @@
       "sha256": "f88d168ae29949bc874c77e3ed0d2d4ef3ba936dd46cc6c4cca85f5578b6cb1a",
       "ingested_at": "2026-04-24T04:00:37+00:00",
       "shareholder_profit": -2011.756326
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-14",
+      "news_id": "17235857951661",
+      "raw_path": "STELLA/financials/2567/H1/source.zip",
+      "sha256": "6cb9e86c2a251238f6badceeabd2be121e6516d9a82e57ccf38027213df1d563",
+      "ingested_at": "2026-04-24T04:00:47+00:00",
+      "shareholder_profit": -256.993
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-16",
+      "news_id": "17158119005471",
+      "raw_path": "STELLA/financials/2567/Q1/source.zip",
+      "sha256": "af7b086d92bd98a9fe69816312fef7d3d3ae39de34101ed03281c065dfa8411b",
+      "ingested_at": "2026-04-24T04:00:52+00:00",
+      "shareholder_profit": -126.503
     },
     {
       "year": 2568,

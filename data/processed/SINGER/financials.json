@@ -4,7 +4,244 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-12",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 86.894,
+      "Q2": 182.628,
+      "Q3": 165.127,
+      "Q4": 265.94256800000005,
+      "FullYear": 700.591568
+    },
+    "2565": {
+      "Q1": 215.414,
+      "Q2": 265.417,
+      "Q3": 261.041,
+      "Q4": 199.552146,
+      "FullYear": 941.424146
+    },
+    "2566": {
+      "Q1": -843.365,
+      "Q2": -2395.977,
+      "Q3": 12.582,
+      "Q4": 17.155664000000222,
+      "FullYear": -3209.604336
+    },
+    "2567": {
+      "Q1": 20.167,
+      "Q2": 28.424,
+      "Q3": 27.189,
+      "Q4": -62.054152,
+      "FullYear": 13.725848
+    },
+    "2568": {
+      "Q1": 20.086,
+      "Q2": 12.452,
+      "Q3": 59.696,
+      "Q4": 12.850088,
+      "FullYear": 105.084088
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-10",
+      "news_id": "2021120724",
+      "raw_path": "SINGER/financials/2564/9M/source.zip",
+      "sha256": "a8add74833497b770fb02bf58b0a56df6ff5a43cb97543c72d49cf63e71059d1",
+      "ingested_at": "2026-04-24T02:40:49+00:00",
+      "shareholder_profit": 165.127
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-23",
+      "news_id": "2022020594",
+      "raw_path": "SINGER/financials/2564/FY/source.zip",
+      "sha256": "d1d96fad16055f761b71e7306d82add8a82bcce78e3dd6c5569686a4d3d7c035",
+      "ingested_at": "2026-04-24T02:40:44+00:00",
+      "shareholder_profit": 700.591568
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-10",
+      "news_id": "2021085970",
+      "raw_path": "SINGER/financials/2564/H1/source.zip",
+      "sha256": "29851d1da98c8a4ae357887dfb55c97e84ce0dfe459f9f2d95406845dfa4dd7e",
+      "ingested_at": "2026-04-24T02:40:54+00:00",
+      "shareholder_profit": 182.628
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-12",
+      "news_id": "2021055001",
+      "raw_path": "SINGER/financials/2564/Q1/source.zip",
+      "sha256": "e1ebf0b0ac34ee5fbde81eda7f818fc9a8018585b59e80338df169ba1c2fe7c3",
+      "ingested_at": "2026-04-24T02:40:59+00:00",
+      "shareholder_profit": 86.894
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-09",
+      "news_id": "2022130555",
+      "raw_path": "SINGER/financials/2565/9M/source.zip",
+      "sha256": "ea1a5356d6c8e497013652a2ff603c7e830e6c8c022245163641214fe746ffac",
+      "ingested_at": "2026-04-24T02:40:30+00:00",
+      "shareholder_profit": 261.041
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-13",
+      "news_id": "2023014559",
+      "raw_path": "SINGER/financials/2565/FY/source.zip",
+      "sha256": "4bf2ca26b56d53d5d5f8a545fbd03161200c7c4bdc44352ad5e8acdfe7cd9e2f",
+      "ingested_at": "2026-04-24T02:40:25+00:00",
+      "shareholder_profit": 941.424146
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-10",
+      "news_id": "2022093412",
+      "raw_path": "SINGER/financials/2565/H1/source.zip",
+      "sha256": "e8976c2dcb7de9761542fc31eba18a6653822f8866fb80e257b3b298ad1a14ae",
+      "ingested_at": "2026-04-24T02:40:35+00:00",
+      "shareholder_profit": 265.417
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-11",
+      "news_id": "2022058265",
+      "raw_path": "SINGER/financials/2565/Q1/source.zip",
+      "sha256": "65d4a0e2a22f15575adfb1e2ff24606d20daac7950d3b17359b3595279d6e7c8",
+      "ingested_at": "2026-04-24T02:40:39+00:00",
+      "shareholder_profit": 215.414
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-09",
+      "news_id": "16994859292601",
+      "raw_path": "SINGER/financials/2566/9M/source.zip",
+      "sha256": "e63c7f65f13d7d0ee6a5651c5327012905214c165a3b5dab4cc169c901fa7a1a",
+      "ingested_at": "2026-04-24T02:40:11+00:00",
+      "shareholder_profit": 12.582
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-12",
+      "news_id": "17076943418811",
+      "raw_path": "SINGER/financials/2566/FY/source.zip",
+      "sha256": "506a244592d03060e38eac9c26d22ec7c10d024a1669c13df8f31f9b479f428e",
+      "ingested_at": "2026-04-24T02:40:07+00:00",
+      "shareholder_profit": -3209.604336
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-10",
+      "news_id": "16916230333661",
+      "raw_path": "SINGER/financials/2566/H1/source.zip",
+      "sha256": "e5ebeb41917c3e29e4ecf8baa1798fcb25056558da92fe21b2a2d465ae265334",
+      "ingested_at": "2026-04-24T02:40:16+00:00",
+      "shareholder_profit": -2395.977
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-12",
+      "news_id": "16838458874771",
+      "raw_path": "SINGER/financials/2566/Q1/source.zip",
+      "sha256": "51ebbdfcd7b7d7a83b9bd1796afb5fca860fcb77b63a8caf30f2c0cad46d773a",
+      "ingested_at": "2026-04-24T02:40:20+00:00",
+      "shareholder_profit": -843.365
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-08",
+      "news_id": "17310157152011",
+      "raw_path": "SINGER/financials/2567/9M/source.zip",
+      "sha256": "045929ca562a7113ce7d48e6c4a3dd3705ad838b04622ff671f2fb1f15719d8b",
+      "ingested_at": "2026-04-24T02:39:53+00:00",
+      "shareholder_profit": 27.189
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-11",
+      "news_id": "17392279299381",
+      "raw_path": "SINGER/financials/2567/FY/source.zip",
+      "sha256": "36f5fdf188a26bc5ee3efe7ce69cb72e09d3fa5007d40985f58a709b70ac5532",
+      "ingested_at": "2026-04-24T02:39:48+00:00",
+      "shareholder_profit": 13.725848
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-09",
+      "news_id": "17231594095171",
+      "raw_path": "SINGER/financials/2567/H1/source.zip",
+      "sha256": "4bf363443c845464c2792bc0c0cdfb82db954fa5613840a0fa517ef519a7c4cc",
+      "ingested_at": "2026-04-24T02:39:57+00:00",
+      "shareholder_profit": 28.424
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-15",
+      "news_id": "17157257447571",
+      "raw_path": "SINGER/financials/2567/Q1/source.zip",
+      "sha256": "009ed9e834979309517f9e0b59d1b9bcf8097885f31efcd077f5e636ed7db382",
+      "ingested_at": "2026-04-24T02:40:02+00:00",
+      "shareholder_profit": 20.167
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-11",
+      "news_id": "17628159941561",
+      "raw_path": "SINGER/financials/2568/9M/source.zip",
+      "sha256": "d676222e51913bea82ec1990a7657e37dafa662978a2a1a5f1df6140be623091",
+      "ingested_at": "2026-04-24T02:39:34+00:00",
+      "shareholder_profit": 59.696
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-12",
+      "news_id": "17708534366071",
+      "raw_path": "SINGER/financials/2568/FY/source.zip",
+      "sha256": "de83de75f532ef31c978dee81576e5fa882600c4115cace3e21a0b402f8ee33b",
+      "ingested_at": "2026-04-24T02:39:28+00:00",
+      "shareholder_profit": 105.084088
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361197521",
+      "raw_path": "SINGER/financials/2568/H1/source.zip",
+      "sha256": "cf7914ddf03064e43a186c8c957bfd8a0d0589e89a00ede397741d797632c9b0",
+      "ingested_at": "2026-04-24T02:39:38+00:00",
+      "shareholder_profit": 12.452
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-14",
+      "news_id": "17471784583071",
+      "raw_path": "SINGER/financials/2568/Q1/source.zip",
+      "sha256": "b042a9d89fc7fcfe91b606b49c3f1b6b1773df8933cb3b1e8bdca97428214663",
+      "ingested_at": "2026-04-24T02:39:43+00:00",
+      "shareholder_profit": 20.086
+    }
+  ]
 }

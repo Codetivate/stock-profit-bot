@@ -4,7 +4,244 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-23",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 106.871,
+      "Q2": 56.497,
+      "Q3": 51.307,
+      "Q4": 98.43765400000002,
+      "FullYear": 313.112654
+    },
+    "2565": {
+      "Q1": 113.974,
+      "Q2": 118.686,
+      "Q3": 145.576,
+      "Q4": 96.13526100000001,
+      "FullYear": 474.371261
+    },
+    "2566": {
+      "Q1": 86.679,
+      "Q2": 41.801,
+      "Q3": 83.876,
+      "Q4": 78.13880699999996,
+      "FullYear": 290.494807
+    },
+    "2567": {
+      "Q1": 25.212,
+      "Q2": 6.358,
+      "Q3": 4.337,
+      "Q4": 48.601392000000004,
+      "FullYear": 84.508392
+    },
+    "2568": {
+      "Q1": -39.192,
+      "Q2": -44.747,
+      "Q3": -16.585,
+      "Q4": -11.301195999999997,
+      "FullYear": -111.825196
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-09",
+      "news_id": "2021119634",
+      "raw_path": "AMARIN/financials/2564/9M/source.zip",
+      "sha256": "3badcf9ecdc61c31747655775dd6c07c650a32e8aa2c7f35763faae067d46ef5",
+      "ingested_at": "2026-04-24T06:47:34+00:00",
+      "shareholder_profit": 51.307
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-23",
+      "news_id": "2022020602",
+      "raw_path": "AMARIN/financials/2564/FY/source.zip",
+      "sha256": "43d7a5827495d44886701acda4f2348cbd969d5834de26c2c6d0c93e5e816c7e",
+      "ingested_at": "2026-04-24T06:47:30+00:00",
+      "shareholder_profit": 313.112654
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-10",
+      "news_id": "2021085952",
+      "raw_path": "AMARIN/financials/2564/H1/source.zip",
+      "sha256": "e68033df07ef6198859cfe0b3a608f546f41098a9da3e3de8a8d88a7e10f0e28",
+      "ingested_at": "2026-04-24T06:47:38+00:00",
+      "shareholder_profit": 56.497
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-13",
+      "news_id": "2021055689",
+      "raw_path": "AMARIN/financials/2564/Q1/source.zip",
+      "sha256": "9ce343f5781b5f3c4e2436ffe3345bc85419332d886874ad5ec00b820981fef5",
+      "ingested_at": "2026-04-24T06:47:43+00:00",
+      "shareholder_profit": 106.871
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-11",
+      "news_id": "2022134224",
+      "raw_path": "AMARIN/financials/2565/9M/source.zip",
+      "sha256": "856ee3c725e95a2ef0180203dfd9fee3ef458c7275c881c8d9a0c78e8d11d184",
+      "ingested_at": "2026-04-24T06:47:17+00:00",
+      "shareholder_profit": 145.576
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-28",
+      "news_id": "2023026301",
+      "raw_path": "AMARIN/financials/2565/FY/source.zip",
+      "sha256": "6eb83f9c481a099f5ecae7f4d028b071f0b17aede4ce0445e5ee0b42cdc40f23",
+      "ingested_at": "2026-04-24T06:47:13+00:00",
+      "shareholder_profit": 474.371261
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-08",
+      "news_id": "2022090973",
+      "raw_path": "AMARIN/financials/2565/H1/source.zip",
+      "sha256": "38a6c23fc3586fa60fe80a04c9e0dbb0eda5f7cba2469fe90897628e960f6b06",
+      "ingested_at": "2026-04-24T06:47:21+00:00",
+      "shareholder_profit": 118.686
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-12",
+      "news_id": "2022059904",
+      "raw_path": "AMARIN/financials/2565/Q1/source.zip",
+      "sha256": "76e5114e54aec70194e08ed9880cb1291ce839e29befb2e713608c40a47b4f93",
+      "ingested_at": "2026-04-24T06:47:26+00:00",
+      "shareholder_profit": 113.974
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-07",
+      "news_id": "16993142009721",
+      "raw_path": "AMARIN/financials/2566/9M/source.zip",
+      "sha256": "8d79e11c2bad55db63cad382cbae8fed6919a73a12f510a80c7118ad624708c6",
+      "ingested_at": "2026-04-24T06:47:00+00:00",
+      "shareholder_profit": 83.876
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-22",
+      "news_id": "17085582128401",
+      "raw_path": "AMARIN/financials/2566/FY/source.zip",
+      "sha256": "c8e1dc9b828b8d1b8c710bc580a11b82043d42cd216be919ee1c00662f452d32",
+      "ingested_at": "2026-04-24T06:46:55+00:00",
+      "shareholder_profit": 290.494807
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-11",
+      "news_id": "16917102061041",
+      "raw_path": "AMARIN/financials/2566/H1/source.zip",
+      "sha256": "0b5d9754387fe8058bed0d600b2d84d66464fb0a0c05c190267ab63a6d1b1070",
+      "ingested_at": "2026-04-24T06:47:04+00:00",
+      "shareholder_profit": 41.801
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-11",
+      "news_id": "16837584060501",
+      "raw_path": "AMARIN/financials/2566/Q1/source.zip",
+      "sha256": "10158da38a21a430f1a9d53809d832924acf1948a6c45ed864af1cda9a732e27",
+      "ingested_at": "2026-04-24T06:47:08+00:00",
+      "shareholder_profit": 86.679
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361330271",
+      "raw_path": "AMARIN/financials/2567/9M/source.zip",
+      "sha256": "5c41e424ba774b06673f4e7c5ec68e2ee78914de7cff80ef5c23bc5c7bddd67f",
+      "ingested_at": "2026-04-24T06:46:41+00:00",
+      "shareholder_profit": 4.337
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-25",
+      "news_id": "17404367252891",
+      "raw_path": "AMARIN/financials/2567/FY/source.zip",
+      "sha256": "e4441b99a7c659109db91eaa0f589e9e0d1f3c4b09a7370630dba7a5bd753111",
+      "ingested_at": "2026-04-24T06:46:37+00:00",
+      "shareholder_profit": 84.508392
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990172851",
+      "raw_path": "AMARIN/financials/2567/H1/source.zip",
+      "sha256": "d02b9224192374c29f6216c59fda9932f94caba4d3b1d0d1e23ae4c803a4c0eb",
+      "ingested_at": "2026-04-24T06:46:46+00:00",
+      "shareholder_profit": 6.358
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434551141",
+      "raw_path": "AMARIN/financials/2567/Q1/source.zip",
+      "sha256": "382e5c37a37ae65823387cd267655d16a0e956ab5fc5614ce88771c1192a22f1",
+      "ingested_at": "2026-04-24T06:46:51+00:00",
+      "shareholder_profit": 25.212
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-14",
+      "news_id": "17630699635081",
+      "raw_path": "AMARIN/financials/2568/9M/source.zip",
+      "sha256": "dcc9f38635bafe59ae36452b13059b77b51c0906658dfc885456e4adb0caba72",
+      "ingested_at": "2026-04-24T06:46:25+00:00",
+      "shareholder_profit": -16.585
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-23",
+      "news_id": "17718030210201",
+      "raw_path": "AMARIN/financials/2568/FY/source.zip",
+      "sha256": "64255c4e94201c3e62e39087b526a24663e77c82467530a81948f8e2d74cdb79",
+      "ingested_at": "2026-04-24T06:46:20+00:00",
+      "shareholder_profit": -111.825196
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361198841",
+      "raw_path": "AMARIN/financials/2568/H1/source.zip",
+      "sha256": "7a434849519b632c6faa21cbb15b6df0d6dfca12cf112d92b0a5ad8f62cc5545",
+      "ingested_at": "2026-04-24T06:46:29+00:00",
+      "shareholder_profit": -44.747
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903563951",
+      "raw_path": "AMARIN/financials/2568/Q1/source.zip",
+      "sha256": "d1e702d360d4ad7c9cd817fc14169eef41258dce2d32a2191eb02a355d23c94b",
+      "ingested_at": "2026-04-24T06:46:33+00:00",
+      "shareholder_profit": -39.192
+    }
+  ]
 }

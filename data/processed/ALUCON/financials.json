@@ -4,7 +4,244 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-19",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 195.196,
+      "Q2": 5.384999999999991,
+      "Q3": -6.181999999999988,
+      "Q4": 509.819218,
+      "FullYear": 704.218218
+    },
+    "2565": {
+      "Q1": 133.874,
+      "Q2": 14.944999999999993,
+      "Q3": 78.74800000000002,
+      "Q4": 431.84022500000003,
+      "FullYear": 659.407225
+    },
+    "2566": {
+      "Q1": 62.961,
+      "Q2": 85.85799999999999,
+      "Q3": 61.85300000000002,
+      "Q4": 295.813682,
+      "FullYear": 506.485682
+    },
+    "2567": {
+      "Q1": 288.884,
+      "Q2": -59.28400000000002,
+      "Q3": -183.422,
+      "Q4": 734.950395,
+      "FullYear": 781.128395
+    },
+    "2568": {
+      "Q1": 275.295,
+      "Q2": 80.101,
+      "Q3": -148.96200000000002,
+      "Q4": 807.9683140000001,
+      "FullYear": 1014.402314
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-12",
+      "news_id": "2021123773",
+      "raw_path": "ALUCON/financials/2564/9M/source.zip",
+      "sha256": "2ed209a9168952f32ae3fa50503a0981e36b5e87f303173818695917e47003f4",
+      "ingested_at": "2026-04-24T06:44:29+00:00",
+      "shareholder_profit": 194.399
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-25",
+      "news_id": "2022024554",
+      "raw_path": "ALUCON/financials/2564/FY/source.zip",
+      "sha256": "fb6965158539dcf31bdf0b5887e0a95e8a90e2ab8bb3b3a5413bbbb8606bd435",
+      "ingested_at": "2026-04-24T06:44:24+00:00",
+      "shareholder_profit": 704.218218
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-13",
+      "news_id": "2021089564",
+      "raw_path": "ALUCON/financials/2564/H1/source.zip",
+      "sha256": "20ac3fb46f9171107bd08f2b09080240bc5ebdf61283cd3aaafa58e020612187",
+      "ingested_at": "2026-04-24T06:44:33+00:00",
+      "shareholder_profit": 200.581
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-14",
+      "news_id": "2021057888",
+      "raw_path": "ALUCON/financials/2564/Q1/source.zip",
+      "sha256": "fddf02fc912f36e19176966d1ca6ba775f7a686f4b0ccabf357bbbab1d478cf2",
+      "ingested_at": "2026-04-24T06:44:37+00:00",
+      "shareholder_profit": 195.196
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-11",
+      "news_id": "2022134184",
+      "raw_path": "ALUCON/financials/2565/9M/source.zip",
+      "sha256": "7864491bf2d1c3ff2a555db548ee8e9a3379c9be0f5ae9cb51ad2accddb8b046",
+      "ingested_at": "2026-04-24T06:44:12+00:00",
+      "shareholder_profit": 227.567
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-24",
+      "news_id": "2023022647",
+      "raw_path": "ALUCON/financials/2565/FY/source.zip",
+      "sha256": "98fae97b9326e29f1848d7433b4efcdd2caae2e315ad777a9be359090bbf7a97",
+      "ingested_at": "2026-04-24T06:44:07+00:00",
+      "shareholder_profit": 659.407225
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-11",
+      "news_id": "2022096093",
+      "raw_path": "ALUCON/financials/2565/H1/source.zip",
+      "sha256": "171f7a329603c3d588acd237708dc64e0268acf9145d7867fb406570bdb65be1",
+      "ingested_at": "2026-04-24T06:44:16+00:00",
+      "shareholder_profit": 202.478
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-13",
+      "news_id": "2022061969",
+      "raw_path": "ALUCON/financials/2565/Q1/source.zip",
+      "sha256": "0159de0905879ee023d5aba1ca42f7e0b1fa7724b6f86b2a66eaf7f256ff472c",
+      "ingested_at": "2026-04-24T06:44:20+00:00",
+      "shareholder_profit": 133.874
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-10",
+      "news_id": "16995730775001",
+      "raw_path": "ALUCON/financials/2566/9M/source.zip",
+      "sha256": "0e910c5ba1d97141e0d22aacd7cce4f39f7843af77bf6f310215a3015ae87d6a",
+      "ingested_at": "2026-04-24T06:43:55+00:00",
+      "shareholder_profit": 210.672
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-23",
+      "news_id": "17086429042101",
+      "raw_path": "ALUCON/financials/2566/FY/source.zip",
+      "sha256": "7cca0c31401b4718a941549f775aee41e0b1c9c461f11e9fc3eb8e9e41fa3f47",
+      "ingested_at": "2026-04-24T06:43:50+00:00",
+      "shareholder_profit": 506.485682
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-11",
+      "news_id": "16917102126131",
+      "raw_path": "ALUCON/financials/2566/H1/source.zip",
+      "sha256": "760a5810866f8f55e30f16cdaaaabed3b5b1d770e389b506e93258a6cd64e5a4",
+      "ingested_at": "2026-04-24T06:43:59+00:00",
+      "shareholder_profit": 158.388
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-12",
+      "news_id": "16838458870141",
+      "raw_path": "ALUCON/financials/2566/Q1/source.zip",
+      "sha256": "e544832b09abc9056a0f55c9dd75827b742ba934096f690458988821d3de37b3",
+      "ingested_at": "2026-04-24T06:44:03+00:00",
+      "shareholder_profit": 62.961
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-11",
+      "news_id": "17312815624231",
+      "raw_path": "ALUCON/financials/2567/9M/source.zip",
+      "sha256": "c7092bee5c6caa5d7934aaf1934ff965eb8db91cf017130aaa64b07ebec59cdb",
+      "ingested_at": "2026-04-24T06:43:38+00:00",
+      "shareholder_profit": 46.178
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-24",
+      "news_id": "17403534230531",
+      "raw_path": "ALUCON/financials/2567/FY/source.zip",
+      "sha256": "84d2418bfcde35dfb3928e7d8fa79a0caf02a5a04bc7de6f43b48489630e1c28",
+      "ingested_at": "2026-04-24T06:43:34+00:00",
+      "shareholder_profit": 781.128395
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990208751",
+      "raw_path": "ALUCON/financials/2567/H1/source.zip",
+      "sha256": "48b5a3d86e2578c5df3f974eb83a027b2083b40e75b1d9653cc8d1170cb987a2",
+      "ingested_at": "2026-04-24T06:43:42+00:00",
+      "shareholder_profit": 229.6
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434560901",
+      "raw_path": "ALUCON/financials/2567/Q1/source.zip",
+      "sha256": "7f870d088e6a5a5c6a1f8c46e61acf8f7d8ad8e17e606eed07aea63aa29e2990",
+      "ingested_at": "2026-04-24T06:43:46+00:00",
+      "shareholder_profit": 288.884
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-10",
+      "news_id": "17627310445781",
+      "raw_path": "ALUCON/financials/2568/9M/source.zip",
+      "sha256": "62804453a53221eda53f54f9da75751ebaa27c77a58d4f39abb225afb9072493",
+      "ingested_at": "2026-04-24T06:43:21+00:00",
+      "shareholder_profit": 206.434
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-19",
+      "news_id": "17714553175911",
+      "raw_path": "ALUCON/financials/2568/FY/source.zip",
+      "sha256": "85fe117fade5a21304057400bfb3145e0d710d7df0d48f464a3bbe6be1a628f4",
+      "ingested_at": "2026-04-24T06:43:16+00:00",
+      "shareholder_profit": 1014.402314
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229853941",
+      "raw_path": "ALUCON/financials/2568/H1/source.zip",
+      "sha256": "1d57cc111c8fd5ad040b33b2c4696c1510b1d753c5c8bcbf969cc695b1ce7e51",
+      "ingested_at": "2026-04-24T06:43:25+00:00",
+      "shareholder_profit": 355.396
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903532151",
+      "raw_path": "ALUCON/financials/2568/Q1/source.zip",
+      "sha256": "1f82682f2245fe9a701ca7e304d9141333afaecae00c7c6b39445ee7730c6348",
+      "ingested_at": "2026-04-24T06:43:29+00:00",
+      "shareholder_profit": 275.295
+    }
+  ]
 }

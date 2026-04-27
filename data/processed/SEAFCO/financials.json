@@ -4,7 +4,244 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-25",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 23.927,
+      "Q2": -1.948,
+      "Q3": -57.067,
+      "Q4": -21.553192000000003,
+      "FullYear": -56.641192
+    },
+    "2565": {
+      "Q1": -43.496,
+      "Q2": -56.661,
+      "Q3": -38.985,
+      "Q4": 9.652740000000009,
+      "FullYear": -129.48926
+    },
+    "2566": {
+      "Q1": 58.53,
+      "Q2": 12.547,
+      "Q3": 62.585,
+      "Q4": 35.750442,
+      "FullYear": 169.412442
+    },
+    "2567": {
+      "Q1": 33.437,
+      "Q2": 5.606,
+      "Q3": -11.058,
+      "Q4": -26.626289999999997,
+      "FullYear": 1.35871
+    },
+    "2568": {
+      "Q1": -61.884,
+      "Q2": 37.15734,
+      "Q3": 87.223,
+      "Q4": 104.53143499999997,
+      "FullYear": 167.027775
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-12",
+      "news_id": "2021122715",
+      "raw_path": "SEAFCO/financials/2564/9M/source.zip",
+      "sha256": "3a4b04fdf2664501f0b6c9f7ed1a4fcd36b3bfbf605ba893d00b1f34311e18a9",
+      "ingested_at": "2026-04-24T02:23:08+00:00",
+      "shareholder_profit": -57.067
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-28",
+      "news_id": "2022025617",
+      "raw_path": "SEAFCO/financials/2564/FY/source.zip",
+      "sha256": "bd68e2525931bc59dc8fb0a9d0c3d7fb82acf74a5664c87aab2b50628206138e",
+      "ingested_at": "2026-04-24T02:23:04+00:00",
+      "shareholder_profit": -56.641192
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-16",
+      "news_id": "2021091281",
+      "raw_path": "SEAFCO/financials/2564/H1/source.zip",
+      "sha256": "d69ff910eea95648911958311aa98b27bb6c549ffb52954e4653728371e81055",
+      "ingested_at": "2026-04-24T02:23:13+00:00",
+      "shareholder_profit": -1.948
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-14",
+      "news_id": "2021057563",
+      "raw_path": "SEAFCO/financials/2564/Q1/source.zip",
+      "sha256": "9065c78ce9cdb222eae45bd38fec8cca299c6ec85f32270577fc41c5827bf604",
+      "ingested_at": "2026-04-24T02:23:18+00:00",
+      "shareholder_profit": 23.927
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-14",
+      "news_id": "2022135592",
+      "raw_path": "SEAFCO/financials/2565/9M/source.zip",
+      "sha256": "1cdf169752a945e1d3cda5a9071efb426991b807177dfe8977d87ed61aee12b1",
+      "ingested_at": "2026-04-24T02:22:50+00:00",
+      "shareholder_profit": -38.985
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-27",
+      "news_id": "2023023368",
+      "raw_path": "SEAFCO/financials/2565/FY/source.zip",
+      "sha256": "8cd21c600a7c7cc0a52e1c589cb66b4a3fea2db31c77628a4861bbe1405232c3",
+      "ingested_at": "2026-04-24T02:22:45+00:00",
+      "shareholder_profit": -129.48926
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-15",
+      "news_id": "2022097554",
+      "raw_path": "SEAFCO/financials/2565/H1/source.zip",
+      "sha256": "3a14639d3be3be09000014eb031ec53a1a359faf18fcc6309ad541133f980d97",
+      "ingested_at": "2026-04-24T02:22:54+00:00",
+      "shareholder_profit": -56.661
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-17",
+      "news_id": "2022063451",
+      "raw_path": "SEAFCO/financials/2565/Q1/source.zip",
+      "sha256": "7820e0136c8efcd4bef6893c3b167d7f901ad297ff2265c4a8674acc322216e8",
+      "ingested_at": "2026-04-24T02:22:59+00:00",
+      "shareholder_profit": -43.496
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-14",
+      "news_id": "16999132617821",
+      "raw_path": "SEAFCO/financials/2566/9M/source.zip",
+      "sha256": "4fbdb390c9f306f3d1b9b345e9afa7ed319d5aec50df41e46bb984e7c0457bcf",
+      "ingested_at": "2026-04-24T02:22:31+00:00",
+      "shareholder_profit": 62.585
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-22",
+      "news_id": "17085582023331",
+      "raw_path": "SEAFCO/financials/2566/FY/source.zip",
+      "sha256": "b0d8149278b678cd23ac022ff08144e9edde271f43626c64e4f72e83f6c17afe",
+      "ingested_at": "2026-04-24T02:22:26+00:00",
+      "shareholder_profit": 169.412442
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-10",
+      "news_id": "16916230210591",
+      "raw_path": "SEAFCO/financials/2566/H1/source.zip",
+      "sha256": "ea76ceca4a6ba33a4b9bdd4d98858fd043e24f4a3661e9f77897b2955e193af9",
+      "ingested_at": "2026-04-24T02:22:36+00:00",
+      "shareholder_profit": 12.547
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-15",
+      "news_id": "16841053956121",
+      "raw_path": "SEAFCO/financials/2566/Q1/source.zip",
+      "sha256": "2101c6743f46c1773f66c84e3d57976412683d774e1313dec9122ce6abb4d5e1",
+      "ingested_at": "2026-04-24T02:22:41+00:00",
+      "shareholder_profit": 58.53
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361225391",
+      "raw_path": "SEAFCO/financials/2567/9M/source.zip",
+      "sha256": "d968d496ca04ce993637e2464f2568c621dc081711a6339595534efcad25bd82",
+      "ingested_at": "2026-04-24T02:22:13+00:00",
+      "shareholder_profit": -11.058
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-21",
+      "news_id": "17400886534781",
+      "raw_path": "SEAFCO/financials/2567/FY/source.zip",
+      "sha256": "5574cbe5c018d358fe4f4adfc104aec83a15c579c3b21877c071aa0b259891dd",
+      "ingested_at": "2026-04-24T02:22:07+00:00",
+      "shareholder_profit": 1.35871
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-08",
+      "news_id": "17230734140701",
+      "raw_path": "SEAFCO/financials/2567/H1/source.zip",
+      "sha256": "f4f9c9f76f71e082d52b55b29f0b77533843b6176fe9bd024f0cfdf1ce27cea9",
+      "ingested_at": "2026-04-24T02:22:17+00:00",
+      "shareholder_profit": 5.606
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-13",
+      "news_id": "17155537948991",
+      "raw_path": "SEAFCO/financials/2567/Q1/source.zip",
+      "sha256": "ae7aa33d9109645e08e43df6b88d3cc328aee29d8983fdfa70cdd0093603d4e2",
+      "ingested_at": "2026-04-24T02:22:22+00:00",
+      "shareholder_profit": 33.437
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-12",
+      "news_id": "17629001485141",
+      "raw_path": "SEAFCO/financials/2568/9M/source.zip",
+      "sha256": "cdc24a91e17f26b77a9bfd97ef56b6234ce655de493ef6016fbd7f69b2e9ee0f",
+      "ingested_at": "2026-04-24T02:21:53+00:00",
+      "shareholder_profit": 87.223
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-25",
+      "news_id": "17719707036131",
+      "raw_path": "SEAFCO/financials/2568/FY/source.zip",
+      "sha256": "58d74edff5911f902ca2849f9171ca7af58ba6ee4d894e9ee97abf3352c086ff",
+      "ingested_at": "2026-04-24T02:21:48+00:00",
+      "shareholder_profit": 167.027775
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-07",
+      "news_id": "17545237041601",
+      "raw_path": "SEAFCO/financials/2568/H1/source.zip",
+      "sha256": "b2fbe17683ef32c6e1ce4e5a3ba850d65b142da779961810007f0713a535c5e5",
+      "ingested_at": "2026-04-24T02:21:57+00:00",
+      "shareholder_profit": 37.15734
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-07",
+      "news_id": "17465747672591",
+      "raw_path": "SEAFCO/financials/2568/Q1/source.zip",
+      "sha256": "7a5a83c673cf99b6b4aa7d4e8ab661830a348582166d1e862f31c46896aa1008",
+      "ingested_at": "2026-04-24T02:22:03+00:00",
+      "shareholder_profit": -61.884
+    }
+  ]
 }

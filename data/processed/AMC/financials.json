@@ -4,7 +4,244 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-24",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 256.711,
+      "Q2": 321.559,
+      "Q3": 167.363,
+      "Q4": 194.7125279999999,
+      "FullYear": 940.345528
+    },
+    "2565": {
+      "Q1": 102.688,
+      "Q2": -13.271,
+      "Q3": -179.311,
+      "Q4": 25.69790900000001,
+      "FullYear": -64.196091
+    },
+    "2566": {
+      "Q1": 160.509,
+      "Q2": 71.381,
+      "Q3": 78.8,
+      "Q4": 106.33978100000006,
+      "FullYear": 417.029781
+    },
+    "2567": {
+      "Q1": 74.305,
+      "Q2": 62.435,
+      "Q3": 11.356,
+      "Q4": -76.894895,
+      "FullYear": 71.201105
+    },
+    "2568": {
+      "Q1": 311.057,
+      "Q2": 10.335,
+      "Q3": -6.009,
+      "Q4": -301.930475,
+      "FullYear": 13.452525
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-11",
+      "news_id": "2021121864",
+      "raw_path": "AMC/financials/2564/9M/source.zip",
+      "sha256": "86537dd7ffd41facd167a3dffbf79ad41609f91b0737bfe548edaf1900b5567c",
+      "ingested_at": "2026-04-24T06:53:17+00:00",
+      "shareholder_profit": 167.363
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-25",
+      "news_id": "2022024409",
+      "raw_path": "AMC/financials/2564/FY/source.zip",
+      "sha256": "e67a31b60e5de1f9bd53e71fb2567a45a46fc6eb408a3660210cd13fa57ff1ee",
+      "ingested_at": "2026-04-24T06:53:13+00:00",
+      "shareholder_profit": 940.345528
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-16",
+      "news_id": "2021091067",
+      "raw_path": "AMC/financials/2564/H1/source.zip",
+      "sha256": "ba9b034d0298ad12e189abe8d54f25e4c5d0d585c77d09043216c23996bb1fe2",
+      "ingested_at": "2026-04-24T06:53:21+00:00",
+      "shareholder_profit": 321.559
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-17",
+      "news_id": "2021059658",
+      "raw_path": "AMC/financials/2564/Q1/source.zip",
+      "sha256": "41e350bfc0340bc812a9ce638ef272a1a49a36c5877e61c38e910b8a4d43772d",
+      "ingested_at": "2026-04-24T06:53:25+00:00",
+      "shareholder_profit": 256.711
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-10",
+      "news_id": "2022132214",
+      "raw_path": "AMC/financials/2565/9M/source.zip",
+      "sha256": "8902b311467d4a0889f69f8f8b5db41483ad1db600b32184972b674b3ac61bb6",
+      "ingested_at": "2026-04-24T06:52:59+00:00",
+      "shareholder_profit": -179.311
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-23",
+      "news_id": "2023021007",
+      "raw_path": "AMC/financials/2565/FY/source.zip",
+      "sha256": "982e9ef1f1a7f93612e7166cd653e05473c7fd38c3b1a01bc020758e53094245",
+      "ingested_at": "2026-04-24T06:52:55+00:00",
+      "shareholder_profit": -64.196091
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-10",
+      "news_id": "2022093163",
+      "raw_path": "AMC/financials/2565/H1/source.zip",
+      "sha256": "b8bd63558eb42bee4411fd1d12f193adfc19a87c4ff15979620b6790a53db89f",
+      "ingested_at": "2026-04-24T06:53:03+00:00",
+      "shareholder_profit": -13.271
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-12",
+      "news_id": "2022060354",
+      "raw_path": "AMC/financials/2565/Q1/source.zip",
+      "sha256": "7b6e7f5a70319ca7edb7fb5ae6b52b2c13fe02141ec5183d75b60804210b3857",
+      "ingested_at": "2026-04-24T06:53:08+00:00",
+      "shareholder_profit": 102.688
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-09",
+      "news_id": "16994859274241",
+      "raw_path": "AMC/financials/2566/9M/source.zip",
+      "sha256": "2f98041365632373cf1f3407d1948d2363788c53b5cfb6694aea80d4232022f0",
+      "ingested_at": "2026-04-24T06:52:41+00:00",
+      "shareholder_profit": 78.8
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-22",
+      "news_id": "17085582126581",
+      "raw_path": "AMC/financials/2566/FY/source.zip",
+      "sha256": "b74bfdbfdbf5b245295150470dadfe089982cc21fdf59a458ffdd4fff49aa9f1",
+      "ingested_at": "2026-04-24T06:52:37+00:00",
+      "shareholder_profit": 417.029781
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-10",
+      "news_id": "16916230313391",
+      "raw_path": "AMC/financials/2566/H1/source.zip",
+      "sha256": "6d11254e89772909673052887b90e413b71fe908657a25569e75af68cc0827c5",
+      "ingested_at": "2026-04-24T06:52:46+00:00",
+      "shareholder_profit": 71.381
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-11",
+      "news_id": "16837584083221",
+      "raw_path": "AMC/financials/2566/Q1/source.zip",
+      "sha256": "ff6d36b04a44be7fdad7a90721ffed37ec7d1d42e2773db595637c5d9d86fdd4",
+      "ingested_at": "2026-04-24T06:52:50+00:00",
+      "shareholder_profit": 160.509
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-13",
+      "news_id": "17314477515981",
+      "raw_path": "AMC/financials/2567/9M/source.zip",
+      "sha256": "86c1b5d4d0ca9b135d9871fd16b8c17b675f9d704d6d916c159e3e95ab96cedb",
+      "ingested_at": "2026-04-24T06:52:24+00:00",
+      "shareholder_profit": 11.356
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-21",
+      "news_id": "17400886541021",
+      "raw_path": "AMC/financials/2567/FY/source.zip",
+      "sha256": "4e535267fca5a31a42e16834f089c3b496dd9916d4cfa518921fb2bb7ae580cb",
+      "ingested_at": "2026-04-24T06:52:20+00:00",
+      "shareholder_profit": 71.201105
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-08",
+      "news_id": "17230734195211",
+      "raw_path": "AMC/financials/2567/H1/source.zip",
+      "sha256": "edc69ab6d72667b6caa4b50cafc1ff3968574b3fff7eca83c5603af81081e135",
+      "ingested_at": "2026-04-24T06:52:28+00:00",
+      "shareholder_profit": 62.435
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434565001",
+      "raw_path": "AMC/financials/2567/Q1/source.zip",
+      "sha256": "49fba43140a66606930c8f40207318baf160365891cf32f8f18cc20e584c557e",
+      "ingested_at": "2026-04-24T06:52:33+00:00",
+      "shareholder_profit": 74.305
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-12",
+      "news_id": "17629001499611",
+      "raw_path": "AMC/financials/2568/9M/source.zip",
+      "sha256": "4959d3a7e891b06f60295a947c0169288957cc2f9f3011f1fea8c9ca3760185f",
+      "ingested_at": "2026-04-24T06:52:08+00:00",
+      "shareholder_profit": -6.009
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-24",
+      "news_id": "17718892130361",
+      "raw_path": "AMC/financials/2568/FY/source.zip",
+      "sha256": "3c2d65135317f305d4a63c8e2db8bb624e09af2d8a5f6605a941332847805c71",
+      "ingested_at": "2026-04-24T06:52:04+00:00",
+      "shareholder_profit": 13.452525
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-07",
+      "news_id": "17545237061891",
+      "raw_path": "AMC/financials/2568/H1/source.zip",
+      "sha256": "e3924306b3bfadb0cbfdf4f7b0feb1c9702078b442d3ed33f1258ca0188bcbda",
+      "ingested_at": "2026-04-24T06:52:12+00:00",
+      "shareholder_profit": 10.335
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-14",
+      "news_id": "17471784543781",
+      "raw_path": "AMC/financials/2568/Q1/source.zip",
+      "sha256": "301b88bc495326120b8a5f0c04b96de92e14bce97fa1c73ceb47d59dbb9450a6",
+      "ingested_at": "2026-04-24T06:52:16+00:00",
+      "shareholder_profit": 311.057
+    }
+  ]
 }

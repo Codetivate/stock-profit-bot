@@ -4,7 +4,63 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-26",
+  "quarterly_history": {
+    "2567": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": 41.917386
+    },
+    "2568": {
+      "Q1": null,
+      "Q2": -1.850976,
+      "Q3": 12.929413,
+      "Q4": 4.6156739999999985,
+      "FullYear": 22.886236
+    }
+  },
+  "sources": [
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-10-24",
+      "news_id": "17612630469651",
+      "raw_path": "MASTEC/financials/2567/FY/source.zip",
+      "sha256": "4a3174a92b799f9f47fb044426bed2b3735d87b32e50baa9e05f38e9fb847d79",
+      "ingested_at": "2026-04-23T21:43:27+00:00",
+      "shareholder_profit": 41.917386
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-13",
+      "news_id": "17629880457641",
+      "raw_path": "MASTEC/financials/2568/9M/source.zip",
+      "sha256": "6bdd527d60585a62ed97e9524a3c9641774718d7edea402a6287f407b9b43c62",
+      "ingested_at": "2026-04-23T21:43:18+00:00",
+      "shareholder_profit": 12.929413
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-26",
+      "news_id": "17720575212221",
+      "raw_path": "MASTEC/financials/2568/FY/source.zip",
+      "sha256": "d1ba090fc001e70f85990093ac8a47e5f35f9fa6794f1533132bb5336212f33e",
+      "ingested_at": "2026-04-23T21:43:13+00:00",
+      "shareholder_profit": 22.886236
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-10-24",
+      "news_id": "17612630469751",
+      "raw_path": "MASTEC/financials/2568/H1/source.zip",
+      "sha256": "a211a7e09ad1a651dd910bdfbc724c4e55e7dab78eebcfa2317a466d1cef5042",
+      "ingested_at": "2026-04-23T21:43:23+00:00",
+      "shareholder_profit": -1.850976
+    }
+  ]
 }

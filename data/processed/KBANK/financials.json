@@ -4,7 +4,211 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-04-21",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 10626.866,
+      "Q2": 8894.077999999998,
+      "Q3": 8630.607,
+      "Q4": 9901.171000000002,
+      "FullYear": 38052.722
+    },
+    "2565": {
+      "Q1": 11210.956,
+      "Q2": 10793.748,
+      "Q3": 10573.985,
+      "Q4": 3190.8009999999995,
+      "FullYear": 35769.49
+    },
+    "2566": {
+      "Q1": 10741.061,
+      "Q2": 10994.272999999997,
+      "Q3": 11281.857,
+      "Q4": 9387.844000000005,
+      "FullYear": 42405.035
+    },
+    "2567": {
+      "Q1": 13485.723,
+      "Q2": 12652.915000000005,
+      "Q3": 11965.431,
+      "Q4": 10494.055999999997,
+      "FullYear": 48598.125
+    },
+    "2568": {
+      "Q1": 13791.451,
+      "Q2": 12488.193000000001,
+      "Q3": 13007.19,
+      "Q4": 10277.937999999996,
+      "FullYear": 49564.772
+    },
+    "2569": {
+      "Q1": 14667.406,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": null
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-15",
+      "news_id": "2021125678",
+      "raw_path": "KBANK/financials/2564/9M/source.zip",
+      "sha256": "dffd22a6755d3087bc289a9961635c4b97b2a15fb95c44efd97fe61e3cdbe014",
+      "ingested_at": "2026-04-25T04:53:24+00:00",
+      "shareholder_profit": 8630.607
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-24",
+      "news_id": "2022021588",
+      "raw_path": "KBANK/financials/2564/FY/source.zip",
+      "sha256": "8e3e0c64cd497f4811c66c7205b9e84d0e9cd86cea747b53f621838a23631a11",
+      "ingested_at": "2026-04-25T04:53:19+00:00",
+      "shareholder_profit": 38052.722
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-13",
+      "news_id": "2021056170",
+      "raw_path": "KBANK/financials/2564/Q1/source.zip",
+      "sha256": "d4c39f1049ecaa01bc62097c24efb67dfce02a274e6ec15b4fedfffbe5d92ff7",
+      "ingested_at": "2026-04-25T04:53:28+00:00",
+      "shareholder_profit": 10626.866
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-14",
+      "news_id": "2022136114",
+      "raw_path": "KBANK/financials/2565/9M/source.zip",
+      "sha256": "7e4556ceb56c0c78d8639a4f4e73b268454da75cb1e7131f93a6ec2121de61c2",
+      "ingested_at": "2026-04-25T04:53:10+00:00",
+      "shareholder_profit": 10573.985
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-23",
+      "news_id": "2023021192",
+      "raw_path": "KBANK/financials/2565/FY/source.zip",
+      "sha256": "a6abe873c9b771f95165a3bd46ed8425ca9e20260d76dbb3b26257a0afb7804b",
+      "ingested_at": "2026-04-25T04:53:05+00:00",
+      "shareholder_profit": 35769.49
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-11",
+      "news_id": "2022058015",
+      "raw_path": "KBANK/financials/2565/Q1/source.zip",
+      "sha256": "1ac43f68b51248024bd791fcd55bb64772db49b9a9ed6569458a212d0a81bcbe",
+      "ingested_at": "2026-04-25T04:53:14+00:00",
+      "shareholder_profit": 11210.956
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-14",
+      "news_id": "16999132727201",
+      "raw_path": "KBANK/financials/2566/9M/source.zip",
+      "sha256": "5ffff17293a03b3ec1f1a1826969ca01b65a4828d6d9ad121a61890b4c6d7c5e",
+      "ingested_at": "2026-04-25T04:52:55+00:00",
+      "shareholder_profit": 11281.857
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-29",
+      "news_id": "17091569110111",
+      "raw_path": "KBANK/financials/2566/FY/source.zip",
+      "sha256": "856a0514cafb604e4e42a65846b7119091503b1714aded389df92112ea3694bd",
+      "ingested_at": "2026-04-25T04:52:50+00:00",
+      "shareholder_profit": 42405.035
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-12",
+      "news_id": "16838458860751",
+      "raw_path": "KBANK/financials/2566/Q1/source.zip",
+      "sha256": "81beda7425900496e391f34025c91a12aaa815c31f5efdaf7cbdae0d64f129d8",
+      "ingested_at": "2026-04-25T04:53:00+00:00",
+      "shareholder_profit": 10741.061
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361294261",
+      "raw_path": "KBANK/financials/2567/9M/source.zip",
+      "sha256": "a62d0664774d9e1e57f7ec32370c16adba084c277021171fff58a0d85359d353",
+      "ingested_at": "2026-04-25T04:52:40+00:00",
+      "shareholder_profit": 11965.431
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-27",
+      "news_id": "17406066411011",
+      "raw_path": "KBANK/financials/2567/FY/source.zip",
+      "sha256": "cc8b439def1c0ed44ec2bc9e12d4f90dc6aea9523f4f3061988cc0109a86abdf",
+      "ingested_at": "2026-04-25T04:52:35+00:00",
+      "shareholder_profit": 48598.125
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434556431",
+      "raw_path": "KBANK/financials/2567/Q1/source.zip",
+      "sha256": "be0f904c6d5289f9c85b94d34068af17e5a79e417ccc6252ff58f33b61277c0a",
+      "ingested_at": "2026-04-25T04:52:45+00:00",
+      "shareholder_profit": 13485.723
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-13",
+      "news_id": "17629880489401",
+      "raw_path": "KBANK/financials/2568/9M/source.zip",
+      "sha256": "f45b546b43d31d5f71084d4a0644f832da93da2000a45ab10d65569a49ed82ae",
+      "ingested_at": "2026-04-25T04:52:25+00:00",
+      "shareholder_profit": 13007.19
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-26",
+      "news_id": "17720575378901",
+      "raw_path": "KBANK/financials/2568/FY/source.zip",
+      "sha256": "6fe74bb7065f355f6aff3c14fa082145ffaa3f59fc0e67bb0340d59f11e6c95a",
+      "ingested_at": "2026-04-25T04:52:21+00:00",
+      "shareholder_profit": 49564.772
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-14",
+      "news_id": "17471784615191",
+      "raw_path": "KBANK/financials/2568/Q1/source.zip",
+      "sha256": "e852cd313065ce72ff09934fed065ef8e1e09e16454d4a3532e27e6163b6592a",
+      "ingested_at": "2026-04-25T04:52:30+00:00",
+      "shareholder_profit": 13791.451
+    },
+    {
+      "year": 2569,
+      "period": "Q1",
+      "filing_date": "2026-04-21",
+      "news_id": "17767279826911",
+      "raw_path": "KBANK/financials/2569/Q1/source.zip",
+      "sha256": "b68e35026e66236d1c65928bca6bf169040e48564251ce5ae70ea7fdf9cf0f40",
+      "ingested_at": "2026-04-25T04:52:16+00:00",
+      "shareholder_profit": 14667.406
+    }
+  ]
 }

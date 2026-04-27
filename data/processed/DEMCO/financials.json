@@ -4,7 +4,244 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-27",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 40.84132894440002,
+      "Q2": 40.84132894440002,
+      "Q3": 22.85462825937215,
+      "Q4": -74.26649220595797,
+      "FullYear": 30.270793942214212
+    },
+    "2565": {
+      "Q1": -67.002,
+      "Q2": -36.927,
+      "Q3": -48.255,
+      "Q4": 24.345,
+      "FullYear": -127.839
+    },
+    "2566": {
+      "Q1": -25.536,
+      "Q2": 58.18,
+      "Q3": -42.292,
+      "Q4": -540.281,
+      "FullYear": -549.929
+    },
+    "2567": {
+      "Q1": -35.506,
+      "Q2": -6.505,
+      "Q3": 62.526,
+      "Q4": -83.173,
+      "FullYear": -62.658
+    },
+    "2568": {
+      "Q1": -31.39,
+      "Q2": 24.149,
+      "Q3": 18.671,
+      "Q4": 1.360999999999997,
+      "FullYear": 12.791
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-12",
+      "news_id": "2021123398",
+      "raw_path": "DEMCO/financials/2564/9M/source.zip",
+      "sha256": "92f15315d547b245502d702ecb96866e628447892e6c64eb54aef2d20c2840c8",
+      "ingested_at": "2026-04-23T17:49:18+00:00",
+      "shareholder_profit": 22.85462825937215
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-25",
+      "news_id": "2022024122",
+      "raw_path": "DEMCO/financials/2564/FY/source.zip",
+      "sha256": "bd28767a71cf391a556cf35beb62febc8aae4107c2b19f4d74c45c585d0835dc",
+      "ingested_at": "2026-04-23T17:49:13+00:00",
+      "shareholder_profit": 22.85462825937215
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-13",
+      "news_id": "2021090389",
+      "raw_path": "DEMCO/financials/2564/H1/source.zip",
+      "sha256": "a4242a1227ab580d2cc11d79a4c46575d0486603e03c0482267cf84812a1cf11",
+      "ingested_at": "2026-04-23T17:49:22+00:00",
+      "shareholder_profit": 40.84132894440002
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-14",
+      "news_id": "2021058899",
+      "raw_path": "DEMCO/financials/2564/Q1/source.zip",
+      "sha256": "3b440709833a511e3decdf977a16de84f60bb8f8b2e65c0b47b8d10059f1a08b",
+      "ingested_at": "2026-04-23T17:49:27+00:00",
+      "shareholder_profit": 40.84132894440002
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-11",
+      "news_id": "2022134272",
+      "raw_path": "DEMCO/financials/2565/9M/source.zip",
+      "sha256": "b35066aa90587bb1423e89f3977d55b30ede02991813c54ce331ec9b7dcb2c83",
+      "ingested_at": "2026-04-23T17:48:59+00:00",
+      "shareholder_profit": -48.255
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-27",
+      "news_id": "2023023743",
+      "raw_path": "DEMCO/financials/2565/FY/source.zip",
+      "sha256": "d885187e2d8944ae7a1532adeb1c06a3d9dd837e6fbf6969ace45cc1f2e25ea1",
+      "ingested_at": "2026-04-23T17:48:54+00:00",
+      "shareholder_profit": -127.839
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-11",
+      "news_id": "2022095421",
+      "raw_path": "DEMCO/financials/2565/H1/source.zip",
+      "sha256": "8361bb460b13982854890993c1125cdd42da467c3bc8d0656a8a1084ebd5a3be",
+      "ingested_at": "2026-04-23T17:49:04+00:00",
+      "shareholder_profit": -36.927
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-13",
+      "news_id": "2022062542",
+      "raw_path": "DEMCO/financials/2565/Q1/source.zip",
+      "sha256": "7f7ef6b6cc0cf89810aefd6cb59a61ed0d2f02602ae71188447e1c3266ff4737",
+      "ingested_at": "2026-04-23T17:49:08+00:00",
+      "shareholder_profit": -67.002
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-14",
+      "news_id": "16999132691211",
+      "raw_path": "DEMCO/financials/2566/9M/source.zip",
+      "sha256": "da7b976724d904f79c3f5d2193b96cb51491a0f307437d5d6a1b41dc79c2e919",
+      "ingested_at": "2026-04-23T17:48:40+00:00",
+      "shareholder_profit": -42.292
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-27",
+      "news_id": "17089869236381",
+      "raw_path": "DEMCO/financials/2566/FY/source.zip",
+      "sha256": "b466c96c9eb54bcb09996b476423d30c09595edf05b7d2911156f060b64cd768",
+      "ingested_at": "2026-04-23T17:48:35+00:00",
+      "shareholder_profit": -549.929
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-11",
+      "news_id": "16917102124731",
+      "raw_path": "DEMCO/financials/2566/H1/source.zip",
+      "sha256": "8787829241908008af35b417d38828c1ce43e51c9d8a5e9d33c74808de7eb398",
+      "ingested_at": "2026-04-23T17:48:45+00:00",
+      "shareholder_profit": 58.18
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-12",
+      "news_id": "16838458842731",
+      "raw_path": "DEMCO/financials/2566/Q1/source.zip",
+      "sha256": "008acd9da76d2bc671101962ca904fc65622a3f4799477f380adf04f04820cce",
+      "ingested_at": "2026-04-23T17:48:50+00:00",
+      "shareholder_profit": -25.536
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361273611",
+      "raw_path": "DEMCO/financials/2567/9M/source.zip",
+      "sha256": "b57d026c405f5f5d29f5cd60382667c4d66ca6a1d19d84a9ccbb512b4811e8a2",
+      "ingested_at": "2026-04-23T17:48:21+00:00",
+      "shareholder_profit": 62.526
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-28",
+      "news_id": "17406928320411",
+      "raw_path": "DEMCO/financials/2567/FY/source.zip",
+      "sha256": "0db15e08955b584179b61db64dcaec1be9fdb1dae38c4f0ea54ca21a99c93daf",
+      "ingested_at": "2026-04-23T17:48:17+00:00",
+      "shareholder_profit": -62.658
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-14",
+      "news_id": "17235858014601",
+      "raw_path": "DEMCO/financials/2567/H1/source.zip",
+      "sha256": "d514f2dac026dfb296048e8b1d9caf37b037e3b787ca352f10aeaf0f4f7b8a45",
+      "ingested_at": "2026-04-23T17:48:26+00:00",
+      "shareholder_profit": -6.505
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-15",
+      "news_id": "17157257438591",
+      "raw_path": "DEMCO/financials/2567/Q1/source.zip",
+      "sha256": "c07281bfd58d4a102293cf90bd2d87ea80d5d3ad1ac1da2575c47de6a5f61e7c",
+      "ingested_at": "2026-04-23T17:48:31+00:00",
+      "shareholder_profit": -35.506
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-14",
+      "news_id": "17630699585581",
+      "raw_path": "DEMCO/financials/2568/9M/source.zip",
+      "sha256": "99b835bef9bfedee111e9ddba5114f162f485451c54a78184827c0ca74bb2ac3",
+      "ingested_at": "2026-04-23T17:48:03+00:00",
+      "shareholder_profit": 18.671
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-27",
+      "news_id": "17721443014971",
+      "raw_path": "DEMCO/financials/2568/FY/source.zip",
+      "sha256": "ae158a0d555f4127e006a8c152a86b59b9f8e69cb2db14ff7251af52ab360434",
+      "ingested_at": "2026-04-23T17:47:58+00:00",
+      "shareholder_profit": 12.791
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361072411",
+      "raw_path": "DEMCO/financials/2568/H1/source.zip",
+      "sha256": "ca9c5a0da69604d261e7786ae518d08f7fcc82af866287349d4f6524a0ce82fc",
+      "ingested_at": "2026-04-23T17:48:08+00:00",
+      "shareholder_profit": 24.149
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903522241",
+      "raw_path": "DEMCO/financials/2568/Q1/source.zip",
+      "sha256": "14d50d676781b683c2f3f8b9937756857efcb0692a1b4a7b5cb687adb3210e66",
+      "ingested_at": "2026-04-23T17:48:12+00:00",
+      "shareholder_profit": -31.39
+    }
+  ]
 }

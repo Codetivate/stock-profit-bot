@@ -4,7 +4,244 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-27",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 319.712,
+      "Q2": 351.839,
+      "Q3": 339.169,
+      "Q4": 378.4929831100002,
+      "FullYear": 1389.21298311
+    },
+    "2565": {
+      "Q1": 327.606,
+      "Q2": 338.13,
+      "Q3": 299.707,
+      "Q4": 306.0145392699999,
+      "FullYear": 1271.4575392699999
+    },
+    "2566": {
+      "Q1": 233.828,
+      "Q2": 207.146,
+      "Q3": 189.192,
+      "Q4": 204.16900023999983,
+      "FullYear": 834.3350002399998
+    },
+    "2567": {
+      "Q1": 107.21824437000001,
+      "Q2": 145.90158241999993,
+      "Q3": 181.53420508999992,
+      "Q4": 153.38961102000005,
+      "FullYear": 588.0436428999999
+    },
+    "2568": {
+      "Q1": 93.3656988,
+      "Q2": 128.70463914000004,
+      "Q3": 98.68899582000002,
+      "Q4": 141.56946244999983,
+      "FullYear": 462.3287962099999
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-15",
+      "news_id": "2021124731",
+      "raw_path": "LALIN/financials/2564/9M/source.zip",
+      "sha256": "a327d2052696c1f345d3bf7085c47c736351871d0cf006604db3b8d2a050f48d",
+      "ingested_at": "2026-04-23T21:10:25+00:00",
+      "shareholder_profit": 339.169
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-28",
+      "news_id": "2022024805",
+      "raw_path": "LALIN/financials/2564/FY/source.zip",
+      "sha256": "3dce48c7bdbb0413ce212efd178d5889088456fed8612785d9a45d647c31b425",
+      "ingested_at": "2026-04-23T21:10:21+00:00",
+      "shareholder_profit": 1389.21298311
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-16",
+      "news_id": "2021091027",
+      "raw_path": "LALIN/financials/2564/H1/source.zip",
+      "sha256": "53eb22ea7e971e64e8274e3f04f749cdca3f5c6af79c1af036dc23cedbe2e1d4",
+      "ingested_at": "2026-04-23T21:10:30+00:00",
+      "shareholder_profit": 351.839
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-17",
+      "news_id": "2021059420",
+      "raw_path": "LALIN/financials/2564/Q1/source.zip",
+      "sha256": "702f6fda683a9afecdb05087d0626fd15ded378ed5e77899e00414276bb0fb78",
+      "ingested_at": "2026-04-23T21:10:34+00:00",
+      "shareholder_profit": 319.712
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-14",
+      "news_id": "2022135026",
+      "raw_path": "LALIN/financials/2565/9M/source.zip",
+      "sha256": "ffbce74ff0386205c3f4b00ce67e82e0188fc57ddef3ed5ccd16cf552a8b02ce",
+      "ingested_at": "2026-04-23T21:10:08+00:00",
+      "shareholder_profit": 299.707
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-27",
+      "news_id": "2023023149",
+      "raw_path": "LALIN/financials/2565/FY/source.zip",
+      "sha256": "8aaa9956a34dab8b525792523f81293d0c3ab7576e87575be77d86f592505109",
+      "ingested_at": "2026-04-23T21:10:03+00:00",
+      "shareholder_profit": 1271.4575392699999
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-16",
+      "news_id": "2022098578",
+      "raw_path": "LALIN/financials/2565/H1/source.zip",
+      "sha256": "6f4c4902de4549407d6723befc8ada2a6a3fcb0891fa39d64d568551edbf7c8f",
+      "ingested_at": "2026-04-23T21:10:12+00:00",
+      "shareholder_profit": 338.13
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-17",
+      "news_id": "2022063407",
+      "raw_path": "LALIN/financials/2565/Q1/source.zip",
+      "sha256": "05dd58b8047e53bbc872e5e8475046ea5728fcfe6a6abea6eb87e4e2ffea616d",
+      "ingested_at": "2026-04-23T21:10:16+00:00",
+      "shareholder_profit": 327.606
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-14",
+      "news_id": "16999132613731",
+      "raw_path": "LALIN/financials/2566/9M/source.zip",
+      "sha256": "0d1c6e7b9d46f051a720d27708267af3b4548c18ec72145bb94d4e7237d36dee",
+      "ingested_at": "2026-04-23T21:09:50+00:00",
+      "shareholder_profit": 189.192
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-29",
+      "news_id": "17091569002301",
+      "raw_path": "LALIN/financials/2566/FY/source.zip",
+      "sha256": "253b13c9cdfcf1493cc0c99e6a62ec1db752ed617e728fa8ac380c0df60a3702",
+      "ingested_at": "2026-04-23T21:09:45+00:00",
+      "shareholder_profit": 834.3350002399998
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-15",
+      "news_id": "16920539302371",
+      "raw_path": "LALIN/financials/2566/H1/source.zip",
+      "sha256": "6d38bf6dcef0aea1e7555f4e549871fe83397047f939443afd690db8684d0dee",
+      "ingested_at": "2026-04-23T21:09:54+00:00",
+      "shareholder_profit": 207.146
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-16",
+      "news_id": "16841888485251",
+      "raw_path": "LALIN/financials/2566/Q1/source.zip",
+      "sha256": "201dca1961f6bb8d4a04af46b4d094fd6caefb0250fe92190d716029e278e8df",
+      "ingested_at": "2026-04-23T21:09:59+00:00",
+      "shareholder_profit": 233.828
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361200921",
+      "raw_path": "LALIN/financials/2567/9M/source.zip",
+      "sha256": "92b6f1e044c99c3eedaf17ad5b69a4c8a58bc177a7c62332b4160b8e921d15e4",
+      "ingested_at": "2026-04-23T21:09:32+00:00",
+      "shareholder_profit": 181.53420508999992
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-27",
+      "news_id": "17406066107591",
+      "raw_path": "LALIN/financials/2567/FY/source.zip",
+      "sha256": "6dadb7bc79c08ca3e05c00df76eb0bee3461b38499d5748423d0e0948228945f",
+      "ingested_at": "2026-04-23T21:09:27+00:00",
+      "shareholder_profit": 588.0436428999999
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-15",
+      "news_id": "17236759882881",
+      "raw_path": "LALIN/financials/2567/H1/source.zip",
+      "sha256": "d8ddee8e9a192ddc1e5887b3170453cd5ef00a79521b9b03b2228f3da6e76a26",
+      "ingested_at": "2026-04-23T21:09:36+00:00",
+      "shareholder_profit": 145.90158241999993
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-16",
+      "news_id": "17158119005761",
+      "raw_path": "LALIN/financials/2567/Q1/source.zip",
+      "sha256": "8a209f56a7c0fcb335dcd79105a5e11359e5919e6d72f6d5ee9921d88408a507",
+      "ingested_at": "2026-04-23T21:09:41+00:00",
+      "shareholder_profit": 107.21824437000001
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-17",
+      "news_id": "17633294888241",
+      "raw_path": "LALIN/financials/2568/9M/source.zip",
+      "sha256": "dc5ffdde9aefd80d0a0795845bb0131749f7a2493d84454bbb5d3d82e3709d52",
+      "ingested_at": "2026-04-23T21:09:13+00:00",
+      "shareholder_profit": 98.68899582000002
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-27",
+      "news_id": "17721442944741",
+      "raw_path": "LALIN/financials/2568/FY/source.zip",
+      "sha256": "9c6e4d617713d8f3a352d1e5bdb71ac6700f30e1ce72a955dca33f0ef8796606",
+      "ingested_at": "2026-04-23T21:09:09+00:00",
+      "shareholder_profit": 462.3287962099999
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229768091",
+      "raw_path": "LALIN/financials/2568/H1/source.zip",
+      "sha256": "3eade1dea9e176c2e686adea8eabcc95dc883c6dd0f22d64d9595cad327f2e79",
+      "ingested_at": "2026-04-23T21:09:18+00:00",
+      "shareholder_profit": 128.70463914000004
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-15",
+      "news_id": "17472613085311",
+      "raw_path": "LALIN/financials/2568/Q1/source.zip",
+      "sha256": "09cd4b9e20877a7d35ed16c73b3f612a14460b39c243467e82e2871cc3454da9",
+      "ingested_at": "2026-04-23T21:09:23+00:00",
+      "shareholder_profit": 93.3656988
+    }
+  ]
 }

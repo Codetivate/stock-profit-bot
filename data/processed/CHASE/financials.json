@@ -4,7 +4,194 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-26",
+  "quarterly_history": {
+    "2564": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": 270.857729
+    },
+    "2565": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": 19.358737,
+      "Q4": 22.186500999999993,
+      "FullYear": 144.085853
+    },
+    "2566": {
+      "Q1": 12.24725,
+      "Q2": 43.670135,
+      "Q3": 46.373726,
+      "Q4": 30.728714000000004,
+      "FullYear": 133.019825
+    },
+    "2567": {
+      "Q1": 39.044841,
+      "Q2": 28.544172,
+      "Q3": 9.478051,
+      "Q4": 9.167367000000002,
+      "FullYear": 86.234431
+    },
+    "2568": {
+      "Q1": 3.260995,
+      "Q2": 1.521596,
+      "Q3": 3.549272,
+      "Q4": -6.096907,
+      "FullYear": 2.234956
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2023-02-20",
+      "news_id": "2023017157",
+      "raw_path": "CHASE/financials/2564/FY/source.zip",
+      "sha256": "8fc52a851cda3fde876bcffed9387eec7ee445ba687a44f5f42322ac96a45e18",
+      "ingested_at": "2026-04-23T16:43:44+00:00",
+      "shareholder_profit": 270.857729
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2023-02-20",
+      "news_id": "2023017163",
+      "raw_path": "CHASE/financials/2565/9M/source.zip",
+      "sha256": "d207556901591d211cab54b32fd0c6d7c1c317e2d0d58c51c67ff3678cbb105c",
+      "ingested_at": "2026-04-23T16:43:39+00:00",
+      "shareholder_profit": 19.358737
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-28",
+      "news_id": "2023026757",
+      "raw_path": "CHASE/financials/2565/FY/source.zip",
+      "sha256": "8c4abf5b286f2263584b41dd96a2a695c0d1e2683f4f40abb5303be557dd0c50",
+      "ingested_at": "2026-04-23T16:43:35+00:00",
+      "shareholder_profit": 144.085853
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-13",
+      "news_id": "16998304584411",
+      "raw_path": "CHASE/financials/2566/9M/source.zip",
+      "sha256": "a828584093bc2fc245a15b2ac0660c30045216242ddcaff256daea6e38f822f1",
+      "ingested_at": "2026-04-23T16:43:21+00:00",
+      "shareholder_profit": 46.373726
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-28",
+      "news_id": "17090750776181",
+      "raw_path": "CHASE/financials/2566/FY/source.zip",
+      "sha256": "c29c72654059a74a44c372cdadd7ca7fdcaa5d7023655a4d84814ef4862f7cf9",
+      "ingested_at": "2026-04-23T16:43:17+00:00",
+      "shareholder_profit": 133.019825
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-11",
+      "news_id": "16917102125381",
+      "raw_path": "CHASE/financials/2566/H1/source.zip",
+      "sha256": "8ca74b34a724cc72aaa2eb6d9a0cf17294b1a55a244ad21ea5805c79404acba9",
+      "ingested_at": "2026-04-23T16:43:26+00:00",
+      "shareholder_profit": 43.670135
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-11",
+      "news_id": "16837584093751",
+      "raw_path": "CHASE/financials/2566/Q1/source.zip",
+      "sha256": "16a358208163b90dfa9534c830a5596f556103b05f2e305b48d671806d7e77db",
+      "ingested_at": "2026-04-23T16:43:30+00:00",
+      "shareholder_profit": 12.24725
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-13",
+      "news_id": "17314477528681",
+      "raw_path": "CHASE/financials/2567/9M/source.zip",
+      "sha256": "47dd6d64c5f5b58c106e6809fccb64cbf8ffe8777e3a5c58acfee20d99918e15",
+      "ingested_at": "2026-04-23T16:43:03+00:00",
+      "shareholder_profit": 9.478051
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-27",
+      "news_id": "17406066366621",
+      "raw_path": "CHASE/financials/2567/FY/source.zip",
+      "sha256": "3a12640e577ccb6ad8f44e881bdcaf137ecefba9a2c7de4cb9200ef1ce4c4e66",
+      "ingested_at": "2026-04-23T16:42:59+00:00",
+      "shareholder_profit": 86.234431
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990229221",
+      "raw_path": "CHASE/financials/2567/H1/source.zip",
+      "sha256": "74ee924730bb5cb3a60fd3a95d71a7fb2857c955375ef40e728c709eb0233447",
+      "ingested_at": "2026-04-23T16:43:08+00:00",
+      "shareholder_profit": 28.544172
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434592561",
+      "raw_path": "CHASE/financials/2567/Q1/source.zip",
+      "sha256": "41d13c363075d38ec7987d7127f8ca3fc1989afa15e5012f9a33abfd2259d9ab",
+      "ingested_at": "2026-04-23T16:43:12+00:00",
+      "shareholder_profit": 39.044841
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-13",
+      "news_id": "17629880490031",
+      "raw_path": "CHASE/financials/2568/9M/source.zip",
+      "sha256": "d9c9110ffa813a2773f5674874f3a1febdd5847d8bc28ddaca2b9e6d2dced6ae",
+      "ingested_at": "2026-04-23T16:42:44+00:00",
+      "shareholder_profit": 3.549272
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-26",
+      "news_id": "17720575299761",
+      "raw_path": "CHASE/financials/2568/FY/source.zip",
+      "sha256": "38240ca115c23db77e8a5c3d90605c75d5f6e60c4f02b2a273b991477315ca27",
+      "ingested_at": "2026-04-23T16:42:40+00:00",
+      "shareholder_profit": 2.234956
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361174921",
+      "raw_path": "CHASE/financials/2568/H1/source.zip",
+      "sha256": "0323c7ab642a275633e10c63cd5a1a12a35253b9ed6c156043c5a24c166dc70f",
+      "ingested_at": "2026-04-23T16:42:50+00:00",
+      "shareholder_profit": 1.521596
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-14",
+      "news_id": "17471784569221",
+      "raw_path": "CHASE/financials/2568/Q1/source.zip",
+      "sha256": "b9b6c370867706ca3cfd5b422cf79a60089a266dd5f331430140576933b9c1bb",
+      "ingested_at": "2026-04-23T16:42:54+00:00",
+      "shareholder_profit": 3.260995
+    }
+  ]
 }

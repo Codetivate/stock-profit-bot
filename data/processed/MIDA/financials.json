@@ -4,7 +4,244 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-03-02",
+  "quarterly_history": {
+    "2564": {
+      "Q1": -40.162,
+      "Q2": -65.955,
+      "Q3": -38.295,
+      "Q4": -31.836232999999993,
+      "FullYear": -176.248233
+    },
+    "2565": {
+      "Q1": -32.642,
+      "Q2": -20.342,
+      "Q3": -42.6,
+      "Q4": -42.97691799999999,
+      "FullYear": -138.560918
+    },
+    "2566": {
+      "Q1": 57.69,
+      "Q2": 156.632,
+      "Q3": 142.452,
+      "Q4": -39.757339,
+      "FullYear": 317.016661
+    },
+    "2567": {
+      "Q1": -19.653,
+      "Q2": -70.411,
+      "Q3": -64.903,
+      "Q4": -62.189552000000006,
+      "FullYear": -217.156552
+    },
+    "2568": {
+      "Q1": 14.953,
+      "Q2": -85.641,
+      "Q3": -313.605,
+      "Q4": -39.388687999999945,
+      "FullYear": -423.681688
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-15",
+      "news_id": "2021126154",
+      "raw_path": "MIDA/financials/2564/9M/source.zip",
+      "sha256": "650ae69260a2f429b49a52fae15fb3298d47c2f467307ff9fcf034af7f8fa526",
+      "ingested_at": "2026-04-23T22:08:35+00:00",
+      "shareholder_profit": -38.295
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-28",
+      "news_id": "2022026749",
+      "raw_path": "MIDA/financials/2564/FY/source.zip",
+      "sha256": "8589ce1d65735122b1d37496da7b6fb329d495b19472fc5e827c625205fcb3a5",
+      "ingested_at": "2026-04-23T22:08:31+00:00",
+      "shareholder_profit": -176.248233
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-16",
+      "news_id": "2021092201",
+      "raw_path": "MIDA/financials/2564/H1/source.zip",
+      "sha256": "7f6aad1aee83f3deead44d50e24bca3c1ed1be3cebda1320b3bb9b361a347c7e",
+      "ingested_at": "2026-04-23T22:08:40+00:00",
+      "shareholder_profit": -65.955
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-17",
+      "news_id": "2021060263",
+      "raw_path": "MIDA/financials/2564/Q1/source.zip",
+      "sha256": "fcc6e1d29607d09311984fe2135e9d2f002b7caf8b3cef4db858c5f2fa5765eb",
+      "ingested_at": "2026-04-23T22:08:45+00:00",
+      "shareholder_profit": -40.162
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-14",
+      "news_id": "2022136505",
+      "raw_path": "MIDA/financials/2565/9M/source.zip",
+      "sha256": "e78b2b765103f589c13091f4b0a2e79a460b0c94faee3f6894604b4663ca4384",
+      "ingested_at": "2026-04-23T22:08:17+00:00",
+      "shareholder_profit": -42.6
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-28",
+      "news_id": "2023026701",
+      "raw_path": "MIDA/financials/2565/FY/source.zip",
+      "sha256": "ed1baf19ab01317ff0e1d59b05b30ab0d3036b7e846475314e5ba39bf5fb2ae0",
+      "ingested_at": "2026-04-23T22:08:12+00:00",
+      "shareholder_profit": -138.560918
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-15",
+      "news_id": "2022098067",
+      "raw_path": "MIDA/financials/2565/H1/source.zip",
+      "sha256": "b8813a86ee8349ed0b0d309f39baf07cbc40cf48e49e688261924a5192f911f0",
+      "ingested_at": "2026-04-23T22:08:21+00:00",
+      "shareholder_profit": -20.342
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-17",
+      "news_id": "2022064450",
+      "raw_path": "MIDA/financials/2565/Q1/source.zip",
+      "sha256": "14cb65d8bb85d51c2306ef358712e4740d4b567c4cf5c89517079f17ffd33805",
+      "ingested_at": "2026-04-23T22:08:26+00:00",
+      "shareholder_profit": -32.642
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-14",
+      "news_id": "16999132722441",
+      "raw_path": "MIDA/financials/2566/9M/source.zip",
+      "sha256": "760e5228e5de0a20ca4624f4db0f10c57474acadaeeccb96e4d9295123ba1bc4",
+      "ingested_at": "2026-04-23T22:07:58+00:00",
+      "shareholder_profit": 142.452
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-03-01",
+      "news_id": "17092430841031",
+      "raw_path": "MIDA/financials/2566/FY/source.zip",
+      "sha256": "3d869eb6abb781ef42b6208574c91bf66fb297fe288ce5b5243c2ac398bb4b54",
+      "ingested_at": "2026-04-23T22:07:53+00:00",
+      "shareholder_profit": 317.016661
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-15",
+      "news_id": "16920539397981",
+      "raw_path": "MIDA/financials/2566/H1/source.zip",
+      "sha256": "74a82e2c2c3c8f9e62364e1b3a1622f329a19dcd83b624e455c6cf7256c93d5d",
+      "ingested_at": "2026-04-23T22:08:03+00:00",
+      "shareholder_profit": 156.632
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-15",
+      "news_id": "16841054052041",
+      "raw_path": "MIDA/financials/2566/Q1/source.zip",
+      "sha256": "4b587da7dd445e263f7e3653c211cea5a47f40f9f9c524083f25b2ec294cbd1a",
+      "ingested_at": "2026-04-23T22:08:07+00:00",
+      "shareholder_profit": 57.69
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361321531",
+      "raw_path": "MIDA/financials/2567/9M/source.zip",
+      "sha256": "631822b37a100ba46d698d76b287c684bdd55e347b585fd7bf9599f717341242",
+      "ingested_at": "2026-04-23T22:07:39+00:00",
+      "shareholder_profit": -64.903
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-03-03",
+      "news_id": "17409536801761",
+      "raw_path": "MIDA/financials/2567/FY/source.zip",
+      "sha256": "653273ddd1ef8b24c50057533230fc38f8e52cf34ad7f9a034cb20698fe168b1",
+      "ingested_at": "2026-04-23T22:07:34+00:00",
+      "shareholder_profit": -217.156552
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-14",
+      "news_id": "17235858071931",
+      "raw_path": "MIDA/financials/2567/H1/source.zip",
+      "sha256": "34c6911f7bf7774b1cb321b52d5c801375b9601febbf9bff34098e372c54cab2",
+      "ingested_at": "2026-04-23T22:07:44+00:00",
+      "shareholder_profit": -70.411
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-15",
+      "news_id": "17157257475531",
+      "raw_path": "MIDA/financials/2567/Q1/source.zip",
+      "sha256": "6d4511877cff901bf4a88068fa5928a8f930495c2a83feb95da6e3756c60c428",
+      "ingested_at": "2026-04-23T22:07:49+00:00",
+      "shareholder_profit": -19.653
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-14",
+      "news_id": "17630699633891",
+      "raw_path": "MIDA/financials/2568/9M/source.zip",
+      "sha256": "6bbc5e87668b944c0f6b65a16caf16ed9cc7f83c329134e7dbb5db71ae5a3bd9",
+      "ingested_at": "2026-04-23T22:07:21+00:00",
+      "shareholder_profit": -313.605
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-03-02",
+      "news_id": "17724016993601",
+      "raw_path": "MIDA/financials/2568/FY/source.zip",
+      "sha256": "61a58f59f6a154dc50caa228ed1fbd16041db83cbd61442f3355ee1c1a0d0795",
+      "ingested_at": "2026-04-23T22:07:16+00:00",
+      "shareholder_profit": -423.681688
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-15",
+      "news_id": "17552099748991",
+      "raw_path": "MIDA/financials/2568/H1/source.zip",
+      "sha256": "b24ec36f59960d670c4bd2640e4c90ecaae27546fec802b0e93607a621804b88",
+      "ingested_at": "2026-04-23T22:07:25+00:00",
+      "shareholder_profit": -85.641
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-15",
+      "news_id": "17472613184871",
+      "raw_path": "MIDA/financials/2568/Q1/source.zip",
+      "sha256": "28aa3993c3a7ed3b901828ebb6fb2cc0be48721d9a83caae9e423245fce08e70",
+      "ingested_at": "2026-04-23T22:07:30+00:00",
+      "shareholder_profit": 14.953
+    }
+  ]
 }

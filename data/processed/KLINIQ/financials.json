@@ -4,7 +4,204 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-27",
+  "quarterly_history": {
+    "2564": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": 129.255394
+    },
+    "2565": {
+      "Q1": null,
+      "Q2": 54.60456,
+      "Q3": 44.532992,
+      "Q4": 60.736744999999985,
+      "FullYear": 205.488712
+    },
+    "2566": {
+      "Q1": 69.060736,
+      "Q2": 70.649055,
+      "Q3": 70.952544,
+      "Q4": 77.955337,
+      "FullYear": 288.617672
+    },
+    "2567": {
+      "Q1": 75.270715,
+      "Q2": 74.116987,
+      "Q3": 74.041358,
+      "Q4": 98.759048,
+      "FullYear": 322.188108
+    },
+    "2568": {
+      "Q1": 84.795806,
+      "Q2": 89.262504,
+      "Q3": 78.742039,
+      "Q4": 110.89513999999997,
+      "FullYear": 363.695489
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-11-04",
+      "news_id": "2022128167",
+      "raw_path": "KLINIQ/financials/2564/FY/source.zip",
+      "sha256": "74c2beb0e5e345ede8da86ade028a0a8d590fdea5e1bf9b1e386d981e34c3987",
+      "ingested_at": "2026-04-23T20:55:49+00:00",
+      "shareholder_profit": 129.255394
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-14",
+      "news_id": "2022135607",
+      "raw_path": "KLINIQ/financials/2565/9M/source.zip",
+      "sha256": "ab636d5c4210f9ba8a2a87ff66b5e0c06410c79ef061246c75910f860d098e00",
+      "ingested_at": "2026-04-23T20:55:40+00:00",
+      "shareholder_profit": 44.532992
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-28",
+      "news_id": "2023026296",
+      "raw_path": "KLINIQ/financials/2565/FY/source.zip",
+      "sha256": "ac15a73291e364ced514b42fec4b7df7a548d99598861ab8ff4f20498832853c",
+      "ingested_at": "2026-04-23T20:55:31+00:00",
+      "shareholder_profit": 205.488712
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-11-04",
+      "news_id": "2022128173",
+      "raw_path": "KLINIQ/financials/2565/H1/source.zip",
+      "sha256": "0ff265cc18464c991c545778b7dd0fa6ae81dc72fcf8a31d18303b54ae3997d0",
+      "ingested_at": "2026-04-23T20:55:44+00:00",
+      "shareholder_profit": 54.60456
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-14",
+      "news_id": "16999132710021",
+      "raw_path": "KLINIQ/financials/2566/9M/source.zip",
+      "sha256": "4b3471d387cb3740dc29e475b067825eb8417c1ff20026bfbcba2d6e73d9aa36",
+      "ingested_at": "2026-04-23T20:55:18+00:00",
+      "shareholder_profit": 70.952544
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-28",
+      "news_id": "17090750756541",
+      "raw_path": "KLINIQ/financials/2566/FY/source.zip",
+      "sha256": "505944d2be224ee6d5514592e0d7e6bed1e2169c5e662a06ba95a1593fb68705",
+      "ingested_at": "2026-04-23T20:55:14+00:00",
+      "shareholder_profit": 288.617672
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-15",
+      "news_id": "16920539393801",
+      "raw_path": "KLINIQ/financials/2566/H1/source.zip",
+      "sha256": "f58544c78e9aec0af2f041fd77963d4fcc67fb10269eaa40724ba298329123ae",
+      "ingested_at": "2026-04-23T20:55:23+00:00",
+      "shareholder_profit": 70.649055
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-15",
+      "news_id": "16841054017681",
+      "raw_path": "KLINIQ/financials/2566/Q1/source.zip",
+      "sha256": "3fc79fb9a489e75e1832bc1555f6de62909d013d69dd729dfd12dde745931cb5",
+      "ingested_at": "2026-04-23T20:55:27+00:00",
+      "shareholder_profit": 69.060736
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361310311",
+      "raw_path": "KLINIQ/financials/2567/9M/source.zip",
+      "sha256": "8bb0ec9b22e60c44039f26eb4bc6d98f8a9a3a65cf0f2d8cf9c890ce20ee3bc8",
+      "ingested_at": "2026-04-23T20:55:00+00:00",
+      "shareholder_profit": 74.041358
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-27",
+      "news_id": "17406066436941",
+      "raw_path": "KLINIQ/financials/2567/FY/source.zip",
+      "sha256": "4de5643ac160b16ad1eb463918b32470de854e03ae72133eae818fb09780bec9",
+      "ingested_at": "2026-04-23T20:54:56+00:00",
+      "shareholder_profit": 322.188108
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-14",
+      "news_id": "17235858043921",
+      "raw_path": "KLINIQ/financials/2567/H1/source.zip",
+      "sha256": "2b4e2dec9f434d6249e1a99bfd2f021c043939ddf5e253942b0128fc51620795",
+      "ingested_at": "2026-04-23T20:55:05+00:00",
+      "shareholder_profit": 74.116987
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434537641",
+      "raw_path": "KLINIQ/financials/2567/Q1/source.zip",
+      "sha256": "eccd83bcc7b105678ddce3b527c41c3210158a12d5b0a290eb1baaab62adbebd",
+      "ingested_at": "2026-04-23T20:55:09+00:00",
+      "shareholder_profit": 75.270715
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-13",
+      "news_id": "17629880517781",
+      "raw_path": "KLINIQ/financials/2568/9M/source.zip",
+      "sha256": "85ebf2b5ee8e05accd99fdec8e1095a48d7d3fef8071177de0ca792209718f86",
+      "ingested_at": "2026-04-23T20:54:42+00:00",
+      "shareholder_profit": 78.742039
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-27",
+      "news_id": "17721443168661",
+      "raw_path": "KLINIQ/financials/2568/FY/source.zip",
+      "sha256": "1395356a61a72fce0906c277bce8f9029ce3789eac88db0e09586f7779d661e5",
+      "ingested_at": "2026-04-23T20:54:38+00:00",
+      "shareholder_profit": 363.695489
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361191621",
+      "raw_path": "KLINIQ/financials/2568/H1/source.zip",
+      "sha256": "81f5fbf5edede813981aa1010f942f6063b352a8e371469882ba5a13ce0403cb",
+      "ingested_at": "2026-04-23T20:54:47+00:00",
+      "shareholder_profit": 89.262504
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903556221",
+      "raw_path": "KLINIQ/financials/2568/Q1/source.zip",
+      "sha256": "9532df417de36d0bfa70f44243841f96cbf9bbd7576ff8aafd76b4a6db7e3064",
+      "ingested_at": "2026-04-23T20:54:52+00:00",
+      "shareholder_profit": 84.795806
+    }
+  ]
 }

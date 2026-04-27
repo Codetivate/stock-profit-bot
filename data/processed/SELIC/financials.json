@@ -4,7 +4,244 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-26",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 30.048,
+      "Q2": 29.033,
+      "Q3": 11.099,
+      "Q4": 11.346999999999998,
+      "FullYear": 81.527
+    },
+    "2565": {
+      "Q1": 11.716,
+      "Q2": 10.067,
+      "Q3": 13.452,
+      "Q4": 5.009999999999996,
+      "FullYear": 40.245
+    },
+    "2566": {
+      "Q1": 7.2,
+      "Q2": 11.522,
+      "Q3": 27.746,
+      "Q4": 33.679,
+      "FullYear": 80.147
+    },
+    "2567": {
+      "Q1": 42.892,
+      "Q2": 30.351,
+      "Q3": 20.901,
+      "Q4": 33.465999999999994,
+      "FullYear": 127.61
+    },
+    "2568": {
+      "Q1": 34.867,
+      "Q2": 29.356,
+      "Q3": 38.424,
+      "Q4": 44.478000000000016,
+      "FullYear": 147.125
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-15",
+      "news_id": "2021124631",
+      "raw_path": "SELIC/financials/2564/9M/source.zip",
+      "sha256": "1f4f30ea753da460cb3aceda75677cfa166102765c8dc02fc4604d49c152cb62",
+      "ingested_at": "2026-04-24T02:27:08+00:00",
+      "shareholder_profit": 11.099
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-28",
+      "news_id": "2022025191",
+      "raw_path": "SELIC/financials/2564/FY/source.zip",
+      "sha256": "3d6e809457d0fe0f30aeaea352ab827ae799d95d83cea4eceaa84884dee83446",
+      "ingested_at": "2026-04-24T02:27:03+00:00",
+      "shareholder_profit": 81.527
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-16",
+      "news_id": "2021090940",
+      "raw_path": "SELIC/financials/2564/H1/source.zip",
+      "sha256": "7f0547a9cd88621ba65bb73b70c45b1934e057bce5cda74a79fe506773e2c65e",
+      "ingested_at": "2026-04-24T02:27:13+00:00",
+      "shareholder_profit": 29.033
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-17",
+      "news_id": "2021059566",
+      "raw_path": "SELIC/financials/2564/Q1/source.zip",
+      "sha256": "e7c514cd1b6829d7aced3e5aaf00796b218cb800f7b5474512c2cebf0a3b408a",
+      "ingested_at": "2026-04-24T02:27:17+00:00",
+      "shareholder_profit": 30.048
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-14",
+      "news_id": "2022136567",
+      "raw_path": "SELIC/financials/2565/9M/source.zip",
+      "sha256": "4a2464e53e225a8722b92b86199a3d5cbcf2a0356fdc0e85a06e2b6b49339ad2",
+      "ingested_at": "2026-04-24T02:26:49+00:00",
+      "shareholder_profit": 13.452
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-27",
+      "news_id": "2023023239",
+      "raw_path": "SELIC/financials/2565/FY/source.zip",
+      "sha256": "cf7e614b1e3c09861f3526051daba04bdf8c9d4a9a92d0fad4e442d8a608f82d",
+      "ingested_at": "2026-04-24T02:26:45+00:00",
+      "shareholder_profit": 40.245
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-15",
+      "news_id": "2022098227",
+      "raw_path": "SELIC/financials/2565/H1/source.zip",
+      "sha256": "0718146d33ac0165bf7e62d72534876f07671b0d2071a7b3d08d5d8ea17c5c81",
+      "ingested_at": "2026-04-24T02:26:54+00:00",
+      "shareholder_profit": 10.067
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-17",
+      "news_id": "2022063133",
+      "raw_path": "SELIC/financials/2565/Q1/source.zip",
+      "sha256": "d4a72f4938c415b1c2ba449605322a9f48a67340c2ec156f5332d3efe8126414",
+      "ingested_at": "2026-04-24T02:26:59+00:00",
+      "shareholder_profit": 11.716
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-14",
+      "news_id": "16999132685151",
+      "raw_path": "SELIC/financials/2566/9M/source.zip",
+      "sha256": "629b284bea2b9c32a7108fd0f1c90ae39665d9078a6139c5b51795664dae18ef",
+      "ingested_at": "2026-04-24T02:26:31+00:00",
+      "shareholder_profit": 27.746
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-28",
+      "news_id": "17090750804701",
+      "raw_path": "SELIC/financials/2566/FY/source.zip",
+      "sha256": "26c7b0b9f2ea42ca9c5e874f7a0a1cf2158ee59dc3f0fda91d9659d030c2dca7",
+      "ingested_at": "2026-04-24T02:26:26+00:00",
+      "shareholder_profit": 80.147
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-15",
+      "news_id": "16920539310661",
+      "raw_path": "SELIC/financials/2566/H1/source.zip",
+      "sha256": "33b495be4c88b56bc091b76b55a1ab6214623a3b97c76de5831ecf3c55f114ab",
+      "ingested_at": "2026-04-24T02:26:36+00:00",
+      "shareholder_profit": 11.522
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-15",
+      "news_id": "16841053953541",
+      "raw_path": "SELIC/financials/2566/Q1/source.zip",
+      "sha256": "d92d66a578dc7398545e48fda63cd31f64d1c346faff880548521b7381f3b56d",
+      "ingested_at": "2026-04-24T02:26:40+00:00",
+      "shareholder_profit": 7.2
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361270521",
+      "raw_path": "SELIC/financials/2567/9M/source.zip",
+      "sha256": "049c844b82bd47a4f36c3d2d7892a01227c1f3c7caf14ef3508ee0e1df60d0e7",
+      "ingested_at": "2026-04-24T02:26:13+00:00",
+      "shareholder_profit": 20.901
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-27",
+      "news_id": "17406066344191",
+      "raw_path": "SELIC/financials/2567/FY/source.zip",
+      "sha256": "3cd5ccd9ec07a1bbe62ad95cfedda00fb1d0a99068c3489fcca76d9cdc1345e5",
+      "ingested_at": "2026-04-24T02:26:08+00:00",
+      "shareholder_profit": 127.61
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-14",
+      "news_id": "17235857999001",
+      "raw_path": "SELIC/financials/2567/H1/source.zip",
+      "sha256": "a08a8b5641da13abc8f9f4212fe8a9167410f91918ac324bd1c8c5bd261e57d4",
+      "ingested_at": "2026-04-24T02:26:17+00:00",
+      "shareholder_profit": 30.351
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434529761",
+      "raw_path": "SELIC/financials/2567/Q1/source.zip",
+      "sha256": "ab5f022133dd5d62da86291abe436e6046245f953d6152d3db5cce742f223738",
+      "ingested_at": "2026-04-24T02:26:22+00:00",
+      "shareholder_profit": 42.892
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-14",
+      "news_id": "17630699582631",
+      "raw_path": "SELIC/financials/2568/9M/source.zip",
+      "sha256": "e94826e7eb8dc652bcc167e9ffe832bdf1f30cc442479291d12ba538a35ca93c",
+      "ingested_at": "2026-04-24T02:25:54+00:00",
+      "shareholder_profit": 38.424
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-26",
+      "news_id": "17720575262951",
+      "raw_path": "SELIC/financials/2568/FY/source.zip",
+      "sha256": "9d6bb74c9f523eaeb6eca5600d3c01af3014b3d27d3df8bf373ad45cbcdae6e2",
+      "ingested_at": "2026-04-24T02:25:49+00:00",
+      "shareholder_profit": 147.125
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229849161",
+      "raw_path": "SELIC/financials/2568/H1/source.zip",
+      "sha256": "b78060003d000d72e8a227619c8ae89c3c0b38a2caabc2e8dc2a98edba88b9cd",
+      "ingested_at": "2026-04-24T02:25:59+00:00",
+      "shareholder_profit": 29.356
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-14",
+      "news_id": "17471784531351",
+      "raw_path": "SELIC/financials/2568/Q1/source.zip",
+      "sha256": "897173671a9591fc675acce244aa0e737d483c8db2cf495a364d5c17fba9a2a4",
+      "ingested_at": "2026-04-24T02:26:03+00:00",
+      "shareholder_profit": 34.867
+    }
+  ]
 }

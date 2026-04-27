@@ -4,7 +4,244 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-27",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 0.872,
+      "Q2": -0.939,
+      "Q3": 6.536,
+      "Q4": -0.7060799999999992,
+      "FullYear": 5.76292
+    },
+    "2565": {
+      "Q1": 3.207,
+      "Q2": -1.583,
+      "Q3": -16.391,
+      "Q4": -8.526643000000004,
+      "FullYear": -23.293643
+    },
+    "2566": {
+      "Q1": -5.117,
+      "Q2": -5.414,
+      "Q3": -10.729,
+      "Q4": -67.15934899999999,
+      "FullYear": -88.419349
+    },
+    "2567": {
+      "Q1": 5.576,
+      "Q2": 5.485,
+      "Q3": 1.305,
+      "Q4": -137.772263,
+      "FullYear": -125.406263
+    },
+    "2568": {
+      "Q1": 5.701,
+      "Q2": -0.377,
+      "Q3": 13.192,
+      "Q4": 24.845367000000003,
+      "FullYear": 43.361367
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-12",
+      "news_id": "2021123989",
+      "raw_path": "GENCO/financials/2564/9M/source.zip",
+      "sha256": "93f626e1edc5be734da17ce811e1253ebef0854f11dac861ad1af2efb7ac65d9",
+      "ingested_at": "2026-04-23T19:00:02+00:00",
+      "shareholder_profit": 6.536
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-25",
+      "news_id": "2022024263",
+      "raw_path": "GENCO/financials/2564/FY/source.zip",
+      "sha256": "40ded615b7e85fc9c2e8009c4dd5deabd4ec9059dfe999876b6c8d5937703cd9",
+      "ingested_at": "2026-04-23T18:59:57+00:00",
+      "shareholder_profit": 5.76292
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-11",
+      "news_id": "2021086937",
+      "raw_path": "GENCO/financials/2564/H1/source.zip",
+      "sha256": "26d82c2068ff58fbe17758fde5ad3f5f0ae2b8e32ff0c4eed4964c89fbed600d",
+      "ingested_at": "2026-04-23T19:00:07+00:00",
+      "shareholder_profit": -0.939
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-14",
+      "news_id": "2021058650",
+      "raw_path": "GENCO/financials/2564/Q1/source.zip",
+      "sha256": "bb59cad9aec38d4392628992a5f17bf7c4cd9d996ca8978906e993a7bd6c30eb",
+      "ingested_at": "2026-04-23T19:00:11+00:00",
+      "shareholder_profit": 0.872
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-11",
+      "news_id": "2022133847",
+      "raw_path": "GENCO/financials/2565/9M/source.zip",
+      "sha256": "d3f6654d0384ccd92c4f6e772c51361b4cb661f624c88973e9046073939a0d4d",
+      "ingested_at": "2026-04-23T18:59:43+00:00",
+      "shareholder_profit": -16.391
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-27",
+      "news_id": "2023023131",
+      "raw_path": "GENCO/financials/2565/FY/source.zip",
+      "sha256": "661ab3f077a99793bdca245f95a5eae56b733f1ff0290a24ac04d234379035ab",
+      "ingested_at": "2026-04-23T18:59:39+00:00",
+      "shareholder_profit": -23.293643
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-10",
+      "news_id": "2022092512",
+      "raw_path": "GENCO/financials/2565/H1/source.zip",
+      "sha256": "7d0054eadb20e8590e0a8c4043810ef57d53481f8bbf0896aa89c8cb05e2d5a8",
+      "ingested_at": "2026-04-23T18:59:48+00:00",
+      "shareholder_profit": -1.583
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-17",
+      "news_id": "2022064292",
+      "raw_path": "GENCO/financials/2565/Q1/source.zip",
+      "sha256": "5e4a011f8ada8eca325296494c6ae65a50c5b55d3844ef2a706a7e73a4a3b6e7",
+      "ingested_at": "2026-04-23T18:59:53+00:00",
+      "shareholder_profit": 3.207
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-10",
+      "news_id": "16995730794101",
+      "raw_path": "GENCO/financials/2566/9M/source.zip",
+      "sha256": "a3d5987f1e8dca70d2a909f9735e84d742f3b1773954c6d87f9506914e4a8512",
+      "ingested_at": "2026-04-23T18:59:25+00:00",
+      "shareholder_profit": -10.729
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-23",
+      "news_id": "17086429009581",
+      "raw_path": "GENCO/financials/2566/FY/source.zip",
+      "sha256": "5cb7bf283bb941b43c67d248283d3a811ab6b31eb836aa21e2eed9cf641aaadc",
+      "ingested_at": "2026-04-23T18:59:20+00:00",
+      "shareholder_profit": -88.419349
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-11",
+      "news_id": "16917102120261",
+      "raw_path": "GENCO/financials/2566/H1/source.zip",
+      "sha256": "72ec6ce37a026a746ba8cd07e16f22ab9a694543b948b7c63f5d11a9d2a78b69",
+      "ingested_at": "2026-04-23T18:59:30+00:00",
+      "shareholder_profit": -5.414
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-12",
+      "news_id": "16838458842051",
+      "raw_path": "GENCO/financials/2566/Q1/source.zip",
+      "sha256": "e856185fd5502bebc9bd0e636a359255ac7d698743c78ba236f4b8c4996484e2",
+      "ingested_at": "2026-04-23T18:59:34+00:00",
+      "shareholder_profit": -5.117
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-12",
+      "news_id": "17313658211151",
+      "raw_path": "GENCO/financials/2567/9M/source.zip",
+      "sha256": "555f94910b3e19a543d3c68b121fe1e50a18af55047c4df9486e9958a8fb9d93",
+      "ingested_at": "2026-04-23T18:59:07+00:00",
+      "shareholder_profit": 1.305
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-25",
+      "news_id": "17404367204721",
+      "raw_path": "GENCO/financials/2567/FY/source.zip",
+      "sha256": "93cde6e333104bcbdd024222dbd57305a7a758fb7bde42a1d872c91076f047f2",
+      "ingested_at": "2026-04-23T18:59:03+00:00",
+      "shareholder_profit": -125.406263
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-14",
+      "news_id": "17235858063931",
+      "raw_path": "GENCO/financials/2567/H1/source.zip",
+      "sha256": "8ca34479a374db1dffd2940cf40647a9b0b1ef76c86ba5b20c0f7114ca9c684f",
+      "ingested_at": "2026-04-23T18:59:11+00:00",
+      "shareholder_profit": 5.485
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434594241",
+      "raw_path": "GENCO/financials/2567/Q1/source.zip",
+      "sha256": "384fab5a4f943788ac17b65617862409a1bdbc560b72992bbe74e4cca007c1cd",
+      "ingested_at": "2026-04-23T18:59:16+00:00",
+      "shareholder_profit": 5.576
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-11",
+      "news_id": "17628159915541",
+      "raw_path": "GENCO/financials/2568/9M/source.zip",
+      "sha256": "4a96416574bf9124c05a275c8c2ad0501e5e4bfbc37dfb7ac74e4237522f907b",
+      "ingested_at": "2026-04-23T18:58:49+00:00",
+      "shareholder_profit": 13.192
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-27",
+      "news_id": "17721443107421",
+      "raw_path": "GENCO/financials/2568/FY/source.zip",
+      "sha256": "a23af00e29fb018e25a5b730e3ba225bd2a836e5c2db86e1b28ace014a9f6ccd",
+      "ingested_at": "2026-04-23T18:58:44+00:00",
+      "shareholder_profit": 43.361367
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361169051",
+      "raw_path": "GENCO/financials/2568/H1/source.zip",
+      "sha256": "8c40e57c18d7084dd25cb02a79678981f2e547fa52cdf0f23eb3baaa8bc7bbdb",
+      "ingested_at": "2026-04-23T18:58:54+00:00",
+      "shareholder_profit": -0.377
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903538221",
+      "raw_path": "GENCO/financials/2568/Q1/source.zip",
+      "sha256": "94cc36b7b5c5733a9b9f96d4fb917215c8219cfc3af85490159bb3ce9f17948f",
+      "ingested_at": "2026-04-23T18:58:58+00:00",
+      "shareholder_profit": 5.701
+    }
+  ]
 }

@@ -4,7 +4,224 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-24",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 14.872568,
+      "Q2": 42.574225999999996,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": 240.026859
+    },
+    "2565": {
+      "Q1": 103.283333,
+      "Q2": 155.98788,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": 450.16
+    },
+    "2566": {
+      "Q1": 97.874,
+      "Q2": 85.794,
+      "Q3": 104.517,
+      "Q4": 58.64999999999998,
+      "FullYear": 346.835
+    },
+    "2567": {
+      "Q1": 54.411,
+      "Q2": 104.231,
+      "Q3": 104.009,
+      "Q4": 94.575,
+      "FullYear": 357.226
+    },
+    "2568": {
+      "Q1": 91.201,
+      "Q2": 60.194,
+      "Q3": 61.957,
+      "Q4": 49.955999999999996,
+      "FullYear": 263.308
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-25",
+      "news_id": "2022024748",
+      "raw_path": "SEAOIL/financials/2564/FY/source.zip",
+      "sha256": "0ed69188991b873aa90c9b44de926f58b77bd164f821d4582467f7645aaca0ff",
+      "ingested_at": "2026-04-24T02:24:46+00:00",
+      "shareholder_profit": 240.026859
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-10",
+      "news_id": "2021086694",
+      "raw_path": "SEAOIL/financials/2564/H1/source.zip",
+      "sha256": "a4dab745be33b8b7e0529bfc5b7d635c38b32191f07fb7535deb22c7d185a050",
+      "ingested_at": "2026-04-24T02:24:56+00:00",
+      "shareholder_profit": 57.446794
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-13",
+      "news_id": "2021055388",
+      "raw_path": "SEAOIL/financials/2564/Q1/source.zip",
+      "sha256": "8f6681dd9aafe784e55f7046136ecab08f52be531831438afd4fc325b78515fe",
+      "ingested_at": "2026-04-24T02:25:01+00:00",
+      "shareholder_profit": 14.872568
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-24",
+      "news_id": "2023021443",
+      "raw_path": "SEAOIL/financials/2565/FY/source.zip",
+      "sha256": "b9b895c258a5211a0b8ba925e38027d02d10e70f190fd8e374525916839ce480",
+      "ingested_at": "2026-04-24T02:24:23+00:00",
+      "shareholder_profit": 450.16
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-11",
+      "news_id": "2022096459",
+      "raw_path": "SEAOIL/financials/2565/H1/source.zip",
+      "sha256": "fed058dc7f3f7ff81da4118966b74ab685249abcb1959ae9dc5cd902df54198d",
+      "ingested_at": "2026-04-24T02:24:37+00:00",
+      "shareholder_profit": 259.271213
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-13",
+      "news_id": "2022062923",
+      "raw_path": "SEAOIL/financials/2565/Q1/source.zip",
+      "sha256": "85dcbcf507d0901f1721bd2d78ca288692e13b8b5570bb0c196a8e76bed65e85",
+      "ingested_at": "2026-04-24T02:24:41+00:00",
+      "shareholder_profit": 103.283333
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-13",
+      "news_id": "16998304609151",
+      "raw_path": "SEAOIL/financials/2566/9M/source.zip",
+      "sha256": "b1144cc3abdb0fcf1c33a8eb78e33477c6a3cd58aad44fe636f19b06ac0f4599",
+      "ingested_at": "2026-04-24T02:24:09+00:00",
+      "shareholder_profit": 104.517
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-22",
+      "news_id": "17085582017751",
+      "raw_path": "SEAOIL/financials/2566/FY/source.zip",
+      "sha256": "608d29f7aa688a7411ee013f26215c351c02006a23c90ee47f575dee02323f1f",
+      "ingested_at": "2026-04-24T02:24:04+00:00",
+      "shareholder_profit": 346.835
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-09",
+      "news_id": "16915381983631",
+      "raw_path": "SEAOIL/financials/2566/H1/source.zip",
+      "sha256": "fc19a69e78459b3139cb4274deb8b4ed74c74a1c3e4c78038f1345f6f015245c",
+      "ingested_at": "2026-04-24T02:24:13+00:00",
+      "shareholder_profit": 85.794
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-11",
+      "news_id": "16837584107141",
+      "raw_path": "SEAOIL/financials/2566/Q1/source.zip",
+      "sha256": "df8b40e96c906ba9f77ceccab5499a5d94a8787e5cda121adfa3ac7c9c02c4b3",
+      "ingested_at": "2026-04-24T02:24:18+00:00",
+      "shareholder_profit": 97.874
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-12",
+      "news_id": "17313658220651",
+      "raw_path": "SEAOIL/financials/2567/9M/source.zip",
+      "sha256": "0c01502b999e03e7f0dee630f066f5b87dbfed85c1d602c26ab6b9a086f300b6",
+      "ingested_at": "2026-04-24T02:23:50+00:00",
+      "shareholder_profit": 104.009
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-21",
+      "news_id": "17400886588621",
+      "raw_path": "SEAOIL/financials/2567/FY/source.zip",
+      "sha256": "700d649e4e7664c43379318432cb8d23a4a013c4917a5a49011f2fe5c7171804",
+      "ingested_at": "2026-04-24T02:23:45+00:00",
+      "shareholder_profit": 357.226
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990241891",
+      "raw_path": "SEAOIL/financials/2567/H1/source.zip",
+      "sha256": "b9ec3619c2030efa2714bb0cb1867bbecb8587a5103bdd5498bd65e572f3221c",
+      "ingested_at": "2026-04-24T02:23:54+00:00",
+      "shareholder_profit": 104.231
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434577481",
+      "raw_path": "SEAOIL/financials/2567/Q1/source.zip",
+      "sha256": "8ac800124a32929d8eeafb5243881c523a5bcf4fdbd320f1154e3132b0f1304e",
+      "ingested_at": "2026-04-24T02:23:59+00:00",
+      "shareholder_profit": 54.411
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-14",
+      "news_id": "17630699633331",
+      "raw_path": "SEAOIL/financials/2568/9M/source.zip",
+      "sha256": "030d1d625b6d6d1c460742081d9a661e0be320e6a9a1b33f57a44a75f583baf2",
+      "ingested_at": "2026-04-24T02:23:31+00:00",
+      "shareholder_profit": 61.957
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-24",
+      "news_id": "17718892167581",
+      "raw_path": "SEAOIL/financials/2568/FY/source.zip",
+      "sha256": "c22f8fb546d8267d83529efbf075a6cdebbb9be617bd0f768009de54b6933056",
+      "ingested_at": "2026-04-24T02:23:27+00:00",
+      "shareholder_profit": 263.308
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229918591",
+      "raw_path": "SEAOIL/financials/2568/H1/source.zip",
+      "sha256": "d922ee5efdecaf42d7e3c71bfcf04237151c8f30faedd3a2f374baa3d9e7cb64",
+      "ingested_at": "2026-04-24T02:23:36+00:00",
+      "shareholder_profit": 60.194
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-14",
+      "news_id": "17471784593631",
+      "raw_path": "SEAOIL/financials/2568/Q1/source.zip",
+      "sha256": "c4ee430969e14ab00befddb4220a2e7961a6e4be7fecffd8d50d0ea097d41551",
+      "ingested_at": "2026-04-24T02:23:41+00:00",
+      "shareholder_profit": 91.201
+    }
+  ]
 }

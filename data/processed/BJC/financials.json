@@ -4,7 +4,244 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-24",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 1012.646,
+      "Q2": 822.415,
+      "Q3": 367.144,
+      "Q4": 1382.6062320000003,
+      "FullYear": 3584.811232
+    },
+    "2565": {
+      "Q1": 1246.245,
+      "Q2": 1203.095,
+      "Q3": 932.349,
+      "Q4": 1628.7068959999997,
+      "FullYear": 5010.395896
+    },
+    "2566": {
+      "Q1": 1254.166,
+      "Q2": 1209.546,
+      "Q3": 693.269,
+      "Q4": 1637.6929089999996,
+      "FullYear": 4794.673909
+    },
+    "2567": {
+      "Q1": 427.705,
+      "Q2": 1227.833,
+      "Q3": 701.363,
+      "Q4": 1644.5024889999997,
+      "FullYear": 4001.403489
+    },
+    "2568": {
+      "Q1": 1091.111,
+      "Q2": 989.976,
+      "Q3": 636.707,
+      "Q4": 1293.2525219999998,
+      "FullYear": 4011.046522
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-10",
+      "news_id": "2021120178",
+      "raw_path": "BJC/financials/2564/9M/source.zip",
+      "sha256": "6e23c498cd4eb1b2790cfc06811b593e805bb04b4b4daeedc50c8ea1bab68285",
+      "ingested_at": "2026-04-24T07:49:51+00:00",
+      "shareholder_profit": 367.144
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-23",
+      "news_id": "2022020514",
+      "raw_path": "BJC/financials/2564/FY/source.zip",
+      "sha256": "8dda91e3ccefa2f0afdee4277fb99b4c80adac687404e43f5314783f44730a75",
+      "ingested_at": "2026-04-24T07:49:47+00:00",
+      "shareholder_profit": 3584.811232
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-10",
+      "news_id": "2021085907",
+      "raw_path": "BJC/financials/2564/H1/source.zip",
+      "sha256": "2a5ae0c6386b539b1216a9b5df04d642fb4cfa26eda50de12f30a390fe3ceb79",
+      "ingested_at": "2026-04-24T07:49:55+00:00",
+      "shareholder_profit": 822.415
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-11",
+      "news_id": "2021053422",
+      "raw_path": "BJC/financials/2564/Q1/source.zip",
+      "sha256": "7e61e98df6a8aaa2457cbc5a48b033c19b1a8ccf70c5484457cd5ad912700db1",
+      "ingested_at": "2026-04-24T07:50:00+00:00",
+      "shareholder_profit": 1012.646
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-09",
+      "news_id": "2022130706",
+      "raw_path": "BJC/financials/2565/9M/source.zip",
+      "sha256": "0c26bdc7b608e10c4c3810353afb211f2ff1b34f61ec5f1dabbf0fb5e8c00229",
+      "ingested_at": "2026-04-24T07:49:33+00:00",
+      "shareholder_profit": 932.349
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-22",
+      "news_id": "2023019391",
+      "raw_path": "BJC/financials/2565/FY/source.zip",
+      "sha256": "713afd3a0b432dd78cb0405c9aeb374a64f118e08d110601176fef1f5f34c584",
+      "ingested_at": "2026-04-24T07:49:29+00:00",
+      "shareholder_profit": 5010.395896
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-10",
+      "news_id": "2022093075",
+      "raw_path": "BJC/financials/2565/H1/source.zip",
+      "sha256": "61c5131af8b913c4c7dcefc76bec2ee144ce0b5085fe81441baf491f68e2bdc2",
+      "ingested_at": "2026-04-24T07:49:38+00:00",
+      "shareholder_profit": 1203.095
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-10",
+      "news_id": "2022056516",
+      "raw_path": "BJC/financials/2565/Q1/source.zip",
+      "sha256": "11908843ad432ae326b7d7952fb91a67cc4c32d2e1150418c75d9f488bbcc1be",
+      "ingested_at": "2026-04-24T07:49:42+00:00",
+      "shareholder_profit": 1246.245
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-08",
+      "news_id": "16993998069961",
+      "raw_path": "BJC/financials/2566/9M/source.zip",
+      "sha256": "8c1fecaa606720377c8929f508a085dc1d938bc3f486bacba06804a22a0cee7d",
+      "ingested_at": "2026-04-24T07:49:11+00:00",
+      "shareholder_profit": 693.269
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-22",
+      "news_id": "17085582100711",
+      "raw_path": "BJC/financials/2566/FY/source.zip",
+      "sha256": "673019dfa41bd50a47dc72e273ffe181a53cfef8676652c88b26d42d90720bdd",
+      "ingested_at": "2026-04-24T07:49:07+00:00",
+      "shareholder_profit": 4794.673909
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-09",
+      "news_id": "16915381954941",
+      "raw_path": "BJC/financials/2566/H1/source.zip",
+      "sha256": "77816ae6a75befbf6c278cfd4073a08ce3ebc11e5035274f9bc6fec82104bb2d",
+      "ingested_at": "2026-04-24T07:49:15+00:00",
+      "shareholder_profit": 1209.546
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-10",
+      "news_id": "16836750092051",
+      "raw_path": "BJC/financials/2566/Q1/source.zip",
+      "sha256": "54d67bb8ad525837d261c0618cb2a43d72fc05b7e808e50e3b16c0bf5b985529",
+      "ingested_at": "2026-04-24T07:49:20+00:00",
+      "shareholder_profit": 1254.166
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-07",
+      "news_id": "17309360543521",
+      "raw_path": "BJC/financials/2567/9M/source.zip",
+      "sha256": "c73b807c17b7e85fff20a1bef71a51737e3afc180ebe21ed3da30cf94bf8b597",
+      "ingested_at": "2026-04-24T07:48:54+00:00",
+      "shareholder_profit": 701.363
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-19",
+      "news_id": "17399221631531",
+      "raw_path": "BJC/financials/2567/FY/source.zip",
+      "sha256": "78703036842dbcb96b48e78e1139bee991b748dc1e9b7f756cd2ee6d66e917cb",
+      "ingested_at": "2026-04-24T07:48:50+00:00",
+      "shareholder_profit": 4001.403489
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990188951",
+      "raw_path": "BJC/financials/2567/H1/source.zip",
+      "sha256": "479aa403e5d07f962c4699dcbecfdaed763d309c891776eaf6e49df1d01fecca",
+      "ingested_at": "2026-04-24T07:48:58+00:00",
+      "shareholder_profit": 1227.833
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434541251",
+      "raw_path": "BJC/financials/2567/Q1/source.zip",
+      "sha256": "296390d8c128166670d19e26704172948caa7e87c7349e9c432c4cf0f64e075c",
+      "ingested_at": "2026-04-24T07:49:02+00:00",
+      "shareholder_profit": 427.705
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-10",
+      "news_id": "17627310447071",
+      "raw_path": "BJC/financials/2568/9M/source.zip",
+      "sha256": "1a1ca9820466b02aaf53434d6d1465c4535a9e3c1f45cdff196039de6d9a3446",
+      "ingested_at": "2026-04-24T07:48:37+00:00",
+      "shareholder_profit": 636.707
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-24",
+      "news_id": "17718892161991",
+      "raw_path": "BJC/financials/2568/FY/source.zip",
+      "sha256": "f92212ad527734a9f3f4d782c91be43603dcb90c9705e75470c84183b49194f5",
+      "ingested_at": "2026-04-24T07:48:32+00:00",
+      "shareholder_profit": 4011.046522
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361172881",
+      "raw_path": "BJC/financials/2568/H1/source.zip",
+      "sha256": "2952607705f3ca30681749f32f5c669c5e1065f26eeb8e944005979ace9b2e0e",
+      "ingested_at": "2026-04-24T07:48:41+00:00",
+      "shareholder_profit": 989.976
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-14",
+      "news_id": "17471784547141",
+      "raw_path": "BJC/financials/2568/Q1/source.zip",
+      "sha256": "149bf0aeef3ff6f6573e6a143adc84b1d6bd30c5485fae95dcd7eff6bfa5c1be",
+      "ingested_at": "2026-04-24T07:48:46+00:00",
+      "shareholder_profit": 1091.111
+    }
+  ]
 }

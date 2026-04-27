@@ -4,7 +4,244 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-25",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 55.101,
+      "Q2": 34.009,
+      "Q3": -34.917,
+      "Q4": 86.616,
+      "FullYear": 140.809
+    },
+    "2565": {
+      "Q1": -71.481,
+      "Q2": -183.83,
+      "Q3": 15.25,
+      "Q4": 380.87,
+      "FullYear": 140.809
+    },
+    "2566": {
+      "Q1": 14.001,
+      "Q2": 18.36,
+      "Q3": 53.191,
+      "Q4": 55.25699999999999,
+      "FullYear": 140.809
+    },
+    "2567": {
+      "Q1": 56.392,
+      "Q2": 135.38080300000001,
+      "Q3": 127.339,
+      "Q4": -178.302803,
+      "FullYear": 140.809
+    },
+    "2568": {
+      "Q1": 156.467,
+      "Q2": 132.737,
+      "Q3": 114.36,
+      "Q4": -262.755,
+      "FullYear": 140.809
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-12",
+      "news_id": "2021123431",
+      "raw_path": "SYNTEC/financials/2564/9M/source.zip",
+      "sha256": "41ef7543b2c3a1872570753d3084d40dac1f0601d8ae095433e4626856086d12",
+      "ingested_at": "2026-04-24T04:28:16+00:00",
+      "shareholder_profit": -34.917
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-28",
+      "news_id": "2022024794",
+      "raw_path": "SYNTEC/financials/2564/FY/source.zip",
+      "sha256": "f8b78b10f8607fa1074dec4e2b4826b6606d93ad2950fb612ba7da83884c861e",
+      "ingested_at": "2026-04-24T04:28:11+00:00",
+      "shareholder_profit": 140.809
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-13",
+      "news_id": "2021090683",
+      "raw_path": "SYNTEC/financials/2564/H1/source.zip",
+      "sha256": "35804ac541950397f48a4d621c7460c448d6a3dc666f361a06e7349fcfb2b834",
+      "ingested_at": "2026-04-24T04:28:21+00:00",
+      "shareholder_profit": 34.009
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-12",
+      "news_id": "2021055117",
+      "raw_path": "SYNTEC/financials/2564/Q1/source.zip",
+      "sha256": "c172879ff042357c8a2e891c309f6049a3b94f0205b1a725043e4774432eba7c",
+      "ingested_at": "2026-04-24T04:28:26+00:00",
+      "shareholder_profit": 55.101
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-11",
+      "news_id": "2022134519",
+      "raw_path": "SYNTEC/financials/2565/9M/source.zip",
+      "sha256": "18fe5765907d7a9abc111dcb1e10084d40e36646be7d209da53fec4494128760",
+      "ingested_at": "2026-04-24T04:27:56+00:00",
+      "shareholder_profit": 15.25
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-24",
+      "news_id": "2023022721",
+      "raw_path": "SYNTEC/financials/2565/FY/source.zip",
+      "sha256": "3df4e5c9aed45e0f6df2225836c634a3654f43f97aadc7a09d4318f7288424ed",
+      "ingested_at": "2026-04-24T04:27:51+00:00",
+      "shareholder_profit": 140.809
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-11",
+      "news_id": "2022095864",
+      "raw_path": "SYNTEC/financials/2565/H1/source.zip",
+      "sha256": "f76029e6ad41917c7e9c0957b90bff9281c8a7eb5dd9aa2baf9a8c8290ff864e",
+      "ingested_at": "2026-04-24T04:28:01+00:00",
+      "shareholder_profit": -183.83
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-12",
+      "news_id": "2022060370",
+      "raw_path": "SYNTEC/financials/2565/Q1/source.zip",
+      "sha256": "01deb2e053098ec9097eb4a3b59da52571cf297934e3080eff66b42ae87f94d3",
+      "ingested_at": "2026-04-24T04:28:06+00:00",
+      "shareholder_profit": -71.481
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-08",
+      "news_id": "16993998082561",
+      "raw_path": "SYNTEC/financials/2566/9M/source.zip",
+      "sha256": "754afd6d4f59001937e285b93ad7d021cfc8c1a42619b00805637cdddb4fdd46",
+      "ingested_at": "2026-04-24T04:27:34+00:00",
+      "shareholder_profit": 53.191
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-23",
+      "news_id": "17086429028091",
+      "raw_path": "SYNTEC/financials/2566/FY/source.zip",
+      "sha256": "ad2560415c5d864bfbf0065263d2e0827e45467c85a118d8712738c0a4d87b8a",
+      "ingested_at": "2026-04-24T04:27:30+00:00",
+      "shareholder_profit": 140.809
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-09",
+      "news_id": "16915381979371",
+      "raw_path": "SYNTEC/financials/2566/H1/source.zip",
+      "sha256": "6e8409a44cdd79acd40cf1b13e018810adf4783ab93b29893fbc836895f1b2cf",
+      "ingested_at": "2026-04-24T04:27:40+00:00",
+      "shareholder_profit": 18.36
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-12",
+      "news_id": "16838458876481",
+      "raw_path": "SYNTEC/financials/2566/Q1/source.zip",
+      "sha256": "9f2b356b2fca98f583bb803f32804fc7929bcf9361a2ae80b95740550e4b421d",
+      "ingested_at": "2026-04-24T04:27:45+00:00",
+      "shareholder_profit": 14.001
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-13",
+      "news_id": "17314477525401",
+      "raw_path": "SYNTEC/financials/2567/9M/source.zip",
+      "sha256": "24319c56682591b3f4c7de60b3c08a29af7866015a0fe0ef39ee1b0bd7ac04ab",
+      "ingested_at": "2026-04-24T04:27:15+00:00",
+      "shareholder_profit": 127.339
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-26",
+      "news_id": "17405221037781",
+      "raw_path": "SYNTEC/financials/2567/FY/source.zip",
+      "sha256": "4ca64c735982cc3e5215ebb221666e86ecf3616b1195220105fd4fddfbef9500",
+      "ingested_at": "2026-04-24T04:27:10+00:00",
+      "shareholder_profit": 140.809
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990223181",
+      "raw_path": "SYNTEC/financials/2567/H1/source.zip",
+      "sha256": "22df4fb589e1fae736cd3fbbdf96a429f72e1e5aaff463f6f0a3aa09f7f943f7",
+      "ingested_at": "2026-04-24T04:27:20+00:00",
+      "shareholder_profit": 140.809
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-13",
+      "news_id": "17155538028971",
+      "raw_path": "SYNTEC/financials/2567/Q1/source.zip",
+      "sha256": "5925a06e1f80bed0bfa002b1f49f83f88f51544c6e763fe4eb5dd6c1a333689b",
+      "ingested_at": "2026-04-24T04:27:25+00:00",
+      "shareholder_profit": 56.392
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-13",
+      "news_id": "17629880473191",
+      "raw_path": "SYNTEC/financials/2568/9M/source.zip",
+      "sha256": "262a1bbb5cd8a929ef9783a0f2891d31d27498ab365144011844289e8d53fb71",
+      "ingested_at": "2026-04-24T04:26:56+00:00",
+      "shareholder_profit": 114.36
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-25",
+      "news_id": "17719707078141",
+      "raw_path": "SYNTEC/financials/2568/FY/source.zip",
+      "sha256": "a5523db4dbc826a7995432dc4d629123cd953729833713e053bb5d6d919760aa",
+      "ingested_at": "2026-04-24T04:26:50+00:00",
+      "shareholder_profit": 140.809
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361208441",
+      "raw_path": "SYNTEC/financials/2568/H1/source.zip",
+      "sha256": "9b4801ae55def1c70233f2f9e83f53e181a49d760ad2d64cd986ba08b21ce677",
+      "ingested_at": "2026-04-24T04:27:01+00:00",
+      "shareholder_profit": 132.737
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-14",
+      "news_id": "17471784590551",
+      "raw_path": "SYNTEC/financials/2568/Q1/source.zip",
+      "sha256": "c8b3a06eec76a84cc1ea01d828407eab8ca0707f93e9860a911298487df775ec",
+      "ingested_at": "2026-04-24T04:27:05+00:00",
+      "shareholder_profit": 156.467
+    }
+  ]
 }

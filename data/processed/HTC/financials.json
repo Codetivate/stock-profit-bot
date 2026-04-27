@@ -4,7 +4,244 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-03-02",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 147.343,
+      "Q2": 187.127,
+      "Q3": 125.509,
+      "Q4": 75.41187199999997,
+      "FullYear": 535.390872
+    },
+    "2565": {
+      "Q1": 103.686,
+      "Q2": 117.496,
+      "Q3": 111.316,
+      "Q4": 102.56647999999998,
+      "FullYear": 435.06448
+    },
+    "2566": {
+      "Q1": 199.787,
+      "Q2": 150.464,
+      "Q3": 134.156,
+      "Q4": 114.15299499999992,
+      "FullYear": 598.559995
+    },
+    "2567": {
+      "Q1": 183.048,
+      "Q2": 159.066,
+      "Q3": 129.264,
+      "Q4": 130.30265599999996,
+      "FullYear": 601.680656
+    },
+    "2568": {
+      "Q1": 181.899,
+      "Q2": 142.681,
+      "Q3": 130.964,
+      "Q4": 112.70004600000001,
+      "FullYear": 568.244046
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-12",
+      "news_id": "2021123295",
+      "raw_path": "HTC/financials/2564/9M/source.zip",
+      "sha256": "a418dbb17d658c0a73a64b8eab364cd0d9130547a9492480936adea7a1445620",
+      "ingested_at": "2026-04-23T19:30:49+00:00",
+      "shareholder_profit": 125.509
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-25",
+      "news_id": "2022023038",
+      "raw_path": "HTC/financials/2564/FY/source.zip",
+      "sha256": "e3c3a8a61599dd49d49198b015658a7f7eb93f7c3293c2b43535335f632b6ce5",
+      "ingested_at": "2026-04-23T19:30:44+00:00",
+      "shareholder_profit": 535.390872
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-13",
+      "news_id": "2021088883",
+      "raw_path": "HTC/financials/2564/H1/source.zip",
+      "sha256": "f9e7616116283eb49435440a46a236b229bd12a64239599d68db056dcad5e5a6",
+      "ingested_at": "2026-04-23T19:30:53+00:00",
+      "shareholder_profit": 187.127
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-13",
+      "news_id": "2021056521",
+      "raw_path": "HTC/financials/2564/Q1/source.zip",
+      "sha256": "2f252b8c2e76f9ea79bbc0e662025dfbb06a2eed6a6d6c42fae6e68151a47bc4",
+      "ingested_at": "2026-04-23T19:30:58+00:00",
+      "shareholder_profit": 147.343
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-11",
+      "news_id": "2022134693",
+      "raw_path": "HTC/financials/2565/9M/source.zip",
+      "sha256": "5d87db85d61398b2298e084d602a33bc80421684d094754f530ad00a989125ab",
+      "ingested_at": "2026-04-23T19:30:27+00:00",
+      "shareholder_profit": 111.316
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-28",
+      "news_id": "2023025209",
+      "raw_path": "HTC/financials/2565/FY/source.zip",
+      "sha256": "7c989dda3c59a7cb78ee6f65f2e5154059927b70dbcbfb60f86a6f6d66df1d48",
+      "ingested_at": "2026-04-23T19:30:22+00:00",
+      "shareholder_profit": 435.06448
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-11",
+      "news_id": "2022094468",
+      "raw_path": "HTC/financials/2565/H1/source.zip",
+      "sha256": "9bf81e93317ce254e28238e8555502e4fddec3a0f042bd13d6817b24c744fc58",
+      "ingested_at": "2026-04-23T19:30:32+00:00",
+      "shareholder_profit": 117.496
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-17",
+      "news_id": "2022063569",
+      "raw_path": "HTC/financials/2565/Q1/source.zip",
+      "sha256": "3d62817fb1736813f9fadcd223a124028d1a8e600972a93a91065a8e02711427",
+      "ingested_at": "2026-04-23T19:30:40+00:00",
+      "shareholder_profit": 103.686
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-14",
+      "news_id": "16999132635811",
+      "raw_path": "HTC/financials/2566/9M/source.zip",
+      "sha256": "53cd1c6d608aa6bddcb662ee865f3074e78112cef979737d7aa2622ecaf566ff",
+      "ingested_at": "2026-04-23T19:30:07+00:00",
+      "shareholder_profit": 134.156
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-29",
+      "news_id": "17091569023681",
+      "raw_path": "HTC/financials/2566/FY/source.zip",
+      "sha256": "f2d341a68873b1eaa386d26fb748ade25e89ff5c37622c68cd3d23cc57e29fcc",
+      "ingested_at": "2026-04-23T19:30:02+00:00",
+      "shareholder_profit": 598.559995
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-11",
+      "news_id": "16917102112621",
+      "raw_path": "HTC/financials/2566/H1/source.zip",
+      "sha256": "5d9d61bd588641810bd1eeee0014e292c55e511423ab7981ee1cd28e908756b5",
+      "ingested_at": "2026-04-23T19:30:11+00:00",
+      "shareholder_profit": 150.464
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-15",
+      "news_id": "16841053970341",
+      "raw_path": "HTC/financials/2566/Q1/source.zip",
+      "sha256": "759774e5a834421cbe16bb3e1fcd649da722260bed3b7365ce1fcc1aa9aa1161",
+      "ingested_at": "2026-04-23T19:30:17+00:00",
+      "shareholder_profit": 199.787
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361266271",
+      "raw_path": "HTC/financials/2567/9M/source.zip",
+      "sha256": "d5a78fa37b0d1b925d62af2843a41aff12d2a6b42de0c39059a0c20f4d965d64",
+      "ingested_at": "2026-04-23T19:29:48+00:00",
+      "shareholder_profit": 129.264
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-28",
+      "news_id": "17406928394231",
+      "raw_path": "HTC/financials/2567/FY/source.zip",
+      "sha256": "400316a9f236f99e0273d59f445bf5f47b9abd879f04060f38a6c9861e2a4b0c",
+      "ingested_at": "2026-04-23T19:29:44+00:00",
+      "shareholder_profit": 601.680656
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-14",
+      "news_id": "17235857995371",
+      "raw_path": "HTC/financials/2567/H1/source.zip",
+      "sha256": "61ec4590b61e8f3a0ce966303d3c36c3d95cf80e1f3bbaa2dc186eb60300657c",
+      "ingested_at": "2026-04-23T19:29:52+00:00",
+      "shareholder_profit": 159.066
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434548831",
+      "raw_path": "HTC/financials/2567/Q1/source.zip",
+      "sha256": "a3a13b63c70250217eeb722efd17ddb7a32ea50d650c3f7b3413d8f9b6f008e4",
+      "ingested_at": "2026-04-23T19:29:57+00:00",
+      "shareholder_profit": 183.048
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-13",
+      "news_id": "17629880474841",
+      "raw_path": "HTC/financials/2568/9M/source.zip",
+      "sha256": "3b58de4c774276393b10725a1ca28aaa03d9062732f89744721aa5c15dd14c36",
+      "ingested_at": "2026-04-23T19:29:30+00:00",
+      "shareholder_profit": 130.964
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-03-02",
+      "news_id": "17724016909061",
+      "raw_path": "HTC/financials/2568/FY/source.zip",
+      "sha256": "0a40b20b8c149fe0ca87b2cfaf4232f2eb1392e60427a31e80fd10526f4dcde6",
+      "ingested_at": "2026-04-23T19:29:25+00:00",
+      "shareholder_profit": 568.244046
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229844171",
+      "raw_path": "HTC/financials/2568/H1/source.zip",
+      "sha256": "0a037c1a052158b18d2e2dc30e49f5cd5f9638ab9dce11f9e00709adfde2ff61",
+      "ingested_at": "2026-04-23T19:29:34+00:00",
+      "shareholder_profit": 142.681
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-15",
+      "news_id": "17472613149721",
+      "raw_path": "HTC/financials/2568/Q1/source.zip",
+      "sha256": "7d3941798e73d85ca19969c833ecc6256006cf4d9e404a5e6d66a912c6027653",
+      "ingested_at": "2026-04-23T19:29:39+00:00",
+      "shareholder_profit": 181.899
+    }
+  ]
 }

@@ -4,37 +4,42 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": "2025-08-14",
+  "updated_at": "2026-02-25",
   "quarterly_history": {
     "2564": {
       "Q1": -43.0,
       "Q2": 0.218,
       "Q3": -29.747,
-      "Q4": null
+      "Q4": -41.487741,
+      "FullYear": -114.016741
     },
     "2565": {
-      "Q1": null,
+      "Q1": -14.5,
       "Q2": -19.976,
       "Q3": -11.305,
-      "Q4": null
+      "Q4": -164.172899,
+      "FullYear": -209.953899
     },
     "2566": {
-      "Q1": null,
+      "Q1": 33.913,
       "Q2": -12.837,
       "Q3": 9.311,
-      "Q4": null
+      "Q4": 49.73990700000001,
+      "FullYear": 80.126907
     },
     "2567": {
-      "Q1": null,
-      "Q2": null,
-      "Q3": null,
-      "Q4": null
+      "Q1": 122.143,
+      "Q2": 101.392,
+      "Q3": 60.588,
+      "Q4": 24.028771999999996,
+      "FullYear": 308.151772
     },
     "2568": {
-      "Q1": null,
+      "Q1": 70.839,
       "Q2": 81.12,
-      "Q3": null,
-      "Q4": null
+      "Q3": 21.867,
+      "Q4": 23.596764999999994,
+      "FullYear": 197.422765
     }
   },
   "sources": [
@@ -47,6 +52,16 @@
       "sha256": "98ec333e6b753840dd24e7d3a30f5022a315df4f0118536cb3459f873fd34cf6",
       "ingested_at": "2026-04-23T21:41:09+00:00",
       "shareholder_profit": -29.747
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-28",
+      "news_id": "2022025393",
+      "raw_path": "MALEE/financials/2564/FY/source.zip",
+      "sha256": "27999083864d57da5fa9a2ae2e38db8c336d641d47e113ae11a0d8f35598c2a1",
+      "ingested_at": "2026-04-23T21:41:04+00:00",
+      "shareholder_profit": -114.016741
     },
     {
       "year": 2564,
@@ -99,6 +114,16 @@
       "shareholder_profit": -19.976
     },
     {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-13",
+      "news_id": "2022061861",
+      "raw_path": "MALEE/financials/2565/Q1/source.zip",
+      "sha256": "7f57cdb2193db37fdfd968c677646ecc55013b2559cf39311c4d417ac3549cf6",
+      "ingested_at": "2026-04-23T21:41:00+00:00",
+      "shareholder_profit": -14.5
+    },
+    {
       "year": 2566,
       "period": "9M",
       "filing_date": "2023-11-13",
@@ -107,6 +132,16 @@
       "sha256": "e1204454e63aa24674aa7047b6639ff8b5878813d82d945315e646704eea7d17",
       "ingested_at": "2026-04-23T21:40:33+00:00",
       "shareholder_profit": 9.311
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-22",
+      "news_id": "17085582134961",
+      "raw_path": "MALEE/financials/2566/FY/source.zip",
+      "sha256": "553e85c887d28685c6a2de5d04fea86e5aa0723a300cc96bf311225b764a68cf",
+      "ingested_at": "2026-04-23T21:40:28+00:00",
+      "shareholder_profit": 80.126907
     },
     {
       "year": 2566,
@@ -119,6 +154,26 @@
       "shareholder_profit": -12.837
     },
     {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-12",
+      "news_id": "16838458871801",
+      "raw_path": "MALEE/financials/2566/Q1/source.zip",
+      "sha256": "03c3c502160f1d0e84c8c37d2e95c37b741bd038bd563cbac801bc4876250426",
+      "ingested_at": "2026-04-23T21:40:42+00:00",
+      "shareholder_profit": 33.913
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-13",
+      "news_id": "17314477526641",
+      "raw_path": "MALEE/financials/2567/9M/source.zip",
+      "sha256": "43c67a6f77642c249cfb593aacb8504c73a335e39d350a20e949f123c7b72694",
+      "ingested_at": "2026-04-23T21:40:15+00:00",
+      "shareholder_profit": 60.588
+    },
+    {
       "year": 2567,
       "period": "FY",
       "filing_date": "2025-02-24",
@@ -129,6 +184,46 @@
       "shareholder_profit": 308.151772
     },
     {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-14",
+      "news_id": "17235858050831",
+      "raw_path": "MALEE/financials/2567/H1/source.zip",
+      "sha256": "960c562fb43891b3d5148ed6953dbcce2d0a7aa4af7a382794a833aae0ec93ff",
+      "ingested_at": "2026-04-23T21:40:19+00:00",
+      "shareholder_profit": 101.392
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-10",
+      "news_id": "17152924591471",
+      "raw_path": "MALEE/financials/2567/Q1/source.zip",
+      "sha256": "1b5ab060d28af04bb0d9c9bb2e62d3bf3b4bcdd98398c985f54e82fd0356a019",
+      "ingested_at": "2026-04-23T21:40:24+00:00",
+      "shareholder_profit": 122.143
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-13",
+      "news_id": "17629880515391",
+      "raw_path": "MALEE/financials/2568/9M/source.zip",
+      "sha256": "9bceb5885020ee5510400193d7b152886dcdb4cd07faf5e994c25e9919851b94",
+      "ingested_at": "2026-04-23T21:39:57+00:00",
+      "shareholder_profit": 21.867
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-25",
+      "news_id": "17719707165021",
+      "raw_path": "MALEE/financials/2568/FY/source.zip",
+      "sha256": "9a5b0231fc44b8c8bc6e7d7e25c07fdeb1bdc7036dea12fbe523a8cda83221ab",
+      "ingested_at": "2026-04-23T21:39:52+00:00",
+      "shareholder_profit": 197.422765
+    },
+    {
       "year": 2568,
       "period": "H1",
       "filing_date": "2025-08-14",
@@ -137,6 +232,16 @@
       "sha256": "d8cb4e2045fbadf27128d4a2001b2fa8f77536ce266973a6bd828516e6dbd637",
       "ingested_at": "2026-04-23T21:40:01+00:00",
       "shareholder_profit": 81.12
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-14",
+      "news_id": "17471784587451",
+      "raw_path": "MALEE/financials/2568/Q1/source.zip",
+      "sha256": "72fea1c49a5f0ca01b4142bfe1285be3b1dc87f80060a0fbb0f32744d8b1ca4a",
+      "ingested_at": "2026-04-23T21:40:06+00:00",
+      "shareholder_profit": 70.839
     }
   ]
 }

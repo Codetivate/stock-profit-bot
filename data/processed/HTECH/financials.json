@@ -4,7 +4,244 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-27",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 39.18238,
+      "Q2": 37.068793,
+      "Q3": 26.384995,
+      "Q4": 32.646052,
+      "FullYear": 135.28222
+    },
+    "2565": {
+      "Q1": 34.161547,
+      "Q2": 37.052281,
+      "Q3": 30.594178,
+      "Q4": -1.329041999999994,
+      "FullYear": 100.478964
+    },
+    "2566": {
+      "Q1": 5.467243,
+      "Q2": 9.288659,
+      "Q3": 14.570755,
+      "Q4": 4.058345000000001,
+      "FullYear": 33.385002
+    },
+    "2567": {
+      "Q1": 23.699782,
+      "Q2": 30.507998,
+      "Q3": 22.496634,
+      "Q4": 36.92197,
+      "FullYear": 113.626384
+    },
+    "2568": {
+      "Q1": 24.538923,
+      "Q2": 24.198561,
+      "Q3": 36.00646,
+      "Q4": -50.3862,
+      "FullYear": 34.357744
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-15",
+      "news_id": "2021124706",
+      "raw_path": "HTECH/financials/2564/9M/source.zip",
+      "sha256": "1aa0d8119aced5391c59f11f780275599c059c54e12f80ff20afc910ab602eb9",
+      "ingested_at": "2026-04-23T19:32:30+00:00",
+      "shareholder_profit": 26.384995
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-28",
+      "news_id": "2022025362",
+      "raw_path": "HTECH/financials/2564/FY/source.zip",
+      "sha256": "5d06be295be7cfcf22d2dade86a7e5242760cb55f661007eb270cb034492f39f",
+      "ingested_at": "2026-04-23T19:32:25+00:00",
+      "shareholder_profit": 135.28222
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-13",
+      "news_id": "2021088809",
+      "raw_path": "HTECH/financials/2564/H1/source.zip",
+      "sha256": "3c76f5ccf8e4520962e0658a4ae31f308538625dc8f40acad5400c47a98d15f6",
+      "ingested_at": "2026-04-23T19:32:35+00:00",
+      "shareholder_profit": 37.068793
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-17",
+      "news_id": "2021059678",
+      "raw_path": "HTECH/financials/2564/Q1/source.zip",
+      "sha256": "4b705cfd226ae19fc8297cbc3ba04d6d0b3fd52e7544f545d3f6a4cbb8f5e441",
+      "ingested_at": "2026-04-23T19:32:40+00:00",
+      "shareholder_profit": 39.18238
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-14",
+      "news_id": "2022135114",
+      "raw_path": "HTECH/financials/2565/9M/source.zip",
+      "sha256": "3b11b64488586405095443fc53322a7def239634e66a56c2fb8ee037858245ac",
+      "ingested_at": "2026-04-23T19:32:10+00:00",
+      "shareholder_profit": 30.594178
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-27",
+      "news_id": "2023023436",
+      "raw_path": "HTECH/financials/2565/FY/source.zip",
+      "sha256": "bb759fe30f5ad5bc9279ab5ff74b744a533072309fbb13b39614f0bf300073be",
+      "ingested_at": "2026-04-23T19:32:06+00:00",
+      "shareholder_profit": 100.478964
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-15",
+      "news_id": "2022096696",
+      "raw_path": "HTECH/financials/2565/H1/source.zip",
+      "sha256": "ccb575b053befd6b751bb5b5b1032688810c3071f7e9fbefe741677bd85833a6",
+      "ingested_at": "2026-04-23T19:32:16+00:00",
+      "shareholder_profit": 37.052281
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-17",
+      "news_id": "2022063376",
+      "raw_path": "HTECH/financials/2565/Q1/source.zip",
+      "sha256": "1d6060d9501d0800a05c1adac556fb480ed5f6a4a815eb05269cf14a200655a8",
+      "ingested_at": "2026-04-23T19:32:20+00:00",
+      "shareholder_profit": 34.161547
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-14",
+      "news_id": "16999132674211",
+      "raw_path": "HTECH/financials/2566/9M/source.zip",
+      "sha256": "52424f16c99914c67ae9153f72c08340c53321eaa7f9ef243bfda150cad2e03d",
+      "ingested_at": "2026-04-23T19:31:52+00:00",
+      "shareholder_profit": 14.570755
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-29",
+      "news_id": "17091568992321",
+      "raw_path": "HTECH/financials/2566/FY/source.zip",
+      "sha256": "f5481c10d0775ace3efbf49a40cb9e864db8593774f183908f0e88c19ad4fe4e",
+      "ingested_at": "2026-04-23T19:31:48+00:00",
+      "shareholder_profit": 33.385002
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-15",
+      "news_id": "16920539366611",
+      "raw_path": "HTECH/financials/2566/H1/source.zip",
+      "sha256": "46224abe53b58330437889278d43d801d6a02f649959a4f62295cd0eb68dac48",
+      "ingested_at": "2026-04-23T19:31:57+00:00",
+      "shareholder_profit": 9.288659
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-15",
+      "news_id": "16841053946321",
+      "raw_path": "HTECH/financials/2566/Q1/source.zip",
+      "sha256": "5f31ac582d3319475ea7d9c95e8b02953983a38c32647ed6fff2986415ab98ed",
+      "ingested_at": "2026-04-23T19:32:01+00:00",
+      "shareholder_profit": 5.467243
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-13",
+      "news_id": "17314477431201",
+      "raw_path": "HTECH/financials/2567/9M/source.zip",
+      "sha256": "6c49c34116bf2b4dcdef04b95271ad7d2c87182802e174d1f221704ffc24f994",
+      "ingested_at": "2026-04-23T19:31:34+00:00",
+      "shareholder_profit": 22.496634
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-27",
+      "news_id": "17406066102801",
+      "raw_path": "HTECH/financials/2567/FY/source.zip",
+      "sha256": "7a65dabd595673fe953d2021604958e4f69b368bea64682d3e787098e976e426",
+      "ingested_at": "2026-04-23T19:31:30+00:00",
+      "shareholder_profit": 113.626384
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-14",
+      "news_id": "17235857993981",
+      "raw_path": "HTECH/financials/2567/H1/source.zip",
+      "sha256": "154a6a6dd47ae64cef8a9455aaa9edb40380bf73e96c4db125359d6f6d5a35a4",
+      "ingested_at": "2026-04-23T19:31:39+00:00",
+      "shareholder_profit": 30.507998
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-15",
+      "news_id": "17157257385191",
+      "raw_path": "HTECH/financials/2567/Q1/source.zip",
+      "sha256": "b0edb3ecb366bd0ca6feb86004b700f79325d4893502475718848edfa517bb91",
+      "ingested_at": "2026-04-23T19:31:43+00:00",
+      "shareholder_profit": 23.699782
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-13",
+      "news_id": "17629880385151",
+      "raw_path": "HTECH/financials/2568/9M/source.zip",
+      "sha256": "0e0f8ab9fc576a715db03cc6677d657f137cc460760530f545f200e412212998",
+      "ingested_at": "2026-04-23T19:31:16+00:00",
+      "shareholder_profit": 36.00646
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-27",
+      "news_id": "17721442963861",
+      "raw_path": "HTECH/financials/2568/FY/source.zip",
+      "sha256": "b3609fd2805095a9b5208b4ad9549c711ca53226e7062b06725ca75511155acb",
+      "ingested_at": "2026-04-23T19:31:11+00:00",
+      "shareholder_profit": 34.357744
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229766801",
+      "raw_path": "HTECH/financials/2568/H1/source.zip",
+      "sha256": "0aa95fd3ac4c4edbe5abdc166909fedcc6a95069a1816aa185501573c3b9056f",
+      "ingested_at": "2026-04-23T19:31:20+00:00",
+      "shareholder_profit": 24.198561
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-14",
+      "news_id": "17471784448401",
+      "raw_path": "HTECH/financials/2568/Q1/source.zip",
+      "sha256": "42cfb5a332feec0b2e5a86e740593985e85dd4735c0bf79b7eb0d97cb85423fa",
+      "ingested_at": "2026-04-23T19:31:25+00:00",
+      "shareholder_profit": 24.538923
+    }
+  ]
 }

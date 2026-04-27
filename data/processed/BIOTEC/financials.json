@@ -4,7 +4,244 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-26",
+  "quarterly_history": {
+    "2564": {
+      "Q1": -11.163154140000001,
+      "Q2": 2.5988412999999997,
+      "Q3": 21.526691960000047,
+      "Q4": 56.045293199999946,
+      "FullYear": 69.00767232
+    },
+    "2565": {
+      "Q1": 56.98106778419355,
+      "Q2": 78.362372,
+      "Q3": 10.333582,
+      "Q4": -61.65883378419355,
+      "FullYear": 84.018188
+    },
+    "2566": {
+      "Q1": -26.257167,
+      "Q2": -25.824317,
+      "Q3": -32.745923,
+      "Q4": -36.405069000000005,
+      "FullYear": -121.232476
+    },
+    "2567": {
+      "Q1": 3.574217,
+      "Q2": -26.368112,
+      "Q3": -120.626147,
+      "Q4": 61.46209999999999,
+      "FullYear": -81.957942
+    },
+    "2568": {
+      "Q1": -18.039515,
+      "Q2": -39.010718,
+      "Q3": 109.429788,
+      "Q4": -23.055206,
+      "FullYear": 29.324349
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-12",
+      "news_id": "2021123672",
+      "raw_path": "BIOTEC/financials/2564/9M/source.zip",
+      "sha256": "4b029e315cd04fe072034a7027816b64d5093fd5d4714df28cc78b2b1fc1518e",
+      "ingested_at": "2026-04-24T07:48:08+00:00",
+      "shareholder_profit": 21.526691960000047
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-28",
+      "news_id": "2022026610",
+      "raw_path": "BIOTEC/financials/2564/FY/source.zip",
+      "sha256": "01f1147034b31502a984663a308bfc4ddc47f0425ef6277e9d3b2b55500c9adc",
+      "ingested_at": "2026-04-24T07:48:03+00:00",
+      "shareholder_profit": 69.00767232
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-10",
+      "news_id": "2021086470",
+      "raw_path": "BIOTEC/financials/2564/H1/source.zip",
+      "sha256": "9e140a17337e82be6c79c12344fa8dafbf390c4df305138701d616152a7fb25f",
+      "ingested_at": "2026-04-24T07:48:12+00:00",
+      "shareholder_profit": 2.5988412999999997
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-14",
+      "news_id": "2021059150",
+      "raw_path": "BIOTEC/financials/2564/Q1/source.zip",
+      "sha256": "f2b78be16f14ec24f241bd50bc006e8ca33dbc6542a6561e0666d1f5bcec3e71",
+      "ingested_at": "2026-04-24T07:48:16+00:00",
+      "shareholder_profit": -11.163154140000001
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-14",
+      "news_id": "2022135200",
+      "raw_path": "BIOTEC/financials/2565/9M/source.zip",
+      "sha256": "37e4d51c5d14353adcc374f0207c7f16c7f2bfd4c6b2bcf837aaa92b46bf5d7b",
+      "ingested_at": "2026-04-24T07:47:50+00:00",
+      "shareholder_profit": 10.333582
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-28",
+      "news_id": "2023025357",
+      "raw_path": "BIOTEC/financials/2565/FY/source.zip",
+      "sha256": "d5ad56d5b685e05ff8fdc0af1cfd5243f028d9d98bd80576f885abd76393eb63",
+      "ingested_at": "2026-04-24T07:47:45+00:00",
+      "shareholder_profit": 84.018188
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-11",
+      "news_id": "2022096401",
+      "raw_path": "BIOTEC/financials/2565/H1/source.zip",
+      "sha256": "b6005e31ed7be6c90610aaa2435d3dafcba6bc9ce918a4781c4255498055ab8e",
+      "ingested_at": "2026-04-24T07:47:54+00:00",
+      "shareholder_profit": 78.362372
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-17",
+      "news_id": "2022063216",
+      "raw_path": "BIOTEC/financials/2565/Q1/source.zip",
+      "sha256": "57b797dee65e119bb7f8db98a64913b6cb87dcdae57fd267eff9c5c6e6eba9a7",
+      "ingested_at": "2026-04-24T07:47:59+00:00",
+      "shareholder_profit": 56.98106778419355
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-10",
+      "news_id": "16995730790511",
+      "raw_path": "BIOTEC/financials/2566/9M/source.zip",
+      "sha256": "14f08fa85433adf2b5d32b2c1967b7f36902572efe204a8972773e491058cccd",
+      "ingested_at": "2026-04-24T07:47:33+00:00",
+      "shareholder_profit": -32.745923
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-28",
+      "news_id": "17090750793371",
+      "raw_path": "BIOTEC/financials/2566/FY/source.zip",
+      "sha256": "a9bfdcc32af159b2689339b590087ae79e0770e7bdf85abe36defba42b063cd6",
+      "ingested_at": "2026-04-24T07:47:28+00:00",
+      "shareholder_profit": -121.232476
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-11",
+      "news_id": "16917102158461",
+      "raw_path": "BIOTEC/financials/2566/H1/source.zip",
+      "sha256": "4c707ea46f3f7f233bba9911c0cd4457d9d0d8f2fe105c99f7804b17b17848ce",
+      "ingested_at": "2026-04-24T07:47:37+00:00",
+      "shareholder_profit": -25.824317
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-15",
+      "news_id": "16841053953661",
+      "raw_path": "BIOTEC/financials/2566/Q1/source.zip",
+      "sha256": "7888f86f79a9d2075403526261e6e77550d29a048d5932550a81b76591ef09eb",
+      "ingested_at": "2026-04-24T07:47:41+00:00",
+      "shareholder_profit": -26.257167
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361308211",
+      "raw_path": "BIOTEC/financials/2567/9M/source.zip",
+      "sha256": "30390dce374fd58e0c01983255d8743eac4be88710947059c1c1d7b9e289ac91",
+      "ingested_at": "2026-04-24T07:47:13+00:00",
+      "shareholder_profit": -120.626147
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-26",
+      "news_id": "17405221133071",
+      "raw_path": "BIOTEC/financials/2567/FY/source.zip",
+      "sha256": "248bdeabc51656377dd8676fda0b44abfdf0f0d79e03853a355a2941d94e8e6f",
+      "ingested_at": "2026-04-24T07:47:09+00:00",
+      "shareholder_profit": -81.957942
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-09",
+      "news_id": "17231594092971",
+      "raw_path": "BIOTEC/financials/2567/H1/source.zip",
+      "sha256": "8ae99eb6ab7ef281b8213584a8317caf4afe444dab5a976ccf273cf2ff1e94b9",
+      "ingested_at": "2026-04-24T07:47:17+00:00",
+      "shareholder_profit": -26.368112
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434567001",
+      "raw_path": "BIOTEC/financials/2567/Q1/source.zip",
+      "sha256": "990a4ffa503fe0df60464d7e6f35f4a359de521f5aa6f4bbbe6849a1fd3f12c6",
+      "ingested_at": "2026-04-24T07:47:22+00:00",
+      "shareholder_profit": 3.574217
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-13",
+      "news_id": "17629880519921",
+      "raw_path": "BIOTEC/financials/2568/9M/source.zip",
+      "sha256": "0ff6cea2e0239711629b81568d6ccb26e889eea46ab306ecfde80d2c8df85b0f",
+      "ingested_at": "2026-04-24T07:46:56+00:00",
+      "shareholder_profit": 109.429788
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-26",
+      "news_id": "17720575393441",
+      "raw_path": "BIOTEC/financials/2568/FY/source.zip",
+      "sha256": "876ae2eda7e84e290edd8a64ae3ba11cf5380de609676a39e1bab143e540b0e6",
+      "ingested_at": "2026-04-24T07:46:51+00:00",
+      "shareholder_profit": 29.324349
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229891381",
+      "raw_path": "BIOTEC/financials/2568/H1/source.zip",
+      "sha256": "dce2909328ef573990355d10796e289980e906210bc6d195f5a14f1c6188ed9b",
+      "ingested_at": "2026-04-24T07:47:00+00:00",
+      "shareholder_profit": -39.010718
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-14",
+      "news_id": "17471784587441",
+      "raw_path": "BIOTEC/financials/2568/Q1/source.zip",
+      "sha256": "a86bfbef9a3909424aafd72becb63f2c9476a66493620d92f9c70e8def6dd27c",
+      "ingested_at": "2026-04-24T07:47:04+00:00",
+      "shareholder_profit": -18.039515
+    }
+  ]
 }

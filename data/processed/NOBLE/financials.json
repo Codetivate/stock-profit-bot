@@ -4,7 +4,244 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-03-02",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 484.026,
+      "Q2": 301.872,
+      "Q3": 149.606,
+      "Q4": -3.724127000000067,
+      "FullYear": 931.779873
+    },
+    "2565": {
+      "Q1": -6.628,
+      "Q2": -14.089,
+      "Q3": 137.317,
+      "Q4": 338.34044,
+      "FullYear": 454.94044
+    },
+    "2566": {
+      "Q1": 72.55,
+      "Q2": 111.86,
+      "Q3": 534.798,
+      "Q4": 191.22408500000006,
+      "FullYear": 910.432085
+    },
+    "2567": {
+      "Q1": 78.678,
+      "Q2": 124.344,
+      "Q3": -3.268,
+      "Q4": 231.798412,
+      "FullYear": 431.552412
+    },
+    "2568": {
+      "Q1": 86.787,
+      "Q2": -59.561,
+      "Q3": 687.799,
+      "Q4": -121.88269600000001,
+      "FullYear": 593.142304
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-11",
+      "news_id": "2021122021",
+      "raw_path": "NOBLE/financials/2564/9M/source.zip",
+      "sha256": "e55635a72abb2d7a622e7396027e6e9bee2468bf92842922b3a582fa186931cd",
+      "ingested_at": "2026-04-23T23:00:27+00:00",
+      "shareholder_profit": 149.606
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-24",
+      "news_id": "2022022397",
+      "raw_path": "NOBLE/financials/2564/FY/source.zip",
+      "sha256": "b41b5ff318b3141179915d48227d9722f2a1b387076910e42a545b6d2dfb7567",
+      "ingested_at": "2026-04-23T23:00:23+00:00",
+      "shareholder_profit": 931.779873
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-11",
+      "news_id": "2021087865",
+      "raw_path": "NOBLE/financials/2564/H1/source.zip",
+      "sha256": "77e4337d04b699f0cbf5f5a8fbb04ba62415c55295b0fa9629b44f048878009a",
+      "ingested_at": "2026-04-23T23:00:32+00:00",
+      "shareholder_profit": 301.872
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-13",
+      "news_id": "2021056742",
+      "raw_path": "NOBLE/financials/2564/Q1/source.zip",
+      "sha256": "7186d3b414339dfc71b050963ac78bb6dcf4a9b474011f2c60d7af842b06afc9",
+      "ingested_at": "2026-04-23T23:00:36+00:00",
+      "shareholder_profit": 484.026
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-09",
+      "news_id": "2022131024",
+      "raw_path": "NOBLE/financials/2565/9M/source.zip",
+      "sha256": "201b633b514338941234e8e628653fc2aa1e9dde295790c3509b702bb2ec39a0",
+      "ingested_at": "2026-04-23T23:00:09+00:00",
+      "shareholder_profit": 137.317
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-22",
+      "news_id": "2023019774",
+      "raw_path": "NOBLE/financials/2565/FY/source.zip",
+      "sha256": "e31b2e09f779ad1a0d2bcd52bc4340039c47daf8df41b4996f769b690b86d276",
+      "ingested_at": "2026-04-23T23:00:04+00:00",
+      "shareholder_profit": 454.94044
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-11",
+      "news_id": "2022095745",
+      "raw_path": "NOBLE/financials/2565/H1/source.zip",
+      "sha256": "a7fd8ae1b1dc6226908e03ed3220e5c55855e50c660d5c51b8fa4dcd5a4abe08",
+      "ingested_at": "2026-04-23T23:00:13+00:00",
+      "shareholder_profit": -14.089
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-12",
+      "news_id": "2022060396",
+      "raw_path": "NOBLE/financials/2565/Q1/source.zip",
+      "sha256": "a4eec451cfba99d5140f50699a84aefeea1b82b9e309e7121cc0a423b92a7efa",
+      "ingested_at": "2026-04-23T23:00:18+00:00",
+      "shareholder_profit": -6.628
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-10",
+      "news_id": "16995730796581",
+      "raw_path": "NOBLE/financials/2566/9M/source.zip",
+      "sha256": "0c88f3fbb929b351748b71e82d82cfef4ecf1cc1efa656893eb68315054bccff",
+      "ingested_at": "2026-04-23T22:59:50+00:00",
+      "shareholder_profit": 534.798
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-27",
+      "news_id": "17089869266961",
+      "raw_path": "NOBLE/financials/2566/FY/source.zip",
+      "sha256": "3904403a6a685a6c9e1fb4b2d99a93e32f5ad1b0dd704f768e6473e826e720c0",
+      "ingested_at": "2026-04-23T22:59:46+00:00",
+      "shareholder_profit": 910.432085
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-10",
+      "news_id": "16916230327281",
+      "raw_path": "NOBLE/financials/2566/H1/source.zip",
+      "sha256": "2266b99d74ed80460aa317b9af497d0666b5a8c5fa4176b91e399228470c1b1d",
+      "ingested_at": "2026-04-23T22:59:55+00:00",
+      "shareholder_profit": 111.86
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-10",
+      "news_id": "16836750115561",
+      "raw_path": "NOBLE/financials/2566/Q1/source.zip",
+      "sha256": "e47ba9510753604e30f4d59a6a05d836cf97b1e82eb60268ad23f04bba96c4ea",
+      "ingested_at": "2026-04-23T23:00:00+00:00",
+      "shareholder_profit": 72.55
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361331371",
+      "raw_path": "NOBLE/financials/2567/9M/source.zip",
+      "sha256": "f3d0aa83f344bdd4154f78823dfaaa243f2259e8eb3773822cfc192732c7b53c",
+      "ingested_at": "2026-04-23T22:59:32+00:00",
+      "shareholder_profit": -3.268
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-03-03",
+      "news_id": "17409536805701",
+      "raw_path": "NOBLE/financials/2567/FY/source.zip",
+      "sha256": "eee542c000bf6a239db974992518b7f3600ddad151930e8f632477388b633c9d",
+      "ingested_at": "2026-04-23T22:59:28+00:00",
+      "shareholder_profit": 431.552412
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990236811",
+      "raw_path": "NOBLE/financials/2567/H1/source.zip",
+      "sha256": "3fc3b2982cb458c24fdf5f30ec8ba2b0ec465b9fb52969ea69d36227222df578",
+      "ingested_at": "2026-04-23T22:59:37+00:00",
+      "shareholder_profit": 124.344
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434586491",
+      "raw_path": "NOBLE/financials/2567/Q1/source.zip",
+      "sha256": "6d5b5f22be7dd826f8bc37397b6c5d28360765f2189772dd5ce86c9517ac35dc",
+      "ingested_at": "2026-04-23T22:59:41+00:00",
+      "shareholder_profit": 78.678
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-13",
+      "news_id": "17629880530331",
+      "raw_path": "NOBLE/financials/2568/9M/source.zip",
+      "sha256": "7686a4b829bbfeb1c12f0dd7f78f378d085ac8801c432cfd5b64042c72c57b54",
+      "ingested_at": "2026-04-23T22:59:14+00:00",
+      "shareholder_profit": 687.799
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-03-02",
+      "news_id": "17724016865391",
+      "raw_path": "NOBLE/financials/2568/FY/source.zip",
+      "sha256": "a623091ff9a2e44ab83334c0357948bc36ec9f572c571b05b77ad7c9fe9fffb1",
+      "ingested_at": "2026-04-23T22:59:09+00:00",
+      "shareholder_profit": 593.142304
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229921131",
+      "raw_path": "NOBLE/financials/2568/H1/source.zip",
+      "sha256": "817ad7ef46b4675487be34e71af99fec8003d67b502f2294bfd0ed4a98e74eae",
+      "ingested_at": "2026-04-23T22:59:19+00:00",
+      "shareholder_profit": -59.561
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-15",
+      "news_id": "17472613193821",
+      "raw_path": "NOBLE/financials/2568/Q1/source.zip",
+      "sha256": "be4768256f7341a35c619a6734a99cedfcbe6b21c82253b9c98fe617e6ad78b5",
+      "ingested_at": "2026-04-23T22:59:23+00:00",
+      "shareholder_profit": 86.787
+    }
+  ]
 }

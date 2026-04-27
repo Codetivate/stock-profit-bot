@@ -4,7 +4,244 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": null,
-  "quarterly_history": {},
-  "sources": []
+  "updated_at": "2026-02-23",
+  "quarterly_history": {
+    "2564": {
+      "Q1": -57.451761,
+      "Q2": -57.491652,
+      "Q3": -75.883123,
+      "Q4": -92.047131,
+      "FullYear": -282.873667
+    },
+    "2565": {
+      "Q1": -41.67147781,
+      "Q2": -45.13716419,
+      "Q3": -51.493578,
+      "Q4": -28.833152999999996,
+      "FullYear": -167.135373
+    },
+    "2566": {
+      "Q1": 147.848538,
+      "Q2": 9.56624,
+      "Q3": 5.902421,
+      "Q4": 10.475756000000015,
+      "FullYear": 173.792955
+    },
+    "2567": {
+      "Q1": -16.7848,
+      "Q2": -59.507282,
+      "Q3": 81.033177,
+      "Q4": -40.254943999999995,
+      "FullYear": -35.513849
+    },
+    "2568": {
+      "Q1": -81.723761,
+      "Q2": -56.248104,
+      "Q3": -46.278063,
+      "Q4": -377.79468700000007,
+      "FullYear": -562.044615
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-15",
+      "news_id": "2021126269",
+      "raw_path": "SOLAR/financials/2564/9M/source.zip",
+      "sha256": "094a18cd147ec40de1f38800317f7e688cda56b98f78ace8b215e5c05a208876",
+      "ingested_at": "2026-04-24T03:17:50+00:00",
+      "shareholder_profit": -75.883123
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-28",
+      "news_id": "2022026814",
+      "raw_path": "SOLAR/financials/2564/FY/source.zip",
+      "sha256": "ea1b5684e8d1d5db1cffb3ea7487e00242fd67d054ae06015f81e12d6c6f5d8a",
+      "ingested_at": "2026-04-24T03:17:46+00:00",
+      "shareholder_profit": -282.873667
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-16",
+      "news_id": "2021092064",
+      "raw_path": "SOLAR/financials/2564/H1/source.zip",
+      "sha256": "883635194865df5a4f4e24cdf3b7e1542b1edb60dd70b0fd40d25a1e2d6554ee",
+      "ingested_at": "2026-04-24T03:17:55+00:00",
+      "shareholder_profit": -57.491652
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-17",
+      "news_id": "2021060447",
+      "raw_path": "SOLAR/financials/2564/Q1/source.zip",
+      "sha256": "59c054bd645b97b05357baf0eafbf110e383263031ba89c7de10eaca75d2b3c9",
+      "ingested_at": "2026-04-24T03:18:00+00:00",
+      "shareholder_profit": -57.451761
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-14",
+      "news_id": "2022136926",
+      "raw_path": "SOLAR/financials/2565/9M/source.zip",
+      "sha256": "bc5bf6132dadca455427ca1ab075955871234866c55a5eba8c37e6f58fbcb5ff",
+      "ingested_at": "2026-04-24T03:17:31+00:00",
+      "shareholder_profit": -51.493578
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-28",
+      "news_id": "2023025200",
+      "raw_path": "SOLAR/financials/2565/FY/source.zip",
+      "sha256": "5f96f1dcb812899db4421448d54a0f9711cb78c0a786926662740c962997ada4",
+      "ingested_at": "2026-04-24T03:17:26+00:00",
+      "shareholder_profit": -167.135373
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-15",
+      "news_id": "2022098318",
+      "raw_path": "SOLAR/financials/2565/H1/source.zip",
+      "sha256": "b7848e9c56fe334de4957be467a3a80f446ad814428ff73d6f6efc215cce75ef",
+      "ingested_at": "2026-04-24T03:17:35+00:00",
+      "shareholder_profit": -45.13716419
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-17",
+      "news_id": "2022064477",
+      "raw_path": "SOLAR/financials/2565/Q1/source.zip",
+      "sha256": "d04b5ba7593c539feca1205918e5afbadd354f4424a571ad4046101d5c0309b0",
+      "ingested_at": "2026-04-24T03:17:41+00:00",
+      "shareholder_profit": -41.67147781
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-14",
+      "news_id": "16999132721501",
+      "raw_path": "SOLAR/financials/2566/9M/source.zip",
+      "sha256": "171d6c5d93e215a062449bd395d6cda1db3b18608aebf24acc8196b58b2fb8e7",
+      "ingested_at": "2026-04-24T03:17:11+00:00",
+      "shareholder_profit": 5.902421
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-03-01",
+      "news_id": "17092430840231",
+      "raw_path": "SOLAR/financials/2566/FY/source.zip",
+      "sha256": "803331c9f7c365f6811e798d041a27d24d9ccc8e387241cdb98ca7628cc51320",
+      "ingested_at": "2026-04-24T03:17:06+00:00",
+      "shareholder_profit": 173.792955
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-15",
+      "news_id": "16920539398221",
+      "raw_path": "SOLAR/financials/2566/H1/source.zip",
+      "sha256": "95eb3fc8f51f20cfd45e3176767de346aca60dfd331a9c27afd34c7f27a1c6ca",
+      "ingested_at": "2026-04-24T03:17:16+00:00",
+      "shareholder_profit": 9.56624
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-15",
+      "news_id": "16841054054891",
+      "raw_path": "SOLAR/financials/2566/Q1/source.zip",
+      "sha256": "1899ada081e974376d172fff3593f17d0edcc4268f7a2e207ccc807df8968083",
+      "ingested_at": "2026-04-24T03:17:20+00:00",
+      "shareholder_profit": 147.848538
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-13",
+      "news_id": "17314477410681",
+      "raw_path": "SOLAR/financials/2567/9M/source.zip",
+      "sha256": "f14d25d705cb945e9088f7d1658a5cc0f46d33c9abc67149751b676d3e2a336b",
+      "ingested_at": "2026-04-24T03:16:52+00:00",
+      "shareholder_profit": 81.033177
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-27",
+      "news_id": "17406066140211",
+      "raw_path": "SOLAR/financials/2567/FY/source.zip",
+      "sha256": "99f1ba33b374ec648c37c1e77970b3e8f43db2848a27a6065975f7398e8ad5cc",
+      "ingested_at": "2026-04-24T03:16:48+00:00",
+      "shareholder_profit": -35.513849
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-15",
+      "news_id": "17236759886761",
+      "raw_path": "SOLAR/financials/2567/H1/source.zip",
+      "sha256": "5d28f7183f9f27887a1bd31b6820236bc6862715f3b21f7d3db1d82fc892da85",
+      "ingested_at": "2026-04-24T03:16:57+00:00",
+      "shareholder_profit": -59.507282
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-15",
+      "news_id": "17157257477961",
+      "raw_path": "SOLAR/financials/2567/Q1/source.zip",
+      "sha256": "f537ed5e62d9cc9d02e0759c030206667429474c205e45ffa78a4d100f4e17bc",
+      "ingested_at": "2026-04-24T03:17:02+00:00",
+      "shareholder_profit": -16.7848
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-14",
+      "news_id": "17630699602341",
+      "raw_path": "SOLAR/financials/2568/9M/source.zip",
+      "sha256": "a0bba3f9bd4dd07525614808abf2d00fc31924dec58fd4753aaa25e73130132c",
+      "ingested_at": "2026-04-24T03:16:33+00:00",
+      "shareholder_profit": -46.278063
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-23",
+      "news_id": "17718030182681",
+      "raw_path": "SOLAR/financials/2568/FY/source.zip",
+      "sha256": "e17b64ab203c46879e32abadf33c417bf9fbd543e8ad7b268408bdacf76e5725",
+      "ingested_at": "2026-04-24T03:16:28+00:00",
+      "shareholder_profit": -562.044615
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-08",
+      "news_id": "17546095858891",
+      "raw_path": "SOLAR/financials/2568/H1/source.zip",
+      "sha256": "592d390c9d86dddf6b148d63c820ff055f2c9875ff192d3ba26f4905d20612db",
+      "ingested_at": "2026-04-24T03:16:39+00:00",
+      "shareholder_profit": -56.248104
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-15",
+      "news_id": "17472613188801",
+      "raw_path": "SOLAR/financials/2568/Q1/source.zip",
+      "sha256": "e8a8bab94cb4793e36f03340ebbdfab336dbaa3f5c8456b0e63d5e98a80c1901",
+      "ingested_at": "2026-04-24T03:16:43+00:00",
+      "shareholder_profit": -81.723761
+    }
+  ]
 }
