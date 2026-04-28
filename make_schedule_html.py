@@ -299,8 +299,7 @@ def _build_html(symbol: str, schedule: Dict[Tuple[int, str], str]) -> str:
 <body>
 <div class="chart">
   <div class="hdr">
-    <div class="hdr-title">{symbol} · ตารางประกาศงบ</div>
-    <div class="hdr-sub">{len(schedule)} filings · {len(years)} ปี</div>
+    <div class="hdr-title">{symbol} · วันที่ประกาศงบ</div>
   </div>
   <div class="tbl">
     <div class="head">
