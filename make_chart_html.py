@@ -625,22 +625,37 @@ def _build_html(
 
   /* ─── Footer ─── */
   .footer {{
-    display: flex; justify-content: space-between; align-items: center;
-    gap: 18px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 24px;
     margin-top: 22px; padding-top: 14px;
   }}
-  .brand {{ display: flex; align-items: center; gap: 16px; flex: 0 0 auto; }}
+  .brand {{ display: flex; align-items: center; gap: 16px; }}
   .logo-img  {{ height: 170px; width: auto; opacity: 0.95; filter: {('invert(1)' if theme.is_light else 'none')}; }}
   .logo-text {{ font-family: Georgia, serif; font-style: italic; font-size: 68px; font-weight: 300; color: {theme.text}; }}
   .logo-sep  {{ font-size: 48px; color: {theme.text_muted}; font-weight: 200; }}
   .logo-tag  {{ font-size: 28px; color: {theme.text}; font-weight: 500; letter-spacing: 0.5px; }}
 
   .footer-meta {{
-    display: flex; align-items: center; gap: 18px;
-    flex: 1 1 auto; justify-content: flex-end;
+    display: flex; flex-direction: column; gap: 4px;
+    align-items: center; text-align: center;
   }}
   .src-line  {{ font-size: 20px; color: {theme.text_faint}; font-style: italic; font-weight: 500; }}
   .src-note  {{ font-size: 18px; color: {theme.text_faint}; font-style: italic; }}
+
+  .footer-qr {{
+    width: 170px; height: 170px;
+    border: 3px dashed {theme.card_border};
+    border-radius: 18px;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    color: {theme.text_muted};
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.3;
+  }}
+  .footer-qr .qr-icon {{ font-size: 40px; margin-bottom: 6px; opacity: 0.6; }}
 </style>
 </head>
 <body>
@@ -697,6 +712,10 @@ def _build_html(
       <div class="footer-meta">
         <div class="src-line">Source:&nbsp;&nbsp;{source_url}</div>
         <div class="src-note">AI can make mistakes. Please double-check responses.</div>
+      </div>
+      <div class="footer-qr">
+        <div class="qr-icon">▦</div>
+        <div>QR Code</div>
       </div>
     </div>
   </div>
