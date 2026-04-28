@@ -27,6 +27,7 @@ from src.ingest.zip_downloader import safe_symbol_dir
 
 
 LOGO_PATH = Path(__file__).parent / "assets" / "logo.png"
+QR_PATH = Path(__file__).parent / "assets" / "qr.png"
 
 
 def _logo_data_url() -> Optional[str]:
@@ -37,6 +38,19 @@ def _logo_data_url() -> Optional[str]:
             return (
                 "data:image/png;base64,"
                 + base64.b64encode(LOGO_PATH.read_bytes()).decode()
+            )
+        except OSError:
+            return None
+    return None
+
+
+def _qr_data_url() -> Optional[str]:
+    """Inline the Join-Group QR (assets/qr.png) for the footer."""
+    if QR_PATH.exists():
+        try:
+            return (
+                "data:image/png;base64,"
+                + base64.b64encode(QR_PATH.read_bytes()).decode()
             )
         except OSError:
             return None
@@ -136,6 +150,21 @@ def _build_html(symbol: str, schedule: Dict[Tuple[int, str], str]) -> str:
         f'<img src="{logo_url}" alt="pi A8/4"/>' if logo_url
         else '<span class="logo-fallback">pi A8/4</span>'
     )
+
+    qr_url = _qr_data_url()
+    if qr_url:
+        qr_html = (
+            f'<div class="ftr-qr">'
+            f'<img class="qr-img" src="{qr_url}" alt="Join Group QR"/>'
+            f'<div class="qr-label">Join Group</div>'
+            f'</div>'
+        )
+    else:
+        qr_html = (
+            '<div class="ftr-qr placeholder">'
+            '<div class="qr-icon">▦</div><div>QR Code</div>'
+            '</div>'
+        )
 
     return f"""<!doctype html>
 <html lang="th">
@@ -246,16 +275,25 @@ def _build_html(symbol: str, schedule: Dict[Tuple[int, str], str]) -> str:
   .ftr-meta .disclaim {{ font-size: 18px; color: var(--muted); font-style: italic; }}
   .ftr-qr {{
     width: 170px; height: 170px;
-    border: 3px dashed var(--border);
-    border-radius: 18px;
+    border-radius: 14px;
+    background: #FFFFFF;
+    border: 1px solid var(--border);
     display: flex; flex-direction: column;
     align-items: center; justify-content: center;
+    gap: 4px;
+    padding: 6px;
+    box-sizing: border-box;
+  }}
+  .ftr-qr.placeholder {{
+    border: 3px dashed var(--border);
     color: var(--muted);
     font-size: 16px;
     text-align: center;
     line-height: 1.3;
   }}
-  .ftr-qr .qr-icon {{ font-size: 40px; margin-bottom: 6px; opacity: 0.6; }}
+  .ftr-qr .qr-img   {{ width: 130px; height: 130px; image-rendering: pixelated; }}
+  .ftr-qr .qr-label {{ font-size: 15px; font-weight: 700; color: var(--navy); letter-spacing: 0.3px; }}
+  .ftr-qr .qr-icon  {{ font-size: 40px; margin-bottom: 6px; opacity: 0.6; }}
 </style>
 </head>
 <body>
@@ -277,10 +315,7 @@ def _build_html(symbol: str, schedule: Dict[Tuple[int, str], str]) -> str:
       <div class="src">Source:&nbsp;&nbsp;https://www.set.or.th/th/market/product/stock/quote/{symbol}/news</div>
       <div class="disclaim">AI can make mistakes. Please double-check responses.</div>
     </div>
-    <div class="ftr-qr">
-      <div class="qr-icon">▦</div>
-      <div>QR Code</div>
-    </div>
+    {qr_html}
   </div>
 </div>
 </body>

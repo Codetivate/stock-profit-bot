@@ -27,6 +27,7 @@ from playwright.sync_api import sync_playwright
 from make_chart import QuarterlyData  # noqa: F401
 
 LOGO_PATH = Path(__file__).parent / "assets" / "logo.png"
+QR_PATH = Path(__file__).parent / "assets" / "qr.png"
 
 
 # ═══ Themes ═══
@@ -199,6 +200,15 @@ def _logo_data_url() -> Optional[str]:
     if LOGO_PATH.exists():
         try:
             return "data:image/png;base64," + base64.b64encode(LOGO_PATH.read_bytes()).decode()
+        except OSError:
+            return None
+    return None
+
+
+def _qr_data_url() -> Optional[str]:
+    if QR_PATH.exists():
+        try:
+            return "data:image/png;base64," + base64.b64encode(QR_PATH.read_bytes()).decode()
         except OSError:
             return None
     return None
@@ -399,6 +409,22 @@ def _build_html(
             '<span class="logo-sep">|</span>'
             '<span class="logo-tag">A8/4</span>'
         )
+
+    qr_url = _qr_data_url()
+    if qr_url:
+        qr_html = (
+            f'<div class="footer-qr">'
+            f'<img class="qr-img" src="{qr_url}" alt="Join Group QR"/>'
+            f'<div class="qr-label">Join Group</div>'
+            f'</div>'
+        )
+    else:
+        qr_html = (
+            '<div class="footer-qr placeholder">'
+            '<div class="qr-icon">▦</div><div>QR Code</div>'
+            '</div>'
+        )
+
     source_url = f"https://www.set.or.th/th/market/product/stock/quote/{symbol}/news"
 
     # Paper theme needs white text on the LATEST pill; every other
@@ -646,16 +672,25 @@ def _build_html(
 
   .footer-qr {{
     width: 170px; height: 170px;
-    border: 3px dashed {theme.card_border};
-    border-radius: 18px;
+    border-radius: 14px;
+    background: #FFFFFF;
+    border: 1px solid {theme.card_border};
     display: flex; flex-direction: column;
     align-items: center; justify-content: center;
+    gap: 4px;
+    padding: 6px;
+    box-sizing: border-box;
+  }}
+  .footer-qr.placeholder {{
+    border: 3px dashed {theme.card_border};
     color: {theme.text_muted};
     font-size: 16px;
     text-align: center;
     line-height: 1.3;
   }}
-  .footer-qr .qr-icon {{ font-size: 40px; margin-bottom: 6px; opacity: 0.6; }}
+  .footer-qr .qr-img    {{ width: 130px; height: 130px; image-rendering: pixelated; }}
+  .footer-qr .qr-label  {{ font-size: 15px; font-weight: 700; color: {theme.text}; letter-spacing: 0.3px; }}
+  .footer-qr .qr-icon   {{ font-size: 40px; margin-bottom: 6px; opacity: 0.6; }}
 </style>
 </head>
 <body>
@@ -713,10 +748,7 @@ def _build_html(
         <div class="src-line">Source:&nbsp;&nbsp;{source_url}</div>
         <div class="src-note">AI can make mistakes. Please double-check responses.</div>
       </div>
-      <div class="footer-qr">
-        <div class="qr-icon">▦</div>
-        <div>QR Code</div>
-      </div>
+      {qr_html}
     </div>
   </div>
 </body>
