@@ -83,6 +83,18 @@ find it, then teach the parser to read that exact cell.
 - **Root cause:** INTUCH collapses two phrases into one label: `กำไรสำหรับปีส่วนที่เป็นของบริษัทใหญ่`. It starts with `กำไรสำหรับปี` (matches `_is_netprofit_row`) but the second occurrence — the parent-share total — was rejected by `_is_shareholder_profit_row`'s strict `startswith("ส่วน…")` check.
 - **Fix:** `_is_shareholder_profit_row` now also accepts inline labels matching `^กำไร…สำหรับ(ปี|งวด|…)` AND containing `ส่วนที่เป็น`/`ส่วนของ`. Order in the extraction loop ensures the consolidated `กำไรสำหรับปี` row claims `net_profit` first; the second (parent-share-with-mixed-label) row then claims `shareholder_profit`.
 
+### ✅ SPRC 2566–2568 — FIXED (4-section dual-currency layout + wider scan)
+- **Symptom:** SPRC 2566 = -34.26 (ours) vs -1,229.93 (SET); 2567 + 2568 returned no values at all (parse miss).
+- **Root cause:** SPRC restructured the PL sheet starting 2566 to a 4-section layout: ``USD CONSO | USD SEP | THB CONSO | THB SEP``, each with current+prior columns. The dual-currency detector (which handled BANPU/PTTEP/CCET's 2-section layout) had three bugs against this format:
+  1. **Bare ``บาท`` cells.** SPRC's unit row uses single-word ``บาท`` per data column instead of merged ``หน่วย: บาท``. The detector required ``หน่วย`` + ``บาท`` together, so `has_thb_marker` came back False and dual-currency detection bailed out.
+  2. **Title rows mistaken for year-headers.** Titles like ``สำหรับปีสิ้นสุดวันที่ 31 ธันวาคม พ.ศ. 2567`` appear at multiple column positions and contain ``2567``. The detector picked them as the "year header" and returned the title's column position (col 13) instead of the real year-header row.
+  3. **Scan range cap at col 20.** SPRC's THB CONSO data sits at columns 17–25; ``_extract_numeric`` capped at col 20 saw at most one cell, so even with the right offset the row produced ``len(nums) < 2`` and the assignment was skipped.
+- **Fix:**
+  1. Accept bare-``บาท`` cells in the unit-row detector.
+  2. Filter year occurrences to short cells (≤ 20 chars) so title strings can't masquerade as year headers.
+  3. Raise the extraction scan cap to col 30 (still excludes the col-31+ stale-cache slots that DITTO 2566 Q1 has).
+- **Lesson:** Single-row heuristics (unit text, year occurrence, scan width) can break in unison when a filer adopts a wider layout. Each guard added for a specific filer (e.g. DITTO's col-20 cap) needs revisiting when another filer goes wider — pin each constant to a comment that explains *why*, so future fixes can reason about whether to relax it.
+
 ### ✅ ILINK — FIXED (strip leading bullets in shareholder matcher)
 - **Symptom:** All 5 years show consolidated total instead of parent share (~115 MB diff per year, since ILINK has a sizable NCI).
 - **Root cause:** ILINK indents allocation rows with a literal hyphen: row 63 reads `- ส่วนที่เป็นของผู้เป็นเจ้าของของบริษัทใหญ่` = 353,108 (parent — matches SET 353.11). The leading `- ` blocked `startswith("ส่วน…")`, so the matcher rejected the row and parser fell back to the consolidated `กำไรสุทธิสำหรับปี` = 467.
@@ -156,3 +168,28 @@ This entry kept for history; superseded by the FIXED entry above.
 | v8 | 475 | 96 | 61 | Reverted restatement; bulk-ingest started adding new symbols |
 | v9 | (in progress) | | | parent-section logic for ITC + ANAN |
 | v10 | (in progress) | | | + INTUCH inline-share matcher |
+| v11 | 625 | 95 | — | year-MAX fix; bulk-ingest broader coverage |
+| **SET100/100** | **100** | **0** | **0** | COM7+TOA+VGI ingested; MOSHI sara-am normalize; GPSC `(แก้ไข)` kept |
+
+---
+
+## Round 2 fixes (SET100 → 100/100)
+
+### ✅ COM7 / TOA / VGI — FIXED (Windows reserved-name + ingest)
+- **Symptom:** missing from data/processed entirely.
+- **Root cause for COM7:** Windows reserves `COM1`–`COM9`/`LPT1`–`LPT9`/`CON`/`PRN`/`AUX`/`NUL` as device-file names. `mkdir data/raw/COM7` errors with `[WinError 267] The directory name is invalid`.
+- **TOA / VGI:** simply weren't in any prior bulk-ingest watchlist — no parser bug.
+- **Fix:** `safe_symbol_dir(sym)` helper in `src/ingest/zip_downloader.py` — appends `_` to reserved names (`COM7` → `COM7_` on disk). Symbol field in JSON stays `"COM7"`. Applied in `zip_downloader.py`, `src/cli/ingest_financials.py`, `src/cli/reparse_financials.py`, `command_handler.py` (reader), `scripts/verify_against_set.py` (audit).
+- **Lesson:** any per-symbol filesystem path on Windows must run through this shim. Future readers (chart, monitor) might still need updates if they hit reserved names.
+
+### ✅ MOSHI — FIXED (Thai SARA AM Unicode decomposition)
+- **Symptom:** `[parse_zip] No PL sheet in source.zip` for all FY filings 2564–2568.
+- **Root cause:** MOSHI's filer encodes Thai SARA AM as the decomposed pair NIKHAHIT (U+0E4D) + SARA AA (U+0E32) instead of the composed character SARA AM (U+0E33). `กำไรสุทธิสำหรับปี` and `กําไรสุทธิสําหรับปี` render identically but byte-compare unequal, so `_is_netprofit_row` regex misses the decomposed form. Sheet `TH 9-10` row 29 has the correct net-profit line `กําไรสุทธิสําหรับปี = 670,221,068` but `_has_pl_data` filtered the sheet out.
+- **Fix:** `_normalize_thai_sara_am()` helper in `parsers/parse_set_zip.py` — replaces the `ํา` (NIKHAHIT+SARA AA) sequence with `ำ` (SARA AM) before any regex match. Applied inside `_find_label`, so all downstream label matchers benefit automatically. Unicode NFC normalization does NOT re-compose this pair (Thai SARA AM has no canonical decomposition mapping in the standard).
+- **Lesson:** Thai source data may contain visually-identical but byte-different forms. Add normalization at the label-extraction boundary, not at every regex.
+
+### ✅ GPSC 2568 — FIXED (keep `(แก้ไข)` corrections)
+- **Symptom:** Q4 2568 = 0; FullYear 2568 mismatched SET (6,399.003).
+- **Root cause:** `_is_amendment` was filtering out the `(แก้ไข)` corrected filing as if it were a clarification cover letter. Corrections carry replacement zips with new numbers; clarifications (`คำชี้แจง` / `ชี้แจงเพิ่มเติม`) carry only text.
+- **Fix:** modify `_is_amendment` to keep `แก้ไข` + skip only pure-clarification keywords. Re-ingest GPSC → 2568 Q4 = 1,497.84 → FullYear = 6,399.003 ✓ matches SET.
+- **Lesson:** SET often re-files with `(แก้ไข)` after audit findings or restatements; the new zip contains the canonical numbers. Treat them as primary, not noise.

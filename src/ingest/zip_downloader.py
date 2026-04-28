@@ -26,6 +26,22 @@ import requests
 
 RAW_ROOT = Path("data/raw")
 
+# Windows reserves these names as device files — they cannot be used as
+# directory names. Append an underscore on disk; the symbol field in JSON
+# stays unchanged. Affects e.g. SET ticker COM7.
+_WIN_RESERVED = {
+    "CON", "PRN", "AUX", "NUL",
+    *(f"COM{i}" for i in range(1, 10)),
+    *(f"LPT{i}" for i in range(1, 10)),
+}
+
+
+def safe_symbol_dir(symbol: str) -> str:
+    """Return a filesystem-safe directory name for *symbol*.
+    Maps Windows-reserved device names (COM7, LPT1, …) to ``<name>_``.
+    All other symbols pass through unchanged."""
+    return f"{symbol}_" if symbol.upper() in _WIN_RESERVED else symbol
+
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -130,7 +146,7 @@ def download_filing(
         raise ValueError(f"Unrecognised financial headline: {headline!r}")
     year, period = parsed
 
-    out_dir = raw_root / symbol / "financials" / str(year) / period
+    out_dir = raw_root / safe_symbol_dir(symbol) / "financials" / str(year) / period
     out_dir.mkdir(parents=True, exist_ok=True)
     zip_path = out_dir / "source.zip"
     metadata_path = out_dir / "metadata.json"

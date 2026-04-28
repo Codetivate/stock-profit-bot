@@ -80,9 +80,20 @@ def fetch_set_annual(session: SetSession, symbol: str) -> dict[int, float]:
     return out
 
 
+_WIN_RESERVED = {
+    "CON", "PRN", "AUX", "NUL",
+    *(f"COM{i}" for i in range(1, 10)),
+    *(f"LPT{i}" for i in range(1, 10)),
+}
+
+
+def _safe_dir(sym: str) -> str:
+    return f"{sym}_" if sym.upper() in _WIN_RESERVED else sym
+
+
 def load_local_annuals(symbol: str) -> dict[int, Optional[float]]:
     """Read our parsed FullYear values from financials.json."""
-    path = PROCESSED_DIR / symbol / "financials.json"
+    path = PROCESSED_DIR / _safe_dir(symbol) / "financials.json"
     if not path.exists():
         return {}
     raw = json.loads(path.read_text(encoding="utf-8"))

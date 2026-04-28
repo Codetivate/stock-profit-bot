@@ -42,9 +42,20 @@ def save_state(state):
     )
 
 
+_WIN_RESERVED_DIR_NAMES = {
+    "CON", "PRN", "AUX", "NUL",
+    *(f"COM{i}" for i in range(1, 10)),
+    *(f"LPT{i}" for i in range(1, 10)),
+}
+
+
+def _safe_symbol_dir(symbol: str) -> str:
+    return f"{symbol}_" if symbol.upper() in _WIN_RESERVED_DIR_NAMES else symbol
+
+
 def _financials_path(symbol: str) -> Path:
     """Resolve financials file for a symbol, preferring new structure."""
-    new_path = PROCESSED_DIR / symbol / "financials.json"
+    new_path = PROCESSED_DIR / _safe_symbol_dir(symbol) / "financials.json"
     if new_path.exists():
         return new_path
     return DATA_DIR / f"{symbol}.json"  # legacy
@@ -180,7 +191,8 @@ def handle_profit_command(tg: TelegramClient, chat_id, symbol: str):
             chat_id,
             f"❌ ยังไม่มีข้อมูลของ <b>{symbol}</b>\n\n"
             f"ระบบจะเก็บข้อมูลเมื่อมีงบใหม่ออก "
-            f"หรือใช้คำสั่ง /profit กับหุ้นอื่นที่มีใน whitelist"
+            f"ตัวอย่างพิมพ์ชื่อหุ้น <code>CPALL</code> "
+            f"หรือใช้คำสั่ง <code>/profit CPALL</code>"
         )
         return
 

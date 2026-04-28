@@ -404,7 +404,7 @@ def _find_pl_sheets(workbook) -> list[str]:
                 continue
             if not (_is_netprofit_row(label) or _is_shareholder_profit_row(label)):
                 continue
-            end = min(len(row), 20)
+            end = min(len(row), 30)
             for cell in row[label_col + 1:end]:
                 if isinstance(cell, (int, float)) and cell not in (0, None):
                     return True
@@ -508,16 +508,27 @@ def _detect_thb_column_offset(rows_top: list) -> int:
     """
     has_usd = False
     has_thb_marker = False
+    usd_max_col = -1
     for row in rows_top:
-        for cell in row:
+        for col, cell in enumerate(row):
             if not isinstance(cell, str):
                 continue
             if "ดอลลาร์" in cell or "เหรียญสหรัฐ" in cell:
                 has_usd = True
+                if col > usd_max_col:
+                    usd_max_col = col
+            # SPRC 2566+ uses bare ``บาท`` cells in the unit row (one
+            # per data column) instead of a single merged ``หน่วย: บาท``.
+            # Recognise the bare form too so we don't miss the THB
+            # block — but only when the cell IS the word "บาท" (stripped),
+            # otherwise we'd pick up running text that happens to mention
+            # the currency (e.g. ``กำไรต่อหุ้น (บาท)``).
+            stripped = cell.strip()
             if (
                 "พันบาท" in cell
                 or "ล้านบาท" in cell
                 or ("หน่วย" in cell and "บาท" in cell)
+                or stripped == "บาท"
             ):
                 has_thb_marker = True
 
@@ -525,14 +536,17 @@ def _detect_thb_column_offset(rows_top: list) -> int:
         return 0
 
     # The year-header row carries one ``25xx`` cell per data column.
-    # Dual-currency layouts repeat the year band: e.g. CCET row 6 reads
-    # ``2564, 2563, 2564, 2563`` at cols 3, 5, 7, 9 — the first two are
-    # USD, the next two are THB. Find the latest year and take its
-    # SECOND occurrence; that's where the THB current-period column
-    # starts. Unit-marker positions can't be trusted (some filers merge
-    # the ``หน่วย: บาท`` cell across the whole THB band, others place
-    # it at the first column of the band), but year-header positions
-    # always sit on the data columns.
+    # Dual-currency layouts come in two shapes:
+    #   • Simple 4-col (BANPU/PTTEP/CCET): USD CONSO + USD prior +
+    #     THB CONSO + THB prior. Latest year appears twice — take the
+    #     SECOND occurrence as the THB column.
+    #   • Complex 6-8 col (SPRC 2566+): USD CONSO + USD SEP + USD prior
+    #     + THB CONSO + THB SEP + THB prior. Latest year appears 4
+    #     times — the second occurrence is USD SEP (still wrong); we
+    #     need the FIRST occurrence whose column is past the USD block.
+    # Use ``usd_max_col`` (max position of any USD marker) as the
+    # boundary: the THB current-period column is the first latest-year
+    # column to its right.
     latest_year = 0
     for row in rows_top:
         for cell in row:
@@ -556,8 +570,15 @@ def _detect_thb_column_offset(rows_top: list) -> int:
             matched = False
             if isinstance(cell, (int, float)) and int(cell) == latest_year:
                 matched = True
-            elif isinstance(cell, str) and target_full in cell:
-                matched = True
+            elif isinstance(cell, str):
+                stripped = cell.strip()
+                # Year-HEADER cells are short ("2567" or "พ.ศ. 2567",
+                # ≤ ~20 chars). Title or date strings ("สำหรับปีสิ้นสุด
+                # วันที่ 31 ธันวาคม พ.ศ. 2567") also mention the year
+                # but aren't column headers; filtering by length keeps
+                # them out of the occurrence set.
+                if len(stripped) <= 20 and target_full in stripped:
+                    matched = True
             if matched:
                 per_row.append(col)
         # Prefer the row that actually carries multiple year columns
@@ -566,6 +587,17 @@ def _detect_thb_column_offset(rows_top: list) -> int:
             occurrences = per_row
             break
 
+    if not occurrences:
+        return 0
+
+    # First occurrence past the USD block — handles SPRC's 4-section
+    # layout cleanly.
+    if usd_max_col >= 0:
+        past_usd = [c for c in occurrences if c > usd_max_col]
+        if past_usd:
+            return past_usd[0]
+
+    # Fallback: take the second occurrence (BANPU/CCET/PTTEP shape).
     if len(occurrences) >= 2:
         return occurrences[1]
     return 0
@@ -631,6 +663,18 @@ _TAS_REF_PATTERN = re.compile(
 )
 
 
+def _normalize_thai_sara_am(s: str) -> str:
+    """Some filers (e.g. MOSHI) write Thai SARA AM as the decomposed
+    sequence NIKHAHIT (U+0E4D) + SARA AA (U+0E32) instead of the
+    composed SARA AM (U+0E33). They render identically but compare
+    unequal as bytes, so ``กำไรสุทธิสำหรับปี`` (real net-profit row)
+    fails our regex matchers. Re-compose the pair so all downstream
+    label regexes match either form."""
+    if "ํา" in s:
+        return s.replace("ํา", "ำ")
+    return s
+
+
 def _find_label(row: tuple) -> tuple[str, int]:
     """Find the first meaningful non-empty string cell in ``row`` and
     return ``(label, column_index)``.
@@ -649,7 +693,7 @@ def _find_label(row: tuple) -> tuple[str, int]:
             continue
         if not isinstance(cell, str):
             continue
-        s = str(cell).strip()
+        s = _normalize_thai_sara_am(str(cell).strip())
         if not s:
             continue
         if _TAS_REF_PATTERN.match(s):
@@ -676,7 +720,7 @@ def _extract_numeric(row: tuple, is_eps: bool = False, start: int = 1) -> list:
     FY 2565 totals at col 31 — without the cap we'd silently pick up
     the stale FY value as Q1 net profit, blowing up Q-sums by 1000×.
     """
-    end = min(len(row), 20)
+    end = min(len(row), 30)
     # Pre-scan all numerics in range so we can apply lookahead heuristics
     # (footnote references that aren't < 100 — e.g. ERW PL-9 has
     # 'ส่วนที่เป็นของบริษัทใหญ่' rows with note ref ``3935`` followed by

@@ -28,7 +28,12 @@ sys.path.insert(0, str(ROOT))
 from parsers.parse_set_zip import parse_zip  # existing XLSX parser
 from src.ingest.browser import SetSession
 from src.ingest.set_api import extract_zip_urls, search_news
-from src.ingest.zip_downloader import IngestedFiling, download_filing, parse_headline
+from src.ingest.zip_downloader import (
+    IngestedFiling,
+    download_filing,
+    parse_headline,
+    safe_symbol_dir,
+)
 
 
 PROCESSED_ROOT = Path("data/processed")
@@ -57,15 +62,19 @@ def _is_financial_statement(headline: str) -> bool:
 
 
 def _is_amendment(headline: str) -> bool:
-    """Skip formal amendments/clarifications (corrections to previously
-    filed statements) — but keep pre-audit drafts ("ก่อนสอบทาน" /
-    "ก่อนตรวจสอบ"), which are legitimate management numbers filed
-    before the external reviewer finalises them. The post-audit filing
-    for the same period arrives weeks later and overwrites the draft
-    via the dedupe-by-filing-date logic downstream."""
+    """Skip pure-text clarifications (no zip / no new numbers) — but
+    KEEP corrections marked ``(แก้ไข)``: those re-publish the financial
+    statement with revised figures, and SET's company-highlight API
+    uses the corrected values. GPSC 2568 FY shipped both the original
+    and an ``(แก้ไข)`` version; ignoring the amendment left us with
+    pre-correction numbers that disagree with SET by ~1.5B baht.
+
+    ``คำชี้แจง`` / ``ชี้แจงเพิ่มเติม`` are commentary letters that
+    explain something about a prior filing — they don't carry a zip
+    we can parse, so we still skip them."""
     h = headline or ""
     amendment_markers = (
-        "คำชี้แจง", "แก้ไข", "ชี้แจงเพิ่มเติม",
+        "คำชี้แจง", "ชี้แจงเพิ่มเติม",
     )
     return any(k in h for k in amendment_markers)
 
@@ -379,7 +388,7 @@ def ingest_symbol(
     quarterly = compute_standalone_quarters(parse_rows)
 
     # Load any existing file for comparison
-    proc_dir = PROCESSED_ROOT / symbol
+    proc_dir = PROCESSED_ROOT / safe_symbol_dir(symbol)
     proc_dir.mkdir(parents=True, exist_ok=True)
     out_path = proc_dir / "financials.json"
     previous = {}

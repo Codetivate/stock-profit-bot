@@ -25,12 +25,13 @@ from src.cli.ingest_financials import (
     _load_company_meta,
     compute_standalone_quarters,
 )
+from src.ingest.zip_downloader import safe_symbol_dir
 
 RAW_ROOT = Path("data/raw")
 
 
 def _reparse_one(symbol: str) -> dict | None:
-    sym_root = RAW_ROOT / symbol / "financials"
+    sym_root = RAW_ROOT / safe_symbol_dir(symbol) / "financials"
     if not sym_root.exists():
         print(f"  {symbol}: no raw data, skipping")
         return None
@@ -112,7 +113,7 @@ def _reparse_one(symbol: str) -> dict | None:
     parse_rows = list(latest_per_period.values())
 
     quarterly = compute_standalone_quarters(parse_rows)
-    proc_dir = PROCESSED_ROOT / symbol
+    proc_dir = PROCESSED_ROOT / safe_symbol_dir(symbol)
     proc_dir.mkdir(parents=True, exist_ok=True)
     out_path = proc_dir / "financials.json"
 

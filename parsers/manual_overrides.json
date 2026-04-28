@@ -32,5 +32,40 @@
       "FullYear": 5248.133,
       "source_note": "data/raw/SCGP/financials/2567/FY/source.xlsx, sheet '2', row 30 'ส่วนที่เป็นของผู้ถือหุ้นของบริษัท', column 2566 (restated) = 5,248,133 thousand baht. SET company-highlight API reports 5,248.133 for SCGP 2023 (= Buddhist 2566); our 2566 FY filing's primary column reported 2,552,064 (consolidated total); the 2567 FY filing restated 2566 to the parent-share figure that SET adopted. ~2× upward swing driven by allocation reclassification."
     }
+  },
+
+  "BLA": {
+    "2567": {
+      "FullYear": 4633.856,
+      "source_note": "data/raw/BLA/financials/2568/FY/source.xlsx, sheet 'PL', row 30 'ส่วนที่เป็นของผู้ถือหุ้นบริษัท', column 2567 (restated) = 4,633,856 thousand baht. SET company-highlight API reports 4,633.856 for BLA 2024 (= Buddhist 2567); our 2567 FY filing's primary column reported 3,623,012 (likely TFRS17 insurance-policy restatement, ~1B baht upward)."
+    }
+  },
+
+  "TTB": {
+    "2566": {
+      "FullYear": 18621.530,
+      "source_note": "data/raw/TTB/financials/2567/FY/source.xlsx, sheet 'PL 9-10', row 64 'ส่วนที่เป็นของธนาคาร', column 2566 (restated) = 18,621,530 thousand baht. SET company-highlight API reports 18,621.530 for TTB 2023 (= Buddhist 2566); our 2566 FY filing's primary column reported 18,462,181 (~159M baht prior-period adjustment carried in the 2567 FY filing's comparative column)."
+    }
+  },
+
+  "AMATA": {
+    "2567": {
+      "FullYear": 2467.115516,
+      "source_note": "data/raw/AMATA/financials/2568/FY/source.xlsx, sheet '10-11', row 80 'ส่วนของผู้เป็นเจ้าของของบริษัท', column 2567 (restated) = 2,467,115,516 baht. SET company-highlight API reports 2,467.116 for AMATA 2024 (= Buddhist 2567); our 2567 FY filing's primary parent-share column was 2,482,898,745 (small ~15.8M baht prior-period audit adjustment carried into the 2568 FY filing's comparative column)."
+    }
+  },
+
+  "EA": {
+    "2568": {
+      "FullYear": -4856.799558,
+      "source_note": "data/raw/EA/financials/2568/FY/source.xlsx, sheet '11-12', row 88 'จากการดำเนินงานต่อเนื่อง' (under the 'การแบ่งปันขาดทุน → ส่วนที่เป็นของผู้เป็นเจ้าของของบริษัทใหญ่' section), column 2568 = -4,856,799,558 baht. SET company-highlight API reports -4,856.800 for EA 2025 (= Buddhist 2568); SET uses parent-share continuing-operations only — EA had a large discontinued-operations loss that SET excludes from its 'netProfit' figure. Our parser default picks the consolidated 'ขาดทุนสำหรับปี' (-6,613.68) which includes both continuing and discontinued."
+    }
+  },
+
+  "BDMS": {
+    "2566": {
+      "FullYear": 14357.742503,
+      "source_note": "data/raw/BDMS/financials/2567/FY/source.xlsx, sheet 'PL-T (12)', row 30 'ส่วนที่เป็นของผู้ถือหุ้นของบริษัทฯ', column 2566 (restated; sibling sheet 'CE Thai' row 19 marks the column '(ปรับปรุงใหม่)') = 14,357,742,503 baht. SET company-highlight API reports 14,357.743 for BDMS 2023 (= Buddhist 2566); our 2566 FY filing's primary parent-share column reported 14,375,267 (~17.5M baht prior-period adjustment carried into the 2567 FY filing's comparative column)."
+    }
   }
 }
