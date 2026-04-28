@@ -222,7 +222,7 @@ def process_symbol(symbol: str, tg: TelegramClient, state: Dict):
             latest_year=latest_year,
             latest_quarter=latest_q,
             report_date=format_report_date(data.filename),
-            period_label=f"FY {latest_year}  ·  {latest_q}",
+            period_label=f"{latest_q} {latest_year}",
         )
 
         # Step 7: Send to Telegram

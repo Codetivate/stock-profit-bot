@@ -314,7 +314,7 @@ class BotServer:
             latest_year=latest_year,
             latest_quarter=latest_q,
             report_date=report_date,
-            period_label=f"FY {latest_year}  ·  {latest_q}",
+            period_label=f"{latest_q} {latest_year}",
         )
         caption = build_rich_caption(
             symbol=symbol,

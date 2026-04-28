@@ -228,7 +228,7 @@ def main() -> int:
                     latest_year=latest_year,
                     latest_quarter=latest_q,
                     report_date=updated_at,
-                    period_label=f"FY {latest_year}  ·  {latest_q}",
+                    period_label=f"{latest_q} {latest_year}",
                 )
             except Exception as e:
                 print(f"  {position} {symbol}: chart_error: {e}")
