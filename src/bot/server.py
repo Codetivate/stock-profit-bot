@@ -52,6 +52,7 @@ from command_handler import (  # noqa: E402
     _looks_like_symbol,
     build_rich_caption,
     find_latest_quarter,
+    format_thai_report_date,
     get_company_name,
     handle_help_command,
     load_state,
@@ -299,13 +300,7 @@ class BotServer:
             path = Path("data") / f"{symbol}.json"
         raw = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
         company_name = raw.get("company_name_en") or get_company_name(symbol)
-        report_date = raw.get("updated_at", "")
-        if report_date:
-            try:
-                report_date = datetime.strptime(report_date, "%Y-%m-%d") \
-                                      .strftime("%d %b %Y")
-            except Exception:
-                pass
+        report_date = format_thai_report_date(raw.get("updated_at", ""))
 
         png = make_chart(
             symbol=symbol,

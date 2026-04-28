@@ -31,6 +31,7 @@ from parsers.parse_set_zip import parse_zip, FinancialData
 from parse_all import compute_quarterly, detect_period_from_filename
 from make_chart_html import make_chart, QuarterlyData
 from telegram_client import TelegramClient, format_caption
+from command_handler import format_thai_report_date
 
 
 # ═══ Config ═══
@@ -314,17 +315,10 @@ def get_company_name(symbol: str) -> str:
 
 
 def format_report_date(filename: str) -> str:
-    """Extract and format the report date from filename."""
+    """Extract the filing date from a SET zip filename and format it
+    in Thai (e.g. ``อังคาร 28 เม.ย. 2569``)."""
     meta = detect_period_from_filename(filename)
-    date_str = meta.get("filing_date", "")
-    if not date_str:
-        return ""
-    try:
-        from datetime import datetime
-        dt = datetime.strptime(date_str, "%Y-%m-%d")
-        return dt.strftime("%d %b %Y")
-    except Exception:
-        return date_str
+    return format_thai_report_date(meta.get("filing_date", ""))
 
 
 def main():

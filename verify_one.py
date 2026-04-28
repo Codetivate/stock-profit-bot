@@ -30,6 +30,7 @@ from pathlib import Path
 from command_handler import (
     build_rich_caption,
     find_latest_quarter,
+    format_thai_report_date as _format_thai_date,
     get_company_name,
     load_symbol_history,
 )
@@ -44,20 +45,6 @@ SET_HIGHLIGHTS_URL = (
     "financial-statement/company-highlights"
 )
 SET_NEWS_URL = "https://www.set.or.th/th/market/product/stock/quote/{symbol}/news"
-
-
-THAI_MONTHS = [
-    "", "ม.ค.", "ก.พ.", "มี.ค.", "เม.ย.", "พ.ค.", "มิ.ย.",
-    "ก.ค.", "ส.ค.", "ก.ย.", "ต.ค.", "พ.ย.", "ธ.ค.",
-]
-
-
-def _format_thai_date(iso: str) -> str:
-    try:
-        d = datetime.strptime(iso, "%Y-%m-%d")
-    except ValueError:
-        return iso
-    return f"{d.day} {THAI_MONTHS[d.month]} {d.year + 543}"
 
 
 def _english_date(iso: str) -> str:

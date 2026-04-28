@@ -27,6 +27,36 @@ PROCESSED_DIR = Path("data/processed")
 DATA_DIR = Path("data")  # legacy path fallback
 
 
+_THAI_WEEKDAYS = [
+    "จันทร์", "อังคาร", "พุธ", "พฤหัสบดี",
+    "ศุกร์", "เสาร์", "อาทิตย์",
+]
+_THAI_MONTHS_ABBR = [
+    "", "ม.ค.", "ก.พ.", "มี.ค.", "เม.ย.", "พ.ค.", "มิ.ย.",
+    "ก.ค.", "ส.ค.", "ก.ย.", "ต.ค.", "พ.ย.", "ธ.ค.",
+]
+
+
+def format_thai_report_date(iso: str) -> str:
+    """Format an ISO YYYY-MM-DD date as ``อังคาร 28 เม.ย. 2569``.
+
+    Buddhist Era year (CE + 543), Royal-Institute month abbreviation,
+    and the Thai weekday name. Empty input passes through unchanged so
+    callers don't have to guard.
+    """
+    if not iso:
+        return ""
+    try:
+        d = datetime.strptime(iso, "%Y-%m-%d")
+    except ValueError:
+        return iso
+    return (
+        f"{_THAI_WEEKDAYS[d.weekday()]} "
+        f"{d.day} {_THAI_MONTHS_ABBR[d.month]} "
+        f"{d.year + 543}"
+    )
+
+
 def load_state():
     """Load last_update_id so we don't reprocess messages."""
     if STATE_FILE.exists():
@@ -206,13 +236,7 @@ def handle_profit_command(tg: TelegramClient, chat_id, symbol: str):
     raw = json.loads(path.read_text(encoding="utf-8"))
 
     company_name = raw.get("company_name_en") or get_company_name(symbol)
-    report_date = raw.get("updated_at", "")
-    if report_date:
-        try:
-            dt = datetime.strptime(report_date, "%Y-%m-%d")
-            report_date = dt.strftime("%d %b %Y")
-        except Exception:
-            pass
+    report_date = format_thai_report_date(raw.get("updated_at", ""))
 
     # Generate chart
     png = make_chart(

@@ -49,6 +49,7 @@ from make_chart_html import make_chart
 from command_handler import (
     build_rich_caption,
     find_latest_quarter,
+    format_thai_report_date,
     get_company_name,
     load_symbol_history,
 )
@@ -157,7 +158,7 @@ def _send_updated_chart(
         history=history,
         latest_year=latest_year,
         latest_quarter=latest_q,
-        report_date=item.date,
+        report_date=format_thai_report_date(item.date),
         period_label=f"{latest_q}/{latest_year}",
     )
 
@@ -166,7 +167,7 @@ def _send_updated_chart(
         history=history,
         latest_year=latest_year,
         latest_quarter=latest_q,
-        report_date=item.date,
+        report_date=format_thai_report_date(item.date),
         header_prefix=f"🆕 <b>งบใหม่</b>  ·  <i>{item.headline[:80]}</i>",
     )
 
