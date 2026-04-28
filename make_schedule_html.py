@@ -213,10 +213,10 @@ def _build_html(symbol: str, schedule: Dict[Tuple[int, str], str]) -> str:
   .row  {{ margin-top: 12px; align-items: stretch; }}
   .tc {{
     border-radius: 14px;
-    padding: 18px 14px;
+    padding: 22px 14px;
     text-align: center;
     font-size: 18px;
-    line-height: 1.45;
+    line-height: 1.4;
   }}
   .tc-head {{
     background: transparent;
@@ -243,15 +243,15 @@ def _build_html(symbol: str, schedule: Dict[Tuple[int, str], str]) -> str:
     border: 1px dashed var(--border);
     color: var(--muted);
     display: flex; align-items: center; justify-content: center;
-    font-size: 22px;
+    font-size: 28px;
   }}
   .tc-latest {{
     background: var(--mint-bg);
     border: 1px solid var(--mint);
     box-shadow: 0 0 0 2px rgba(33, 206, 153, 0.18);
   }}
-  .cell-date {{ font-weight: 600; color: var(--navy); font-size: 19px; }}
-  .cell-time {{ color: var(--muted); font-size: 15px; margin-top: 5px; font-variant-numeric: tabular-nums; }}
+  .cell-date {{ font-weight: 700; color: var(--navy); font-size: 26px; letter-spacing: 0.2px; }}
+  .cell-time {{ color: var(--muted); font-size: 19px; margin-top: 7px; font-variant-numeric: tabular-nums; font-weight: 500; }}
 
   /* ─── Footer (matches make_chart_html.py) ─── */
   .ftr {{
