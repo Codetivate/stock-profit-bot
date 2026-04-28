@@ -170,6 +170,52 @@ This entry kept for history; superseded by the FIXED entry above.
 | v10 | (in progress) | | | + INTUCH inline-share matcher |
 | v11 | 625 | 95 | — | year-MAX fix; bulk-ingest broader coverage |
 | **SET100/100** | **100** | **0** | **0** | COM7+TOA+VGI ingested; MOSHI sara-am normalize; GPSC `(แก้ไข)` kept |
+| **Universe/932** | **747** | **107** | **63 no_local + 4 no_overlap** | full audit after bulk round 2 — see "Round 3 follow-up" |
+
+---
+
+## Round 3 follow-up (universe/932 — 107 mismatches identified)
+
+Bulk round 2 brought processed coverage to 932/932. Full audit
+against SET highlights API: **747 OK / 107 mismatch / 63 no_local_data
+/ 4 no_overlap**. SET100 stayed perfect (100/100). The 63 no_local_data
+are REITs / property funds that SET highlights doesn't index the same
+way (BAREIT, BTSGIF, CPNREIT, DIF, EGATIF, FTREIT, etc.) — not parser
+bugs. The 107 mismatches cluster into three buckets, in priority order:
+
+### A) `1000×` unit-divisor errors — 4 confirmed
+`BTW 2568`, `QDC 2568`, `PLANET 2567`, `TNITY 2567` — local value is
+exactly 1,000× the SET value (e.g. BTW local `-102,463.64` vs SET
+`-102.46`). XLSX top-of-PL marker is `พันบาท` but `_detect_unit_divisor`
+fell through to the baht default. **Fix candidate:** tighten the
+detector so `พันบาท` near the column-header band always wins.
+
+### B) Parser-locked-on-wrong-row — 2 confirmed
+`BTC` reports `852.81` for every year (2564–2566); `FSX` reports `0.00`
+for every year. These are PL sheets where the matcher latched onto a
+constant row (probably a header/total line) instead of the net-profit
+row. **Fix candidate:** verify the row-of-interest changes year over
+year before accepting; if all years match the same number to the cent,
+treat as a parser miss and re-search.
+
+### C) Fiscal-year offset (`local[Y] == SET[Y-1]`) — ~6 symbols
+`AF`, `JDF`, `KWM`, `OGC`, `CCP`, `AMANAH` — local shifts SET values
+back by one Buddhist year. Same root cause as AEONTS (Feb fiscal end)
+but for filers with a non-Dec fiscal year-end where SET adopts the
+fiscal-START year as the label. Per-symbol fiscal-end metadata or a
+universal "fiscal-end-year wins over headline year" rule would resolve
+the family.
+
+### D) Genuine restatements — long tail
+The remaining ~95 are scattered single-year mismatches (~10–30% deltas)
+that look like restated numbers (the SET API consistently uses the
+next FY filing's prior-period column, our parser still has the
+original number from the year's own filing). Same pattern as KBANK
+2567 / MTI 2567 / SCGP 2566 etc. that we already handle via
+`parsers/manual_overrides.json`. These need symbol-by-symbol XLSX dives
+to confirm the SET-side number traces to a real cell.
+
+**Universe audit JSON:** `data/validation/universe_audit_final.json`.
 
 ---
 
