@@ -156,42 +156,44 @@ def _build_html(symbol: str, schedule: Dict[Tuple[int, str], str]) -> str:
     --teal: #167579;
   }}
   body {{
-    margin: 0; padding: 32px;
+    margin: 0; padding: 48px;
     background: var(--bg); color: var(--text);
     font-family: 'Inter', 'Sarabun', system-ui, sans-serif;
   }}
   .chart {{
-    width: 1100px; max-width: 100%;
+    width: 1620px; max-width: 100%;
     background: var(--card);
     border: 1px solid var(--border);
-    border-radius: 22px;
-    overflow: hidden;
+    border-radius: 28px;
+    padding: 36px 44px 28px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
   }}
   .hdr {{
     background: var(--navy);
     color: #fff;
-    padding: 22px 32px;
+    padding: 28px 36px;
+    border-radius: 18px;
+    margin-bottom: 18px;
     display: flex; justify-content: space-between; align-items: baseline;
   }}
-  .hdr-title {{ font-size: 26px; font-weight: 700; letter-spacing: 0.5px; }}
-  .hdr-sub   {{ font-size: 14px; opacity: 0.78; }}
-  .tbl  {{ padding: 14px 18px 22px; }}
-  .row, .head {{ display: grid; grid-template-columns: 110px repeat(4, 1fr); gap: 8px; }}
+  .hdr-title {{ font-size: 36px; font-weight: 700; letter-spacing: 0.5px; }}
+  .hdr-sub   {{ font-size: 18px; opacity: 0.78; }}
+  .tbl  {{ padding: 0; }}
+  .row, .head {{ display: grid; grid-template-columns: 160px repeat(4, 1fr); gap: 12px; }}
   .head {{ margin-bottom: 8px; }}
-  .row  {{ margin-top: 8px; align-items: stretch; }}
+  .row  {{ margin-top: 12px; align-items: stretch; }}
   .tc {{
-    border-radius: 12px;
-    padding: 14px 12px;
+    border-radius: 14px;
+    padding: 18px 14px;
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.45;
   }}
   .tc-head {{
     background: transparent;
     color: var(--muted);
     font-weight: 600;
-    font-size: 13px;
+    font-size: 16px;
     letter-spacing: 0.4px;
     text-transform: uppercase;
     padding-bottom: 6px;
@@ -200,7 +202,7 @@ def _build_html(symbol: str, schedule: Dict[Tuple[int, str], str]) -> str:
     background: #F1F5F9;
     color: var(--navy);
     font-weight: 700;
-    font-size: 20px;
+    font-size: 28px;
     display: flex; align-items: center; justify-content: center;
   }}
   .tc-filed {{
@@ -212,49 +214,48 @@ def _build_html(symbol: str, schedule: Dict[Tuple[int, str], str]) -> str:
     border: 1px dashed var(--border);
     color: var(--muted);
     display: flex; align-items: center; justify-content: center;
+    font-size: 22px;
   }}
   .tc-latest {{
     background: var(--mint-bg);
     border: 1px solid var(--mint);
     box-shadow: 0 0 0 2px rgba(33, 206, 153, 0.18);
   }}
-  .cell-date {{ font-weight: 600; color: var(--navy); }}
-  .cell-time {{ color: var(--muted); font-size: 12px; margin-top: 4px; font-variant-numeric: tabular-nums; }}
+  .cell-date {{ font-weight: 600; color: var(--navy); font-size: 19px; }}
+  .cell-time {{ color: var(--muted); font-size: 15px; margin-top: 5px; font-variant-numeric: tabular-nums; }}
+
+  /* ─── Footer (matches make_chart_html.py) ─── */
   .ftr {{
-    border-top: 1px solid var(--border);
-    padding: 16px 28px;
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    gap: 20px;
+    gap: 24px;
+    margin-top: 22px; padding-top: 14px;
   }}
-  .ftr-logo img {{
-    height: 56px; width: auto; opacity: 0.95;
-    filter: invert(1);
-  }}
+  .ftr-logo {{ display: flex; align-items: center; gap: 16px; }}
+  .ftr-logo img {{ height: 170px; width: auto; opacity: 0.95; filter: invert(1); }}
   .ftr-logo .logo-fallback {{
     font-family: Georgia, serif; font-style: italic;
-    font-size: 28px; color: var(--navy); font-weight: 300;
+    font-size: 68px; font-weight: 300; color: var(--text);
   }}
   .ftr-meta {{
-    display: flex; flex-direction: column;
-    font-size: 12px; line-height: 1.55;
+    display: flex; flex-direction: column; gap: 4px;
+    align-items: center; text-align: center;
   }}
-  .ftr-meta .src      {{ color: var(--text); font-style: italic; font-weight: 500; }}
-  .ftr-meta .disclaim {{ color: var(--muted); font-style: italic; }}
-  .ftr-meta .legend   {{ color: var(--muted); margin-top: 3px; }}
+  .ftr-meta .src      {{ font-size: 20px; color: var(--muted); font-style: italic; font-weight: 500; }}
+  .ftr-meta .disclaim {{ font-size: 18px; color: var(--muted); font-style: italic; }}
   .ftr-qr {{
-    width: 110px; height: 110px;
-    border: 2px dashed var(--border);
-    border-radius: 12px;
+    width: 170px; height: 170px;
+    border: 3px dashed var(--border);
+    border-radius: 18px;
     display: flex; flex-direction: column;
     align-items: center; justify-content: center;
     color: var(--muted);
-    font-size: 11px;
+    font-size: 16px;
     text-align: center;
     line-height: 1.3;
   }}
-  .ftr-qr .qr-icon {{ font-size: 24px; margin-bottom: 4px; opacity: 0.6; }}
+  .ftr-qr .qr-icon {{ font-size: 40px; margin-bottom: 6px; opacity: 0.6; }}
 </style>
 </head>
 <body>
@@ -293,7 +294,7 @@ def make_schedule(symbol: str) -> bytes:
     with sync_playwright() as p:
         browser = p.chromium.launch(args=["--disable-web-security"])
         page = browser.new_page(
-            viewport={"width": 1300, "height": 1200},
+            viewport={"width": 1800, "height": 1600},
             device_scale_factor=2,
         )
         page.set_content(html, wait_until="networkidle", timeout=15000)
