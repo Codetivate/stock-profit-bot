@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "symbol": "TNL",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-24",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 17.987,
+      "Q2": 24.505,
+      "Q3": 10.53,
+      "Q4": 9.615994999999996,
+      "FullYear": 62.637995
+    },
+    "2565": {
+      "Q1": 20.566,
+      "Q2": 22.123,
+      "Q3": 36.132,
+      "Q4": 32.233681,
+      "FullYear": 111.054681
+    },
+    "2566": {
+      "Q1": 103.855,
+      "Q2": 119.106,
+      "Q3": 265.733,
+      "Q4": 14.681910999999957,
+      "FullYear": 503.375911
+    },
+    "2567": {
+      "Q1": 122.47,
+      "Q2": 134.692,
+      "Q3": 77.415,
+      "Q4": 66.56986400000001,
+      "FullYear": 401.146864
+    },
+    "2568": {
+      "Q1": 126.251,
+      "Q2": 68.632,
+      "Q3": 158.311,
+      "Q4": 61.41309099999998,
+      "FullYear": 414.607091
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-09",
+      "news_id": "2021119379",
+      "raw_path": "TNL/financials/2564/9M/source.zip",
+      "sha256": "0982c44936a44b959d4d34ebe58353e0bb89ac40aadfa6ba034e2dc78cdd28d9",
+      "ingested_at": "2026-04-28T08:53:22+00:00",
+      "shareholder_profit": 10.53
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-21",
+      "news_id": "2022018035",
+      "raw_path": "TNL/financials/2564/FY/source.zip",
+      "sha256": "30b3200a5e3ff3bd58852467d7187f4311776132b38decac8f203d3e9f7a7445",
+      "ingested_at": "2026-04-28T08:53:16+00:00",
+      "shareholder_profit": 62.637995
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-10",
+      "news_id": "2021086393",
+      "raw_path": "TNL/financials/2564/H1/source.zip",
+      "sha256": "da58b8e61bc438de050074e8ed2226b9f642d65fc0de6528f23234594004d0bf",
+      "ingested_at": "2026-04-28T08:53:27+00:00",
+      "shareholder_profit": 24.505
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-11",
+      "news_id": "2021053495",
+      "raw_path": "TNL/financials/2564/Q1/source.zip",
+      "sha256": "09bfea0c884d5c218a9d2cb04c52cd052c013c038fd8db0756d9577f6fe7fdf2",
+      "ingested_at": "2026-04-28T08:53:33+00:00",
+      "shareholder_profit": 17.987
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-09",
+      "news_id": "2022130440",
+      "raw_path": "TNL/financials/2565/9M/source.zip",
+      "sha256": "3a356607fdef5164c6b5dd2efb49951fd2e5cab02504cc6e6b4c25b1c30fb5b3",
+      "ingested_at": "2026-04-28T08:53:01+00:00",
+      "shareholder_profit": 36.132
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-27",
+      "news_id": "2023023045",
+      "raw_path": "TNL/financials/2565/FY/source.zip",
+      "sha256": "02151db991bf8f2ee80a9d0c78b38f3a71956bb6e35efea1be50c33e891252a2",
+      "ingested_at": "2026-04-28T08:52:55+00:00",
+      "shareholder_profit": 111.054681
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-10",
+      "news_id": "2022092823",
+      "raw_path": "TNL/financials/2565/H1/source.zip",
+      "sha256": "e44db502e0d709b074cee86eba128a0b4d5b7c8984a75ca2620505c861e3c0bd",
+      "ingested_at": "2026-04-28T08:53:06+00:00",
+      "shareholder_profit": 22.123
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-11",
+      "news_id": "2022058014",
+      "raw_path": "TNL/financials/2565/Q1/source.zip",
+      "sha256": "8bd8e7164ef33eef252bac13af11e5da047b81fe02ba2c1daf6a38b330b7e24c",
+      "ingested_at": "2026-04-28T08:53:11+00:00",
+      "shareholder_profit": 20.566
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-10",
+      "news_id": "16995730796491",
+      "raw_path": "TNL/financials/2566/9M/source.zip",
+      "sha256": "d8028ce318c46cbf3c82e618bf548d9f3b9685e7c7255237d2df5a7cce1fc3f1",
+      "ingested_at": "2026-04-28T08:52:40+00:00",
+      "shareholder_profit": 265.733
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-27",
+      "news_id": "17089869120591",
+      "raw_path": "TNL/financials/2566/FY/source.zip",
+      "sha256": "c2b0acc422b126174b88851aeb4a5a634d32371549f9793463b751f6a24cba75",
+      "ingested_at": "2026-04-28T08:52:35+00:00",
+      "shareholder_profit": 503.375911
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-11",
+      "news_id": "16917102147341",
+      "raw_path": "TNL/financials/2566/H1/source.zip",
+      "sha256": "af9d2f98a1cabb64b70fec3ca4e739b79febd1cf92017aae66623993fe0114a8",
+      "ingested_at": "2026-04-28T08:52:45+00:00",
+      "shareholder_profit": 119.106
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-09",
+      "news_id": "16835884721181",
+      "raw_path": "TNL/financials/2566/Q1/source.zip",
+      "sha256": "c148261b4b5e104b4507fa29b3658d2d282976d46da67002f9453d26568ea495",
+      "ingested_at": "2026-04-28T08:52:50+00:00",
+      "shareholder_profit": 103.855
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-11",
+      "news_id": "17312815648511",
+      "raw_path": "TNL/financials/2567/9M/source.zip",
+      "sha256": "f236e6840c2df9814b2fc03a98b3ffb90e7bae14f0150f811478ff840619f800",
+      "ingested_at": "2026-04-28T08:52:20+00:00",
+      "shareholder_profit": 77.415
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-24",
+      "news_id": "17403534267561",
+      "raw_path": "TNL/financials/2567/FY/source.zip",
+      "sha256": "7f561f3c4dba950af1797bb76f66fa3177d7268dec4fa9a930249942c553ae89",
+      "ingested_at": "2026-04-28T08:52:14+00:00",
+      "shareholder_profit": 401.146864
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-09",
+      "news_id": "17231594072111",
+      "raw_path": "TNL/financials/2567/H1/source.zip",
+      "sha256": "a40fbfb6dcdc1d3181370b4d7eb68a4a68f104cfc87bb202f449e86d7206745e",
+      "ingested_at": "2026-04-28T08:52:25+00:00",
+      "shareholder_profit": 134.692
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-13",
+      "news_id": "17155537994361",
+      "raw_path": "TNL/financials/2567/Q1/source.zip",
+      "sha256": "85b38b59aa4c2fa0833ed25c90d7d2326b5e2ae4f7d77697ba8091dd01fa93e2",
+      "ingested_at": "2026-04-28T08:52:30+00:00",
+      "shareholder_profit": 122.47
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-10",
+      "news_id": "17627310459991",
+      "raw_path": "TNL/financials/2568/9M/source.zip",
+      "sha256": "b03098a05546f34ae9a76cc722da5a5dd61f96ef8f2936551f23fe761d6a8242",
+      "ingested_at": "2026-04-28T08:51:58+00:00",
+      "shareholder_profit": 158.311
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-24",
+      "news_id": "17718891867291",
+      "raw_path": "TNL/financials/2568/FY/source.zip",
+      "sha256": "4c4fae36400896c53cd60299ae8626c7fbf689bf64407f36b91dfe5e88e74327",
+      "ingested_at": "2026-04-28T08:51:53+00:00",
+      "shareholder_profit": 414.607091
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-07",
+      "news_id": "17545237062581",
+      "raw_path": "TNL/financials/2568/H1/source.zip",
+      "sha256": "046f1be99d1085d9c88dff365d2d0c5fbc798c85466e63b766f7b5d00f49f2a5",
+      "ingested_at": "2026-04-28T08:52:04+00:00",
+      "shareholder_profit": 68.632
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903563321",
+      "raw_path": "TNL/financials/2568/Q1/source.zip",
+      "sha256": "76d365fbb090cfd0c95b3481c5097cbe891ca3419aa03fa0a33ffd95f926699d",
+      "ingested_at": "2026-04-28T08:52:09+00:00",
+      "shareholder_profit": 126.251
+    }
+  ]
+}

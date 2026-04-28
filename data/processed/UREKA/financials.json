@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "symbol": "UREKA",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-26",
+  "quarterly_history": {
+    "2564": {
+      "Q1": -15.567,
+      "Q2": -14.928,
+      "Q3": 21.502,
+      "Q4": 29.979886000000004,
+      "FullYear": 20.986886
+    },
+    "2565": {
+      "Q1": 27.531,
+      "Q2": 26.242,
+      "Q3": 10.317,
+      "Q4": 8.373341999999997,
+      "FullYear": 72.463342
+    },
+    "2566": {
+      "Q1": 14.252,
+      "Q2": 31.805,
+      "Q3": 2.407,
+      "Q4": 11.596999,
+      "FullYear": 60.060999
+    },
+    "2567": {
+      "Q1": 20.184,
+      "Q2": 20.586,
+      "Q3": -3.006,
+      "Q4": 25.967579999999998,
+      "FullYear": 63.73158
+    },
+    "2568": {
+      "Q1": 20.184,
+      "Q2": 2.991,
+      "Q3": -1.428,
+      "Q4": -7.862053,
+      "FullYear": 13.884947
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-10-26",
+      "news_id": "2021114134",
+      "raw_path": "UREKA/financials/2564/9M/source.zip",
+      "sha256": "2b913840ea60cb0dae5f7f19f371a8bd316f495c106e59e257b3e3be8581473d",
+      "ingested_at": "2026-04-28T10:46:42+00:00",
+      "shareholder_profit": 21.502
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-03-01",
+      "news_id": "2022027131",
+      "raw_path": "UREKA/financials/2564/FY/source.zip",
+      "sha256": "7a236ad53e99a52b9ae8e6436f442233f24d6d3be6083e9c6f78e5d3baf1009a",
+      "ingested_at": "2026-04-28T10:46:37+00:00",
+      "shareholder_profit": 20.986886
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-09",
+      "news_id": "2021085501",
+      "raw_path": "UREKA/financials/2564/H1/source.zip",
+      "sha256": "8eb95d7f366d61014a12f5b168fa3ded944515dd6807dd4b1e8b1228112030af",
+      "ingested_at": "2026-04-28T10:46:46+00:00",
+      "shareholder_profit": -14.928
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-13",
+      "news_id": "2021057281",
+      "raw_path": "UREKA/financials/2564/Q1/source.zip",
+      "sha256": "3e36404ff0c0765225f802373eb4d89180c50e19b5abad334e14d15240390f0a",
+      "ingested_at": "2026-04-28T10:46:51+00:00",
+      "shareholder_profit": -15.567
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-11",
+      "news_id": "2022132828",
+      "raw_path": "UREKA/financials/2565/9M/source.zip",
+      "sha256": "0c3f7845e9104a072f8d6226bce719531ea342ab61d219b7c9e8106b12efb48b",
+      "ingested_at": "2026-04-28T10:46:22+00:00",
+      "shareholder_profit": 10.317
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-28",
+      "news_id": "2023026725",
+      "raw_path": "UREKA/financials/2565/FY/source.zip",
+      "sha256": "54eb226eb5fa7fa4ff1c919be4e57129d9c6bd932a18838521c6ebd0e277b879",
+      "ingested_at": "2026-04-28T10:46:16+00:00",
+      "shareholder_profit": 72.463342
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-15",
+      "news_id": "2022096847",
+      "raw_path": "UREKA/financials/2565/H1/source.zip",
+      "sha256": "c56d30bbd2e4e67fc7891a4ac98532ba2d8cbb4ae14bb4c73b252733fa54e7c7",
+      "ingested_at": "2026-04-28T10:46:27+00:00",
+      "shareholder_profit": 26.242
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-17",
+      "news_id": "2022063420",
+      "raw_path": "UREKA/financials/2565/Q1/source.zip",
+      "sha256": "2cb0bf328408b0d37cb9e2b74f5b2a8a24f3d26aa10a43685711c56e839a0443",
+      "ingested_at": "2026-04-28T10:46:32+00:00",
+      "shareholder_profit": 27.531
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-10",
+      "news_id": "16995730782791",
+      "raw_path": "UREKA/financials/2566/9M/source.zip",
+      "sha256": "bf39fc2efe57bf3f7d9cbf6e80e88879221783cd284fe1338c57e1ecc1078591",
+      "ingested_at": "2026-04-28T10:46:01+00:00",
+      "shareholder_profit": 2.407
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-29",
+      "news_id": "17091568989021",
+      "raw_path": "UREKA/financials/2566/FY/source.zip",
+      "sha256": "c6af733b7473a8bdc45afab7d3d21eeb1657bb086942475abdbecdee3efd0b94",
+      "ingested_at": "2026-04-28T10:45:57+00:00",
+      "shareholder_profit": 60.060999
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-11",
+      "news_id": "16917102172221",
+      "raw_path": "UREKA/financials/2566/H1/source.zip",
+      "sha256": "266b14e3687838dc96c76b3b59387c505259cd3fd558eb3c3486403bce37abc6",
+      "ingested_at": "2026-04-28T10:46:06+00:00",
+      "shareholder_profit": 31.805
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-11",
+      "news_id": "16837584105211",
+      "raw_path": "UREKA/financials/2566/Q1/source.zip",
+      "sha256": "377eafb4305fe280394d7e0d6a7629699a306c4a41ac418abb7d0f9fda747c01",
+      "ingested_at": "2026-04-28T10:46:11+00:00",
+      "shareholder_profit": 14.252
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-13",
+      "news_id": "17314477508801",
+      "raw_path": "UREKA/financials/2567/9M/source.zip",
+      "sha256": "4eda76118b9cf8709530383d36028b8fa202090c998c8e87c35c140e4cb0abd2",
+      "ingested_at": "2026-04-28T10:45:43+00:00",
+      "shareholder_profit": -3.006
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-27",
+      "news_id": "17406066209831",
+      "raw_path": "UREKA/financials/2567/FY/source.zip",
+      "sha256": "7528c3780c16c49e5c027f8ede7342d358c44161099511921ce7ea3bbe62ea14",
+      "ingested_at": "2026-04-28T10:45:38+00:00",
+      "shareholder_profit": 63.73158
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990243911",
+      "raw_path": "UREKA/financials/2567/H1/source.zip",
+      "sha256": "d9c8f9619c6294205b259ec213aa4f3f1ef92a1cbb6ec66cf8abe6b8a12d8a25",
+      "ingested_at": "2026-04-28T10:45:48+00:00",
+      "shareholder_profit": 20.586
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434596521",
+      "raw_path": "UREKA/financials/2567/Q1/source.zip",
+      "sha256": "54e66eecabbc44c652641f1f271af433754c64af6ae1c7450e16f809c4d81a2e",
+      "ingested_at": "2026-04-28T10:45:52+00:00",
+      "shareholder_profit": 20.184
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-13",
+      "news_id": "17629880512381",
+      "raw_path": "UREKA/financials/2568/9M/source.zip",
+      "sha256": "0fc0b82c5aab484aadbb4cf8015e05d380e802d347cd1dfaf8a617bb370b143f",
+      "ingested_at": "2026-04-28T10:45:24+00:00",
+      "shareholder_profit": -1.428
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-26",
+      "news_id": "17720575363091",
+      "raw_path": "UREKA/financials/2568/FY/source.zip",
+      "sha256": "ee0f0c432418bad31a7d593fa61554fde196b02f7dbd659d395dc9543bc8df7d",
+      "ingested_at": "2026-04-28T10:45:18+00:00",
+      "shareholder_profit": 13.884947
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229885291",
+      "raw_path": "UREKA/financials/2568/H1/source.zip",
+      "sha256": "6b439bc8917e435968ab254837bc9e201d0db323c60eedb76880274f4a11729b",
+      "ingested_at": "2026-04-28T10:45:29+00:00",
+      "shareholder_profit": 2.991
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-14",
+      "news_id": "17471784575691",
+      "raw_path": "UREKA/financials/2568/Q1/source.zip",
+      "sha256": "5d90abb73dccf0cbe6ec12528ea48bca868b232cd351d10b5d24441271eb8d08",
+      "ingested_at": "2026-04-28T10:45:33+00:00",
+      "shareholder_profit": 20.184
+    }
+  ]
+}

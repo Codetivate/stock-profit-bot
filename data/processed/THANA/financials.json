@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "symbol": "THANA",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-27",
+  "quarterly_history": {
+    "2564": {
+      "Q1": -1.7352,
+      "Q2": 5.579316,
+      "Q3": -8.531371,
+      "Q4": 27.693756,
+      "FullYear": 23.006501
+    },
+    "2565": {
+      "Q1": 16.871912,
+      "Q2": 13.871966,
+      "Q3": 12.095793,
+      "Q4": 41.531906000000006,
+      "FullYear": 84.371577
+    },
+    "2566": {
+      "Q1": 39.252652,
+      "Q2": 0.5650356299999952,
+      "Q3": 12.136437,
+      "Q4": -11.084341629999996,
+      "FullYear": 40.869783
+    },
+    "2567": {
+      "Q1": 7.88295,
+      "Q2": 22.728464,
+      "Q3": 2.016521866792269,
+      "Q4": 1.594192133207729,
+      "FullYear": 34.222128
+    },
+    "2568": {
+      "Q1": -15.113,
+      "Q2": 7.203,
+      "Q3": -4.191,
+      "Q4": 4.546403999999999,
+      "FullYear": -7.554596
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-11",
+      "news_id": "2021121468",
+      "raw_path": "THANA/financials/2564/9M/source.zip",
+      "sha256": "ecb3bc615e7c3c427017a356c28645a678e9eee6f574d7eb60b8806ad1e4ffd0",
+      "ingested_at": "2026-04-28T08:32:48+00:00",
+      "shareholder_profit": -8.531371
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-24",
+      "news_id": "2022021645",
+      "raw_path": "THANA/financials/2564/FY/source.zip",
+      "sha256": "81a616aa31410567a22273b582758884a4bc0dd0cb63e9452de08004d50737c0",
+      "ingested_at": "2026-04-28T08:32:43+00:00",
+      "shareholder_profit": 23.006501
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-16",
+      "news_id": "2021091718",
+      "raw_path": "THANA/financials/2564/H1/source.zip",
+      "sha256": "34779876fc7bf9deeee63a03d38466d61dcc291605f0c905ded39b63c996d5a5",
+      "ingested_at": "2026-04-28T08:32:55+00:00",
+      "shareholder_profit": 5.579316
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-14",
+      "news_id": "2021057617",
+      "raw_path": "THANA/financials/2564/Q1/source.zip",
+      "sha256": "aba13a7ca271cbb831f493c8ac6336cad117b87488f61231cd38f26d7ea87203",
+      "ingested_at": "2026-04-28T08:33:00+00:00",
+      "shareholder_profit": -1.7352
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-10",
+      "news_id": "2022132373",
+      "raw_path": "THANA/financials/2565/9M/source.zip",
+      "sha256": "f5c17356a064c2d577ebf58cfd83f62b84dc6aa4c5ffb15d8fcfdd9966f1a482",
+      "ingested_at": "2026-04-28T08:32:28+00:00",
+      "shareholder_profit": 12.095793
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-23",
+      "news_id": "2023020974",
+      "raw_path": "THANA/financials/2565/FY/source.zip",
+      "sha256": "b4b0a3a2f75d7f1f969cd0f8a070279d7cb4857047ff60fc7cf06679dc71f615",
+      "ingested_at": "2026-04-28T08:32:23+00:00",
+      "shareholder_profit": 84.371577
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-11",
+      "news_id": "2022096206",
+      "raw_path": "THANA/financials/2565/H1/source.zip",
+      "sha256": "2980978c80ad1dcf734e38e196e649a5832a591ae028a8491b81463892e41930",
+      "ingested_at": "2026-04-28T08:32:33+00:00",
+      "shareholder_profit": 13.871966
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-12",
+      "news_id": "2022059952",
+      "raw_path": "THANA/financials/2565/Q1/source.zip",
+      "sha256": "224e8701d6f225f2d324877cd2933a7810a48aead2218046ac9f462adc246250",
+      "ingested_at": "2026-04-28T08:32:38+00:00",
+      "shareholder_profit": 16.871912
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-09",
+      "news_id": "16994859276551",
+      "raw_path": "THANA/financials/2566/9M/source.zip",
+      "sha256": "55a5897498894eb8ee9b2503d1e6d6f5dff57bacd845a62e042d116ecb47c245",
+      "ingested_at": "2026-04-28T08:32:08+00:00",
+      "shareholder_profit": 12.136437
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-22",
+      "news_id": "17085582117501",
+      "raw_path": "THANA/financials/2566/FY/source.zip",
+      "sha256": "2d44b2d4978854c46b97349acddec7c2ce72cd24d80ea08b439208e001817789",
+      "ingested_at": "2026-04-28T08:32:03+00:00",
+      "shareholder_profit": 40.869783
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-07",
+      "news_id": "16913651542701",
+      "raw_path": "THANA/financials/2566/H1/source.zip",
+      "sha256": "da60876af27447ef794849c499c2cdc705dab9a041ade9897cebcb961e3db37f",
+      "ingested_at": "2026-04-28T08:32:13+00:00",
+      "shareholder_profit": 0.5650356299999952
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-11",
+      "news_id": "16837584089771",
+      "raw_path": "THANA/financials/2566/Q1/source.zip",
+      "sha256": "76e6d88bec2145fc1c1aa338abc1dcccf9ec5fd0de509b89fdf7be58c446e357",
+      "ingested_at": "2026-04-28T08:32:18+00:00",
+      "shareholder_profit": 39.252652
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361298291",
+      "raw_path": "THANA/financials/2567/9M/source.zip",
+      "sha256": "2fec537ef1c20e0bedbc9b368976d258a93654c0b46d36ad6aea27628f04e987",
+      "ingested_at": "2026-04-28T08:31:47+00:00",
+      "shareholder_profit": 2.016521866792269
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-25",
+      "news_id": "17404367256501",
+      "raw_path": "THANA/financials/2567/FY/source.zip",
+      "sha256": "ba1acd025602a8ef8f37a2f4aca9a260cc285ed86c5b51eb72131b428eeeaf7b",
+      "ingested_at": "2026-04-28T08:31:42+00:00",
+      "shareholder_profit": 34.222128
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-08",
+      "news_id": "17230734197661",
+      "raw_path": "THANA/financials/2567/H1/source.zip",
+      "sha256": "76c0f09976cf03cc99b5c978ad6f792e4870712f3f3a5451265533817741f141",
+      "ingested_at": "2026-04-28T08:31:53+00:00",
+      "shareholder_profit": 22.728464
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-10",
+      "news_id": "17152924517271",
+      "raw_path": "THANA/financials/2567/Q1/source.zip",
+      "sha256": "7ed6814dfed3efc574ad0ad1ceabdfdc65b1c893b8a6d5f8129509dcc2785583",
+      "ingested_at": "2026-04-28T08:31:58+00:00",
+      "shareholder_profit": 7.88295
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-11",
+      "news_id": "17628159938011",
+      "raw_path": "THANA/financials/2568/9M/source.zip",
+      "sha256": "19935f1438522c2e17c0be2cd10c04a6c8bb5f53370e8ce3f001338040bc0be3",
+      "ingested_at": "2026-04-28T08:31:26+00:00",
+      "shareholder_profit": -4.191
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-27",
+      "news_id": "17721443175601",
+      "raw_path": "THANA/financials/2568/FY/source.zip",
+      "sha256": "190b3c61988ff589cd4202398db9c89415b40ebe4079e3699f592e9766a50397",
+      "ingested_at": "2026-04-28T08:31:21+00:00",
+      "shareholder_profit": -7.554596
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-08",
+      "news_id": "17546095882471",
+      "raw_path": "THANA/financials/2568/H1/source.zip",
+      "sha256": "856073ec4891237e8d12bbca999629822617c11fbc8cfc0a517b172ae8e38bdf",
+      "ingested_at": "2026-04-28T08:31:31+00:00",
+      "shareholder_profit": 7.203
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-06",
+      "news_id": "17464817053861",
+      "raw_path": "THANA/financials/2568/Q1/source.zip",
+      "sha256": "ff0203f200aa5a575528ecf7d37e0bfd073474c9f05011507226180e3ca04173",
+      "ingested_at": "2026-04-28T08:31:36+00:00",
+      "shareholder_profit": -15.113
+    }
+  ]
+}

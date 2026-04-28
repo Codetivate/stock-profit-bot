@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "symbol": "TURBO",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-24",
+  "quarterly_history": {
+    "2568": {
+      "Q1": null,
+      "Q2": 90.939572,
+      "Q3": 125.656023,
+      "Q4": 141.543857,
+      "FullYear": 503.124818
+    }
+  },
+  "sources": [
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-11",
+      "news_id": "17628159934571",
+      "raw_path": "TURBO/financials/2568/9M/source.zip",
+      "sha256": "bd1544c1896485f1d7acf784e9fbf3dea052173e1aea95917074b6be83ae903d",
+      "ingested_at": "2026-04-28T10:06:17+00:00",
+      "shareholder_profit": 125.656023
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-24",
+      "news_id": "17718892072221",
+      "raw_path": "TURBO/financials/2568/FY/source.zip",
+      "sha256": "593f9d73df62da1ad3bc574bee7dcfbbb0a5e38756aed3e6d07647ae5d50822a",
+      "ingested_at": "2026-04-28T10:06:13+00:00",
+      "shareholder_profit": 503.124818
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-09-29",
+      "news_id": "17591022166561",
+      "raw_path": "TURBO/financials/2568/H1/source.zip",
+      "sha256": "761f6835ff4dd56d77de1343eafa879a1b5c4fb1d4b0d706ae54226921f806d7",
+      "ingested_at": "2026-04-28T10:06:22+00:00",
+      "shareholder_profit": 90.939572
+    }
+  ]
+}

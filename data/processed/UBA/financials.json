@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "symbol": "UBA",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-24",
+  "quarterly_history": {
+    "2564": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": 52.350549720000096
+    },
+    "2565": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": 19.98839062999998,
+      "Q4": 17.194280579999926,
+      "FullYear": 68.01043686
+    },
+    "2566": {
+      "Q1": 16.855895999999994,
+      "Q2": 15.662444499999989,
+      "Q3": 20.769725210000004,
+      "Q4": 18.24160165000002,
+      "FullYear": 71.52966736
+    },
+    "2567": {
+      "Q1": 14.50795421000003,
+      "Q2": 17.09692922,
+      "Q3": 24.20171781,
+      "Q4": 16.376316319999976,
+      "FullYear": 72.18291756
+    },
+    "2568": {
+      "Q1": 8.700284000000025,
+      "Q2": 10.345364289999983,
+      "Q3": 20.716962810000048,
+      "Q4": 23.448160610000052,
+      "FullYear": 63.21077171000011
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-12-06",
+      "news_id": "2022143317",
+      "raw_path": "UBA/financials/2564/FY/source.zip",
+      "sha256": "d9f42852686e8070802a69947e9455cc0e69b168ad12c65e9611738d8953e307",
+      "ingested_at": "2026-04-28T10:26:11+00:00",
+      "shareholder_profit": 52.350549720000096
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-12-06",
+      "news_id": "2022143307",
+      "raw_path": "UBA/financials/2565/9M/source.zip",
+      "sha256": "7772b98f85cacf0635bb9b2436954533fb8505b61a4d36dc8bc4cc66dedcb0ff",
+      "ingested_at": "2026-04-28T10:26:15+00:00",
+      "shareholder_profit": 19.98839062999998
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-23",
+      "news_id": "2023020384",
+      "raw_path": "UBA/financials/2565/FY/source.zip",
+      "sha256": "3ee85851e22a5ad90a5b5fb0236f2681a43803eb9e6cea90e5fee08591097321",
+      "ingested_at": "2026-04-28T10:26:06+00:00",
+      "shareholder_profit": 68.01043686
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-10",
+      "news_id": "16995730756531",
+      "raw_path": "UBA/financials/2566/9M/source.zip",
+      "sha256": "1c330da809f109ff26a6cbef19e9f3c931ce4e3f99a00433d2a094c24ed9befd",
+      "ingested_at": "2026-04-28T10:25:50+00:00",
+      "shareholder_profit": 20.769725210000004
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-27",
+      "news_id": "17089869200541",
+      "raw_path": "UBA/financials/2566/FY/source.zip",
+      "sha256": "dea896e2ca72566b59b1030b2530a97d36dd681873ab14436833921343b71ce4",
+      "ingested_at": "2026-04-28T10:25:45+00:00",
+      "shareholder_profit": 71.52966736
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-10",
+      "news_id": "16916230286441",
+      "raw_path": "UBA/financials/2566/H1/source.zip",
+      "sha256": "099d99999d70b3fd3c246ddfa5b0287590179818500e68598a0dd2621b7d1667",
+      "ingested_at": "2026-04-28T10:25:56+00:00",
+      "shareholder_profit": 15.662444499999989
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-11",
+      "news_id": "16837584097051",
+      "raw_path": "UBA/financials/2566/Q1/source.zip",
+      "sha256": "9cf22eda244f94a401ecdb60d4a7273396baa3fc66d6624e973a5abd6aeeb298",
+      "ingested_at": "2026-04-28T10:26:01+00:00",
+      "shareholder_profit": 16.855895999999994
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-13",
+      "news_id": "17314477475291",
+      "raw_path": "UBA/financials/2567/9M/source.zip",
+      "sha256": "19ef31bb2340560f1b4a490407cd965bb7fe1bcf1c184afc9b89eb7939872f5b",
+      "ingested_at": "2026-04-28T10:25:31+00:00",
+      "shareholder_profit": 24.20171781
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-25",
+      "news_id": "17404367162771",
+      "raw_path": "UBA/financials/2567/FY/source.zip",
+      "sha256": "d472158d0d2aeada73532d475746bd9ff627b01f507955a013e8a6bff2e4c900",
+      "ingested_at": "2026-04-28T10:25:26+00:00",
+      "shareholder_profit": 72.18291756
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990194051",
+      "raw_path": "UBA/financials/2567/H1/source.zip",
+      "sha256": "cb0fd23c498f3945593697a8a581197f7c8433c6109a92fcf841d8bdf44ffac4",
+      "ingested_at": "2026-04-28T10:25:36+00:00",
+      "shareholder_profit": 17.09692922
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434533271",
+      "raw_path": "UBA/financials/2567/Q1/source.zip",
+      "sha256": "11e1bc27ab51848fb95eea990d5ffd9485dbdb0b49065d10dfb7ce0f49772590",
+      "ingested_at": "2026-04-28T10:25:40+00:00",
+      "shareholder_profit": 14.50795421000003
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-11",
+      "news_id": "17628159908451",
+      "raw_path": "UBA/financials/2568/9M/source.zip",
+      "sha256": "766e54d916f34657333222acce46921e33877943b229b38f3bec818207cc73d3",
+      "ingested_at": "2026-04-28T10:25:12+00:00",
+      "shareholder_profit": 20.716962810000048
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-24",
+      "news_id": "17718892158331",
+      "raw_path": "UBA/financials/2568/FY/source.zip",
+      "sha256": "fca527f8aef749f416660471a58be9614ae0b975ba5f9c0fa084a24b27df6f00",
+      "ingested_at": "2026-04-28T10:25:07+00:00",
+      "shareholder_profit": 63.21077171000011
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361146611",
+      "raw_path": "UBA/financials/2568/H1/source.zip",
+      "sha256": "3b6b71c86f4caa2379d6cc6c3cb70a0ba569c7eeced1ccb88a1837f442f8455d",
+      "ingested_at": "2026-04-28T10:25:17+00:00",
+      "shareholder_profit": 10.345364289999983
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903542721",
+      "raw_path": "UBA/financials/2568/Q1/source.zip",
+      "sha256": "e05080b8ff807ba0401d9e21d209dcd37f965e3ee4f50fe7ad34db4873ad9c68",
+      "ingested_at": "2026-04-28T10:25:21+00:00",
+      "shareholder_profit": 8.700284000000025
+    }
+  ]
+}

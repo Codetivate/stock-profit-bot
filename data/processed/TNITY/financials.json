@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "symbol": "TNITY",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-03-04",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 66.699,
+      "Q2": 42.304,
+      "Q3": 64.74,
+      "Q4": 76.40083200000002,
+      "FullYear": 250.143832
+    },
+    "2565": {
+      "Q1": 56.767,
+      "Q2": 26.848,
+      "Q3": 36.587,
+      "Q4": 58.195100999999994,
+      "FullYear": 178.397101
+    },
+    "2566": {
+      "Q1": -23.186,
+      "Q2": -239.181,
+      "Q3": -74.162,
+      "Q4": -16.87019300000003,
+      "FullYear": -353.399193
+    },
+    "2567": {
+      "Q1": 15.861,
+      "Q2": -239.181,
+      "Q3": -9.016,
+      "Q4": -121.063193,
+      "FullYear": -353.399193
+    },
+    "2568": {
+      "Q1": 7.692693,
+      "Q2": -23.133,
+      "Q3": -6.227,
+      "Q4": -57.76459000000001,
+      "FullYear": -79.431897
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-11",
+      "news_id": "2021121942",
+      "raw_path": "TNITY/financials/2564/9M/source.zip",
+      "sha256": "06cf81b9e76ed2cd064fa9e2fed5c0f1f646011545309685f82d3662457a46f2",
+      "ingested_at": "2026-04-28T08:51:19+00:00",
+      "shareholder_profit": 64.74
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-28",
+      "news_id": "2022026510",
+      "raw_path": "TNITY/financials/2564/FY/source.zip",
+      "sha256": "6d947833c874395adb503b3595d39511cceec735d6a8592e69f6f673e14c7cdd",
+      "ingested_at": "2026-04-28T08:51:14+00:00",
+      "shareholder_profit": 250.143832
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-13",
+      "news_id": "2021090301",
+      "raw_path": "TNITY/financials/2564/H1/source.zip",
+      "sha256": "44cfeca5087c50f4be2860032184c140862f16c72517efc60c18dd53d4662014",
+      "ingested_at": "2026-04-28T08:51:24+00:00",
+      "shareholder_profit": 42.304
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-13",
+      "news_id": "2021056611",
+      "raw_path": "TNITY/financials/2564/Q1/source.zip",
+      "sha256": "674142535b2cb22a862907790b406f4e720a3d1f5850a4a48ec632a6c2b3ca61",
+      "ingested_at": "2026-04-28T08:51:29+00:00",
+      "shareholder_profit": 66.699
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-14",
+      "news_id": "2022136941",
+      "raw_path": "TNITY/financials/2565/9M/source.zip",
+      "sha256": "5b1d9c4fb2b490e057b7eb36f7359c376c1e6d8b9e5144dbf23f739fdcaa3e03",
+      "ingested_at": "2026-04-28T08:50:58+00:00",
+      "shareholder_profit": 36.587
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-27",
+      "news_id": "2023024977",
+      "raw_path": "TNITY/financials/2565/FY/source.zip",
+      "sha256": "df91125e4148e6968f409f00ab00bd5d80794eb69fe2c1743f283ca623886633",
+      "ingested_at": "2026-04-28T08:50:53+00:00",
+      "shareholder_profit": 178.397101
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-11",
+      "news_id": "2022096118",
+      "raw_path": "TNITY/financials/2565/H1/source.zip",
+      "sha256": "7c9c9017cde82117e84303e2aa00e6398401843293fb4b39f6f91dd32f656659",
+      "ingested_at": "2026-04-28T08:51:04+00:00",
+      "shareholder_profit": 26.848
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-12",
+      "news_id": "2022060248",
+      "raw_path": "TNITY/financials/2565/Q1/source.zip",
+      "sha256": "46392d4a93553f789b045170e28d13c01d278d42b49e23300a5cd0aa191437f5",
+      "ingested_at": "2026-04-28T08:51:09+00:00",
+      "shareholder_profit": 56.767
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-14",
+      "news_id": "16999132714251",
+      "raw_path": "TNITY/financials/2566/9M/source.zip",
+      "sha256": "19f34c82fe31a31f62581c3afed3c092987d859b86d2ddbcb2fd6d935d8261c0",
+      "ingested_at": "2026-04-28T08:50:41+00:00",
+      "shareholder_profit": -74.162
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-29",
+      "news_id": "17091569106501",
+      "raw_path": "TNITY/financials/2566/FY/source.zip",
+      "sha256": "9ec39c6495f0d8a3fc748fdbbfa131df300440e13692e1783b548e28659692c8",
+      "ingested_at": "2026-04-28T08:50:37+00:00",
+      "shareholder_profit": -353.399193
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-09",
+      "news_id": "16915381973461",
+      "raw_path": "TNITY/financials/2566/H1/source.zip",
+      "sha256": "1dd965ceeac0dc0d77308a966b1be089e6c1b709c3141ccba9245f2875e39ad6",
+      "ingested_at": "2026-04-28T08:50:45+00:00",
+      "shareholder_profit": -239.181
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-10",
+      "news_id": "16836750121241",
+      "raw_path": "TNITY/financials/2566/Q1/source.zip",
+      "sha256": "8d26f09f87f6e374fb21173d7a212aff27e1c1c91788bb89bd0d6e3ab6cbcf1f",
+      "ingested_at": "2026-04-28T08:50:49+00:00",
+      "shareholder_profit": -23.186
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-12",
+      "news_id": "17313658217901",
+      "raw_path": "TNITY/financials/2567/9M/source.zip",
+      "sha256": "fa915e280d6f1923e33affd3f2f03fab3c691b443f1bdd448aaace962a866ead",
+      "ingested_at": "2026-04-28T08:50:24+00:00",
+      "shareholder_profit": -9.016
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-28",
+      "news_id": "17406928247421",
+      "raw_path": "TNITY/financials/2567/FY/source.zip",
+      "sha256": "0b60069083c5d8ba6dfaed2469c811183ed355dfc8c72d83c4b9829d5bf4422c",
+      "ingested_at": "2026-04-28T08:50:19+00:00",
+      "shareholder_profit": -353.399193
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990244091",
+      "raw_path": "TNITY/financials/2567/H1/source.zip",
+      "sha256": "beff48c58528f5f39b5581fe4432dd01ca9ec986726590781010bf6639e51c64",
+      "ingested_at": "2026-04-28T08:50:29+00:00",
+      "shareholder_profit": -239.181
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434589371",
+      "raw_path": "TNITY/financials/2567/Q1/source.zip",
+      "sha256": "bc7d609663a43495afe22e87cb38b7af50f2fcc251b78f70443d02584951e4ae",
+      "ingested_at": "2026-04-28T08:50:33+00:00",
+      "shareholder_profit": 15.861
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-14",
+      "news_id": "17630699637951",
+      "raw_path": "TNITY/financials/2568/9M/source.zip",
+      "sha256": "ecee5a7e2dee815d9bbe16af6935bc0e582b52fd576224b7587f34bfecc2d45b",
+      "ingested_at": "2026-04-28T08:50:06+00:00",
+      "shareholder_profit": -6.227
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-03-04",
+      "news_id": "17725751944841",
+      "raw_path": "TNITY/financials/2568/FY/source.zip",
+      "sha256": "a084ae6765df0276565ecfde1e8e354430acf0d987aaa519807252c41397a13e",
+      "ingested_at": "2026-04-28T08:50:01+00:00",
+      "shareholder_profit": -79.431897
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229765721",
+      "raw_path": "TNITY/financials/2568/H1/source.zip",
+      "sha256": "26099b00bbab2dd22d44e32e38a2f00b6691f9217f533253534c0578fc34ccf9",
+      "ingested_at": "2026-04-28T08:50:11+00:00",
+      "shareholder_profit": -23.133
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-15",
+      "news_id": "17472613086131",
+      "raw_path": "TNITY/financials/2568/Q1/source.zip",
+      "sha256": "a49cb7645bf86c300e2a59ffe53c376c1ed28e24db7d50250fc07fe51acc6677",
+      "ingested_at": "2026-04-28T08:50:14+00:00",
+      "shareholder_profit": 7.692693
+    }
+  ]
+}

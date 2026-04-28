@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "symbol": "UKEM",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2025-11-14",
+  "quarterly_history": {
+    "2566": {
+      "Q1": -0.417,
+      "Q2": -15.298,
+      "Q3": 13.798,
+      "Q4": null,
+      "FullYear": null
+    },
+    "2567": {
+      "Q1": 8.862,
+      "Q2": -7.509,
+      "Q3": -7.078,
+      "Q4": null,
+      "FullYear": null
+    },
+    "2568": {
+      "Q1": 15.157,
+      "Q2": 14.751,
+      "Q3": 26.435,
+      "Q4": null,
+      "FullYear": null
+    }
+  },
+  "sources": [
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-10",
+      "news_id": "16995730704391",
+      "raw_path": "UKEM/financials/2566/9M/source.zip",
+      "sha256": "db6317c350b54703cc9bbc9754bbc03c386a389979ad2cbbe8a5de2810bc3955",
+      "ingested_at": "2026-04-28T10:32:57+00:00",
+      "shareholder_profit": 13.798
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-15",
+      "news_id": "16920539297451",
+      "raw_path": "UKEM/financials/2566/H1/source.zip",
+      "sha256": "e286e25532a313062896e650fc1fa8fa3164690c4192c8cb9b80c0ad3432d5c3",
+      "ingested_at": "2026-04-28T10:33:02+00:00",
+      "shareholder_profit": -15.298
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-15",
+      "news_id": "16841054057121",
+      "raw_path": "UKEM/financials/2566/Q1/source.zip",
+      "sha256": "fdf335a7212dbbc1897b02c63474e78ca471ed03b86b8776275219d809535c6b",
+      "ingested_at": "2026-04-28T10:33:07+00:00",
+      "shareholder_profit": -0.417
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361326561",
+      "raw_path": "UKEM/financials/2567/9M/source.zip",
+      "sha256": "9bcc421a0f44fe2d97158c8208f1e461fc09f8566797edd989f0cbb9d061e45f",
+      "ingested_at": "2026-04-28T10:32:38+00:00",
+      "shareholder_profit": -7.078
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990096261",
+      "raw_path": "UKEM/financials/2567/H1/source.zip",
+      "sha256": "0bda4ec7431cfa5284e110317285a81bdfc45ff8f46ed4a4ffa45d69e1e31c37",
+      "ingested_at": "2026-04-28T10:32:43+00:00",
+      "shareholder_profit": -7.509
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-13",
+      "news_id": "17155537931371",
+      "raw_path": "UKEM/financials/2567/Q1/source.zip",
+      "sha256": "ceedd6753aafcefc72cad656def316b0cefdaf0d85bfdcf9232b43ab4b59dcb2",
+      "ingested_at": "2026-04-28T10:32:48+00:00",
+      "shareholder_profit": 8.862
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-14",
+      "news_id": "17630699636921",
+      "raw_path": "UKEM/financials/2568/9M/source.zip",
+      "sha256": "69837f957672b900d734a3194fca6286dd41cd73b29249bf0bc264b702c74ac2",
+      "ingested_at": "2026-04-28T10:32:18+00:00",
+      "shareholder_profit": 26.435
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229922841",
+      "raw_path": "UKEM/financials/2568/H1/source.zip",
+      "sha256": "097b3cddbdf8bc195c0bfdebb86788cb816b3c56e5e0b0099d14d17bdada6f81",
+      "ingested_at": "2026-04-28T10:32:23+00:00",
+      "shareholder_profit": 14.751
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-15",
+      "news_id": "17472613192901",
+      "raw_path": "UKEM/financials/2568/Q1/source.zip",
+      "sha256": "c514d04953ce3d11e1a3cfc3536af27a36a2b777b253b28269b4dd1a74d7ea9a",
+      "ingested_at": "2026-04-28T10:32:28+00:00",
+      "shareholder_profit": 15.157
+    }
+  ]
+}

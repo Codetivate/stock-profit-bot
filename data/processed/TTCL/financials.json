@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "symbol": "TTCL",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-03-04",
+  "quarterly_history": {
+    "2564": {
+      "Q1": -46.919,
+      "Q2": 114.199,
+      "Q3": 91.314,
+      "Q4": 130.53682881,
+      "FullYear": 289.13082881
+    },
+    "2565": {
+      "Q1": 548.772,
+      "Q2": -42.146,
+      "Q3": 29.504,
+      "Q4": 131.31598604346297,
+      "FullYear": 667.445986043463
+    },
+    "2566": {
+      "Q1": 129.509,
+      "Q2": 120.54936000000001,
+      "Q3": 78.10564000000001,
+      "Q4": 49.563606999999976,
+      "FullYear": 377.727607
+    },
+    "2567": {
+      "Q1": 115.95,
+      "Q2": -8.578,
+      "Q3": 45.216,
+      "Q4": -690.0347690000001,
+      "FullYear": -537.446769
+    },
+    "2568": {
+      "Q1": -91.957,
+      "Q2": -1700.81,
+      "Q3": -2929.891,
+      "Q4": -1476.869963999999,
+      "FullYear": -6199.527964
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-15",
+      "news_id": "2021126184",
+      "raw_path": "TTCL/financials/2564/9M/source.zip",
+      "sha256": "36682d2991df156ea1df9dc1ec706c95b59483a3ee646460b3c764f5440fd14f",
+      "ingested_at": "2026-04-28T09:56:01+00:00",
+      "shareholder_profit": 91.314
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-28",
+      "news_id": "2022026859",
+      "raw_path": "TTCL/financials/2564/FY/source.zip",
+      "sha256": "b2985b44e067feec2c99c3656868e63ea47267cad7f2be6916986d215cd7aaa0",
+      "ingested_at": "2026-04-28T09:55:56+00:00",
+      "shareholder_profit": 289.13082881
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-16",
+      "news_id": "2021092200",
+      "raw_path": "TTCL/financials/2564/H1/source.zip",
+      "sha256": "6f9a75210a6721bc56d149f5ebc05ff7af124a5913088a5e5d0984f99cb2f8f6",
+      "ingested_at": "2026-04-28T09:56:06+00:00",
+      "shareholder_profit": 114.199
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-17",
+      "news_id": "2021060392",
+      "raw_path": "TTCL/financials/2564/Q1/source.zip",
+      "sha256": "a4cd499f1da9bfde3c28aed9ddc7424561f877fd6c96f620b01961b6ef51c022",
+      "ingested_at": "2026-04-28T09:56:11+00:00",
+      "shareholder_profit": -46.919
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-14",
+      "news_id": "2022136770",
+      "raw_path": "TTCL/financials/2565/9M/source.zip",
+      "sha256": "35f20ea29183cfcc553501478a87fe2c651a3c0f0f232f94f3f99d3a49595add",
+      "ingested_at": "2026-04-28T09:55:40+00:00",
+      "shareholder_profit": 29.504
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-03-01",
+      "news_id": "2023027784",
+      "raw_path": "TTCL/financials/2565/FY/source.zip",
+      "sha256": "d7cd798eada359213211f8ff8715c66cc808d6a527eceda585c88b9741d290ba",
+      "ingested_at": "2026-04-28T09:55:35+00:00",
+      "shareholder_profit": 667.445986043463
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-15",
+      "news_id": "2022098317",
+      "raw_path": "TTCL/financials/2565/H1/source.zip",
+      "sha256": "8c4aaf38f14d33e4492f92d3569030fa5f252e73464bed3643784beb845bd992",
+      "ingested_at": "2026-04-28T09:55:45+00:00",
+      "shareholder_profit": -42.146
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-17",
+      "news_id": "2022064402",
+      "raw_path": "TTCL/financials/2565/Q1/source.zip",
+      "sha256": "dd1beb5891bc6804c211e4ba478e2c9d50e7ae6dd4eda35737348efb05737a30",
+      "ingested_at": "2026-04-28T09:55:51+00:00",
+      "shareholder_profit": 548.772
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-14",
+      "news_id": "16999132731021",
+      "raw_path": "TTCL/financials/2566/9M/source.zip",
+      "sha256": "63c3f87df2974c2f7427131eff6cf3e78454d98c3ba3ee6181895ef598243580",
+      "ingested_at": "2026-04-28T09:55:20+00:00",
+      "shareholder_profit": 78.10564000000001
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-29",
+      "news_id": "17091569117481",
+      "raw_path": "TTCL/financials/2566/FY/source.zip",
+      "sha256": "cedfbede08da99916e3fa74ac267f6a234f683e55ecd6226be2c7c622ff1e08e",
+      "ingested_at": "2026-04-28T09:55:15+00:00",
+      "shareholder_profit": 377.727607
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-15",
+      "news_id": "16920539413091",
+      "raw_path": "TTCL/financials/2566/H1/source.zip",
+      "sha256": "a9ec09dfaa3ab68d13bbbdf41cc8c53f8a656b711335184ba541b95443682559",
+      "ingested_at": "2026-04-28T09:55:24+00:00",
+      "shareholder_profit": 120.54936000000001
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-15",
+      "news_id": "16841054059961",
+      "raw_path": "TTCL/financials/2566/Q1/source.zip",
+      "sha256": "eb683d9aeaff85a8a935bfeca9ed488b21476c135f731cde1c30963cee3b5e3e",
+      "ingested_at": "2026-04-28T09:55:29+00:00",
+      "shareholder_profit": 129.509
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361325911",
+      "raw_path": "TTCL/financials/2567/9M/source.zip",
+      "sha256": "fdabb94190098cfc59008aec66689e6567f23e292e9d07c7c930f3a673325048",
+      "ingested_at": "2026-04-28T09:54:59+00:00",
+      "shareholder_profit": 45.216
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-28",
+      "news_id": "17406928538091",
+      "raw_path": "TTCL/financials/2567/FY/source.zip",
+      "sha256": "493cff32d05005ff5dfcf46730c4130245f685d898ad9fcdea3c3d8ba0af71d4",
+      "ingested_at": "2026-04-28T09:54:54+00:00",
+      "shareholder_profit": -537.446769
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-14",
+      "news_id": "17235858051111",
+      "raw_path": "TTCL/financials/2567/H1/source.zip",
+      "sha256": "96fc8ab5014b7a8ec17829c13baa469afed48be7a56b3e4e8c65dfb5d8390ac0",
+      "ingested_at": "2026-04-28T09:55:04+00:00",
+      "shareholder_profit": -8.578
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-15",
+      "news_id": "17157257479551",
+      "raw_path": "TTCL/financials/2567/Q1/source.zip",
+      "sha256": "22921b355c3b53bb5b41d7c6ee8c3427d8a46dfc1e4bd573bcd502d686e750fe",
+      "ingested_at": "2026-04-28T09:55:10+00:00",
+      "shareholder_profit": 115.95
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-14",
+      "news_id": "17630699638681",
+      "raw_path": "TTCL/financials/2568/9M/source.zip",
+      "sha256": "64712a06ccf0b25ac253a02395bc9f7081c2206cca709bb0ecafdb3c0ee588f1",
+      "ingested_at": "2026-04-28T09:54:39+00:00",
+      "shareholder_profit": -2929.891
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-03-04",
+      "news_id": "17725752037261",
+      "raw_path": "TTCL/financials/2568/FY/source.zip",
+      "sha256": "d2c623fda482c2ee0667e7b7dbf6bf685c53c20346398e857a2afe149f882533",
+      "ingested_at": "2026-04-28T09:54:34+00:00",
+      "shareholder_profit": -6199.527964
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229926491",
+      "raw_path": "TTCL/financials/2568/H1/source.zip",
+      "sha256": "2d154d179c95d56e52fee167655dbc71935d44d3a71fc0ad13977e8e7a966050",
+      "ingested_at": "2026-04-28T09:54:44+00:00",
+      "shareholder_profit": -1700.81
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-15",
+      "news_id": "17472613194271",
+      "raw_path": "TTCL/financials/2568/Q1/source.zip",
+      "sha256": "b368f6e403c1eaed3ebc281c95514b3faeb8162680045e5399b4866e8b4a0c13",
+      "ingested_at": "2026-04-28T09:54:49+00:00",
+      "shareholder_profit": -91.957
+    }
+  ]
+}
