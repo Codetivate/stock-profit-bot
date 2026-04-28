@@ -23,7 +23,7 @@ for key, theme in THEMES.items():
         latest_year=2568,
         latest_quarter="Q4",
         report_date="25 Feb 2026",
-        period_label="Q4 2568",
+        period_label="Q4/2568",
         theme=key,
     )
     out = OUT_DIR / f"theme_{key}.png"

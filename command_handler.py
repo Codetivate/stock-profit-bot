@@ -222,7 +222,7 @@ def handle_profit_command(tg: TelegramClient, chat_id, symbol: str):
         latest_year=latest_year,
         latest_quarter=latest_q,
         report_date=report_date,
-        period_label=f"{latest_q} {latest_year}",
+        period_label=f"{latest_q}/{latest_year}",
     )
 
     caption = build_rich_caption(

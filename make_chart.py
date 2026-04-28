@@ -122,7 +122,7 @@ def make_chart(
     latest_year: int,
     latest_quarter: str,  # "Q1"/"Q2"/"Q3"/"Q4"
     report_date: str,     # "25 Feb 2026"
-    period_label: str,    # "Q4 2568"
+    period_label: str,    # "Q4/2568"
 ) -> bytes:
     """Generate a Mockup v5-style chart.
 
@@ -513,7 +513,7 @@ if __name__ == "__main__":
         latest_year=2568,
         latest_quarter="Q4",
         report_date="25 Feb 2026",
-        period_label="Q4 2568",
+        period_label="Q4/2568",
     )
 
     with open("test_chart_cpall.png", "wb") as f:

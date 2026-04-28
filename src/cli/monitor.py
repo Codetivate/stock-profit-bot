@@ -158,7 +158,7 @@ def _send_updated_chart(
         latest_year=latest_year,
         latest_quarter=latest_q,
         report_date=item.date,
-        period_label=f"{latest_q} {latest_year}",
+        period_label=f"{latest_q}/{latest_year}",
     )
 
     caption = build_rich_caption(

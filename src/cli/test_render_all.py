@@ -103,7 +103,7 @@ def test_symbol(symbol: str, *, render: bool = False) -> dict:
                 latest_year=ly,
                 latest_quarter=lq,
                 report_date="",
-                period_label=f"{lq} {ly}",
+                period_label=f"{lq}/{ly}",
             )
             OUT_DIR.mkdir(parents=True, exist_ok=True)
             (OUT_DIR / f"{symbol}.png").write_bytes(png)

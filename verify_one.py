@@ -203,7 +203,7 @@ def main() -> int:
         except Exception as e:
             set_status_line = f"⚠️ ตรวจ SET ไม่ได้: {str(e)[:80]}"
 
-    period_label = f"{latest_q} {latest_year}"
+    period_label = f"{latest_q}/{latest_year}"
     png = make_chart(
         symbol=symbol,
         company_name=company,
