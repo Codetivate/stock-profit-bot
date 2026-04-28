@@ -1,0 +1,227 @@
+{
+  "schema_version": 1,
+  "symbol": "DIMET",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-26",
+  "quarterly_history": {
+    "2564": {
+      "Q1": -18.854721,
+      "Q2": -7.815389999999995,
+      "Q3": -13.604214,
+      "Q4": -48.97857400000001,
+      "FullYear": -89.252899
+    },
+    "2565": {
+      "Q1": 6.322133,
+      "Q2": -29.506818,
+      "Q3": -78.79067825,
+      "Q4": -39.98632475000002,
+      "FullYear": -141.961688
+    },
+    "2566": {
+      "Q1": -24.179,
+      "Q2": -18.262,
+      "Q3": -7.15,
+      "Q4": -41.132968,
+      "FullYear": -90.723968
+    },
+    "2567": {
+      "Q1": -4.315,
+      "Q2": -13.417,
+      "Q3": -25.285,
+      "Q4": -154.35185,
+      "FullYear": -197.36885
+    },
+    "2568": {
+      "Q1": null,
+      "Q2": -10.371932459999998,
+      "Q3": -24.968731120000015,
+      "Q4": -4.310331459999958,
+      "FullYear": -29.279062579999973
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-15",
+      "news_id": "2021125111",
+      "raw_path": "DIMET/financials/2564/9M/source.zip",
+      "sha256": "33588a5dceb7e936cd84add898c4f2a82d7101c08dd00893bf9bd8aadd5513a9",
+      "ingested_at": "2026-04-28T04:35:01+00:00",
+      "shareholder_profit": -13.604214
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-28",
+      "news_id": "2022026695",
+      "raw_path": "DIMET/financials/2564/FY/source.zip",
+      "sha256": "9bfae72bbefcf15b8646a1100d09c688df05566a99ff4c83e306f1fd83edab02",
+      "ingested_at": "2026-04-28T04:34:56+00:00",
+      "shareholder_profit": -89.252899
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-13",
+      "news_id": "2021057204",
+      "raw_path": "DIMET/financials/2564/Q1/source.zip",
+      "sha256": "90940ac10b725183173a5eb349b0db0cbff3dc34088e3cb3f7c001d98b2fae73",
+      "ingested_at": "2026-04-28T04:35:11+00:00",
+      "shareholder_profit": -18.854721
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-14",
+      "news_id": "2022134940",
+      "raw_path": "DIMET/financials/2565/9M/source.zip",
+      "sha256": "afe8fd7d8e22fd38781523259c717227637cb5b95db7ad7193089cde4648f4b9",
+      "ingested_at": "2026-04-28T04:34:40+00:00",
+      "shareholder_profit": -78.79067825
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-03-01",
+      "news_id": "2023027041",
+      "raw_path": "DIMET/financials/2565/FY/source.zip",
+      "sha256": "016dc8143e13458b4b8c028a3e9bf35e95bfe933af5f91f740b71b10bf49c3c7",
+      "ingested_at": "2026-04-28T04:34:35+00:00",
+      "shareholder_profit": -13.604214
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-15",
+      "news_id": "2022096896",
+      "raw_path": "DIMET/financials/2565/H1/source.zip",
+      "sha256": "d9828e47009bf343bfe9354e0e9716b9a79f4e7ed21b9a94d0c8f3b38c0f6ba2",
+      "ingested_at": "2026-04-28T04:34:45+00:00",
+      "shareholder_profit": -29.506818
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-17",
+      "news_id": "2022064601",
+      "raw_path": "DIMET/financials/2565/Q1/source.zip",
+      "sha256": "711000c0274ac165934a1b187aae04e9b6392aab045f1fc96cab0164599617a1",
+      "ingested_at": "2026-04-28T04:34:51+00:00",
+      "shareholder_profit": 6.322133
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-14",
+      "news_id": "16999132704401",
+      "raw_path": "DIMET/financials/2566/9M/source.zip",
+      "sha256": "1956a55d4ba087ae895e19c06349de783de5c2afb53d417a54d105d68a30e645",
+      "ingested_at": "2026-04-28T04:34:20+00:00",
+      "shareholder_profit": -7.15
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-29",
+      "news_id": "17091568986351",
+      "raw_path": "DIMET/financials/2566/FY/source.zip",
+      "sha256": "79401846cd04d17a5be33f3be88090e8ad6f4742ebdb06eabd4d426f74c5e7fc",
+      "ingested_at": "2026-04-28T04:34:14+00:00",
+      "shareholder_profit": -90.723968
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-15",
+      "news_id": "16920539364211",
+      "raw_path": "DIMET/financials/2566/H1/source.zip",
+      "sha256": "5068a7555fa2dd7f19d1f63002b4c325d75656a44f59502a3c6e973a63d47be2",
+      "ingested_at": "2026-04-28T04:34:25+00:00",
+      "shareholder_profit": -18.262
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-15",
+      "news_id": "16841054010151",
+      "raw_path": "DIMET/financials/2566/Q1/source.zip",
+      "sha256": "1eebfd3bc9deac993ce2389698b54af3d6322f4efc382ba87482e80d0c0c4a40",
+      "ingested_at": "2026-04-28T04:34:30+00:00",
+      "shareholder_profit": -24.179
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361203791",
+      "raw_path": "DIMET/financials/2567/9M/source.zip",
+      "sha256": "a504520fe9e5d379b00f2b30793f2e57b416be4243dd65e3d23d6cf18d26c7ed",
+      "ingested_at": "2026-04-28T04:33:59+00:00",
+      "shareholder_profit": -25.285
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-27",
+      "news_id": "17406066104761",
+      "raw_path": "DIMET/financials/2567/FY/source.zip",
+      "sha256": "97d9447b8d2399c0f06c5a8d3df62a078c2abaae620dafb3b1f814b712396de3",
+      "ingested_at": "2026-04-28T04:33:54+00:00",
+      "shareholder_profit": -197.36885
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-14",
+      "news_id": "17235858069231",
+      "raw_path": "DIMET/financials/2567/H1/source.zip",
+      "sha256": "161a4602da38494ee64d95b58245292391f511abbbd929a0c203e9b0a43731c8",
+      "ingested_at": "2026-04-28T04:34:04+00:00",
+      "shareholder_profit": -13.417
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434598021",
+      "raw_path": "DIMET/financials/2567/Q1/source.zip",
+      "sha256": "1d21c8c6a6dbee0f95a7a257fa4a198093a4ea3997ed86071f9b28121dbc1ea7",
+      "ingested_at": "2026-04-28T04:34:09+00:00",
+      "shareholder_profit": -4.315
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-13",
+      "news_id": "17629880526871",
+      "raw_path": "DIMET/financials/2568/9M/source.zip",
+      "sha256": "2f6a8a6eda17d577ae3f9a16127e01af665177f97e7cf04ff99d8e40664f58c2",
+      "ingested_at": "2026-04-28T04:33:39+00:00",
+      "shareholder_profit": -24.968731120000015
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-26",
+      "news_id": "17720575394431",
+      "raw_path": "DIMET/financials/2568/FY/source.zip",
+      "sha256": "9513603150115984da20c197e7cb99d759d057d1772e751fd51fe3534c4c0b01",
+      "ingested_at": "2026-04-28T04:33:34+00:00",
+      "shareholder_profit": -29.279062579999973
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361217901",
+      "raw_path": "DIMET/financials/2568/H1/source.zip",
+      "sha256": "c0392319eb160b7b352d5e9a22852beea53bfa7bdcad27e7116ebe9b9264c0a9",
+      "ingested_at": "2026-04-28T04:33:44+00:00",
+      "shareholder_profit": -10.371932459999998
+    }
+  ]
+}

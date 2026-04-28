@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "symbol": "DHOUSE",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-26",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 0.172338453999997,
+      "Q2": -2.567,
+      "Q3": -1.571,
+      "Q4": -2.8616984539999963,
+      "FullYear": -6.82736
+    },
+    "2565": {
+      "Q1": -2.322,
+      "Q2": -4.213,
+      "Q3": -4.271,
+      "Q4": -13.006705,
+      "FullYear": -23.812705
+    },
+    "2566": {
+      "Q1": -0.477,
+      "Q2": -7.281,
+      "Q3": -7.338,
+      "Q4": -5.264550000000001,
+      "FullYear": -20.36055
+    },
+    "2567": {
+      "Q1": 2.539,
+      "Q2": -7.023,
+      "Q3": 11.901,
+      "Q4": -2.4769640000000006,
+      "FullYear": 4.940036
+    },
+    "2568": {
+      "Q1": -8.818,
+      "Q2": -8.972,
+      "Q3": -6.33,
+      "Q4": -5.855848999999999,
+      "FullYear": -29.975849
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-11",
+      "news_id": "2021122313",
+      "raw_path": "DHOUSE/financials/2564/9M/source.zip",
+      "sha256": "da8107c463fbce70daa17043f722c5df14af8e773e94ca75e96333c55f953d48",
+      "ingested_at": "2026-04-28T04:32:13+00:00",
+      "shareholder_profit": -1.571
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-24",
+      "news_id": "2022021485",
+      "raw_path": "DHOUSE/financials/2564/FY/source.zip",
+      "sha256": "824b690e0a1ddd97859d8490f21beeb2651ee3b238485696731a44713107bb04",
+      "ingested_at": "2026-04-28T04:32:08+00:00",
+      "shareholder_profit": -6.82736
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-13",
+      "news_id": "2021090735",
+      "raw_path": "DHOUSE/financials/2564/H1/source.zip",
+      "sha256": "3c0d9be60a42735887aefc24a6ebc57ec883dd5b2e4cbd3e9b0d004c80c60657",
+      "ingested_at": "2026-04-28T04:32:19+00:00",
+      "shareholder_profit": -2.567
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-14",
+      "news_id": "2021059223",
+      "raw_path": "DHOUSE/financials/2564/Q1/source.zip",
+      "sha256": "a0602d183f8bb26d4099f8788bee82e555bac9c1d28b9c616e1d5930be5a6318",
+      "ingested_at": "2026-04-28T04:32:23+00:00",
+      "shareholder_profit": 0.172338453999997
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-11",
+      "news_id": "2022132766",
+      "raw_path": "DHOUSE/financials/2565/9M/source.zip",
+      "sha256": "bef295bb0125f8c909f2a2ee8569f6957d73ced5cd587c2dbb43659eddccbbdd",
+      "ingested_at": "2026-04-28T04:31:53+00:00",
+      "shareholder_profit": -4.271
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-27",
+      "news_id": "2023024780",
+      "raw_path": "DHOUSE/financials/2565/FY/source.zip",
+      "sha256": "1e13a4095c5275eabaf62c111ae38b173acdadd1b746819746568c626666206f",
+      "ingested_at": "2026-04-28T04:31:47+00:00",
+      "shareholder_profit": -23.812705
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-15",
+      "news_id": "2022098393",
+      "raw_path": "DHOUSE/financials/2565/H1/source.zip",
+      "sha256": "930fa2c995e839d124ab4206557ad044ea12137b780fe8baeaf23ef20fea977f",
+      "ingested_at": "2026-04-28T04:31:58+00:00",
+      "shareholder_profit": -4.213
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-12",
+      "news_id": "2022059278",
+      "raw_path": "DHOUSE/financials/2565/Q1/source.zip",
+      "sha256": "3262c2422baa237de8eabe30397d2b6f21252b6990c22afde0fb5148ae0ce38f",
+      "ingested_at": "2026-04-28T04:32:03+00:00",
+      "shareholder_profit": -2.322
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-14",
+      "news_id": "16999132730831",
+      "raw_path": "DHOUSE/financials/2566/9M/source.zip",
+      "sha256": "78992ecec21d1935d47370fd656565698bdd14cdf684a6cdf6d43b0beab7a6fb",
+      "ingested_at": "2026-04-28T04:31:32+00:00",
+      "shareholder_profit": -15.096
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-28",
+      "news_id": "17090750792771",
+      "raw_path": "DHOUSE/financials/2566/FY/source.zip",
+      "sha256": "f7baa9d99442d9cd03484684ce2bb217631929ca378bba2bd72d4068e0095416",
+      "ingested_at": "2026-04-28T04:31:26+00:00",
+      "shareholder_profit": -20.36055
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-15",
+      "news_id": "16920539411141",
+      "raw_path": "DHOUSE/financials/2566/H1/source.zip",
+      "sha256": "f192fc70f1100129995e8b5436f3908519ef6acb1febac5dfb51a7267406d73c",
+      "ingested_at": "2026-04-28T04:31:37+00:00",
+      "shareholder_profit": -7.758
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-15",
+      "news_id": "16841054052581",
+      "raw_path": "DHOUSE/financials/2566/Q1/source.zip",
+      "sha256": "db07db65f737fdc753a6ffbbe4128fd947913315345f16bee18d3fda0b3467d5",
+      "ingested_at": "2026-04-28T04:31:42+00:00",
+      "shareholder_profit": -0.477
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-12",
+      "news_id": "17313658182861",
+      "raw_path": "DHOUSE/financials/2567/9M/source.zip",
+      "sha256": "1bf0ea4c8ff6bfc22c6e1a7b4270150b8f41e962510134a8c7341f14fad3e6b4",
+      "ingested_at": "2026-04-28T04:31:11+00:00",
+      "shareholder_profit": 11.901
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-26",
+      "news_id": "17405221092821",
+      "raw_path": "DHOUSE/financials/2567/FY/source.zip",
+      "sha256": "14589776358f15a8aa8c0a112f9f5687199543bcdeb64df0cdb074fa0fcccb0e",
+      "ingested_at": "2026-04-28T04:31:05+00:00",
+      "shareholder_profit": 4.940036
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990246991",
+      "raw_path": "DHOUSE/financials/2567/H1/source.zip",
+      "sha256": "4e8402812a75e7278967982f0f330a40eef7861eb23d7d91f82895f045a4caf2",
+      "ingested_at": "2026-04-28T04:31:16+00:00",
+      "shareholder_profit": -4.484
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434591891",
+      "raw_path": "DHOUSE/financials/2567/Q1/source.zip",
+      "sha256": "5a591edf392926a841f6c028a2d24c90ae0b03dca991a8e5b9345639f4dc1048",
+      "ingested_at": "2026-04-28T04:31:21+00:00",
+      "shareholder_profit": 2.539
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-10",
+      "news_id": "17627310460651",
+      "raw_path": "DHOUSE/financials/2568/9M/source.zip",
+      "sha256": "c28874c6e0f7d43450bb85cf0070cb23795b18a25d72dfe3aa7f96876696e492",
+      "ingested_at": "2026-04-28T04:30:48+00:00",
+      "shareholder_profit": -6.33
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-26",
+      "news_id": "17720575363081",
+      "raw_path": "DHOUSE/financials/2568/FY/source.zip",
+      "sha256": "bd0b92850acd9f6915d1221d429dfa6e36a1c7d2f826816a56b1388e22d718e0",
+      "ingested_at": "2026-04-28T04:30:43+00:00",
+      "shareholder_profit": -29.975849
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361221711",
+      "raw_path": "DHOUSE/financials/2568/H1/source.zip",
+      "sha256": "97ed4c5ec7d654867fc63601e3e134ee369ab07828650860471495c69dc6d19f",
+      "ingested_at": "2026-04-28T04:30:53+00:00",
+      "shareholder_profit": -8.972
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903449601",
+      "raw_path": "DHOUSE/financials/2568/Q1/source.zip",
+      "sha256": "c25a48377fcc686657af1460c63de8616cbdbc5a7cfb6e2506d6b94c0866cdc3",
+      "ingested_at": "2026-04-28T04:31:00+00:00",
+      "shareholder_profit": -8.818
+    }
+  ]
+}

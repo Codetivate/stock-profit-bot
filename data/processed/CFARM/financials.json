@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "symbol": "CFARM",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-24",
+  "quarterly_history": {
+    "2566": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": 30.486644
+    },
+    "2567": {
+      "Q1": 1.852312,
+      "Q2": 1.314635,
+      "Q3": -1.788978,
+      "Q4": 8.764424,
+      "FullYear": 10.142393
+    },
+    "2568": {
+      "Q1": 0.750364,
+      "Q2": -3.391748,
+      "Q3": 10.25065,
+      "Q4": 3.2363619999999997,
+      "FullYear": 10.845628
+    }
+  },
+  "sources": [
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-06-05",
+      "news_id": "17175438274091",
+      "raw_path": "CFARM/financials/2566/FY/source.zip",
+      "sha256": "c6fe98c8932a6e17eff1506b027568078f46c5ecdcb175e53b52b4d2b95c6a3b",
+      "ingested_at": "2026-04-28T04:04:34+00:00",
+      "shareholder_profit": 30.486644
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-11",
+      "news_id": "17312815651051",
+      "raw_path": "CFARM/financials/2567/9M/source.zip",
+      "sha256": "13e2834d6cb91b1b9a1a542d9a1cdcc0fd12eaf43203157504fb225735bbe063",
+      "ingested_at": "2026-04-28T04:04:19+00:00",
+      "shareholder_profit": 1.377969
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-25",
+      "news_id": "17404367248541",
+      "raw_path": "CFARM/financials/2567/FY/source.zip",
+      "sha256": "154bec885946d64cd71cfe8bf6a54e5f0b8334743e771c41078ed6551d29abdb",
+      "ingested_at": "2026-04-28T04:04:14+00:00",
+      "shareholder_profit": 10.142393
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-05",
+      "news_id": "17228149915511",
+      "raw_path": "CFARM/financials/2567/H1/source.zip",
+      "sha256": "0baad4f75ce99ff511fec5f0c90635c720d735515f584c50a3b780994c5c4c60",
+      "ingested_at": "2026-04-28T04:04:24+00:00",
+      "shareholder_profit": 1.314635
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-06-05",
+      "news_id": "17175438274011",
+      "raw_path": "CFARM/financials/2567/Q1/source.zip",
+      "sha256": "8b2bebfaa8e781f010d17ecef0d23fb3ac0b7ab0207785e733202a710e39fdb6",
+      "ingested_at": "2026-04-28T04:04:28+00:00",
+      "shareholder_profit": 1.852312
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-10",
+      "news_id": "17627310447461",
+      "raw_path": "CFARM/financials/2568/9M/source.zip",
+      "sha256": "b87852ab65535323c77e59dec78e1016bdb5b92c39fd9ec46ee5bea2670cdc5f",
+      "ingested_at": "2026-04-28T04:03:58+00:00",
+      "shareholder_profit": 10.25065
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-24",
+      "news_id": "17718892098971",
+      "raw_path": "CFARM/financials/2568/FY/source.zip",
+      "sha256": "19e1290246de1b5993430c1a26a0ab0892724c72b36adc7b11ccba2b4214903d",
+      "ingested_at": "2026-04-28T04:03:53+00:00",
+      "shareholder_profit": 10.845628
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361043971",
+      "raw_path": "CFARM/financials/2568/H1/source.zip",
+      "sha256": "8071d4124dd68508afd668ad5e005c21d0d3650a408fed9c605bf1f106fb6116",
+      "ingested_at": "2026-04-28T04:04:04+00:00",
+      "shareholder_profit": -3.391748
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903542591",
+      "raw_path": "CFARM/financials/2568/Q1/source.zip",
+      "sha256": "d4f46648aaae48811742f77912ca77da6dee732761e0ffd3c9e6f6a2bd11cc39",
+      "ingested_at": "2026-04-28T04:04:08+00:00",
+      "shareholder_profit": 0.750364
+    }
+  ]
+}

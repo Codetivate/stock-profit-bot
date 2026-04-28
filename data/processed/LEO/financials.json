@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "symbol": "LEO",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-23",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 26.996973,
+      "Q2": 42.698447,
+      "Q3": 52.227692,
+      "Q4": 76.88351599999999,
+      "FullYear": 198.806628
+    },
+    "2565": {
+      "Q1": 89.924,
+      "Q2": 89.924,
+      "Q3": 107.353,
+      "Q4": 17.387000000000015,
+      "FullYear": 304.588
+    },
+    "2566": {
+      "Q1": 18.959,
+      "Q2": 18.818,
+      "Q3": 16.292,
+      "Q4": 29.396,
+      "FullYear": 83.465
+    },
+    "2567": {
+      "Q1": 10.42,
+      "Q2": 11.084,
+      "Q3": 12.718,
+      "Q4": 13.335,
+      "FullYear": 47.557
+    },
+    "2568": {
+      "Q1": 8.672,
+      "Q2": 5.358,
+      "Q3": 2.305,
+      "Q4": -7.553000000000001,
+      "FullYear": 8.782
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-11",
+      "news_id": "2021121695",
+      "raw_path": "LEO/financials/2564/9M/source.zip",
+      "sha256": "3a8bbd646e091e1802908fd443af4129d5f4e6f1f61577dcb8bb15e65bbafb62",
+      "ingested_at": "2026-04-28T06:08:55+00:00",
+      "shareholder_profit": 52.227692
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-21",
+      "news_id": "2022018469",
+      "raw_path": "LEO/financials/2564/FY/source.zip",
+      "sha256": "c42219266b37dd8f2d33141d94ea56bc953888aa8ff2e6737489573fc7998ea5",
+      "ingested_at": "2026-04-28T06:08:49+00:00",
+      "shareholder_profit": 198.806628
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-11",
+      "news_id": "2021087811",
+      "raw_path": "LEO/financials/2564/H1/source.zip",
+      "sha256": "059032fa7256a404b7f810f78d7a0fd5cfdeeefad87495c7b710a1fe8b3ce326",
+      "ingested_at": "2026-04-28T06:09:00+00:00",
+      "shareholder_profit": 42.698447
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-13",
+      "news_id": "2021056730",
+      "raw_path": "LEO/financials/2564/Q1/source.zip",
+      "sha256": "5bbe3f202fd776dc430f72e9037d8e272fd92cf2422f8482ef71dd5481247a17",
+      "ingested_at": "2026-04-28T06:09:06+00:00",
+      "shareholder_profit": 26.996973
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-14",
+      "news_id": "2022134758",
+      "raw_path": "LEO/financials/2565/9M/source.zip",
+      "sha256": "658e6166392b8ef5c221fbc63560a88023abdc5b88144093c549e9fa1b8dfc39",
+      "ingested_at": "2026-04-28T06:08:33+00:00",
+      "shareholder_profit": 107.353
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-20",
+      "news_id": "2023017043",
+      "raw_path": "LEO/financials/2565/FY/source.zip",
+      "sha256": "ad6bcf104b557c4a4318e4193d319c33da8479019393e6dd27fff62fcff1231c",
+      "ingested_at": "2026-04-28T06:08:28+00:00",
+      "shareholder_profit": 304.588
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-15",
+      "news_id": "2022096509",
+      "raw_path": "LEO/financials/2565/H1/source.zip",
+      "sha256": "155c2b94adbb09ae9140b98bf62ec586a9032e9257b144e20d779fa454337f5b",
+      "ingested_at": "2026-04-28T06:08:39+00:00",
+      "shareholder_profit": 89.924
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-13",
+      "news_id": "2022062079",
+      "raw_path": "LEO/financials/2565/Q1/source.zip",
+      "sha256": "3b4026cfbaca79249220e823264542a2c0f1445c559359ee58c45bed3d7ccc8f",
+      "ingested_at": "2026-04-28T06:08:44+00:00",
+      "shareholder_profit": 89.924
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-10",
+      "news_id": "16995730793741",
+      "raw_path": "LEO/financials/2566/9M/source.zip",
+      "sha256": "ae70195a0d1eb03334c3e6a49eebbac3d3c78540126c2f20d385984f7ee79b02",
+      "ingested_at": "2026-04-28T06:08:13+00:00",
+      "shareholder_profit": 16.292
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-27",
+      "news_id": "17089869117201",
+      "raw_path": "LEO/financials/2566/FY/source.zip",
+      "sha256": "9c9d911b490bebc2f36b4209d5c30dd30fae2b9b8dae087a505374c535a9cb76",
+      "ingested_at": "2026-04-28T06:08:08+00:00",
+      "shareholder_profit": 83.465
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-11",
+      "news_id": "16917102171521",
+      "raw_path": "LEO/financials/2566/H1/source.zip",
+      "sha256": "e0e8521087184f22b3ab6db0202e730edfb0fdc34712ed50bb7494cad1924378",
+      "ingested_at": "2026-04-28T06:08:18+00:00",
+      "shareholder_profit": 18.818
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-15",
+      "news_id": "16841053941681",
+      "raw_path": "LEO/financials/2566/Q1/source.zip",
+      "sha256": "58ac2771820461cc7bc4d6a2f52b3d1b51be08c989c2d7f57b061649bd47d17e",
+      "ingested_at": "2026-04-28T06:08:23+00:00",
+      "shareholder_profit": 18.959
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-08",
+      "news_id": "17310157164631",
+      "raw_path": "LEO/financials/2567/9M/source.zip",
+      "sha256": "2c48993d994147200997777976cd23f24d3bb0cab7bed017c886fb9c9506cf9a",
+      "ingested_at": "2026-04-28T06:07:52+00:00",
+      "shareholder_profit": 12.718
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-28",
+      "news_id": "17406928539071",
+      "raw_path": "LEO/financials/2567/FY/source.zip",
+      "sha256": "4096db679383f4c94c9eee69fbab2ca61e449f0d87158e875179fba667688024",
+      "ingested_at": "2026-04-28T06:07:47+00:00",
+      "shareholder_profit": 47.557
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-09",
+      "news_id": "17231594094461",
+      "raw_path": "LEO/financials/2567/H1/source.zip",
+      "sha256": "1f52bdf8e3320956c321bd2a184a9df867c7487fdba73bdfc968548ede246db8",
+      "ingested_at": "2026-04-28T06:07:57+00:00",
+      "shareholder_profit": 11.084
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-10",
+      "news_id": "17152924591611",
+      "raw_path": "LEO/financials/2567/Q1/source.zip",
+      "sha256": "578c2f5fd37a9019d9537de807ddb9dfb9f311ff3a0a13ef63a32924166e1c35",
+      "ingested_at": "2026-04-28T06:08:03+00:00",
+      "shareholder_profit": 10.42
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-11",
+      "news_id": "17628159922731",
+      "raw_path": "LEO/financials/2568/9M/source.zip",
+      "sha256": "ab4fe42a48f273daa590434e655887b56239b309ad2aafe7ee8126388090ebb0",
+      "ingested_at": "2026-04-28T06:07:32+00:00",
+      "shareholder_profit": 2.305
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-23",
+      "news_id": "17718030177991",
+      "raw_path": "LEO/financials/2568/FY/source.zip",
+      "sha256": "c74e37687db81cb3f0275038a8091d4619f5874e4b564f7489a3a00ab56e2532",
+      "ingested_at": "2026-04-28T06:07:26+00:00",
+      "shareholder_profit": 8.782
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361028591",
+      "raw_path": "LEO/financials/2568/H1/source.zip",
+      "sha256": "d29e815a838b6aabcb6654fc1c55c51050aeb95ef4f38c67181bd3058c8654d0",
+      "ingested_at": "2026-04-28T06:07:37+00:00",
+      "shareholder_profit": 5.358
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903550861",
+      "raw_path": "LEO/financials/2568/Q1/source.zip",
+      "sha256": "7f64d55d1db15d14be6b226958ec1b88af8fa385429cbae13e34c09533a1f5e9",
+      "ingested_at": "2026-04-28T06:07:42+00:00",
+      "shareholder_profit": 8.672
+    }
+  ]
+}

@@ -7,39 +7,39 @@
   "updated_at": "2026-02-25",
   "quarterly_history": {
     "2564": {
-      "Q1": 285.386,
-      "Q2": 30.748999999999967,
+      "Q1": 226.788,
+      "Q2": -214.387,
       "Q3": 393.817,
-      "Q4": -191.578708,
+      "Q4": 112.15529199999997,
       "FullYear": 518.373292
     },
     "2565": {
       "Q1": 164.676,
-      "Q2": 112.41000000000003,
+      "Q2": -83.61099999999999,
       "Q3": -42.585,
-      "Q4": -79.799532,
-      "FullYear": 154.701468
+      "Q4": 49.074158000000004,
+      "FullYear": 87.554158
     },
     "2566": {
       "Q1": 41.522,
       "Q2": 154.896,
       "Q3": 50.302,
-      "Q4": 112.96294400000005,
-      "FullYear": 359.682944
+      "Q4": 112.39227900000003,
+      "FullYear": 359.112279
     },
     "2567": {
       "Q1": 111.252,
-      "Q2": -0.631,
+      "Q2": 154.896,
       "Q3": 7.049,
-      "Q4": -16.088208,
-      "FullYear": 101.581792
+      "Q4": -222.962056,
+      "FullYear": 50.234944
     },
     "2568": {
       "Q1": 64.051,
       "Q2": 83.014,
       "Q3": 128.529,
-      "Q4": 285.089229,
-      "FullYear": 560.683229
+      "Q4": 194.40206,
+      "FullYear": 469.99606
     }
   },
   "sources": [
@@ -71,7 +71,7 @@
       "raw_path": "LOXLEY/financials/2564/H1/source.zip",
       "sha256": "5099464fb3c8ef17c0c7789ec69dbdbe47f1e4e97dbb6008d446e85a52d9d956",
       "ingested_at": "2026-04-23T21:20:47+00:00",
-      "shareholder_profit": 316.135
+      "shareholder_profit": 12.401
     },
     {
       "year": 2564,
@@ -81,7 +81,7 @@
       "raw_path": "LOXLEY/financials/2564/Q1/source.zip",
       "sha256": "1dc604a8a370202636fe233bcb0b9c896102dbbfd31b26689bf0865e77b9039c",
       "ingested_at": "2026-04-23T21:20:52+00:00",
-      "shareholder_profit": 285.386
+      "shareholder_profit": 226.788
     },
     {
       "year": 2565,
@@ -101,7 +101,7 @@
       "raw_path": "LOXLEY/financials/2565/FY/source.zip",
       "sha256": "5a0050e4caffaca2cb791c58686249d04d4e1b4e803d3e3f53226fc04a299f2e",
       "ingested_at": "2026-04-23T21:20:16+00:00",
-      "shareholder_profit": 154.701468
+      "shareholder_profit": 87.554158
     },
     {
       "year": 2565,
@@ -111,7 +111,7 @@
       "raw_path": "LOXLEY/financials/2565/H1/source.zip",
       "sha256": "93f421b1ff507030e94ff0a509e4fd25b6740e4cd0a185510284ce8f08a5bf86",
       "ingested_at": "2026-04-23T21:20:29+00:00",
-      "shareholder_profit": 277.086
+      "shareholder_profit": 81.065
     },
     {
       "year": 2565,
@@ -141,7 +141,7 @@
       "raw_path": "LOXLEY/financials/2566/FY/source.zip",
       "sha256": "bb6aafcbf222d2b9ba5718229471c6dd157ce6213e4270ac4c5d16ba5abfb00f",
       "ingested_at": "2026-04-23T21:19:58+00:00",
-      "shareholder_profit": 359.682944
+      "shareholder_profit": 359.112279
     },
     {
       "year": 2566,
@@ -181,7 +181,7 @@
       "raw_path": "LOXLEY/financials/2567/FY/source.zip",
       "sha256": "4375f44760b1a04e1eff37b2643d478e78325a40384e8542dc8d5f6bd42a26a5",
       "ingested_at": "2026-04-23T21:19:40+00:00",
-      "shareholder_profit": 101.581792
+      "shareholder_profit": 50.234944
     },
     {
       "year": 2567,
@@ -191,7 +191,7 @@
       "raw_path": "LOXLEY/financials/2567/H1/source.zip",
       "sha256": "99617ae3fb7d5adfdbbdb67b8f7f85f082dd4d16beeba36cabf0ee0cf6d2773b",
       "ingested_at": "2026-04-23T21:19:49+00:00",
-      "shareholder_profit": -0.631
+      "shareholder_profit": 154.896
     },
     {
       "year": 2567,
@@ -221,7 +221,7 @@
       "raw_path": "LOXLEY/financials/2568/FY/source.zip",
       "sha256": "d11d0e36f91107ee4c6522b052e942cabf87e68d2e2d8cbee4dc2cf0cddeb283",
       "ingested_at": "2026-04-23T21:19:22+00:00",
-      "shareholder_profit": 560.683229
+      "shareholder_profit": 469.99606
     },
     {
       "year": 2568,

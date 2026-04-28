@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "symbol": "DEXON",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-04-27",
+  "quarterly_history": {
+    "2565": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": 105.153012
+    },
+    "2566": {
+      "Q1": 4.093633,
+      "Q2": -21.982094,
+      "Q3": -20.474854,
+      "Q4": 88.69372000000001,
+      "FullYear": 50.330405
+    },
+    "2567": {
+      "Q1": -6.023953,
+      "Q2": 21.767054,
+      "Q3": -8.67124,
+      "Q4": 49.881229999999995,
+      "FullYear": 56.953091
+    },
+    "2568": {
+      "Q1": -20.816473,
+      "Q2": -26.113655,
+      "Q3": -14.693499,
+      "Q4": 1.9449489999999976,
+      "FullYear": -59.678678
+    }
+  },
+  "sources": [
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-03-30",
+      "news_id": "2023037983",
+      "raw_path": "DEXON/financials/2565/FY/source.zip",
+      "sha256": "e618c43c246b03f3fd242b0833889d48ac8c52d7af116061946b9e47c8a84f1d",
+      "ingested_at": "2026-04-28T06:25:25+00:00",
+      "shareholder_profit": 105.153012
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-13",
+      "news_id": "16998304599041",
+      "raw_path": "DEXON/financials/2566/9M/source.zip",
+      "sha256": "19bca6315df0783c7245ca02a6f32c335233aa69ca916c5f0885f3b665555717",
+      "ingested_at": "2026-04-28T06:25:12+00:00",
+      "shareholder_profit": -20.474854
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-29",
+      "news_id": "17091568998881",
+      "raw_path": "DEXON/financials/2566/FY/source.zip",
+      "sha256": "c40526db07f94d4eb8e0dd2c3bf52ff19073b6f7d8f5bed266e78f46ddf402c2",
+      "ingested_at": "2026-04-28T06:25:08+00:00",
+      "shareholder_profit": 50.330405
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-15",
+      "news_id": "16920539400851",
+      "raw_path": "DEXON/financials/2566/H1/source.zip",
+      "sha256": "32b84b77b4d097a37d006733cc05b7a655db2717023b310b34e9e48b46806597",
+      "ingested_at": "2026-04-28T06:25:16+00:00",
+      "shareholder_profit": -21.982094
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-11",
+      "news_id": "16837583978031",
+      "raw_path": "DEXON/financials/2566/Q1/source.zip",
+      "sha256": "0bb0c0faf67fae754d4b16032e021ea568fb9a91741c8ca305eb5e0abf8208ba",
+      "ingested_at": "2026-04-28T06:25:21+00:00",
+      "shareholder_profit": 4.093633
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-08",
+      "news_id": "17310157169461",
+      "raw_path": "DEXON/financials/2567/9M/source.zip",
+      "sha256": "9e5ab50e843a4c833aed3814d5c318862adbdaf8016fe03ba7d29c15e7eda617",
+      "ingested_at": "2026-04-28T06:24:54+00:00",
+      "shareholder_profit": -8.67124
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-19",
+      "news_id": "17399221653241",
+      "raw_path": "DEXON/financials/2567/FY/source.zip",
+      "sha256": "557e90bac346d25d47b4ff109c80e8e2c633d17899e1f35bb8a7c33c016d665a",
+      "ingested_at": "2026-04-28T06:24:50+00:00",
+      "shareholder_profit": 56.953091
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-14",
+      "news_id": "17235858047511",
+      "raw_path": "DEXON/financials/2567/H1/source.zip",
+      "sha256": "2c1626dc65feb76a703d47efb32243766cde66aff13a18c296aea107a8526f15",
+      "ingested_at": "2026-04-28T06:24:59+00:00",
+      "shareholder_profit": 21.767054
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-15",
+      "news_id": "17157257474071",
+      "raw_path": "DEXON/financials/2567/Q1/source.zip",
+      "sha256": "6b6b282c9686f46b2a2a87374d21e319d95ef3c063a0abf75fa31ac1a45820e0",
+      "ingested_at": "2026-04-28T06:25:03+00:00",
+      "shareholder_profit": -6.023953
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-07",
+      "news_id": "17624721998131",
+      "raw_path": "DEXON/financials/2568/9M/source.zip",
+      "sha256": "79f2e5a6e69bce6fa8ca5e6dc79fdc07d148da81947cce93edcdc90bcf778587",
+      "ingested_at": "2026-04-28T06:24:37+00:00",
+      "shareholder_profit": -14.693499
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-04-27",
+      "news_id": "17772434059231",
+      "raw_path": "DEXON/financials/2568/FY/source.zip",
+      "sha256": "2f983c54004cf9502dfd6d6fa3d1f07db1be9ac8bbe041f15427db7f46e9c436",
+      "ingested_at": "2026-04-28T06:24:33+00:00",
+      "shareholder_profit": -59.678678
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229919251",
+      "raw_path": "DEXON/financials/2568/H1/source.zip",
+      "sha256": "28047527a1b07164df3c77c2200b699ab08b21b0fa4cdb3a97e00e84cf2a9b7a",
+      "ingested_at": "2026-04-28T06:24:41+00:00",
+      "shareholder_profit": -26.113655
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-14",
+      "news_id": "17471784602531",
+      "raw_path": "DEXON/financials/2568/Q1/source.zip",
+      "sha256": "0068282849366d42957a6e4566acd2240c7f94428a38909c5c9c49ac0391c36b",
+      "ingested_at": "2026-04-28T06:24:46+00:00",
+      "shareholder_profit": -20.816473
+    }
+  ]
+}

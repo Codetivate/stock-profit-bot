@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "symbol": "HYDRO",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-03-04",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 5.83,
+      "Q2": -6.715,
+      "Q3": -3.306,
+      "Q4": -15.793900059999991,
+      "FullYear": -19.98490005999999
+    },
+    "2565": {
+      "Q1": -10.192,
+      "Q2": -11.654,
+      "Q3": -34.737,
+      "Q4": -24.13788446999998,
+      "FullYear": -80.72088446999999
+    },
+    "2566": {
+      "Q1": -12.552,
+      "Q2": -17.14,
+      "Q3": -12.837,
+      "Q4": -29.185897129999983,
+      "FullYear": -71.71489712999998
+    },
+    "2567": {
+      "Q1": -5.408,
+      "Q2": -18.809,
+      "Q3": -39.831,
+      "Q4": -154.31240830999997,
+      "FullYear": -218.36040830999994
+    },
+    "2568": {
+      "Q1": 0.413,
+      "Q2": 7.078,
+      "Q3": 63.915,
+      "Q4": 13.539284810000034,
+      "FullYear": 84.94528481000003
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-12",
+      "news_id": "2021123835",
+      "raw_path": "HYDRO/financials/2564/9M/source.zip",
+      "sha256": "e1b0f268064fb9b3a8ac273ec2da619c74e51c0009f743ec99a2cfbbd9abb684",
+      "ingested_at": "2026-04-28T05:21:42+00:00",
+      "shareholder_profit": -3.306
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-28",
+      "news_id": "2022026347",
+      "raw_path": "HYDRO/financials/2564/FY/source.zip",
+      "sha256": "2e30b987cd83ceb33a3f248a00dfdba0358de9d0083d39ce25d9837a19263835",
+      "ingested_at": "2026-04-28T05:21:37+00:00",
+      "shareholder_profit": -19.98490005999999
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-11",
+      "news_id": "2021088117",
+      "raw_path": "HYDRO/financials/2564/H1/source.zip",
+      "sha256": "7f2bc02e2cf9402e7653b7a4211ff8645883538bf0366bd68df081d740f41c14",
+      "ingested_at": "2026-04-28T05:21:47+00:00",
+      "shareholder_profit": -6.715
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-14",
+      "news_id": "2021059135",
+      "raw_path": "HYDRO/financials/2564/Q1/source.zip",
+      "sha256": "5544ac87368676c7b7eb5a94ebaeb173d812358f102bd02ad444d6edf51b1fb3",
+      "ingested_at": "2026-04-28T05:21:51+00:00",
+      "shareholder_profit": 5.83
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-14",
+      "news_id": "2022135031",
+      "raw_path": "HYDRO/financials/2565/9M/source.zip",
+      "sha256": "3c2b15327078cbb7f19cb997b0e6a9c5f9d43dc71671690f006c86c4eaf2aab6",
+      "ingested_at": "2026-04-28T05:21:21+00:00",
+      "shareholder_profit": -34.737
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-03-01",
+      "news_id": "2023026914",
+      "raw_path": "HYDRO/financials/2565/FY/source.zip",
+      "sha256": "1c367a98db6ce63965e0bdc1c5d5657b8547ffd62452fbf3fe9e377a37876203",
+      "ingested_at": "2026-04-28T05:21:16+00:00",
+      "shareholder_profit": -80.72088446999999
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-10",
+      "news_id": "2022093175",
+      "raw_path": "HYDRO/financials/2565/H1/source.zip",
+      "sha256": "8ed6d13a4cdc531c88ea2ef4325898acf40dbecaf320df4c8b9abe197eb52c68",
+      "ingested_at": "2026-04-28T05:21:26+00:00",
+      "shareholder_profit": -11.654
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-13",
+      "news_id": "2022062857",
+      "raw_path": "HYDRO/financials/2565/Q1/source.zip",
+      "sha256": "456d266ed4b0b9f2f7a4818f2335407ba2c942110ed04d11a3dd7e4a9c13f7b9",
+      "ingested_at": "2026-04-28T05:21:31+00:00",
+      "shareholder_profit": -10.192
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-14",
+      "news_id": "16999132713791",
+      "raw_path": "HYDRO/financials/2566/9M/source.zip",
+      "sha256": "9f3d15c3830ce053f3ca069e29fb8bc3b99d9e088fd6f27fd5260b55948749c7",
+      "ingested_at": "2026-04-28T05:21:01+00:00",
+      "shareholder_profit": -12.837
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-03-01",
+      "news_id": "17092430839301",
+      "raw_path": "HYDRO/financials/2566/FY/source.zip",
+      "sha256": "bd67001ef84b271ab15a1acff7b5c7410a0cd89bdadea30080f4cec2407803af",
+      "ingested_at": "2026-04-28T05:20:55+00:00",
+      "shareholder_profit": -71.71489712999998
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-10",
+      "news_id": "16916230334301",
+      "raw_path": "HYDRO/financials/2566/H1/source.zip",
+      "sha256": "652e15d9fe923efe89100c461cfba4b954ac802260a17783701c4b17ec49e37b",
+      "ingested_at": "2026-04-28T05:21:06+00:00",
+      "shareholder_profit": -17.14
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-15",
+      "news_id": "16841053945781",
+      "raw_path": "HYDRO/financials/2566/Q1/source.zip",
+      "sha256": "cc450f3480bb793da39277a7a66dc6fb2afd770b50a345f58b71bdb833d1fb42",
+      "ingested_at": "2026-04-28T05:21:11+00:00",
+      "shareholder_profit": -12.552
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361314151",
+      "raw_path": "HYDRO/financials/2567/9M/source.zip",
+      "sha256": "b76b74b5c893920c299c3e5a00f3ea40946c3af28f10da07aa856edc9b27da27",
+      "ingested_at": "2026-04-28T05:20:40+00:00",
+      "shareholder_profit": -39.831
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-03-03",
+      "news_id": "17409536795181",
+      "raw_path": "HYDRO/financials/2567/FY/source.zip",
+      "sha256": "4aa98945cd64a453056d3ff9314e81a0f6e3ec87ea58739e98fa63f64b02af69",
+      "ingested_at": "2026-04-28T05:20:35+00:00",
+      "shareholder_profit": -218.36040830999994
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-14",
+      "news_id": "17235858081341",
+      "raw_path": "HYDRO/financials/2567/H1/source.zip",
+      "sha256": "e46dd203b6c13a7cb3b72abd949228306196f702740583b9954338c49002e7e7",
+      "ingested_at": "2026-04-28T05:20:45+00:00",
+      "shareholder_profit": -18.809
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-15",
+      "news_id": "17157257460761",
+      "raw_path": "HYDRO/financials/2567/Q1/source.zip",
+      "sha256": "e3a345766c1f59741de13fede2508ed0c22ff6f4b7c734d6aa403ad5e1c79a0e",
+      "ingested_at": "2026-04-28T05:20:50+00:00",
+      "shareholder_profit": -5.408
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-17",
+      "news_id": "17633294889211",
+      "raw_path": "HYDRO/financials/2568/9M/source.zip",
+      "sha256": "2a09fe2ef1bfdad87a246f7cd2e01336a8d66a04076a6fcb5198f048895d7023",
+      "ingested_at": "2026-04-28T05:20:20+00:00",
+      "shareholder_profit": 63.915
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-03-04",
+      "news_id": "17725751954171",
+      "raw_path": "HYDRO/financials/2568/FY/source.zip",
+      "sha256": "ec4456903a6871fefb6cfedd1b05b46b46693afd31be72c2693ca1d1cd03a36b",
+      "ingested_at": "2026-04-28T05:20:15+00:00",
+      "shareholder_profit": 84.94528481000003
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229930391",
+      "raw_path": "HYDRO/financials/2568/H1/source.zip",
+      "sha256": "4bec4b997cfe29141e6f3596c81e77e943b2c422f798a5d06751e9104f980906",
+      "ingested_at": "2026-04-28T05:20:25+00:00",
+      "shareholder_profit": 7.078
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-16",
+      "news_id": "17473473840401",
+      "raw_path": "HYDRO/financials/2568/Q1/source.zip",
+      "sha256": "7413bc28079ef95bde75f03ef562ea90f8910844856de82a535231dfa79bb0c6",
+      "ingested_at": "2026-04-28T05:20:30+00:00",
+      "shareholder_profit": 0.413
+    }
+  ]
+}

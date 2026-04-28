@@ -7,31 +7,31 @@
   "updated_at": "2026-02-26",
   "quarterly_history": {
     "2564": {
-      "Q1": 50.84849854000001,
+      "Q1": -15.131726380000007,
       "Q2": -35.17757935000002,
       "Q3": -22.01885266000001,
-      "Q4": 57.19643201000004,
-      "FullYear": 50.84849854000001
+      "Q4": -8.439917619999978,
+      "FullYear": -80.76807601000002
     },
     "2565": {
-      "Q1": 50.84849854000001,
-      "Q2": 50.84849854000001,
-      "Q3": 50.84849854000001,
-      "Q4": -101.69699708000002,
-      "FullYear": 50.84849854000001
+      "Q1": -2.9206158399999884,
+      "Q2": -25.804990849999992,
+      "Q3": -26.637498109999996,
+      "Q4": -12.316175210000026,
+      "FullYear": -67.67928001
     },
     "2566": {
-      "Q1": 50.84849854000001,
-      "Q2": 50.84849854000001,
-      "Q3": 50.84849854000001,
-      "Q4": -101.69699708000002,
-      "FullYear": 50.84849854000001
+      "Q1": -6.231214740000007,
+      "Q2": -2.7672921400001216,
+      "Q3": -11.152780400000006,
+      "Q4": null,
+      "FullYear": null
     },
     "2567": {
-      "Q1": 50.84849854000001,
-      "Q2": 50.84849854000001,
-      "Q3": 50.84849854000001,
-      "Q4": -268.36710046999997,
+      "Q1": -1.772943189999999,
+      "Q2": -29.967126009999834,
+      "Q3": -13.807955060000504,
+      "Q4": -70.2735805899996,
       "FullYear": -115.82160484999993
     },
     "2568": {
@@ -61,7 +61,7 @@
       "raw_path": "BEAUTY/financials/2564/FY/source.zip",
       "sha256": "c31b0efc297b760f2dc1280b02eb2cd1fa2af75c49fdefbc64d7d8ca6035cd67",
       "ingested_at": "2026-04-24T07:40:10+00:00",
-      "shareholder_profit": 50.84849854000001
+      "shareholder_profit": -80.76807601000002
     },
     {
       "year": 2564,
@@ -81,7 +81,7 @@
       "raw_path": "BEAUTY/financials/2564/Q1/source.zip",
       "sha256": "46ea61e41a7da81814c54c220cd2f89231bae71471a4c2c6ab533cdb87ebe0e3",
       "ingested_at": "2026-04-24T07:40:23+00:00",
-      "shareholder_profit": 50.84849854000001
+      "shareholder_profit": -15.131726380000007
     },
     {
       "year": 2565,
@@ -91,7 +91,7 @@
       "raw_path": "BEAUTY/financials/2565/9M/source.zip",
       "sha256": "679f9c2f61732ecc1a83ed1e8118d49e1f2d132d2ccf2307b99ca5e5bb57c3e6",
       "ingested_at": "2026-04-24T07:39:57+00:00",
-      "shareholder_profit": 50.84849854000001
+      "shareholder_profit": -26.637498109999996
     },
     {
       "year": 2565,
@@ -101,7 +101,7 @@
       "raw_path": "BEAUTY/financials/2565/FY/source.zip",
       "sha256": "a5f13361c4466d2caac9ce12778309a1a59318b1e56cacb482ccaefa7362376a",
       "ingested_at": "2026-04-24T07:39:52+00:00",
-      "shareholder_profit": 50.84849854000001
+      "shareholder_profit": -67.67928001
     },
     {
       "year": 2565,
@@ -111,7 +111,7 @@
       "raw_path": "BEAUTY/financials/2565/H1/source.zip",
       "sha256": "75e6e2cca666112cc2c5b5ab1cae0a34ede844d289087f9314a23c33baf1535b",
       "ingested_at": "2026-04-24T07:40:02+00:00",
-      "shareholder_profit": 50.84849854000001
+      "shareholder_profit": -25.804990849999992
     },
     {
       "year": 2565,
@@ -121,7 +121,7 @@
       "raw_path": "BEAUTY/financials/2565/Q1/source.zip",
       "sha256": "94723ccf0c8b6fbda93e2a4aade4fa78d5dbb9eaabe089e24ca5889ced0bed58",
       "ingested_at": "2026-04-24T07:40:06+00:00",
-      "shareholder_profit": 50.84849854000001
+      "shareholder_profit": -2.9206158399999884
     },
     {
       "year": 2566,
@@ -131,17 +131,7 @@
       "raw_path": "BEAUTY/financials/2566/9M/source.zip",
       "sha256": "6cac58d087bf2a7d152ef75ec3be41d69d90e00af2e52edd076440ddddb7fbae",
       "ingested_at": "2026-04-24T07:39:39+00:00",
-      "shareholder_profit": 50.84849854000001
-    },
-    {
-      "year": 2566,
-      "period": "FY",
-      "filing_date": "2024-02-28",
-      "news_id": "17090750672101",
-      "raw_path": "BEAUTY/financials/2566/FY/source.zip",
-      "sha256": "451e83b2b936824d453f8c1aa3834231ac8828358ce61c5b52f65f58f0027592",
-      "ingested_at": "2026-04-24T07:39:35+00:00",
-      "shareholder_profit": 50.84849854000001
+      "shareholder_profit": -11.152780400000006
     },
     {
       "year": 2566,
@@ -151,7 +141,7 @@
       "raw_path": "BEAUTY/financials/2566/H1/source.zip",
       "sha256": "b25716a661be66387bebe74ffb3a936773e0400d714147104a1760b31dbb1db9",
       "ingested_at": "2026-04-24T07:39:43+00:00",
-      "shareholder_profit": 50.84849854000001
+      "shareholder_profit": -2.7672921400001216
     },
     {
       "year": 2566,
@@ -161,7 +151,7 @@
       "raw_path": "BEAUTY/financials/2566/Q1/source.zip",
       "sha256": "0a62e20cb2da3213e290713b499d593ea25ac7847c857b78c7fab78f799c212f",
       "ingested_at": "2026-04-24T07:39:48+00:00",
-      "shareholder_profit": 50.84849854000001
+      "shareholder_profit": -6.231214740000007
     },
     {
       "year": 2567,
@@ -171,7 +161,7 @@
       "raw_path": "BEAUTY/financials/2567/9M/source.zip",
       "sha256": "1ce54450584071439499ff712cba34c18fd4f050fbc67701656708be88808a5a",
       "ingested_at": "2026-04-24T07:39:22+00:00",
-      "shareholder_profit": 50.84849854000001
+      "shareholder_profit": -13.807955060000504
     },
     {
       "year": 2567,
@@ -191,7 +181,7 @@
       "raw_path": "BEAUTY/financials/2567/H1/source.zip",
       "sha256": "dde960bb1e91228c96fb493d6edec404c8c714aa8f047a82d4a471fecc08774e",
       "ingested_at": "2026-04-24T07:39:26+00:00",
-      "shareholder_profit": 50.84849854000001
+      "shareholder_profit": -29.967126009999834
     },
     {
       "year": 2567,
@@ -201,7 +191,7 @@
       "raw_path": "BEAUTY/financials/2567/Q1/source.zip",
       "sha256": "d5711ed330eb56680e51318f28a60bafe5637ba4967266a7bf8c86b0770c5111",
       "ingested_at": "2026-04-24T07:39:31+00:00",
-      "shareholder_profit": 50.84849854000001
+      "shareholder_profit": -1.772943189999999
     },
     {
       "year": 2568,

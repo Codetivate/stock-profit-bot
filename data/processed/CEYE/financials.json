@@ -1,0 +1,207 @@
+{
+  "schema_version": 1,
+  "symbol": "CEYE",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-27",
+  "quarterly_history": {
+    "2564": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": 28.446908
+    },
+    "2565": {
+      "Q1": 21.799,
+      "Q2": -21.011,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": 52.021573
+    },
+    "2566": {
+      "Q1": 22.307,
+      "Q2": -5.732999999999997,
+      "Q3": -4.368000000000002,
+      "Q4": 52.719815999999994,
+      "FullYear": 64.925816
+    },
+    "2567": {
+      "Q1": 9.217,
+      "Q2": -2.979,
+      "Q3": -11.560000000000002,
+      "Q4": 28.077648000000003,
+      "FullYear": 22.755648
+    },
+    "2568": {
+      "Q1": 9.286,
+      "Q2": -0.9809999999999999,
+      "Q3": -4.635999999999999,
+      "Q4": 0.5502109999999991,
+      "FullYear": 4.219211
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-04-28",
+      "news_id": "2022050517",
+      "raw_path": "CEYE/financials/2564/FY/source.zip",
+      "sha256": "6984704d4ef510f6983f44bf767f9c644128c0379726dcbe91babcdaeee1259a",
+      "ingested_at": "2026-04-28T04:02:58+00:00",
+      "shareholder_profit": 28.446908
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-28",
+      "news_id": "2023026653",
+      "raw_path": "CEYE/financials/2565/FY/source.zip",
+      "sha256": "8f98d41f05edd5326691be545cb5d3d4b6249f21376a9c87301d01b198195526",
+      "ingested_at": "2026-04-28T04:02:38+00:00",
+      "shareholder_profit": 52.021573
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-15",
+      "news_id": "2022098034",
+      "raw_path": "CEYE/financials/2565/H1/source.zip",
+      "sha256": "c42ad7822907c38d4b6ee820da3ab89de6b52a9c8c5f37607cb41d1adb1c088d",
+      "ingested_at": "2026-04-28T04:02:48+00:00",
+      "shareholder_profit": 0.788
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-17",
+      "news_id": "2022063859",
+      "raw_path": "CEYE/financials/2565/Q1/source.zip",
+      "sha256": "2623bc55549e39c08ace475bf57ec98240a57e30e9d33caf7cf6591be1e8be9c",
+      "ingested_at": "2026-04-28T04:02:53+00:00",
+      "shareholder_profit": 21.799
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-13",
+      "news_id": "16998304602961",
+      "raw_path": "CEYE/financials/2566/9M/source.zip",
+      "sha256": "64e236f5c551918ea51d2ee8b6e6a30f1e442da7ceb2c2bf5d447271be57766c",
+      "ingested_at": "2026-04-28T04:02:21+00:00",
+      "shareholder_profit": 12.206
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-29",
+      "news_id": "17091569099001",
+      "raw_path": "CEYE/financials/2566/FY/source.zip",
+      "sha256": "3294c010410b0b180d7e351a72528e34e294519c14a96adc520fc35f368b56bd",
+      "ingested_at": "2026-04-28T04:02:15+00:00",
+      "shareholder_profit": 64.925816
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-15",
+      "news_id": "16920539402511",
+      "raw_path": "CEYE/financials/2566/H1/source.zip",
+      "sha256": "cb80a7b86c263b3db05df773914cca54f76c78f6e94eecd9c48fe8116dc24765",
+      "ingested_at": "2026-04-28T04:02:26+00:00",
+      "shareholder_profit": 16.574
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-15",
+      "news_id": "16841054047921",
+      "raw_path": "CEYE/financials/2566/Q1/source.zip",
+      "sha256": "c1ef0454ef70c88d6b2ad51e5ff0d6611447e29bf32adad1e68202a4d39a42a3",
+      "ingested_at": "2026-04-28T04:02:32+00:00",
+      "shareholder_profit": 22.307
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361316141",
+      "raw_path": "CEYE/financials/2567/9M/source.zip",
+      "sha256": "5567f127c14fb9f0bb66c5cddedbf0904fe9ad252036bcb835cce2064b8b3ac9",
+      "ingested_at": "2026-04-28T04:02:00+00:00",
+      "shareholder_profit": -5.322
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-28",
+      "news_id": "17406928515931",
+      "raw_path": "CEYE/financials/2567/FY/source.zip",
+      "sha256": "6cf800e66a48865310362f407e89ce1fbd430a7f12826fa72ee55cb1bdd37360",
+      "ingested_at": "2026-04-28T04:01:55+00:00",
+      "shareholder_profit": 22.755648
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-14",
+      "news_id": "17235858049291",
+      "raw_path": "CEYE/financials/2567/H1/source.zip",
+      "sha256": "71fded5ea7b0ef972986423ff50f87468a6f9800f05c3146e250e8d547cb9b65",
+      "ingested_at": "2026-04-28T04:02:05+00:00",
+      "shareholder_profit": 6.238
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-16",
+      "news_id": "17158119008751",
+      "raw_path": "CEYE/financials/2567/Q1/source.zip",
+      "sha256": "83e3c86dc587fd00c31491ef9cdcf9b7550c48ce50fabf6542f657b8d3685fe4",
+      "ingested_at": "2026-04-28T04:02:10+00:00",
+      "shareholder_profit": 9.217
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-14",
+      "news_id": "17630699602831",
+      "raw_path": "CEYE/financials/2568/9M/source.zip",
+      "sha256": "f94d55fa9c2479f6c01ff577b273695bfae2cfc6e1725521498ecf716e2c15aa",
+      "ingested_at": "2026-04-28T04:01:40+00:00",
+      "shareholder_profit": 3.669
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-27",
+      "news_id": "17721443180041",
+      "raw_path": "CEYE/financials/2568/FY/source.zip",
+      "sha256": "5dd4bf19dfc8a9bd3c1f70b1dcfb4df32443e13e031aacd075550675bea49ece",
+      "ingested_at": "2026-04-28T04:01:35+00:00",
+      "shareholder_profit": 4.219211
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361199461",
+      "raw_path": "CEYE/financials/2568/H1/source.zip",
+      "sha256": "213b69e36b5ea0388838fc3d4f0d5e0c0dd4ebe3e5c324426cc03c5f103db363",
+      "ingested_at": "2026-04-28T04:01:45+00:00",
+      "shareholder_profit": 8.305
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-15",
+      "news_id": "17472613186811",
+      "raw_path": "CEYE/financials/2568/Q1/source.zip",
+      "sha256": "c3b6d988da57ab5cbe442e8f3e8a876be151b1400e71912ab979d10943581b06",
+      "ingested_at": "2026-04-28T04:01:49+00:00",
+      "shareholder_profit": 9.286
+    }
+  ]
+}

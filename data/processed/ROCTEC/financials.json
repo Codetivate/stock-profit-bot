@@ -7,49 +7,52 @@
   "updated_at": "2026-02-11",
   "quarterly_history": {
     "2564": {
-      "Q1": null,
-      "Q2": null,
-      "Q3": null,
-      "Q4": null,
+      "Q1": 93.75,
+      "Q2": 50.425,
+      "Q3": -17.145,
+      "Q4": -1118.931992,
       "FullYear": -991.901992
     },
     "2565": {
-      "Q1": 93.75,
-      "Q2": 50.425,
-      "Q3": -53.174,
-      "Q4": -99.05731399999999,
-      "FullYear": -8.056314
+      "Q1": 33.989,
+      "Q2": 35.454,
+      "Q3": 41.642,
+      "Q4": -77.49544,
+      "FullYear": 33.58956
     },
     "2566": {
-      "Q1": 47.195,
-      "Q2": 53.396,
-      "Q3": 52.846,
-      "Q4": 39.743590000000005,
-      "FullYear": 193.18059
-    },
-    "2567": {
       "Q1": 42.323,
       "Q2": 56.302,
       "Q3": 67.907,
-      "Q4": 66.11344900000002,
+      "Q4": -32.99190699999999,
+      "FullYear": 133.540093
+    },
+    "2567": {
+      "Q1": null,
+      "Q2": 79.632,
+      "Q3": 84.177,
+      "Q4": 29.047449,
       "FullYear": 232.645449
     },
     "2568": {
-      "Q1": 74.437,
-      "Q2": 79.632,
-      "Q3": 84.177,
-      "Q4": 101.89088299999999,
-      "FullYear": 340.136883
-    },
-    "2569": {
       "Q1": 121.347,
       "Q2": 122.274,
       "Q3": 126.564,
-      "Q4": null,
-      "FullYear": null
+      "Q4": -30.048116999999962,
+      "FullYear": 340.136883
     }
   },
   "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2022-02-14",
+      "news_id": "2022015216",
+      "raw_path": "ROCTEC/financials/2565/9M/source.zip",
+      "sha256": "edf0cba50038ed568b6c6e6b03cc31735212423297a47be03deaf48a59c2af5d",
+      "ingested_at": "2026-04-24T01:11:57+00:00",
+      "shareholder_profit": -17.145
+    },
     {
       "year": 2564,
       "period": "FY",
@@ -61,27 +64,7 @@
       "shareholder_profit": -991.901992
     },
     {
-      "year": 2565,
-      "period": "9M",
-      "filing_date": "2022-02-14",
-      "news_id": "2022015216",
-      "raw_path": "ROCTEC/financials/2565/9M/source.zip",
-      "sha256": "edf0cba50038ed568b6c6e6b03cc31735212423297a47be03deaf48a59c2af5d",
-      "ingested_at": "2026-04-24T01:11:57+00:00",
-      "shareholder_profit": -53.174
-    },
-    {
-      "year": 2565,
-      "period": "FY",
-      "filing_date": "2022-05-25",
-      "news_id": "2022067433",
-      "raw_path": "ROCTEC/financials/2565/FY/source.zip",
-      "sha256": "9bb1d34b8bf2cbcc990adf9f3337ec5889b49f22a13e39b258da4fccb8e11159",
-      "ingested_at": "2026-04-24T01:11:52+00:00",
-      "shareholder_profit": -8.056314
-    },
-    {
-      "year": 2565,
+      "year": 2564,
       "period": "H1",
       "filing_date": "2021-11-11",
       "news_id": "2021121849",
@@ -91,7 +74,7 @@
       "shareholder_profit": 50.425
     },
     {
-      "year": 2565,
+      "year": 2564,
       "period": "Q1",
       "filing_date": "2021-08-10",
       "news_id": "2021086400",
@@ -101,14 +84,54 @@
       "shareholder_profit": 93.75
     },
     {
-      "year": 2566,
+      "year": 2565,
       "period": "9M",
       "filing_date": "2023-02-13",
       "news_id": "2023014481",
       "raw_path": "ROCTEC/financials/2566/9M/source.zip",
       "sha256": "bcd592e2e9cc966d69ac02b626417fab4cdcd9a19d3bded1b8c4904de9e919be",
       "ingested_at": "2026-04-24T01:11:39+00:00",
-      "shareholder_profit": 52.846
+      "shareholder_profit": 41.642
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2022-05-25",
+      "news_id": "2022067433",
+      "raw_path": "ROCTEC/financials/2565/FY/source.zip",
+      "sha256": "9bb1d34b8bf2cbcc990adf9f3337ec5889b49f22a13e39b258da4fccb8e11159",
+      "ingested_at": "2026-04-24T01:11:52+00:00",
+      "shareholder_profit": 33.58956
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-11-09",
+      "news_id": "2022130965",
+      "raw_path": "ROCTEC/financials/2566/H1/source.zip",
+      "sha256": "7362fee4ae67fd9775fb8505a2068fd9cdd6176100fb124a5a09649795021c02",
+      "ingested_at": "2026-04-24T01:11:43+00:00",
+      "shareholder_profit": 35.454
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-08-10",
+      "news_id": "2022093501",
+      "raw_path": "ROCTEC/financials/2566/Q1/source.zip",
+      "sha256": "74250f077488fc7fcf3004a233082a860a0cf66828297ef055af82a81a6d9ecd",
+      "ingested_at": "2026-04-24T01:11:48+00:00",
+      "shareholder_profit": 33.989
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2024-02-12",
+      "news_id": "17076943418941",
+      "raw_path": "ROCTEC/financials/2567/9M/source.zip",
+      "sha256": "8b24ebc2fd037044c8cf4cb275310bacd3654c14207eacdf4d6709e01755cb50",
+      "ingested_at": "2026-04-24T01:11:21+00:00",
+      "shareholder_profit": 67.907
     },
     {
       "year": 2566,
@@ -118,37 +141,37 @@
       "raw_path": "ROCTEC/financials/2566/FY/source.zip",
       "sha256": "f766af8186c09dcac75990a749c6401b89f0653681dbc5e27cf7117fcc8a7f3c",
       "ingested_at": "2026-04-24T01:11:34+00:00",
-      "shareholder_profit": 193.18059
+      "shareholder_profit": 133.540093
     },
     {
       "year": 2566,
       "period": "H1",
-      "filing_date": "2022-11-09",
-      "news_id": "2022130965",
-      "raw_path": "ROCTEC/financials/2566/H1/source.zip",
-      "sha256": "7362fee4ae67fd9775fb8505a2068fd9cdd6176100fb124a5a09649795021c02",
-      "ingested_at": "2026-04-24T01:11:43+00:00",
-      "shareholder_profit": 53.396
+      "filing_date": "2023-11-09",
+      "news_id": "16994859275661",
+      "raw_path": "ROCTEC/financials/2567/H1/source.zip",
+      "sha256": "ed28d28d7e1da7519a634348c784c1ae310e3b923f2680ea7f05b174dd3bc401",
+      "ingested_at": "2026-04-24T01:11:25+00:00",
+      "shareholder_profit": 56.302
     },
     {
       "year": 2566,
       "period": "Q1",
-      "filing_date": "2022-08-10",
-      "news_id": "2022093501",
-      "raw_path": "ROCTEC/financials/2566/Q1/source.zip",
-      "sha256": "74250f077488fc7fcf3004a233082a860a0cf66828297ef055af82a81a6d9ecd",
-      "ingested_at": "2026-04-24T01:11:48+00:00",
-      "shareholder_profit": 47.195
+      "filing_date": "2023-08-10",
+      "news_id": "16916230300861",
+      "raw_path": "ROCTEC/financials/2567/Q1/source.zip",
+      "sha256": "a89d7bf91d79bc395d2d6a7f520399d6185e68bcd58889c76b7cae052c025209",
+      "ingested_at": "2026-04-24T01:11:30+00:00",
+      "shareholder_profit": 42.323
     },
     {
       "year": 2567,
       "period": "9M",
-      "filing_date": "2024-02-12",
-      "news_id": "17076943418941",
-      "raw_path": "ROCTEC/financials/2567/9M/source.zip",
-      "sha256": "8b24ebc2fd037044c8cf4cb275310bacd3654c14207eacdf4d6709e01755cb50",
-      "ingested_at": "2026-04-24T01:11:21+00:00",
-      "shareholder_profit": 67.907
+      "filing_date": "2025-02-11",
+      "news_id": "17392279299361",
+      "raw_path": "ROCTEC/financials/2568/9M/source.zip",
+      "sha256": "6d7ebb3127490b2273522c000a387385a3709e696ec6bb05c86c3da8e2cf01ac",
+      "ingested_at": "2026-04-24T01:11:02+00:00",
+      "shareholder_profit": 84.177
     },
     {
       "year": 2567,
@@ -163,32 +186,22 @@
     {
       "year": 2567,
       "period": "H1",
-      "filing_date": "2023-11-09",
-      "news_id": "16994859275661",
-      "raw_path": "ROCTEC/financials/2567/H1/source.zip",
-      "sha256": "ed28d28d7e1da7519a634348c784c1ae310e3b923f2680ea7f05b174dd3bc401",
-      "ingested_at": "2026-04-24T01:11:25+00:00",
-      "shareholder_profit": 56.302
-    },
-    {
-      "year": 2567,
-      "period": "Q1",
-      "filing_date": "2023-08-10",
-      "news_id": "16916230300861",
-      "raw_path": "ROCTEC/financials/2567/Q1/source.zip",
-      "sha256": "a89d7bf91d79bc395d2d6a7f520399d6185e68bcd58889c76b7cae052c025209",
-      "ingested_at": "2026-04-24T01:11:30+00:00",
-      "shareholder_profit": 42.323
+      "filing_date": "2024-11-07",
+      "news_id": "17309360559591",
+      "raw_path": "ROCTEC/financials/2568/H1/source.zip",
+      "sha256": "7e5d4a470f61216ee6f7a8fde01d5a60f5861a2c240edf0bf082ab2e49877325",
+      "ingested_at": "2026-04-24T01:11:07+00:00",
+      "shareholder_profit": 79.632
     },
     {
       "year": 2568,
       "period": "9M",
-      "filing_date": "2025-02-11",
-      "news_id": "17392279299361",
-      "raw_path": "ROCTEC/financials/2568/9M/source.zip",
-      "sha256": "6d7ebb3127490b2273522c000a387385a3709e696ec6bb05c86c3da8e2cf01ac",
-      "ingested_at": "2026-04-24T01:11:02+00:00",
-      "shareholder_profit": 84.177
+      "filing_date": "2026-02-11",
+      "news_id": "17707662961641",
+      "raw_path": "ROCTEC/financials/2569/9M/source.zip",
+      "sha256": "87b1f09aa3f4129731eb41a2045f9ed335a764c0bba442b51080c5048e3ab1cb",
+      "ingested_at": "2026-04-24T01:10:44+00:00",
+      "shareholder_profit": 126.564
     },
     {
       "year": 2568,
@@ -203,36 +216,6 @@
     {
       "year": 2568,
       "period": "H1",
-      "filing_date": "2024-11-07",
-      "news_id": "17309360559591",
-      "raw_path": "ROCTEC/financials/2568/H1/source.zip",
-      "sha256": "7e5d4a470f61216ee6f7a8fde01d5a60f5861a2c240edf0bf082ab2e49877325",
-      "ingested_at": "2026-04-24T01:11:07+00:00",
-      "shareholder_profit": 79.632
-    },
-    {
-      "year": 2568,
-      "period": "Q1",
-      "filing_date": "2024-08-09",
-      "news_id": "17231594084791",
-      "raw_path": "ROCTEC/financials/2568/Q1/source.zip",
-      "sha256": "e80edbc67bc599b609e9c27656f26063001a5b0091757aed44ac609caf252057",
-      "ingested_at": "2026-04-24T01:11:11+00:00",
-      "shareholder_profit": 74.437
-    },
-    {
-      "year": 2569,
-      "period": "9M",
-      "filing_date": "2026-02-11",
-      "news_id": "17707662961641",
-      "raw_path": "ROCTEC/financials/2569/9M/source.zip",
-      "sha256": "87b1f09aa3f4129731eb41a2045f9ed335a764c0bba442b51080c5048e3ab1cb",
-      "ingested_at": "2026-04-24T01:10:44+00:00",
-      "shareholder_profit": 126.564
-    },
-    {
-      "year": 2569,
-      "period": "H1",
       "filing_date": "2025-11-07",
       "news_id": "17624721990851",
       "raw_path": "ROCTEC/financials/2569/H1/source.zip",
@@ -241,7 +224,7 @@
       "shareholder_profit": 122.274
     },
     {
-      "year": 2569,
+      "year": 2568,
       "period": "Q1",
       "filing_date": "2025-08-08",
       "news_id": "17546095883631",

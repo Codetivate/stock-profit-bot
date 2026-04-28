@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "symbol": "IVF",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-27",
+  "quarterly_history": {
+    "2566": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": 40.983212
+    },
+    "2567": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": 4.547,
+      "Q4": 5.433697000000002,
+      "FullYear": 22.150697
+    },
+    "2568": {
+      "Q1": -4.03,
+      "Q2": -6.08,
+      "Q3": -3.638,
+      "Q4": -3.6239600000000003,
+      "FullYear": -17.37196
+    }
+  },
+  "sources": [
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-12-09",
+      "news_id": "17337009146681",
+      "raw_path": "IVF/financials/2566/FY/source.zip",
+      "sha256": "f89f790fde5b225a4e1e8df71d8ef5c37f9df7c4c742e84c479951855d945aad",
+      "ingested_at": "2026-04-28T05:35:27+00:00",
+      "shareholder_profit": 40.983212
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-12-09",
+      "news_id": "17337009147311",
+      "raw_path": "IVF/financials/2567/9M/source.zip",
+      "sha256": "470ce78daa64ceabd4384984427eef9f2ba65db21e1eeb01e4189073c38d2131",
+      "ingested_at": "2026-04-28T05:35:22+00:00",
+      "shareholder_profit": 4.547
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-28",
+      "news_id": "17406928484871",
+      "raw_path": "IVF/financials/2567/FY/source.zip",
+      "sha256": "ca0cf73ad4b63bbd812897bdff9b64795d834625fb09a204c9e242fba96bab5f",
+      "ingested_at": "2026-04-28T05:35:17+00:00",
+      "shareholder_profit": 22.150697
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-11",
+      "news_id": "17628159940031",
+      "raw_path": "IVF/financials/2568/9M/source.zip",
+      "sha256": "cc5ea28337a868bd3ee53d14d58cf812dd969dd568bcfcf7d022a3752b81f364",
+      "ingested_at": "2026-04-28T05:35:02+00:00",
+      "shareholder_profit": -3.638
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-27",
+      "news_id": "17721443191121",
+      "raw_path": "IVF/financials/2568/FY/source.zip",
+      "sha256": "6e3df242da13227d9f5867ad5f128bd3fb78527f9fbc7c2528b214b323b04346",
+      "ingested_at": "2026-04-28T05:34:58+00:00",
+      "shareholder_profit": -17.37196
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229899551",
+      "raw_path": "IVF/financials/2568/H1/source.zip",
+      "sha256": "83e43cddbcf6e7ccfd6ca1bfbed0672b2c0cad855fcefa30734ea2e8936111df",
+      "ingested_at": "2026-04-28T05:35:07+00:00",
+      "shareholder_profit": -6.08
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903563311",
+      "raw_path": "IVF/financials/2568/Q1/source.zip",
+      "sha256": "1c08441f137aaef2f897bd07e11d9af6d52b7b78ffd059e24a922391488c361b",
+      "ingested_at": "2026-04-28T05:35:12+00:00",
+      "shareholder_profit": -4.03
+    }
+  ]
+}

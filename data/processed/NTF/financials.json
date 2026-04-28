@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "symbol": "NTF",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-23",
+  "quarterly_history": {
+    "2567": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": 64.274366
+    },
+    "2568": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": 37.011369,
+      "Q4": 26.82514900000001,
+      "FullYear": 229.618356
+    }
+  },
+  "sources": [
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-12-15",
+      "news_id": "17657558736451",
+      "raw_path": "NTF/financials/2567/FY/source.zip",
+      "sha256": "fef401879380114cd80d487595ade07cc0f541952bc57ba7a5de87d36fb1863e",
+      "ingested_at": "2026-04-28T06:50:03+00:00",
+      "shareholder_profit": 64.274366
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-12-15",
+      "news_id": "17657558736251",
+      "raw_path": "NTF/financials/2568/9M/source.zip",
+      "sha256": "3e06c5b64d454c48d000d1ce0626df1aaf3f4017d741b01b843a364ad26ce02f",
+      "ingested_at": "2026-04-28T06:50:09+00:00",
+      "shareholder_profit": 37.011369
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-23",
+      "news_id": "17718030228621",
+      "raw_path": "NTF/financials/2568/FY/source.zip",
+      "sha256": "1f9deb2b5f2a62c0c2408faaca2ecbca046ab145e89fad5ad43f6ec564afe3d5",
+      "ingested_at": "2026-04-28T06:49:59+00:00",
+      "shareholder_profit": 229.618356
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "symbol": "ALPHAX",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-26",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 23.071,
+      "Q2": 19.479,
+      "Q3": -8.823,
+      "Q4": -7.720078000000001,
+      "FullYear": 26.006922
+    },
+    "2565": {
+      "Q1": 32.951,
+      "Q2": -6.151,
+      "Q3": 8.778,
+      "Q4": 1.0997190000000021,
+      "FullYear": 36.677719
+    },
+    "2566": {
+      "Q1": -14.545,
+      "Q2": -23.583,
+      "Q3": -47.212,
+      "Q4": -21.229725000000002,
+      "FullYear": -106.569725
+    },
+    "2567": {
+      "Q1": 78.207,
+      "Q2": 5.2,
+      "Q3": 199.726,
+      "Q4": 60.551143000000025,
+      "FullYear": 343.684143
+    },
+    "2568": {
+      "Q1": 23.277,
+      "Q2": 106.488,
+      "Q3": 112.986,
+      "Q4": 75.50828900000003,
+      "FullYear": 318.259289
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-12",
+      "news_id": "2021123669",
+      "raw_path": "ALPHAX/financials/2564/9M/source.zip",
+      "sha256": "4538a894285f4273c1e1e40d5c3f211924088348a60f2447578bf9a65bade4c4",
+      "ingested_at": "2026-04-28T03:17:19+00:00",
+      "shareholder_profit": -8.823
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-25",
+      "news_id": "2022024079",
+      "raw_path": "ALPHAX/financials/2564/FY/source.zip",
+      "sha256": "63851a218f30d529333c71381d0ae101618901a6a93db16680f4b0b6bb441080",
+      "ingested_at": "2026-04-28T03:17:14+00:00",
+      "shareholder_profit": 26.006922
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-16",
+      "news_id": "2021092319",
+      "raw_path": "ALPHAX/financials/2564/H1/source.zip",
+      "sha256": "951b6b6df54c3903d402dbffbd37c20528810f592c335687b964b9e28fe5a61a",
+      "ingested_at": "2026-04-28T03:17:24+00:00",
+      "shareholder_profit": 19.479
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-14",
+      "news_id": "2021058986",
+      "raw_path": "ALPHAX/financials/2564/Q1/source.zip",
+      "sha256": "0b22ba7ccf50b18714bc09be950133aea1980a69d57ecd539cfb8da8e28ebf00",
+      "ingested_at": "2026-04-28T03:17:30+00:00",
+      "shareholder_profit": 23.071
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-15",
+      "news_id": "2022137052",
+      "raw_path": "ALPHAX/financials/2565/9M/source.zip",
+      "sha256": "164c04ec8dabb8196defc779ab942c15f42ca5b50c7ed54e19e176eded0fdac3",
+      "ingested_at": "2026-04-28T03:16:57+00:00",
+      "shareholder_profit": 8.778
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-24",
+      "news_id": "2023022437",
+      "raw_path": "ALPHAX/financials/2565/FY/source.zip",
+      "sha256": "b52f3ba669d09bbdf2c43ee44c4dd3608f69319e30a94b483412e8485a19c8fd",
+      "ingested_at": "2026-04-28T03:16:52+00:00",
+      "shareholder_profit": 36.677719
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-15",
+      "news_id": "2022098135",
+      "raw_path": "ALPHAX/financials/2565/H1/source.zip",
+      "sha256": "53f86967f71ffa5c99f099bd9a01b737bc3587262de7c78c612afd6d2425142b",
+      "ingested_at": "2026-04-28T03:17:03+00:00",
+      "shareholder_profit": -6.151
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-12",
+      "news_id": "2022060283",
+      "raw_path": "ALPHAX/financials/2565/Q1/source.zip",
+      "sha256": "ca9e62cedc84298c26ca7849c4ec6a13da252f9d63ebc9a7157817e7c5fe7da9",
+      "ingested_at": "2026-04-28T03:17:08+00:00",
+      "shareholder_profit": 32.951
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-13",
+      "news_id": "16998304599831",
+      "raw_path": "ALPHAX/financials/2566/9M/source.zip",
+      "sha256": "67069713c7030081f8032a37c37ab0713d2f4e683cf917950798660ac48e9302",
+      "ingested_at": "2026-04-28T03:16:37+00:00",
+      "shareholder_profit": -47.212
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-28",
+      "news_id": "17090750768971",
+      "raw_path": "ALPHAX/financials/2566/FY/source.zip",
+      "sha256": "ad590a742772692994bd6a1ee19f959da91be59858ae64335869b906458898a7",
+      "ingested_at": "2026-04-28T03:16:32+00:00",
+      "shareholder_profit": -106.569725
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-15",
+      "news_id": "16920539299641",
+      "raw_path": "ALPHAX/financials/2566/H1/source.zip",
+      "sha256": "3e676c71c6d36a40638b13145b557e9ab7b395a2ccd0e2b99f420cdcf2aaa296",
+      "ingested_at": "2026-04-28T03:16:42+00:00",
+      "shareholder_profit": -23.583
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-15",
+      "news_id": "16841053951101",
+      "raw_path": "ALPHAX/financials/2566/Q1/source.zip",
+      "sha256": "a14fc62720c302b1f220bd28ace11f77a43ab0fa8968d1ec5da0a9a50ea5729e",
+      "ingested_at": "2026-04-28T03:16:47+00:00",
+      "shareholder_profit": -14.545
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361320071",
+      "raw_path": "ALPHAX/financials/2567/9M/source.zip",
+      "sha256": "f150f4fe35799a393cadc0f72073ca97381d7497bb505e7eadfac64eb70e6ac5",
+      "ingested_at": "2026-04-28T03:16:17+00:00",
+      "shareholder_profit": 199.726
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-28",
+      "news_id": "17406928441401",
+      "raw_path": "ALPHAX/financials/2567/FY/source.zip",
+      "sha256": "0d1a2d17558dfd0eb058d07fd5c3330631d5c9c68d57f3de5fed097dad55497d",
+      "ingested_at": "2026-04-28T03:16:11+00:00",
+      "shareholder_profit": 343.684143
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990220801",
+      "raw_path": "ALPHAX/financials/2567/H1/source.zip",
+      "sha256": "b8bf927a1cd1c6eddaa936bb3a7a793069b676199bbb427e51d5d5f7b396aafc",
+      "ingested_at": "2026-04-28T03:16:22+00:00",
+      "shareholder_profit": 5.2
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434596531",
+      "raw_path": "ALPHAX/financials/2567/Q1/source.zip",
+      "sha256": "745b7905a2ec755c9356bba08b9f55ca3554aa6f61a05b58bd68e8c7a0c14d96",
+      "ingested_at": "2026-04-28T03:16:27+00:00",
+      "shareholder_profit": 78.207
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-11",
+      "news_id": "17628159929861",
+      "raw_path": "ALPHAX/financials/2568/9M/source.zip",
+      "sha256": "535f06df401bcc1382443eac1925f7e9d33ba2d6f6bb8077aa53621ae09d11e4",
+      "ingested_at": "2026-04-28T03:15:55+00:00",
+      "shareholder_profit": 112.986
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-26",
+      "news_id": "17720575299301",
+      "raw_path": "ALPHAX/financials/2568/FY/source.zip",
+      "sha256": "1118a3bf1cc95780f8d5954f17f56aa16e3ff96ab528075ff0cbc47f62b9c3a4",
+      "ingested_at": "2026-04-28T03:15:50+00:00",
+      "shareholder_profit": 318.259289
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361029971",
+      "raw_path": "ALPHAX/financials/2568/H1/source.zip",
+      "sha256": "14401251d5efaac2556190648801f43560f68c65ae248ad640cdc5019a2a236b",
+      "ingested_at": "2026-04-28T03:16:00+00:00",
+      "shareholder_profit": 106.488
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903584371",
+      "raw_path": "ALPHAX/financials/2568/Q1/source.zip",
+      "sha256": "ba539afe5f2173e23c310dac9f8168045a9997ba8fac8deaf67f1a83b7321dcc",
+      "ingested_at": "2026-04-28T03:16:05+00:00",
+      "shareholder_profit": 23.277
+    }
+  ]
+}

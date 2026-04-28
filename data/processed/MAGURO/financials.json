@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "symbol": "MAGURO",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-25",
+  "quarterly_history": {
+    "2566": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": 72.47766
+    },
+    "2567": {
+      "Q1": 20.128166,
+      "Q2": 12.91377,
+      "Q3": 29.324681,
+      "Q4": 34.274321000000015,
+      "FullYear": 96.640938
+    },
+    "2568": {
+      "Q1": 32.504965,
+      "Q2": 32.096254,
+      "Q3": 38.125721,
+      "Q4": 45.77649799999999,
+      "FullYear": 148.503438
+    }
+  },
+  "sources": [
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-06-04",
+      "news_id": "17174581629111",
+      "raw_path": "MAGURO/financials/2566/FY/source.zip",
+      "sha256": "947513fe000789802335a8a96e8b8bd08fc2f0d70236a25e210e241bd3283ba3",
+      "ingested_at": "2026-04-28T06:13:07+00:00",
+      "shareholder_profit": 72.47766
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-13",
+      "news_id": "17314477519051",
+      "raw_path": "MAGURO/financials/2567/9M/source.zip",
+      "sha256": "b7aec690194a699a2650317ba0f5639eaba6c449113e32c17b5733cabe36b4c3",
+      "ingested_at": "2026-04-28T06:12:52+00:00",
+      "shareholder_profit": 29.324681
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-26",
+      "news_id": "17405221151381",
+      "raw_path": "MAGURO/financials/2567/FY/source.zip",
+      "sha256": "dc7fc9668fd4f0f4defaaffca1c9c377efd952f5bab429a7a2e444a92f7d19f4",
+      "ingested_at": "2026-04-28T06:12:46+00:00",
+      "shareholder_profit": 96.640938
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-08",
+      "news_id": "17230734217461",
+      "raw_path": "MAGURO/financials/2567/H1/source.zip",
+      "sha256": "b7e1a3f00a56f4130937b8280af7997e4b4c11bcc6680561fdd47f4923efff1b",
+      "ingested_at": "2026-04-28T06:12:57+00:00",
+      "shareholder_profit": 12.91377
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-06-04",
+      "news_id": "17174581629191",
+      "raw_path": "MAGURO/financials/2567/Q1/source.zip",
+      "sha256": "821337f242a91c392eaba0556ed4dbd95c3d8c69b54b2e47abfcca307dfac4c0",
+      "ingested_at": "2026-04-28T06:13:02+00:00",
+      "shareholder_profit": 20.128166
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-13",
+      "news_id": "17629880508081",
+      "raw_path": "MAGURO/financials/2568/9M/source.zip",
+      "sha256": "6a9b5b30cec1f98caa0411efb3a70d4accd67fb0023522f35afa6535d832d3e5",
+      "ingested_at": "2026-04-28T06:12:31+00:00",
+      "shareholder_profit": 38.125721
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-25",
+      "news_id": "17719707174151",
+      "raw_path": "MAGURO/financials/2568/FY/source.zip",
+      "sha256": "4ab8359eb716dd65826c02ea8f2d53f0fa3c5052db35ff9889cfeeebde00fb38",
+      "ingested_at": "2026-04-28T06:12:26+00:00",
+      "shareholder_profit": 148.503438
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229930621",
+      "raw_path": "MAGURO/financials/2568/H1/source.zip",
+      "sha256": "222a600342c7b69afd263b256405dc80bbe945f4e656f3e189537ef08674122c",
+      "ingested_at": "2026-04-28T06:12:35+00:00",
+      "shareholder_profit": 32.096254
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-14",
+      "news_id": "17471784608431",
+      "raw_path": "MAGURO/financials/2568/Q1/source.zip",
+      "sha256": "4cb1c4cac277c08b62e166faf239656dc6e0726d9ac567b311ffd1cddab72bf2",
+      "ingested_at": "2026-04-28T06:12:41+00:00",
+      "shareholder_profit": 32.504965
+    }
+  ]
+}

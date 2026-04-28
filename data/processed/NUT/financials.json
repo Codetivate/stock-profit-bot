@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "symbol": "NUT",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-27",
+  "quarterly_history": {
+    "2568": {
+      "Q1": null,
+      "Q2": 14.856336079999911,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": 58.216186910000104
+    }
+  },
+  "sources": [
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-27",
+      "news_id": "17721443165331",
+      "raw_path": "NUT/financials/2568/FY/source.zip",
+      "sha256": "c729de5d2b2218c30e4f1c9eaebdb3bc56a7e6299cd3c9a61434250932010ae0",
+      "ingested_at": "2026-04-28T06:51:34+00:00",
+      "shareholder_profit": 58.216186910000104
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361050211",
+      "raw_path": "NUT/financials/2568/H1/source.zip",
+      "sha256": "4433ecaa76f911b4cec1a844de98c75a808f8b9c882f3a64a60b606dfcb598cb",
+      "ingested_at": "2026-04-28T06:51:43+00:00",
+      "shareholder_profit": 14.856336079999911
+    }
+  ]
+}

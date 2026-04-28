@@ -30,16 +30,16 @@
     "2567": {
       "Q1": -67.146,
       "Q2": -34.266,
-      "Q3": 97.795,
-      "Q4": 201.67483900000002,
-      "FullYear": 198.057839
+      "Q3": -29.07,
+      "Q4": 38.37953399999999,
+      "FullYear": -92.102466
     },
     "2568": {
-      "Q1": 116.0,
-      "Q2": 92.629,
-      "Q3": 29.172,
-      "Q4": 26.07700700000002,
-      "FullYear": 263.878007
+      "Q1": 110.805,
+      "Q2": 86.585,
+      "Q3": 22.915,
+      "Q4": 13.54410099999999,
+      "FullYear": 233.849101
     }
   },
   "sources": [
@@ -171,7 +171,7 @@
       "raw_path": "TIPCO/financials/2567/9M/source.zip",
       "sha256": "d1d54f899dd41569d1f7b3022c151302adfff97f69b8afe00222a361cfea301f",
       "ingested_at": "2026-04-24T05:26:20+00:00",
-      "shareholder_profit": 97.795
+      "shareholder_profit": -29.07
     },
     {
       "year": 2567,
@@ -181,7 +181,7 @@
       "raw_path": "TIPCO/financials/2567/FY/source.zip",
       "sha256": "114947612fcecff560325c500fbffe1973031cf798a3e25cfb4d14a6b886945d",
       "ingested_at": "2026-04-24T05:26:15+00:00",
-      "shareholder_profit": 198.057839
+      "shareholder_profit": -92.102466
     },
     {
       "year": 2567,
@@ -211,7 +211,7 @@
       "raw_path": "TIPCO/financials/2568/9M/source.zip",
       "sha256": "56a15836cb846c47dc83d790aa3f12c44cf6ec103dfbe9b8b20a9495836e2b69",
       "ingested_at": "2026-04-24T05:26:00+00:00",
-      "shareholder_profit": 29.172
+      "shareholder_profit": 22.915
     },
     {
       "year": 2568,
@@ -221,7 +221,7 @@
       "raw_path": "TIPCO/financials/2568/FY/source.zip",
       "sha256": "01a452d8447aac92467f0b85f39614e02f00e5044b486fb3a7f1d8a7834ba35a",
       "ingested_at": "2026-04-24T05:25:55+00:00",
-      "shareholder_profit": 263.878007
+      "shareholder_profit": 233.849101
     },
     {
       "year": 2568,
@@ -231,7 +231,7 @@
       "raw_path": "TIPCO/financials/2568/H1/source.zip",
       "sha256": "389f28e79e2fbe48a49b6fcc44524cb8ebe6dd1134597fcb65d0b08daf34233c",
       "ingested_at": "2026-04-24T05:26:05+00:00",
-      "shareholder_profit": 92.629
+      "shareholder_profit": 86.585
     },
     {
       "year": 2568,
@@ -241,7 +241,7 @@
       "raw_path": "TIPCO/financials/2568/Q1/source.zip",
       "sha256": "f2c34d6a4bef070e8c83412b22de3aeac5db8ca8979512b9121e990a64fd9718",
       "ingested_at": "2026-04-24T05:26:10+00:00",
-      "shareholder_profit": 116.0
+      "shareholder_profit": 110.805
     }
   ]
 }

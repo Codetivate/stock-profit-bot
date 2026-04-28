@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "symbol": "BKA",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-23",
+  "quarterly_history": {
+    "2567": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": 36.81629542999999
+    },
+    "2568": {
+      "Q1": 3.7817135099999857,
+      "Q2": -6.980387780000019,
+      "Q3": -12.434337080000027,
+      "Q4": -10.661583839999974,
+      "FullYear": -26.294595190000035
+    }
+  },
+  "sources": [
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-04-21",
+      "news_id": "17451927228941",
+      "raw_path": "BKA/financials/2567/FY/source.zip",
+      "sha256": "9f8e4297416b9164644bec232d0fa9f3ff327abb731586a20d5c51d99dca6bc7",
+      "ingested_at": "2026-04-28T03:46:57+00:00",
+      "shareholder_profit": 36.81629542999999
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-10",
+      "news_id": "17627310400861",
+      "raw_path": "BKA/financials/2568/9M/source.zip",
+      "sha256": "74686457bc39870deb3780ee4b8e5781b3ef183b73e3c68e8c63f5e42c693ffc",
+      "ingested_at": "2026-04-28T03:46:41+00:00",
+      "shareholder_profit": -12.434337080000027
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-23",
+      "news_id": "17718030019321",
+      "raw_path": "BKA/financials/2568/FY/source.zip",
+      "sha256": "4188416864fad651ab2256b48cd46f8918aef7c9a4e41741a26dbda7a1053056",
+      "ingested_at": "2026-04-28T03:46:36+00:00",
+      "shareholder_profit": -26.294595190000035
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361030311",
+      "raw_path": "BKA/financials/2568/H1/source.zip",
+      "sha256": "83ed3ec36c6a4879da9fb76b83420782aa6ff47bc72a9b3f058ed9a590b08511",
+      "ingested_at": "2026-04-28T03:46:46+00:00",
+      "shareholder_profit": -6.980387780000019
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903443081",
+      "raw_path": "BKA/financials/2568/Q1/source.zip",
+      "sha256": "10555122ff063d82027666710d806aa9dd4ab91f27636e28a4581933cc86a05e",
+      "ingested_at": "2026-04-28T03:46:52+00:00",
+      "shareholder_profit": 3.7817135099999857
+    }
+  ]
+}

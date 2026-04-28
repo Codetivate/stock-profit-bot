@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "symbol": "ARIN",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-24",
+  "quarterly_history": {
+    "2564": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": -54.663245
+    },
+    "2565": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": -29.208033
+    },
+    "2566": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": -37.832
+    },
+    "2567": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": -28.677
+    },
+    "2568": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": -36.03
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-24",
+      "news_id": "2022022119",
+      "raw_path": "ARIN/financials/2564/FY/source.zip",
+      "sha256": "6440558b3100b5ed52b947517cb504aaf80d06ab4101350d41ce66a4086ad8bc",
+      "ingested_at": "2026-04-28T03:29:04+00:00",
+      "shareholder_profit": -54.663245
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-22",
+      "news_id": "2023019695",
+      "raw_path": "ARIN/financials/2565/FY/source.zip",
+      "sha256": "84d54b68f85a085816d0ec024a4eee4608eaa53f99792864d10af185de122e1b",
+      "ingested_at": "2026-04-28T03:28:43+00:00",
+      "shareholder_profit": -29.208033
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-23",
+      "news_id": "17086429035641",
+      "raw_path": "ARIN/financials/2566/FY/source.zip",
+      "sha256": "c63eb7cfc52df7d8e90fc7e0d42bfa2c83e093878adfdfaf613efca3a962ebc1",
+      "ingested_at": "2026-04-28T03:28:23+00:00",
+      "shareholder_profit": -37.832
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-25",
+      "news_id": "17404367252141",
+      "raw_path": "ARIN/financials/2567/FY/source.zip",
+      "sha256": "7b9ae2dae0cdb42efd03ee2e1c208f06eef09dbcc6648100d2de74fc439e8b9e",
+      "ingested_at": "2026-04-28T03:28:04+00:00",
+      "shareholder_profit": -28.677
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-24",
+      "news_id": "17718892173641",
+      "raw_path": "ARIN/financials/2568/FY/source.zip",
+      "sha256": "395ef90b7fa3f7e237d7af63488822e8ae42138c57bed01570fdaef2a81fd29f",
+      "ingested_at": "2026-04-28T03:27:44+00:00",
+      "shareholder_profit": -36.03
+    }
+  ]
+}

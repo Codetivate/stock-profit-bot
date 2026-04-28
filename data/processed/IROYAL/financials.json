@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "symbol": "IROYAL",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-27",
+  "quarterly_history": {
+    "2566": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": 72.22039152999994
+    },
+    "2567": {
+      "Q1": null,
+      "Q2": 11.513015780000016,
+      "Q3": 2.4456477299999935,
+      "Q4": 12.047423009999996,
+      "FullYear": 59.132034829999995
+    },
+    "2568": {
+      "Q1": 9.310145399999998,
+      "Q2": 39.83675674000001,
+      "Q3": 44.34005255000001,
+      "Q4": 41.902589469999995,
+      "FullYear": 135.38954416
+    }
+  },
+  "sources": [
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-11-04",
+      "news_id": "17306764104031",
+      "raw_path": "IROYAL/financials/2566/FY/source.zip",
+      "sha256": "422a91638b86ce72d2f1144b03725aa5b8b8018c13d93fd1c2f6ca39c6247b7b",
+      "ingested_at": "2026-04-28T05:31:26+00:00",
+      "shareholder_profit": 72.22039152999994
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-15",
+      "news_id": "17316227683111",
+      "raw_path": "IROYAL/financials/2567/9M/source.zip",
+      "sha256": "cb5c3c4009ddc09701f8274ae80c238be00886d9bc070751cb950ea0bb54a267",
+      "ingested_at": "2026-04-28T05:31:16+00:00",
+      "shareholder_profit": 2.4456477299999935
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-24",
+      "news_id": "17403534249521",
+      "raw_path": "IROYAL/financials/2567/FY/source.zip",
+      "sha256": "f7dca468df6defbafb578445effc402657f077fef76a846bdd3b6d49c2e44b9b",
+      "ingested_at": "2026-04-28T05:31:11+00:00",
+      "shareholder_profit": 59.132034829999995
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-11-04",
+      "news_id": "17306764104321",
+      "raw_path": "IROYAL/financials/2567/H1/source.zip",
+      "sha256": "57c9e6fb8ce420bd5ce0770130c6cc976d3b6db2668731c5a6c18fb1310dacc3",
+      "ingested_at": "2026-04-28T05:31:21+00:00",
+      "shareholder_profit": 11.513015780000016
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-10",
+      "news_id": "17627310455971",
+      "raw_path": "IROYAL/financials/2568/9M/source.zip",
+      "sha256": "e65e4c541ecf8671567bf24d50f9b87c150146b4dbe6460ff3e6f64c69a6a154",
+      "ingested_at": "2026-04-28T05:30:54+00:00",
+      "shareholder_profit": 44.34005255000001
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-27",
+      "news_id": "17721443133111",
+      "raw_path": "IROYAL/financials/2568/FY/source.zip",
+      "sha256": "65e8e04dbf550ff22ef1d43cddb8c5719fd1eee25dda61df78e8d06777398521",
+      "ingested_at": "2026-04-28T05:30:50+00:00",
+      "shareholder_profit": 135.38954416
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229929801",
+      "raw_path": "IROYAL/financials/2568/H1/source.zip",
+      "sha256": "b97e4735d9066e76f5f69b86cf5f37a87bc3ea724fac0d89ce0651ff55c56b9e",
+      "ingested_at": "2026-04-28T05:31:00+00:00",
+      "shareholder_profit": 39.83675674000001
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-09",
+      "news_id": "17467412703301",
+      "raw_path": "IROYAL/financials/2568/Q1/source.zip",
+      "sha256": "a15c03fb98e8600bdfecf5fe2a89d5af059eaebe5b3097b11da449cd4c76e968",
+      "ingested_at": "2026-04-28T05:31:05+00:00",
+      "shareholder_profit": 9.310145399999998
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "symbol": "GFC",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-23",
+  "quarterly_history": {
+    "2566": {
+      "Q1": null,
+      "Q2": 15.397718929999991,
+      "Q3": 20.5901901867,
+      "Q4": 22.570883680000065,
+      "FullYear": 77.49329849000006
+    },
+    "2567": {
+      "Q1": 28.742155490000005,
+      "Q2": 17.47335220000003,
+      "Q3": 16.516789549999967,
+      "Q4": 10.773649009999982,
+      "FullYear": 73.50594624999998
+    },
+    "2568": {
+      "Q1": 5.745234919999987,
+      "Q2": 7.056888440000001,
+      "Q3": 6.097742569999993,
+      "Q4": 3.5042061400000586,
+      "FullYear": 22.40407207000004
+    }
+  },
+  "sources": [
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-13",
+      "news_id": "16998304605581",
+      "raw_path": "GFC/financials/2566/9M/source.zip",
+      "sha256": "8aeadf63dd0ec841167cdbcc081411185f40d6b7dcc1f06474f2ad8bfbef28f1",
+      "ingested_at": "2026-04-28T05:05:41+00:00",
+      "shareholder_profit": 20.5901901867
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-27",
+      "news_id": "17089869122781",
+      "raw_path": "GFC/financials/2566/FY/source.zip",
+      "sha256": "e7389c9385333c292b4b5efea8bfa90487a3e1a601f3c95e47d0fddc1bbc3eaa",
+      "ingested_at": "2026-04-28T05:05:36+00:00",
+      "shareholder_profit": 77.49329849000006
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-09-12",
+      "news_id": "16944757905381",
+      "raw_path": "GFC/financials/2566/H1/source.zip",
+      "sha256": "27523dda4b355cd6b35f58145fdd38520ce2011ab413f949d2164b4a07eb4112",
+      "ingested_at": "2026-04-28T05:05:47+00:00",
+      "shareholder_profit": 15.397718929999991
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-11",
+      "news_id": "17312815649661",
+      "raw_path": "GFC/financials/2567/9M/source.zip",
+      "sha256": "2056dc5c2bb6f278f837cb94383bbb4d07284d3c6ed0e17096d1a73c198c5283",
+      "ingested_at": "2026-04-28T05:05:20+00:00",
+      "shareholder_profit": 16.516789549999967
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-24",
+      "news_id": "17403534256701",
+      "raw_path": "GFC/financials/2567/FY/source.zip",
+      "sha256": "b8903b6090b2c152809535c40e77d156c95557d8602fa2caaffeae3cc903f04c",
+      "ingested_at": "2026-04-28T05:05:15+00:00",
+      "shareholder_profit": 73.50594624999998
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-14",
+      "news_id": "17235858041471",
+      "raw_path": "GFC/financials/2567/H1/source.zip",
+      "sha256": "36cb3e8e2f98ca0128c0bf679bc835fd4f2248e4bd8ee3ff64a5c6f9b0f9b0c9",
+      "ingested_at": "2026-04-28T05:05:25+00:00",
+      "shareholder_profit": 17.47335220000003
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-13",
+      "news_id": "17155538032531",
+      "raw_path": "GFC/financials/2567/Q1/source.zip",
+      "sha256": "7f49a6ef1e38d2674508e682555176ee0767cd1be410b5d4da33cb988767bebd",
+      "ingested_at": "2026-04-28T05:05:30+00:00",
+      "shareholder_profit": 28.742155490000005
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-10",
+      "news_id": "17627310457211",
+      "raw_path": "GFC/financials/2568/9M/source.zip",
+      "sha256": "392fae7d484e5e232969ee248c2bde603953e690cf54361b192ca16de6ad34e3",
+      "ingested_at": "2026-04-28T05:05:00+00:00",
+      "shareholder_profit": 6.097742569999993
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-23",
+      "news_id": "17718030185651",
+      "raw_path": "GFC/financials/2568/FY/source.zip",
+      "sha256": "d07427b1a4c55f748ad43a6871c51f2dcc20bc094e72c806dc8e277b1b117dcd",
+      "ingested_at": "2026-04-28T05:04:55+00:00",
+      "shareholder_profit": 22.40407207000004
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361034861",
+      "raw_path": "GFC/financials/2568/H1/source.zip",
+      "sha256": "82ba47cdf4b59c7702d43f27724e073b70c3e559650ab64ec62573d2806bcba1",
+      "ingested_at": "2026-04-28T05:05:06+00:00",
+      "shareholder_profit": 7.056888440000001
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903450171",
+      "raw_path": "GFC/financials/2568/Q1/source.zip",
+      "sha256": "a38810068b0e91aa0413e6f3db8d58ae9fd3ef5bd4b9940a99a56e7cf1e75d82",
+      "ingested_at": "2026-04-28T05:05:10+00:00",
+      "shareholder_profit": 5.745234919999987
+    }
+  ]
+}

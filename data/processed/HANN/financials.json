@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "symbol": "HANN",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-27",
+  "quarterly_history": {
+    "2567": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": 21.182589
+    },
+    "2568": {
+      "Q1": null,
+      "Q2": 0.470743,
+      "Q3": 3.742442,
+      "Q4": -2.447427000000001,
+      "FullYear": 21.961391
+    }
+  },
+  "sources": [
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361045661",
+      "raw_path": "HANN/financials/2567/FY/source.zip",
+      "sha256": "808a607dda314226b07d5dc85994f2acebdc0340f1d8c83f98aa14f4c01035f1",
+      "ingested_at": "2026-04-28T05:12:53+00:00",
+      "shareholder_profit": 21.182589
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-10",
+      "news_id": "17627310443901",
+      "raw_path": "HANN/financials/2568/9M/source.zip",
+      "sha256": "c1194647123576e85f0c1909dfbe995640fa9fbf7e6237c1c9c45f904b640659",
+      "ingested_at": "2026-04-28T05:12:42+00:00",
+      "shareholder_profit": 3.742442
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-27",
+      "news_id": "17721443083011",
+      "raw_path": "HANN/financials/2568/FY/source.zip",
+      "sha256": "6d12d5500803df5507ba3f258586ff8b4b9fc5d580a39cbbd87aedaa1c0b6b63",
+      "ingested_at": "2026-04-28T05:12:37+00:00",
+      "shareholder_profit": 21.961391
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361045741",
+      "raw_path": "HANN/financials/2568/H1/source.zip",
+      "sha256": "8ac89aa5e1566f45f8b6549aff5702a77339b98a122d0a83db601bb3f67bd1c5",
+      "ingested_at": "2026-04-28T05:12:47+00:00",
+      "shareholder_profit": 0.470743
+    }
+  ]
+}

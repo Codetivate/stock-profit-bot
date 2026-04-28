@@ -1,0 +1,227 @@
+{
+  "schema_version": 1,
+  "symbol": "MOONG",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-24",
+  "quarterly_history": {
+    "2564": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": 14.645896999999998,
+      "FullYear": 57.175897
+    },
+    "2565": {
+      "Q1": 14.877,
+      "Q2": 7.698,
+      "Q3": 0.509,
+      "Q4": 12.611877999999997,
+      "FullYear": 35.695878
+    },
+    "2566": {
+      "Q1": 9.132,
+      "Q2": 13.621,
+      "Q3": 10.154947309999999,
+      "Q4": 7.577110690000003,
+      "FullYear": 40.485058
+    },
+    "2567": {
+      "Q1": 10.091,
+      "Q2": 12.105,
+      "Q3": 5.193,
+      "Q4": 7.631927999999997,
+      "FullYear": 35.020928
+    },
+    "2568": {
+      "Q1": 14.789,
+      "Q2": 7.9,
+      "Q3": 19.091,
+      "Q4": 16.912706,
+      "FullYear": 58.692706
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-09",
+      "news_id": "2021119795",
+      "raw_path": "MOONG/financials/2564/9M/source.zip",
+      "sha256": "c515a3b258261f6550111325c0dbe08a41978b3daca7ebcf193a2b610b69a61c",
+      "ingested_at": "2026-04-28T06:28:03+00:00",
+      "shareholder_profit": 42.53
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-22",
+      "news_id": "2022019100",
+      "raw_path": "MOONG/financials/2564/FY/source.zip",
+      "sha256": "03eb565fbf3f6d6096108fc96dd450e04218d7e7be5732574479e8fc7dcc5d62",
+      "ingested_at": "2026-04-28T06:27:58+00:00",
+      "shareholder_profit": 57.175897
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-14",
+      "news_id": "2022135888",
+      "raw_path": "MOONG/financials/2565/9M/source.zip",
+      "sha256": "a705fbdd822c97cdac056be819cc71a024491a0e268363d4f032a509e372b769",
+      "ingested_at": "2026-04-28T06:27:43+00:00",
+      "shareholder_profit": 0.509
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-23",
+      "news_id": "2023020625",
+      "raw_path": "MOONG/financials/2565/FY/source.zip",
+      "sha256": "707b69722958e169dc7106688a30c312fde17295afb3e8a0cd031052c7eff109",
+      "ingested_at": "2026-04-28T06:27:38+00:00",
+      "shareholder_profit": 35.695878
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-09",
+      "news_id": "2022091658",
+      "raw_path": "MOONG/financials/2565/H1/source.zip",
+      "sha256": "5dbcd96eb4e700d6895c6fe86d96abfdc0e87581530d6b9bf9b000abc8a42c59",
+      "ingested_at": "2026-04-28T06:27:48+00:00",
+      "shareholder_profit": 7.698
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-10",
+      "news_id": "2022056608",
+      "raw_path": "MOONG/financials/2565/Q1/source.zip",
+      "sha256": "530fde681a78ef7ef638f316aaff6e655068edbcb4adaf5d3098fee096096749",
+      "ingested_at": "2026-04-28T06:27:53+00:00",
+      "shareholder_profit": 14.877
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-07",
+      "news_id": "16993142001331",
+      "raw_path": "MOONG/financials/2566/9M/source.zip",
+      "sha256": "27ace979c684751acf6aa082bd251f3218fc0de2ddebb025eacc8fd5c433be74",
+      "ingested_at": "2026-04-28T06:27:23+00:00",
+      "shareholder_profit": 10.154947309999999
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-19",
+      "news_id": "17082990077411",
+      "raw_path": "MOONG/financials/2566/FY/source.zip",
+      "sha256": "5c3feb6dc995ff25e26c57827acd84d9339f9479da936838bee55a895c085c1b",
+      "ingested_at": "2026-04-28T06:27:18+00:00",
+      "shareholder_profit": 40.485058
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-08",
+      "news_id": "16914518653981",
+      "raw_path": "MOONG/financials/2566/H1/source.zip",
+      "sha256": "2500ead115b8f23a9e9f1385f143f3015cfa8904bfeb33423b433bf106840556",
+      "ingested_at": "2026-04-28T06:27:28+00:00",
+      "shareholder_profit": 13.621
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-03",
+      "news_id": "2023050184",
+      "raw_path": "MOONG/financials/2566/Q1/source.zip",
+      "sha256": "d2b8812288e0b2d420838f66f766bf9a2372815fd6930cec1a1f44918e1fc024",
+      "ingested_at": "2026-04-28T06:27:33+00:00",
+      "shareholder_profit": 9.132
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-12",
+      "news_id": "17313658199811",
+      "raw_path": "MOONG/financials/2567/9M/source.zip",
+      "sha256": "6e02d81be2ec5d24bc045fcf62fe086c5e1b8ec540d6b9f77ce16fa89f131243",
+      "ingested_at": "2026-04-28T06:27:04+00:00",
+      "shareholder_profit": 5.193
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-25",
+      "news_id": "17404367246091",
+      "raw_path": "MOONG/financials/2567/FY/source.zip",
+      "sha256": "040ed05afc5925adf0688745dc50c1a7d6f0cb5a55a65770f161e456c640b319",
+      "ingested_at": "2026-04-28T06:26:59+00:00",
+      "shareholder_profit": 35.020928
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990186061",
+      "raw_path": "MOONG/financials/2567/H1/source.zip",
+      "sha256": "e4f1866b1778d2ac9ac3f86a953436a4261d5c8c9db956d2b1bb6fb7b2b24a70",
+      "ingested_at": "2026-04-28T06:27:09+00:00",
+      "shareholder_profit": 12.105
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434533891",
+      "raw_path": "MOONG/financials/2567/Q1/source.zip",
+      "sha256": "84ced8aafbcbda570847c02d4834d4ec65171860c10be59e021d77c3fcdb7676",
+      "ingested_at": "2026-04-28T06:27:14+00:00",
+      "shareholder_profit": 10.091
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-11",
+      "news_id": "17628159913691",
+      "raw_path": "MOONG/financials/2568/9M/source.zip",
+      "sha256": "e92679c6962e1136566d28a9db60938cdd69389a17233900f9b0af5dc2eae519",
+      "ingested_at": "2026-04-28T06:26:44+00:00",
+      "shareholder_profit": 19.091
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-24",
+      "news_id": "17718892079881",
+      "raw_path": "MOONG/financials/2568/FY/source.zip",
+      "sha256": "b3375bd2054814d594974c3e1cd47c1267eca6eb8d586866525383105fe3f303",
+      "ingested_at": "2026-04-28T06:26:39+00:00",
+      "shareholder_profit": 58.692706
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361165131",
+      "raw_path": "MOONG/financials/2568/H1/source.zip",
+      "sha256": "c29401b39f0eb5f2416460ad6d005ad7e56b70e1bc3365898acfc1b9d6fd7bc4",
+      "ingested_at": "2026-04-28T06:26:49+00:00",
+      "shareholder_profit": 7.9
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-08",
+      "news_id": "17466601057211",
+      "raw_path": "MOONG/financials/2568/Q1/source.zip",
+      "sha256": "0f2bc215db8cb0e09eef71acfc3bf89b5053f02586db95a0f2994649f62043d6",
+      "ingested_at": "2026-04-28T06:26:54+00:00",
+      "shareholder_profit": 14.789
+    }
+  ]
+}

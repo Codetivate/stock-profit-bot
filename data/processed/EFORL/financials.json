@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "symbol": "EFORL",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-27",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 35.812,
+      "Q2": 84.613,
+      "Q3": 657.61,
+      "Q4": 33.995000000000005,
+      "FullYear": 812.03
+    },
+    "2565": {
+      "Q1": 15.264,
+      "Q2": 9.462,
+      "Q3": 10.337,
+      "Q4": 17.973999999999997,
+      "FullYear": 53.037
+    },
+    "2566": {
+      "Q1": -20.78,
+      "Q2": 14.263,
+      "Q3": 13.191,
+      "Q4": 6.755000000000004,
+      "FullYear": 13.429
+    },
+    "2567": {
+      "Q1": -22.318917096428567,
+      "Q2": -20.519,
+      "Q3": 36.806,
+      "Q4": 25.72491709642857,
+      "FullYear": 19.693
+    },
+    "2568": {
+      "Q1": -4.517,
+      "Q2": 16.489,
+      "Q3": 19.97,
+      "Q4": 12.631,
+      "FullYear": 44.573
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-15",
+      "news_id": "2021124526",
+      "raw_path": "EFORL/financials/2564/9M/source.zip",
+      "sha256": "b5143c9079eaaae524561e442716f12af6cf6d4a5a1fe51e0967b39aeae1e190",
+      "ingested_at": "2026-04-28T04:47:46+00:00",
+      "shareholder_profit": 657.61
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-28",
+      "news_id": "2022024836",
+      "raw_path": "EFORL/financials/2564/FY/source.zip",
+      "sha256": "8d44ab541f9e1f42727fb9a65d3ce5fe62577b6f771569d99037261021db43af",
+      "ingested_at": "2026-04-28T04:47:41+00:00",
+      "shareholder_profit": 812.03
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-16",
+      "news_id": "2021090910",
+      "raw_path": "EFORL/financials/2564/H1/source.zip",
+      "sha256": "d87a36f4493f4d2689add6290d347e905ac80c3acc4a5ede5cf672d6ea28b4ca",
+      "ingested_at": "2026-04-28T04:47:52+00:00",
+      "shareholder_profit": 84.613
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-17",
+      "news_id": "2021059311",
+      "raw_path": "EFORL/financials/2564/Q1/source.zip",
+      "sha256": "682381ca934eb66496eceaf94452c719c966d95ea4b7ed7a39eaeec80fd24bc8",
+      "ingested_at": "2026-04-28T04:47:57+00:00",
+      "shareholder_profit": 35.812
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-10",
+      "news_id": "2022132582",
+      "raw_path": "EFORL/financials/2565/9M/source.zip",
+      "sha256": "40183e6d7db5db137f7216fd04edccf22dc29ddcc1d15f0199f21e81ed9a0e0c",
+      "ingested_at": "2026-04-28T04:47:26+00:00",
+      "shareholder_profit": 10.337
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-24",
+      "news_id": "2023021305",
+      "raw_path": "EFORL/financials/2565/FY/source.zip",
+      "sha256": "f9e0255619956ba57dd266688f33cbce3129bcaa2ec9da5c6ff0bc181a270eb5",
+      "ingested_at": "2026-04-28T04:47:20+00:00",
+      "shareholder_profit": 53.037
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-15",
+      "news_id": "2022098115",
+      "raw_path": "EFORL/financials/2565/H1/source.zip",
+      "sha256": "248ad2dd62992d740191079b51300473c711ba16b2344cae1285b3a0fa06ef7b",
+      "ingested_at": "2026-04-28T04:47:31+00:00",
+      "shareholder_profit": 9.462
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-12",
+      "news_id": "2022060619",
+      "raw_path": "EFORL/financials/2565/Q1/source.zip",
+      "sha256": "21a0125f51f33b53cce04095d980b88a7a8f9163741521d94a59d676b87532b7",
+      "ingested_at": "2026-04-28T04:47:36+00:00",
+      "shareholder_profit": 15.264
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-10",
+      "news_id": "16995730769931",
+      "raw_path": "EFORL/financials/2566/9M/source.zip",
+      "sha256": "4bec339e2d456f1bed5d024cc1fdba0f9290c938d170c6e3732606099b92fbf0",
+      "ingested_at": "2026-04-28T04:47:05+00:00",
+      "shareholder_profit": 13.191
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-28",
+      "news_id": "17090750665501",
+      "raw_path": "EFORL/financials/2566/FY/source.zip",
+      "sha256": "914301e7b7f2f83a0b9ef7c30cfe5778dbc4f181afbb66bf835b2bbb676aa41f",
+      "ingested_at": "2026-04-28T04:47:00+00:00",
+      "shareholder_profit": 13.429
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-10",
+      "news_id": "16916230322911",
+      "raw_path": "EFORL/financials/2566/H1/source.zip",
+      "sha256": "b05544dafc99ce38beeb7443618260b867ed2122f0c86c1597c27c726ea09638",
+      "ingested_at": "2026-04-28T04:47:10+00:00",
+      "shareholder_profit": 14.263
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-12",
+      "news_id": "16838458744741",
+      "raw_path": "EFORL/financials/2566/Q1/source.zip",
+      "sha256": "0ef6087333cb3cec13aa715d9f3ce1839e61cf9a1e9f31b1e267d756db1de01b",
+      "ingested_at": "2026-04-28T04:47:15+00:00",
+      "shareholder_profit": -20.78
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361323641",
+      "raw_path": "EFORL/financials/2567/9M/source.zip",
+      "sha256": "4d8bb32cc45e04f911b81192fde38f342a1e8223fd0c207daf98c3c27ab279b1",
+      "ingested_at": "2026-04-28T04:46:45+00:00",
+      "shareholder_profit": 36.806
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-27",
+      "news_id": "17406066485801",
+      "raw_path": "EFORL/financials/2567/FY/source.zip",
+      "sha256": "2ebdde79b45ab385fcc8946b3efba7dd0bbc0111d64cbc2a36e3fe292aa15078",
+      "ingested_at": "2026-04-28T04:46:40+00:00",
+      "shareholder_profit": 19.693
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-14",
+      "news_id": "17235858067481",
+      "raw_path": "EFORL/financials/2567/H1/source.zip",
+      "sha256": "546a8279add85669f74a465f99a2731d82c940602c163122c5ea47fc314d5e71",
+      "ingested_at": "2026-04-28T04:46:50+00:00",
+      "shareholder_profit": -20.519
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434596951",
+      "raw_path": "EFORL/financials/2567/Q1/source.zip",
+      "sha256": "717805f9a0b5e8bc35b3227809742e5a334d81e7425e06c6e980e8b41e639b68",
+      "ingested_at": "2026-04-28T04:46:55+00:00",
+      "shareholder_profit": -22.318917096428567
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-13",
+      "news_id": "17629880511441",
+      "raw_path": "EFORL/financials/2568/9M/source.zip",
+      "sha256": "9d9859871e0fe9adbe9b4702e65ca1db53a5ab5897041256b6f84904bf273063",
+      "ingested_at": "2026-04-28T04:46:25+00:00",
+      "shareholder_profit": 19.97
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-27",
+      "news_id": "17721442942791",
+      "raw_path": "EFORL/financials/2568/FY/source.zip",
+      "sha256": "bdf7e46f4466df94825c92038a943e5a9c1003508a49f3aa8105391ef2e30470",
+      "ingested_at": "2026-04-28T04:46:20+00:00",
+      "shareholder_profit": 44.573
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229883421",
+      "raw_path": "EFORL/financials/2568/H1/source.zip",
+      "sha256": "daebbd26ca071f992aed84d64b9a78348867c99f1652e8cc8c83877d42570899",
+      "ingested_at": "2026-04-28T04:46:30+00:00",
+      "shareholder_profit": 16.489
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-15",
+      "news_id": "17472613080911",
+      "raw_path": "EFORL/financials/2568/Q1/source.zip",
+      "sha256": "22c9b08d2c2bbefe67324a6483bfb5e6070a8e5a7e5a44edf2500f250c690b2d",
+      "ingested_at": "2026-04-28T04:46:35+00:00",
+      "shareholder_profit": -4.517
+    }
+  ]
+}

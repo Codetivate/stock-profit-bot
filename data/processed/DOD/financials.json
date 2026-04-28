@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "symbol": "DOD",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-26",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 55.129349,
+      "Q2": -72.110321,
+      "Q3": 20.475634,
+      "Q4": 15.902364000000006,
+      "FullYear": 19.397026
+    },
+    "2565": {
+      "Q1": -2.031471,
+      "Q2": -31.072289,
+      "Q3": 1.343543,
+      "Q4": -373.388673,
+      "FullYear": -405.14889
+    },
+    "2566": {
+      "Q1": -19.496844,
+      "Q2": 6.108149,
+      "Q3": 12.491865,
+      "Q4": 7.268834999999996,
+      "FullYear": 6.372005
+    },
+    "2567": {
+      "Q1": -2.245,
+      "Q2": -197.559,
+      "Q3": 10.886,
+      "Q4": -2.1870089999999927,
+      "FullYear": -191.105009
+    },
+    "2568": {
+      "Q1": 30.212,
+      "Q2": 9.998,
+      "Q3": 10.258,
+      "Q4": 12.59690500000001,
+      "FullYear": 63.064905
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-11",
+      "news_id": "2021121717",
+      "raw_path": "DOD/financials/2564/9M/source.zip",
+      "sha256": "97bca21e3d079d167aff16dd4c4a53b197f87c66a98b99f45ddf0fefd489842b",
+      "ingested_at": "2026-04-28T04:36:47+00:00",
+      "shareholder_profit": 20.475634
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-24",
+      "news_id": "2022022376",
+      "raw_path": "DOD/financials/2564/FY/source.zip",
+      "sha256": "8fa734e2c2909e241d8694f9830aeab3b7b1b0f0945dac40835708effbc836dd",
+      "ingested_at": "2026-04-28T04:36:42+00:00",
+      "shareholder_profit": 19.397026
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-10",
+      "news_id": "2021086712",
+      "raw_path": "DOD/financials/2564/H1/source.zip",
+      "sha256": "b48efecd569365bc4d687865978a8f7e43db2968852bff6e644135f102cce055",
+      "ingested_at": "2026-04-28T04:36:52+00:00",
+      "shareholder_profit": -72.110321
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-11",
+      "news_id": "2021052866",
+      "raw_path": "DOD/financials/2564/Q1/source.zip",
+      "sha256": "78ca066165e86777ada2c659e35cda9a592bc89cc1db9c5a06d15ba0eb7f3878",
+      "ingested_at": "2026-04-28T04:36:57+00:00",
+      "shareholder_profit": 55.129349
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-10",
+      "news_id": "2022132428",
+      "raw_path": "DOD/financials/2565/9M/source.zip",
+      "sha256": "2197d78de82c32f5de66171cd8060f3c802890887ccbfa6e5ff4a4f6af1c521d",
+      "ingested_at": "2026-04-28T04:36:26+00:00",
+      "shareholder_profit": 1.343543
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-22",
+      "news_id": "2023019422",
+      "raw_path": "DOD/financials/2565/FY/source.zip",
+      "sha256": "4f6b201d371a6fb900a99416d15a8776ca2dd2117f89ced9284ff3d8054fb46c",
+      "ingested_at": "2026-04-28T04:36:20+00:00",
+      "shareholder_profit": -405.14889
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-10",
+      "news_id": "2022093906",
+      "raw_path": "DOD/financials/2565/H1/source.zip",
+      "sha256": "719f29652a2c16a5787355483134240b0ea75387434ce413942336c9e197dc8c",
+      "ingested_at": "2026-04-28T04:36:31+00:00",
+      "shareholder_profit": -31.072289
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-12",
+      "news_id": "2022060483",
+      "raw_path": "DOD/financials/2565/Q1/source.zip",
+      "sha256": "d721b91d8400653517ee4ad49ac8895716bc42cbb07177c6fa3a164ac5873e68",
+      "ingested_at": "2026-04-28T04:36:36+00:00",
+      "shareholder_profit": -2.031471
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-08",
+      "news_id": "16993998080231",
+      "raw_path": "DOD/financials/2566/9M/source.zip",
+      "sha256": "6f2c8aa0a8f1df907b4b0133f28414502aa38bb4dfe1dbb16e2638dbef3e5ddb",
+      "ingested_at": "2026-04-28T04:36:05+00:00",
+      "shareholder_profit": 12.491865
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-23",
+      "news_id": "17086428947871",
+      "raw_path": "DOD/financials/2566/FY/source.zip",
+      "sha256": "c94909ed4a2b98b4e5c098b89c228e1569e49a78a9b53ef7741838dcd17c4b30",
+      "ingested_at": "2026-04-28T04:36:00+00:00",
+      "shareholder_profit": 6.372005
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-11",
+      "news_id": "16917102035391",
+      "raw_path": "DOD/financials/2566/H1/source.zip",
+      "sha256": "42db7d5c6721d3c6d7d08694190af3cd771b21896b2519e4d82a906a49c2f764",
+      "ingested_at": "2026-04-28T04:36:10+00:00",
+      "shareholder_profit": 6.108149
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-11",
+      "news_id": "16837584105911",
+      "raw_path": "DOD/financials/2566/Q1/source.zip",
+      "sha256": "8ec7260bcdca37b4373c748537ef5a8b2dd3d72702d8c0b1f0717eddccb42766",
+      "ingested_at": "2026-04-28T04:36:15+00:00",
+      "shareholder_profit": -19.496844
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-07",
+      "news_id": "17309360554071",
+      "raw_path": "DOD/financials/2567/9M/source.zip",
+      "sha256": "6584ece64faa322a17a91964a55bcec33a219e790f5642aa8915d88b0ad67547",
+      "ingested_at": "2026-04-28T04:35:44+00:00",
+      "shareholder_profit": 10.886
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-19",
+      "news_id": "17399221616881",
+      "raw_path": "DOD/financials/2567/FY/source.zip",
+      "sha256": "5dd9cf3a4ce6a25013dda2ef654b6460a05885d1b53e2a5465d2b7689cffab90",
+      "ingested_at": "2026-04-28T04:35:39+00:00",
+      "shareholder_profit": -191.105009
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-08",
+      "news_id": "17230734216881",
+      "raw_path": "DOD/financials/2567/H1/source.zip",
+      "sha256": "818b7f0c184c683dd74085eb802b084f5a84b963e0beec1a7b37a6f0cef4d60d",
+      "ingested_at": "2026-04-28T04:35:49+00:00",
+      "shareholder_profit": -197.559
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-09",
+      "news_id": "17152110366381",
+      "raw_path": "DOD/financials/2567/Q1/source.zip",
+      "sha256": "ecaad0da77ac9f4beb62795e366ad16a2b885510e49a6174327a34c11f4981c9",
+      "ingested_at": "2026-04-28T04:35:54+00:00",
+      "shareholder_profit": -2.245
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-11",
+      "news_id": "17628159926731",
+      "raw_path": "DOD/financials/2568/9M/source.zip",
+      "sha256": "5fb8be87adce3c6af4ec5bf91106d5eeafd0c906f8a6c14d4ccff928be5a73a3",
+      "ingested_at": "2026-04-28T04:35:23+00:00",
+      "shareholder_profit": 10.258
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-26",
+      "news_id": "17720575336111",
+      "raw_path": "DOD/financials/2568/FY/source.zip",
+      "sha256": "30a8f20d9236b4bf390ca1749d764c9f611cb1712cc46214448dba763aae057d",
+      "ingested_at": "2026-04-28T04:35:18+00:00",
+      "shareholder_profit": 63.064905
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361165781",
+      "raw_path": "DOD/financials/2568/H1/source.zip",
+      "sha256": "d554f5143f168a1d340474c3a930995b298e24b059b07f0eb8db519733747bd3",
+      "ingested_at": "2026-04-28T04:35:29+00:00",
+      "shareholder_profit": 9.998
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-09",
+      "news_id": "17467412602871",
+      "raw_path": "DOD/financials/2568/Q1/source.zip",
+      "sha256": "f18b1b36e2d2e623b6dcbdb33450862da1bb493940b27e2acd9c6c47cd551814",
+      "ingested_at": "2026-04-28T04:35:34+00:00",
+      "shareholder_profit": 30.212
+    }
+  ]
+}

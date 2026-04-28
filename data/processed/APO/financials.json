@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "symbol": "APO",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-27",
+  "quarterly_history": {
+    "2566": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": 12.988273
+    },
+    "2567": {
+      "Q1": -18.74403,
+      "Q2": 84.536467,
+      "Q3": 46.141405,
+      "Q4": -4.8726370000000045,
+      "FullYear": 107.061205
+    },
+    "2568": {
+      "Q1": -12.033892,
+      "Q2": 140.621233,
+      "Q3": 52.132549,
+      "Q4": -9.061441999999985,
+      "FullYear": 171.658448
+    }
+  },
+  "sources": [
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-04-01",
+      "news_id": "17119255216431",
+      "raw_path": "APO/financials/2566/FY/source.zip",
+      "sha256": "21b2124406174cebeeebd9724fc2164fba59d0815804ac047039410381699c26",
+      "ingested_at": "2026-04-28T03:24:55+00:00",
+      "shareholder_profit": 12.988273
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361267151",
+      "raw_path": "APO/financials/2567/9M/source.zip",
+      "sha256": "f11c48454f5e2885cce7f0b10996b4cf0593ff52c1db9264966aa2b28dc536ff",
+      "ingested_at": "2026-04-28T03:24:40+00:00",
+      "shareholder_profit": 46.141405
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-27",
+      "news_id": "17406066110941",
+      "raw_path": "APO/financials/2567/FY/source.zip",
+      "sha256": "9ac83aaa66498a68a6d70f6976c91f50f319ea1d477f1e0544612f24d3ac7f49",
+      "ingested_at": "2026-04-28T03:24:36+00:00",
+      "shareholder_profit": 46.141405
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-14",
+      "news_id": "17235858000871",
+      "raw_path": "APO/financials/2567/H1/source.zip",
+      "sha256": "0a3ce1ef2d695a06322458485dd1b6e1d5a43b11f430773b04515f44771a0e3a",
+      "ingested_at": "2026-04-28T03:24:45+00:00",
+      "shareholder_profit": 84.536467
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434578611",
+      "raw_path": "APO/financials/2567/Q1/source.zip",
+      "sha256": "09a62611f70be284b12bfb199c4b08687d6bb90722e7aa209650bd4f468e48ff",
+      "ingested_at": "2026-04-28T03:24:50+00:00",
+      "shareholder_profit": -18.74403
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-11",
+      "news_id": "17628159922091",
+      "raw_path": "APO/financials/2568/9M/source.zip",
+      "sha256": "58a0b7841aae5d3fed5b99d75ed76a2f52d0b2d755415bff0af71c0b5640d5d9",
+      "ingested_at": "2026-04-28T03:24:21+00:00",
+      "shareholder_profit": 52.132549
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-27",
+      "news_id": "17721443162441",
+      "raw_path": "APO/financials/2568/FY/source.zip",
+      "sha256": "a981506146b5ea23d2e78f7e7c08c82f38c848904b0da292b2d93172e42bb646",
+      "ingested_at": "2026-04-28T03:24:16+00:00",
+      "shareholder_profit": 43.071107
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229895881",
+      "raw_path": "APO/financials/2568/H1/source.zip",
+      "sha256": "d95cfbc04e78378d244ce116739b61ff9eec897455ab80e9aaa4c43bfc2a8d07",
+      "ingested_at": "2026-04-28T03:24:26+00:00",
+      "shareholder_profit": 140.621233
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-14",
+      "news_id": "17471784604541",
+      "raw_path": "APO/financials/2568/Q1/source.zip",
+      "sha256": "18ce68aad90910f2181841949097a5c629e916e81ccce278463e2db7e0301560",
+      "ingested_at": "2026-04-28T03:24:31+00:00",
+      "shareholder_profit": -12.033892
+    }
+  ]
+}

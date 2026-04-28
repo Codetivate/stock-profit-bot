@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "symbol": "CHEWA",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-12",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 30.105,
+      "Q2": 19.661,
+      "Q3": 4.696,
+      "Q4": 15.67166999999999,
+      "FullYear": 70.13367
+    },
+    "2565": {
+      "Q1": -4.014,
+      "Q2": 100.348,
+      "Q3": 7.975,
+      "Q4": 11.117196999999999,
+      "FullYear": 115.426197
+    },
+    "2566": {
+      "Q1": 7.117,
+      "Q2": -37.677,
+      "Q3": 14.018,
+      "Q4": -52.57147700000001,
+      "FullYear": -69.113477
+    },
+    "2567": {
+      "Q1": 16.867,
+      "Q2": 4.724,
+      "Q3": 1.578,
+      "Q4": -379.54188899999997,
+      "FullYear": -356.372889
+    },
+    "2568": {
+      "Q1": -45.239,
+      "Q2": -19.706,
+      "Q3": -41.546,
+      "Q4": -304.314955,
+      "FullYear": -410.805955
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-12",
+      "news_id": "2021123916",
+      "raw_path": "CHEWA/financials/2564/9M/source.zip",
+      "sha256": "7e2dc9543b60c896c29a9bd9f1b49e5341b43bcc43824ac61e2d584449bb4b11",
+      "ingested_at": "2026-04-28T04:06:07+00:00",
+      "shareholder_profit": 4.696
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-17",
+      "news_id": "2022016067",
+      "raw_path": "CHEWA/financials/2564/FY/source.zip",
+      "sha256": "add1e2e3f07e6b9ab76b68dc87f0a26a83dbc7024ef3f61eff4833df85f8db3f",
+      "ingested_at": "2026-04-28T04:06:01+00:00",
+      "shareholder_profit": 70.13367
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-09",
+      "news_id": "2021085365",
+      "raw_path": "CHEWA/financials/2564/H1/source.zip",
+      "sha256": "4091a5692b3e3dd6c12306c77b05d9b7661241ee0007a52c15338ae6d9662a2e",
+      "ingested_at": "2026-04-28T04:06:12+00:00",
+      "shareholder_profit": 19.661
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-17",
+      "news_id": "2021060299",
+      "raw_path": "CHEWA/financials/2564/Q1/source.zip",
+      "sha256": "b20e7ae0c2663cda8f8adee871f86bec59c3db0b331bd6cacbc77fbd034303dc",
+      "ingested_at": "2026-04-28T04:06:17+00:00",
+      "shareholder_profit": 30.105
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-11",
+      "news_id": "2022134242",
+      "raw_path": "CHEWA/financials/2565/9M/source.zip",
+      "sha256": "eb9a0ca0673a5328781c397240f2cf8564a240bd26d800477a4f43effa8ebf46",
+      "ingested_at": "2026-04-28T04:05:45+00:00",
+      "shareholder_profit": 7.975
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-14",
+      "news_id": "2023015154",
+      "raw_path": "CHEWA/financials/2565/FY/source.zip",
+      "sha256": "248e814a40778f3b2881e56340b4f0ccc0e15e9df868e499a00a161cf316c063",
+      "ingested_at": "2026-04-28T04:05:40+00:00",
+      "shareholder_profit": 115.426197
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-10",
+      "news_id": "2022093463",
+      "raw_path": "CHEWA/financials/2565/H1/source.zip",
+      "sha256": "8faa2d17cd2ef2a6c284ad6ea62353c267701915ed8330f8f7afada6251f8720",
+      "ingested_at": "2026-04-28T04:05:50+00:00",
+      "shareholder_profit": 100.348
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-17",
+      "news_id": "2022064519",
+      "raw_path": "CHEWA/financials/2565/Q1/source.zip",
+      "sha256": "fdaf29ba00f4fa4f7e5f3247762f9ab7098015a7a860328eb536d72261e5acc3",
+      "ingested_at": "2026-04-28T04:05:56+00:00",
+      "shareholder_profit": -4.014
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-13",
+      "news_id": "16998304597101",
+      "raw_path": "CHEWA/financials/2566/9M/source.zip",
+      "sha256": "9d383211e3731d08cd7a3b00f87d1fe862c6345efffec83993ded56723bdfeaa",
+      "ingested_at": "2026-04-28T04:05:25+00:00",
+      "shareholder_profit": 14.018
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-12",
+      "news_id": "17076943420211",
+      "raw_path": "CHEWA/financials/2566/FY/source.zip",
+      "sha256": "d03fb08c226ea8507fbeadf59c5c00bd1d860cde0a3df985e37526d6ff4be2b6",
+      "ingested_at": "2026-04-28T04:05:20+00:00",
+      "shareholder_profit": -69.113477
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-11",
+      "news_id": "16917102028381",
+      "raw_path": "CHEWA/financials/2566/H1/source.zip",
+      "sha256": "0a2a780ffc8971d3e1c66cd36daeacceaed1d6cba773bbfc32476b1d9c24fd09",
+      "ingested_at": "2026-04-28T04:05:30+00:00",
+      "shareholder_profit": -37.677
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-15",
+      "news_id": "16841054054681",
+      "raw_path": "CHEWA/financials/2566/Q1/source.zip",
+      "sha256": "4dae099fb25da14832e0afdc02a0760149c5a2a8034433c65f99437d0923cf61",
+      "ingested_at": "2026-04-28T04:05:35+00:00",
+      "shareholder_profit": 7.117
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-13",
+      "news_id": "17314477512221",
+      "raw_path": "CHEWA/financials/2567/9M/source.zip",
+      "sha256": "307cf14d4488781a9b396bad2cee50df84deca1ca65f04628cbba565eebc50d2",
+      "ingested_at": "2026-04-28T04:05:05+00:00",
+      "shareholder_profit": 1.578
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-13",
+      "news_id": "17394038387191",
+      "raw_path": "CHEWA/financials/2567/FY/source.zip",
+      "sha256": "4eaa8870d8137d988c444eeedeaa25a939a7b62d64a5da6aadb7edf347d3285d",
+      "ingested_at": "2026-04-28T04:05:00+00:00",
+      "shareholder_profit": -356.372889
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-09",
+      "news_id": "17231594081901",
+      "raw_path": "CHEWA/financials/2567/H1/source.zip",
+      "sha256": "5486a59d2729ab1c5bf8d39ed4d1cd6e662bf550ecacd94f4c275a732872e6e8",
+      "ingested_at": "2026-04-28T04:05:10+00:00",
+      "shareholder_profit": 4.724
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-15",
+      "news_id": "17157257455141",
+      "raw_path": "CHEWA/financials/2567/Q1/source.zip",
+      "sha256": "44d7249fe78dbcebad2df4e1529e84421c61689f489a7615a9a2a52d63ec5650",
+      "ingested_at": "2026-04-28T04:05:15+00:00",
+      "shareholder_profit": 16.867
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-12",
+      "news_id": "17629001482891",
+      "raw_path": "CHEWA/financials/2568/9M/source.zip",
+      "sha256": "825a3e017b2b36fecc1a3f3db40d8d8874eedb6ca7ed43284207591e57b59cbf",
+      "ingested_at": "2026-04-28T04:04:46+00:00",
+      "shareholder_profit": -41.546
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-12",
+      "news_id": "17708534425331",
+      "raw_path": "CHEWA/financials/2568/FY/source.zip",
+      "sha256": "0887d7f95567834937abcf1388c1edff0a28bb7c0ddd2eb8aa2df376509752af",
+      "ingested_at": "2026-04-28T04:04:40+00:00",
+      "shareholder_profit": -410.805955
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-07",
+      "news_id": "17545237044141",
+      "raw_path": "CHEWA/financials/2568/H1/source.zip",
+      "sha256": "72a03362eb03ceb4dd461acc8eaff06ac33e9943da130fcbd6c4a47792707638",
+      "ingested_at": "2026-04-28T04:04:51+00:00",
+      "shareholder_profit": -19.706
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-15",
+      "news_id": "17472613177981",
+      "raw_path": "CHEWA/financials/2568/Q1/source.zip",
+      "sha256": "8a31137eff9ff2aea769db55d89893da64f1594acbfdf1e52fe8a2a4676c4f10",
+      "ingested_at": "2026-04-28T04:04:55+00:00",
+      "shareholder_profit": -45.239
+    }
+  ]
+}

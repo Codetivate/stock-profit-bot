@@ -1,0 +1,227 @@
+{
+  "schema_version": 1,
+  "symbol": "HEALTH",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-27",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 852.812933,
+      "Q2": 0.0,
+      "Q3": 0.0,
+      "Q4": 0.0,
+      "FullYear": 852.812933
+    },
+    "2565": {
+      "Q1": -18.826545,
+      "Q2": 4.429545,
+      "Q3": -2.338337,
+      "Q4": null,
+      "FullYear": null
+    },
+    "2566": {
+      "Q1": -7.020611,
+      "Q2": -19.14597,
+      "Q3": -11.582217,
+      "Q4": null,
+      "FullYear": null
+    },
+    "2567": {
+      "Q1": -12.278997,
+      "Q2": -247.636668,
+      "Q3": -6.704789,
+      "Q4": -191.64667000000003,
+      "FullYear": -458.267124
+    },
+    "2568": {
+      "Q1": -0.959749,
+      "Q2": -5.072976,
+      "Q3": -7.293556,
+      "Q4": -25.130059,
+      "FullYear": -38.45634
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-11",
+      "news_id": "2021120985",
+      "raw_path": "HEALTH/financials/2564/9M/source.zip",
+      "sha256": "8f3d2d28a71cec41f976fb22cbbb6e3febd1059531f6e4cae288e44183af5848",
+      "ingested_at": "2026-04-28T05:16:38+00:00",
+      "shareholder_profit": 852.812933
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-28",
+      "news_id": "2022025175",
+      "raw_path": "HEALTH/financials/2564/FY/source.zip",
+      "sha256": "c83f365ede5f7b38ad6f5781ba4919e27bffc7e823fa5b0e052b59f7d0785572",
+      "ingested_at": "2026-04-28T05:16:33+00:00",
+      "shareholder_profit": 852.812933
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-13",
+      "news_id": "2021088728",
+      "raw_path": "HEALTH/financials/2564/H1/source.zip",
+      "sha256": "f076c4f8ad4ce81f3b93bfd64fbed9aa4d6908ed7b85087dc7d34fee1316b881",
+      "ingested_at": "2026-04-28T05:16:43+00:00",
+      "shareholder_profit": 852.812933
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-17",
+      "news_id": "2021059521",
+      "raw_path": "HEALTH/financials/2564/Q1/source.zip",
+      "sha256": "d582b0b455ae23eb1fe57fc670fbb485b671bfc9904a606c320e43481c2138ef",
+      "ingested_at": "2026-04-28T05:16:48+00:00",
+      "shareholder_profit": 852.812933
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-10",
+      "news_id": "2022132576",
+      "raw_path": "HEALTH/financials/2565/9M/source.zip",
+      "sha256": "d66f27e64e9174f4e8e2d69d99343a0803fb9294f5ce3d9ea6b1fad0e2ca2de2",
+      "ingested_at": "2026-04-28T05:16:18+00:00",
+      "shareholder_profit": -2.338337
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-15",
+      "news_id": "2022098454",
+      "raw_path": "HEALTH/financials/2565/H1/source.zip",
+      "sha256": "a8de29acaac2a27c0a6eb7bd2fec36d8c5d8e07d5af6e620625be278fba1a569",
+      "ingested_at": "2026-04-28T05:16:22+00:00",
+      "shareholder_profit": 4.429545
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-12",
+      "news_id": "2022059036",
+      "raw_path": "HEALTH/financials/2565/Q1/source.zip",
+      "sha256": "25bd59626ade644c028f2e5fd77664dd73120e5cbad05d60982092a0da36ad9f",
+      "ingested_at": "2026-04-28T05:16:28+00:00",
+      "shareholder_profit": -18.826545
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-09",
+      "news_id": "16994859290101",
+      "raw_path": "HEALTH/financials/2566/9M/source.zip",
+      "sha256": "1d088568e6ca2840ebf8d4c67d9c0452521c604f04f0b5b05824107fe1244448",
+      "ingested_at": "2026-04-28T05:15:58+00:00",
+      "shareholder_profit": -11.582217
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-10",
+      "news_id": "16916230327071",
+      "raw_path": "HEALTH/financials/2566/H1/source.zip",
+      "sha256": "efbc423f7f4b4c7c36d59969aecf1600777fdc579e5132a548f12a9991c73abb",
+      "ingested_at": "2026-04-28T05:16:03+00:00",
+      "shareholder_profit": -19.14597
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-11",
+      "news_id": "16837584098911",
+      "raw_path": "HEALTH/financials/2566/Q1/source.zip",
+      "sha256": "a009cc5cb8d0eabc92efa8fdc36c6bbe173accae01e1e10d912ca3a08eff84f5",
+      "ingested_at": "2026-04-28T05:16:08+00:00",
+      "shareholder_profit": -7.020611
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361313561",
+      "raw_path": "HEALTH/financials/2567/9M/source.zip",
+      "sha256": "d8247f8408d369941d05ecdae8ed0a307d33f4fbc0fdbf1e1b53588bc08a5d75",
+      "ingested_at": "2026-04-28T05:15:39+00:00",
+      "shareholder_profit": -6.704789
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-28",
+      "news_id": "17406928536101",
+      "raw_path": "HEALTH/financials/2567/FY/source.zip",
+      "sha256": "9d53a7d22f4ff3207315d69fa81719fbc62d1f208fb4ca2f231302614bfd0845",
+      "ingested_at": "2026-04-28T05:15:34+00:00",
+      "shareholder_profit": -458.267124
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-08",
+      "news_id": "17230734213311",
+      "raw_path": "HEALTH/financials/2567/H1/source.zip",
+      "sha256": "075df2a1cb088362f50d8ed7ca41addbe87efa55648756e21167e05eee18c263",
+      "ingested_at": "2026-04-28T05:15:44+00:00",
+      "shareholder_profit": -247.636668
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-09",
+      "news_id": "17152110365271",
+      "raw_path": "HEALTH/financials/2567/Q1/source.zip",
+      "sha256": "b3ed172319ab78bd3ecc60295ae4cea1e6b8f7459e728523407c931486ae0d52",
+      "ingested_at": "2026-04-28T05:15:49+00:00",
+      "shareholder_profit": -12.278997
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-14",
+      "news_id": "17630699638671",
+      "raw_path": "HEALTH/financials/2568/9M/source.zip",
+      "sha256": "1bcdeae277f7c70815981faceb80b0f3ee74fffa2c955b302aeb161bfbdc0672",
+      "ingested_at": "2026-04-28T05:15:20+00:00",
+      "shareholder_profit": -7.293556
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-27",
+      "news_id": "17721443208231",
+      "raw_path": "HEALTH/financials/2568/FY/source.zip",
+      "sha256": "983b632fb17d53b0daa5a57837ab2cbd307e0054e59606955b01a5abe02843b7",
+      "ingested_at": "2026-04-28T05:15:14+00:00",
+      "shareholder_profit": -38.45634
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361147821",
+      "raw_path": "HEALTH/financials/2568/H1/source.zip",
+      "sha256": "033d2f42c270e8bb24e8ecc46e4836312d7aceb959721d6a22861a5f18b4dc22",
+      "ingested_at": "2026-04-28T05:15:25+00:00",
+      "shareholder_profit": -5.072976
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903584621",
+      "raw_path": "HEALTH/financials/2568/Q1/source.zip",
+      "sha256": "d97ea00530f5fb24230e517ffeb4de1be85efff5eb299ca52fd1fa84ac715e7e",
+      "ingested_at": "2026-04-28T05:15:29+00:00",
+      "shareholder_profit": -0.959749
+    }
+  ]
+}

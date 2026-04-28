@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "symbol": "CAZ",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-26",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 18.915,
+      "Q2": 32.611,
+      "Q3": 33.885,
+      "Q4": 51.102353000000015,
+      "FullYear": 136.513353
+    },
+    "2565": {
+      "Q1": 61.971,
+      "Q2": 55.783,
+      "Q3": 50.91,
+      "Q4": 32.71553200000001,
+      "FullYear": 201.379532
+    },
+    "2566": {
+      "Q1": 55.665,
+      "Q2": 46.563,
+      "Q3": 59.922,
+      "Q4": 52.418435,
+      "FullYear": 214.568435
+    },
+    "2567": {
+      "Q1": 52.324,
+      "Q2": 46.098,
+      "Q3": 9.106,
+      "Q4": -339.229913,
+      "FullYear": -231.701913
+    },
+    "2568": {
+      "Q1": 39.587,
+      "Q2": 26.594,
+      "Q3": -391.222,
+      "Q4": 27.604003999999975,
+      "FullYear": -297.436996
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-09",
+      "news_id": "2021119528",
+      "raw_path": "CAZ/financials/2564/9M/source.zip",
+      "sha256": "10b1dccb4aabbf547ba3567dcd92dd3e2fbc472e15b6f5b5c4b6a15d2213030a",
+      "ingested_at": "2026-04-28T04:01:12+00:00",
+      "shareholder_profit": 33.885
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-25",
+      "news_id": "2022023414",
+      "raw_path": "CAZ/financials/2564/FY/source.zip",
+      "sha256": "78d60e4719aff03e7a3405640804b8af9de262bbdef2a9015e12a93b596e59be",
+      "ingested_at": "2026-04-28T04:01:07+00:00",
+      "shareholder_profit": 136.513353
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-09",
+      "news_id": "2021085253",
+      "raw_path": "CAZ/financials/2564/H1/source.zip",
+      "sha256": "b1471c61d77af2027d6129146c9799ef787a37502ef82527f5bb8d597ba0c46b",
+      "ingested_at": "2026-04-28T04:01:17+00:00",
+      "shareholder_profit": 32.611
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-13",
+      "news_id": "2021055463",
+      "raw_path": "CAZ/financials/2564/Q1/source.zip",
+      "sha256": "4fe06290fe5199efeb1e8296f0765a5b26094b8d1e8a771b47c8cb19759fe57d",
+      "ingested_at": "2026-04-28T04:01:23+00:00",
+      "shareholder_profit": 18.915
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-09",
+      "news_id": "2022130309",
+      "raw_path": "CAZ/financials/2565/9M/source.zip",
+      "sha256": "b07bf8f661c16dd99a6de8311f81b1199d2ddb442d72e513dfab4d85fa34ae3a",
+      "ingested_at": "2026-04-28T04:00:52+00:00",
+      "shareholder_profit": 50.91
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-24",
+      "news_id": "2023022296",
+      "raw_path": "CAZ/financials/2565/FY/source.zip",
+      "sha256": "34297436807d363eb3d9a95bdddedff8502a24c1a79fb5ecae0c79a337696657",
+      "ingested_at": "2026-04-28T04:00:47+00:00",
+      "shareholder_profit": 201.379532
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-09",
+      "news_id": "2022091895",
+      "raw_path": "CAZ/financials/2565/H1/source.zip",
+      "sha256": "09b3d1ea4d6a5933bdb56375c83a7bf46e8f7ae62f2454c809131e0146ab485f",
+      "ingested_at": "2026-04-28T04:00:56+00:00",
+      "shareholder_profit": 55.783
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-10",
+      "news_id": "2022056638",
+      "raw_path": "CAZ/financials/2565/Q1/source.zip",
+      "sha256": "b12553116c019a753c8c6865c32c0c01eb448ff372f82abe1b1ff45a04a4ca46",
+      "ingested_at": "2026-04-28T04:01:01+00:00",
+      "shareholder_profit": 61.971
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-13",
+      "news_id": "16998304498681",
+      "raw_path": "CAZ/financials/2566/9M/source.zip",
+      "sha256": "8085094f510c3415ba670ba59f4f92a86f2dac7cbbbbc6caf9ae8b005aa20abf",
+      "ingested_at": "2026-04-28T04:00:33+00:00",
+      "shareholder_profit": 59.922
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-27",
+      "news_id": "17089869127211",
+      "raw_path": "CAZ/financials/2566/FY/source.zip",
+      "sha256": "1a3382b9df37e98c842c453fc3c9011ff34d0c591ed99fef015cc8af1bf464fd",
+      "ingested_at": "2026-04-28T04:00:28+00:00",
+      "shareholder_profit": 214.568435
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-09",
+      "news_id": "16915381901001",
+      "raw_path": "CAZ/financials/2566/H1/source.zip",
+      "sha256": "fa95abb616dc9d27216ea172be03038193a36491814150d705f56ee2eb9c3abf",
+      "ingested_at": "2026-04-28T04:00:37+00:00",
+      "shareholder_profit": 46.563
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-08",
+      "news_id": "16835022078291",
+      "raw_path": "CAZ/financials/2566/Q1/source.zip",
+      "sha256": "22bf188c55906d55e339728d4f08ecfa213c60a5fd181e448e6368a3080750e1",
+      "ingested_at": "2026-04-28T04:00:42+00:00",
+      "shareholder_profit": 55.665
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-11",
+      "news_id": "17312815576881",
+      "raw_path": "CAZ/financials/2567/9M/source.zip",
+      "sha256": "17fb8b53fd924dcb6f47dfcab3db6eeef8f5bce0ded875811114cf47852e15fa",
+      "ingested_at": "2026-04-28T04:00:13+00:00",
+      "shareholder_profit": 9.106
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-27",
+      "news_id": "17406066132691",
+      "raw_path": "CAZ/financials/2567/FY/source.zip",
+      "sha256": "4051e373193d774dc57c4e0c3a881586f691ecc0b27df8bbe77083e13cf8a84d",
+      "ingested_at": "2026-04-28T04:00:08+00:00",
+      "shareholder_profit": -231.701913
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-14",
+      "news_id": "17235857924361",
+      "raw_path": "CAZ/financials/2567/H1/source.zip",
+      "sha256": "edc84698e68206c8ddf9917db98c1e13d482ef5b15b20f1b0b811396512d1fdb",
+      "ingested_at": "2026-04-28T04:00:18+00:00",
+      "shareholder_profit": 46.098
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-10",
+      "news_id": "17152924591291",
+      "raw_path": "CAZ/financials/2567/Q1/source.zip",
+      "sha256": "89eb3723318d00ae0f7bec417221376d66733adc6f67086bb9db85b8867fd66d",
+      "ingested_at": "2026-04-28T04:00:23+00:00",
+      "shareholder_profit": 52.324
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-12",
+      "news_id": "17629001424321",
+      "raw_path": "CAZ/financials/2568/9M/source.zip",
+      "sha256": "47e4bfff1fcca2b53bcfd22f0e061f28e276f5ad0e15f96f1c56b03561268589",
+      "ingested_at": "2026-04-28T03:59:54+00:00",
+      "shareholder_profit": -391.222
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-26",
+      "news_id": "17720575043491",
+      "raw_path": "CAZ/financials/2568/FY/source.zip",
+      "sha256": "d2112b419095d5217ddde4903780e492056835a64c957b71b833b1a6648edf3b",
+      "ingested_at": "2026-04-28T03:59:49+00:00",
+      "shareholder_profit": -297.436996
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361041871",
+      "raw_path": "CAZ/financials/2568/H1/source.zip",
+      "sha256": "3e7e50a2f03e2cbbcce9c9d2ca7e703a96e1651784f74fd3412e874e6fb6b1d0",
+      "ingested_at": "2026-04-28T03:59:58+00:00",
+      "shareholder_profit": 26.594
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903451361",
+      "raw_path": "CAZ/financials/2568/Q1/source.zip",
+      "sha256": "442cf42ab63b8a776d84071187a9be165468ce6e833ec97148aa37848d109c05",
+      "ingested_at": "2026-04-28T04:00:03+00:00",
+      "shareholder_profit": 39.587
+    }
+  ]
+}

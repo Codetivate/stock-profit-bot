@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "symbol": "AU",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-24",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 11.754,
+      "Q2": -7.438,
+      "Q3": -13.089,
+      "Q4": 13.219266000000001,
+      "FullYear": 4.446266
+    },
+    "2565": {
+      "Q1": 14.564,
+      "Q2": 34.328,
+      "Q3": 33.522,
+      "Q4": 36.064232,
+      "FullYear": 118.478232
+    },
+    "2566": {
+      "Q1": 34.172,
+      "Q2": 43.085,
+      "Q3": 53.767,
+      "Q4": 47.145412999999984,
+      "FullYear": 178.169413
+    },
+    "2567": {
+      "Q1": 54.174,
+      "Q2": 72.69,
+      "Q3": 83.355,
+      "Q4": 85.97885999999998,
+      "FullYear": 296.19786
+    },
+    "2568": {
+      "Q1": 65.31,
+      "Q2": 52.395,
+      "Q3": 52.338,
+      "Q4": 34.04891,
+      "FullYear": 204.09191
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-08",
+      "news_id": "2021118989",
+      "raw_path": "AU/financials/2564/9M/source.zip",
+      "sha256": "ca30f1b76893e1556236f347511e5e0eaa7d5bc827e2a39b0616d875c2bec1a2",
+      "ingested_at": "2026-04-28T03:37:55+00:00",
+      "shareholder_profit": -13.089
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-21",
+      "news_id": "2022018395",
+      "raw_path": "AU/financials/2564/FY/source.zip",
+      "sha256": "2eb56691768a2c33768997d093f93e259d042cb84352a650e0f2fdf0a0b3319d",
+      "ingested_at": "2026-04-28T03:37:49+00:00",
+      "shareholder_profit": 4.446266
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-09",
+      "news_id": "2021085465",
+      "raw_path": "AU/financials/2564/H1/source.zip",
+      "sha256": "3cad5a72a97104f6a2beb7559965c42a7df7437d6f16ecca5c89b57632a5e707",
+      "ingested_at": "2026-04-28T03:38:00+00:00",
+      "shareholder_profit": -7.438
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-10",
+      "news_id": "2021052753",
+      "raw_path": "AU/financials/2564/Q1/source.zip",
+      "sha256": "cae7b99e26448a3999dbfbe6336a80f9e71a5698c0652cd13333d4af06271260",
+      "ingested_at": "2026-04-28T03:38:05+00:00",
+      "shareholder_profit": 11.754
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-14",
+      "news_id": "2022136118",
+      "raw_path": "AU/financials/2565/9M/source.zip",
+      "sha256": "4df2be4e415a9af70f2cd7ae6713a8110e39d859d3849fa8f76edeeb55139b1a",
+      "ingested_at": "2026-04-28T03:37:34+00:00",
+      "shareholder_profit": 33.522
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-21",
+      "news_id": "2023018601",
+      "raw_path": "AU/financials/2565/FY/source.zip",
+      "sha256": "e03c829d81a006b56fb4ea674e9d085ecf4a43c8cad299a6d6f3c6d7c4687b42",
+      "ingested_at": "2026-04-28T03:37:29+00:00",
+      "shareholder_profit": 118.478232
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-10",
+      "news_id": "2022093871",
+      "raw_path": "AU/financials/2565/H1/source.zip",
+      "sha256": "083436d2d30cd37496339113ae716d355ad230c07d38e793a82521bb355f095a",
+      "ingested_at": "2026-04-28T03:37:39+00:00",
+      "shareholder_profit": 34.328
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-13",
+      "news_id": "2022062869",
+      "raw_path": "AU/financials/2565/Q1/source.zip",
+      "sha256": "96df27b7bb95b1e996c9af0bb199812ee6f3c5553126da91e625041eb6e3a106",
+      "ingested_at": "2026-04-28T03:37:44+00:00",
+      "shareholder_profit": 14.564
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-10",
+      "news_id": "16995730777751",
+      "raw_path": "AU/financials/2566/9M/source.zip",
+      "sha256": "dfb328cc7da6c76dae4ddcf851a5e58c2eeffbf0b3412352f8ef5c12ee53295c",
+      "ingested_at": "2026-04-28T03:37:14+00:00",
+      "shareholder_profit": 53.767
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-23",
+      "news_id": "17086429047211",
+      "raw_path": "AU/financials/2566/FY/source.zip",
+      "sha256": "612526ed4564af7c2d4506b8965b52fca51857bd0bac46e488b4a2cd753841a5",
+      "ingested_at": "2026-04-28T03:37:09+00:00",
+      "shareholder_profit": 178.169413
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-10",
+      "news_id": "16916230299721",
+      "raw_path": "AU/financials/2566/H1/source.zip",
+      "sha256": "1ffa815b1ec596ca7ab844cb7209df5520f89bb7bf6092f4fa73dfc8f34dd08b",
+      "ingested_at": "2026-04-28T03:37:20+00:00",
+      "shareholder_profit": 43.085
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-10",
+      "news_id": "16836750102331",
+      "raw_path": "AU/financials/2566/Q1/source.zip",
+      "sha256": "84196b473f1c6132a887d422f5abd1ec21c309a4f68e37a42bdcc811fc3cab2f",
+      "ingested_at": "2026-04-28T03:37:24+00:00",
+      "shareholder_profit": 34.172
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-12",
+      "news_id": "17313658176301",
+      "raw_path": "AU/financials/2567/9M/source.zip",
+      "sha256": "62031ba1074081715fca021a27f63706b177d8fd3cac6cf38266908fa665bb3d",
+      "ingested_at": "2026-04-28T03:36:54+00:00",
+      "shareholder_profit": 83.355
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-24",
+      "news_id": "17403534201081",
+      "raw_path": "AU/financials/2567/FY/source.zip",
+      "sha256": "59aec450f3efc6a6b5b2a724bf461ee0dd3f534d90372f0cf0327ebac8e06597",
+      "ingested_at": "2026-04-28T03:36:50+00:00",
+      "shareholder_profit": 296.19786
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-09",
+      "news_id": "17231594064261",
+      "raw_path": "AU/financials/2567/H1/source.zip",
+      "sha256": "653f0ec28d92855cc8175a0d6b1917d14ec7ae8d151370b16da5e874b54e51ef",
+      "ingested_at": "2026-04-28T03:36:59+00:00",
+      "shareholder_profit": 72.69
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-10",
+      "news_id": "17152924595061",
+      "raw_path": "AU/financials/2567/Q1/source.zip",
+      "sha256": "0632c1e143a4dd194386562ea3a81e390728e9c66ff2665003abf784b546d740",
+      "ingested_at": "2026-04-28T03:37:04+00:00",
+      "shareholder_profit": 54.174
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-10",
+      "news_id": "17627310450831",
+      "raw_path": "AU/financials/2568/9M/source.zip",
+      "sha256": "0d119fa7ac4c40c678af0cf16fb86844786285003f21ce8869238898bef92cc0",
+      "ingested_at": "2026-04-28T03:36:35+00:00",
+      "shareholder_profit": 52.338
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-24",
+      "news_id": "17718892093551",
+      "raw_path": "AU/financials/2568/FY/source.zip",
+      "sha256": "543c19215a4d4960d72d9eee21a007205f04dcfbf2041de9238abe76bc2d8cf1",
+      "ingested_at": "2026-04-28T03:36:30+00:00",
+      "shareholder_profit": 204.09191
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-08",
+      "news_id": "17546095870271",
+      "raw_path": "AU/financials/2568/H1/source.zip",
+      "sha256": "5223b10ecbfbe384c752d105d9fddaa9c94a58e0c498e716055e88c99244e616",
+      "ingested_at": "2026-04-28T03:36:40+00:00",
+      "shareholder_profit": 52.395
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-09",
+      "news_id": "17467412687131",
+      "raw_path": "AU/financials/2568/Q1/source.zip",
+      "sha256": "e4b35a8bbd1bb9ba9de1e2ac697e62d6ece82fd34bdd77873ff676be6dbcc037",
+      "ingested_at": "2026-04-28T03:36:45+00:00",
+      "shareholder_profit": 65.31
+    }
+  ]
+}

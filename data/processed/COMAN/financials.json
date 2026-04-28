@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "symbol": "COMAN",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-20",
+  "quarterly_history": {
+    "2564": {
+      "Q1": -5.376175,
+      "Q2": -5.584959,
+      "Q3": -6.064913,
+      "Q4": -7.400147,
+      "FullYear": -24.426194
+    },
+    "2565": {
+      "Q1": -9.372609,
+      "Q2": 4.052496,
+      "Q3": -26.440356,
+      "Q4": -14.515740999999991,
+      "FullYear": -46.27621
+    },
+    "2566": {
+      "Q1": 19.516,
+      "Q2": -4.454,
+      "Q3": -6.167,
+      "Q4": -6.918727999999996,
+      "FullYear": 1.976272
+    },
+    "2567": {
+      "Q1": -6.107,
+      "Q2": -20.824,
+      "Q3": -5.251,
+      "Q4": -13.352407,
+      "FullYear": -45.534407
+    },
+    "2568": {
+      "Q1": -7.318,
+      "Q2": 3.082,
+      "Q3": -125.198,
+      "Q4": -104.69984199999998,
+      "FullYear": -234.133842
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-12",
+      "news_id": "2021124019",
+      "raw_path": "COMAN/financials/2564/9M/source.zip",
+      "sha256": "e079cff9572a6b02c7c1b2f181b17f528a4fb31711e9db01da0156fba79078dd",
+      "ingested_at": "2026-04-28T04:21:18+00:00",
+      "shareholder_profit": -6.064913
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-28",
+      "news_id": "2022024994",
+      "raw_path": "COMAN/financials/2564/FY/source.zip",
+      "sha256": "224cd594a63eabae493dd9f7b7447635ce9da809fdc41fd2f07f9a093df4e57f",
+      "ingested_at": "2026-04-28T04:21:12+00:00",
+      "shareholder_profit": -24.426194
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-06",
+      "news_id": "2021084659",
+      "raw_path": "COMAN/financials/2564/H1/source.zip",
+      "sha256": "9f9b520c41c00ff3ee58956d5c82417e0ee4356ad1669df38fbeec533d0afd9d",
+      "ingested_at": "2026-04-28T04:21:22+00:00",
+      "shareholder_profit": -5.584959
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-14",
+      "news_id": "2021059170",
+      "raw_path": "COMAN/financials/2564/Q1/source.zip",
+      "sha256": "6aacfbc2646afb3ee11f2498ede0f44147787e9ba568e112974fd9c94fb38654",
+      "ingested_at": "2026-04-28T04:21:27+00:00",
+      "shareholder_profit": -5.376175
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-14",
+      "news_id": "2022134752",
+      "raw_path": "COMAN/financials/2565/9M/source.zip",
+      "sha256": "220235e49f87b638190ff0f6a63a72d8ca1dc10714562716dfa7291846705e14",
+      "ingested_at": "2026-04-28T04:20:57+00:00",
+      "shareholder_profit": -26.440356
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-27",
+      "news_id": "2023023067",
+      "raw_path": "COMAN/financials/2565/FY/source.zip",
+      "sha256": "a864af7837ae16b4ddd2753067637cba7b5837987c2c422f6f06fe2c37ebfd29",
+      "ingested_at": "2026-04-28T04:20:52+00:00",
+      "shareholder_profit": -46.27621
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-11",
+      "news_id": "2022096368",
+      "raw_path": "COMAN/financials/2565/H1/source.zip",
+      "sha256": "7a5a208db64cd34fdf1eb98f0f26f91ce1ed0f0190580b958965056540527ee4",
+      "ingested_at": "2026-04-28T04:21:02+00:00",
+      "shareholder_profit": 4.052496
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-18",
+      "news_id": "2022065197",
+      "raw_path": "COMAN/financials/2565/Q1/source.zip",
+      "sha256": "3f269d3cf9b8a285296adbb5c44139ff94b1fbbb3d385fbe854e9af46849a241",
+      "ingested_at": "2026-04-28T04:21:07+00:00",
+      "shareholder_profit": -9.372609
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-10",
+      "news_id": "16995730772671",
+      "raw_path": "COMAN/financials/2566/9M/source.zip",
+      "sha256": "74e8ccc42de8b4971aabfc3433e8321ba74316db18227c8ee0bf29730078caa7",
+      "ingested_at": "2026-04-28T04:20:37+00:00",
+      "shareholder_profit": -6.167
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-29",
+      "news_id": "17091568986041",
+      "raw_path": "COMAN/financials/2566/FY/source.zip",
+      "sha256": "6fd6beed83bc94267da41917b5daf9f328985b8f7311fe04eab0912ca85fc366",
+      "ingested_at": "2026-04-28T04:20:33+00:00",
+      "shareholder_profit": 1.976272
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-11",
+      "news_id": "16917102154011",
+      "raw_path": "COMAN/financials/2566/H1/source.zip",
+      "sha256": "7a2b86b85aa9ffb1ce508704c895889c5b337ac3260a71b3a8e059fd598e16ef",
+      "ingested_at": "2026-04-28T04:20:42+00:00",
+      "shareholder_profit": -4.454
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-15",
+      "news_id": "16841053941101",
+      "raw_path": "COMAN/financials/2566/Q1/source.zip",
+      "sha256": "b6b790afab0accf14ce400c26a2bd9130c3e57e71ce8c1030fa4b2a591f06883",
+      "ingested_at": "2026-04-28T04:20:47+00:00",
+      "shareholder_profit": 19.516
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-08",
+      "news_id": "17310157173891",
+      "raw_path": "COMAN/financials/2567/9M/source.zip",
+      "sha256": "cb45cf3f3876ebb9e963a60b5bd93671b2d7e7d6117e7139d0001db6a3f40817",
+      "ingested_at": "2026-04-28T04:20:17+00:00",
+      "shareholder_profit": -5.251
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-21",
+      "news_id": "17400886586191",
+      "raw_path": "COMAN/financials/2567/FY/source.zip",
+      "sha256": "3d86925a752a8bedbe2985201393bba4ec7d0dedc6767f73d3224a1e935bcd54",
+      "ingested_at": "2026-04-28T04:20:11+00:00",
+      "shareholder_profit": -45.534407
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-09",
+      "news_id": "17231594079491",
+      "raw_path": "COMAN/financials/2567/H1/source.zip",
+      "sha256": "3be8d8f46a77002c4801907ec944e3d265131c99cf706271e8ffd93e44b9be12",
+      "ingested_at": "2026-04-28T04:20:22+00:00",
+      "shareholder_profit": -20.824
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-10",
+      "news_id": "17152924601011",
+      "raw_path": "COMAN/financials/2567/Q1/source.zip",
+      "sha256": "a0a18313feb17ab4e87e7f588541d9079c1969543b75aac9eb77a3e3be8305ae",
+      "ingested_at": "2026-04-28T04:20:28+00:00",
+      "shareholder_profit": -6.107
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-13",
+      "news_id": "17629880500641",
+      "raw_path": "COMAN/financials/2568/9M/source.zip",
+      "sha256": "9aeb59f1430f199b27edcc358c6acb2a41bf3984af498c1d94ad2658bb2d9a24",
+      "ingested_at": "2026-04-28T04:19:55+00:00",
+      "shareholder_profit": -125.198
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-20",
+      "news_id": "17715446473691",
+      "raw_path": "COMAN/financials/2568/FY/source.zip",
+      "sha256": "2ce205def261e2bd531a04fac1f47a77012532790dd7f216bc20dd51b8f009d7",
+      "ingested_at": "2026-04-28T04:19:49+00:00",
+      "shareholder_profit": -234.133842
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-08",
+      "news_id": "17546095863931",
+      "raw_path": "COMAN/financials/2568/H1/source.zip",
+      "sha256": "c59ba548a9850628bb7e0e7cbe970317b1cf108fde4b43b25d5ef10ba1d8eb49",
+      "ingested_at": "2026-04-28T04:20:00+00:00",
+      "shareholder_profit": 3.082
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-15",
+      "news_id": "17472613202171",
+      "raw_path": "COMAN/financials/2568/Q1/source.zip",
+      "sha256": "11a3265bf3c262115af7a495592e0a5c1b94458f58fdb7d6fb227c42463d1175",
+      "ingested_at": "2026-04-28T04:20:06+00:00",
+      "shareholder_profit": -7.318
+    }
+  ]
+}

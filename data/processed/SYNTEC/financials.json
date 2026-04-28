@@ -10,36 +10,36 @@
       "Q1": 55.101,
       "Q2": 34.009,
       "Q3": -34.917,
-      "Q4": 86.616,
-      "FullYear": 140.809
+      "Q4": 71.039981,
+      "FullYear": 125.232981
     },
     "2565": {
       "Q1": -71.481,
       "Q2": -183.83,
       "Q3": 15.25,
-      "Q4": 380.87,
-      "FullYear": 140.809
+      "Q4": -127.732858,
+      "FullYear": -367.793858
     },
     "2566": {
       "Q1": 14.001,
-      "Q2": 18.36,
+      "Q2": 177.771803,
       "Q3": 53.191,
-      "Q4": 55.25699999999999,
-      "FullYear": 140.809
+      "Q4": -53.191,
+      "FullYear": 191.772803
     },
     "2567": {
       "Q1": 56.392,
-      "Q2": 135.38080300000001,
+      "Q2": 181.902,
       "Q3": 127.339,
-      "Q4": -178.302803,
-      "FullYear": 140.809
+      "Q4": 163.581842,
+      "FullYear": 529.214842
     },
     "2568": {
       "Q1": 156.467,
       "Q2": 132.737,
       "Q3": 114.36,
-      "Q4": -262.755,
-      "FullYear": 140.809
+      "Q4": 186.62028400000008,
+      "FullYear": 590.184284
     }
   },
   "sources": [
@@ -61,7 +61,7 @@
       "raw_path": "SYNTEC/financials/2564/FY/source.zip",
       "sha256": "f8b78b10f8607fa1074dec4e2b4826b6606d93ad2950fb612ba7da83884c861e",
       "ingested_at": "2026-04-24T04:28:11+00:00",
-      "shareholder_profit": 140.809
+      "shareholder_profit": 125.232981
     },
     {
       "year": 2564,
@@ -101,7 +101,7 @@
       "raw_path": "SYNTEC/financials/2565/FY/source.zip",
       "sha256": "3df4e5c9aed45e0f6df2225836c634a3654f43f97aadc7a09d4318f7288424ed",
       "ingested_at": "2026-04-24T04:27:51+00:00",
-      "shareholder_profit": 140.809
+      "shareholder_profit": -367.793858
     },
     {
       "year": 2565,
@@ -141,17 +141,17 @@
       "raw_path": "SYNTEC/financials/2566/FY/source.zip",
       "sha256": "ad2560415c5d864bfbf0065263d2e0827e45467c85a118d8712738c0a4d87b8a",
       "ingested_at": "2026-04-24T04:27:30+00:00",
-      "shareholder_profit": 140.809
+      "shareholder_profit": 191.772803
     },
     {
       "year": 2566,
       "period": "H1",
-      "filing_date": "2023-08-09",
-      "news_id": "16915381979371",
-      "raw_path": "SYNTEC/financials/2566/H1/source.zip",
-      "sha256": "6e8409a44cdd79acd40cf1b13e018810adf4783ab93b29893fbc836895f1b2cf",
-      "ingested_at": "2026-04-24T04:27:40+00:00",
-      "shareholder_profit": 18.36
+      "filing_date": "2024-08-13",
+      "news_id": "17234990223181",
+      "raw_path": "SYNTEC/financials/2567/H1/source.zip",
+      "sha256": "22df4fb589e1fae736cd3fbbdf96a429f72e1e5aaff463f6f0a3aa09f7f943f7",
+      "ingested_at": "2026-04-24T04:27:20+00:00",
+      "shareholder_profit": 191.772803
     },
     {
       "year": 2566,
@@ -181,17 +181,7 @@
       "raw_path": "SYNTEC/financials/2567/FY/source.zip",
       "sha256": "4ca64c735982cc3e5215ebb221666e86ecf3616b1195220105fd4fddfbef9500",
       "ingested_at": "2026-04-24T04:27:10+00:00",
-      "shareholder_profit": 140.809
-    },
-    {
-      "year": 2567,
-      "period": "H1",
-      "filing_date": "2024-08-13",
-      "news_id": "17234990223181",
-      "raw_path": "SYNTEC/financials/2567/H1/source.zip",
-      "sha256": "22df4fb589e1fae736cd3fbbdf96a429f72e1e5aaff463f6f0a3aa09f7f943f7",
-      "ingested_at": "2026-04-24T04:27:20+00:00",
-      "shareholder_profit": 140.809
+      "shareholder_profit": 529.214842
     },
     {
       "year": 2567,
@@ -221,7 +211,7 @@
       "raw_path": "SYNTEC/financials/2568/FY/source.zip",
       "sha256": "a5523db4dbc826a7995432dc4d629123cd953729833713e053bb5d6d919760aa",
       "ingested_at": "2026-04-24T04:26:50+00:00",
-      "shareholder_profit": 140.809
+      "shareholder_profit": 590.184284
     },
     {
       "year": 2568,

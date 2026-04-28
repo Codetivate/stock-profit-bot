@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "symbol": "LTMH",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-17",
+  "quarterly_history": {
+    "2567": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": 35.415002
+    },
+    "2568": {
+      "Q1": 2.186013,
+      "Q2": 7.859707,
+      "Q3": 7.984023,
+      "Q4": 13.844075,
+      "FullYear": 31.873818
+    }
+  },
+  "sources": [
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-04-01",
+      "news_id": "17434599327141",
+      "raw_path": "LTMH/financials/2567/FY/source.zip",
+      "sha256": "08acc312642bcfbc72fcbf4908ac4c237ac082cfde534ba13372f0a371024f23",
+      "ingested_at": "2026-04-28T06:11:18+00:00",
+      "shareholder_profit": 35.415002
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-11",
+      "news_id": "17628159908531",
+      "raw_path": "LTMH/financials/2568/9M/source.zip",
+      "sha256": "d0a954dcc51bb52428c1d5546d030d08c2105ca2e94e5f278e5d36c2f154e5ea",
+      "ingested_at": "2026-04-28T06:11:03+00:00",
+      "shareholder_profit": 7.984023
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-17",
+      "news_id": "17712782984901",
+      "raw_path": "LTMH/financials/2568/FY/source.zip",
+      "sha256": "f191f1c2da56eb7b596c9ad5bf9cb1dd92bc90fd0f86dc5649c0cc6a541ce93a",
+      "ingested_at": "2026-04-28T06:10:58+00:00",
+      "shareholder_profit": 31.873818
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-07",
+      "news_id": "17545237047281",
+      "raw_path": "LTMH/financials/2568/H1/source.zip",
+      "sha256": "8feb0d8f4cd8c3efa23e778d5689464b4cee1b73530cf251cf5572cc2b877ef6",
+      "ingested_at": "2026-04-28T06:11:08+00:00",
+      "shareholder_profit": 7.859707
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903521581",
+      "raw_path": "LTMH/financials/2568/Q1/source.zip",
+      "sha256": "241a61762752852913db69166b18dbd3af60a9958a84064a6dd55014f2915470",
+      "ingested_at": "2026-04-28T06:11:13+00:00",
+      "shareholder_profit": 2.186013
+    }
+  ]
+}
