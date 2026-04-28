@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "symbol": "UVAN",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-23",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 102.055,
+      "Q2": 500.507,
+      "Q3": 113.207,
+      "Q4": 123.50220800000005,
+      "FullYear": 839.271208
+    },
+    "2565": {
+      "Q1": 338.421,
+      "Q2": 457.816,
+      "Q3": 273.428,
+      "Q4": 360.0996868699998,
+      "FullYear": 1429.7646868699999
+    },
+    "2566": {
+      "Q1": 400.766,
+      "Q2": 221.449,
+      "Q3": 173.193,
+      "Q4": 140.59642499999998,
+      "FullYear": 936.004425
+    },
+    "2567": {
+      "Q1": 142.818,
+      "Q2": 664.787,
+      "Q3": 409.107,
+      "Q4": 52.13033899999999,
+      "FullYear": 1268.842339
+    },
+    "2568": {
+      "Q1": 96.523,
+      "Q2": 932.223,
+      "Q3": 503.735,
+      "Q4": 225.70901400000014,
+      "FullYear": 1758.190014
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-12",
+      "news_id": "2021122758",
+      "raw_path": "UVAN/financials/2564/9M/source.zip",
+      "sha256": "98cc689082841576b4e168c85616682fff75c317440f223766eaa475299165a5",
+      "ingested_at": "2026-04-28T10:54:24+00:00",
+      "shareholder_profit": 113.207
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-25",
+      "news_id": "2022023455",
+      "raw_path": "UVAN/financials/2564/FY/source.zip",
+      "sha256": "2988b6b00f6e6658488f829563bc93a5ee005cfd983e1274532873925d5a8e03",
+      "ingested_at": "2026-04-28T10:54:20+00:00",
+      "shareholder_profit": 839.271208
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-13",
+      "news_id": "2021088957",
+      "raw_path": "UVAN/financials/2564/H1/source.zip",
+      "sha256": "11207de7d1a64776fef1e12e1861a18b964f71a696357634dac7f17fb022571d",
+      "ingested_at": "2026-04-28T10:54:29+00:00",
+      "shareholder_profit": 500.507
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-12",
+      "news_id": "2021054074",
+      "raw_path": "UVAN/financials/2564/Q1/source.zip",
+      "sha256": "dd272b0c724bc1bff8ac389a2e43615761b98c96f0b93cfe39336e5363df1ce4",
+      "ingested_at": "2026-04-28T10:54:34+00:00",
+      "shareholder_profit": 102.055
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-11",
+      "news_id": "2022133171",
+      "raw_path": "UVAN/financials/2565/9M/source.zip",
+      "sha256": "0c389ba2b0ff796f040e27c11350fa13fb23deee4fc949555b50e9e082a81629",
+      "ingested_at": "2026-04-28T10:54:04+00:00",
+      "shareholder_profit": 273.428
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-24",
+      "news_id": "2023021706",
+      "raw_path": "UVAN/financials/2565/FY/source.zip",
+      "sha256": "900634f1a82c1f57253dd04c350be9230cd2d611d116772a382f56477bab2841",
+      "ingested_at": "2026-04-28T10:53:59+00:00",
+      "shareholder_profit": 1429.7646868699999
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-11",
+      "news_id": "2022094263",
+      "raw_path": "UVAN/financials/2565/H1/source.zip",
+      "sha256": "3950bd03068b0e3fcbbe199fff54050983aa7493d4acbeb8cfdf98667291f848",
+      "ingested_at": "2026-04-28T10:54:09+00:00",
+      "shareholder_profit": 457.816
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-13",
+      "news_id": "2022061117",
+      "raw_path": "UVAN/financials/2565/Q1/source.zip",
+      "sha256": "df60ffb0d7c7e6800cf043299c346d289b1429b36280a0b335d4f759991733a2",
+      "ingested_at": "2026-04-28T10:54:14+00:00",
+      "shareholder_profit": 338.421
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-10",
+      "news_id": "16995730721671",
+      "raw_path": "UVAN/financials/2566/9M/source.zip",
+      "sha256": "768606c5684989a9d0ebf35489ca8bdbe78cff0a3d919d0cb7880a266f74f126",
+      "ingested_at": "2026-04-28T10:53:45+00:00",
+      "shareholder_profit": 173.193
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-23",
+      "news_id": "17086428967181",
+      "raw_path": "UVAN/financials/2566/FY/source.zip",
+      "sha256": "68ed1bf986eb3ad5d21e2c1b099028147947c1f5aa98f7440a5f1a33c20b61d0",
+      "ingested_at": "2026-04-28T10:53:40+00:00",
+      "shareholder_profit": 936.004425
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-11",
+      "news_id": "16917102056321",
+      "raw_path": "UVAN/financials/2566/H1/source.zip",
+      "sha256": "82abc6e084b5b095ef4e957e9e0d7f67969f7db6cd573e1ec4e2215504a5d45d",
+      "ingested_at": "2026-04-28T10:53:49+00:00",
+      "shareholder_profit": 221.449
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-12",
+      "news_id": "16838458773581",
+      "raw_path": "UVAN/financials/2566/Q1/source.zip",
+      "sha256": "f2ff867a50b557f24839f68236120e8d2470c2e550c0f49515b64b90edad5b18",
+      "ingested_at": "2026-04-28T10:53:54+00:00",
+      "shareholder_profit": 400.766
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-08",
+      "news_id": "17310157126161",
+      "raw_path": "UVAN/financials/2567/9M/source.zip",
+      "sha256": "ac6ec1202fd4be3355ea2c48eae7a8288628fa8e95b7eace117ad869cfc6b5e9",
+      "ingested_at": "2026-04-28T10:53:26+00:00",
+      "shareholder_profit": 409.107
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-28",
+      "news_id": "17406928315331",
+      "raw_path": "UVAN/financials/2567/FY/source.zip",
+      "sha256": "3d2c674d8d0aaccded668e19bd4218426a4b97bee8967d24e8c0d4051edc4a63",
+      "ingested_at": "2026-04-28T10:53:21+00:00",
+      "shareholder_profit": 1268.842339
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-09",
+      "news_id": "17231594024441",
+      "raw_path": "UVAN/financials/2567/H1/source.zip",
+      "sha256": "88ac44bf6b282a749551eace3ca9e19b7941d63c8648d12464f6f0f7fa695d53",
+      "ingested_at": "2026-04-28T10:53:30+00:00",
+      "shareholder_profit": 664.787
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-13",
+      "news_id": "17155537989761",
+      "raw_path": "UVAN/financials/2567/Q1/source.zip",
+      "sha256": "233c9058ea9206b4fd8e4305828d133a5cd55ee2ba2c5b62f05ccfb2b476543e",
+      "ingested_at": "2026-04-28T10:53:35+00:00",
+      "shareholder_profit": 142.818
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-14",
+      "news_id": "17630699581671",
+      "raw_path": "UVAN/financials/2568/9M/source.zip",
+      "sha256": "27b24a699752742d29314a725ca2718fdd25598cca2ff1376c35c2b9c7c45e5e",
+      "ingested_at": "2026-04-28T10:53:06+00:00",
+      "shareholder_profit": 503.735
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-23",
+      "news_id": "17718030012011",
+      "raw_path": "UVAN/financials/2568/FY/source.zip",
+      "sha256": "16151280bd479f107f435e02432a42727c04f4dacc7ce059365d39ab7026d353",
+      "ingested_at": "2026-04-28T10:53:01+00:00",
+      "shareholder_profit": 1758.190014
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-08",
+      "news_id": "17546095822021",
+      "raw_path": "UVAN/financials/2568/H1/source.zip",
+      "sha256": "da60954af17652bb6b0c4fa7016a5e5419843a62e3f9ea7a3b67a167d47b9bf4",
+      "ingested_at": "2026-04-28T10:53:11+00:00",
+      "shareholder_profit": 932.223
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-09",
+      "news_id": "17467412624341",
+      "raw_path": "UVAN/financials/2568/Q1/source.zip",
+      "sha256": "6faf2ed44882a40703f331847386af9b36558fe1869d32b4a4920a78708930fd",
+      "ingested_at": "2026-04-28T10:53:16+00:00",
+      "shareholder_profit": 96.523
+    }
+  ]
+}

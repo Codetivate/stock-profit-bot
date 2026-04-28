@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "symbol": "VCOM",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-27",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 28.312,
+      "Q2": 39.615,
+      "Q3": 31.238,
+      "Q4": 27.375440000000005,
+      "FullYear": 126.54044
+    },
+    "2565": {
+      "Q1": 25.125,
+      "Q2": 34.806,
+      "Q3": 27.759,
+      "Q4": 24.219184999999996,
+      "FullYear": 111.909185
+    },
+    "2566": {
+      "Q1": 25.569,
+      "Q2": 18.886,
+      "Q3": 17.373,
+      "Q4": 26.528955,
+      "FullYear": 88.356955
+    },
+    "2567": {
+      "Q1": 19.158,
+      "Q2": 25.633,
+      "Q3": 15.811,
+      "Q4": 27.06298300000001,
+      "FullYear": 87.664983
+    },
+    "2568": {
+      "Q1": 33.245,
+      "Q2": 32.541,
+      "Q3": 22.25,
+      "Q4": 42.00875500000001,
+      "FullYear": 130.044755
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-15",
+      "news_id": "2021124929",
+      "raw_path": "VCOM/financials/2564/9M/source.zip",
+      "sha256": "240c1cf7b6f364183793a6cc4ec3b7eb0f4d2152bd5271302ece895ab2459407",
+      "ingested_at": "2026-04-28T10:58:13+00:00",
+      "shareholder_profit": 31.238
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-28",
+      "news_id": "2022026839",
+      "raw_path": "VCOM/financials/2564/FY/source.zip",
+      "sha256": "c5f64072a2969dec6d0776e1c7afa7bf4e63cd4cf6925e876b35ef95591c7a84",
+      "ingested_at": "2026-04-28T10:58:09+00:00",
+      "shareholder_profit": 126.54044
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-13",
+      "news_id": "2021088634",
+      "raw_path": "VCOM/financials/2564/H1/source.zip",
+      "sha256": "1a2bf36357514ed5b3e29f8cf69dd93935ad41c42fe5cd58dd69d841f5eeed25",
+      "ingested_at": "2026-04-28T10:58:18+00:00",
+      "shareholder_profit": 39.615
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-17",
+      "news_id": "2021059609",
+      "raw_path": "VCOM/financials/2564/Q1/source.zip",
+      "sha256": "0e5bc65e7ccf078d6d46b5c3adab71a6ea56e633ce73668f706e6ffcaa6b025f",
+      "ingested_at": "2026-04-28T10:58:23+00:00",
+      "shareholder_profit": 28.312
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-11",
+      "news_id": "2022132997",
+      "raw_path": "VCOM/financials/2565/9M/source.zip",
+      "sha256": "a87e344904020020845bf3c1890b4d01fc9612644ac85deadefcefb94709b931",
+      "ingested_at": "2026-04-28T10:57:55+00:00",
+      "shareholder_profit": 27.759
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-27",
+      "news_id": "2023023267",
+      "raw_path": "VCOM/financials/2565/FY/source.zip",
+      "sha256": "ea1606872a81deb37f6dcf1850e01f72a0e4e1286c5937a435724db306f2f71e",
+      "ingested_at": "2026-04-28T10:57:50+00:00",
+      "shareholder_profit": 111.909185
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-09",
+      "news_id": "2022091342",
+      "raw_path": "VCOM/financials/2565/H1/source.zip",
+      "sha256": "94045583e893bcd8a6dd97bbd515d01af8c65c5c365b2ba71c605990be106355",
+      "ingested_at": "2026-04-28T10:57:59+00:00",
+      "shareholder_profit": 34.806
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-17",
+      "news_id": "2022063360",
+      "raw_path": "VCOM/financials/2565/Q1/source.zip",
+      "sha256": "a6c4d0267f8dc5fac6de6b6a935d17f4ad8fce5414b976d992e183ea4670ec44",
+      "ingested_at": "2026-04-28T10:58:04+00:00",
+      "shareholder_profit": 25.125
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-13",
+      "news_id": "16998304575221",
+      "raw_path": "VCOM/financials/2566/9M/source.zip",
+      "sha256": "23b517dafea78a9a13d75cb16b67d996eebe9a122d13a27a89128b73c960e3e4",
+      "ingested_at": "2026-04-28T10:57:35+00:00",
+      "shareholder_profit": 17.373
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-28",
+      "news_id": "17090750674001",
+      "raw_path": "VCOM/financials/2566/FY/source.zip",
+      "sha256": "e029a2226a8084e735f2f16007be9dce47ced4332ca85a2260cc6b631b0eac49",
+      "ingested_at": "2026-04-28T10:57:31+00:00",
+      "shareholder_profit": 88.356955
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-11",
+      "news_id": "16917102033711",
+      "raw_path": "VCOM/financials/2566/H1/source.zip",
+      "sha256": "38a230defd74ad47e5c1cd2eea8830468eb6d8f76cff258958726ca629caf272",
+      "ingested_at": "2026-04-28T10:57:40+00:00",
+      "shareholder_profit": 18.886
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-15",
+      "news_id": "16841053953651",
+      "raw_path": "VCOM/financials/2566/Q1/source.zip",
+      "sha256": "3f317b7f2197478371f6883648dd680afc9a4a7ba11820915ff72b9a95601bad",
+      "ingested_at": "2026-04-28T10:57:45+00:00",
+      "shareholder_profit": 25.569
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-11",
+      "news_id": "17312815640471",
+      "raw_path": "VCOM/financials/2567/9M/source.zip",
+      "sha256": "0815bc0fde1819368f1962ed2f6413dad8d61e68f0eb3ff2d85ebc01bcd6ea13",
+      "ingested_at": "2026-04-28T10:57:17+00:00",
+      "shareholder_profit": 15.811
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-26",
+      "news_id": "17405221144671",
+      "raw_path": "VCOM/financials/2567/FY/source.zip",
+      "sha256": "db01ef0de3204a8faf6f347b886e436c1690aa958932e8840357414c68ea8046",
+      "ingested_at": "2026-04-28T10:57:12+00:00",
+      "shareholder_profit": 87.664983
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990103541",
+      "raw_path": "VCOM/financials/2567/H1/source.zip",
+      "sha256": "f2f6b393477895e42c87dcae3240f2a4a926b655a3b6f92347bd8a4a31c1b9a5",
+      "ingested_at": "2026-04-28T10:57:21+00:00",
+      "shareholder_profit": 25.633
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-13",
+      "news_id": "17155537926881",
+      "raw_path": "VCOM/financials/2567/Q1/source.zip",
+      "sha256": "04bdb98c2ce77cd8533ddf244219d92d03a0c6af34a066bd3e1eca5b5e5c4604",
+      "ingested_at": "2026-04-28T10:57:26+00:00",
+      "shareholder_profit": 19.158
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-13",
+      "news_id": "17629880389351",
+      "raw_path": "VCOM/financials/2568/9M/source.zip",
+      "sha256": "6f4a338ef7dbab77c939e1ef2c95f517a31e310c7f901992eae968cbf5fd80f7",
+      "ingested_at": "2026-04-28T10:56:57+00:00",
+      "shareholder_profit": 22.25
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-27",
+      "news_id": "17721443147461",
+      "raw_path": "VCOM/financials/2568/FY/source.zip",
+      "sha256": "723b407ad726786c8a575d2bdc30e552c9d84b4df15666a122229998871faa45",
+      "ingested_at": "2026-04-28T10:56:52+00:00",
+      "shareholder_profit": 130.044755
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-08",
+      "news_id": "17546095860091",
+      "raw_path": "VCOM/financials/2568/H1/source.zip",
+      "sha256": "520a9356a50b4b5cfa2c1b5d7056759b03d45229073cc459588d9ce9f645a870",
+      "ingested_at": "2026-04-28T10:57:02+00:00",
+      "shareholder_profit": 32.541
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903449131",
+      "raw_path": "VCOM/financials/2568/Q1/source.zip",
+      "sha256": "58fcbdfb8ff7ee80e37c77beca6a36b8f6a496a977c7bbc1aeb3e7847168a0c3",
+      "ingested_at": "2026-04-28T10:57:07+00:00",
+      "shareholder_profit": 33.245
+    }
+  ]
+}

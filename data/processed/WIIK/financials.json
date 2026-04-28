@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "symbol": "WIIK",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-25",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 25.145,
+      "Q2": 33.339,
+      "Q3": 21.578,
+      "Q4": 11.355025000000001,
+      "FullYear": 91.417025
+    },
+    "2565": {
+      "Q1": 16.136,
+      "Q2": 18.152,
+      "Q3": 30.599,
+      "Q4": 30.260971,
+      "FullYear": 95.147971
+    },
+    "2566": {
+      "Q1": 15.93,
+      "Q2": 15.842,
+      "Q3": 10.18,
+      "Q4": 7.220348000000001,
+      "FullYear": 49.172348
+    },
+    "2567": {
+      "Q1": 11.175,
+      "Q2": 7.835,
+      "Q3": 6.264,
+      "Q4": 18.131908,
+      "FullYear": 43.405908
+    },
+    "2568": {
+      "Q1": 17.28,
+      "Q2": 23.61,
+      "Q3": 14.074,
+      "Q4": 15.809365999999995,
+      "FullYear": 70.773366
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-11",
+      "news_id": "2021121609",
+      "raw_path": "WIIK/financials/2564/9M/source.zip",
+      "sha256": "844acf4e19ffbee05dda6714ea70939b2d42ebe6ead988f1bdd1f3c84aa8e77f",
+      "ingested_at": "2026-04-28T11:23:32+00:00",
+      "shareholder_profit": 21.578
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-23",
+      "news_id": "2022020292",
+      "raw_path": "WIIK/financials/2564/FY/source.zip",
+      "sha256": "3372491232e07b37b5b461c1b58c4998d94fb104e7f0f46d176ecf5b26ac34d9",
+      "ingested_at": "2026-04-28T11:23:27+00:00",
+      "shareholder_profit": 91.417025
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-13",
+      "news_id": "2021088735",
+      "raw_path": "WIIK/financials/2564/H1/source.zip",
+      "sha256": "74229bf0154f7f88557a8c1c091b3e361e26f3f0fcf3eb759b089062b3b7db35",
+      "ingested_at": "2026-04-28T11:23:37+00:00",
+      "shareholder_profit": 33.339
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-13",
+      "news_id": "2021055363",
+      "raw_path": "WIIK/financials/2564/Q1/source.zip",
+      "sha256": "555f40089c435a254448b8d8420fd49da9d3c31893e8a9ee2873eb7c11e8d43f",
+      "ingested_at": "2026-04-28T11:23:42+00:00",
+      "shareholder_profit": 25.145
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-11",
+      "news_id": "2022134117",
+      "raw_path": "WIIK/financials/2565/9M/source.zip",
+      "sha256": "23436fac4ecb2879f8eb0858d3e70d972c23304db0a166848c14529dac070e06",
+      "ingested_at": "2026-04-28T11:23:13+00:00",
+      "shareholder_profit": 30.599
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-16",
+      "news_id": "2023016173",
+      "raw_path": "WIIK/financials/2565/FY/source.zip",
+      "sha256": "ff8386f09f787e812dc2af9bb7396122a96e5d6714565e49845417b28ea8fb65",
+      "ingested_at": "2026-04-28T11:23:08+00:00",
+      "shareholder_profit": 95.147971
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-11",
+      "news_id": "2022094922",
+      "raw_path": "WIIK/financials/2565/H1/source.zip",
+      "sha256": "54d22d0617c3be643bce8d95e3fe2862079d47570fc3c54aa29847124086b874",
+      "ingested_at": "2026-04-28T11:23:17+00:00",
+      "shareholder_profit": 18.152
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-10",
+      "news_id": "2022056644",
+      "raw_path": "WIIK/financials/2565/Q1/source.zip",
+      "sha256": "f6e0e082016fd4938cf899394bb836858669d3fff95b15f4091a93b01540e25b",
+      "ingested_at": "2026-04-28T11:23:22+00:00",
+      "shareholder_profit": 16.136
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-14",
+      "news_id": "16999132695951",
+      "raw_path": "WIIK/financials/2566/9M/source.zip",
+      "sha256": "ba5d44bf80567dc36eebce8dfb80a1afe0bfb0fdc998b4404cf5cf31033d5b6c",
+      "ingested_at": "2026-04-28T11:22:54+00:00",
+      "shareholder_profit": 10.18
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-23",
+      "news_id": "17086429027651",
+      "raw_path": "WIIK/financials/2566/FY/source.zip",
+      "sha256": "44754400346f0038feb24315fe42a3d6b8b80c5129421f0936f9cfef178b05ad",
+      "ingested_at": "2026-04-28T11:22:49+00:00",
+      "shareholder_profit": 49.172348
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-15",
+      "news_id": "16920539300241",
+      "raw_path": "WIIK/financials/2566/H1/source.zip",
+      "sha256": "465a2b80775414fe18b86e5ee1923579fd31b31763f99c309301f8d2eb61b2ea",
+      "ingested_at": "2026-04-28T11:22:59+00:00",
+      "shareholder_profit": 15.842
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-12",
+      "news_id": "16838458837261",
+      "raw_path": "WIIK/financials/2566/Q1/source.zip",
+      "sha256": "2650adbce5f9241ce03cb02f0d770d607ccf9bf2db3a5d332a94f8c5b1a93473",
+      "ingested_at": "2026-04-28T11:23:03+00:00",
+      "shareholder_profit": 15.93
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-15",
+      "news_id": "17316227681491",
+      "raw_path": "WIIK/financials/2567/9M/source.zip",
+      "sha256": "104f3c3fe04fa14a8af1a73447f00db6f8b4fcc470f9f4f2515919777a9b2d5e",
+      "ingested_at": "2026-04-28T11:22:35+00:00",
+      "shareholder_profit": 6.264
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-28",
+      "news_id": "17406928414231",
+      "raw_path": "WIIK/financials/2567/FY/source.zip",
+      "sha256": "819d088f80112adf2f91e6cc1a143ed76a10704637a02e2bb67bf22888e06d77",
+      "ingested_at": "2026-04-28T11:22:31+00:00",
+      "shareholder_profit": 43.405908
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-09",
+      "news_id": "17231594105581",
+      "raw_path": "WIIK/financials/2567/H1/source.zip",
+      "sha256": "15e82ade953b6922816fefcd4b2ce86b8d1eebacfe9f98305a04b3fbdde02317",
+      "ingested_at": "2026-04-28T11:22:40+00:00",
+      "shareholder_profit": 7.835
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434548581",
+      "raw_path": "WIIK/financials/2567/Q1/source.zip",
+      "sha256": "2abb620410ba533f5ff1e1958621d094da5d4764326f6c1dcf04d7bc2d7ea165",
+      "ingested_at": "2026-04-28T11:22:44+00:00",
+      "shareholder_profit": 11.175
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-12",
+      "news_id": "17629001489171",
+      "raw_path": "WIIK/financials/2568/9M/source.zip",
+      "sha256": "1a16fb176b0e634714ceb7e569af010d001c266358ea3b19ecb7d12c83466f63",
+      "ingested_at": "2026-04-28T11:22:17+00:00",
+      "shareholder_profit": 14.074
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-25",
+      "news_id": "17719707041411",
+      "raw_path": "WIIK/financials/2568/FY/source.zip",
+      "sha256": "0ca0a8dcb1d02ea9eed42c80afff58e9ec94b9c9f9ba7a57d10c9a77566958ec",
+      "ingested_at": "2026-04-28T11:22:12+00:00",
+      "shareholder_profit": 70.773366
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-08",
+      "news_id": "17546095864041",
+      "raw_path": "WIIK/financials/2568/H1/source.zip",
+      "sha256": "334e7fbe1666dd0df04fff730a1890e469172448e13250b7bc073c2d31b3c77c",
+      "ingested_at": "2026-04-28T11:22:21+00:00",
+      "shareholder_profit": 23.61
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903520801",
+      "raw_path": "WIIK/financials/2568/Q1/source.zip",
+      "sha256": "baff956ee075febafc80ccede6cc3f662030b22087a1946c3b5a78e154c67c2f",
+      "ingested_at": "2026-04-28T11:22:26+00:00",
+      "shareholder_profit": 17.28
+    }
+  ]
+}

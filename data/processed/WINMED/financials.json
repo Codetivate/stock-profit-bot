@@ -1,0 +1,264 @@
+{
+  "schema_version": 1,
+  "symbol": "WINMED",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-26",
+  "quarterly_history": {
+    "2563": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": 51.58978057000002
+    },
+    "2564": {
+      "Q1": 10.559774710000001,
+      "Q2": 3.90928172,
+      "Q3": 27.024247330000012,
+      "Q4": 23.712905289999984,
+      "FullYear": 65.20620905
+    },
+    "2565": {
+      "Q1": 12.893308649999966,
+      "Q2": 15.310825309999998,
+      "Q3": 13.051898089999996,
+      "Q4": 19.413791280000005,
+      "FullYear": 60.669823329999964
+    },
+    "2566": {
+      "Q1": 6.166176459999983,
+      "Q2": 4.6476548,
+      "Q3": 8.139522049999997,
+      "Q4": 11.686154970000018,
+      "FullYear": 30.639508279999994
+    },
+    "2567": {
+      "Q1": 3.0500213599999997,
+      "Q2": 2.532123669999992,
+      "Q3": 10.465022459999972,
+      "Q4": 13.212007590000049,
+      "FullYear": 29.25917508000001
+    },
+    "2568": {
+      "Q1": 6.081181400000008,
+      "Q2": 1.9027423299999846,
+      "Q3": 1.251727450000005,
+      "Q4": 5.93599983999995,
+      "FullYear": 15.171651019999949
+    }
+  },
+  "sources": [
+    {
+      "year": 2563,
+      "period": "FY",
+      "filing_date": "2021-05-10",
+      "news_id": "2021052183",
+      "raw_path": "WINMED/financials/2563/FY/source.zip",
+      "sha256": "b42a1e210d756d7023ebde6d830f89434e88e63663c7097a099dec11a2194ac1",
+      "ingested_at": "2026-04-28T11:28:00+00:00",
+      "shareholder_profit": 18.654157930000004
+    },
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-12",
+      "news_id": "2021123226",
+      "raw_path": "WINMED/financials/2564/9M/source.zip",
+      "sha256": "29d8788f066ecab1aa2aa575e68b46be6ba301bd3a47edb6477ee0fba6457eee",
+      "ingested_at": "2026-04-28T11:27:46+00:00",
+      "shareholder_profit": 27.024247330000012
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-28",
+      "news_id": "2022026399",
+      "raw_path": "WINMED/financials/2564/FY/source.zip",
+      "sha256": "db29825c35a355ae5ba69e1e5d54fb922795bfcb57f2a76d77cbd3aba7373245",
+      "ingested_at": "2026-04-28T11:27:41+00:00",
+      "shareholder_profit": 65.20620905
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-16",
+      "news_id": "2021092234",
+      "raw_path": "WINMED/financials/2564/H1/source.zip",
+      "sha256": "94d09e3a069cdc58afa06689978927f6709b4c34f6c95d13d2f41bad834fbf33",
+      "ingested_at": "2026-04-28T11:27:50+00:00",
+      "shareholder_profit": 3.90928172
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-17",
+      "news_id": "2021060241",
+      "raw_path": "WINMED/financials/2564/Q1/source.zip",
+      "sha256": "6406ed565de100a82e4826df4765497ba6a9e6a77d720a5127de94c61fcf1cc2",
+      "ingested_at": "2026-04-28T11:27:55+00:00",
+      "shareholder_profit": 10.559774710000001
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-11",
+      "news_id": "2022133755",
+      "raw_path": "WINMED/financials/2565/9M/source.zip",
+      "sha256": "ddbf6a9b7e8a0ad8379a0ba81621ad9fa2f2439810728cacffd5c3b00533777d",
+      "ingested_at": "2026-04-28T11:27:26+00:00",
+      "shareholder_profit": 13.051898089999996
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-28",
+      "news_id": "2023025447",
+      "raw_path": "WINMED/financials/2565/FY/source.zip",
+      "sha256": "5fe291a4c27856fca5a47fc30d6e6acf11a2bb79fdfffb740d5059098f8dad79",
+      "ingested_at": "2026-04-28T11:27:21+00:00",
+      "shareholder_profit": 60.669823329999964
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-05",
+      "news_id": "2022090027",
+      "raw_path": "WINMED/financials/2565/H1/source.zip",
+      "sha256": "3ef6a48d9dca3794e130bfad65fd7b93fde50913ddda7b2750a2207bbe46b2ee",
+      "ingested_at": "2026-04-28T11:27:31+00:00",
+      "shareholder_profit": 15.310825309999998
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-06",
+      "news_id": "2022054672",
+      "raw_path": "WINMED/financials/2565/Q1/source.zip",
+      "sha256": "767822f4a6b8d0499bf43f17a23160c9f490283b6169d9df44083b7c1f823139",
+      "ingested_at": "2026-04-28T11:27:36+00:00",
+      "shareholder_profit": 12.893308649999966
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-14",
+      "news_id": "16999132676641",
+      "raw_path": "WINMED/financials/2566/9M/source.zip",
+      "sha256": "949baf1852bf09c458093b590d76476091781034357aedee251a85cc9b37c8cd",
+      "ingested_at": "2026-04-28T11:27:07+00:00",
+      "shareholder_profit": 8.139522049999997
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-27",
+      "news_id": "17089869123271",
+      "raw_path": "WINMED/financials/2566/FY/source.zip",
+      "sha256": "8c3aab4290e5a5defaef059da1ad2698e93dbe207e4b31371a43aaed57e24035",
+      "ingested_at": "2026-04-28T11:27:02+00:00",
+      "shareholder_profit": 30.639508279999994
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-11",
+      "news_id": "16917102106131",
+      "raw_path": "WINMED/financials/2566/H1/source.zip",
+      "sha256": "fc86de405e7e6d1f094d6d10b968e193e7f1ae1e78a4f2c5797fb6c27f2e89a0",
+      "ingested_at": "2026-04-28T11:27:11+00:00",
+      "shareholder_profit": 4.6476548
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-12",
+      "news_id": "16838458881291",
+      "raw_path": "WINMED/financials/2566/Q1/source.zip",
+      "sha256": "63ae5f97c1850b4bcf88e777713060b96dc9e6269d4c5e54904ccea3fe557cda",
+      "ingested_at": "2026-04-28T11:27:16+00:00",
+      "shareholder_profit": 6.166176459999983
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-08",
+      "news_id": "17310157151371",
+      "raw_path": "WINMED/financials/2567/9M/source.zip",
+      "sha256": "3fdfa23b4dd492cc8e71f2494290ff39ac2e9065036e1c6717729f2d55ed62a1",
+      "ingested_at": "2026-04-28T11:26:47+00:00",
+      "shareholder_profit": 10.465022459999972
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-27",
+      "news_id": "17406066126781",
+      "raw_path": "WINMED/financials/2567/FY/source.zip",
+      "sha256": "0cb73bf580a59a4678587ac92da610855509e1e538b8064ed4a3f358cb33ad64",
+      "ingested_at": "2026-04-28T11:26:43+00:00",
+      "shareholder_profit": 29.25917508000001
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-09",
+      "news_id": "17231594063191",
+      "raw_path": "WINMED/financials/2567/H1/source.zip",
+      "sha256": "e6129993a56d088a724d77e617a6f7973bbe336d1df52a26162f59b9fc2d6f2c",
+      "ingested_at": "2026-04-28T11:26:52+00:00",
+      "shareholder_profit": 2.532123669999992
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-13",
+      "news_id": "17155537992481",
+      "raw_path": "WINMED/financials/2567/Q1/source.zip",
+      "sha256": "247b42cfc25f051838d4728560563d07b3c822e77804c2487a6b66e9c4ae9089",
+      "ingested_at": "2026-04-28T11:26:57+00:00",
+      "shareholder_profit": 3.0500213599999997
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-14",
+      "news_id": "17630699525031",
+      "raw_path": "WINMED/financials/2568/9M/source.zip",
+      "sha256": "d74c8d5491d4d4368e373d87e6adafc9ad210ea0570513fd2915895e0a7b0e41",
+      "ingested_at": "2026-04-28T11:26:28+00:00",
+      "shareholder_profit": 1.251727450000005
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-26",
+      "news_id": "17720575411831",
+      "raw_path": "WINMED/financials/2568/FY/source.zip",
+      "sha256": "8185a1e1111668528bd9ca712f34abc5f447be5eafee940e3f8677863f955dfb",
+      "ingested_at": "2026-04-28T11:26:23+00:00",
+      "shareholder_profit": 15.171651019999949
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-08",
+      "news_id": "17546095804241",
+      "raw_path": "WINMED/financials/2568/H1/source.zip",
+      "sha256": "4c45deedfc4d29aa18ea04a5f39a5a2c20e93311615ca802e296b805a0d7ba81",
+      "ingested_at": "2026-04-28T11:26:33+00:00",
+      "shareholder_profit": 1.9027423299999846
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903453231",
+      "raw_path": "WINMED/financials/2568/Q1/source.zip",
+      "sha256": "bb581e020fa5e697d2de8b3ef908c148ceeac56c8c0da9e276886fbe1cf34e60",
+      "ingested_at": "2026-04-28T11:26:38+00:00",
+      "shareholder_profit": 6.081181400000008
+    }
+  ]
+}

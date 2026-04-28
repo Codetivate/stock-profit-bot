@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "symbol": "VIH",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-27",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 61.812,
+      "Q2": 275.703,
+      "Q3": 856.648,
+      "Q4": 61.01913500000012,
+      "FullYear": 1255.182135
+    },
+    "2565": {
+      "Q1": 371.955,
+      "Q2": 171.282,
+      "Q3": 90.115,
+      "Q4": 63.24557000000003,
+      "FullYear": 696.59757
+    },
+    "2566": {
+      "Q1": 38.53,
+      "Q2": 59.917,
+      "Q3": 86.145,
+      "Q4": 99.27281199999997,
+      "FullYear": 283.864812
+    },
+    "2567": {
+      "Q1": 72.039,
+      "Q2": 77.489,
+      "Q3": 92.949,
+      "Q4": 71.90446899999999,
+      "FullYear": 314.381469
+    },
+    "2568": {
+      "Q1": 98.586,
+      "Q2": 96.815,
+      "Q3": 127.329,
+      "Q4": 113.45547899999998,
+      "FullYear": 436.185479
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-12",
+      "news_id": "2021123642",
+      "raw_path": "VIH/financials/2564/9M/source.zip",
+      "sha256": "32067ca6a06885e98a4baaa421a72338e56d642e67e2f0b9ca6e853af5ca8b09",
+      "ingested_at": "2026-04-28T11:00:44+00:00",
+      "shareholder_profit": 856.648
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-24",
+      "news_id": "2022021495",
+      "raw_path": "VIH/financials/2564/FY/source.zip",
+      "sha256": "1610f603bddd1845c5971aa7259c7f0769bd13536666bde91864f2bae034d080",
+      "ingested_at": "2026-04-28T11:00:39+00:00",
+      "shareholder_profit": 1255.182135
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-10",
+      "news_id": "2021085934",
+      "raw_path": "VIH/financials/2564/H1/source.zip",
+      "sha256": "696c82d5fe195bab220bc7a2da005babc5c85cf08f38a4df93ff0d8d0f1b215c",
+      "ingested_at": "2026-04-28T11:00:49+00:00",
+      "shareholder_profit": 275.703
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-06",
+      "news_id": "2021050753",
+      "raw_path": "VIH/financials/2564/Q1/source.zip",
+      "sha256": "d1a9fb6861f520c449aab8febe4523bd9c6d7da51590f86ef31c3283c2617394",
+      "ingested_at": "2026-04-28T11:00:53+00:00",
+      "shareholder_profit": 61.812
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-11",
+      "news_id": "2022133782",
+      "raw_path": "VIH/financials/2565/9M/source.zip",
+      "sha256": "99951b6256bfefc19c584dc746893e44a7f81e5b7432883d090c0d4f51d7abcc",
+      "ingested_at": "2026-04-28T11:00:25+00:00",
+      "shareholder_profit": 90.115
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-27",
+      "news_id": "2023023751",
+      "raw_path": "VIH/financials/2565/FY/source.zip",
+      "sha256": "13177b6069ffc48572b672db3825a5e316ec1a98cf3452dd7395e85077f4e361",
+      "ingested_at": "2026-04-28T11:00:20+00:00",
+      "shareholder_profit": 696.59757
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-09",
+      "news_id": "2022091743",
+      "raw_path": "VIH/financials/2565/H1/source.zip",
+      "sha256": "25015f041502c29092371025254801bdd7c360a0a16414e40319cbd34bcf4965",
+      "ingested_at": "2026-04-28T11:00:30+00:00",
+      "shareholder_profit": 171.282
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-13",
+      "news_id": "2022061756",
+      "raw_path": "VIH/financials/2565/Q1/source.zip",
+      "sha256": "57b668bc95bc38ed278e229d6f9f4b9ee04bf41256cf6978691452ab396012e5",
+      "ingested_at": "2026-04-28T11:00:34+00:00",
+      "shareholder_profit": 371.955
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-10",
+      "news_id": "16995730755951",
+      "raw_path": "VIH/financials/2566/9M/source.zip",
+      "sha256": "ff375d5196ce9f75628b52f07e8757181e728260df5d9ccb4f0d250c68ffe0db",
+      "ingested_at": "2026-04-28T11:00:07+00:00",
+      "shareholder_profit": 86.145
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-19",
+      "news_id": "17082990073521",
+      "raw_path": "VIH/financials/2566/FY/source.zip",
+      "sha256": "276d4bf7226fb312043c438c71265e40b34782d14798f2801869a678fc6fbcdd",
+      "ingested_at": "2026-04-28T11:00:02+00:00",
+      "shareholder_profit": 283.864812
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-11",
+      "news_id": "16917102115831",
+      "raw_path": "VIH/financials/2566/H1/source.zip",
+      "sha256": "185483712a757f1f2cbfc406ed2540d1d8c515b732a04320b81b1b74398923de",
+      "ingested_at": "2026-04-28T11:00:11+00:00",
+      "shareholder_profit": 59.917
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-12",
+      "news_id": "16838458829291",
+      "raw_path": "VIH/financials/2566/Q1/source.zip",
+      "sha256": "18faf44037e0090f7923991c717e4faa4e023cf2486aebf23760df8240edc99d",
+      "ingested_at": "2026-04-28T11:00:16+00:00",
+      "shareholder_profit": 38.53
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-12",
+      "news_id": "17313658205481",
+      "raw_path": "VIH/financials/2567/9M/source.zip",
+      "sha256": "6184184bae82de76d73e41a22535cbd74a69ac63b4e68d7ec7a7040e315ef3d3",
+      "ingested_at": "2026-04-28T10:59:48+00:00",
+      "shareholder_profit": 92.949
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-28",
+      "news_id": "17406928453861",
+      "raw_path": "VIH/financials/2567/FY/source.zip",
+      "sha256": "921d1cf04cac2768da2880928267c72bee08b2d495b41b1596d50d721e479a99",
+      "ingested_at": "2026-04-28T10:59:43+00:00",
+      "shareholder_profit": 314.381469
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-14",
+      "news_id": "17235858002901",
+      "raw_path": "VIH/financials/2567/H1/source.zip",
+      "sha256": "4698fe854c32ce9a3800ee6c89368d04201a78933c5b45197e8138562e37e55e",
+      "ingested_at": "2026-04-28T10:59:53+00:00",
+      "shareholder_profit": 77.489
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434535031",
+      "raw_path": "VIH/financials/2567/Q1/source.zip",
+      "sha256": "dba3befb3ed659a94d10d617c479def59a72c15d5d4f36ec5d447beeaa768fde",
+      "ingested_at": "2026-04-28T10:59:57+00:00",
+      "shareholder_profit": 72.039
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-14",
+      "news_id": "17630699607361",
+      "raw_path": "VIH/financials/2568/9M/source.zip",
+      "sha256": "8093dec18d31433aa49faf050a46a077d28acd044ff256919be79a0ecef1dee6",
+      "ingested_at": "2026-04-28T10:59:29+00:00",
+      "shareholder_profit": 127.329
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-27",
+      "news_id": "17721443110001",
+      "raw_path": "VIH/financials/2568/FY/source.zip",
+      "sha256": "071f9d9bbe4f7fbf09fed3a104de8bd307b668378c3325a0348fe0709ed7cddb",
+      "ingested_at": "2026-04-28T10:59:24+00:00",
+      "shareholder_profit": 436.185479
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361185391",
+      "raw_path": "VIH/financials/2568/H1/source.zip",
+      "sha256": "764a1770acedfe5180aff69f8f2ceb585ed6ba04353a709e608eaa6acb141af5",
+      "ingested_at": "2026-04-28T10:59:34+00:00",
+      "shareholder_profit": 96.815
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903560601",
+      "raw_path": "VIH/financials/2568/Q1/source.zip",
+      "sha256": "5448cc680694e6212e0f897d1abde8f984307994603545de37f1615829e3edd2",
+      "ingested_at": "2026-04-28T10:59:39+00:00",
+      "shareholder_profit": 98.586
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "schema_version": 1,
+  "symbol": "WELL",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-03-02",
+  "quarterly_history": {
+    "2564": {
+      "Q1": -9.506,
+      "Q2": -7.124,
+      "Q3": 50.349,
+      "Q4": -20.730794999999997,
+      "FullYear": 12.988205
+    },
+    "2565": {
+      "Q1": 4.174,
+      "Q2": -26.575,
+      "Q3": -107.04200000000002,
+      "Q4": -2.676665999999983,
+      "FullYear": -132.119666
+    },
+    "2566": {
+      "Q1": -4.906,
+      "Q2": -4.383,
+      "Q3": -3.234,
+      "Q4": -2.1674669999999994,
+      "FullYear": -14.690467
+    },
+    "2567": {
+      "Q1": -7.505,
+      "Q2": -2.792,
+      "Q3": 4.074,
+      "Q4": 12.323598000000002,
+      "FullYear": 6.100598
+    },
+    "2568": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": 16.708694
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-15",
+      "news_id": "2021125884",
+      "raw_path": "WELL/financials/2564/9M/source.zip",
+      "sha256": "63b624eb15f76741c479ef69a4a87bb1489098ed43ba8267240f07275129ef23",
+      "ingested_at": "2026-04-28T11:09:29+00:00",
+      "shareholder_profit": 50.349
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-28",
+      "news_id": "2022025026",
+      "raw_path": "WELL/financials/2564/FY/source.zip",
+      "sha256": "677c4cb0f732feada3628c7646a0f32c6869152043883e360fc29607dac741d5",
+      "ingested_at": "2026-04-28T11:09:24+00:00",
+      "shareholder_profit": 12.988205
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-16",
+      "news_id": "2021092128",
+      "raw_path": "WELL/financials/2564/H1/source.zip",
+      "sha256": "e8050db7e0db717bb2761dea483c8c012b1365b8d00321971547f17e70c6f925",
+      "ingested_at": "2026-04-28T11:09:33+00:00",
+      "shareholder_profit": -7.124
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-25",
+      "news_id": "2021063115",
+      "raw_path": "WELL/financials/2564/Q1/source.zip",
+      "sha256": "4a618931f1689a67078e876126aab1dedc4f250ba1703ca78ee42f2098c9c838",
+      "ingested_at": "2026-04-28T11:09:38+00:00",
+      "shareholder_profit": -9.506
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-11",
+      "news_id": "2022134392",
+      "raw_path": "WELL/financials/2565/9M/source.zip",
+      "sha256": "cc63dda9a6d261057648ca8e09adfdced47447f7a582f47e01051252ded8a47f",
+      "ingested_at": "2026-04-28T11:09:09+00:00",
+      "shareholder_profit": -129.443
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-27",
+      "news_id": "2023024694",
+      "raw_path": "WELL/financials/2565/FY/source.zip",
+      "sha256": "b98e03e61c78786f5c9ca35a16b69ae6faa68661ff843138acd8c504c21f2075",
+      "ingested_at": "2026-04-28T11:09:05+00:00",
+      "shareholder_profit": -132.119666
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-15",
+      "news_id": "2022098387",
+      "raw_path": "WELL/financials/2565/H1/source.zip",
+      "sha256": "c2bdf1d100f720ebdfad9c8da1c3745bbd1d63eb40620354d34eea027b29cc04",
+      "ingested_at": "2026-04-28T11:09:14+00:00",
+      "shareholder_profit": -26.575
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-17",
+      "news_id": "2022064595",
+      "raw_path": "WELL/financials/2565/Q1/source.zip",
+      "sha256": "ff1af462d5ed40f887d6bd6c047696853480639e411d5cf6b9ce1683e1eddb6b",
+      "ingested_at": "2026-04-28T11:09:19+00:00",
+      "shareholder_profit": 4.174
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-14",
+      "news_id": "16999132729871",
+      "raw_path": "WELL/financials/2566/9M/source.zip",
+      "sha256": "28a34040b14b47ff86ee6c088b3ebed91705ec8a959c7f5c39e2005c6cbf75d9",
+      "ingested_at": "2026-04-28T11:08:49+00:00",
+      "shareholder_profit": -12.523
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-23",
+      "news_id": "17086429044491",
+      "raw_path": "WELL/financials/2566/FY/source.zip",
+      "sha256": "0adfa3fdf47c17eec037e3a8b225724afb51c29f9ec962e78345f418533c8f79",
+      "ingested_at": "2026-04-28T11:08:44+00:00",
+      "shareholder_profit": -14.690467
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-15",
+      "news_id": "16920539384781",
+      "raw_path": "WELL/financials/2566/H1/source.zip",
+      "sha256": "340797f943bd746b92e24f1d5d9e39bc7b7f87132d0f249366e90c5494daeab0",
+      "ingested_at": "2026-04-28T11:08:53+00:00",
+      "shareholder_profit": -4.383
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-15",
+      "news_id": "16841054028171",
+      "raw_path": "WELL/financials/2566/Q1/source.zip",
+      "sha256": "02c5499c2c9ea1062e4f5b1c5a6f6829d7b68937ce3b17f9a43be21e363e5a4f",
+      "ingested_at": "2026-04-28T11:08:58+00:00",
+      "shareholder_profit": -4.906
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-12",
+      "news_id": "17313658174421",
+      "raw_path": "WELL/financials/2567/9M/source.zip",
+      "sha256": "ed66fc671fe1733eae92ed4302ae4f4341e75746df04faad88a0ea854f2c8675",
+      "ingested_at": "2026-04-28T11:08:30+00:00",
+      "shareholder_profit": 4.074
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-26",
+      "news_id": "17405221152081",
+      "raw_path": "WELL/financials/2567/FY/source.zip",
+      "sha256": "5a11295bf193b82edfb5cc71b15b5401e72f3e819a0a4d8171c18bd3ad2caef9",
+      "ingested_at": "2026-04-28T11:08:25+00:00",
+      "shareholder_profit": 6.100598
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-09",
+      "news_id": "17231594058541",
+      "raw_path": "WELL/financials/2567/H1/source.zip",
+      "sha256": "da98bb4721c68ade4f57dba2a6bfcd757d87d14954ced4faa4fa275194a458d8",
+      "ingested_at": "2026-04-28T11:08:35+00:00",
+      "shareholder_profit": -2.792
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-15",
+      "news_id": "17157257478131",
+      "raw_path": "WELL/financials/2567/Q1/source.zip",
+      "sha256": "04ecfc1f86edb68465ebe4db87e77c9fc9cecc8b6ce1c8f34674775540bd9cf5",
+      "ingested_at": "2026-04-28T11:08:39+00:00",
+      "shareholder_profit": -7.505
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-03-02",
+      "news_id": "17724016859861",
+      "raw_path": "WELL/financials/2568/FY/source.zip",
+      "sha256": "40a4953e6ab12b49e333af32679020f1eabf9d3030f06b510ca65d47324ee9b2",
+      "ingested_at": "2026-04-28T11:08:06+00:00",
+      "shareholder_profit": 16.708694
+    }
+  ]
+}

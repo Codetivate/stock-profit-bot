@@ -1,0 +1,237 @@
+{
+  "schema_version": 1,
+  "symbol": "VRANDA",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-26",
+  "quarterly_history": {
+    "2564": {
+      "Q1": -34.673,
+      "Q2": -35.359,
+      "Q3": -49.808,
+      "Q4": 12.590618000000006,
+      "FullYear": -107.249382
+    },
+    "2565": {
+      "Q1": -21.359,
+      "Q2": 1.719,
+      "Q3": 2.03,
+      "Q4": 18.722237,
+      "FullYear": 1.112237
+    },
+    "2566": {
+      "Q1": null,
+      "Q2": -14.771,
+      "Q3": -20.352,
+      "Q4": -112.717677,
+      "FullYear": -140.768677
+    },
+    "2567": {
+      "Q1": 36.301,
+      "Q2": 0.667,
+      "Q3": 5.086,
+      "Q4": 9.133657999999997,
+      "FullYear": 51.187658
+    },
+    "2568": {
+      "Q1": 42.867,
+      "Q2": 11.881,
+      "Q3": 1.842,
+      "Q4": 44.194376,
+      "FullYear": 100.784376
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-10",
+      "news_id": "2021120194",
+      "raw_path": "VRANDA/financials/2564/9M/source.zip",
+      "sha256": "e6cd8fd4f4b17b47e4b8b3ceefdf13a2e196a6e3374428807994903191ba78cf",
+      "ingested_at": "2026-04-28T11:05:45+00:00",
+      "shareholder_profit": -49.808
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-25",
+      "news_id": "2022024418",
+      "raw_path": "VRANDA/financials/2564/FY/source.zip",
+      "sha256": "fa10dedef8c1df92a7371118790bad53279f43e576691cbbae844911706bcec6",
+      "ingested_at": "2026-04-28T11:05:38+00:00",
+      "shareholder_profit": -34.673
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-09",
+      "news_id": "2021085120",
+      "raw_path": "VRANDA/financials/2564/H1/source.zip",
+      "sha256": "425bfc438de0522ce3294625574901afa75be20a64079e9ad7676e6e65050225",
+      "ingested_at": "2026-04-28T11:05:49+00:00",
+      "shareholder_profit": -35.359
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-11",
+      "news_id": "2021053392",
+      "raw_path": "VRANDA/financials/2564/Q1/source.zip",
+      "sha256": "84aba79138404f98b2d4767d4f1f263023cd17773c04767a798dfb32be3b409b",
+      "ingested_at": "2026-04-28T11:05:54+00:00",
+      "shareholder_profit": -34.673
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-11",
+      "news_id": "2022133754",
+      "raw_path": "VRANDA/financials/2565/9M/source.zip",
+      "sha256": "0f3204839fa2b91e25b673275ef01158dee48ddae4e9991a3505c6f76cdc919b",
+      "ingested_at": "2026-04-28T11:05:24+00:00",
+      "shareholder_profit": 2.03
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-24",
+      "news_id": "2023021966",
+      "raw_path": "VRANDA/financials/2565/FY/source.zip",
+      "sha256": "37c295e644ebf7bead643af16668943608a88b28ae2b64653f154a2a517db64d",
+      "ingested_at": "2026-04-28T11:05:19+00:00",
+      "shareholder_profit": 1.112237
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-15",
+      "news_id": "2022098098",
+      "raw_path": "VRANDA/financials/2565/H1/source.zip",
+      "sha256": "f00fd744ee770eaefaafb6e50d755c826dbc1ea90d49847efb06c641563b6230",
+      "ingested_at": "2026-04-28T11:05:29+00:00",
+      "shareholder_profit": 1.719
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-13",
+      "news_id": "2022061539",
+      "raw_path": "VRANDA/financials/2565/Q1/source.zip",
+      "sha256": "0ad2dd5c90609a1d9dd15e99d74934dd7eedad96e9fe3dcd6b5e4051e99b85a0",
+      "ingested_at": "2026-04-28T11:05:34+00:00",
+      "shareholder_profit": -21.359
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-13",
+      "news_id": "16998304567801",
+      "raw_path": "VRANDA/financials/2566/9M/source.zip",
+      "sha256": "401f29f5e2b4ecf5494269be17e74fccaeeac5fdc62baccc74e261c109c046ac",
+      "ingested_at": "2026-04-28T11:05:06+00:00",
+      "shareholder_profit": -20.352
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-23",
+      "news_id": "17086429001061",
+      "raw_path": "VRANDA/financials/2566/FY/source.zip",
+      "sha256": "bf16c93e3a016f2dc4f7218bfa2313ae4723dab4707f473158f90e9c012bd3f4",
+      "ingested_at": "2026-04-28T11:05:01+00:00",
+      "shareholder_profit": -140.768677
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-11",
+      "news_id": "16917102103391",
+      "raw_path": "VRANDA/financials/2566/H1/source.zip",
+      "sha256": "993e3f52692ebed8a30275480ba21871047815bfb03e6b10421b24fb0dfca1c8",
+      "ingested_at": "2026-04-28T11:05:10+00:00",
+      "shareholder_profit": -14.771
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361271261",
+      "raw_path": "VRANDA/financials/2567/9M/source.zip",
+      "sha256": "88d6afc6070f827ee1e0df1d2e0a61f1e242c8cdfeccc77272cdf5ff538da373",
+      "ingested_at": "2026-04-28T11:04:47+00:00",
+      "shareholder_profit": 5.086
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-27",
+      "news_id": "17406066334401",
+      "raw_path": "VRANDA/financials/2567/FY/source.zip",
+      "sha256": "49a7930dfc38c26f940f7f402dae1acd6ec7130bdcf256fbb2ab1c6eb06bd18e",
+      "ingested_at": "2026-04-28T11:04:42+00:00",
+      "shareholder_profit": 51.187658
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-09",
+      "news_id": "17231594067541",
+      "raw_path": "VRANDA/financials/2567/H1/source.zip",
+      "sha256": "5b5ffc6743c881d12c6654678429a439658ce56ed44e4a183b70cb55aba9d89e",
+      "ingested_at": "2026-04-28T11:04:52+00:00",
+      "shareholder_profit": 0.667
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-10",
+      "news_id": "17152924603691",
+      "raw_path": "VRANDA/financials/2567/Q1/source.zip",
+      "sha256": "8fd4be09d2dc268795c879e1ee612efc33253f81b315c02171fb7097630b7199",
+      "ingested_at": "2026-04-28T11:04:56+00:00",
+      "shareholder_profit": 36.301
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-13",
+      "news_id": "17629880464291",
+      "raw_path": "VRANDA/financials/2568/9M/source.zip",
+      "sha256": "8aba8a373bc5f3bd234c31dbec598c60cf01571847f55a593084639fa5fa5aee",
+      "ingested_at": "2026-04-28T11:04:28+00:00",
+      "shareholder_profit": 1.842
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-26",
+      "news_id": "17720575212371",
+      "raw_path": "VRANDA/financials/2568/FY/source.zip",
+      "sha256": "b05f73ea41a695b05f9c6402e982ea4402cc7c440622722e7e1d184077d2dd24",
+      "ingested_at": "2026-04-28T11:04:24+00:00",
+      "shareholder_profit": 100.784376
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229844561",
+      "raw_path": "VRANDA/financials/2568/H1/source.zip",
+      "sha256": "cc70b777aaa2b491c9428774729b06826f7007264e6fb6e2938fd80cd165af3a",
+      "ingested_at": "2026-04-28T11:04:33+00:00",
+      "shareholder_profit": 11.881
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-15",
+      "news_id": "17472613155841",
+      "raw_path": "VRANDA/financials/2568/Q1/source.zip",
+      "sha256": "cac3ce61c82ec33ec762057c6b3c90881539d5606306af8a2488502dc95db71c",
+      "ingested_at": "2026-04-28T11:04:38+00:00",
+      "shareholder_profit": 42.867
+    }
+  ]
+}
