@@ -155,8 +155,8 @@ def _build_html(symbol: str, schedule: Dict[Tuple[int, str], str]) -> str:
     if qr_url:
         qr_html = (
             f'<div class="ftr-qr">'
-            f'<img class="qr-img" src="{qr_url}" alt="Join Group QR"/>'
-            f'<div class="qr-label">Join Group</div>'
+            f'<img class="qr-img" src="{qr_url}" alt="Get Updated QR"/>'
+            f'<div class="qr-label">Get Updated</div>'
             f'</div>'
         )
     else:
@@ -291,8 +291,8 @@ def _build_html(symbol: str, schedule: Dict[Tuple[int, str], str]) -> str:
     text-align: center;
     line-height: 1.3;
   }}
-  .ftr-qr .qr-img   {{ width: 130px; height: 130px; image-rendering: pixelated; }}
-  .ftr-qr .qr-label {{ font-size: 15px; font-weight: 700; color: var(--navy); letter-spacing: 0.3px; }}
+  .ftr-qr .qr-img   {{ width: 122px; height: 122px; image-rendering: pixelated; }}
+  .ftr-qr .qr-label {{ font-size: 22px; font-weight: 800; color: var(--navy); letter-spacing: 0.5px; }}
   .ftr-qr .qr-icon  {{ font-size: 40px; margin-bottom: 6px; opacity: 0.6; }}
 </style>
 </head>
