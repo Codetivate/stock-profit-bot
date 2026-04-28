@@ -1,0 +1,36 @@
+{
+  "_doc": {
+    "purpose": "Per-symbol/per-year FullYear overrides for cases where SET's company-highlight API uses a value from a DIFFERENT filing than our pipeline picked. The override value MUST come from a SET-published XLSX (typically the next year's FY filing's prior-period comparative column when SET uses a restated number) — never fabricated.",
+    "format": "{ SYMBOL: { thai_year: full_year_value_in_million_baht, source_note: '...' } }",
+    "applied_in": "src/cli/ingest_financials.compute_standalone_quarters",
+    "guardrail": "Each override must include a source_note pointing at the exact SET filing + sheet + row that justifies the value. Reviewers must be able to verify."
+  },
+
+  "KBANK": {
+    "2567": {
+      "FullYear": 49603.538,
+      "source_note": "data/raw/KBANK/financials/2568/FY/source.xlsx, sheet 'งบกำไรขาดทุนเบ็ดเสร็จ', row 53 'ส่วนที่เป็นของธนาคาร', column 2567 (marked '2567 (ปรับปรุงใหม่)') = 49,603,538 thousand baht. SET company-highlight API reports 49,603.538 for KBANK 2024 (= Buddhist 2567); our 2567 FY filing's primary column had 48,598,125 (the original audit, before TFRS9-related restatement)."
+    }
+  },
+
+  "MTI": {
+    "2567": {
+      "FullYear": 1501.335188,
+      "source_note": "data/raw/MTI/financials/2568/FY/source.xlsx, sheet 'Profit and loss ', row 31 'กำไรสำหรับปี', column 2567 (restated) = 1,501,335,188 baht. SET company-highlight API reports 1,501.335 for MTI 2024 (= Buddhist 2567); our 2567 FY filing's primary column had 754,359,862 baht (TFRS17 insurance accounting policy change roughly doubled the restated value)."
+    }
+  },
+
+  "THREL": {
+    "2567": {
+      "FullYear": -578.604037,
+      "source_note": "data/raw/THREL/financials/2568/FY/source.xlsx, sheet 'Thai 12-13', row 39 'ขาดทุนสุทธิสำหรับปี', column 2567 (restated) = -578,604,037 baht. SET company-highlight API reports -578.604 for THREL 2024 (= Buddhist 2567); our 2567 FY filing's primary column reported only ~+60M (THREL's 2567 FY filing had a multi-sheet PL with mostly-zero matrices, and SET uses the full restated figure from the 2568 FY filing — a >600M downward swing driven by re-insurance loss recognition)."
+    }
+  },
+
+  "SCGP": {
+    "2566": {
+      "FullYear": 5248.133,
+      "source_note": "data/raw/SCGP/financials/2567/FY/source.xlsx, sheet '2', row 30 'ส่วนที่เป็นของผู้ถือหุ้นของบริษัท', column 2566 (restated) = 5,248,133 thousand baht. SET company-highlight API reports 5,248.133 for SCGP 2023 (= Buddhist 2566); our 2566 FY filing's primary column reported 2,552,064 (consolidated total); the 2567 FY filing restated 2566 to the parent-share figure that SET adopted. ~2× upward swing driven by allocation reclassification."
+    }
+  }
+}

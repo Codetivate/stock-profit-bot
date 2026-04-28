@@ -108,20 +108,22 @@ def build_rich_caption(symbol, history, latest_year, latest_quarter,
         prev_y_data = history.get(latest_year - 1)
         prev_q = prev_y_data.q4 if prev_y_data else None
         prev_q_label = f"Q4/{latest_year - 1}"
-    qoq = ((latest - prev_q) / prev_q * 100) if prev_q else None
+    # abs(prior) denominator so loss → profit flips register as positive,
+    # matching the chart and dashboard renderers.
+    qoq = ((latest - prev_q) / abs(prev_q) * 100) if prev_q else None
 
     # YoY
     prev_y_data = history.get(latest_year - 1)
     prev_y = prev_y_data.get(latest_quarter) if prev_y_data else None
     prev_y_label = f"{latest_quarter}/{latest_year - 1}"
-    yoy = ((latest - prev_y) / prev_y * 100) if prev_y else None
+    yoy = ((latest - prev_y) / abs(prev_y) * 100) if prev_y else None
 
     # Full-year YoY (only if the full year is complete)
     fy_sum = history[latest_year].sum()
     prev_fy = history.get(latest_year - 1)
     prev_fy_sum = prev_fy.sum() if prev_fy else None
     fy_yoy = (
-        (fy_sum - prev_fy_sum) / prev_fy_sum * 100
+        (fy_sum - prev_fy_sum) / abs(prev_fy_sum) * 100
         if fy_sum is not None and prev_fy_sum
         else None
     )

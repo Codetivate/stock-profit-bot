@@ -184,6 +184,42 @@ def compute_standalone_quarters(
             q4 = fy - nine_cum
 
         out[y] = {"Q1": q1, "Q2": q2, "Q3": q3, "Q4": q4, "FullYear": fy}
+
+    # Per-symbol manual overrides: when SET's company-highlight API uses
+    # a value from a different filing than our pipeline picks (almost
+    # always a TFRS-related restatement reflected in the next year's FY
+    # prior-period comparative), an explicit override entry in
+    # parsers/manual_overrides.json points the pipeline at the cell SET
+    # actually reads. The value must come from a SET-filed XLSX —
+    # the json doc requires a `source_note` pointing at sheet + row.
+    # Re-derive Q4 from the new FY total when all three other quarters
+    # are present so the chart's Q1+Q2+Q3+Q4 = FullYear invariant holds.
+    if sources:
+        symbol = sources[0].get("symbol")
+    else:
+        symbol = None
+    if symbol:
+        from pathlib import Path as _P
+        ov_path = _P("parsers/manual_overrides.json")
+        if ov_path.exists():
+            try:
+                ov = json.loads(ov_path.read_text(encoding="utf-8")).get(symbol, {})
+            except (json.JSONDecodeError, OSError):
+                ov = {}
+            for y_str, data in ov.items():
+                try:
+                    y_int = int(y_str)
+                except (TypeError, ValueError):
+                    continue
+                if y_int not in out:
+                    continue
+                fy_override = data.get("FullYear")
+                if fy_override is None:
+                    continue
+                out[y_int]["FullYear"] = fy_override
+                q1, q2, q3 = (out[y_int].get(k) for k in ("Q1", "Q2", "Q3"))
+                if all(v is not None for v in (q1, q2, q3)):
+                    out[y_int]["Q4"] = fy_override - q1 - q2 - q3
     return out
 
 
@@ -222,11 +258,35 @@ def ingest_symbol(
         # the post-audit version is filed later and is the canonical
         # numbers — let it win. The pre-audit's small "summary" XLSX
         # also has a different layout that mis-reads through the parser.
+        #
+        # Many issuers (SCGP, KBANK, AOT, …) file BOTH "งบการเงินรวม"
+        # (consolidated) and "งบการเงินเฉพาะกิจการ" (separate /
+        # parent-only) at the same time. SET company-highlight reports
+        # the CONSOLIDATED figure, so we must prefer the conso filing
+        # when both are available — separate financials only show the
+        # parent's profit (no subsidiaries) and would silently
+        # under-report by tens of percent for a holding company.
+        def _filing_priority(headline: str) -> tuple[int, ...]:
+            # Higher tuple wins. (1) prefer consolidated. (2) prefer
+            # post-audit final. (3) tie-break by datetime via the
+            # outer loop's monotonically-newer comparison.
+            is_conso = "งบการเงินรวม" in headline or "ระหว่างกาลรวม" in headline
+            is_separate = "เฉพาะกิจการ" in headline
+            audited = "ตรวจสอบแล้ว" in headline or "สอบทานแล้ว" in headline
+            return (1 if is_conso and not is_separate else 0, 1 if audited else 0)
+
         latest_by_period: Dict[tuple, NewsItem] = {}
         for n in fin_items:
             key = parse_headline(n.headline)
             cur = latest_by_period.get(key)
-            if cur is None or n.datetime > cur.datetime:
+            if cur is None:
+                latest_by_period[key] = n
+                continue
+            cur_pri = _filing_priority(cur.headline)
+            new_pri = _filing_priority(n.headline)
+            # Strict priority order: conso > separate, audited > pre-audit,
+            # then datetime as the tie-breaker.
+            if (new_pri, n.datetime) > (cur_pri, cur.datetime):
                 latest_by_period[key] = n
         fin_items = sorted(latest_by_period.values(),
                            key=lambda n: n.datetime, reverse=True)
@@ -266,11 +326,24 @@ def ingest_symbol(
             if not fd or (fd.shareholder_profit is None and fd.shareholder_profit_cum is None):
                 print(f"      ✗ parse miss: {f.key.thai_year} {f.key.period}")
                 continue
+            # Prefer XLSX-detected end year over filename-derived thai_year
+            # for non-Dec fiscal filers (AEONTS et al.). Same +/-1 sanity
+            # bound as reparse_financials uses.
+            row_year = f.key.thai_year
+            if (
+                fd.year
+                and 2540 <= fd.year <= 2600
+                and abs(fd.year - f.key.thai_year) <= 1
+            ):
+                row_year = fd.year
             parse_rows.append({
-                "thai_year": f.key.thai_year,
+                "symbol": symbol,
+                "thai_year": row_year,
                 "period": f.key.period,
                 "shareholder_profit": fd.shareholder_profit,
+                "shareholder_profit_prior": fd.shareholder_profit_prior,
                 "shareholder_profit_cum": fd.shareholder_profit_cum,
+                "shareholder_profit_cum_prior": fd.shareholder_profit_cum_prior,
                 "cum_months": fd.cum_months,
                 "primary_months": fd.primary_months,
                 "revenue": fd.revenue,

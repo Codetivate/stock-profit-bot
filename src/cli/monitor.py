@@ -178,13 +178,25 @@ def _send_updated_chart(
     print(f"    📊 Chart saved: {chart_path}")
 
     if tg and chat_id:
-        tg.send_photo(
-            chat_id=chat_id,
-            photo_bytes=png,
-            caption=caption,
-            filename=f"{symbol}_{latest_year}{latest_q}.png",
-        )
-        print(f"    📤 Chart sent to Telegram ({chat_id})")
+        # Dual-target broadcast: TELEGRAM_CHAT_ID (private DM, debug)
+        # + optional TELEGRAM_CHANNEL_ID (public channel for subscribers).
+        # Failures on one target don't block the other — one bot send →
+        # one telegram POST per recipient, so the photo bytes are reused.
+        targets = [chat_id]
+        channel_id = os.environ.get("TELEGRAM_CHANNEL_ID", "").strip()
+        if channel_id and channel_id != chat_id:
+            targets.append(channel_id)
+        for tgt in targets:
+            try:
+                tg.send_photo(
+                    chat_id=tgt,
+                    photo_bytes=png,
+                    caption=caption,
+                    filename=f"{symbol}_{latest_year}{latest_q}.png",
+                )
+                print(f"    📤 Chart sent to Telegram ({tgt})")
+            except Exception as e:
+                print(f"    ⚠ Failed sending to {tgt}: {e}")
 
 
 def _process_new_financials(
@@ -226,9 +238,16 @@ def _process_new_announcements(
     chat_id: Optional[str],
     session: Optional[SetSession] = None,
 ):
+    """Refresh announcements.json so the data layer stays current, but
+    do NOT push them to Telegram for now — the user asked to keep the
+    feed focused exclusively on financial-statement filings until news
+    notifications are explicitly turned on (env ``MONITOR_PUSH_NEWS=1``
+    re-enables the Telegram push side without restoring the noisy
+    default)."""
     if not items:
         return
-    print(f"    → {len(items)} material announcement(s)")
+    print(f"    → {len(items)} material announcement(s) — recording only "
+          f"(news push disabled)")
 
     # Refresh announcements.json (reuses monitor's session)
     try:
@@ -236,6 +255,9 @@ def _process_new_announcements(
     except Exception as e:
         print(f"    ⚠ announcements refresh failed: {e}")
 
+    # Push to Telegram only when explicitly opted-in. Default OFF.
+    if os.environ.get("MONITOR_PUSH_NEWS", "0").strip() not in ("1", "true", "yes"):
+        return
     if tg and chat_id:
         for item, kind in items:
             try:
@@ -442,6 +464,11 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--symbol", action="append",
                     help="Override watchlist; repeat for multiple symbols.")
+    ap.add_argument("--all", action="store_true",
+                    help="Use the full SET+mai universe as watchlist "
+                         "(reference/set_all.json + reference/mai.json). "
+                         "Pair with --tape for a single market-wide call "
+                         "per tick — same cost as SET50 monitoring.")
     ap.add_argument("--lookback", type=int, default=None, help="Days to scan back")
     ap.add_argument("--today", help="Override 'today' (YYYY-MM-DD)")
     ap.add_argument("--dry-run", action="store_true",
@@ -462,8 +489,23 @@ def main():
     args = ap.parse_args()
 
     today = date.fromisoformat(args.today) if args.today else None
+
+    symbols = args.symbol
+    if args.all and not symbols:
+        # Union of SET-listed and mai-listed stocks. Use a sorted list
+        # so the per-symbol probe order is stable across ticks (helps
+        # rate-limit handling and log readability).
+        ref_set = json.loads(
+            Path("reference/set_all.json").read_text(encoding="utf-8")
+        ).get("symbols", [])
+        ref_mai = json.loads(
+            Path("reference/mai.json").read_text(encoding="utf-8")
+        ).get("symbols", [])
+        symbols = sorted(set(ref_set) | set(ref_mai))
+        print(f"--all → loaded {len(symbols)} symbols (SET+mai)")
+
     monitor(
-        symbols=args.symbol,
+        symbols=symbols,
         lookback_days=args.lookback,
         today=today,
         dry_run=args.dry_run,

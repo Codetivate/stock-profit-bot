@@ -60,11 +60,30 @@ def _reparse_one(symbol: str) -> dict | None:
                 print(f"    ✗ parse miss: {meta['thai_year']} {meta['period']}")
                 continue
             rel_raw = zip_path.relative_to(RAW_ROOT).as_posix()
+            # Prefer the year parsed from the XLSX's fiscal end date over
+            # the headline-derived year from the file path. AEONTS et al.
+            # use a non-Dec fiscal year and label the filing by the start
+            # year (``ประจำปี 2565``), but the XLSX's ``สำหรับปีสิ้นสุด
+            # 28 กุมภาพันธ์ 2566`` line — and SET's company-highlight
+            # API — both key by the end year (2566). Only override when
+            # the parser found a confident year and it's within a sane
+            # +/-1 window of the headline year (filings labelled "FY"
+            # cover the END of the period, never more than a year off).
+            row_year = meta["thai_year"]
+            if (
+                fd.year
+                and 2540 <= fd.year <= 2600
+                and abs(fd.year - meta["thai_year"]) <= 1
+            ):
+                row_year = fd.year
             parse_rows.append({
-                "thai_year": meta["thai_year"],
+                "symbol": symbol,
+                "thai_year": row_year,
                 "period": meta["period"],
                 "shareholder_profit": fd.shareholder_profit,
+                "shareholder_profit_prior": fd.shareholder_profit_prior,
                 "shareholder_profit_cum": fd.shareholder_profit_cum,
+                "shareholder_profit_cum_prior": fd.shareholder_profit_cum_prior,
                 "cum_months": fd.cum_months,
                 "primary_months": fd.primary_months,
                 "revenue": fd.revenue,

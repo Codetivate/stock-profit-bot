@@ -1,0 +1,20 @@
+{
+  "_doc": {
+    "purpose": "Per-symbol parsing overrides. Default parser logic in parse_set_zip.py is one-size-fits-all; this file is the escape hatch for filers whose layout consistently confuses the heuristics. Add an entry only after verify_against_set.py confirms a real mismatch and you've inspected the raw XLSX to understand why.",
+    "supported_keys_per_symbol": {
+      "unit_divisor": "Force the unit divisor (1.0 for ล้านบาท, 1000.0 for พันบาท, 1000000.0 for บาท). Use when the auto-detect picks up the wrong marker (e.g. MCS/TEAM filings labelled ล้านบาท but actually in พันบาท).",
+      "shareholder_profit_sheet": "Regex matched against sheet name. When set, parser will scan ONLY this sheet (not the primary PL sheet) for the parent-share row. Useful when the breakdown sits on an unconventional sheet.",
+      "shareholder_profit_row": "Regex matched against the row label. Defaults to the catch-all _is_shareholder_profit_row matcher; override when the filer uses a non-standard label.",
+      "skip_cross_sheet_recovery": "Set true to disable the cross-sheet shareholder fallback (which reads sheet 2 when sheet 1 lacks the breakdown). Use only if the cross-sheet behaviour itself is wrong for this filer.",
+      "notes": "Free-text explanation of why this override exists."
+    },
+    "how_to_apply_changes": "Edit this file → run `python -m src.cli.reparse_financials <SYMBOL>` to refresh data/processed/{SYMBOL}/financials.json → run `python verify_one.py <SYMBOL>` to push the new chart to Telegram for verification."
+  },
+
+  "_examples": {
+    "TEAM": {
+      "unit_divisor": 1000.0,
+      "notes": "Filings tagged 'ล้านบาท' but the cell values are actually พันบาท — without this override the parser produces 1000× too-large numbers (TEAM 2564: 202671.57 ours vs 202.67 SET)."
+    }
+  }
+}

@@ -83,15 +83,32 @@ def _is_netprofit_row(text: str) -> bool:
     if not text:
         return False
     text = str(text).strip()
+    # Reject discontinued-operations breakdowns. ITC 2564 splits
+    # ``กำไรสำหรับปี`` into:
+    #   r32: กำไรสำหรับปีจากการดำเนินงานต่อเนื่อง   (continuing only)
+    #   r33: กำไรจากการดำเนินงานที่ยกเลิก          (discontinued only)
+    #   r35: กำไรสำหรับปี                          (TOTAL — what SET uses)
+    # The original regex matched r32 first because "^กำไรสำหรับปี"
+    # passes regardless of the trailing qualifier, picking up only the
+    # continuing-ops portion. We want the unqualified total — reject
+    # any row that names a specific sub-population of operations.
+    if (
+        "จากการดำเนินงานต่อเนื่อง" in text
+        or "จากการดำเนินงานที่ยกเลิก" in text
+    ):
+        return False
     # The label group accepts both Thai phrasings for the period unit
     # ("ปี/ไตรมาส/งวด" and the longer "รอบระยะเวลา").
     period_grp = r"(ปี|งวด|ไตรมาส|รอบระยะเวลา)"
     # Optional "(ขาดทุน)" with optional surrounding whitespace, in
     # either prefix or infix position. \s* lets us tolerate the same
-    # phrase with or without spaces around the parens — both layouts
-    # exist in real SET filings.
-    loss_prefix = r"\(ขาดทุน\)\s*"          # "(ขาดทุน) " (TMT loss qtr)
-    loss_infix = r"\s*\(ขาดทุน\)\s*"        # " (ขาดทุน) " (CPALL et al.)
+    # phrase with or without spaces around the parens AND inside them —
+    # BEAUTY ships rows like ``กำไร (ขาดทุน ) สำหรับงวด`` with an
+    # extra space before the closing paren, which broke the original
+    # `\(ขาดทุน\)` (zero-space-only) match and silently dropped the
+    # net-profit row for every BEAUTY filing.
+    loss_prefix = r"\(\s*ขาดทุน\s*\)\s*"      # "(ขาดทุน) " (TMT loss qtr)
+    loss_infix = r"\s*\(\s*ขาดทุน\s*\)\s*"    # " (ขาดทุน) " (CPALL et al.)
     patterns = [
         rf"^กำไรสำหรับ{period_grp}",
         rf"^กำไร{loss_infix}สำหรับ{period_grp}",
@@ -138,11 +155,41 @@ def _is_shareholder_profit_row(text: str) -> bool:
     if not text:
         return False
     text = str(text).strip()
+    # Strip leading bullet markers — ILINK 2564 FY indents parent-share
+    # rows with a literal hyphen prefix (``- ส่วนที่เป็นของ…``) which
+    # otherwise blocks the ``startswith("ส่วน…")`` check.
+    text = text.lstrip("-*•◦· ").strip()
     # Both "ส่วนที่เป็น..." and "ส่วนของ..." are used in the wild.
-    if not (text.startswith("ส่วนที่เป็น") or text.startswith("ส่วนของ")):
+    # INTUCH 2565 FY also collapses the line into one phrase
+    # (``กำไรสำหรับปีส่วนที่เป็นของบริษัทใหญ่``) — match those too,
+    # but only when the row clearly references the period total
+    # (``กำไรสำหรับ(ปี|งวด)``) so we don't catch random labels that
+    # happen to contain ``ส่วนที่เป็น``.
+    starts_share = (
+        text.startswith("ส่วนที่เป็น")
+        or text.startswith("ส่วนของ")
+    )
+    inline_share = (
+        re.match(r"^กำไร(\s*\(\s*ขาดทุน\s*\)\s*)?สำหรับ(ปี|งวด|ไตรมาส|รอบระยะเวลา)",
+                 text)
+        and ("ส่วนที่เป็น" in text or "ส่วนของ" in text)
+    )
+    if not (starts_share or inline_share):
         return False
     # Minority-interest row has a distinct signature.
     if "ส่วนได้เสีย" in text or "ไม่มีอำนาจ" in text:
+        return False
+    # Balance-sheet equity rows look almost identical ("ส่วนของผู้ถือ
+    # หุ้นของบริษัทฯ" — total parent shareholder EQUITY) and the
+    # ``ส่วนของ`` prefix matches them too. PSL 2564 BS row 101 has this
+    # exact label with a 14B baht equity total which would silently
+    # masquerade as a 14,364 MB net profit. Real PL "profit allocation"
+    # rows always say "ที่เป็นของ..." or "ของบริษัทใหญ่" / "ของผู้เป็น
+    # เจ้าของ..." — never "ของผู้ถือหุ้น" without "ที่เป็น" in front.
+    if text.startswith("ส่วนของผู้ถือหุ้น"):
+        return False
+    # Aggregate equity rows ("รวมส่วนของบริษัทใหญ่") are also BS only.
+    if text.startswith("รวมส่วน"):
         return False
     # Must reference the parent entity (company or bank).
     return "บริษัท" in text or "ธนาคาร" in text
@@ -276,51 +323,77 @@ def _find_pl_sheets(workbook) -> list[str]:
     fallback scanning for ``กำไรสุทธิ`` on sheets that don't carry an
     obvious label (e.g. KKP's ``'8-9'``).
     """
+    # Filers occasionally leave abandoned/template PL sheets in the workbook
+    # and label them "ไม่เอา" / "ไม่ใช้" / "ไม่ใช้แล้ว" / "ห้ามใช้" / "DO NOT USE"
+    # — literally telling the reader to skip them. TEAM 2564 FY ships a
+    # 'PL-ไม่เอา' sheet with stale 2561 quarterly numbers next to the real
+    # 'PL' annual sheet; without this filter the parser picks the wrong
+    # sheet as primary and derives a 2561 quarterly from a 2564 FY filing.
+    def _is_skip_sheet(name: str) -> bool:
+        n = name.replace(" ", "").upper()
+        # Thai disposal markers — use the no-space variant to catch both
+        # "ไม่เอา" and "ไม่ ใช้" formatting.
+        skip_markers_th = ("ไม่เอา", "ไม่ใช้", "ห้ามใช้", "ห้ามอ่าน", "ยกเลิก")
+        if any(m in name for m in skip_markers_th):
+            return True
+        # English equivalents.
+        return any(m in n for m in ("DONOTUSE", "DO_NOT_USE", "DEPRECATED"))
+
     candidates: list[str] = []
     for name in workbook.sheetnames:
+        if _is_skip_sheet(name):
+            continue
         upper = name.upper()
         if "PL" in upper or "กำไรขาดทุน" in name:
             candidates.append(name)
 
-    if not candidates:
-        # Content fallback — any sheet whose body contains an
-        # income-statement marker. Many filers use cryptic sheet names
-        # like '5-6' (WHA) or 'ThaiPL' (varied), and ADVANC names PL
-        # sheets ``SI (3ด) (P.6)`` / ``SCI (3ด) P.7``. Also catch the
-        # standard PL title 'งบกำไรขาดทุน' even when followed by
-        # additional text like 'เบ็ดเสร็จ'.
-        markers = (
-            "งบกำไรขาดทุน",          # PL header — most reliable single marker
-            "กำไรสุทธิ",
-            "กำไรสำหรับงวด",
-            "กำไรสำหรับปี",
-            "กำไรสำหรับไตรมาส",
-            "กำไรสำหรับรอบระยะเวลา",
-            "ส่วนที่เป็นของผู้ถือหุ้น",
-            "ส่วนที่เป็นของบริษัท",
-            "ส่วนที่เป็นของธนาคาร",
-        )
-        for name in workbook.sheetnames:
-            ws = workbook[name]
-            max_row = min(160, ws.max_row)
-            found = False
-            for row in ws.iter_rows(min_row=1, max_row=max_row, values_only=True):
-                for cell in row:
-                    if cell and isinstance(cell, str):
-                        s = str(cell)
-                        if any(m in s for m in markers):
-                            found = True
-                            break
-                if found:
-                    break
+    # Content fallback — any sheet whose body contains an
+    # income-statement marker. Always run alongside the name-match pass
+    # (not just when name-match is empty): some filers (FE) ship a 2568
+    # FY workbook where the only "PL"-named sheets are stale leftovers
+    # from 2555-2559 and the current PL is buried inside a sheet named
+    # 'งบการเงิน'. Without merging the content-detected sheet, the
+    # parser locks onto the stale data.
+    markers = (
+        "งบกำไรขาดทุน",          # PL header — most reliable single marker
+        "กำไรสุทธิ",
+        "กำไรสำหรับงวด",
+        "กำไรสำหรับปี",
+        "กำไรสำหรับไตรมาส",
+        "กำไรสำหรับรอบระยะเวลา",
+        "ส่วนที่เป็นของผู้ถือหุ้น",
+        "ส่วนที่เป็นของบริษัท",
+        "ส่วนที่เป็นของธนาคาร",
+    )
+    for name in workbook.sheetnames:
+        if _is_skip_sheet(name) or name in candidates:
+            continue
+        ws = workbook[name]
+        max_row = min(160, ws.max_row)
+        found = False
+        for row in ws.iter_rows(min_row=1, max_row=max_row, values_only=True):
+            for cell in row:
+                if cell and isinstance(cell, str):
+                    s = str(cell)
+                    if any(m in s for m in markers):
+                        found = True
+                        break
             if found:
-                candidates.append(name)
+                break
+        if found:
+            candidates.append(name)
 
     # Drop empty templates: filers occasionally ship a placeholder sheet
     # ("Sheet1") with the PL skeleton but no numbers — CHOTI 2567 FY is
     # one example. A real PL sheet has at least one numeric value paired
     # with a net-profit-style label. Walking in iter_rows is cheap.
     def _has_pl_data(name: str) -> bool:
+        """Return True iff the sheet has at least one populated
+        net-profit / shareholder-profit row. Strict matcher only —
+        comprehensive-income-only sheets are intentionally rejected
+        because picking them as primary would shadow sibling sheets
+        that carry the proper ``กำไรสุทธิสำหรับปี`` line (THREL ships
+        both layouts and the strict sheet is the right one)."""
         ws = workbook[name]
         max_row = min(ws.max_row, 200)
         for row in ws.iter_rows(min_row=1, max_row=max_row, values_only=True):
@@ -331,14 +404,53 @@ def _find_pl_sheets(workbook) -> list[str]:
                 continue
             if not (_is_netprofit_row(label) or _is_shareholder_profit_row(label)):
                 continue
-            # Scan range matches _extract_numeric so a sheet whose only
-            # "numbers" sit in stale far-right buckets (DITTO 2566/Q1)
-            # is correctly flagged as empty.
             end = min(len(row), 20)
             for cell in row[label_col + 1:end]:
                 if isinstance(cell, (int, float)) and cell not in (0, None):
                     return True
         return False
+
+    # Stale-sheet filter: some filers (TEAM 2564 FY) ship workbooks with
+    # leftover PL sheets from earlier filings — e.g. a 2561 quarterly
+    # sheet stuck in a 2564 FY zip. Without filtering, the period-length
+    # sort below picks the stale 3-month sheet as primary because it's
+    # "shorter" than the real 12-month FY sheet. Drop any candidate
+    # whose latest year (parsed from its top header band) is older than
+    # the latest year present anywhere in the candidate set.
+    #
+    # Run BEFORE the data-tier filter — otherwise BEAUTY 2566 FY (whose
+    # only "real net-profit" candidate is the stale 'PL  (งวดสามเดือน)'
+    # sheet from 2562) would lock onto the wrong sheet, with the actual
+    # current-year 'PL' sheet dropped at the tier step before year
+    # comparisons run.
+    def _latest_year_in_sheet(name: str) -> int:
+        ws = workbook[name]
+        latest = 0
+        for row in ws.iter_rows(min_row=1, max_row=min(15, ws.max_row),
+                                values_only=True):
+            for cell in row:
+                if cell is None:
+                    continue
+                # Year as integer cell (column header row).
+                if isinstance(cell, (int, float)):
+                    iv = int(cell)
+                    if 2540 <= iv <= 2600 and iv > latest:
+                        latest = iv
+                # Year embedded in date string (e.g. "31 ธันวาคม 2564").
+                elif isinstance(cell, str):
+                    for m in re.findall(r"25\d{2}", cell):
+                        iv = int(m)
+                        if 2540 <= iv <= 2600 and iv > latest:
+                            latest = iv
+        return latest
+
+    sheet_years = {n: _latest_year_in_sheet(n) for n in candidates}
+    workbook_latest = max(sheet_years.values(), default=0)
+    if workbook_latest:
+        candidates = [
+            n for n in candidates
+            if sheet_years[n] == 0 or sheet_years[n] >= workbook_latest
+        ]
 
     candidates = [c for c in candidates if _has_pl_data(c)]
 
@@ -380,6 +492,83 @@ def _detect_unit_divisor(rows_top: list) -> float:
             if "บาท" in s:
                 return 1_000_000.0
     return 1_000_000.0
+
+
+def _detect_thb_column_offset(rows_top: list) -> int:
+    """Return the column index where THB data starts in a dual-currency
+    layout, or 0 if the sheet is single-currency (so the default
+    ``label_col + 1`` start applies).
+
+    PTTEP / BANPU / SPRC ship workbooks with USD and THB side-by-side:
+    the unit row reads ``หน่วย: พันเหรียญสหรัฐ`` over the first numeric
+    block and ``หน่วย: พันบาท`` over a second block further right. SET's
+    company-highlight figures are THB, so we have to skip the USD
+    columns. We detect dual-currency by seeing both markers in the same
+    top band, and return the column of the THB marker.
+    """
+    has_usd = False
+    has_thb_marker = False
+    for row in rows_top:
+        for cell in row:
+            if not isinstance(cell, str):
+                continue
+            if "ดอลลาร์" in cell or "เหรียญสหรัฐ" in cell:
+                has_usd = True
+            if (
+                "พันบาท" in cell
+                or "ล้านบาท" in cell
+                or ("หน่วย" in cell and "บาท" in cell)
+            ):
+                has_thb_marker = True
+
+    if not (has_usd and has_thb_marker):
+        return 0
+
+    # The year-header row carries one ``25xx`` cell per data column.
+    # Dual-currency layouts repeat the year band: e.g. CCET row 6 reads
+    # ``2564, 2563, 2564, 2563`` at cols 3, 5, 7, 9 — the first two are
+    # USD, the next two are THB. Find the latest year and take its
+    # SECOND occurrence; that's where the THB current-period column
+    # starts. Unit-marker positions can't be trusted (some filers merge
+    # the ``หน่วย: บาท`` cell across the whole THB band, others place
+    # it at the first column of the band), but year-header positions
+    # always sit on the data columns.
+    latest_year = 0
+    for row in rows_top:
+        for cell in row:
+            if isinstance(cell, (int, float)):
+                iv = int(cell)
+                if 2540 <= iv <= 2600 and iv > latest_year:
+                    latest_year = iv
+            elif isinstance(cell, str):
+                for m in re.findall(r"25\d{2}", cell):
+                    iv = int(m)
+                    if 2540 <= iv <= 2600 and iv > latest_year:
+                        latest_year = iv
+    if latest_year == 0:
+        return 0
+
+    target_full = str(latest_year)
+    occurrences: list[int] = []
+    for row in rows_top:
+        per_row: list[int] = []
+        for col, cell in enumerate(row):
+            matched = False
+            if isinstance(cell, (int, float)) and int(cell) == latest_year:
+                matched = True
+            elif isinstance(cell, str) and target_full in cell:
+                matched = True
+            if matched:
+                per_row.append(col)
+        # Prefer the row that actually carries multiple year columns
+        # (the header row), not isolated mentions in title strings.
+        if len(per_row) >= 2:
+            occurrences = per_row
+            break
+
+    if len(occurrences) >= 2:
+        return occurrences[1]
+    return 0
 
 
 class _XlsAdapter:
@@ -436,13 +625,24 @@ def _open_workbook(path: str):
     raise ValueError(f"Unsupported workbook format: {path}")
 
 
+_TAS_REF_PATTERN = re.compile(
+    r"^(TAS|TFRS|IAS|IFRS)\b[\s.\d,ก-๙]*$",
+    re.IGNORECASE,
+)
+
+
 def _find_label(row: tuple) -> tuple[str, int]:
-    """Find the first non-empty string cell in ``row`` and return
-    ``(label, column_index)``.
+    """Find the first meaningful non-empty string cell in ``row`` and
+    return ``(label, column_index)``.
 
     Bank XLSX filings indent the parent-vs-minority split into column B
     or C (e.g. KBANK uses col 1, BBL uses col 2), leaving col A empty.
     We therefore can't hard-code ``row[0]`` as the label.
+
+    MTC and similar filers use column A as a Thai/IFRS reference code
+    column (``TAS 1.81ก.1``, ``TFRS 7.23.3``) and put the actual line
+    item label in column B. Skipping the reference code lets the
+    label-match regexes see ``กำไรสำหรับปี`` instead of the IFRS code.
     """
     for i, cell in enumerate(row):
         if cell is None:
@@ -450,8 +650,11 @@ def _find_label(row: tuple) -> tuple[str, int]:
         if not isinstance(cell, str):
             continue
         s = str(cell).strip()
-        if s:
-            return s, i
+        if not s:
+            continue
+        if _TAS_REF_PATTERN.match(s):
+            continue
+        return s, i
     return "", -1
 
 
@@ -474,32 +677,49 @@ def _extract_numeric(row: tuple, is_eps: bool = False, start: int = 1) -> list:
     the stale FY value as Q1 net profit, blowing up Q-sums by 1000×.
     """
     end = min(len(row), 20)
-    nums = []
-    for cell in row[start:end]:
+    # Pre-scan all numerics in range so we can apply lookahead heuristics
+    # (footnote references that aren't < 100 — e.g. ERW PL-9 has
+    # 'ส่วนที่เป็นของบริษัทใหญ่' rows with note ref ``3935`` followed by
+    # the actual 838M data column).
+    raw_cells: list[tuple[int, float, bool]] = []  # (index, val, is_int_type)
+    for i, cell in enumerate(row[start:end], start):
         if not isinstance(cell, (int, float)) or cell == 0:
             continue
-        val = float(cell)
+        raw_cells.append((i, float(cell), isinstance(cell, int)))
 
-        # EPS-specific logic: EPS is always a decimal (like 3.10, 2.77)
-        # Notes are whole integers. Skip any integer value.
+    nums = []
+    for k, (_idx, val, is_int_type) in enumerate(raw_cells):
         if is_eps:
-            # If cell is integer type OR value has no decimal, it's a note
-            if isinstance(cell, int):
+            # EPS is always a decimal. Notes are whole integers. Skip any
+            # integer value or whole-number float.
+            if is_int_type:
                 continue
             if val == int(val):
                 continue
         else:
-            # Skip footnote/note-section references. These appear as the
-            # first numeric cell of many rows and come in two shapes:
-            #   • small whole integers ("12", "3") — note numbers
-            #   • short decimals ("3.32", "2.14") — "note 3, item 32"
-            # Both are always < 100. Since income-statement totals we
-            # care about (revenue, net profit) are always in the
-            # thousands+ even in the raw baht/thousand-baht unit, it's
-            # safe to skip any value with abs < 100 for non-EPS rows.
+            # Standard footnote skip: small whole integers / short decimals.
             if abs(val) < 100:
                 continue
-
+            # Magnitude lookahead: a real data value sits next to OTHER
+            # data values of similar magnitude. If the very next non-zero
+            # numeric in this row is dramatically larger AND the current
+            # value is small enough that it could plausibly be a note ref
+            # (< 10,000 — typical footnote refs are 1-9999), treat the
+            # current cell as a footnote and skip. Two guards:
+            #   1. ratio > 1000 — real data within a single row rarely
+            #      varies by more than ~100x even for volatile sectors.
+            #      ERW had 3,935 followed by 838M = ratio 213,000x.
+            #   2. abs(val) < 10,000 — keeps SCC 2566 Q1's
+            #      ``กำไรสำหรับงวด`` 55,307 thousand baht (real value),
+            #      where the prior column 8,756,158 was ~158x bigger
+            #      (legitimate Q-over-Q dividend swing, not a footnote).
+            if (
+                k + 1 < len(raw_cells)
+                and abs(val) < 10_000
+            ):
+                next_val = raw_cells[k + 1][1]
+                if abs(next_val) > abs(val) * 1000:
+                    continue
         nums.append(val)
         if len(nums) >= 2:
             break
@@ -577,6 +797,10 @@ def parse_zip(zip_path: str, symbol: str = "UNKNOWN") -> Optional[FinancialData]
         # Detect the unit divisor from the top of the sheet
         top_rows = list(ws.iter_rows(min_row=1, max_row=15, values_only=True))
         unit_divisor = _detect_unit_divisor(top_rows)
+        # Dual-currency offset: PTTEP/BANPU lay USD columns first, THB
+        # columns after — start the per-row scan past the USD columns so
+        # extraction picks up the THB values SET reports.
+        thb_offset = _detect_thb_column_offset(top_rows)
 
         # Detect period type from first few rows
         period_label = ""
@@ -601,23 +825,24 @@ def parse_zip(zip_path: str, symbol: str = "UNKNOWN") -> Optional[FinancialData]
                           or "สำหรับรอบระยะเวลาสามเดือน" in text):
                         period_type = "quarterly"
 
-                    # Year from Thai date text
-                    year_match = re.search(r"25(\d{2})", text)
-                    if year_match and year == 0:
-                        year = int(f"25{year_match.group(1)}")
+                    # Year from Thai date text — keep the LATEST so we
+                    # don't get tricked by the prior-period column header
+                    # (KBANK 2568 FY has '2567 (ปรับปรุงใหม่)' that beat
+                    # the integer cell '2568' to the punch under the
+                    # original first-match logic).
+                    for m in re.findall(r"25\d{2}", text):
+                        cand = int(m)
+                        if 2540 <= cand <= 2600 and cand > year:
+                            year = cand
 
-        # Also look at header row cells for year values (column headers often have years)
-        if year == 0:
-            for row in ws.iter_rows(min_row=1, max_row=10, values_only=True):
-                for cell in row:
-                    if cell and isinstance(cell, (int, float)):
-                        val = int(cell)
-                        # Thai fiscal year 2560-2580 range
-                        if 2560 <= val <= 2580:
-                            year = val
-                            break
-                if year > 0:
-                    break
+        # Also sweep header row cells for integer year values; pick the
+        # MAX across the whole header band, not the first one seen.
+        for row in ws.iter_rows(min_row=1, max_row=10, values_only=True):
+            for cell in row:
+                if cell and isinstance(cell, (int, float)):
+                    val = int(cell)
+                    if 2540 <= val <= 2600 and val > year:
+                        year = val
 
         # Fallback to filename date (Gregorian year - 543 = Thai year)
         if year == 0 and "report_date" in meta:
@@ -637,15 +862,47 @@ def parse_zip(zip_path: str, symbol: str = "UNKNOWN") -> Optional[FinancialData]
             quarter=quarter,
         )
 
+        # ITC 2564 / ANAN 2564 split the parent-share line by "continuing"
+        # vs "discontinued" operations and emit a section-total row at
+        # the end. Two layouts seen:
+        #   ITC: ``รวม`` row label + values
+        #   ANAN: blank label, just values (label visually merged in
+        #         Excel but openpyxl reads no string)
+        # Track when we last saw a parent-share section header without
+        # values; the next row carrying values inside that section is
+        # the parent total. Stop tracking on NCI / minority headers so
+        # we don't grab the NCI total instead.
+        in_parent_section = False
         for row in ws.iter_rows(min_row=1, max_row=ws.max_row, values_only=True):
             if not row:
                 continue
             label, label_col = _find_label(row)
+
+            # NCI section closes any open parent section. Even on an
+            # unlabeled row we'd still want to know we exited.
+            if label and ("ส่วนได้เสีย" in label or "ไม่มีอำนาจ" in label):
+                in_parent_section = False
+                continue
+
             if not label:
+                # Unlabeled numeric row — only meaningful as the parent
+                # total when we're already inside a parent section.
+                if in_parent_section and result.shareholder_profit is None:
+                    scan_start = thb_offset if thb_offset else 0
+                    nums = _extract_numeric(row, is_eps=False, start=scan_start)
+                    if len(nums) >= 2:
+                        result.shareholder_profit = nums[0] / unit_divisor
+                        result.shareholder_profit_prior = nums[1] / unit_divisor
+                        in_parent_section = False
                 continue
 
             is_eps = _is_eps_row(label)
-            nums = _extract_numeric(row, is_eps=is_eps, start=label_col + 1)
+            # Dual-currency layouts skip past the USD block; otherwise
+            # start scanning at the column right after the label.
+            scan_start = max(label_col + 1, thb_offset) if thb_offset else label_col + 1
+            nums = _extract_numeric(row, is_eps=is_eps, start=scan_start)
+
+            stripped = label.strip().rstrip(":")
 
             if len(nums) >= 2:
                 if _is_revenue_row(label) and result.revenue is None:
@@ -657,10 +914,71 @@ def parse_zip(zip_path: str, symbol: str = "UNKNOWN") -> Optional[FinancialData]
                 elif _is_shareholder_profit_row(label) and result.shareholder_profit is None:
                     result.shareholder_profit = nums[0] / unit_divisor
                     result.shareholder_profit_prior = nums[1] / unit_divisor
+                    in_parent_section = False
                 elif is_eps and result.eps is None:
                     # EPS is always in baht per share regardless of sheet unit
                     result.eps = nums[0]
                     result.eps_prior = nums[1]
+                elif (
+                    in_parent_section
+                    and result.shareholder_profit is None
+                    and stripped == "รวม"
+                ):
+                    # Total of the parent-share split (ITC 2564).
+                    result.shareholder_profit = nums[0] / unit_divisor
+                    result.shareholder_profit_prior = nums[1] / unit_divisor
+                    in_parent_section = False
+            else:
+                # Header-only row (no values). Mark when this is a
+                # parent-share section header — the next row with
+                # values is the parent total.
+                if (
+                    _is_shareholder_profit_row(label)
+                    and result.shareholder_profit is None
+                ):
+                    in_parent_section = True
+
+        # Cross-sheet recovery: some filers (2S FY2568, others that split
+        # the income statement across two pages) put only the consolidated
+        # total on the primary PL sheet and stash the parent-vs-NCI
+        # breakdown on a secondary sheet. Sweep the remaining PL sheets
+        # for a parent-share row before falling back to net_profit.
+        # SET's company-highlight API reports the parent-share figure, so
+        # using the consolidated total here would silently mismatch by
+        # the NCI amount (e.g. 2S FY2568: 144.35 total vs 144.53 parent).
+        #
+        # The continuation "(ต่อ)" sheets typically omit the หมายเหตุ
+        # footnote column — the first cell after the label is the current
+        # period's value. _extract_numeric's abs<100 footnote-skip
+        # heuristic would silently drop small parent-share values
+        # (2S Q3/2568 parent = -30 พันบาท), so we use a direct
+        # first-two-nonzero scan here instead.
+        if result.shareholder_profit is None and len(pl_sheets) > 1:
+            for cand in pl_sheets[1:]:
+                ws_c = wb[cand]
+                cu = _detect_unit_divisor(
+                    list(ws_c.iter_rows(min_row=1, max_row=15, values_only=True))
+                )
+                found = False
+                for row in ws_c.iter_rows(min_row=1, max_row=ws_c.max_row, values_only=True):
+                    if not row:
+                        continue
+                    label, lcol = _find_label(row)
+                    if not label or not _is_shareholder_profit_row(label):
+                        continue
+                    nums: list[float] = []
+                    for cell in row[lcol + 1: min(len(row), 20)]:
+                        if isinstance(cell, (int, float)) and cell != 0:
+                            nums.append(float(cell))
+                            if len(nums) >= 2:
+                                break
+                    if len(nums) >= 2:
+                        result.shareholder_profit = nums[0] / cu
+                        result.shareholder_profit_prior = nums[1] / cu
+                        found = True
+                        break
+                if found:
+                    break
 
         # Bank filings report a single consolidated "กำไรสุทธิ" but never
         # break it into shareholder/minority on some pages — fall back to

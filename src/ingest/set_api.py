@@ -146,16 +146,23 @@ def _search_news_chunk(
     from_date: date,
     to_date: date,
 ) -> List[NewsItem]:
+    # Symbols like ``S&J`` / ``F&D`` / ``L&E`` carry an ampersand that
+    # SET's URL parser would otherwise treat as a query-string delimiter
+    # — the request would be read as ``symbol=S`` followed by junk, and
+    # the news feed would come back for the wrong (single-letter) ticker.
+    # urlencode the symbol everywhere it appears in URL/path positions.
+    from urllib.parse import quote
+    sym_q = quote(symbol, safe="")
     url = (
         "https://www.set.or.th/api/set/news/search"
-        f"?symbol={symbol}"
+        f"?symbol={sym_q}"
         f"&fromDate={_fmt(from_date)}"
         f"&toDate={_fmt(to_date)}"
         "&keyword=&lang=th"
     )
     payload = session.request_json(
         url,
-        referer=f"https://www.set.or.th/th/market/product/stock/quote/{symbol}/news",
+        referer=f"https://www.set.or.th/th/market/product/stock/quote/{sym_q}/news",
     )
     rows = payload.get("newsInfoList", []) if isinstance(payload, dict) else []
     return [NewsItem.from_api(r) for r in rows]
@@ -211,10 +218,12 @@ def fetch_news_tape(
 
 def get_corporate_actions(session: SetSession, symbol: str) -> List[CorporateAction]:
     """Fetch XD/XM/XB rows for a symbol."""
-    url = f"https://www.set.or.th/api/set/stock/{symbol}/corporate-action?lang=th"
+    from urllib.parse import quote
+    sym_q = quote(symbol, safe="")
+    url = f"https://www.set.or.th/api/set/stock/{sym_q}/corporate-action?lang=th"
     payload = session.request_json(
         url,
-        referer=f"https://www.set.or.th/th/market/product/stock/quote/{symbol}/rights-benefits",
+        referer=f"https://www.set.or.th/th/market/product/stock/quote/{sym_q}/rights-benefits",
     )
     rows = payload if isinstance(payload, list) else []
     return [CorporateAction.from_api(r) for r in rows]

@@ -36,6 +36,7 @@ from telegram_client import TelegramClient, format_caption
 # ═══ Config ═══
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
+TELEGRAM_CHANNEL_ID = os.environ.get("TELEGRAM_CHANNEL_ID", "").strip()
 WHITELIST_FILE = Path("whitelist.json")
 STATE_FILE = Path("data/broadcast_state.json")
 DATA_DIR = Path("data")
@@ -235,20 +236,29 @@ def process_symbol(symbol: str, tg: TelegramClient, state: Dict):
         })
 
         print(f"  📤 Posting to Telegram...")
-        try:
-            tg.send_photo(
-                chat_id=TELEGRAM_CHAT_ID,
-                photo_bytes=png,
-                caption=caption,
-                filename=f"{symbol}_{latest_year}{latest_q}.png",
-            )
-            print(f"  ✓ Broadcast successful")
-
+        # Dual-target: DM + optional channel. Mark as processed only if
+        # at least one target succeeded — that way a transient channel
+        # outage doesn't make us re-broadcast on the next tick.
+        targets = [TELEGRAM_CHAT_ID]
+        if TELEGRAM_CHANNEL_ID and TELEGRAM_CHANNEL_ID != TELEGRAM_CHAT_ID:
+            targets.append(TELEGRAM_CHANNEL_ID)
+        any_ok = False
+        for tgt in targets:
+            try:
+                tg.send_photo(
+                    chat_id=tgt,
+                    photo_bytes=png,
+                    caption=caption,
+                    filename=f"{symbol}_{latest_year}{latest_q}.png",
+                )
+                print(f"  ✓ Sent to {tgt}")
+                any_ok = True
+            except Exception as e:
+                print(f"  ✗ Send to {tgt} failed: {e}")
+        if any_ok:
             # Mark as processed
             state.setdefault("processed", []).append(key)
             save_state(state)
-        except Exception as e:
-            print(f"  ✗ Telegram send failed: {e}")
 
 
 def update_symbol_history(symbol: str, data: FinancialData, filename: str):
