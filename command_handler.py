@@ -106,7 +106,7 @@ def build_rich_caption(symbol, history, latest_year, latest_quarter,
     """
     latest = history[latest_year].get(latest_quarter)
     if latest is None:
-        return f"● <b>{symbol}</b>  ·  FY{latest_year} {latest_quarter}"
+        return f"● <b>{symbol}</b>  ·  {latest_quarter}/{latest_year}"
 
     q_order = ["Q1", "Q2", "Q3", "Q4"]
     q_idx = q_order.index(latest_quarter)
@@ -149,7 +149,7 @@ def build_rich_caption(symbol, history, latest_year, latest_quarter,
     lines = []
     if header_prefix:
         lines.append(header_prefix)
-    lines.append(f"● <b>{symbol}</b>  ·  FY{latest_year} {latest_quarter}")
+    lines.append(f"● <b>{symbol}</b>  ·  {latest_quarter}/{latest_year}")
     lines.append(f"💰 <b>กำไรสุทธิ: {latest:,.2f}</b> ล้านบาท")
     lines.append("")
 
