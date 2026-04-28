@@ -428,6 +428,20 @@ def _find_pl_sheets(workbook) -> list[str]:
         latest = 0
         for row in ws.iter_rows(min_row=1, max_row=min(15, ws.max_row),
                                 values_only=True):
+            # Year header rows contain only year-shaped integers (or
+            # strings); data rows contain money figures alongside their
+            # Thai labels. Skip rows that look like data — otherwise a
+            # money figure whose value happens to fall in [2540, 2600]
+            # (e.g. SCB 2567 Q1 cash-flow row has 2,589 K baht in the
+            # depreciation column) gets mistaken for a Buddhist year and
+            # poisons the workbook_latest, which then filters out the
+            # real PL sheet as "stale".
+            has_money = any(
+                isinstance(c, (int, float)) and abs(c) > 9999
+                for c in row
+            )
+            if has_money:
+                continue
             for cell in row:
                 if cell is None:
                     continue
