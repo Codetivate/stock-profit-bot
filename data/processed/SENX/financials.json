@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "symbol": "SENX",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-24",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 55.741,
+      "Q2": -89.496,
+      "Q3": -156.586,
+      "Q4": -156.38346,
+      "FullYear": -346.72446
+    },
+    "2565": {
+      "Q1": -0.955,
+      "Q2": -83.074,
+      "Q3": 18.888,
+      "Q4": -132.674852,
+      "FullYear": -197.815852
+    },
+    "2566": {
+      "Q1": 9.321108,
+      "Q2": 41.152148,
+      "Q3": 18.138965,
+      "Q4": -8.101318999999997,
+      "FullYear": 60.510902
+    },
+    "2567": {
+      "Q1": 17.441084,
+      "Q2": 54.691015,
+      "Q3": 20.163668,
+      "Q4": 60.64440000000002,
+      "FullYear": 152.940167
+    },
+    "2568": {
+      "Q1": 6.25264,
+      "Q2": 35.319685,
+      "Q3": 36.950649,
+      "Q4": -40.238454,
+      "FullYear": 38.28452
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-15",
+      "news_id": "2021124807",
+      "raw_path": "SENX/financials/2564/9M/source.zip",
+      "sha256": "271efb60a9ae02331117cb74f8c82a51b006c13ddf1dbcd1d5f506322bf719df",
+      "ingested_at": "2026-04-28T07:50:45+00:00",
+      "shareholder_profit": -156.586
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-24",
+      "news_id": "2022022463",
+      "raw_path": "SENX/financials/2564/FY/source.zip",
+      "sha256": "279c6c050386d4f2c9e32f70f93b0823d8b790e9e218bb7fbf57c6da32c2c722",
+      "ingested_at": "2026-04-28T07:50:40+00:00",
+      "shareholder_profit": -346.72446
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-16",
+      "news_id": "2021091956",
+      "raw_path": "SENX/financials/2564/H1/source.zip",
+      "sha256": "a46f14ff7883ad28fa86f454d7a3295d167e8fc6b470ca12a2a92321f770169c",
+      "ingested_at": "2026-04-28T07:50:51+00:00",
+      "shareholder_profit": -89.496
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-11",
+      "news_id": "2021053829",
+      "raw_path": "SENX/financials/2564/Q1/source.zip",
+      "sha256": "bcd856fc8260b0b36115b14957c8c68f0921694e427cbaedf88cae153d0b847d",
+      "ingested_at": "2026-04-28T07:50:56+00:00",
+      "shareholder_profit": 55.741
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-11",
+      "news_id": "2022134461",
+      "raw_path": "SENX/financials/2565/9M/source.zip",
+      "sha256": "fe46ec2e8d1f98f8dff45042b4087afa8115556a6d285871752e458b33dab525",
+      "ingested_at": "2026-04-28T07:50:25+00:00",
+      "shareholder_profit": 18.888
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-27",
+      "news_id": "2023023294",
+      "raw_path": "SENX/financials/2565/FY/source.zip",
+      "sha256": "c537852b86bff6c110e653c6e712ea898a93068961d0a76641de33e296a52932",
+      "ingested_at": "2026-04-28T07:50:20+00:00",
+      "shareholder_profit": -197.815852
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-10",
+      "news_id": "2022092423",
+      "raw_path": "SENX/financials/2565/H1/source.zip",
+      "sha256": "ffc178bd8405ecb86f8f7348955f9628a0b80d1f1283e07fd1c23e5cef0c48fa",
+      "ingested_at": "2026-04-28T07:50:30+00:00",
+      "shareholder_profit": -83.074
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-10",
+      "news_id": "2022057101",
+      "raw_path": "SENX/financials/2565/Q1/source.zip",
+      "sha256": "a2311e73a328803cb6639d69aa9d997811ed15f474a242f77bfc340a05faa4db",
+      "ingested_at": "2026-04-28T07:50:35+00:00",
+      "shareholder_profit": -0.955
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-10",
+      "news_id": "16995730786821",
+      "raw_path": "SENX/financials/2566/9M/source.zip",
+      "sha256": "fafb5b804459afdf07132175357961ad0dcdece3c270ed98a0cd826520876a9c",
+      "ingested_at": "2026-04-28T07:50:05+00:00",
+      "shareholder_profit": 18.138965
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-23",
+      "news_id": "17086429038871",
+      "raw_path": "SENX/financials/2566/FY/source.zip",
+      "sha256": "9413d04731f78440ec13b0ad349a6f977be5a1e1399a457d37fd5f370b9a8d5b",
+      "ingested_at": "2026-04-28T07:50:00+00:00",
+      "shareholder_profit": 18.138965
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-15",
+      "news_id": "16920539311331",
+      "raw_path": "SENX/financials/2566/H1/source.zip",
+      "sha256": "789257714825c155d28cf10c10af1260208d7e17dc6017a3c839db3f629510c4",
+      "ingested_at": "2026-04-28T07:50:10+00:00",
+      "shareholder_profit": 41.152148
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-15",
+      "news_id": "16841053953691",
+      "raw_path": "SENX/financials/2566/Q1/source.zip",
+      "sha256": "543621938c2605532558aba02b0153ec358e214930d79716f862082e36eae0ca",
+      "ingested_at": "2026-04-28T07:50:14+00:00",
+      "shareholder_profit": 9.321108
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-11",
+      "news_id": "17312815641651",
+      "raw_path": "SENX/financials/2567/9M/source.zip",
+      "sha256": "7fe8badf2ac0c0c61261823fcaac2ec3abd70d315a165fbfb61ebf9e7997b632",
+      "ingested_at": "2026-04-28T07:49:44+00:00",
+      "shareholder_profit": 20.163668
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-27",
+      "news_id": "17406066115821",
+      "raw_path": "SENX/financials/2567/FY/source.zip",
+      "sha256": "ff9372d90e47cfdebc0e37ec86c21ee56e2aeedc33298b9dce379a440b091de2",
+      "ingested_at": "2026-04-28T07:49:39+00:00",
+      "shareholder_profit": 152.940167
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-08",
+      "news_id": "17230734198151",
+      "raw_path": "SENX/financials/2567/H1/source.zip",
+      "sha256": "38b2a1a092bfe3aaa2d40e35b93e16d337627ae408b1e02b64d353be7f70a3bf",
+      "ingested_at": "2026-04-28T07:49:50+00:00",
+      "shareholder_profit": 54.691015
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-13",
+      "news_id": "17155538031091",
+      "raw_path": "SENX/financials/2567/Q1/source.zip",
+      "sha256": "8c2809fabb8dfc171534175c5212a94b9747f09f7094a7dced8b7d38526f38b1",
+      "ingested_at": "2026-04-28T07:49:54+00:00",
+      "shareholder_profit": 17.441084
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-12",
+      "news_id": "17629001508521",
+      "raw_path": "SENX/financials/2568/9M/source.zip",
+      "sha256": "35d932f0336d569ab2d18943e720600df98aee6786f8b199370c278c5c2a57e0",
+      "ingested_at": "2026-04-28T07:49:24+00:00",
+      "shareholder_profit": 36.950649
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-24",
+      "news_id": "17718892172221",
+      "raw_path": "SENX/financials/2568/FY/source.zip",
+      "sha256": "c2bd7a70933a137e1d34f11b311d0551206451a623fdf14e7b3da289e0dd458e",
+      "ingested_at": "2026-04-28T07:49:19+00:00",
+      "shareholder_profit": 38.28452
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361180301",
+      "raw_path": "SENX/financials/2568/H1/source.zip",
+      "sha256": "421da034f71e729b3880172de92213347e25ad48f4dc96f61267a7c8ba230fb4",
+      "ingested_at": "2026-04-28T07:49:29+00:00",
+      "shareholder_profit": 35.319685
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903572931",
+      "raw_path": "SENX/financials/2568/Q1/source.zip",
+      "sha256": "2500fb79be6f0e7d51205e688ab23d63297479ab2c4de7f56ae20a603b6c1509",
+      "ingested_at": "2026-04-28T07:49:34+00:00",
+      "shareholder_profit": 6.25264
+    }
+  ]
+}

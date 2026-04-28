@@ -16,15 +16,15 @@
     "2565": {
       "Q1": 0.33,
       "Q2": -1.535,
-      "Q3": -6.782,
-      "Q4": 1.9240000000000004,
+      "Q3": -1.535,
+      "Q4": -3.3229999999999995,
       "FullYear": -6.063
     },
     "2566": {
       "Q1": 3.375,
       "Q2": 2.897,
-      "Q3": -1.535,
-      "Q4": -1.547,
+      "Q3": null,
+      "Q4": null,
       "FullYear": 3.19
     },
     "2567": {
@@ -86,12 +86,12 @@
     {
       "year": 2565,
       "period": "9M",
-      "filing_date": "2022-11-14",
-      "news_id": "2022135322",
-      "raw_path": "TCOAT/financials/2565/9M/source.zip",
-      "sha256": "07d263fbea7d0010482bda88e2d22d7aa35d68ca695835614cacad92a44a53b0",
-      "ingested_at": "2026-04-24T04:45:51+00:00",
-      "shareholder_profit": -6.782
+      "filing_date": "2023-11-14",
+      "news_id": "16999132637471",
+      "raw_path": "TCOAT/financials/2566/9M/source.zip",
+      "sha256": "181cce941dff9a43b446f5a26260fdff21b31bcfb0c0fd6e42003a1c40cc3dcb",
+      "ingested_at": "2026-04-24T04:45:32+00:00",
+      "shareholder_profit": -1.535
     },
     {
       "year": 2565,
@@ -122,16 +122,6 @@
       "sha256": "5ad9170b0d1ff7a2858d0a0bf09a74fa45549b4987ab813945bdb8ab73bc965a",
       "ingested_at": "2026-04-24T04:46:01+00:00",
       "shareholder_profit": 0.33
-    },
-    {
-      "year": 2566,
-      "period": "9M",
-      "filing_date": "2023-11-14",
-      "news_id": "16999132637471",
-      "raw_path": "TCOAT/financials/2566/9M/source.zip",
-      "sha256": "181cce941dff9a43b446f5a26260fdff21b31bcfb0c0fd6e42003a1c40cc3dcb",
-      "ingested_at": "2026-04-24T04:45:32+00:00",
-      "shareholder_profit": -1.535
     },
     {
       "year": 2566,

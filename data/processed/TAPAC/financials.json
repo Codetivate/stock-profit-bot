@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "symbol": "TAPAC",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2025-12-25",
+  "quarterly_history": {
+    "2564": {
+      "Q1": null,
+      "Q2": 37.596,
+      "Q3": 56.902,
+      "Q4": -120.524,
+      "FullYear": -12.042
+    },
+    "2565": {
+      "Q1": 29.33,
+      "Q2": 122.822,
+      "Q3": 48.512,
+      "Q4": -90.135,
+      "FullYear": 110.529
+    },
+    "2566": {
+      "Q1": -17.637,
+      "Q2": -20.709,
+      "Q3": -25.5294259,
+      "Q4": -12.796574099999994,
+      "FullYear": -76.672
+    },
+    "2567": {
+      "Q1": -260.448,
+      "Q2": -39.154,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": null
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-09-14",
+      "news_id": "2021101493",
+      "raw_path": "TAPAC/financials/2564/9M/source.zip",
+      "sha256": "515a79efd96237f01be2f1930d99b3469a1438939defc4d42c720d62302c9b5e",
+      "ingested_at": "2026-04-28T08:28:25+00:00",
+      "shareholder_profit": 56.902
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-25",
+      "news_id": "2022022893",
+      "raw_path": "TAPAC/financials/2564/FY/source.zip",
+      "sha256": "2eef8814a4b7dec64d0c9ab5376bc32ffcb008bc54a31f6a458cf440bada06a3",
+      "ingested_at": "2026-04-28T08:28:19+00:00",
+      "shareholder_profit": -12.042
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-06-15",
+      "news_id": "2021068386",
+      "raw_path": "TAPAC/financials/2564/H1/source.zip",
+      "sha256": "e446aeabb927a82e6198b7a25bc704d11bba967557811f67b05d8897725952e5",
+      "ingested_at": "2026-04-28T08:28:30+00:00",
+      "shareholder_profit": 37.596
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-09-14",
+      "news_id": "2022110439",
+      "raw_path": "TAPAC/financials/2565/9M/source.zip",
+      "sha256": "cb36ea297350f0a28c6fd7901cf109d8e14de68b6017d3f86e4788af92fa3e1e",
+      "ingested_at": "2026-04-28T08:28:05+00:00",
+      "shareholder_profit": 48.512
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-01-30",
+      "news_id": "2023008829",
+      "raw_path": "TAPAC/financials/2565/FY/source.zip",
+      "sha256": "8bc0100ed99237e61a0c4ed3715d68322cf5fd7109375c0fc92d2509ec8a300b",
+      "ingested_at": "2026-04-28T08:28:00+00:00",
+      "shareholder_profit": 110.529
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-06-15",
+      "news_id": "2022073465",
+      "raw_path": "TAPAC/financials/2565/H1/source.zip",
+      "sha256": "faced7d78347fb6ddfd331d58b6408a5847747257e0cf6954601df7582cffa59",
+      "ingested_at": "2026-04-28T08:28:10+00:00",
+      "shareholder_profit": 122.822
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-03-17",
+      "news_id": "2022034924",
+      "raw_path": "TAPAC/financials/2565/Q1/source.zip",
+      "sha256": "5b59aa1e9e48096b7d75746c7fb8b625b0303651c46bb922421ddff2780899bf",
+      "ingested_at": "2026-04-28T08:28:15+00:00",
+      "shareholder_profit": 29.33
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-09-14",
+      "news_id": "16946479364851",
+      "raw_path": "TAPAC/financials/2566/9M/source.zip",
+      "sha256": "c2a04e7045dcab5d78457335472a37d4959b53f75077681632d75751eb9dacfc",
+      "ingested_at": "2026-04-28T08:27:45+00:00",
+      "shareholder_profit": -25.5294259
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-03-28",
+      "news_id": "17115759059721",
+      "raw_path": "TAPAC/financials/2566/FY/source.zip",
+      "sha256": "b5abc40b45f60d4a74cdc0243872df2c532a59cd981417dadded51e67840a7ef",
+      "ingested_at": "2026-04-28T08:27:40+00:00",
+      "shareholder_profit": -76.672
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-06-14",
+      "news_id": "16866990037691",
+      "raw_path": "TAPAC/financials/2566/H1/source.zip",
+      "sha256": "f21ddb0e2e61f02c65d9dd7dbf19a19af6a4fb57b38c9800b136645a2d073cd7",
+      "ingested_at": "2026-04-28T08:27:50+00:00",
+      "shareholder_profit": -20.709
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-03-17",
+      "news_id": "2023034081",
+      "raw_path": "TAPAC/financials/2566/Q1/source.zip",
+      "sha256": "632c3f470accf1e7a084ba14141286a689d4e34dc4eac30ffb070c76f59fff8a",
+      "ingested_at": "2026-04-28T08:27:55+00:00",
+      "shareholder_profit": -17.637
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2025-12-25",
+      "news_id": "17666197903211",
+      "raw_path": "TAPAC/financials/2567/H1/source.zip",
+      "sha256": "d61f7f45e7caaf4fed9da9803986346e3e096ba07a254e8c1dc422a39558ccb3",
+      "ingested_at": "2026-04-28T08:27:29+00:00",
+      "shareholder_profit": -39.154
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2025-12-08",
+      "news_id": "17651510837501",
+      "raw_path": "TAPAC/financials/2567/Q1/source.zip",
+      "sha256": "437f9e9e1a2b1d005fb0b0943f18992f8b1067bf87846c4a5ebf7d79f6ae7a14",
+      "ingested_at": "2026-04-28T08:27:35+00:00",
+      "shareholder_profit": -260.448
+    }
+  ]
+}

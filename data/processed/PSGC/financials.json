@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "symbol": "PSGC",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-24",
+  "quarterly_history": {
+    "2564": {
+      "Q1": -15.284687,
+      "Q2": -16.085145,
+      "Q3": -21.126379,
+      "Q4": -10.632797,
+      "FullYear": -63.129008
+    },
+    "2565": {
+      "Q1": -19.014,
+      "Q2": 267.679,
+      "Q3": 240.358,
+      "Q4": 51.43347399999999,
+      "FullYear": 540.456474
+    },
+    "2566": {
+      "Q1": 141.785,
+      "Q2": 300.405,
+      "Q3": 116.719,
+      "Q4": 757.5068699999999,
+      "FullYear": 1316.41587
+    },
+    "2567": {
+      "Q1": 781.517,
+      "Q2": 388.76,
+      "Q3": 12.794,
+      "Q4": 255.68351900000002,
+      "FullYear": 1438.754519
+    },
+    "2568": {
+      "Q1": 98.764,
+      "Q2": 19.033,
+      "Q3": 187.664,
+      "Q4": 72.023528,
+      "FullYear": 377.484528
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-12",
+      "news_id": "2021124372",
+      "raw_path": "PSGC/financials/2564/9M/source.zip",
+      "sha256": "7cc256a5b06d78de943bc7301232a3d7ba047f676b3015d9f7555c817917d21d",
+      "ingested_at": "2026-04-28T07:21:53+00:00",
+      "shareholder_profit": -21.126379
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-23",
+      "news_id": "2022020796",
+      "raw_path": "PSGC/financials/2564/FY/source.zip",
+      "sha256": "ccfdb0fa24762752993b6aae9aeb9a910ca3cb7de2130d4ea262f4e05e1dd7c9",
+      "ingested_at": "2026-04-28T07:21:47+00:00",
+      "shareholder_profit": -63.129008
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-13",
+      "news_id": "2021090503",
+      "raw_path": "PSGC/financials/2564/H1/source.zip",
+      "sha256": "7751df505d1946a4f6b1e5f9d7038a0f04afbe6b17f318e473e30263271d7191",
+      "ingested_at": "2026-04-28T07:21:58+00:00",
+      "shareholder_profit": -16.085145
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-13",
+      "news_id": "2021057236",
+      "raw_path": "PSGC/financials/2564/Q1/source.zip",
+      "sha256": "d72b960e709a34eddaca19c3ec78edce44994057a9fb40c0632cc7ff2c28c259",
+      "ingested_at": "2026-04-28T07:22:03+00:00",
+      "shareholder_profit": -15.284687
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-09",
+      "news_id": "2022131108",
+      "raw_path": "PSGC/financials/2565/9M/source.zip",
+      "sha256": "95695607c7ecce679ccf8fc4465a1287656f0bf95a497d7be4fe5afd438fe348",
+      "ingested_at": "2026-04-28T07:21:31+00:00",
+      "shareholder_profit": 240.358
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-24",
+      "news_id": "2023022831",
+      "raw_path": "PSGC/financials/2565/FY/source.zip",
+      "sha256": "419f14f9b00a26201ef2af82724d556fe0be70255511ab07d291edfe77678e35",
+      "ingested_at": "2026-04-28T07:21:26+00:00",
+      "shareholder_profit": 540.456474
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-10",
+      "news_id": "2022093406",
+      "raw_path": "PSGC/financials/2565/H1/source.zip",
+      "sha256": "3f63178b4af8b801e5fadc875ab0af840c34f5c4ffd9b6e74d4b954319c62532",
+      "ingested_at": "2026-04-28T07:21:37+00:00",
+      "shareholder_profit": 267.679
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-17",
+      "news_id": "2022064485",
+      "raw_path": "PSGC/financials/2565/Q1/source.zip",
+      "sha256": "db0caebc1a0e06aacd24072299538f02b90709413ee46ce67dd1b9d997078ae7",
+      "ingested_at": "2026-04-28T07:21:42+00:00",
+      "shareholder_profit": -19.014
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-14",
+      "news_id": "16999132725791",
+      "raw_path": "PSGC/financials/2566/9M/source.zip",
+      "sha256": "185df17dafeb5f43fdc9fc841349f24b471a8261a7eec7afcb58b80aba3017c6",
+      "ingested_at": "2026-04-28T07:21:11+00:00",
+      "shareholder_profit": 116.719
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-27",
+      "news_id": "17089869275791",
+      "raw_path": "PSGC/financials/2566/FY/source.zip",
+      "sha256": "303361c3ca5031dd795e7eb2c123379b548d103958af099426ac918f10693999",
+      "ingested_at": "2026-04-28T07:21:06+00:00",
+      "shareholder_profit": 1316.41587
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-11",
+      "news_id": "16917102148191",
+      "raw_path": "PSGC/financials/2566/H1/source.zip",
+      "sha256": "cca62036c79bb5e795057e137b8d74ef8de6c171134d70acf14eb3cada5d6d1e",
+      "ingested_at": "2026-04-28T07:21:16+00:00",
+      "shareholder_profit": 300.405
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-15",
+      "news_id": "16841054058001",
+      "raw_path": "PSGC/financials/2566/Q1/source.zip",
+      "sha256": "bd4ce1a7ff75b34817165f8040519ecca8f40a8e2cf12dabe83a5e874d5a1edd",
+      "ingested_at": "2026-04-28T07:21:21+00:00",
+      "shareholder_profit": 141.785
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-12",
+      "news_id": "17313658211001",
+      "raw_path": "PSGC/financials/2567/9M/source.zip",
+      "sha256": "1095610b4f4b3e97550303282a15318fe4c87f58fd4e0008ffad4cb0bd1ea68e",
+      "ingested_at": "2026-04-28T07:20:51+00:00",
+      "shareholder_profit": 12.794
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-26",
+      "news_id": "17405221072041",
+      "raw_path": "PSGC/financials/2567/FY/source.zip",
+      "sha256": "ae17110c1550f7b3fdf39793cc7520fb05263805b9004ff20e40956c82d5090b",
+      "ingested_at": "2026-04-28T07:20:46+00:00",
+      "shareholder_profit": 1438.754519
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990215161",
+      "raw_path": "PSGC/financials/2567/H1/source.zip",
+      "sha256": "8e541e93ae748e05f088ce33e851da4952411397069679a974f43a0c75cf590c",
+      "ingested_at": "2026-04-28T07:20:55+00:00",
+      "shareholder_profit": 388.76
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434584101",
+      "raw_path": "PSGC/financials/2567/Q1/source.zip",
+      "sha256": "8406de8d03bc3c86564f24ef3d68cd549bad1c3eecfc2420ffa7b0919b35cbb6",
+      "ingested_at": "2026-04-28T07:21:01+00:00",
+      "shareholder_profit": 781.517
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-13",
+      "news_id": "17629880532601",
+      "raw_path": "PSGC/financials/2568/9M/source.zip",
+      "sha256": "d7be57942d948cc01d520d8fd93df403aef1975af82c8328cf132ff9dc5b522e",
+      "ingested_at": "2026-04-28T07:20:30+00:00",
+      "shareholder_profit": 187.664
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-24",
+      "news_id": "17718892180971",
+      "raw_path": "PSGC/financials/2568/FY/source.zip",
+      "sha256": "94568d3e57d893748542394d7db612b0998eac7e57b8c3db97a3639fb9c26460",
+      "ingested_at": "2026-04-28T07:20:25+00:00",
+      "shareholder_profit": 377.484528
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361045091",
+      "raw_path": "PSGC/financials/2568/H1/source.zip",
+      "sha256": "afe294c93dbe45ae2cdfb2646fef0ed4fe10253457463d67ae9778faf0c6d848",
+      "ingested_at": "2026-04-28T07:20:35+00:00",
+      "shareholder_profit": 19.033
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-14",
+      "news_id": "17471784588041",
+      "raw_path": "PSGC/financials/2568/Q1/source.zip",
+      "sha256": "0f524bf1dfd60dad828de7b285d0c3887e4bc710dd20846ee141af2bce8abfb1",
+      "ingested_at": "2026-04-28T07:20:41+00:00",
+      "shareholder_profit": 98.764
+    }
+  ]
+}

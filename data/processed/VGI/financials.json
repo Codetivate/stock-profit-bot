@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "symbol": "VGI",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-12",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 10.048,
+      "Q2": -9.368,
+      "Q3": -75.634,
+      "Q4": 1054.719129,
+      "FullYear": 979.765129
+    },
+    "2565": {
+      "Q1": 25.467,
+      "Q2": 67.59,
+      "Q3": 102.313,
+      "Q4": -315.633017,
+      "FullYear": -120.263017
+    },
+    "2566": {
+      "Q1": -366.445,
+      "Q2": 165.879,
+      "Q3": -3339.255,
+      "Q4": 3474.939244,
+      "FullYear": -64.881756
+    },
+    "2567": {
+      "Q1": 62.761,
+      "Q2": 78.047,
+      "Q3": 307.749,
+      "Q4": -3937.328512,
+      "FullYear": -3488.771512
+    },
+    "2568": {
+      "Q1": 44.709,
+      "Q2": 78.709,
+      "Q3": 83.228,
+      "Q4": 294.582918,
+      "FullYear": 501.228918
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2022-02-14",
+      "news_id": "2022015224",
+      "raw_path": "VGI/financials/2565/9M/source.zip",
+      "sha256": "0c7ea18a96ded855efb359a3ecafe64a884c79ff608090d7f03b63a41219917b",
+      "ingested_at": "2026-04-28T08:22:59+00:00",
+      "shareholder_profit": -75.634
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2021-05-27",
+      "news_id": "2021063662",
+      "raw_path": "VGI/financials/2564/FY/source.zip",
+      "sha256": "73f7ba679c16b8e9287d74d61f8d99ed342cc927ede36c75e3d032e32239b339",
+      "ingested_at": "2026-04-28T08:23:14+00:00",
+      "shareholder_profit": 979.765129
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-11-12",
+      "news_id": "2021124350",
+      "raw_path": "VGI/financials/2565/H1/source.zip",
+      "sha256": "61a46f64b41b78b86cd0760616a131444648d7ec179568f940021cb19ae1770b",
+      "ingested_at": "2026-04-28T08:23:04+00:00",
+      "shareholder_profit": -9.368
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-08-11",
+      "news_id": "2021088299",
+      "raw_path": "VGI/financials/2565/Q1/source.zip",
+      "sha256": "d8de8fc3c2e85c47408dbef8a6d0315ea5015e1fcaa812e394158f1f3813e585",
+      "ingested_at": "2026-04-28T08:23:09+00:00",
+      "shareholder_profit": 10.048
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2023-02-14",
+      "news_id": "2023014971",
+      "raw_path": "VGI/financials/2566/9M/source.zip",
+      "sha256": "cf00aa971b7a06d99c0efdfb5d934d31246f5053e95c3a3602eb564342ad4db3",
+      "ingested_at": "2026-04-28T08:22:38+00:00",
+      "shareholder_profit": 102.313
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2022-05-25",
+      "news_id": "2022067445",
+      "raw_path": "VGI/financials/2565/FY/source.zip",
+      "sha256": "9f55019a77f99c16ca734f32c649ad6d02a798a7d47411568e4072f99760bbed",
+      "ingested_at": "2026-04-28T08:22:54+00:00",
+      "shareholder_profit": -120.263017
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-11-11",
+      "news_id": "2022134298",
+      "raw_path": "VGI/financials/2566/H1/source.zip",
+      "sha256": "5d59b32ef9a34765a96dde54e90055ff284aece453ae3630eebcec79d69c34b5",
+      "ingested_at": "2026-04-28T08:22:43+00:00",
+      "shareholder_profit": 67.59
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-08-11",
+      "news_id": "2022096188",
+      "raw_path": "VGI/financials/2566/Q1/source.zip",
+      "sha256": "875d91c71e33aff87164830689968c44e89b1e45d996ceda7fde6aa4ce228fd6",
+      "ingested_at": "2026-04-28T08:22:49+00:00",
+      "shareholder_profit": 25.467
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2024-02-13",
+      "news_id": "17077792253201",
+      "raw_path": "VGI/financials/2567/9M/source.zip",
+      "sha256": "2b4304b1f0a1028c2498ced1a9cfbdbe59638718cacabf93a1b51695155427ff",
+      "ingested_at": "2026-04-28T08:22:18+00:00",
+      "shareholder_profit": -3339.255
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2023-05-25",
+      "news_id": "16849718999241",
+      "raw_path": "VGI/financials/2566/FY/source.zip",
+      "sha256": "370da2439f3e32c2eaa3a7da54b4f31211088039996296fdf9ef9a2c90b554ad",
+      "ingested_at": "2026-04-28T08:22:33+00:00",
+      "shareholder_profit": -64.881756
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-11-10",
+      "news_id": "16995730789061",
+      "raw_path": "VGI/financials/2567/H1/source.zip",
+      "sha256": "ac47fad20b1e69ce4e830654e007a25471cbc5bf78d3c29923466247443bacf2",
+      "ingested_at": "2026-04-28T08:22:23+00:00",
+      "shareholder_profit": 165.879
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-08-15",
+      "news_id": "16920539376691",
+      "raw_path": "VGI/financials/2567/Q1/source.zip",
+      "sha256": "6453b45823755d2fbe8ab36c93abbc260d3eb1bf21fe6b8350f87c206116402a",
+      "ingested_at": "2026-04-28T08:22:28+00:00",
+      "shareholder_profit": -366.445
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2025-02-13",
+      "news_id": "17394038389721",
+      "raw_path": "VGI/financials/2568/9M/source.zip",
+      "sha256": "ce069ae314df203f7451932f1eaa9b221e3d295336ac16471eeb34f31e318ba7",
+      "ingested_at": "2026-04-28T08:21:58+00:00",
+      "shareholder_profit": 307.749
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2024-05-27",
+      "news_id": "17167665708951",
+      "raw_path": "VGI/financials/2567/FY/source.zip",
+      "sha256": "ea987f043b92c691cdaa9d9bf2f124ac6ee2629e710a696fd402fc63367ddc53",
+      "ingested_at": "2026-04-28T08:22:13+00:00",
+      "shareholder_profit": -3488.771512
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-11-11",
+      "news_id": "17312815641751",
+      "raw_path": "VGI/financials/2568/H1/source.zip",
+      "sha256": "cff5af194773417c0cba95cfa556831e085e0e8a600b1e01f00384e5ffaa6fd5",
+      "ingested_at": "2026-04-28T08:22:03+00:00",
+      "shareholder_profit": 78.047
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990226521",
+      "raw_path": "VGI/financials/2568/Q1/source.zip",
+      "sha256": "38be09830ff07e0636cf79625a6b68281461bc3e3e4e685a1a63404521d5842d",
+      "ingested_at": "2026-04-28T08:22:08+00:00",
+      "shareholder_profit": 62.761
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2026-02-12",
+      "news_id": "17708534423251",
+      "raw_path": "VGI/financials/2569/9M/source.zip",
+      "sha256": "60ce14535ad4d4d6a4da7463991852a5fb72886b54edf85e51078b86d092b129",
+      "ingested_at": "2026-04-28T08:21:38+00:00",
+      "shareholder_profit": 83.228
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2025-05-30",
+      "news_id": "17485627701761",
+      "raw_path": "VGI/financials/2568/FY/source.zip",
+      "sha256": "a5f104790f6c31f56510a751d513f280ac3146a9d685e804284aaf6fd3dd6661",
+      "ingested_at": "2026-04-28T08:21:53+00:00",
+      "shareholder_profit": 501.228918
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-11-12",
+      "news_id": "17629001525381",
+      "raw_path": "VGI/financials/2569/H1/source.zip",
+      "sha256": "c13edda1cf8f7430d60a3d1b6cc2cb63bdcbd46719c306c16233337808cedab9",
+      "ingested_at": "2026-04-28T08:21:43+00:00",
+      "shareholder_profit": 78.709
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229877161",
+      "raw_path": "VGI/financials/2569/Q1/source.zip",
+      "sha256": "358e10bca29edde6f40d6b59c3c28465cc27c80aa2e3dfed54ec0dc4af50efa1",
+      "ingested_at": "2026-04-28T08:21:48+00:00",
+      "shareholder_profit": 44.709
+    }
+  ]
+}

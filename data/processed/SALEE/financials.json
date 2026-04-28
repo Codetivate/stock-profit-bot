@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "symbol": "SALEE",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-26",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 10.565,
+      "Q2": -3.86,
+      "Q3": 10.651,
+      "Q4": -16.574866999999998,
+      "FullYear": 0.781133
+    },
+    "2565": {
+      "Q1": 14.79,
+      "Q2": 42.525,
+      "Q3": 30.131,
+      "Q4": 27.015088880071012,
+      "FullYear": 114.461088880071
+    },
+    "2566": {
+      "Q1": 5.804,
+      "Q2": 16.702,
+      "Q3": -1.054,
+      "Q4": -4.801772000000003,
+      "FullYear": 16.650228
+    },
+    "2567": {
+      "Q1": 4.104,
+      "Q2": 2.107,
+      "Q3": 3.983,
+      "Q4": -3.6173690000000005,
+      "FullYear": 6.576631
+    },
+    "2568": {
+      "Q1": 10.384,
+      "Q2": 8.138,
+      "Q3": 1.375,
+      "Q4": 13.850720999999998,
+      "FullYear": 33.747721
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-10",
+      "news_id": "2021120350",
+      "raw_path": "SALEE/financials/2564/9M/source.zip",
+      "sha256": "3985b49a908a58dbb20d34cb35ae36113eae578e00e15f0c015da0bf9042f740",
+      "ingested_at": "2026-04-28T07:42:02+00:00",
+      "shareholder_profit": 10.651
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-24",
+      "news_id": "2022022024",
+      "raw_path": "SALEE/financials/2564/FY/source.zip",
+      "sha256": "820c7aebabde28df2f60814fe119e13f9b80b60bda1f5e9c136ff7eef233e0c3",
+      "ingested_at": "2026-04-28T07:41:56+00:00",
+      "shareholder_profit": 0.781133
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-09",
+      "news_id": "2021085481",
+      "raw_path": "SALEE/financials/2564/H1/source.zip",
+      "sha256": "25c107276a8f365c794478a2e3e699f7dc8d5cda1566e8c29edb1d50fbc8dbe1",
+      "ingested_at": "2026-04-28T07:42:07+00:00",
+      "shareholder_profit": -3.86
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-12",
+      "news_id": "2021055167",
+      "raw_path": "SALEE/financials/2564/Q1/source.zip",
+      "sha256": "afda33fc7adfef5556bde5210f8c0462b3a5894a3b8cfb412b4d90e5c133d2ed",
+      "ingested_at": "2026-04-28T07:42:12+00:00",
+      "shareholder_profit": 10.565
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-11",
+      "news_id": "2022132735",
+      "raw_path": "SALEE/financials/2565/9M/source.zip",
+      "sha256": "f1e8ad3d9301fc0278e6092d69e01cdeec408270071416b171ba038769c99208",
+      "ingested_at": "2026-04-28T07:41:41+00:00",
+      "shareholder_profit": 30.131
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-27",
+      "news_id": "2023023074",
+      "raw_path": "SALEE/financials/2565/FY/source.zip",
+      "sha256": "be86272da90849dcd633626e4eefcbe8836d1285a0c899462cdb558683f874c2",
+      "ingested_at": "2026-04-28T07:41:36+00:00",
+      "shareholder_profit": 114.461088880071
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-15",
+      "news_id": "2022096503",
+      "raw_path": "SALEE/financials/2565/H1/source.zip",
+      "sha256": "be54af233eb63647fb32ac0a62f28df73a20b0018b265825fe17b3c2e0496a07",
+      "ingested_at": "2026-04-28T07:41:47+00:00",
+      "shareholder_profit": 42.525
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-12",
+      "news_id": "2022060576",
+      "raw_path": "SALEE/financials/2565/Q1/source.zip",
+      "sha256": "9201d8ce82a1cc0169fed205a92091fac16dc1d8236c5247c9f6ce3f660d4477",
+      "ingested_at": "2026-04-28T07:41:51+00:00",
+      "shareholder_profit": 14.79
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-10",
+      "news_id": "16995730792781",
+      "raw_path": "SALEE/financials/2566/9M/source.zip",
+      "sha256": "0872884cfd929547edb030d8ebeee5fdf45017f250672fa27b205f260a032cf7",
+      "ingested_at": "2026-04-28T07:41:21+00:00",
+      "shareholder_profit": -1.054
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-27",
+      "news_id": "17089869262211",
+      "raw_path": "SALEE/financials/2566/FY/source.zip",
+      "sha256": "9c78223149581f2d83780f279efcedef607228f5fa50e5b0c294e3d012233748",
+      "ingested_at": "2026-04-28T07:41:16+00:00",
+      "shareholder_profit": 16.650228
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-11",
+      "news_id": "16917102170911",
+      "raw_path": "SALEE/financials/2566/H1/source.zip",
+      "sha256": "7be0d285f42f0ee8b5402a30b8272d74c8b430bc33dc041912d2bf3ce8d1ff9f",
+      "ingested_at": "2026-04-28T07:41:26+00:00",
+      "shareholder_profit": 16.702
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-12",
+      "news_id": "16838458870841",
+      "raw_path": "SALEE/financials/2566/Q1/source.zip",
+      "sha256": "e219ac7a25f8b4ba2bbb7b0a2d5de58fb0d920c9cd1b8f2a9b834262ff2b8ce0",
+      "ingested_at": "2026-04-28T07:41:31+00:00",
+      "shareholder_profit": 5.804
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-12",
+      "news_id": "17313658212751",
+      "raw_path": "SALEE/financials/2567/9M/source.zip",
+      "sha256": "7b8667ddea92d10d8f87569a6fcb7aeacf069382b635f5bdb00734c7a375a7fe",
+      "ingested_at": "2026-04-28T07:41:01+00:00",
+      "shareholder_profit": 3.983
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-25",
+      "news_id": "17404367275231",
+      "raw_path": "SALEE/financials/2567/FY/source.zip",
+      "sha256": "f5cfc5501c59690973ec079738bbc1881c568f072545444b6945bebd3ae9c9f6",
+      "ingested_at": "2026-04-28T07:40:56+00:00",
+      "shareholder_profit": 6.576631
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-09",
+      "news_id": "17231594101441",
+      "raw_path": "SALEE/financials/2567/H1/source.zip",
+      "sha256": "74362a62e3bbc336f9d4fca93a1c01189cae010496f122026dbbf93cced37fa7",
+      "ingested_at": "2026-04-28T07:41:06+00:00",
+      "shareholder_profit": 2.107
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-10",
+      "news_id": "17152924603471",
+      "raw_path": "SALEE/financials/2567/Q1/source.zip",
+      "sha256": "fa161946357f9edde50e81d07ae22a66432e154ab925599b2bac5aa3bc22fad4",
+      "ingested_at": "2026-04-28T07:41:11+00:00",
+      "shareholder_profit": 4.104
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-10",
+      "news_id": "17627310456961",
+      "raw_path": "SALEE/financials/2568/9M/source.zip",
+      "sha256": "d1c8b9e7e6b81b64b652e64caa44089f6cf2b71b1829ebb82fa066f72c0c184a",
+      "ingested_at": "2026-04-28T07:40:41+00:00",
+      "shareholder_profit": 1.375
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-26",
+      "news_id": "17720575029451",
+      "raw_path": "SALEE/financials/2568/FY/source.zip",
+      "sha256": "ba1c2c0bd433bb21c79b0d96263a6941f9945f1989d54c19408655f68998a88b",
+      "ingested_at": "2026-04-28T07:40:36+00:00",
+      "shareholder_profit": 33.747721
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361032291",
+      "raw_path": "SALEE/financials/2568/H1/source.zip",
+      "sha256": "78649b528607fe97f92c1f3663b1b7a1ed09d076848fe951dd11dbd223b9eebc",
+      "ingested_at": "2026-04-28T07:40:46+00:00",
+      "shareholder_profit": 8.138
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-09",
+      "news_id": "17467412698321",
+      "raw_path": "SALEE/financials/2568/Q1/source.zip",
+      "sha256": "a112c0b344cf6d7b6e2e9b92695714ba37c6f90673872693110303f00a488394",
+      "ingested_at": "2026-04-28T07:40:51+00:00",
+      "shareholder_profit": 10.384
+    }
+  ]
+}

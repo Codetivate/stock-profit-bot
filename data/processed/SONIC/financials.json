@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "symbol": "SONIC",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-27",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 40.746782,
+      "Q2": 41.794597,
+      "Q3": 70.465312,
+      "Q4": 73.13348,
+      "FullYear": 226.140171
+    },
+    "2565": {
+      "Q1": 91.968472,
+      "Q2": 93.604693,
+      "Q3": 91.387025,
+      "Q4": 30.627386,
+      "FullYear": 307.587576
+    },
+    "2566": {
+      "Q1": 36.918535,
+      "Q2": 32.010747,
+      "Q3": 27.981602,
+      "Q4": 29.17361200000001,
+      "FullYear": 126.084496
+    },
+    "2567": {
+      "Q1": 39.717205,
+      "Q2": 46.292988,
+      "Q3": 37.508507,
+      "Q4": 44.42331199999999,
+      "FullYear": 167.942012
+    },
+    "2568": {
+      "Q1": 33.828534,
+      "Q2": 26.707327,
+      "Q3": 33.920889,
+      "Q4": 25.752648999999998,
+      "FullYear": 120.209399
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-10",
+      "news_id": "2021120722",
+      "raw_path": "SONIC/financials/2564/9M/source.zip",
+      "sha256": "fe80f646f3dcb5e188ccaa05fe47359b073e14505ee10cea245e3feab4ae3cdd",
+      "ingested_at": "2026-04-28T08:07:19+00:00",
+      "shareholder_profit": 70.465312
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-22",
+      "news_id": "2022019462",
+      "raw_path": "SONIC/financials/2564/FY/source.zip",
+      "sha256": "da7decaf2109f6fe7456ae474bb28e37f46b43061049a73d79a435b055ba36c1",
+      "ingested_at": "2026-04-28T08:07:14+00:00",
+      "shareholder_profit": 226.140171
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-13",
+      "news_id": "2021088702",
+      "raw_path": "SONIC/financials/2564/H1/source.zip",
+      "sha256": "f96c18e5fceb60911c19be1f2cc77de42528f361841230076dfbd3d1f38285a7",
+      "ingested_at": "2026-04-28T08:07:24+00:00",
+      "shareholder_profit": 41.794597
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-12",
+      "news_id": "2021054618",
+      "raw_path": "SONIC/financials/2564/Q1/source.zip",
+      "sha256": "30faffca9418e249cb113f8de197c9e0fbb0578f376d816262e158364eaa321a",
+      "ingested_at": "2026-04-28T08:07:29+00:00",
+      "shareholder_profit": 40.746782
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-09",
+      "news_id": "2022130529",
+      "raw_path": "SONIC/financials/2565/9M/source.zip",
+      "sha256": "17c1f842dc7e5a187b54d4e098ab5e852c94d85a12cc992482f0bbac2cff2117",
+      "ingested_at": "2026-04-28T08:06:58+00:00",
+      "shareholder_profit": 91.387025
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-21",
+      "news_id": "2023018789",
+      "raw_path": "SONIC/financials/2565/FY/source.zip",
+      "sha256": "86e6b4f9ba9c7cbc7f6024983e5542236a453ffd48e36a615b1159bc0bd48482",
+      "ingested_at": "2026-04-28T08:06:53+00:00",
+      "shareholder_profit": 307.587576
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-10",
+      "news_id": "2022093712",
+      "raw_path": "SONIC/financials/2565/H1/source.zip",
+      "sha256": "d15dea7339ce1ae90f424ff581043221f3610dc91ce16b73bc911780d8455d2e",
+      "ingested_at": "2026-04-28T08:07:04+00:00",
+      "shareholder_profit": 93.604693
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-10",
+      "news_id": "2022056925",
+      "raw_path": "SONIC/financials/2565/Q1/source.zip",
+      "sha256": "818a8841da87f0d7d64572bba0c5573d79a294e258d93735dd3ad4db466266a5",
+      "ingested_at": "2026-04-28T08:07:09+00:00",
+      "shareholder_profit": 91.968472
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-13",
+      "news_id": "16998304496421",
+      "raw_path": "SONIC/financials/2566/9M/source.zip",
+      "sha256": "45d39650ced4d17974f7059e39c4bea40ff4e1a6c981513616a2983028676a49",
+      "ingested_at": "2026-04-28T08:06:38+00:00",
+      "shareholder_profit": 27.981602
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-23",
+      "news_id": "17086428940891",
+      "raw_path": "SONIC/financials/2566/FY/source.zip",
+      "sha256": "28a89e879dc6c7ad7d6c14d161f9a6e9a184badd1a131854ce0c6af1358800f7",
+      "ingested_at": "2026-04-28T08:06:33+00:00",
+      "shareholder_profit": 126.084496
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-09",
+      "news_id": "16915381979121",
+      "raw_path": "SONIC/financials/2566/H1/source.zip",
+      "sha256": "080ed91096aa935f815475246ca911916900b6ba8a7ac015fce446a83bf27aa9",
+      "ingested_at": "2026-04-28T08:06:43+00:00",
+      "shareholder_profit": 32.010747
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-12",
+      "news_id": "16838458866981",
+      "raw_path": "SONIC/financials/2566/Q1/source.zip",
+      "sha256": "eda5d42d4f94a80694bbb000ba08f64a03e20f21a9e21833d3a1f70f2c21482a",
+      "ingested_at": "2026-04-28T08:06:48+00:00",
+      "shareholder_profit": 36.918535
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-11",
+      "news_id": "17312815577161",
+      "raw_path": "SONIC/financials/2567/9M/source.zip",
+      "sha256": "f1dcb267a89d0c75d9756cb2930e6b5e71d44049371e88dd413f5c1eda6cc635",
+      "ingested_at": "2026-04-28T08:06:16+00:00",
+      "shareholder_profit": 37.508507
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-28",
+      "news_id": "17406928478661",
+      "raw_path": "SONIC/financials/2567/FY/source.zip",
+      "sha256": "804f6c3e6de360a4bc3edb0419aca3462b49831495b615d13f18172095897837",
+      "ingested_at": "2026-04-28T08:06:12+00:00",
+      "shareholder_profit": 167.942012
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-14",
+      "news_id": "17235858069761",
+      "raw_path": "SONIC/financials/2567/H1/source.zip",
+      "sha256": "26e914a72e653773229c186ef617fab87f2ab1a4d509f7584a9881044c9b54f3",
+      "ingested_at": "2026-04-28T08:06:22+00:00",
+      "shareholder_profit": 46.292988
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434574231",
+      "raw_path": "SONIC/financials/2567/Q1/source.zip",
+      "sha256": "4d2a6e420a84b46826921232e77da7e9d5ffbcd497b327e5365e56260092f040",
+      "ingested_at": "2026-04-28T08:06:27+00:00",
+      "shareholder_profit": 39.717205
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-17",
+      "news_id": "17633294888061",
+      "raw_path": "SONIC/financials/2568/9M/source.zip",
+      "sha256": "455bb0b560293415037a810623acbc143e517ba0331d403875ae8f3b81c15f0c",
+      "ingested_at": "2026-04-28T08:05:56+00:00",
+      "shareholder_profit": 33.920889
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-27",
+      "news_id": "17721443157761",
+      "raw_path": "SONIC/financials/2568/FY/source.zip",
+      "sha256": "66f4746e85002ccb4c9726d5a9ed83a4b56abe61e906fa0add9ef1ad8b2916c0",
+      "ingested_at": "2026-04-28T08:05:50+00:00",
+      "shareholder_profit": 120.209399
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361185761",
+      "raw_path": "SONIC/financials/2568/H1/source.zip",
+      "sha256": "6511874915d9a9c32f130a88968c3f1131980a536b4c9353c1eea09c29ce0382",
+      "ingested_at": "2026-04-28T08:06:01+00:00",
+      "shareholder_profit": 26.707327
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-14",
+      "news_id": "17471784609331",
+      "raw_path": "SONIC/financials/2568/Q1/source.zip",
+      "sha256": "0da6de602564ad121edf8aec246a4c95c83bfffe72439fc5f6ae79dea5425127",
+      "ingested_at": "2026-04-28T08:06:06+00:00",
+      "shareholder_profit": 33.828534
+    }
+  ]
+}

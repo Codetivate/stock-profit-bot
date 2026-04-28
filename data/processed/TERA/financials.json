@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "symbol": "TERA",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-20",
+  "quarterly_history": {
+    "2566": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": 28.956316
+    },
+    "2567": {
+      "Q1": 4.582,
+      "Q2": 5.677,
+      "Q3": 12.958,
+      "Q4": 6.362354999999999,
+      "FullYear": 29.579355
+    },
+    "2568": {
+      "Q1": -0.611,
+      "Q2": 0.495,
+      "Q3": 11.424,
+      "Q4": 1.2197790000000026,
+      "FullYear": 12.527779
+    }
+  },
+  "sources": [
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-04-23",
+      "news_id": "17138294471571",
+      "raw_path": "TERA/financials/2566/FY/source.zip",
+      "sha256": "ee7975ea9866e70724b7aa1b8d7d2d945947231db1cf24dcfacf3a9d5d9128a4",
+      "ingested_at": "2026-04-28T08:31:14+00:00",
+      "shareholder_profit": 28.956316
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-11",
+      "news_id": "17312815644881",
+      "raw_path": "TERA/financials/2567/9M/source.zip",
+      "sha256": "f15e19015206517d9ec03e11eb645bb3870c143a596d337bdb01ffb687f44024",
+      "ingested_at": "2026-04-28T08:30:59+00:00",
+      "shareholder_profit": 12.958
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-18",
+      "news_id": "17398358017961",
+      "raw_path": "TERA/financials/2567/FY/source.zip",
+      "sha256": "25d824c2e2533edd8f509aa2ed42bb1c1abd04e1a8c25a181b3524c6bf0a652b",
+      "ingested_at": "2026-04-28T08:30:53+00:00",
+      "shareholder_profit": 29.579355
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-07",
+      "news_id": "17229877655611",
+      "raw_path": "TERA/financials/2567/H1/source.zip",
+      "sha256": "51bc80ddf224532a1ae5216e4efba7c2d063192ecc48f83f7db28d9c1ee30a20",
+      "ingested_at": "2026-04-28T08:31:05+00:00",
+      "shareholder_profit": 5.677
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-08",
+      "news_id": "17151254544641",
+      "raw_path": "TERA/financials/2567/Q1/source.zip",
+      "sha256": "39602eeea4d2c7f3f671cb3def07b4082daf8cfa0f420b0780d3d0dda540f4f2",
+      "ingested_at": "2026-04-28T08:31:09+00:00",
+      "shareholder_profit": 4.582
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-10",
+      "news_id": "17627310446021",
+      "raw_path": "TERA/financials/2568/9M/source.zip",
+      "sha256": "1cff2bb2ad3c216d378dd1c6955bb3abf26937403157a477567cb3dffbc77621",
+      "ingested_at": "2026-04-28T08:30:37+00:00",
+      "shareholder_profit": 11.424
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-20",
+      "news_id": "17715446459061",
+      "raw_path": "TERA/financials/2568/FY/source.zip",
+      "sha256": "537a5ca8251556056bf789374e2339df3e95a27106884972bfb83d7a02e83075",
+      "ingested_at": "2026-04-28T08:30:33+00:00",
+      "shareholder_profit": 12.527779
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-07",
+      "news_id": "17545237057101",
+      "raw_path": "TERA/financials/2568/H1/source.zip",
+      "sha256": "7a03b2cd04d51a7679ec760b55cb4d70d3038c796a8e1add9eb6ba473df83c3f",
+      "ingested_at": "2026-04-28T08:30:43+00:00",
+      "shareholder_profit": 0.495
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-08",
+      "news_id": "17466601059121",
+      "raw_path": "TERA/financials/2568/Q1/source.zip",
+      "sha256": "8a9f53cc32437b7df8798ebf9ff4dae7ad73db88fec160db093ee4bb6305610f",
+      "ingested_at": "2026-04-28T08:30:48+00:00",
+      "shareholder_profit": -0.611
+    }
+  ]
+}

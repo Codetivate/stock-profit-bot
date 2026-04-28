@@ -1,0 +1,237 @@
+{
+  "schema_version": 1,
+  "symbol": "SANKO",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-25",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 2.615,
+      "Q2": 1.3239999999999998,
+      "Q3": 0.2649999999999997,
+      "Q4": 9.299609,
+      "FullYear": 13.503609
+    },
+    "2565": {
+      "Q1": 2.56,
+      "Q2": -1.5710000000000002,
+      "Q3": 10.228,
+      "Q4": 10.585438000000002,
+      "FullYear": 21.802438
+    },
+    "2566": {
+      "Q1": 16.899,
+      "Q2": -4.296000000000001,
+      "Q3": 2.104000000000001,
+      "Q4": 39.908584,
+      "FullYear": 54.615584
+    },
+    "2567": {
+      "Q1": 22.171,
+      "Q2": -7.420999999999999,
+      "Q3": 6.933,
+      "Q4": 47.35930200000001,
+      "FullYear": 69.042302
+    },
+    "2568": {
+      "Q1": 13.691,
+      "Q2": null,
+      "Q3": null,
+      "Q4": 43.133979999999994,
+      "FullYear": 62.88198
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-11",
+      "news_id": "2021121343",
+      "raw_path": "SANKO/financials/2564/9M/source.zip",
+      "sha256": "9637defc49341e4d7f57524370a2862edc449aefe632f36e866018397e070d8e",
+      "ingested_at": "2026-04-28T07:44:19+00:00",
+      "shareholder_profit": 4.204
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-25",
+      "news_id": "2022024548",
+      "raw_path": "SANKO/financials/2564/FY/source.zip",
+      "sha256": "f071aad328d04541ac5f975591de8dcbabc3d4aa108fffdc7dace3ad44564913",
+      "ingested_at": "2026-04-28T07:44:13+00:00",
+      "shareholder_profit": 13.503609
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-13",
+      "news_id": "2021089759",
+      "raw_path": "SANKO/financials/2564/H1/source.zip",
+      "sha256": "a5b1fe8035d31cd583c8c731800700a9ec95f680d99be3278de6fa3ca05a4fbc",
+      "ingested_at": "2026-04-28T07:44:24+00:00",
+      "shareholder_profit": 3.939
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-14",
+      "news_id": "2021057989",
+      "raw_path": "SANKO/financials/2564/Q1/source.zip",
+      "sha256": "413b9270c51d1d3ebbb76eb8e16af8e260cdefada5e151cc7a85a6df4c5663b3",
+      "ingested_at": "2026-04-28T07:44:30+00:00",
+      "shareholder_profit": 2.615
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-10",
+      "news_id": "2022131957",
+      "raw_path": "SANKO/financials/2565/9M/source.zip",
+      "sha256": "69468a0c467187f42c593e40e31f83b9436cdc53f22431dc36614c5c74323221",
+      "ingested_at": "2026-04-28T07:43:57+00:00",
+      "shareholder_profit": 11.217
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-23",
+      "news_id": "2023021170",
+      "raw_path": "SANKO/financials/2565/FY/source.zip",
+      "sha256": "10b3edba0ebaa3ac02ed47cd27b5f10dcc5420e7bdf97fd027e98f1ef676c765",
+      "ingested_at": "2026-04-28T07:43:52+00:00",
+      "shareholder_profit": 21.802438
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-11",
+      "news_id": "2022094849",
+      "raw_path": "SANKO/financials/2565/H1/source.zip",
+      "sha256": "75f12ddae9d38c46a26c7f1c26a8bbd22b0e6d909b567fe8b9f3511b1ee22582",
+      "ingested_at": "2026-04-28T07:44:03+00:00",
+      "shareholder_profit": 0.989
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-13",
+      "news_id": "2022061725",
+      "raw_path": "SANKO/financials/2565/Q1/source.zip",
+      "sha256": "a8dcf3ce45828e561d82f89a61360c1a1773218f5d6c18e3d204f6c48f257dab",
+      "ingested_at": "2026-04-28T07:44:08+00:00",
+      "shareholder_profit": 2.56
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-13",
+      "news_id": "16998304565701",
+      "raw_path": "SANKO/financials/2566/9M/source.zip",
+      "sha256": "44f8a929c6e6eab56afe9fbcd600400364d76e705b246172831dc4b24a65037a",
+      "ingested_at": "2026-04-28T07:43:37+00:00",
+      "shareholder_profit": 14.707
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-02-21",
+      "news_id": "17084713457431",
+      "raw_path": "SANKO/financials/2566/FY/source.zip",
+      "sha256": "269741c4376972e6b1de546b1877484d1b9dcb7b5af7bb6bcfca34a429d74309",
+      "ingested_at": "2026-04-28T07:43:33+00:00",
+      "shareholder_profit": 54.615584
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-10",
+      "news_id": "16916230271401",
+      "raw_path": "SANKO/financials/2566/H1/source.zip",
+      "sha256": "5f3aa3e900a938b918d2c0ae8c874f65cb4031ee35a82cb00d2d421dc8dc248a",
+      "ingested_at": "2026-04-28T07:43:42+00:00",
+      "shareholder_profit": 12.603
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-11",
+      "news_id": "16837584054331",
+      "raw_path": "SANKO/financials/2566/Q1/source.zip",
+      "sha256": "c4a51bb44600ee94bd98c0e5eda9af2723a0642ed20e922ffbffd609e4dfa61c",
+      "ingested_at": "2026-04-28T07:43:47+00:00",
+      "shareholder_profit": 16.899
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-12",
+      "news_id": "17313658174671",
+      "raw_path": "SANKO/financials/2567/9M/source.zip",
+      "sha256": "531bf8260dc77d4f3105b6bbf2154c526d4267ffcb507d0676858253d3932dd1",
+      "ingested_at": "2026-04-28T07:43:18+00:00",
+      "shareholder_profit": 21.683
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-21",
+      "news_id": "17400886522411",
+      "raw_path": "SANKO/financials/2567/FY/source.zip",
+      "sha256": "c863dbf9dc2b5d02fa199db5a0c506bccac0b44ca8ae5235ca079594cd582508",
+      "ingested_at": "2026-04-28T07:43:12+00:00",
+      "shareholder_profit": 69.042302
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-13",
+      "news_id": "17234990175961",
+      "raw_path": "SANKO/financials/2567/H1/source.zip",
+      "sha256": "7027a00df81b795d077683256cf173a894f6fcfffd072edfe6861ae7a5af1510",
+      "ingested_at": "2026-04-28T07:43:23+00:00",
+      "shareholder_profit": 14.75
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-15",
+      "news_id": "17157257437271",
+      "raw_path": "SANKO/financials/2567/Q1/source.zip",
+      "sha256": "c3b5d16dc4e4b24c57a71219c3771fb859fb6addbb1482d6c69e4737f96903d6",
+      "ingested_at": "2026-04-28T07:43:28+00:00",
+      "shareholder_profit": 22.171
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-13",
+      "news_id": "17629880460071",
+      "raw_path": "SANKO/financials/2568/9M/source.zip",
+      "sha256": "5e3a38703b745482403dfabe24de9656fc5d1209d8a29a3e4c4e89adb34415d5",
+      "ingested_at": "2026-04-28T07:42:57+00:00",
+      "shareholder_profit": 19.748
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-25",
+      "news_id": "17719707040061",
+      "raw_path": "SANKO/financials/2568/FY/source.zip",
+      "sha256": "9a5ac9e81bf529171860d6dff53d839450e2d2e6ae21c1536569eee63fa4f230",
+      "ingested_at": "2026-04-28T07:42:51+00:00",
+      "shareholder_profit": 62.88198
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903523831",
+      "raw_path": "SANKO/financials/2568/Q1/source.zip",
+      "sha256": "1e52f55c467de2901b058f76cece4803f7f348645e6bb03c532f07b69f48b8d4",
+      "ingested_at": "2026-04-28T07:43:07+00:00",
+      "shareholder_profit": 13.691
+    }
+  ]
+}

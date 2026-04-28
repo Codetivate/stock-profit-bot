@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "symbol": "SKIN",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-26",
+  "quarterly_history": {
+    "2567": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": 10.669588640000033
+    },
+    "2568": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": 4.3778882480000725
+    }
+  },
+  "sources": [
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-09-23",
+      "news_id": "17585856013461",
+      "raw_path": "SKIN/financials/2567/FY/source.zip",
+      "sha256": "80d77b10b8aed2864306072f43a7aba661b0982db3fed625d6cfdf38a03c5d32",
+      "ingested_at": "2026-04-28T08:02:01+00:00",
+      "shareholder_profit": 10.669588640000033
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-12",
+      "news_id": "17629001536381",
+      "raw_path": "SKIN/financials/2568/9M/source.zip",
+      "sha256": "e03d302ef7542c1c5545b6c4dc82ae096c0b0372600a76f5c6c4789b480540d5",
+      "ingested_at": "2026-04-28T08:01:51+00:00",
+      "shareholder_profit": 0.2386945100000183
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-26",
+      "news_id": "17720575223381",
+      "raw_path": "SKIN/financials/2568/FY/source.zip",
+      "sha256": "e4e700a8cb46d6e5b9e10d0f642ddda97fe1bd2466e55957625b96d218e25097",
+      "ingested_at": "2026-04-28T08:01:45+00:00",
+      "shareholder_profit": 4.3778882480000725
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-09-23",
+      "news_id": "17585856013621",
+      "raw_path": "SKIN/financials/2568/H1/source.zip",
+      "sha256": "63605846377953f6fdfed7ac6db2cbe73992dc7b64b9cce1010f72cf4e5c8434",
+      "ingested_at": "2026-04-28T08:01:56+00:00",
+      "shareholder_profit": 3.24047149999999
+    }
+  ]
+}

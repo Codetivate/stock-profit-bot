@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "symbol": "TAKUNI",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-26",
+  "quarterly_history": {
+    "2564": {
+      "Q1": 3.947,
+      "Q2": 10.332,
+      "Q3": 13.419,
+      "Q4": 35.45256499999999,
+      "FullYear": 63.150565
+    },
+    "2565": {
+      "Q1": 27.894,
+      "Q2": 16.945,
+      "Q3": 20.007,
+      "Q4": 62.962256999999994,
+      "FullYear": 127.808257
+    },
+    "2566": {
+      "Q1": 10.477,
+      "Q2": 3.074,
+      "Q3": 26.022,
+      "Q4": -24.412897,
+      "FullYear": 15.160103
+    },
+    "2567": {
+      "Q1": 5.367,
+      "Q2": 14.649,
+      "Q3": -83.42,
+      "Q4": -162.09369199999998,
+      "FullYear": -225.497692
+    },
+    "2568": {
+      "Q1": -27.69,
+      "Q2": -22.405,
+      "Q3": -219.418,
+      "Q4": -174.192862,
+      "FullYear": -443.705862
+    }
+  },
+  "sources": [
+    {
+      "year": 2564,
+      "period": "9M",
+      "filing_date": "2021-11-10",
+      "news_id": "2021119879",
+      "raw_path": "TAKUNI/financials/2564/9M/source.zip",
+      "sha256": "9d06342936ae79dce908b42a89f7a5bd21d132cbd565d1528fb7cd1ee0096626",
+      "ingested_at": "2026-04-28T08:27:09+00:00",
+      "shareholder_profit": 13.419
+    },
+    {
+      "year": 2564,
+      "period": "FY",
+      "filing_date": "2022-02-25",
+      "news_id": "2022023342",
+      "raw_path": "TAKUNI/financials/2564/FY/source.zip",
+      "sha256": "f97b1f1fd202dd5225a88f5792af387aa772178645a41c60d7b615e4eb8bcf47",
+      "ingested_at": "2026-04-28T08:27:04+00:00",
+      "shareholder_profit": 63.150565
+    },
+    {
+      "year": 2564,
+      "period": "H1",
+      "filing_date": "2021-08-09",
+      "news_id": "2021085279",
+      "raw_path": "TAKUNI/financials/2564/H1/source.zip",
+      "sha256": "bd29038a33fec558d82cfeae6de35336768abdf14e5c019ff2488ed665154f63",
+      "ingested_at": "2026-04-28T08:27:15+00:00",
+      "shareholder_profit": 10.332
+    },
+    {
+      "year": 2564,
+      "period": "Q1",
+      "filing_date": "2021-05-12",
+      "news_id": "2021054546",
+      "raw_path": "TAKUNI/financials/2564/Q1/source.zip",
+      "sha256": "f32ba0bea3c0a640dbbbbbcbba8b4cb23b5099118d0a4a0b315dd0612e958bc8",
+      "ingested_at": "2026-04-28T08:27:20+00:00",
+      "shareholder_profit": 3.947
+    },
+    {
+      "year": 2565,
+      "period": "9M",
+      "filing_date": "2022-11-09",
+      "news_id": "2022130197",
+      "raw_path": "TAKUNI/financials/2565/9M/source.zip",
+      "sha256": "e6715e90fec0a667d0733225e0d12eb7f63b4b956c72ecdcd170044c55a3bc8d",
+      "ingested_at": "2026-04-28T08:26:49+00:00",
+      "shareholder_profit": 20.007
+    },
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-02-28",
+      "news_id": "2023025529",
+      "raw_path": "TAKUNI/financials/2565/FY/source.zip",
+      "sha256": "21b166de89d426d81dc278c1c59b927e9d9897f51e2bc4c7d447bc5b263aa286",
+      "ingested_at": "2026-04-28T08:26:44+00:00",
+      "shareholder_profit": 127.808257
+    },
+    {
+      "year": 2565,
+      "period": "H1",
+      "filing_date": "2022-08-09",
+      "news_id": "2022091619",
+      "raw_path": "TAKUNI/financials/2565/H1/source.zip",
+      "sha256": "1b77f34e37d31c1fc3d0c414b4961f512a49de45e8608f7e1fbd8107b0efe469",
+      "ingested_at": "2026-04-28T08:26:55+00:00",
+      "shareholder_profit": 16.945
+    },
+    {
+      "year": 2565,
+      "period": "Q1",
+      "filing_date": "2022-05-10",
+      "news_id": "2022056514",
+      "raw_path": "TAKUNI/financials/2565/Q1/source.zip",
+      "sha256": "d6f273f72c89242d9967874b4699437e6848a38e091d6181afb3356514f91066",
+      "ingested_at": "2026-04-28T08:26:59+00:00",
+      "shareholder_profit": 27.894
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-13",
+      "news_id": "16998304616461",
+      "raw_path": "TAKUNI/financials/2566/9M/source.zip",
+      "sha256": "e8901cc91de582cf8ab00f3371e80c2f14beb31ba082c839da299ca38d46225d",
+      "ingested_at": "2026-04-28T08:26:30+00:00",
+      "shareholder_profit": 26.022
+    },
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-03-01",
+      "news_id": "17092430853271",
+      "raw_path": "TAKUNI/financials/2566/FY/source.zip",
+      "sha256": "9ce433b80be468ae9a586429aba5221eda6df758d5e2d5973bdb7c7480d90b02",
+      "ingested_at": "2026-04-28T08:26:25+00:00",
+      "shareholder_profit": 15.160103
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-08-15",
+      "news_id": "16920539316581",
+      "raw_path": "TAKUNI/financials/2566/H1/source.zip",
+      "sha256": "1400f09595eb31f8355bddc67c6efd77725a55769f5ea7f989efc59e3b624aae",
+      "ingested_at": "2026-04-28T08:26:35+00:00",
+      "shareholder_profit": 3.074
+    },
+    {
+      "year": 2566,
+      "period": "Q1",
+      "filing_date": "2023-05-15",
+      "news_id": "16841054040341",
+      "raw_path": "TAKUNI/financials/2566/Q1/source.zip",
+      "sha256": "ca7586d3c1418434f4f01c381f7ee8ef59ceeaa484e4964b6318f21db0596164",
+      "ingested_at": "2026-04-28T08:26:40+00:00",
+      "shareholder_profit": 10.477
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-14",
+      "news_id": "17315361322451",
+      "raw_path": "TAKUNI/financials/2567/9M/source.zip",
+      "sha256": "57e97cb3e8e4a1e984a6cf7ed2c294c8db58b24c74f16dfbdc8975e7e8540576",
+      "ingested_at": "2026-04-28T08:26:10+00:00",
+      "shareholder_profit": -83.42
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-28",
+      "news_id": "17406928237601",
+      "raw_path": "TAKUNI/financials/2567/FY/source.zip",
+      "sha256": "34f51b477c95ff06652e8479d2d64538d8708cf707032544d6026ee6e876232f",
+      "ingested_at": "2026-04-28T08:26:06+00:00",
+      "shareholder_profit": -225.497692
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-15",
+      "news_id": "17236759883711",
+      "raw_path": "TAKUNI/financials/2567/H1/source.zip",
+      "sha256": "3e5b0b20c8c56735ca3982e8e4cac251f75f637b8d899f6fd73eacbfe832084f",
+      "ingested_at": "2026-04-28T08:26:15+00:00",
+      "shareholder_profit": 14.649
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-14",
+      "news_id": "17156434584531",
+      "raw_path": "TAKUNI/financials/2567/Q1/source.zip",
+      "sha256": "1d5a6e6ce1f42db31731000707ab69e4dcd1328705fb0595eda93fff19198403",
+      "ingested_at": "2026-04-28T08:26:20+00:00",
+      "shareholder_profit": 5.367
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-14",
+      "news_id": "17630699515291",
+      "raw_path": "TAKUNI/financials/2568/9M/source.zip",
+      "sha256": "302b8a50a28a842c9079878320db5492d29b704b10859525e9cefea6b7a229db",
+      "ingested_at": "2026-04-28T08:25:51+00:00",
+      "shareholder_profit": -219.418
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-26",
+      "news_id": "17720575393751",
+      "raw_path": "TAKUNI/financials/2568/FY/source.zip",
+      "sha256": "762d52a2c7a2c9b3f8fa4a8a3cde1f07419fb394a0148866ae71ea9d970f736f",
+      "ingested_at": "2026-04-28T08:25:46+00:00",
+      "shareholder_profit": -443.705862
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-13",
+      "news_id": "17550361029711",
+      "raw_path": "TAKUNI/financials/2568/H1/source.zip",
+      "sha256": "7227819db725b4795ea503229f1a7fcfbf73273607009ceeadef020beb8a1d82",
+      "ingested_at": "2026-04-28T08:25:56+00:00",
+      "shareholder_profit": -22.405
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903566251",
+      "raw_path": "TAKUNI/financials/2568/Q1/source.zip",
+      "sha256": "3e8226285dfc21786ff7f31063a0e9a697a5d2ffd003e787ff840b399e18d911",
+      "ingested_at": "2026-04-28T08:26:01+00:00",
+      "shareholder_profit": -27.69
+    }
+  ]
+}

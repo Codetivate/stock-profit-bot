@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "symbol": "SCL",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-23",
+  "quarterly_history": {
+    "2565": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": 27.316549
+    },
+    "2566": {
+      "Q1": null,
+      "Q2": 5.281,
+      "Q3": 8.06,
+      "Q4": null,
+      "FullYear": null
+    },
+    "2567": {
+      "Q1": 12.154,
+      "Q2": 10.434,
+      "Q3": 13.896,
+      "Q4": -13.116200000000001,
+      "FullYear": 23.3678
+    },
+    "2568": {
+      "Q1": 13.391,
+      "Q2": 11.164,
+      "Q3": 17.185,
+      "Q4": 2.819524000000005,
+      "FullYear": 44.559524
+    }
+  },
+  "sources": [
+    {
+      "year": 2565,
+      "period": "FY",
+      "filing_date": "2023-10-31",
+      "news_id": "16987086297921",
+      "raw_path": "SCL/financials/2565/FY/source.zip",
+      "sha256": "b93cec3e171b3a3da84a1f61e7e88f4b46d4c99a3bd3193483662a2033a20e22",
+      "ingested_at": "2026-04-28T07:45:40+00:00",
+      "shareholder_profit": 27.316549
+    },
+    {
+      "year": 2566,
+      "period": "9M",
+      "filing_date": "2023-11-14",
+      "news_id": "16999132722361",
+      "raw_path": "SCL/financials/2566/9M/source.zip",
+      "sha256": "d33d5cb38cf132b91ddbadb3eb7ba0f65cdcdab3df06fa0759cdf00319272541",
+      "ingested_at": "2026-04-28T07:45:30+00:00",
+      "shareholder_profit": 8.06
+    },
+    {
+      "year": 2566,
+      "period": "H1",
+      "filing_date": "2023-10-31",
+      "news_id": "16987086297961",
+      "raw_path": "SCL/financials/2566/H1/source.zip",
+      "sha256": "793e63bc4c5d39e4a2e3141121d7ee32f7e5903c15be471553f7011d9954f528",
+      "ingested_at": "2026-04-28T07:45:36+00:00",
+      "shareholder_profit": 5.281
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-13",
+      "news_id": "17314477498931",
+      "raw_path": "SCL/financials/2567/9M/source.zip",
+      "sha256": "b845456a28c846cdf3ad84fa28b8eef47143ea72c343801c1a728ea7225d0920",
+      "ingested_at": "2026-04-28T07:45:10+00:00",
+      "shareholder_profit": 13.896
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-26",
+      "news_id": "17405221057151",
+      "raw_path": "SCL/financials/2567/FY/source.zip",
+      "sha256": "e3bfa715ac5e1b378f9bebac957369f583ecfd5e4622b46ac0d5752fd9468bc7",
+      "ingested_at": "2026-04-28T07:45:05+00:00",
+      "shareholder_profit": 23.3678
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-08-08",
+      "news_id": "17230734184131",
+      "raw_path": "SCL/financials/2567/H1/source.zip",
+      "sha256": "57b38088533a72b5d26411806feebbe8680158a8f36dc4c4faa01432745a936b",
+      "ingested_at": "2026-04-28T07:45:16+00:00",
+      "shareholder_profit": 10.434
+    },
+    {
+      "year": 2567,
+      "period": "Q1",
+      "filing_date": "2024-05-09",
+      "news_id": "17152110365821",
+      "raw_path": "SCL/financials/2567/Q1/source.zip",
+      "sha256": "1d02e91c51b9ef4d4185728ec474ed60ebbc1aee7fe3e41fd2e2aeb03dcd26c6",
+      "ingested_at": "2026-04-28T07:45:20+00:00",
+      "shareholder_profit": 12.154
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-10",
+      "news_id": "17627310446521",
+      "raw_path": "SCL/financials/2568/9M/source.zip",
+      "sha256": "36b76e2d397d17a257905dd3266fa5d9b43187d9170784ed4420a88e7f5adfd7",
+      "ingested_at": "2026-04-28T07:44:51+00:00",
+      "shareholder_profit": 17.185
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-23",
+      "news_id": "17718030184351",
+      "raw_path": "SCL/financials/2568/FY/source.zip",
+      "sha256": "ff629c2c9e226cef6646aa57c8cfee0a0c7a3464a9c6d85eb2585db1d6b19e70",
+      "ingested_at": "2026-04-28T07:44:46+00:00",
+      "shareholder_profit": 44.559524
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-08",
+      "news_id": "17546095884031",
+      "raw_path": "SCL/financials/2568/H1/source.zip",
+      "sha256": "690864dfad79c4e6a2ecdd8f9245b73ed6c7aa6a6b2134cb6498dd220ef4bf27",
+      "ingested_at": "2026-04-28T07:44:56+00:00",
+      "shareholder_profit": 11.164
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903541601",
+      "raw_path": "SCL/financials/2568/Q1/source.zip",
+      "sha256": "0265b51092079312e89954d746ef3493667727e19d54859b720728bd0bdc945a",
+      "ingested_at": "2026-04-28T07:45:00+00:00",
+      "shareholder_profit": 13.391
+    }
+  ]
+}

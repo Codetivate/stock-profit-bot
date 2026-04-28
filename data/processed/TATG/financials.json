@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "symbol": "TATG",
+  "company_code": null,
+  "company_name_en": null,
+  "company_name_th": null,
+  "updated_at": "2026-02-25",
+  "quarterly_history": {
+    "2566": {
+      "Q1": null,
+      "Q2": null,
+      "Q3": null,
+      "Q4": null,
+      "FullYear": 46.662429
+    },
+    "2567": {
+      "Q1": null,
+      "Q2": 35.032,
+      "Q3": 6.628,
+      "Q4": 18.933493999999996,
+      "FullYear": 69.222494
+    },
+    "2568": {
+      "Q1": 13.286,
+      "Q2": 28.803,
+      "Q3": 18.53,
+      "Q4": 15.175872999999996,
+      "FullYear": 75.794873
+    }
+  },
+  "sources": [
+    {
+      "year": 2566,
+      "period": "FY",
+      "filing_date": "2024-10-07",
+      "news_id": "17282574139101",
+      "raw_path": "TATG/financials/2566/FY/source.zip",
+      "sha256": "92b98244bdda10bd945cf160dc55720c2bba6aa0b276621afca21af67483d063",
+      "ingested_at": "2026-04-28T08:29:17+00:00",
+      "shareholder_profit": 46.662429
+    },
+    {
+      "year": 2567,
+      "period": "9M",
+      "filing_date": "2024-11-11",
+      "news_id": "17312815618901",
+      "raw_path": "TATG/financials/2567/9M/source.zip",
+      "sha256": "1e86e8f3ed7d3c0d341e00186e8da746a22d6282e2ebe2b0fd19b93bd7fca9a5",
+      "ingested_at": "2026-04-28T08:29:07+00:00",
+      "shareholder_profit": 6.628
+    },
+    {
+      "year": 2567,
+      "period": "FY",
+      "filing_date": "2025-02-27",
+      "news_id": "17406066331701",
+      "raw_path": "TATG/financials/2567/FY/source.zip",
+      "sha256": "e2a4a56097762e942a7a4f318f5d655bc53d07872e98db176cead8267bcc0760",
+      "ingested_at": "2026-04-28T08:29:03+00:00",
+      "shareholder_profit": 69.222494
+    },
+    {
+      "year": 2567,
+      "period": "H1",
+      "filing_date": "2024-10-07",
+      "news_id": "17282574139841",
+      "raw_path": "TATG/financials/2567/H1/source.zip",
+      "sha256": "5b00bcf3c536d1ecfdba70b7b3c3be670e0321622e62c27991cb716a16e9ffc2",
+      "ingested_at": "2026-04-28T08:29:13+00:00",
+      "shareholder_profit": 35.032
+    },
+    {
+      "year": 2568,
+      "period": "9M",
+      "filing_date": "2025-11-14",
+      "news_id": "17630699581931",
+      "raw_path": "TATG/financials/2568/9M/source.zip",
+      "sha256": "5f49bd21af5089a3c9fdcc75654f6b39b1bc015d2358730da91c8e4790dcad99",
+      "ingested_at": "2026-04-28T08:28:48+00:00",
+      "shareholder_profit": 18.53
+    },
+    {
+      "year": 2568,
+      "period": "FY",
+      "filing_date": "2026-02-25",
+      "news_id": "17719707027051",
+      "raw_path": "TATG/financials/2568/FY/source.zip",
+      "sha256": "b4c0cdfa5faf0618130daf38ed1029c3fbbf09ee340820c9e8bb691e7df0ff99",
+      "ingested_at": "2026-04-28T08:28:43+00:00",
+      "shareholder_profit": 75.794873
+    },
+    {
+      "year": 2568,
+      "period": "H1",
+      "filing_date": "2025-08-14",
+      "news_id": "17551229843071",
+      "raw_path": "TATG/financials/2568/H1/source.zip",
+      "sha256": "bd094d78ea6472ad7ec5ffd4b1da409c94394e9d71cc19040f80fbe42e0edb4a",
+      "ingested_at": "2026-04-28T08:28:52+00:00",
+      "shareholder_profit": 28.803
+    },
+    {
+      "year": 2568,
+      "period": "Q1",
+      "filing_date": "2025-05-13",
+      "news_id": "17470903446901",
+      "raw_path": "TATG/financials/2568/Q1/source.zip",
+      "sha256": "8f942a60b3405b3c0e3dd58f6a3b58dea00fedf8e14b72ca38b5439e67869cb0",
+      "ingested_at": "2026-04-28T08:28:57+00:00",
+      "shareholder_profit": 13.286
+    }
+  ]
+}
