@@ -46,6 +46,7 @@ from src.cli.ingest_news import EXCLUDED_TYPES  # financial_statement et al.
 
 from telegram_client import TelegramClient
 from make_chart_html import make_chart
+from make_schedule_html import make_schedule
 from command_handler import (
     build_rich_caption,
     find_latest_quarter,
@@ -178,6 +179,17 @@ def _send_updated_chart(
     chart_path.write_bytes(png)
     print(f"    📊 Chart saved: {chart_path}")
 
+    # Companion image: filing-schedule grid (วันที่ประกาศงบ). Render once
+    # per broadcast so we don't have to coordinate across processes.
+    try:
+        schedule_png = make_schedule(symbol)
+        sched_path = derived / f"{latest_year}_{latest_q}_schedule.png"
+        sched_path.write_bytes(schedule_png)
+        print(f"    📅 Schedule saved: {sched_path}")
+    except Exception as e:
+        schedule_png = None
+        print(f"    ⚠ Schedule render failed: {e}")
+
     if tg and chat_id:
         # Dual-target broadcast: TELEGRAM_CHAT_ID (private DM, debug)
         # + optional TELEGRAM_CHANNEL_ID (public channel for subscribers).
@@ -198,6 +210,20 @@ def _send_updated_chart(
                 print(f"    📤 Chart sent to Telegram ({tgt})")
             except Exception as e:
                 print(f"    ⚠ Failed sending to {tgt}: {e}")
+            # Companion schedule image — sent right after the chart so
+            # they land back-to-back in the chat. Caption stays empty;
+            # the chart's caption already carries all the headline data.
+            if schedule_png:
+                try:
+                    tg.send_photo(
+                        chat_id=tgt,
+                        photo_bytes=schedule_png,
+                        caption=f"📅 <b>{symbol}</b> · วันที่ประกาศงบย้อนหลัง",
+                        filename=f"{symbol}_schedule.png",
+                    )
+                    print(f"    📤 Schedule sent to Telegram ({tgt})")
+                except Exception as e:
+                    print(f"    ⚠ Failed sending schedule to {tgt}: {e}")
 
 
 def _process_new_financials(

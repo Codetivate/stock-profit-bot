@@ -264,6 +264,21 @@ def handle_profit_command(tg: TelegramClient, chat_id, symbol: str):
         filename=f"{symbol}_{latest_year}{latest_q}.png",
     )
 
+    # Companion schedule image — same dual-image broadcast as monitor.py
+    # so DM /profit replies match the channel format.
+    try:
+        from make_schedule_html import make_schedule
+        schedule_png = make_schedule(symbol)
+        tg.send_photo(
+            chat_id=chat_id,
+            photo_bytes=schedule_png,
+            caption=f"📅 <b>{symbol}</b> · วันที่ประกาศงบย้อนหลัง",
+            filename=f"{symbol}_schedule.png",
+        )
+    except Exception as e:
+        # Schedule failure is non-fatal — chart already delivered.
+        print(f"  ⚠ Schedule render/send failed for {symbol}: {e}")
+
 
 def get_company_name(symbol: str) -> str:
     names = {
