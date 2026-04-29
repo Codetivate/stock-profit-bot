@@ -245,3 +245,47 @@ to confirm the SET-side number traces to a real cell.
 - **Root cause:** in the SCB Q1 workbook, the **CF (cash flow) sheet row 12 column 11** has cell value `2589` — that's `ค่าเสื่อมราคา` (depreciation) of 2,589 thousand baht for the separate-financials prior-period column. The integer `2589` falls inside the Buddhist year range `[2540, 2600]`, so `_latest_year_in_sheet` mis-classified it as "year 2589" → workbook_latest = 2589 → real PL sheet (year 2567) was filtered out as "stale" since 2567 < 2589.
 - **Fix:** in `_latest_year_in_sheet`, skip year-detection on rows that contain any number with `abs > 9999`. Year header rows in SET filings always contain ONLY year-shaped integers and short strings; data rows contain money figures. The `has_money` row-level filter rules out depreciation/balance/whatever happens to fall in `[2540, 2600]` while preserving every legitimate header-row year detection.
 - **Lesson:** when scanning numeric cells for "year-shaped" values, always pair with a row-level "is this a header row?" guard. False positives from money figures in the Buddhist year range are easy to miss because the audit only checks FullYear (which can match via OTHER filings' data), masking individual quarter losses.
+
+---
+
+## Round 3 fixes (post-bulk universe audit — Pattern A: stacked-block units)
+
+### ✅ BTW 2568 — FIXED (stacked-block PL with two different units)
+**Role-model symbol for: dual-block PL sheet where the parser must apply DIFFERENT divisors to the quarterly block (top) and the annual block (bottom).**
+
+- **Symptom:** SET reports 2568 = -102.46 MB; local reported -102,463.64 (exactly 1,000× too big).
+- **Root cause:** the audited FY 2568 zip's `PL_T` sheet stacks **two PL blocks**:
+  - Block 1 (rows 1-58): three-month standalone "งวดสามเดือนสิ้นสุด...30 กันยายน 2568" with unit `พันบาท` (divisor 1,000).
+  - Block 2 (rows 60-140): annual "สำหรับปีสิ้นสุดวันที่ 31 ธันวาคม" with unit `บาท` (divisor 1,000,000).
+
+  `_detect_unit_divisor` only scans the top 15 rows so it locked onto `พันบาท` and applied divisor 1,000 to BOTH blocks — the annual figure (-102,463,639 baht) was divided by 1,000 instead of 1,000,000.
+
+- **Fix:** added `_build_unit_divisor_map(ws)` and `_divisor_for_row(unit_map, row_idx, default)`. The map records every `(row index, divisor)` seen anywhere in the sheet; the lookup returns the most recent marker at-or-above the row being parsed. Wired into both:
+  1. The main per-row loop — each shareholder/net-profit row uses its own block's divisor.
+  2. The `shareholder_profit_cum` extractor (Layout 2 same-sheet break) — re-detects the divisor from rows around the transition before re-extracting.
+
+  Plus: relaxed the "first wins" guard so a later, *higher-precision* shareholder row (larger divisor → annual block) overrides an earlier quarterly-block hit. Same-or-lower divisor still keeps original semantics, so single-block sheets are unaffected.
+
+- **Lesson:** SET filings can stack multiple PL blocks per sheet, each with its OWN unit marker. Top-of-sheet detection is unsafe whenever stacked blocks exist. The `unit_map` approach generalises to any future stacked layout. Verify by reparsing — if the FY filing's `shareholder_profit` ends up exactly 1,000× the SET value, this pattern is the suspect.
+
+### ✅ QDC 2568 — FIXED (same stacked-block pattern as BTW)
+**Role-model symbol for: same shape as BTW, validates the parser fix generalises.**
+
+- **Symptom:** local 2568 = -111,482.38; SET = -111.48. Exactly 1,000× off.
+- **Root cause:** identical to BTW — single PL sheet with quarterly block (พันบาท) above annual block (บาท).
+- **Fix:** automatic via the BTW `_build_unit_divisor_map` change; no per-symbol code.
+
+### ✅ TNITY 2567 — FIXED (cumulative extractor used wrong divisor)
+**Role-model symbol for: the `shareholder_profit_cum` path in Layout 2 needs its own divisor detection.**
+
+- **Symptom:** local 2567 = -353.40; SET = 0.51 (small positive number). The 1,000× pattern hid because `compute_standalone_quarters` derives FullYear from cumulative values, not the raw shareholder_profit.
+- **Root cause:** `_extract_shareholder_from_rows(ws, transition, ws.max_row, unit_divisor)` used the top-of-sheet `unit_divisor`, but for stacked layouts the cumulative section sits in a different unit block.
+- **Fix:** call `_detect_unit_divisor(...)` on rows around the transition before invoking the cumulative extractor. Resolved automatically alongside BTW.
+
+### 🔧 PLANET 2567 — DEFERRED (multi-PL-sheet, current-year column blank)
+**Role-model symbol for: filer ships TWO PL sheets where one has only prior-year data populated; parser picks the wrong one.**
+
+- **Symptom:** SET reports 2567 = -49.45; local = -207,220.83. Suspiciously similar to the 2566 value (-207.22), suggesting a column or sheet shift.
+- **Root cause:** the FY 2567 zip ships sheets `P` and `P8`, both labelled "สำหรับปีสิ้นสุดวันที่ 31 ธันวาคม". Sheet `P` has the 2567 column **all-zero** (col 4) and the 2566 column populated (col 5); sheet `P8` has all four columns properly populated. Our parser picks `pl_sheets[0]` = `P` and `_extract_numeric` skips the zeros → ends up reading the 2566 prior-year value as if it were 2567.
+- **Fix candidate:** when multiple PL sheets share the same period, prefer the one whose shareholder/net-profit row has a non-zero value in the *current-year* column. Or: deprioritise sheets where >80 % of numeric cells are zero (template/empty sheet).
+- **Open follow-up:** generalises to any filing that ships a "skeleton" sheet alongside the real one.

@@ -508,6 +508,54 @@ def _detect_unit_divisor(rows_top: list) -> float:
     return 1_000_000.0
 
 
+def _build_unit_divisor_map(ws, max_rows: int = 200) -> dict[int, float]:
+    """Map row index → divisor for sheets that stack multiple period
+    blocks with DIFFERENT units.
+
+    BTW / QDC / PLANET / TNITY ship a single PL sheet that stacks the
+    current-quarter block (unit ``พันบาท``) on top of the annual block
+    (unit ``บาท``). A single top-of-sheet detection picks ``พันบาท`` and
+    applies it to the FY rows below — yielding values 1,000× too large
+    for the annual figure SET publishes.
+
+    The map records the divisor implied by every unit marker seen in
+    the sheet, keyed by the row where the marker appeared. Lookup at
+    extraction time picks the most recent marker AT-OR-ABOVE the
+    target row, so each block gets its own correct divisor.
+    """
+    out: dict[int, float] = {}
+    for i, row in enumerate(
+        ws.iter_rows(min_row=1, max_row=min(max_rows, ws.max_row),
+                     values_only=True)
+    ):
+        for cell in row:
+            if not cell or not isinstance(cell, str):
+                continue
+            s = cell.strip()
+            if "ล้านบาท" in s:
+                out[i] = 1.0
+                break
+            if "พันบาท" in s:
+                out[i] = 1_000.0
+                break
+            if "บาท" in s:
+                out[i] = 1_000_000.0
+                break
+    return out
+
+
+def _divisor_for_row(unit_map: dict[int, float], row_idx: int,
+                     default: float) -> float:
+    """Return the divisor that applies to ``row_idx`` — the most recent
+    marker at or above the row. Falls back to ``default`` (the
+    sheet-wide value detected from the top band) when nothing earlier
+    matches."""
+    candidates = [r for r in unit_map.keys() if r <= row_idx]
+    if not candidates:
+        return default
+    return unit_map[max(candidates)]
+
+
 def _detect_thb_column_offset(rows_top: list) -> int:
     """Return the column index where THB data starts in a dual-currency
     layout, or 0 if the sheet is single-currency (so the default
@@ -855,6 +903,11 @@ def parse_zip(zip_path: str, symbol: str = "UNKNOWN") -> Optional[FinancialData]
         # Detect the unit divisor from the top of the sheet
         top_rows = list(ws.iter_rows(min_row=1, max_row=15, values_only=True))
         unit_divisor = _detect_unit_divisor(top_rows)
+        # Stacked-block sheets (BTW/QDC/PLANET/TNITY) carry one PL block
+        # per period with DIFFERENT units (พันบาท over the quarterly
+        # block, บาท over the annual block). Build a row→divisor map so
+        # the FY block below uses its own unit, not the top one.
+        unit_map = _build_unit_divisor_map(ws)
         # Dual-currency offset: PTTEP/BANPU lay USD columns first, THB
         # columns after — start the per-row scan past the USD columns so
         # extraction picks up the THB values SET reports.
@@ -930,10 +983,26 @@ def parse_zip(zip_path: str, symbol: str = "UNKNOWN") -> Optional[FinancialData]
         # values; the next row carrying values inside that section is
         # the parent total. Stop tracking on NCI / minority headers so
         # we don't grab the NCI total instead.
+        # Stacked-block sheets (BTW, QDC, PLANET) put a quarterly block
+        # on top (พันบาท, divisor 1,000) and the annual block below
+        # (บาท, divisor 1,000,000). Without this guard the parser locks
+        # onto the first shareholder row in the quarterly block — wrong
+        # period AND wrong unit. We let a later, *higher-precision* block
+        # (larger divisor) override; same-or-lower divisor keeps the
+        # original "first wins" semantics so simple single-block sheets
+        # are unaffected.
+        last_sh_divisor = 0.0    # divisor used when shareholder was set
+        last_np_divisor = 0.0    # divisor used when net_profit was set
         in_parent_section = False
-        for row in ws.iter_rows(min_row=1, max_row=ws.max_row, values_only=True):
+        for row_idx, row in enumerate(
+            ws.iter_rows(min_row=1, max_row=ws.max_row, values_only=True)
+        ):
             if not row:
                 continue
+            # Recompute the unit divisor from the most recent marker
+            # at-or-above this row. Static `unit_divisor` is the
+            # fall-through default for sheets without per-block markers.
+            row_divisor = _divisor_for_row(unit_map, row_idx, unit_divisor)
             label, label_col = _find_label(row)
 
             # NCI section closes any open parent section. Even on an
@@ -949,8 +1018,8 @@ def parse_zip(zip_path: str, symbol: str = "UNKNOWN") -> Optional[FinancialData]
                     scan_start = thb_offset if thb_offset else 0
                     nums = _extract_numeric(row, is_eps=False, start=scan_start)
                     if len(nums) >= 2:
-                        result.shareholder_profit = nums[0] / unit_divisor
-                        result.shareholder_profit_prior = nums[1] / unit_divisor
+                        result.shareholder_profit = nums[0] / row_divisor
+                        result.shareholder_profit_prior = nums[1] / row_divisor
                         in_parent_section = False
                 continue
 
@@ -964,14 +1033,20 @@ def parse_zip(zip_path: str, symbol: str = "UNKNOWN") -> Optional[FinancialData]
 
             if len(nums) >= 2:
                 if _is_revenue_row(label) and result.revenue is None:
-                    result.revenue = nums[0] / unit_divisor
-                    result.revenue_prior = nums[1] / unit_divisor
-                elif _is_netprofit_row(label) and result.net_profit is None:
-                    result.net_profit = nums[0] / unit_divisor
-                    result.net_profit_prior = nums[1] / unit_divisor
-                elif _is_shareholder_profit_row(label) and result.shareholder_profit is None:
-                    result.shareholder_profit = nums[0] / unit_divisor
-                    result.shareholder_profit_prior = nums[1] / unit_divisor
+                    result.revenue = nums[0] / row_divisor
+                    result.revenue_prior = nums[1] / row_divisor
+                elif _is_netprofit_row(label) and (
+                    result.net_profit is None or row_divisor > last_np_divisor
+                ):
+                    result.net_profit = nums[0] / row_divisor
+                    result.net_profit_prior = nums[1] / row_divisor
+                    last_np_divisor = row_divisor
+                elif _is_shareholder_profit_row(label) and (
+                    result.shareholder_profit is None or row_divisor > last_sh_divisor
+                ):
+                    result.shareholder_profit = nums[0] / row_divisor
+                    result.shareholder_profit_prior = nums[1] / row_divisor
+                    last_sh_divisor = row_divisor
                     in_parent_section = False
                 elif is_eps and result.eps is None:
                     # EPS is always in baht per share regardless of sheet unit
@@ -983,8 +1058,8 @@ def parse_zip(zip_path: str, symbol: str = "UNKNOWN") -> Optional[FinancialData]
                     and stripped == "รวม"
                 ):
                     # Total of the parent-share split (ITC 2564).
-                    result.shareholder_profit = nums[0] / unit_divisor
-                    result.shareholder_profit_prior = nums[1] / unit_divisor
+                    result.shareholder_profit = nums[0] / row_divisor
+                    result.shareholder_profit_prior = nums[1] / row_divisor
                     in_parent_section = False
             else:
                 # Header-only row (no values). Mark when this is a
@@ -1104,8 +1179,21 @@ def parse_zip(zip_path: str, symbol: str = "UNKNOWN") -> Optional[FinancialData]
                 # the earliest match, which is before the transition —
                 # i.e. the 3-month standalone. We just need the
                 # cumulative from rows after the break.
+                #
+                # Stacked-block sheets (BTW / QDC / PLANET) put a
+                # different unit marker (บาท) at the top of the second
+                # block. Detect it from rows AROUND the transition so
+                # the cumulative value isn't divided by the first
+                # block's marker (พันบาท).
+                cum_divisor = _detect_unit_divisor(
+                    list(ws.iter_rows(
+                        min_row=max(1, transition - 2),
+                        max_row=min(ws.max_row, transition + 12),
+                        values_only=True,
+                    ))
+                )
                 sp, sp_prior = _extract_shareholder_from_rows(
-                    ws, transition, ws.max_row, unit_divisor
+                    ws, transition, ws.max_row, cum_divisor
                 )
                 result.shareholder_profit_cum = sp
                 result.shareholder_profit_cum_prior = sp_prior
