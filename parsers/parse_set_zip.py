@@ -822,6 +822,16 @@ def _find_label(row: tuple) -> tuple[str, int]:
             continue
         if _TAS_REF_PATTERN.match(s):
             continue
+        # Skip bullet-only cells (a single "-", "•", "*", or "()", or
+        # short numbered list markers like "1." / "(1)"). CCP 2568 lays
+        # parent-share rows out as ``[col 0: "-", col 1: "ส่วนที่เป็นของ
+        # บริษัทใหญ่", col 6: 83284]`` — without this guard the parser
+        # latches onto the bullet at col 0 and the real label at col 1
+        # is never seen as the row's label, dropping the row entirely
+        # from net-profit / shareholder detection.
+        bullet_chars = set("-*•◦·▪▫●○■□()[]{}.0123456789 ")
+        if all(ch in bullet_chars for ch in s):
+            continue
         return s, i
     return "", -1
 

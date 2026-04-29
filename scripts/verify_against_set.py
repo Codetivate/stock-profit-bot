@@ -80,6 +80,36 @@ def fetch_set_annual(session: SetSession, symbol: str) -> dict[int, float]:
     return out
 
 
+def fetch_set_quarterly(
+    session: SetSession, symbol: str
+) -> dict[int, dict[str, Optional[float]]]:
+    """Return {thai_year: {"Q1","Q2","Q3","Q4","FullYear"}} from SET's
+    highlight API.
+
+    SET tags the four quarterly rows as ``quarter == "Q1" / "Q2" / "Q3"
+    / "Q4"`` and the annual rollup as ``"Q9"`` (we expose it as
+    ``"FullYear"`` to match our processed schema). All values arrive
+    in thousands of baht; we return millions.
+
+    Use this when we need per-quarter parity, not just annual."""
+    url = API_URL.format(symbol=symbol)
+    referer = REFERER.format(symbol=symbol)
+    rows = session.request_json(url, referer=referer)
+    out: dict[int, dict[str, Optional[float]]] = {}
+    quarter_map = {"Q1": "Q1", "Q2": "Q2", "Q3": "Q3", "Q4": "Q4",
+                   "Q9": "FullYear"}
+    for r in rows:
+        q = r.get("quarter")
+        if q not in quarter_map:
+            continue
+        np_raw = r.get("netProfit")
+        if np_raw is None:
+            continue
+        thai_year = _gregorian_to_thai(int(r["year"]))
+        out.setdefault(thai_year, {})[quarter_map[q]] = float(np_raw) / 1000.0
+    return out
+
+
 _WIN_RESERVED = {
     "CON", "PRN", "AUX", "NUL",
     *(f"COM{i}" for i in range(1, 10)),
