@@ -4,15 +4,8 @@
   "company_code": null,
   "company_name_en": null,
   "company_name_th": null,
-  "updated_at": "2026-02-23",
+  "updated_at": "2025-11-10",
   "quarterly_history": {
-    "2565": {
-      "Q1": null,
-      "Q2": null,
-      "Q3": null,
-      "Q4": null,
-      "FullYear": 27.316549
-    },
     "2566": {
       "Q1": null,
       "Q2": 5.281,
@@ -24,28 +17,18 @@
       "Q1": 12.154,
       "Q2": 10.434,
       "Q3": 13.896,
-      "Q4": -13.116200000000001,
-      "FullYear": 23.3678
+      "Q4": null,
+      "FullYear": null
     },
     "2568": {
       "Q1": 13.391,
       "Q2": 11.164,
       "Q3": 17.185,
-      "Q4": 2.819524000000005,
-      "FullYear": 44.559524
+      "Q4": null,
+      "FullYear": null
     }
   },
   "sources": [
-    {
-      "year": 2565,
-      "period": "FY",
-      "filing_date": "2023-10-31",
-      "news_id": "16987086297921",
-      "raw_path": "SCL/financials/2565/FY/source.zip",
-      "sha256": "b93cec3e171b3a3da84a1f61e7e88f4b46d4c99a3bd3193483662a2033a20e22",
-      "ingested_at": "2026-04-28T07:45:40+00:00",
-      "shareholder_profit": 27.316549
-    },
     {
       "year": 2566,
       "period": "9M",
@@ -78,16 +61,6 @@
     },
     {
       "year": 2567,
-      "period": "FY",
-      "filing_date": "2025-02-26",
-      "news_id": "17405221057151",
-      "raw_path": "SCL/financials/2567/FY/source.zip",
-      "sha256": "e3bfa715ac5e1b378f9bebac957369f583ecfd5e4622b46ac0d5752fd9468bc7",
-      "ingested_at": "2026-04-28T07:45:05+00:00",
-      "shareholder_profit": 23.3678
-    },
-    {
-      "year": 2567,
       "period": "H1",
       "filing_date": "2024-08-08",
       "news_id": "17230734184131",
@@ -115,16 +88,6 @@
       "sha256": "36b76e2d397d17a257905dd3266fa5d9b43187d9170784ed4420a88e7f5adfd7",
       "ingested_at": "2026-04-28T07:44:51+00:00",
       "shareholder_profit": 17.185
-    },
-    {
-      "year": 2568,
-      "period": "FY",
-      "filing_date": "2026-02-23",
-      "news_id": "17718030184351",
-      "raw_path": "SCL/financials/2568/FY/source.zip",
-      "sha256": "ff629c2c9e226cef6646aa57c8cfee0a0c7a3464a9c6d85eb2585db1d6b19e70",
-      "ingested_at": "2026-04-28T07:44:46+00:00",
-      "shareholder_profit": 44.559524
     },
     {
       "year": 2568,

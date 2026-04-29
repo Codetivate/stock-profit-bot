@@ -7,10 +7,10 @@
   "updated_at": "2026-02-12",
   "quarterly_history": {
     "2564": {
-      "Q1": 0.14012,
+      "Q1": null,
       "Q2": 182.628,
       "Q3": 165.127,
-      "Q4": 352.6964480000001,
+      "Q4": 212.71656800000005,
       "FullYear": 700.591568
     },
     "2565": {
@@ -31,8 +31,8 @@
       "Q1": 20.167,
       "Q2": 28.424,
       "Q3": 27.189,
-      "Q4": -3285.3843359999996,
-      "FullYear": -3209.604336
+      "Q4": -62.054152,
+      "FullYear": 13.725848
     },
     "2568": {
       "Q1": 20.086,
@@ -72,16 +72,6 @@
       "sha256": "29851d1da98c8a4ae357887dfb55c97e84ce0dfe459f9f2d95406845dfa4dd7e",
       "ingested_at": "2026-04-24T02:40:54+00:00",
       "shareholder_profit": 182.628
-    },
-    {
-      "year": 2564,
-      "period": "Q1",
-      "filing_date": "2021-05-12",
-      "news_id": "2021055001",
-      "raw_path": "SINGER/financials/2564/Q1/source.zip",
-      "sha256": "e1ebf0b0ac34ee5fbde81eda7f818fc9a8018585b59e80338df169ba1c2fe7c3",
-      "ingested_at": "2026-04-24T02:40:59+00:00",
-      "shareholder_profit": 0.14012
     },
     {
       "year": 2565,
@@ -181,7 +171,7 @@
       "raw_path": "SINGER/financials/2567/FY/source.zip",
       "sha256": "36f5fdf188a26bc5ee3efe7ce69cb72e09d3fa5007d40985f58a709b70ac5532",
       "ingested_at": "2026-04-24T02:39:48+00:00",
-      "shareholder_profit": -3209.604336
+      "shareholder_profit": 13.725848
     },
     {
       "year": 2567,
