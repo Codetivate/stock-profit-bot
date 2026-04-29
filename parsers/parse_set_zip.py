@@ -97,6 +97,19 @@ def _is_netprofit_row(text: str) -> bool:
         or "จากการดำเนินงานที่ยกเลิก" in text
     ):
         return False
+    # Inline-share rows like "กำไรสำหรับปีส่วนที่เป็นของผู้ถือหุ้น
+    # บริษัทฯ" or INTUCH 2565's "กำไรสำหรับปีส่วนที่เป็นของบริษัทใหญ่"
+    # collapse the bottom line and the parent-share allocation into a
+    # single label. They're already handled by _is_shareholder_profit_row
+    # (the inline_share branch). Reject them here so the elif chain in
+    # the main loop assigns them to result.shareholder_profit instead
+    # of result.net_profit — otherwise the parent row gets consumed by
+    # net_profit and shareholder falls through to the cross-sheet
+    # recovery loop, which can latch onto a year-header value in the
+    # statement-of-equity sheet (FSX 2568 was reading sh = 0.002568,
+    # i.e. "year 2568" / 1,000,000).
+    if "ส่วนที่เป็น" in text or "ส่วนของ" in text:
+        return False
     # The label group accepts both Thai phrasings for the period unit
     # ("ปี/ไตรมาส/งวด" and the longer "รอบระยะเวลา").
     period_grp = r"(ปี|งวด|ไตรมาส|รอบระยะเวลา)"
@@ -165,9 +178,16 @@ def _is_shareholder_profit_row(text: str) -> bool:
     # but only when the row clearly references the period total
     # (``กำไรสำหรับ(ปี|งวด)``) so we don't catch random labels that
     # happen to contain ``ส่วนที่เป็น``.
+    # WAVE 2567 FY splits the parent-share line by continuing /
+    # discontinued operations and emits the section sum row as
+    # ``รวมส่วนที่เป็นของบริษัทใหญ่``. We need to keep this row — it's
+    # the parent total — while still rejecting the balance-sheet
+    # equity total ``รวมส่วนของบริษัทใหญ่`` (no ``ที่เป็น``) handled
+    # below. The "starts with" check therefore covers both forms.
     starts_share = (
         text.startswith("ส่วนที่เป็น")
         or text.startswith("ส่วนของ")
+        or text.startswith("รวมส่วนที่เป็น")
     )
     inline_share = (
         re.match(r"^กำไร(\s*\(\s*ขาดทุน\s*\)\s*)?สำหรับ(ปี|งวด|ไตรมาส|รอบระยะเวลา)",
@@ -188,8 +208,11 @@ def _is_shareholder_profit_row(text: str) -> bool:
     # เจ้าของ..." — never "ของผู้ถือหุ้น" without "ที่เป็น" in front.
     if text.startswith("ส่วนของผู้ถือหุ้น"):
         return False
-    # Aggregate equity rows ("รวมส่วนของบริษัทใหญ่") are also BS only.
-    if text.startswith("รวมส่วน"):
+    # Aggregate equity rows ("รวมส่วนของบริษัทใหญ่") are BS only.
+    # The PL aggregate "รวมส่วนที่เป็นของบริษัทใหญ่" was already
+    # admitted by ``starts_share`` above, so we only need to filter
+    # the BS-equity form here (no ``ที่เป็น``).
+    if text.startswith("รวมส่วนของ"):
         return False
     # Must reference the parent entity (company or bank).
     return "บริษัท" in text or "ธนาคาร" in text
@@ -556,6 +579,45 @@ def _divisor_for_row(unit_map: dict[int, float], row_idx: int,
     return unit_map[max(candidates)]
 
 
+def _detect_year_columns(rows_top: list) -> set[int]:
+    """Return the set of column indices that the sheet uses as year
+    headers in its top band.
+
+    Scans the first ~15 rows for cells whose value parses as a
+    Buddhist Era year integer (2540-2600) — either as a numeric cell
+    or as a string like ``'2566'`` / ``'2566 (ปรับปรุงใหม่)'``. Skips
+    rows that also contain a money-shaped number (``abs > 9999``) so
+    a stray depreciation figure doesn't poison the set (same guard
+    used by ``_latest_year_in_sheet``).
+
+    The result is the canonical "data columns" for `_extract_numeric` —
+    everything outside is either a label column, a note reference, or
+    an orphan column like BTC's share-count column at col 4.
+    """
+    cols: set[int] = set()
+    for row in rows_top:
+        has_money = any(
+            isinstance(c, (int, float)) and abs(c) > 9999
+            for c in row
+        )
+        if has_money:
+            continue
+        for j, cell in enumerate(row):
+            if cell is None:
+                continue
+            if isinstance(cell, (int, float)):
+                iv = int(cell)
+                if 2540 <= iv <= 2600:
+                    cols.add(j)
+            elif isinstance(cell, str):
+                m = re.search(r"25\d{2}", cell)
+                if m:
+                    iv = int(m.group(0))
+                    if 2540 <= iv <= 2600:
+                        cols.add(j)
+    return cols
+
+
 def _detect_thb_column_offset(rows_top: list) -> int:
     """Return the column index where THB data starts in a dual-currency
     layout, or 0 if the sheet is single-currency (so the default
@@ -764,7 +826,8 @@ def _find_label(row: tuple) -> tuple[str, int]:
     return "", -1
 
 
-def _extract_numeric(row: tuple, is_eps: bool = False, start: int = 1) -> list:
+def _extract_numeric(row: tuple, is_eps: bool = False, start: int = 1,
+                     year_cols: Optional[set[int]] = None) -> list:
     """Extract first 2 non-zero numeric values from row (current, prior).
     Skips small integers (1-99) which are footnote references in SET XBRL.
 
@@ -773,6 +836,14 @@ def _extract_numeric(row: tuple, is_eps: bool = False, start: int = 1) -> list:
 
     ``start`` is the first column index to scan — callers set this to one
     past the label column so the label itself is never misread as a value.
+
+    ``year_cols`` (optional) restricts extraction to a known set of
+    year-header column indices detected from the top band. BTC's PL
+    sheet, for instance, has an orphan share-count column (col 4 =
+    852,812,933 = shares outstanding) immediately before the real
+    year-data columns (5/7/9/11). Without the whitelist the parser
+    picks the share count as "current year" and reports the same wrong
+    number on every row of every BTC year.
 
     Hard cap the scan at column 20 (relative to row start). Real SET PL
     sheets keep their current/prior data within the first ~15 columns;
@@ -790,6 +861,13 @@ def _extract_numeric(row: tuple, is_eps: bool = False, start: int = 1) -> list:
     raw_cells: list[tuple[int, float, bool]] = []  # (index, val, is_int_type)
     for i, cell in enumerate(row[start:end], start):
         if not isinstance(cell, (int, float)) or cell == 0:
+            continue
+        # Year-column whitelist: when we know which columns the top
+        # header marked as year columns, drop cells in any other
+        # column. Falls through when year_cols is None or empty so
+        # legacy callers and weird sheets without year integers in
+        # the header still get the original behaviour.
+        if year_cols and i not in year_cols:
             continue
         raw_cells.append((i, float(cell), isinstance(cell, int)))
 
@@ -908,6 +986,11 @@ def parse_zip(zip_path: str, symbol: str = "UNKNOWN") -> Optional[FinancialData]
         # block, บาท over the annual block). Build a row→divisor map so
         # the FY block below uses its own unit, not the top one.
         unit_map = _build_unit_divisor_map(ws)
+        # Year-column whitelist: only extract numerics from columns the
+        # top-band header marked as year columns. Without this, BTC's
+        # orphan share-count column (col 4 = 852,812,933) silently
+        # masquerades as a current-year profit.
+        year_cols = _detect_year_columns(top_rows)
         # Dual-currency offset: PTTEP/BANPU lay USD columns first, THB
         # columns after — start the per-row scan past the USD columns so
         # extraction picks up the THB values SET reports.
@@ -1016,7 +1099,8 @@ def parse_zip(zip_path: str, symbol: str = "UNKNOWN") -> Optional[FinancialData]
                 # total when we're already inside a parent section.
                 if in_parent_section and result.shareholder_profit is None:
                     scan_start = thb_offset if thb_offset else 0
-                    nums = _extract_numeric(row, is_eps=False, start=scan_start)
+                    nums = _extract_numeric(row, is_eps=False, start=scan_start,
+                                            year_cols=year_cols)
                     if len(nums) >= 2:
                         result.shareholder_profit = nums[0] / row_divisor
                         result.shareholder_profit_prior = nums[1] / row_divisor
@@ -1027,7 +1111,8 @@ def parse_zip(zip_path: str, symbol: str = "UNKNOWN") -> Optional[FinancialData]
             # Dual-currency layouts skip past the USD block; otherwise
             # start scanning at the column right after the label.
             scan_start = max(label_col + 1, thb_offset) if thb_offset else label_col + 1
-            nums = _extract_numeric(row, is_eps=is_eps, start=scan_start)
+            nums = _extract_numeric(row, is_eps=is_eps, start=scan_start,
+                                    year_cols=year_cols)
 
             stripped = label.strip().rstrip(":")
 

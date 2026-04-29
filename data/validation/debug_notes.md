@@ -289,3 +289,56 @@ to confirm the SET-side number traces to a real cell.
 - **Root cause:** the FY 2567 zip ships sheets `P` and `P8`, both labelled "สำหรับปีสิ้นสุดวันที่ 31 ธันวาคม". Sheet `P` has the 2567 column **all-zero** (col 4) and the 2566 column populated (col 5); sheet `P8` has all four columns properly populated. Our parser picks `pl_sheets[0]` = `P` and `_extract_numeric` skips the zeros → ends up reading the 2566 prior-year value as if it were 2567.
 - **Fix candidate:** when multiple PL sheets share the same period, prefer the one whose shareholder/net-profit row has a non-zero value in the *current-year* column. Or: deprioritise sheets where >80 % of numeric cells are zero (template/empty sheet).
 - **Open follow-up:** generalises to any filing that ships a "skeleton" sheet alongside the real one.
+
+### ✅ WAVE 2567 — FIXED (`รวมส่วนที่เป็น...` parent-share aggregate row)
+**Role-model symbol for: filers that split parent-share into "continuing / discontinued" sub-rows and emit a `รวมส่วนที่เป็นของบริษัทใหญ่` aggregate row — `_is_shareholder_profit_row` was rejecting it as if it were a balance-sheet equity total.**
+
+- **Symptom:** SET reports 2567 = -774.21; local = -1,069.44 (the consolidated `ขาดทุนสำหรับปี` total before minority-interest split).
+- **Root cause:** WAVE's 2567 FY zip puts the parent-share allocation on a separate sheet (`กำไรขาดทุน (ต่อ) (3)`) with the layout
+  - `ส่วนที่เป็นของบริษัทใหญ่` ← header label, no values
+  - `- การดำเนินงานต่อเนื่อง` ← continuing ops
+  - `- การดำเนินงานที่ยกเลิก` ← discontinued ops
+  - `รวมส่วนที่เป็นของบริษัทใหญ่` ← parent-share TOTAL with values
+
+  The aggregate row is the right number (col 6 = -775,616,066 ≈ SET's -774.21). But `_is_shareholder_profit_row` had a blanket `if text.startswith("รวมส่วน"): return False` — added earlier to reject balance-sheet equity totals like `รวมส่วนของบริษัทใหญ่` — which was also dropping the legitimate PL aggregate. With the row rejected, the cross-sheet shareholder-recovery loop fell through and the parser fell back to `net_profit` (the consolidated total).
+
+- **Fix:** discriminate the two forms. The BS equity total is `รวมส่วนของ…` (no `ที่เป็น`); the PL parent-share aggregate is `รวมส่วนที่เป็นของ…` (with `ที่เป็น`). Updated `_is_shareholder_profit_row` to:
+  - Accept `รวมส่วนที่เป็น…` in the `starts_share` check.
+  - Tighten the rejection to `text.startswith("รวมส่วนของ")` only (the BS form), not the broad `"รวมส่วน"`.
+
+- **Lesson:** Thai PL aggregate rows that use `รวมส่วนที่เป็น…` are real net-profit numbers; the `ที่เป็น` substring is the discriminator from the BS form. Always test rejection rules against actual XLSX cells before broadening — overly aggressive prefix filters like `startswith("รวมส่วน")` swallow the legitimate row alongside the unwanted one.
+
+### 📝 WAVE 2566 — KNOWN (SET value -15.90 doesn't trace to any XLSX cell we have)
+**Role-model symbol for: a SET-reported figure with no obvious source in the filed XLSX — investigate before considering an override.**
+
+- **Symptom:** SET reports 2566 = -15.90; local = -20.32. Off by ~4.4 MB.
+- **Investigation:** WAVE 2566 FY filing's only PL net-profit row is `ขาดทุนสำหรับปี` = -20,315,596 (consolidated total, no parent-share split). The 2567 FY filing's prior-period column for 2566 reports the parent-share aggregate as -1,937,363 (-1.94 MB). Neither matches SET's -15.90.
+- **Status:** no manual_overrides entry yet — would violate the "ห้ามมโน" rule. Needs deeper dive into the 2566 quarterly filings or the SET API source. Open follow-up.
+
+### ✅ BTC / HEALTH (mostly) — FIXED (orphan share-count column poisoned every year)
+**Role-model symbol for: filer puts a non-year orphan column (share count) IMMEDIATELY before the year-data columns — `_extract_numeric` grabs the orphan as "current year", the same number then appears across every reparsed year.**
+
+- **Symptom:** BTC reports 852.81 for every year (2564-2566); HEALTH reports the same 852.81 for 2564. The shared "magic number" was a strong hint that the parser was hitting a fixed cell, not a year-specific one.
+- **Root cause:** BTC's PL sheet `งบกำไรขาดทุน Q4_66` lays out columns as
+  - col 0: label
+  - col 1: continuation of label
+  - col 3: หมายเหตุ
+  - col 4: **852,812,933 (shares outstanding)** ← orphan, no header band
+  - col 5: 2566 current year ← real data
+  - col 7: 2565 prior year
+  - col 9: separate-financials current year
+  - col 11: separate-financials prior year
+
+  The year-header row (row 7) only labels cols 5/7/9/11; col 4 has no header. `_extract_numeric` scanned from `label_col + 1` onwards and picked col 4 first because it was non-zero and ≥ 100, treating 852,812,933 as the current-year profit. ÷ 1,000,000 = 852.81 MB.
+
+- **Fix:** added `_detect_year_columns(rows_top)` that builds a set of column indices the top header band marked with a Buddhist year (numeric or string, with the same money-row guard as `_latest_year_in_sheet`). Threaded `year_cols` through every `_extract_numeric` call in the main loop. Now col 4 (no year header) is skipped and the parser picks col 5 = 387.27 MB ✓.
+
+- **Lesson:** never trust "non-zero numeric cell after the label" as the data column — filers commonly slot share counts, weights, or unit-conversion factors there. The year-header band is the only reliable anchor for which columns carry real period values.
+
+### ✅ FSX 2567 / 2568 — FIXED (inline-share row consumed by net_profit, shareholder fell back to year header)
+**Role-model symbol for: filer collapses bottom-line and parent-share allocation into a single label like `กำไร (ขาดทุน) สำหรับปีส่วนที่เป็นของผู้ถือหุ้นบริษัทฯ` — that row matches BOTH `_is_netprofit_row` and `_is_shareholder_profit_row`, the elif chain assigns it to net_profit only, and shareholder falls through to the cross-sheet recovery loop which can latch onto a year-header value (e.g. literal `2568`) in a Statement-of-Equity sheet.**
+
+- **Symptom:** FSX 2568: SET = -419.09; local shareholder_profit = 0.002568 (≈ year 2568 / 1,000,000) while net_profit was correctly -419.09. The two values diverging by 5+ orders of magnitude is the giveaway.
+- **Root cause:** the inline-share label in row 82 of `Plt&CF` matches both the net-profit and the shareholder regex. The main loop's `elif _is_netprofit_row → elif _is_shareholder_profit_row` chain assigns it to net_profit and skips shareholder. Then the cross-sheet shareholder-recovery loop iterated `pl_sheets[1:]`, found a `ส่วนที่เป็นของผู้ถือหุ้นบริษัทฯ` header in the Statement-of-Equity sheet, and grabbed the first non-zero numeric in that row — which was the year integer `2568` (sub-header).
+- **Fix:** make `_is_netprofit_row` return False when the label contains `ส่วนที่เป็น` or `ส่วนของ`. Inline-share rows then ONLY match `_is_shareholder_profit_row`; the elif chain assigns the value correctly. Cross-sheet recovery never triggers because shareholder is no longer None.
+- **Lesson:** when a single label matches multiple matchers, the most-specific match should win. "ส่วนที่เป็น"/"ส่วนของ" are the strong parent-share signals — subtract them from the generic net-profit pattern.
